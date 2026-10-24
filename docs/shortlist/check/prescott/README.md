@@ -131,7 +131,7 @@ Notes:
 
 ## 3. Fleet
 
-FAA registry, 2026-10-24 (B). Method: matched ACFTREF model codes whose maker or model contains PRESCOTT (19 codes, including the misspelt "PRESCOT PUSHER"). Also matched four-seat models named PUSHER, KIT MFR/KIT MODEL containing PRESCOTT, and the known N-numbers, in both MASTER and DEREG. Positive control: the registry query code reproduces the rights file's four MASTER records.
+FAA registry, 2026-10-24 (B). Method: matched ACFTREF model codes whose maker or model contains PRESCOTT (18 Prescott Pusher codes, including the misspelt "PRESCOT PUSHER"; an audit recount, 2026-10-24, found five other PRESCOT codes that are not Pushers). Also matched four-seat models named PUSHER, KIT MFR/KIT MODEL containing PRESCOTT, and the known N-numbers, in both MASTER and DEREG. Positive control: the registry query code reproduces the rights file's four MASTER records.
 
 | N-number | s/n | Year | File | Engine (FAA code) | Status / notes |
 |---|---|---|---|---|---|
@@ -249,7 +249,7 @@ NTSB report URLs:
 - **Glide ratio:** not published.
 - **Ride / gust response:** nothing specific beyond the AOPA86 pitch-oscillation note. Wing loading is 21.7 lb/sq ft at 2,400 lb on 110.8 sq ft (E, arithmetic).
 - **Noise:** "Noise level at taxi rpm allows normal conversation" (SA86, P; split across a column break in the scan). AOPA86 claims a quieter cabin for the pusher layout, as a design reason, not a measurement.
-- **Cabin:** 42.5 in wide, "same as a Bonanza" (SA86). Prototype seats were 3 in too high. The rear seats sit higher, on the carry-through (AOPA86). Big left canopy door; baggage bay behind the rear seats. The rear-seat load limits the c.g. (SA91 notes ballast was needed).
+- **Cabin:** 42.5 in wide (SA86); "Cabin size is the same as a Bonanza" (SA86, a separate sentence about size, not width). Prototype seats were 3 in too high. The rear seats sit higher, on the carry-through (AOPA86). Big left canopy door; baggage bay behind the rear seats. The rear-seat load limits the c.g. (SA91 notes ballast was needed).
 - **Storage:** 29 ft 4 in span, 20 ft 3 in length, 8 ft 9 in height (TP07). Wings bolt on at the root with two bolts per side (SA86), but no folding or quick removal is described. It needs a standard T-hangar for its size (E).
 - **Construction as builders found it:**
   - Fit was praised: "Early builders remarked of the quality and fit of the sub-kits" (AZ).
