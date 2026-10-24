@@ -15,7 +15,16 @@ secondary; **L** low (wiki, forum, aggregator).
 
 ## Summary
 
-- **Two licence signals, no licence text, and they conflict.**
+- **The family's later position is commercial, not open.** A "Stratos Project"
+  paper "Written and prepared by Ron Ligeti – © LGT Aerospace Pty. Ltd." says:
+  "The design owner retains the IP". A flying prototype "is aimed to induce a
+  licensing arrangement for production". The manufacturer "is supplied with CAD
+  engineering, tooling and detail construction data". It does not mention open
+  source. The PDF's metadata dates it to 9 November 2010 (author "Ron"); the
+  Wayback capture is from 26 August 2014 (lgtaerospace.com, P; found by AERO,
+  verified here, SHA-256 `35180b15...28b0`). So by 2010 the stated route was
+  licensing a manufacturer, and the 2006 open-source plan had been overtaken.
+- **Two earlier licence signals, no licence text, and they conflict.**
   - From June 2006 the project's own website said the family had "agreed to
     release the new 'Second Generation' Ligeti Stratos as Open Source" through a
     gratis "Attribution-NonCommercial-ShareAlike" licence "currently under
@@ -36,7 +45,9 @@ secondary; **L** low (wiki, forum, aggregator).
   2006, P). In 2008 the organiser said "there were no drawings or design
   specifications" to work from (TWITT No. 262, S). The two fit: notes, but no
   drawings. Neither the notes nor the CAD model was published.
-- **Residual rights sit with the family.** Charles Ligeti's design notes are
+- **Residual rights sit with the family, now through LGT Aerospace Pty Ltd.**
+  The 2010 paper is copyright LGT Aerospace Pty. Ltd. and says the design
+  owner retains the IP. Charles Ligeti's design notes are
   concrete works of his, held by his family. Ron Ligeti's CAD model is his own
   work. The project credits "the generosity of the family of the late Charles
   Ligeti, and the active contribution of his son Ron". TWITT says the organiser
@@ -75,7 +86,10 @@ NonCommercial-ShareAlike licence that was "currently under development"; the
 same words were still being reposted in 2012. No licence text was ever found. The only formal label, GPL v2, sits on an
 empty repository and conflicts with the announced terms. On the public record,
 no design file is available under terms AeroCommons can rely on. The design
-data that does exist (the notes and the CAD model) is with the family.
+data that does exist (the notes and the CAD model) is with the family. And the
+family's own later statement (2010) reserves the IP and seeks a licensed
+manufacturer. Whatever the 2006 intent was, the most recent primary source says
+the design is not open.
 
 ## What survives and where
 
@@ -96,6 +110,11 @@ Visiting or asking any museum, or the family, is contact and Bill's call.
 
 ## Holder of residual rights
 
+- **LGT Aerospace Pty Ltd**, Ron Ligeti's company (contact@lgtaerospace.com),
+  holds the copyright in the 2010 Stratos Project paper and states "The design
+  owner retains the IP". That is the clearest public claim of who owns the
+  design today. Its corporate status and chain of title from Charles Ligeti's
+  estate were not checked; ASIC was not searched.
 - **Charles Ligeti's design notes** are his own works. On his death in 1987
   they passed to his estate or heirs. On the public record that is his family,
   and they hold the notes physically.
@@ -123,26 +142,29 @@ Visiting or asking any museum, or the family, is contact and Bill's call.
 | Path | What it would take | Assessment |
 |---|---|---|
 | **Use the announced open release** | Obtain the actual licence text and files. | **Not available.** No licence text was ever published, and the announced terms are NonCommercial-ShareAlike, which may not suit a non-profit that distributes plans and enables kits. Even if the files surfaced, the terms would need counsel. |
-| **License from the family** | Written terms from Ron Ligeti and the family, covering both Charles's notes and Ron's CAD model, ideally under terms that suit AeroCommons. | The most promising route. The family wanted the design open in 2006. Requires contact: Bill's call. |
+| **License from LGT Aerospace / the family** | Written terms from LGT Aerospace Pty Ltd and the family, covering Charles's notes and Ron's CAD model. | The realistic route, and it is the one the family itself offers: its 2010 paper seeks "a licensing arrangement for production". Expect commercial terms, not open ones. Requires contact: Bill's call. |
 | **Re-derive from public data** | Jane's figures, archived spec pages, TWITT's spec sheets and CAD views, photographs, the ATSB report; measure a museum airframe. | Feasible for a planform study (AERO, AER-3807). Watch the safety history: the fatal Mk II had full-span elevators on the canard, and AHSA, citing the ATSB, describes a "full canard stall followed by a rapid nose down pitch". |
 | **Buy** | Nothing commercial to buy. | Not applicable. |
 
 ## Where an aviation IP attorney is needed
 
-1. **The announced NonCommercial term.** What would an
+1. **Which statement governs.** The 2006 open-source announcement against the
+   2010 paper reserving the IP for licensing. Did the 2006 announcement grant
+   anything anyone can rely on, given that no licence text was published?
+2. **The announced NonCommercial term.** What would an
    "Attribution-NonCommercial-ShareAlike" licence mean for a non-profit that
    distributes plans free and enables third parties to sell kits? Does an
    announced but unpublished licence bind or grant anything?
-2. **The conflict between signals.** GPL v2 on the Google Code project against
+3. **The conflict between signals.** GPL v2 on the Google Code project against
    the NonCommercial-ShareAlike licence announced on the website. Which, if
    either, governs any material, given that neither has a published text
    covering files?
-3. **Whose consent covers what.** Ron Ligeti's consent covers his plans. Does
+4. **Whose consent covers what.** Ron Ligeti's consent covers his plans. Does
    the family's consent, as published, extend to Charles Ligeti's notes? Who in
    the family or estate can license those?
-4. **GPL v2 for aircraft designs**, if files ever surface under it: what counts
+5. **GPL v2 for aircraft designs**, if files ever surface under it: what counts
    as "source", and what copyleft means for derivative designs and kits.
-5. **Australian copyright term and ownership** for Charles Ligeti's works, and
+6. **Australian copyright term and ownership** for Charles Ligeti's works, and
    for the company's if it held any.
 
 ## Open items
@@ -165,6 +187,10 @@ Visiting or asking any museum, or the family, is contact and Bill's call.
   https://web.archive.org/web/20060702121649/http://www.ligeti-stratos.com:80/concept.htm
   https://web.archive.org/web/20120728095846/http://ligeti-stratos.com:80/concept.html
   https://web.archive.org/web/20060702121701/http://www.ligeti-stratos.com:80/project_status.htm
+- LGT Aerospace Pty. Ltd., "Stratos Project", written by Ron Ligeti; PDF
+  metadata created 9 November 2010; Wayback capture 26 August 2014; SHA-256
+  35180b157e4a8f912e839b3a612d7dd6e3544227fd5b9f3e64d89a44fce728b0 (P).
+  https://web.archive.org/web/20140826172206/http://lgtaerospace.com/attachments/article/15/Stratos%20Project.pdf
 - ligeti-stratos.com spec pages, Wayback captures of 2 and 16 July 2006 (P):
   https://web.archive.org/web/20060716002418/http://www.ligeti-stratos.com:80/aircraft_original_prototype.htm
   https://web.archive.org/web/20060716002203/http://www.ligeti-stratos.com:80/aircraft_original_production.htm
