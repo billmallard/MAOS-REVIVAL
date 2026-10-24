@@ -19,6 +19,8 @@ until Bill picks:
 4. Meyers 200D (new, a re-derivation)
 5. Mooney 301
 
+Bill has since moved the **Prescott Pusher** to the top (AERO, AER-3784 thread, 2026-10-24); it has a first-pass weight estimate below, with a fuller study to follow once AERO's stage 3 check lands.
+
 The Aries and the Express get full studies. The IV-P keeps its full study from
 the first version. The Meyers and the 301 get notes. Bill dropped the Defiant,
 VK-30, Velocity and Berkut, so their stage 4 sections are gone; the first
@@ -27,7 +29,15 @@ and the Cozy MKIV as the reference.
 
 ## What this stage finds
 
-1. **Aries: rebuild empty weight 1,780-2,000 lb.** Useful load is 1,150-1,370 lb
+1. **Prescott Pusher: rebuild empty weight 1,420-1,630 lb, useful load 770-980 lb
+   at the published 2,400 lb gross.** Modern structure takes out 20-130 lb: a
+   carbon wing and tail in place of flush-riveted aluminium, and a carbon shell
+   over the steel cage. Replacing the cage with a carbon monocoque saves another
+   30-70 lb, as an option. That does not clear the 1,000 lb floor on its own,
+   and an AM20T is 54-71 lb heavier than the O-360. The levers that do are gross
+   weight, which was tested at 2,400 lb and 3.8 g and is a STRUCTURES question,
+   and the engine choice.
+2. **Aries: rebuild empty weight 1,780-2,000 lb.** Useful load is 1,150-1,370 lb
    against the factory 1,300; with our engine credit, empty is 1,690-1,940 lb.
    Modern manufacturing doesn't make it much lighter. What it changes is cost:
    the Aries was designed around flat and single-curve skins, so a matched-hole
@@ -35,24 +45,24 @@ and the Cozy MKIV as the reference.
    design here, about $40-120k (E), and pays back below 10% of kit price at about
    3-12 airframes. Its range shortfall at continuous power is a fuel question:
    about 20 more gallons in integral wing bays costs 10-20 lb empty.
-2. **Express: rebuild empty weight 1,770-2,030 lb.** Useful load is 865-1,125 lb
+3. **Express: rebuild empty weight 1,770-2,030 lb.** Useful load is 865-1,125 lb
    against the weighed 901, so at the light end it clears the 1,000 lb floor.
    Three things do it: replacing the vinylester E-glass (the heaviest laminate on
    the shortlist) with infused carbon/epoxy, lighter tail surfaces, and losing the
    56-62 lb of nose ballast S-90 owners carry. The heavy end assumes none of that
    ballast is in the weighed baseline. The re-derived tail and "complete kits" are
    manufacturing tasks with a price, set out below.
-3. **IV-P: rebuild empty weight 2,140-2,360 lb, useful load 1,190-1,410 lb.**
+4. **IV-P: rebuild empty weight 2,140-2,360 lb, useful load 1,190-1,410 lb.**
    Manufacturing barely moves it. The engine (-150 to -242 lb, if CG allows it)
    and deleting pressurisation (-100 to -200 lb) are what move it. RDD's LX7
    re-wing is a data point the other way: +150 lb empty for a one-piece carbon
    wing with 180 gal, at about $821,000 complete (AvWeb 2019).
-4. **Meyers 200D: re-derived empty weight 1,840-2,160 lb.** Useful load is 840-1,160
+5. **Meyers 200D: re-derived empty weight 1,840-2,160 lb.** Useful load is 840-1,160
    lb at the original 3,000 lb gross, and the swap saves 105-133 lb with engine
    credit. A production re-derivation keeps the steel-tube cage. The cage tubes
    and gussets are laser-cut by a service and jig-welded; the four-tank fuel
    system becomes two integral tanks of about 100 gal.
-5. **AERO's engine dry weights, checked against the engine type data sheets.**
+6. **AERO's engine dry weights, checked against the engine type data sheets.**
    - The Meyers IO-520-A is 431 lb (TCDS E5CE), not 415, so its swap saves
      105-133 lb, not 89.
    - The Aries O-540-A4D5 is 375 lb without starter and alternator (TCDS E-295).
@@ -62,10 +72,10 @@ and the Cozy MKIV as the reference.
      typical installed weight". If that is right, AERO's dry x 1.25 rule
      double-counts 71 lb per AM20T. We don't credit it; asking Aeromomentum needs
      Bill's go-ahead.
-6. **Every design on the list is a re-derivation:** the IV-P's molds are lost,
+7. **Every design on the list is a re-derivation:** the IV-P's molds are lost,
    the Express's are unaccounted for, the 301 and the Meyers are new designs from
    a layout, and the Aries's drawings sit with a dormant TC holder.
-7. **A home shop (about $20-49k of tools) makes molded-weight composite parts and
+8. **A home shop (about $20-49k of tools) makes molded-weight composite parts and
    matched-hole metal parts.** On the Express it saves about $30-60k against a
    complete kit, at 1,750-4,000 more builder hours, nearly all of them
    mold-making (more cash on the IV-P, whose re-derived kit costs more). On the metal Aries it saves more cash, $40-90k, for 600-1,200
@@ -85,6 +95,7 @@ are in each dossier but not in these totals.
 
 | Design | Stage 3 empty, lb (basis) | Airframe change, lb | Rebuild empty, lb (no engine credit) | Useful load, lb (stage 3 -> stage 4) | Engine change, lb (our check) | Rebuild empty with engine credit, lb | Grade |
 |---|---|---|---|---|---|---|---|
+| Prescott Pusher | 1,550 (F) | -130 to -20 | 1,420-1,630 | 850 -> 770-980 | +54 to +71 | 1,470-1,700 | E |
 | Bellanca T-250 Aries | 1,850 (F) | -75 to +50 | 1,780-2,000 | 1,300 -> 1,150-1,370 | -81 to -63 | 1,690-1,940 | E |
 | Wheeler Express | 1,994 (R) | -225 to -20 | 1,770-2,030 | 901 -> 865-1,125 | -6 to +23 | 1,760-2,050 | E |
 | Lancair IV-P | 2,200 (F) | -55 to +25 | 2,140-2,360 | 1,350 -> 1,190-1,410 | -242 to -150 | 1,900-2,220 | E |
@@ -161,6 +172,7 @@ dry" includes, so we add 0-25 lb (E).
 
 | Design | Engine flown (source) | AERO's assumed dry, lb | Published dry, lb (basis) | Original installed, lb (x1.15) | AERO's swap change | Our swap change |
 |---|---|---|---|---|---|---|
+| Prescott Pusher | O-360, 180 hp (Prescott specs; AOPA 1986). Dash number not found | none yet (stage 3 pending) | O-360-A1A 258, without starter and alternator (TCDS E-286 Rev 21); manual basis about 278-293 (E: TCDS + 20-35) | 320-337 | not yet computed | +54 to +71 (AM20T); AM15T -33 to -16 |
 | Bellanca T-250 Aries | O-540-A4D5, 250 hp (dossier); 51A: IO-540-C4B5 | 395 | 375, without starter and alternator (TCDS E-295 Rev 19, Note 5) | 454-472 | -64 | -81 to -63 |
 | Wheeler Express | IO-360-ES1B 210 hp (CAFE report) | 330 | 320 (E1CE Rev 21) | 368-397 | +11 | -6 to +23 |
 | Lancair IV-P | TSIO-550-E or -B, 350 hp (not confirmed by a builder or Lancair document); CAFE's N114L flew a Regan TIO-540, 360 hp | 550 | 470.2 including both turbos, intercoolers not listed (TCDS E5SO Rev 13) | 541-633 | -242 | -242 to -150 |
@@ -193,6 +205,60 @@ Printed molds may cut material cost about a third and lead time by half (IACMI
 2017; CompositesWorld 2021), which we do not credit. For scale, Kitplanes (Jul
 2024) puts the capital to rebuild a whole kit company at $5-15M; this is the
 molds alone.
+
+### Prescott Pusher (first pass)
+
+**Original construction** (AOPA Pilot, March 1986, P, re-read 2026-10-24): "a
+combination of tubular steel fuselage covered with a composite, non-structural
+shell". The flying surfaces are "conventional aluminum-covered, built-up spar
+and rib construction" with "flush riveting ... in all aluminum surfaces", on a
+NASA natural-laminar-flow section. The engine sits aft of the cabin and drives
+the prop through a short extension, about 12 in according to a research agent's
+OCR of the same article, which we did not re-verify. A 180 hp O-360. Kits were
+$29,500 fixed-gear and $36,500 retractable, without engine, prop, avionics or
+interior, and the company projected 1,500 build hours (P, AOPA Pilot 1986). The
+museum's finding guide for collection SC.10269 says "about five years" per
+plane (B). The published empty weight is 1,550 lb against a 1986 design target
+of 1,220 lb, and no as-built weighing was found.
+
+**Rebuild empty weight:** 1,420-1,630 lb, useful load 770-980 lb at 2,400 lb
+gross (table above; all E). The pieces:
+
+- **Carbon shell over the kept cage:** -10 to -25 lb. The shell carries no load, so
+  only its laminate changes.
+- **Molded carbon wing in place of the aluminium one:** -20 to -60 lb. It also
+  holds the laminar section better than flush rivets, which AERO might credit
+  in drag (we don't).
+- **Carbon T-tail:** -5 to -15 lb.
+- **Panel:** -10 to -30 lb.
+- **Additions:** the EFI backup bus and a radiator duct add some weight back.
+- **Option: replace the cage with a structural carbon monocoque.** It saves a
+  further 30-70 lb, but gives up the cage's crash protection and needs STRUCTURES.
+
+**What moves it over the floor.** Structure alone doesn't. The AM20T installs
+54-71 lb heavier than the O-360 (O-360-A1A 258 lb per TCDS E-286, plus starter
+and alternator), so on that engine the useful load falls further. Two things
+would move it:
+
+- **Gross weight.** Prescott tested the structure at 2,400 lb and 3.8 g. A
+  rebuild designed and substantiated for more gross weight, with the weight a
+  modern structure saves, is the real lever, and it needs STRUCTURES.
+- **The engine.** The AM15T (160 hp, 215 lb) installs about 16-33 lb lighter than
+  the O-360, but at less power.
+
+**Modern route and home shop.** The aluminium wing and tail suit matched-hole
+CNC sheet metal, like the Aries: the router cuts 2024-T3, with routed form
+blocks. The cage stays welded 4130, as Prescott heliarc-welded it at the factory,
+so it is welded by a qualified welder or a shop. The shell is home-molded: about
+260 ft2 of mold surface, 520-1,040 h and $4-10k of materials (E). Molding a
+carbon wing adds about 290 ft2 more (580-1,160 h). Service-route tooling for a
+small kit run: $60-180k (E). That covers shell molds (about 260 ft2 at
+$120-360/ft2), a welding jig ($10-30k) and matched-hole wing tooling ($20-60k).
+
+**Re-derivation.** The museum's collection SC.10269 lists the drawings, the wing
+static test, the loads report and the weight-and-balance schedule (finding
+guide, Dec 2022). Those would replace most of the estimates above. Contacting the
+museum is Bill's call; Elon has asked him.
 
 ### Bellanca T-250 Aries (metal, matched-hole)
 
@@ -453,6 +519,7 @@ have not started them, and will once Bill carries the design forward.
 
 | Design | Original tooling | What re-deriving it would take |
 |---|---|---|
+| Prescott Pusher | Drawings, structural test reports, loads and weight-and-balance folders at the San Diego Air & Space Museum, collection SC.10269 (public finding guide) | Read the collection, which needs museum contact (Bill's call; Elon has asked), then re-derive. The rights holder is not yet known |
 | Bellanca T-250 Aries | Drawings and jigs with a dormant TC holder (A11SW, Anderson Greenwood); not located | Measure one of the four registered aircraft (contact is Bill's call), or recover the drawings through the rights route (Elon, AER-3805) |
 | Wheeler Express | Unknown since about 2009 | Re-derive from about 55 active airframes and the CAFE data, with a new tail |
 | Lancair IV-P | No known location since the 2017 Uvalde sale; the 2023 JetEXE molds claim was withdrawn | Re-derive from one of about 235 registered airframes, unless the molds turn up. Chain of title to an attorney first |

@@ -1,4 +1,22 @@
 {
+ "prescott-pusher": {
+  "name": "Prescott Pusher",
+  "mtow": 2400,
+  "stage3_empty": 1550,
+  "stage3_useful": 850,
+  "airframe_delta_light": -130,
+  "airframe_delta_heavy": -20,
+  "empty_light": 1420,
+  "empty_heavy": 1630,
+  "useful_light": 770,
+  "useful_heavy": 980,
+  "engine_delta_lb": [
+   54,
+   71
+  ],
+  "empty_light_eng": 1470,
+  "empty_heavy_eng": 1700
+ },
  "bellanca-t250-aries": {
   "name": "Bellanca T-250 Aries",
   "mtow": 3150,

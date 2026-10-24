@@ -1,6 +1,74 @@
 {
  "note": "Stage 4 rebuild empty-weight inputs (AER-3784, MANUFACTURING, 2026-10-24; revised to the stage 3 revision 2 shortlist). Signed deltas in lb: light = lightest credible outcome, heavy = heaviest. Grades as in the long list: F factory, T TCDS, P pilot report or flight test, B builder or registry data, R measured record, E our estimate. The engine swap is not among the items; engine_delta_lb is [most saving, least saving] from our per-variant engine check (docs/MANUFACTURING.md#engine-check), on AERO's Aeromomentum rule (dry x 1.25 + 35 lb). Laminate arithmetic behind the composite items is in docs/MANUFACTURING.md#how-the-composite-deltas-are-built.",
  "designs": {
+  "prescott-pusher": {
+   "name": "Prescott Pusher",
+   "mtow": 2400,
+   "stage3_empty": 1550,
+   "base": {
+    "low": 1550,
+    "high": 1650,
+    "stage3_grade": "F",
+    "basis": "1,550 published spec (F, Prescott via 1000aircraftphotos.com, read 2026-10-24); no as-built weighing found. Heavy end +100 lb for an equipped kit build (E). The 1986 design target was 1,220 lb (P, AOPA Pilot Mar 1986): the airframe grew 330 lb before the published spec",
+    "grade": "F/E"
+   },
+   "engine_delta_lb": [
+    54,
+    71
+   ],
+   "items": [
+    {
+     "item": "Fuselage shell: non-structural composite shell over the 4130 cage, re-made in infused carbon (cage kept)",
+     "light": -25,
+     "heavy": -10,
+     "grade": "E",
+     "basis": "Shell is non-structural (P, AOPA Pilot 1986), so only the laminate changes: about 200 ft2 (E; no wetted area yet) at 2 plies, glass 0.11-0.12 against carbon 0.066 lb/ft2 per ply"
+    },
+    {
+     "item": "Wing: flush-riveted aluminium, built-up spars and ribs (110.8 ft2) -> molded carbon wing",
+     "light": -60,
+     "heavy": -20,
+     "grade": "E",
+     "basis": "Metal GA wing about 2.0-2.5 lb/ft2 of exposed planform (Raymer, approximate weight build-up), about 190-240 lb; a molded carbon wing saves 10-25% (E)"
+    },
+    {
+     "item": "T-tail: aluminium -> carbon",
+     "light": -15,
+     "heavy": -5,
+     "grade": "E",
+     "basis": "Tail areas not published; about 40-60 lb of tail (E)"
+    },
+    {
+     "item": "Panel: 1980s avionics -> EFIS",
+     "light": -30,
+     "heavy": -10,
+     "grade": "E",
+     "basis": "1980s panel"
+    },
+    {
+     "item": "EFI engine: backup battery and bus",
+     "light": 5,
+     "heavy": 10,
+     "grade": "E",
+     "basis": "One ECU"
+    },
+    {
+     "item": "Pusher radiator duct and cowl for a liquid-cooled engine aft of the cabin",
+     "light": -5,
+     "heavy": 15,
+     "grade": "E",
+     "basis": "Duct may add; the air-cooled baffles come out"
+    },
+    {
+     "item": "Replace the 4130 cage too: structural carbon monocoque fuselage",
+     "light": -70,
+     "heavy": -30,
+     "grade": "E",
+     "option": true,
+     "basis": "Cage about 90-140 lb for a four-seat tube fuselage (E); a load-carrying shell adds most of it back; loses the cage's crash protection; needs STRUCTURES"
+    }
+   ]
+  },
   "bellanca-t250-aries": {
    "name": "Bellanca T-250 Aries",
    "mtow": 3150,
