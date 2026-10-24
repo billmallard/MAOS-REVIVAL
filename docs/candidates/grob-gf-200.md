@@ -29,19 +29,22 @@ Grades: F factory/brochure/designer claim; T type certificate data sheet; P flig
 | Usable fuel | 92.5 US gal | F | [source](https://en.wikipedia.org/wiki/Grob_GF_200) | 350 L capacity |
 | Published range | 1,431 nm | F | [source](https://en.wikipedia.org/wiki/Grob_GF_200) | not stated |
 
-Cruise settings (the starred row is the one screened for speed):
+Cruise settings (P = screened as published, M = screened as measured; the basis follows the grade unless a setting states it):
 
 | KTAS | Altitude, ft | Power | Fuel flow, gph | Grade | Source | Note |
 |---|---|---|---|---|---|---|
-| 240 * | - | - | - | F | [source](https://en.wikipedia.org/wiki/Grob_GF_200) | max cruise, 445 km/h converted, no conditions |
+| 240 P | - | - | - | F | [source](https://en.wikipedia.org/wiki/Grob_GF_200) | max cruise, 445 km/h converted, no conditions |
 
-## Screen (stage 1, published numbers)
+## Screen (published numbers; like for like)
 
-- **Verdict: incomplete**
-- Useful load: - lb (?) against 1,000 lb.
-- Range: 1,431 nm still-air (pass; basis: pub) against 1,000 nm.
-- Cruise: 240 KTAS at an unstated altitude (pass+) against >160 KTAS (>180 preferred).
-- Payload at 1,000 nm: Cannot be computed: no fuel quantity or no fuel flow published.
+Two screens, never mixed: the maker's figures as published, and measured or reported data. The three targets are separate floors; payload at 1,000 nm is information only.
+
+- **As published: incomplete: no UL**
+  - Useful load: - lb (?) against 1,000 lb.
+  - Range: 1,431 nm (pass; not stated) against 1,000 nm.
+  - Cruise: 240 KTAS at an unstated altitude (pass+) against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): cannot be computed on this basis.
+- **Measured or reported: no data found.**
 - Aeromomentum fit (first cut): Short: AM20T 260 hp vs 270 hp (-1% speed, est. 237 KTAS).
 
 Sanity flags:
@@ -52,6 +55,10 @@ Sanity flags:
 ## Why it died
 
 No production partner found; Grob moved to GF 250/300 concepts, also unfunded (Flight).
+
+## Idea ledger (what a new airplane should keep; AERO's judgement)
+
+- A mid-mounted engine with a shaft to a pusher prop behind a T-tail and a laminar composite wing: the VK-30's idea done by a sailplane maker.
 
 ## Rights and provenance (known so far; research, not legal advice)
 

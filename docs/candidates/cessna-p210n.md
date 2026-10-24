@@ -29,21 +29,28 @@ Grades: F factory/brochure/designer claim; T type certificate data sheet; P flig
 | Usable fuel | 87 US gal | T | FAA DRS, TCDS 3A21 Rev 50, 18 Nov 2021, read 2026-10-24 (archived: docs/longlist/sources/tcds-3A21-rev50-2021-11-18.pdf); value unchanged from Rev 49 | S/N 761 on; 89 earlier |
 | Published range | 925 nm | F | [source](https://australianaviation.com.au/1978/06/p210cessnas-high-flying-single/) | standard fuel, power and reserve not stated |
 
-Cruise settings (the starred row is the one screened for speed):
+Cruise settings (P = screened as published, M = screened as measured; the basis follows the grade unless a setting states it):
 
 | KTAS | Altitude, ft | Power | Fuel flow, gph | Grade | Source | Note |
 |---|---|---|---|---|---|---|
-| 199 * | 20000 | - | - | P | [source](https://australianaviation.com.au/1978/06/p210cessnas-high-flying-single/) | flight test, 33 in / 2,500 rpm |
+| 199 M | 20000 | - | - | P | [source](https://australianaviation.com.au/1978/06/p210cessnas-high-flying-single/) | flight test, 33 in / 2,500 rpm |
 | 183 | 20000 | 75% | 15.5 | F | [source](https://australianaviation.com.au/1978/06/p210cessnas-high-flying-single/) | 11.8 nm/gal |
-| 196 | 20000 | 80% | 18.8 | F | [source](https://australianaviation.com.au/1978/06/p210cessnas-high-flying-single/) | 10.4 nm/gal |
+| 196 P | 20000 | 80% | 18.8 | F | [source](https://australianaviation.com.au/1978/06/p210cessnas-high-flying-single/) | 10.4 nm/gal |
 
-## Screen (stage 1, published numbers)
+## Screen (published numbers; like for like)
 
-- **Verdict: pass**
-- Useful load: 1,480 lb (pass) against 1,000 lb.
-- Range: 1,027 nm still-air (pass; basis: calc) against 1,000 nm.
-- Cruise: 199 KTAS at 20,000 ft (pass+) against >160 KTAS (>180 preferred).
-- Payload at 1,000 nm: 972 lb with no reserve; not possible (tanks too small) with a 45 min reserve. Setting: 183 KTAS at 15.5 gph.
+Two screens, never mixed: the maker's figures as published, and measured or reported data. The three targets are separate floors; payload at 1,000 nm is information only.
+
+- **As published: near miss** - range -75 nm
+  - Useful load: 1,574 lb (pass) against 1,000 lb.
+  - Range: 925 nm (near; standard fuel, power and reserve not stated) against 1,000 nm.
+  - Cruise: 196 KTAS at 20,000 ft (pass+) against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): 1,066 / cannot @ 183 kt, 15.5 gph.
+- **Measured or reported: partial: UL pass, speed pass**
+  - Useful load: 1,480 lb (pass) against 1,000 lb.
+  - Range: - nm (?; none found) against 1,000 nm.
+  - Cruise: 199 KTAS at 20,000 ft (pass+) against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): cannot be computed on this basis.
 - Aeromomentum fit (first cut): Short: AM20T 260 hp vs 285 hp (-3% speed, est. 193 KTAS).
 
 Sanity flags:
@@ -54,6 +61,10 @@ Sanity flags:
 ## Why it died
 
 The Pressurized Centurion ended with Cessna's 1986 piston shutdown; the P210R sold only ~40 against the Malibu (P&P 2005).
+
+## Idea ledger (what a new airplane should keep; AERO's judgement)
+
+- Six seats, pressurisation and a large, well-documented fleet: the calibration case for the method. Kit builders now attempt 210 analogs (see the long list).
 
 ## Rights and provenance (known so far; research, not legal advice)
 

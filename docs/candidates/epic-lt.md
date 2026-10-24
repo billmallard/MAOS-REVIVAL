@@ -29,20 +29,27 @@ Grades: F factory/brochure/designer claim; T type certificate data sheet; P flig
 | Usable fuel | 288 US gal | P | [source](https://www.aopa.org/News-and-Video/All-News/2013/October/Pilot/Epic-LT-Seeing-is-believing) | - |
 | Published range | 1,874 nm | F | [source](https://en.wikipedia.org/wiki/Epic_LT) | long-range tanks |
 
-Cruise settings (the starred row is the one screened for speed):
+Cruise settings (P = screened as published, M = screened as measured; the basis follows the grade unless a setting states it):
 
 | KTAS | Altitude, ft | Power | Fuel flow, gph | Grade | Source | Note |
 |---|---|---|---|---|---|---|
-| 317 * | 27000 | - | 52.5 | P | [source](https://www.aopa.org/News-and-Video/All-News/2013/October/Pilot/Epic-LT-Seeing-is-believing) | measured |
+| 317 M | 27000 | - | 52.5 | P | [source](https://www.aopa.org/News-and-Video/All-News/2013/October/Pilot/Epic-LT-Seeing-is-believing) | measured |
 | 270 | 28000 | - | 44 | P | [source](https://www.aopa.org/News-and-Video/All-News/2013/October/Pilot/Epic-LT-Seeing-is-believing) | best economy |
 
-## Screen (stage 1, published numbers)
+## Screen (published numbers; like for like)
 
-- **Verdict: pass**
-- Useful load: 3,100 lb (pass) against 1,000 lb.
-- Range: 1,767 nm still-air (pass; basis: calc) against 1,000 nm.
-- Cruise: 317 KTAS at 27,000 ft (pass+) against >160 KTAS (>180 preferred).
-- Payload at 1,000 nm: 2,008 lb with no reserve; 1,787 lb with a 45 min reserve. Setting: 270 KTAS at 44.0 gph.
+Two screens, never mixed: the maker's figures as published, and measured or reported data. The three targets are separate floors; payload at 1,000 nm is information only.
+
+- **As published: incomplete: no speed**
+  - Useful load: 3,100 lb (pass) against 1,000 lb.
+  - Range: 1,874 nm (pass; long-range tanks) against 1,000 nm.
+  - Cruise: not found against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): cannot be computed on this basis.
+- **Measured or reported: partial: range pass, speed pass**
+  - Useful load: - lb (?) against 1,000 lb.
+  - Range: 1,767 nm (pass; still air, no reserve, from fuel and measured flow) against 1,000 nm.
+  - Cruise: 317 KTAS at 27,000 ft (pass+) against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): cannot be computed on this basis.
 - Aeromomentum fit (first cut): No: turbine; no Aeromomentum equivalent.
 
 Sanity flags:
@@ -52,6 +59,10 @@ Sanity flags:
 ## Why it died
 
 Bankrupt Aug 2009; stopped LT kit orders in 2013 to focus on the E1000 (Wikipedia).
+
+## Idea ledger (what a new airplane should keep; AERO's judgement)
+
+- A carbon-composite six-seat pressurised kit turboprop that grew into a certified type (E1000).
 
 ## Rights and provenance (known so far; research, not legal advice)
 

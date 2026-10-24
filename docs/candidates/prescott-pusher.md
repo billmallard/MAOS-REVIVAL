@@ -29,29 +29,41 @@ Grades: F factory/brochure/designer claim; T type certificate data sheet; P flig
 | Usable fuel | 56.5 US gal | F | [source](https://1000aircraftphotos.com/Contributions/6802.htm) | second prototype |
 | Published range | 869 nm | F | [source](https://1000aircraftphotos.com/Contributions/6802.htm) | not stated (1,000 mi) |
 
-Cruise settings (the starred row is the one screened for speed):
+Cruise settings (P = screened as published, M = screened as measured; the basis follows the grade unless a setting states it):
 
 | KTAS | Altitude, ft | Power | Fuel flow, gph | Grade | Source | Note |
 |---|---|---|---|---|---|---|
-| 151 * | - | 73% | - | P | [source](https://www.kitplanes.com/archive-may-1988/) | measured, Kitplanes May 1988 |
-| 165 | 7500 | - | - | F | [source](https://1000aircraftphotos.com/Contributions/6802.htm) | brochure, 190 mph converted |
+| 151 M | - | 73% | - | P | [source](https://www.kitplanes.com/archive-may-1988/) | measured, Kitplanes May 1988 |
+| 165 P | 7500 | - | - | F | [source](https://1000aircraftphotos.com/Contributions/6802.htm) | brochure, 190 mph converted |
 
-## Screen (stage 1, published numbers)
+## Screen (published numbers; like for like)
 
-- **Verdict: fail** - UL -150 lb, range -134 nm, speed -9 kt
-- Useful load: 850 lb (fail) against 1,000 lb.
-- Range: 866 nm still-air (fail; basis: calc, est. flow) against 1,000 nm.
-- Cruise: 151 KTAS at an unstated altitude (near) against >160 KTAS (>180 preferred).
-- Payload at 1,000 nm: Does not reach 1,000 nm on usable fuel: 866 nm still-air maximum.
+Two screens, never mixed: the maker's figures as published, and measured or reported data. The three targets are separate floors; payload at 1,000 nm is information only.
+
+- **As published: fail** - UL -150 lb, range -131 nm
+  - Useful load: 850 lb (fail) against 1,000 lb.
+  - Range: 869 nm (fail; not stated (1,000 mi)) against 1,000 nm.
+  - Cruise: 165 KTAS at 7,500 ft (pass) against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): cannot (866 nm max).
+- **Measured or reported: partial: speed near, speed unconditioned** - speed -9 kt
+  - Useful load: - lb (?) against 1,000 lb.
+  - Range: - nm (?; none found) against 1,000 nm.
+  - Cruise: 151 KTAS at an unstated altitude (near) against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): cannot be computed on this basis.
 - Aeromomentum fit (first cut): Yes: AM20T (260 hp) for 180 hp.
 
 Sanity flags:
 
-- screen speed has no altitude, or is below 6,000 ft
+- none raised
 
 ## Why it died
 
 Builders cited slow parts delivery; kits stopped ~1989 and the company folded 1991 (Kitplanes; SDASM).
+
+## Idea ledger (what a new airplane should keep; AERO's judgement)
+
+- A four-seat pusher designed with CAD/CAM in the 1980s around a steel-tube fuselage, aimed at a low-cost kit.
+- Lesson: slow parts supply killed it before the airframe could prove itself; kit logistics are part of the design.
 
 ## Rights and provenance (known so far; research, not legal advice)
 

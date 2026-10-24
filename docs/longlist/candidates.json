@@ -76,6 +76,36 @@
     "grade": "F",
     "src": "https://www.aircraftspruce.com/cozy/specs.html",
     "note": "185 mph converted, 40% power"
+   },
+   {
+    "ktas": 176.7,
+    "alt_ft": 8021,
+    "power_pct": null,
+    "gph": 10.0,
+    "grade": "P",
+    "basis": "meas",
+    "src": "http://acversailles.free.fr/documentation/03~Documentation_Generale_M_Suire/Essais_en_vol/COZY_MARK-IV.pdf",
+    "note": "CAFE flight test, N494CZ, IO-360 180 hp, WOT 23.5 in / 2,607 rpm, best-power region, density altitude, 1,864 lb"
+   },
+   {
+    "ktas": 169.5,
+    "alt_ft": 12032,
+    "power_pct": null,
+    "gph": 8.2,
+    "grade": "P",
+    "basis": "meas",
+    "src": "http://acversailles.free.fr/documentation/03~Documentation_Generale_M_Suire/Essais_en_vol/COZY_MARK-IV.pdf",
+    "note": "CAFE flight test, N494CZ, WOT 20.1 in / 2,545 rpm, mid mixture sweep, density altitude, 1,874 lb"
+   },
+   {
+    "ktas": 163.5,
+    "alt_ft": 8102,
+    "power_pct": null,
+    "gph": 8.3,
+    "grade": "P",
+    "basis": "meas",
+    "src": "http://acversailles.free.fr/documentation/03~Documentation_Generale_M_Suire/Essais_en_vol/COZY_MARK-IV.pdf",
+    "note": "CAFE flight test, N494CZ, WOT 23.5 in / 2,500 rpm, lean of peak, density altitude"
    }
   ],
   "range": {
@@ -89,8 +119,24 @@
   "rights": "Aircraft Spruce (exclusive marketing rights from Co-Z Development, 2004); also bought Brock metal-parts tooling 2005.",
   "safety": "Co-Z FAQ cites two fatal accidents (to ~2009); a four-aboard MKIV was lost off California 15 Jan 2024 (NBC LA).",
   "flags": [
-   "no builder-fleet empty weight found; the 1,000 lb useful load rests on the designer's estimated empty weight",
-   "the only published speed/flow pair (192 kt, 10.5 gph) is a claim, and the 40%-power range has no published flow"
+   "the only published speed/flow pair (192 kt, 10.5 gph) is a claim, and the 40%-power range has no published flow",
+   "as published (1,000 lb, 1,129 nm, 191 KTAS at 8,000 ft) it passes all three floors; the 951 nm in the first version of this list was 52 gal / 10.5 gph x 192 kt, the AOPA-quoted max-cruise claim, set against a range published at 40% power: a basis mismatch, not a units error (1,300 statute mi = 1,129 nm is right)"
+  ],
+  "useful_fleet": [
+   871,
+   "P",
+   "http://acversailles.free.fr/documentation/03~Documentation_Generale_M_Suire/Essais_en_vol/COZY_MARK-IV.pdf",
+   "one builder aircraft weighed by the CAFE Foundation (N494CZ, 1,179.3 lb empty) against the 2,050 lb design gross; not a fleet average"
+  ],
+  "fuel_gal_meas": [
+   50.74,
+   "P",
+   "http://acversailles.free.fr/documentation/03~Documentation_Generale_M_Suire/Essais_en_vol/COZY_MARK-IV.pdf",
+   "CAFE-measured usable fuel, N494CZ"
+  ],
+  "ideas": [
+   "Side-by-side front seats in a canard pusher: the Long-EZ layout widened to four seats without losing its cruise efficiency on 180 hp.",
+   "Moldless foam-and-glass construction that a plans builder can do without tooling; the cost is build hours and builder-to-builder weight scatter (871 lb useful on the CAFE aircraft against 1,000 lb designed)."
   ]
  },
  {
@@ -169,7 +215,11 @@
   "why_died_short": "Plans withdrawn 1985 over liability exposure",
   "why_died": "RAF stopped selling all plans in June 1985 over product-liability exposure after a lawsuit (Wikipedia, Rutan VariEze).",
   "rights": "Rutan Aircraft Factory retains rights; plans not sold.",
-  "safety": "Wikipedia (Feb 2023): 114 airframes lost, 44 fatalities."
+  "safety": "Wikipedia (Feb 2023): 114 airframes lost, 44 fatalities.",
+  "ideas": [
+   "The efficiency benchmark of the class: two seats and over 1,000 nm on about 115 hp, from low wetted area, a pusher prop in clean air and a canard that will not stall the main wing first.",
+   "Lesson: plans were withdrawn for liability, not performance; a revival's builder-support and liability model matters as much as the airframe."
+  ]
  },
  {
   "id": "berkut-360",
@@ -250,7 +300,11 @@
   "why_died_short": "Founder-partner lawsuits bankrupted the company; kit withdrawn 2002",
   "why_died": "Lawsuits between Ronneberg and Murphy bankrupted both; later owners did not last and a 2003 sale fell through (Wikipedia).",
   "rights": "Ronneberg -> Renaissance Composites (Riley, 1996) -> Berkut Engineering and Design. Current holder not public.",
-  "safety": "2002 in-flight canard separation (N827CM); 1995 and 1996 crashes (NTSB via Wikipedia)."
+  "safety": "2002 in-flight canard separation (N827CM); 1995 and 1996 crashes (NTSB via Wikipedia).",
+  "ideas": [
+   "Molded carbon and glass parts that turned the Long-EZ shape into a retractable 200 kt two-seater.",
+   "Lesson: over 100 molded parts meant expensive tooling and kits (Bill: 'expensive to build'); molds are an asset only while someone keeps them."
+  ]
  },
  {
   "id": "velocity-xl-rg",
@@ -338,7 +392,11 @@
   "why_died_short": "Alive: Velocity Inc. still sells kits",
   "why_died": "Not dead. Kits and a factory transition course are still offered (Kitplanes).",
   "rights": "Maher -> Scott and Duane Swing (1992) -> Rocket Racing (2008) -> Swing family again (2010).",
-  "safety": "Late-1980s deep-stall accidents in the original Velocity, addressed with leading-edge cuffs; residual 'pitch buck' needs training (Kitplanes 2020)."
+  "safety": "Late-1980s deep-stall accidents in the original Velocity, addressed with leading-edge cuffs; residual 'pitch buck' needs training (Kitplanes 2020).",
+  "ideas": [
+   "A canard pusher with a real cabin: four or five seats, gull-wing doors and retractable gear, sold as a kit continuously since the 1980s.",
+   "Raptor note (successor attempt, see the Raptor section when added): what it tried and why it failed belongs here as a lesson."
+  ]
  },
  {
   "id": "rutan-defiant",
@@ -383,6 +441,15 @@
   ],
   "cruise": [
    {
+    "ktas": 184,
+    "alt_ft": 8000,
+    "power_pct": 75,
+    "gph": 17.8,
+    "grade": "F",
+    "src": "http://www.cozybuilders.org/Canard_Pusher/1983-10_cp-38.pdf",
+    "note": "RAF plans spec, Canard Pusher 38 (Oct 1983); its text says 75% power, its spec table 70%; altitude 8,000 ft from the Skymaster spec block (https://337skymaster.com/defiant.htm), not stated in CP38"
+   },
+   {
     "ktas": 162,
     "alt_ft": 10000,
     "power_pct": null,
@@ -412,7 +479,11 @@
   "why_died_short": "Certification funding lost 1979; plans withdrawn 1985 (liability)",
   "why_died": "The 1979 certification effort lost its financing; plans ended with RAF's 1985 liability stop (Wikipedia; P&P).",
   "rights": "Rutan Aircraft Factory; not marketed.",
-  "safety": "No configuration-specific pattern found. Single-engine climb 150-400 fpm depending on which engine is out (T&T)."
+  "safety": "No configuration-specific pattern found. Single-engine climb 150-400 fpm depending on which engine is out (T&T).",
+  "ideas": [
+   "Centerline-thrust twin: engine-out without asymmetric thrust or a Vmc problem, which matters when both engines are uncertified conversions.",
+   "Moldless construction, no flaps, canard stall protection; record shows no engine-out accident on about 30 aircraft."
+  ]
  },
  {
   "id": "cirrus-vk-30",
@@ -484,7 +555,11 @@
   "why_died_short": "Cirrus dropped it in 1993 to build the certified SR20",
   "why_died": "Discontinued 1993 as Cirrus moved to certified aircraft; replacement wing announced 1996 for ~28 kits (Wikipedia).",
   "rights": "Cirrus Design, now Cirrus Aircraft. No support program found.",
-  "safety": "7 US crashes, 10 fatalities 1990-2020 (NTSB via Wikipedia), incl. a 1996 stall-test crash in a turbine conversion; prop-governor oil line chafe forced landing on the prototype."
+  "safety": "7 US crashes, 10 fatalities 1990-2020 (NTSB via Wikipedia), incl. a 1996 stall-test crash in a turbine conversion; prop-governor oil line chafe forced landing on the prototype.",
+  "ideas": [
+   "A laminar-flow composite wing and a clean pusher fuselage that reached about 200 KTAS on 290-300 hp, the design the Cirrus team learned on before the SR20.",
+   "Lesson: its long shaft drive, cruise-flap flutter and aft-CG spin recovery are what a pusher with a buried engine must design out."
+  ]
  },
  {
   "id": "prescott-pusher",
@@ -556,7 +631,11 @@
   "why_died_short": "Slow parts supply and weak sales; company folded 1991",
   "why_died": "Builders cited slow parts delivery; kits stopped ~1989 and the company folded 1991 (Kitplanes; SDASM).",
   "rights": "Not found.",
-  "safety": "Not found."
+  "safety": "Not found.",
+  "ideas": [
+   "A four-seat pusher designed with CAD/CAM in the 1980s around a steel-tube fuselage, aimed at a low-cost kit.",
+   "Lesson: slow parts supply killed it before the airframe could prove itself; kit logistics are part of the design."
+  ]
  },
  {
   "id": "questair-venture",
@@ -619,7 +698,11 @@
   "why_died_short": "Bankruptcy around 1991; parts and support only today",
   "why_died": "Questair was struggling to come out of bankruptcy in 1991 (Kitplanes); the fixed-gear Spirit did not save it.",
   "rights": "Questair Venture LLC (Dan Myers, Jim Cook) since 2013: parts, support, a few original kits.",
-  "safety": "Braking/steering mod kit sold, pointing to a ground-handling weakness (EAA 2017)."
+  "safety": "Braking/steering mod kit sold, pointing to a ground-handling weakness (EAA 2017).",
+  "ideas": [
+   "Compound-curve metal skins and a very small, very clean two-seat airframe that cruised near 235 kt on 280 hp.",
+   "Proof that wetted area, not material, sets cruise efficiency; a modern composite or stretch-formed version keeps the shape."
+  ]
  },
  {
   "id": "lancair-iv-p",
@@ -700,7 +783,11 @@
   "why_died_short": "Kit production ended 2012; maker now parts and support only",
   "why_died": "Kits ended 2012; in 2016 the company sold older lines to concentrate on the Evolution (Wikipedia).",
   "rights": "Neibauer -> Bartels (2003) -> Huffstutlers, Lancair International (2017) -> JetEXE / Lancair Aerospace (2023).",
-  "safety": "NTSB narrative WPR12FA180: 26% of Lancairs in accidents, 19% fatal (model and period not stated); Wanttaja 1998-2007: 32 IV accidents, ~40% fatal."
+  "safety": "NTSB narrative WPR12FA180: 26% of Lancairs in accidents, 19% fatal (model and period not stated); Wanttaja 1998-2007: 32 IV accidents, ~40% fatal.",
+  "ideas": [
+   "Pressurisation and FL240 cruise in a kit, the fastest piston four-seater of its era (published 287 KTAS at 24,000 ft).",
+   "Re-wing data point to follow (Oregon remanufacturer, Bill): a new wing on the same airframe as the fix for the stall-spin record."
+  ]
  },
  {
   "id": "lancair-legacy",
@@ -772,7 +859,10 @@
   "why_died_short": "Last kit 2016; more investment needed to continue",
   "why_died": "Last kit announced May 2016; continuing 'will require a significant investment' (Lancair).",
   "rights": "Same Lancair chain as the IV-P.",
-  "safety": "7 accidents 1998-2007; two-seat Lancairs ~30% stall-related (Wanttaja, Kitplanes)."
+  "safety": "7 accidents 1998-2007; two-seat Lancairs ~30% stall-related (Wanttaja, Kitplanes).",
+  "ideas": [
+   "A two-seat composite cruiser at 230 kt on 310 hp with a modern cockpit and fast build kit."
+  ]
  },
  {
   "id": "glasair-iii",
@@ -844,7 +934,10 @@
   "why_died_short": "Stoddard-Hamilton bankrupt 2001; revived as a carbon kit (AAC)",
   "why_died": "Stoddard-Hamilton went bankrupt in 2001; Advanced Aero Components now offers the G3 Heritage.",
   "rights": "Wathen / Glasair Aviation (2001) -> Jilin Hanxing (2012) -> Advanced Aero Components (II/III assets, 2017).",
-  "safety": "Not found."
+  "safety": "Not found.",
+  "ideas": [
+   "A two-seat fibreglass kit at about 224 KTAS on 300 hp; revived as a carbon kit, so the design outlived its company."
+  ]
  },
  {
   "id": "express-2000",
@@ -943,6 +1036,10 @@
   "safety": "1990 crash killed 4 (pilot error); demonstrator engine failure, no injuries (CAFE).",
   "flags": [
    "CAFE measured cruise on 210 hp is the best-evidenced speed/flow data in this list; a 300 hp build would be faster but heavier"
+  ],
+  "ideas": [
+   "Four real seats and a 1,000 lb design useful load on 210 hp, with the best-measured performance in the survey (CAFE 1997).",
+   "An NLF(1)-0215F laminar wing on a kit; a cruciform tail on the FT variant. Stall and yaw behaviour is the open issue (stage 3)."
   ]
  },
  {
@@ -1015,7 +1112,10 @@
   "why_died_short": "Kits ended 1989; lost military interest after a prototype crash",
   "why_died": "Company cited lack of certification progress; Kitplanes suggests the fatal turboprop-prototype crash cost it military interest.",
   "rights": "Airight LLC (Jim Ryan, 1994); parts inventory now with the SX300 Group. Formal rights holder not found.",
-  "safety": "At least 7 fatal accidents (some fuel unporting at low fuel) and 5 hull losses from main-gear trunnion failures (Kitplanes)."
+  "safety": "At least 7 fatal accidents (some fuel unporting at low fuel) and 5 hull losses from main-gear trunnion failures (Kitplanes).",
+  "ideas": [
+   "Ed Swearingen's all-metal, 240 kt two-seat kit: proof that a small, clean metal airframe can match composites on speed."
+  ]
  },
  {
   "id": "vans-rv-10",
@@ -1102,7 +1202,10 @@
   "why_died_short": "Alive: in production at Van's",
   "why_died": "Not dead. Still produced and supported.",
   "rights": "Van's Aircraft.",
-  "safety": "Not found; BRS kit available since 2019."
+  "safety": "Not found; BRS kit available since 2019.",
+  "ideas": [
+   "The commercial success the others are measured against: a fast-build metal kit with matched-hole parts that thousands of builders can finish, and a large, predictable fleet."
+  ]
  },
  {
   "id": "lancair-super-es",
@@ -1174,7 +1277,10 @@
   "why_died_short": "Kit production ended 2012",
   "why_died": "Out of production since 2012; no reason given (lancair.com).",
   "rights": "Same Lancair chain as the IV-P.",
-  "safety": "Fleet-wide Lancair statistics apply (see IV-P)."
+  "safety": "Fleet-wide Lancair statistics apply (see IV-P).",
+  "ideas": [
+   "A four-seat composite kit with fixed gear that cruises fast enough to need no retract; its concept became the certified Columbia/Cessna 350/400 line."
+  ]
  },
  {
   "id": "epic-lt",
@@ -1250,6 +1356,9 @@
   "safety": "Fatal crash at Egelsbach, 31 Mar 2019 (3 killed).",
   "flags": [
    "included only to represent the 6-seat kit class; a turbine airframe is outside the Aeromomentum mission"
+  ],
+  "ideas": [
+   "A carbon-composite six-seat pressurised kit turboprop that grew into a certified type (E1000)."
   ]
  },
  {
@@ -1317,6 +1426,9 @@
   "safety": "Not found.",
   "flags": [
    "a light-sport-scale four-seater; listed as the foreign kit benchmark, far below the targets"
+  ],
+  "ideas": [
+   "A four-seat retractable on a 115 hp Rotax: shows how far a light, clean airframe goes on little power, and what that costs in useful load."
   ]
  },
  {
@@ -1407,6 +1519,9 @@
   "safety": "Early detonation engine failures led to a turbo retrofit AD; 210 family accidents 20% fuel, 14% gear-up (Aviation Consumer).",
   "flags": [
    "owners add tip tanks to reach 1,000 nm with reserve; on factory fuel it is marginal"
+  ],
+  "ideas": [
+   "Six seats, pressurisation and a large, well-documented fleet: the calibration case for the method. Kit builders now attempt 210 analogs (see the long list)."
   ]
  },
  {
@@ -1497,6 +1612,9 @@
   "safety": "PA-46 family: ~21% of accidents engine-related (Aviation Consumer).",
   "flags": [
    "a live type family (M350 in production), so not orphaned"
+  ],
+  "ideas": [
+   "Cabin-class pressurised six-seat single; its engine troubles show how much an airframe's reputation rides on its powerplant."
   ]
  },
  {
@@ -1575,7 +1693,10 @@
   "why_died_short": "Mooney halted production in Nov 2019",
   "why_died": "Mooney furloughed its staff in Nov 2019 after 8 deliveries in three quarters (AvWeb).",
   "rights": "TC 2A3: Mooney International Corp (US owner group took 80% in 2020).",
-  "safety": "Not found."
+  "safety": "Not found.",
+  "ideas": [
+   "Mooney's steel-tube cage and low-drag airframe: 237 KTAS on 280 hp with four seats, from careful drag cleanup over decades."
+  ]
  },
  {
   "id": "cessna-ttx",
@@ -1653,7 +1774,10 @@
   "why_died_short": "Textron ended it in 2018 on slow sales against Cirrus",
   "why_died": "44 sold in 2015, 23 in 2017, against 355 Cirrus singles; production stopped 2018 (AOPA).",
   "rights": "TC A00003SE: Textron Aviation. Chain: Pacific Aviation Composites -> Lancair -> Columbia (bankrupt 2007) -> Cessna.",
-  "safety": "Not found."
+  "safety": "Not found.",
+  "ideas": [
+   "Certified all-composite four-seater with side-stick and 219 KTAS at FL220; lost on market share, not on performance."
+  ]
  },
  {
   "id": "meyers-200d",
@@ -1743,6 +1867,10 @@
   "safety": "20 accidents in 35 years; 5 tank-run-dry, 9 maintenance; no in-flight breakups (AvWeb).",
   "flags": [
    "the 187 kt / 12 gph pair comes from a weak source; at the owner's 15.5 gph the still-air range is ~730 nm"
+  ],
+  "ideas": [
+   "Steel-tube cabin cage inside a metal semimonocoque: crash protection and a reputation for strength and fine handling.",
+   "Lesson: hand-built at a loss ($4M to make $3M of airplanes); a re-derivation must design for cheap production from the start."
   ]
  },
  {
@@ -1830,6 +1958,9 @@
   "safety": "Wood deterioration AD 76-08-04; fuel-mismanagement accidents fell after the 1974 tank simplification (AvWeb).",
   "flags": [
    "turbo 17-31ATC reported at 190 kt at FL200 (AvWeb, fleet-grade)"
+  ],
+  "ideas": [
+   "A wooden wing and steel-tube fuselage on a fast four-seater: unusual materials can work, but low-rate production of them did not pay."
   ]
  },
  {
@@ -1896,6 +2027,10 @@
   "safety": "Second prototype lost in spin testing, 1969 (pilot ejected).",
   "flags": [
    "the first FAA-certified all-composite airplane; its TC is a rare composite certification precedent"
+  ],
+  "ideas": [
+   "The first FAA-certified all-composite airplane (with Dow): proof, in 1969, that composites could be certified.",
+   "Lesson: a $20M+ certification bill with no production volume behind it."
   ]
  },
  {
@@ -1960,7 +2095,11 @@
   "why_died_short": "Hi-Shear internal problems, then Wing Aircraft bankrupt 1982",
   "why_died": "Hi-Shear internal problems ended the first effort; Wing Aircraft Co. went bankrupt in July 1982 (Jane's; 1000aircraftphotos).",
   "rights": "TC A9WE: Hi-Shear -> Wing Aircraft Co.; Emerald Enterprises (San Diego) as of 1998 per Wikipedia, unsourced.",
-  "safety": "Second prototype broke up in 1964 when the horizontal stabilizer failed."
+  "safety": "Second prototype broke up in 1964 when the horizontal stabilizer failed.",
+  "ideas": [
+   "A two-seat, flush-riveted, chem-milled light twin: twin redundancy in a small, fast airframe.",
+   "Rotax-powered analogs shown at AERO Friedrichshafen 2026 (Bill) suggest the idea is alive; see the analog rows when added."
+  ]
  },
  {
   "id": "mooney-m22",
@@ -2023,7 +2162,10 @@
   "why_died_short": "Sold at a loss; helped bankrupt Mooney in 1969",
   "why_died": "Produced and sold at a loss, contributing to Mooney's 1969 bankruptcy; dropped by Butler/Aerostar (Wikipedia; P&P).",
   "rights": "TCDS A6SW Rev 6 (1 Dec 1973), status Current, holder line still \"Mooney Aircraft Corporation\" with no transfer recorded (FAA DRS, read 2026-10-24); the M20 TC 2A3 records every transfer to Mooney International. Who holds A6SW today is open. Mooney chain to Mooney International (US Financial LLC, 2020).",
-  "safety": "1975 fatal in-flight fire from a loose fuel-line nut (ASN)."
+  "safety": "1975 fatal in-flight fire from a loose fuel-line nut (ASN).",
+  "ideas": [
+   "An early pressurised single for five, in the 1960s; the cost and the company's finances, not the concept, sank it."
+  ]
  },
  {
   "id": "piper-comanche-400",
@@ -2110,7 +2252,10 @@
   "why_died_short": "Heavy and thirsty; the 1972 flood destroyed the Comanche tooling",
   "why_died": "Less payload than the Comanche B and a 400 hp burn; the whole line ended when the 1972 Agnes flood destroyed Lock Haven tooling (AvWeb).",
   "rights": "TCDS 1A15 holder: Piper Aircraft, Inc.",
-  "safety": "Rear-cylinder cooling problems reported."
+  "safety": "Rear-cylinder cooling problems reported.",
+  "ideas": [
+   "A fast, strong four-seater with an eight-cylinder engine; heavy and thirsty, and its tooling was lost in the 1972 flood."
+  ]
  },
  {
   "id": "rohr-2-175",
@@ -2153,6 +2298,10 @@
   "safety": "Driveshaft coupling failure after takeoff; landed undamaged.",
   "flags": [
    "1,450 lb gross weight: a 1,000 lb useful load is physically out of reach; a revival would be a new design inspired by it"
+  ],
+  "ideas": [
+   "Low delta wing, engine buried in the fuselage driving a shrouded pusher fan, folding wing and fin so it fits a garage: the planform and layout Bill wants studied.",
+   "Sparless foam-cored fibreglass stressed skin, with the wing and underbody as the main structure. Scale-up and reconstructability studies: see the dossier."
   ]
  },
  {
@@ -2215,6 +2364,9 @@
    "FAI C-1c/C-1d speed records 1975, 246-284 kt (measured, grade R)",
    "NASA/Ohio State flight test measured CD0 = 0.016 (NTRS 19770054238)",
    "no fuel capacity found, so the range cannot be built up"
+  ],
+  "ideas": [
+   "A laminar NACA 63-series wing and molded composite fuselage halves over honeycomb in the 1970s: about 230 kt with six seats."
   ]
  },
  {
@@ -2249,7 +2401,7 @@
    1452,
    "F",
    "https://en.wikipedia.org/wiki/Mooney_301",
-   "derived; Mooney newsletter claims 1,600"
+   "design figure: 4,000 gross less 2,548 empty (Air International Airdata File, Jan 1984), not stated as weighed; Mooney's spec sheet claims 1,600"
   ],
   "fuel_gal": [
    100,
@@ -2265,8 +2417,18 @@
     "gph": 19.7,
     "grade": "F",
     "src": "https://mooneyevents.com/Mooney301.html",
-    "note": "at 'max altitude'; prototype reportedly reached only 260 kt top speed",
-    "screen": true
+    "note": "design/marketing figure at 'max altitude', 75% (Mooney spec sheet), not a flight-test result. The prototype was 'slower than desired' with aero work unfinished; no as-flown cruise is published (Mooney Events; docs/rights/mooney-301.md)",
+    "screen": true,
+    "design": true
+   },
+   {
+    "ktas": 225,
+    "alt_ft": null,
+    "power_pct": null,
+    "gph": null,
+    "grade": "F",
+    "src": "https://en.wikipedia.org/wiki/Mooney_301",
+    "note": "259 mph cruise, Jane's 1983-84 pp. 444-445 (via Wikipedia); conditions not stated; also a design-era figure"
    }
   ],
   "range": {
@@ -2276,9 +2438,25 @@
    "src": "https://mooneyevents.com/Mooney301.html"
   },
   "why_died_short": "LTV takeover forced Mooney's sale; new owners wanted 300 kt; became the TBM 700",
-  "why_died": "Republic Steel's takeover by LTV forced the sale of Mooney; the new French-led owners judged the 301 ~200 lb heavy and too slow (Wikipedia).",
-  "rights": "Mooney (now Mooney International) vs Daher (TBM lineage): whether 301 data sits with either is not found.",
-  "safety": "No accidents found."
+  "why_died": "Republic Steel's takeover by LTV forced the sale of Mooney. The prototype was about 200 lb over its projected weight and, with aero work unfinished, slower than desired; the new French-led owners wanted close to 300 kt, which needed a turbine, and moved the effort into the Socata joint venture that became the TBM 700 (Mooney Events; Plane & Pilot; docs/rights/mooney-301.md).",
+  "rights": "No TC; one prototype, scrapped. M30 data went to Socata in 1987; whether Mooney International or Daher holds it is not shown (docs/rights/mooney-301.md).",
+  "safety": "No accidents found.",
+  "useful_asflown": [
+   1252,
+   "E",
+   "https://mooneyevents.com/Mooney301.html",
+   "AERO lower-bound estimate: 1,452 less the prototype's ~200 lb weight overrun (Mooney Events; Wikipedia; docs/rights/mooney-301.md). If 2,548 lb already includes the overrun, ~1,400 (1,600 less 200). Never weighed in public record"
+  ],
+  "flags": [
+   "useful load and cruise are design figures; the only prototype was ~200 lb over projected weight and 'slower than desired', and no as-flown speed or weight is published (Mooney Events; docs/rights/mooney-301.md)",
+   "the published 986 nm range is a 45 min reserve figure; fuel and flow give 1,016 nm on that basis, consistent within 3%",
+   "1,000 nm plus 45 min at 235 kt and 19.7 gph needs 98.6 of 100 gal with no climb allowance; below 231 KTAS at the same flow (about 4 kt under the design figure) it cannot carry the reserve (at Jane's 225 kt it needs 102 gal)",
+   "235 KTAS at 270 hp, 25,000 ft, 4,000 lb implies CD0 ~0.019 (AR 9.0, e 0.80, prop eta 0.80; AERO, grade E), optimistic for a 1983 pressurized single; at CD0 +20% the same power gives ~220 KTAS, still a pass on speed"
+  ],
+  "ideas": [
+   "A laminar wing, pressurisation and six seats on 360 hp, the concept behind the TBM 700.",
+   "Lesson: the prototype flew about 200 lb heavy and slower than planned; weight control was the failure, not the layout."
+  ]
  },
  {
   "id": "pipistrel-panthera",
@@ -2345,6 +2523,9 @@
   "safety": "Not checked.",
   "flags": [
    "the 1,460 nm claim is reproduced exactly by 420 L (2 x 210 L) at the published flow, while the published 770 lb full-fuel payload implies ~42-55 gal; both cannot be true, and the fuel quantity needs a primary source"
+  ],
+  "ideas": [
+   "Retractable trailing-link gear, gull-wing doors, an airframe parachute and a low-drag carbon shape on 260 hp; the certification time it took is the lesson."
   ]
  },
  {
@@ -2400,6 +2581,9 @@
   "safety": "Early engine cooling and noise problems; prop not visible from the cockpit.",
   "flags": [
    "empty weight not found, so useful load cannot be screened"
+  ],
+  "ideas": [
+   "A mid-mounted engine with a shaft to a pusher prop behind a T-tail and a laminar composite wing: the VK-30's idea done by a sailplane maker."
   ]
  },
  {
@@ -2464,7 +2648,10 @@
   "why_died_short": "Funding ran out in 2007 before certification",
   "why_died": "Development slowed for lack of funding in June 2007; certification targets missed (Flight; AvWeb).",
   "rights": "Evektor-Aerotechnik / Brno University of Technology. No TC exists.",
-  "safety": "Not found."
+  "safety": "Not found.",
+  "ideas": [
+   "A four-to-five-seat retractable from a European light-aircraft maker, stopped by funding before certification."
+  ]
  },
  {
   "id": "extra-ea-400",
@@ -2545,6 +2732,10 @@
   "safety": "Fatal accidents 1998 (first delivery), 2018 Oklahoma (5 killed), 2025 Switzerland (3 killed).",
   "flags": [
    "the only liquid-cooled certified piston here, so a natural precedent for a liquid-cooled Aeromomentum install"
+  ],
+  "ideas": [
+   "A high-wing, pressurised, six-seat composite single with a T-tail.",
+   "Lesson: about 16,000 labour hours per airplane made it unaffordable; the build method is the failure."
   ]
  },
  {
@@ -2632,7 +2823,10 @@
   "why_died_short": "Sales never recovered after 9/11; ended by 2012",
   "why_died": "Build-to-order after 9/11; all marketing and production ended by 2012 (Wikipedia citing Flight).",
   "rights": "EASA TC holder: Daher Aircraft SAS. FAA TCDS A51EU.",
-  "safety": "Not researched."
+  "safety": "Not researched.",
+  "ideas": [
+   "A turbocharged four-seater with a roomy cabin from a large European maker; ended by the post-2001 market, not the design."
+  ]
  },
  {
   "id": "robin-hr100-285",
@@ -2701,7 +2895,10 @@
   "why_died_short": "Its geared Continental Tiara engine failed in the market",
   "why_died": "The Tiara engine family was a commercial failure (fuel burn in the 1973 oil crisis); no source states Robin's own reason.",
   "rights": "EASA TC holder: CEAPR, Darois (from Apex, 2013).",
-  "safety": "Not found."
+  "safety": "Not found.",
+  "ideas": [
+   "An all-metal French four-seat retractable whose geared Tiara engine failed in service; the airframe was never the problem."
+  ]
  },
  {
   "id": "ruschmeyer-r90",
@@ -2770,7 +2967,10 @@
   "why_died_short": "Ruschmeyer bankrupt 1996; Solaris revival never delivered",
   "why_died": "Bankrupt June 1996; Solaris bought the assets in 1999 but no deliveries were found (Flying).",
   "rights": "EASA TC holder: Bernd Hager, Hannover (2022).",
-  "safety": "Abrupt wing drop at the stall (AOPA)."
+  "safety": "Abrupt wing drop at the stall (AOPA).",
+  "ideas": [
+   "A certified German composite four-seater with a derated 230 hp engine; ended by its maker's bankruptcy, not by the design."
+  ]
  },
  {
   "id": "siai-sf260",
@@ -2842,6 +3042,9 @@
   "why_died_short": "Military trainer; civil sales a sideline; ended 2017",
   "why_died": "No reason found; production ended in 2017.",
   "rights": "EASA TC holder: Leonardo S.p.A. FAA TCDS A10EU.",
-  "safety": "Not researched."
+  "safety": "Not researched.",
+  "ideas": [
+   "Aerobatic, fast and strong: 175 KTAS at 6,000 ft on 260 hp with three seats (flight manual), from a small, clean wing."
+  ]
  }
 ]

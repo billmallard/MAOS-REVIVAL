@@ -71,8 +71,10 @@ def val(field):
 
 
 def useful(c):
-    """Screen on the fleet figure where one is published, else the factory."""
-    return val(c.get("useful_fleet")) or val(c.get("useful"))
+    """Screen on the fleet figure where one is published, then an as-flown
+    estimate (a one-off prototype known to have flown heavier than its
+    published design figure), else the factory."""
+    return val(c.get("useful_fleet")) or val(c.get("useful_asflown")) or val(c.get("useful"))
 
 
 def flow(c, s):
@@ -96,10 +98,16 @@ def screen_setting(c):
     return settings(c)[0] if settings(c) else {}
 
 
-def legs(c, fuel=None):
-    """Per-setting still-air range and payload at LEG_NM."""
+def legs(c, fuel=None, b=None):
+    """Per-setting still-air range and payload at LEG_NM; b limits it to one
+    basis ('pub' or 'meas') and takes that basis's useful load and fuel."""
     ul = useful(c)
     fuel = fuel or val(c.get("fuel_gal"))
+    if b == "pub":
+        ul = val(c.get("useful"))
+    elif b == "meas":
+        ul = val(c.get("useful_fleet")) or val(c.get("useful_asflown"))
+        fuel = val(c.get("fuel_gal_meas")) or fuel
     dens = DENSITY[c.get("fuel_type", "avgas")]
     # Our estimated flow is used only when no setting publishes one.
     published = any(s.get("gph") for s in settings(c))
@@ -107,6 +115,8 @@ def legs(c, fuel=None):
     for s in settings(c):
         gph, est = flow(c, s)
         if not s.get("ktas") or not gph or not fuel or (est and published):
+            continue
+        if b and basis(s) != b and not (est and b == "pub"):
             continue
         rng = fuel / gph * s["ktas"]
         pay = []
@@ -117,8 +127,8 @@ def legs(c, fuel=None):
     return out
 
 
-def best_leg(c):
-    L = legs(c)
+def best_leg(c, b=None):
+    L = legs(c, b=b)
     if not L:
         return None
 
@@ -141,57 +151,105 @@ def band(x, floor, near):
     return "fail"
 
 
-def screen(c):
-    ul = useful(c)
-    ul_s = band(ul, UL_FLOOR, UL_NEAR)
+# Like for like (brief, amended 2026-10-24): every row is screened twice, once on
+# the maker's own figures as published and once on measured or reported data,
+# and the two are never mixed. A cruise setting's basis is explicit ("basis":
+# "pub" or "meas") or follows its grade: F and T are published; R and B are
+# measured; P is published when it is a handbook, spec-box or factory figure,
+# measured otherwise (an independent flight test, a timed magazine run, an
+# owner's report).
+PUB_WORDS = ("poh", "flight manual", "handbook", "spec box", "factory")
 
-    # Range: still-air, no reserve, best published setting, so every row is on
-    # one basis. Published ranges carry mixed reserve bases; fall back to one
-    # only when no fuel flow can be had for any setting.
-    L = legs(c)
-    rng_pub = c.get("range", {}).get("nm")
-    rng_calc = max((x["rng"] for x in L), default=None)
-    rng = rng_calc or rng_pub
-    rng_s = band(rng, RANGE_FLOOR, RANGE_NEAR)
-    rng_basis = "calc" if rng_calc else ("pub" if rng_pub else "")
-    if rng_calc and any(x["est"] for x in L if x["rng"] == rng_calc):
-        rng_basis = "calc, est. flow"
 
-    s = screen_setting(c)
-    spd, alt = s.get("ktas"), s.get("alt_ft")
-    spd_s = band(spd, SPEED_FLOOR, SPEED_NEAR)
-    if spd_s == "pass" and spd >= SPEED_PREF:
-        spd_s = "pass+"
-    alt_ok = alt is not None and alt >= ALT_MIN
+def basis(s):
+    if s.get("basis"):
+        return s["basis"]
+    g = s.get("grade")
+    if g in ("F", "T"):
+        return "pub"
+    if g in ("R", "B"):
+        return "meas"
+    if g == "P":
+        return "pub" if any(w in (s.get("note") or "").lower() for w in PUB_WORDS) else "meas"
+    return "est"
 
-    misses = []
-    if ul_s in ("near", "fail"):
-        misses.append(f"UL -{UL_FLOOR - ul:.0f} lb")
-    if rng_s in ("near", "fail"):
-        misses.append(f"range -{RANGE_FLOOR - rng:.0f} nm")
-    if spd_s in ("near", "fail"):
-        misses.append(f"speed -{SPEED_FLOOR - spd:.0f} kt")
-    states = [ul_s, rng_s, spd_s.rstrip("+")]
-    if c.get("overall_override"):
-        overall, misses = c["overall_override"], []
-    elif "?" in states:
-        overall = "incomplete"
-    elif "fail" in states:
-        overall = "fail"
-    elif "near" in states:
-        overall = "near miss"
+
+def best_speed(c, b):
+    """Highest speed on basis b that states an altitude of at least ALT_MIN;
+    else the highest one, which is then marked unconditioned."""
+    S = [s for s in settings(c) if basis(s) == b and s.get("ktas")]
+    ok = [s for s in S if (s.get("alt_ft") or 0) >= ALT_MIN]
+    if ok:
+        return max(ok, key=lambda s: s["ktas"])
+    return max(S, key=lambda s: s["ktas"]) if S else {}
+
+
+def calc_range(c, b):
+    """Still-air, no-reserve range from usable fuel and flow, on basis b only."""
+    fuel = val(c.get("fuel_gal_meas")) if b == "meas" and c.get("fuel_gal_meas") else val(c.get("fuel_gal"))
+    R = [fuel / s["gph"] * s["ktas"] for s in settings(c)
+         if basis(s) == b and s.get("ktas") and s.get("gph") and fuel]
+    return max(R, default=None)
+
+
+def verdict(states):
+    if "?" in states:
+        missing = [n for n, x in zip(("UL", "range", "speed"), states) if x == "?"]
+        known = [x for x in states if x != "?"]
+        return "incomplete: no " + " or ".join(missing) + (", fails on the rest" if "fail" in known else "")
+    if "fail" in states:
+        return "fail"
+    if "near" in states:
+        return "near miss"
+    return "pass"
+
+
+def screen_col(c, b):
+    """One column of the screen: 'pub' (as published) or 'meas' (measured)."""
+    if b == "pub":
+        ul = val(c.get("useful"))
+        rng = c.get("range", {}).get("nm")
+        rng_note = c.get("range", {}).get("basis", "")
+        if rng is None:
+            rng = calc_range(c, "pub")
+            rng_note = "derived from published fuel and flow" if rng else ""
     else:
-        overall = "pass"
-    # A speed with no altitude, or a low one, is not accepted at face value:
-    # the verdict says so rather than hiding it in a flag.
-    if overall in ("pass", "near miss") and spd is not None and not alt_ok:
+        ul = val(c.get("useful_fleet")) or val(c.get("useful_asflown"))
+        rng = calc_range(c, "meas")
+        rng_note = "still air, no reserve, from fuel and measured flow" if rng else ""
+    s = best_speed(c, b)
+    spd, alt = s.get("ktas"), s.get("alt_ft")
+    alt_ok = alt is not None and alt >= ALT_MIN
+    st = [band(ul, UL_FLOOR, UL_NEAR), band(rng, RANGE_FLOOR, RANGE_NEAR), band(spd, SPEED_FLOOR, SPEED_NEAR)]
+    spd_s = st[2] + ("+" if st[2] == "pass" and spd >= SPEED_PREF else "")
+    misses = []
+    if st[0] in ("near", "fail"):
+        misses.append(f"UL -{UL_FLOOR - ul:.0f} lb")
+    if st[1] in ("near", "fail"):
+        misses.append(f"range -{RANGE_FLOOR - rng:.0f} nm")
+    if st[2] in ("near", "fail"):
+        misses.append(f"speed -{SPEED_FLOOR - spd:.0f} kt")
+    overall = verdict(st)
+    if b == "meas" and "?" in st and any(x != "?" for x in st):
+        # Measured data is usually partial on a long list: report what was
+        # measured rather than calling the row incomplete.
+        overall = "partial: " + ", ".join(f"{n} {x}" for n, x in zip(("UL", "range", "speed"), st) if x != "?")
+    if b == "pub" and c.get("overall_override"):
+        overall, misses = c["overall_override"], []
+    if spd is not None and not alt_ok and (overall.split(" (")[0] in ("pass", "near miss")
+                                           or overall.startswith("partial")):
         overall += ", speed unconditioned"
-    return {
-        "ul": ul, "ul_s": ul_s, "rng": rng, "rng_s": rng_s, "rng_basis": rng_basis,
-        "rng_pub": rng_pub, "rng_calc": rng_calc,
-        "spd": spd, "alt": alt, "alt_ok": alt_ok, "spd_s": spd_s,
-        "overall": overall, "misses": ", ".join(misses),
-    }
+    return {"ul": ul, "ul_s": st[0], "rng": rng, "rng_s": st[1], "rng_note": rng_note,
+            "spd": spd, "alt": alt, "alt_ok": alt_ok, "spd_s": spd_s, "set": s,
+            "overall": overall, "misses": ", ".join(misses)}
+
+
+def screen(c):
+    """Kept for the flags: the published column, plus both range figures."""
+    p = screen_col(c, "pub")
+    p["rng_pub"] = c.get("range", {}).get("nm")
+    p["rng_calc"] = max((x["rng"] for x in legs(c)), default=None)
+    return p
 
 
 def flags(c):
@@ -209,6 +267,10 @@ def flags(c):
         d = val(c["useful"]) - val(c["useful_fleet"])
         if d > 0:
             out.append(f"fleet useful load {d:,.0f} lb below factory")
+    if c.get("useful_asflown") and c.get("useful"):
+        d = val(c["useful"]) - val(c["useful_asflown"])
+        if d > 0:
+            out.append(f"as-flown useful load estimate {d:,.0f} lb below the published design figure")
     opt = val(c.get("fuel_opt_gal"))
     if opt:
         r = max((x["rng"] for x in legs(c, opt)), default=None)
@@ -243,35 +305,43 @@ def fmt(x, unit=""):
     return "-" if x is None else f"{x:,.0f}{unit}"
 
 
+def payload(c, b):
+    """Payload at 1,000 nm on one basis, as text; None when that basis has no leg."""
+    x = best_leg(c, b)
+    if x is None or x["p0"] is None and (b == "meas" and not (c.get("useful_fleet") or c.get("useful_asflown"))):
+        return None
+    if x["p0"] is None:
+        return f"cannot ({x['rng']:,.0f} nm max)"
+    return (f"{fmt(x['p0'])} / {fmt(x['p45']) if x['p45'] is not None else 'cannot'}"
+            f" @ {x['s']['ktas']:.0f} kt, {x['gph']:.1f} gph" + (" (est. flow)" if x["est"] else ""))
+
+
+def cell(col):
+    if col["ul"] is None and col["rng"] is None and col["spd"] is None:
+        return "-"
+    spd = "-" if col["spd"] is None else (
+        f"{col['spd']:.0f} @ {fmt(col['alt'], ' ft') if col['alt'] else 'alt n/s'}"
+        + (" *" if not col["alt_ok"] else ""))
+    if col["set"].get("design"):
+        spd += " (design)"
+    return (f"{fmt(col['ul'])} {col['ul_s']}; {fmt(col['rng'])} {col['rng_s']}; "
+            f"{spd} {col['spd_s'] if col['spd'] is not None else ''}").strip()
+
+
 def table(cands):
-    hdr = ("| # | Candidate | Seats | Origin | Useful load, lb | Range, nm (still air) "
-           "| Cruise KTAS @ alt | Screen | Payload @ 1,000 nm, lb (no res / 45 min) "
-           "| Aeromomentum fit | Why it died |")
+    hdr = ("| # | Candidate | Seats | Origin | As published: UL lb; range nm; KTAS @ alt | Screen, as published "
+           "| Measured or reported: UL lb; range nm; KTAS @ alt | Screen, measured "
+           "| Payload @ 1,000 nm, lb (no res / 45 min), information only | Aeromomentum fit | Why it died |")
     rows = [hdr, "|" + "---|" * 11]
     for i, c in enumerate(cands):
-        s = screen(c)
-        ul_txt = f"{fmt(s['ul'])} {s['ul_s']}"
-        if c.get("useful_fleet"):
-            ul_txt += f" (fleet; {fmt(val(c.get('useful')))} factory)"
-        rng_txt = f"{fmt(s['rng'])} {s['rng_s']}" + (f" ({s['rng_basis']})" if s["rng_basis"] else "")
-        if s["spd"] is None:
-            spd_txt = "-"
-        else:
-            spd_txt = f"{s['spd']:.0f} @ {fmt(s['alt'], ' ft') if s['alt'] else 'alt n/s'} {s['spd_s']}"
-            if not s["alt_ok"]:
-                spd_txt += " *"
-        b = best_leg(c)
-        if b is None:
-            pay = "no fuel flow or fuel published"
-        elif b["p0"] is None:
-            pay = f"cannot: {b['rng']:,.0f} nm max on usable fuel"
-        else:
-            pay = f"{fmt(b['p0'])} / {fmt(b['p45']) if b['p45'] is not None else 'cannot'}"
-            pay += f" @ {b['s']['ktas']:.0f} kt, {b['gph']:.1f} gph" + (" (est. flow)" if b["est"] else "")
-        verdict = s["overall"] + (f" ({s['misses']})" if s["misses"] else "")
+        P, M = screen_col(c, "pub"), screen_col(c, "meas")
+        vp = P["overall"] + (f" ({P['misses']})" if P["misses"] else "")
+        vm = "no measured data" if cell(M) == "-" else M["overall"] + (f" ({M['misses']})" if M["misses"] else "")
+        pay = "; ".join(f"{lab}: {payload(c, bb)}" for lab, bb in (("pub", "pub"), ("meas", "meas"))
+                        if payload(c, bb) is not None) or "no fuel flow published"
         rows.append(
             f"| {i} | [{c['name']}](../candidates/{c['id']}.md) | {c['seats']} | {', '.join(c['origin'])} "
-            f"| {ul_txt} | {rng_txt} | {spd_txt} | {verdict} | {pay} "
+            f"| {cell(P)} | {vp} | {cell(M)} | {vm} | {pay} "
             f"| {engine_fit(c)} | {c.get('why_died_short', '')} |"
         )
     return "\n".join(rows)
@@ -286,10 +356,14 @@ def flag_list(cands):
     return "\n".join(lines)
 
 
-def counts(cands):
+def counts(cands, b="pub"):
     out = {}
     for c in cands[1:]:  # row 0 is the reference
-        o = screen(c)["overall"].split(",")[0].split(" (")[0]
+        o = screen_col(c, b)["overall"].split(",")[0].split(" (")[0]
+        if b == "meas" and cell(screen_col(c, b)) == "-":
+            o = "no measured data"
+        elif o.startswith("partial"):
+            o = "partial"
         out[o] = out.get(o, 0) + 1
     return out
 
@@ -304,7 +378,8 @@ def replace_block(txt, name, body):
 def main():
     cands = json.loads(DATA.read_text())
     t, fl = table(cands), flag_list(cands)
-    print(t, "\n\n", fl, "\n\nScreen counts (excluding the reference row):", counts(cands))
+    print(t, "\n\n", fl, "\n\nScreen counts, excluding the reference row: as published",
+          counts(cands, "pub"), "; measured", counts(cands, "meas"))
     if "--write" in sys.argv:
         txt = LONGLIST.read_text()
         txt = replace_block(txt, "screen-table", t)

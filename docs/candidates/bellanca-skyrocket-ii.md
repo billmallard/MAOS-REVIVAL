@@ -29,19 +29,22 @@ Grades: F factory/brochure/designer claim; T type certificate data sheet; P flig
 | Usable fuel | not found | | | |
 | Published range | 1,273 nm | F | [source](https://en.wikipedia.org/wiki/Bellanca_Skyrocket_II) | not stated |
 
-Cruise settings (the starred row is the one screened for speed):
+Cruise settings (P = screened as published, M = screened as measured; the basis follows the grade unless a setting states it):
 
 | KTAS | Altitude, ft | Power | Fuel flow, gph | Grade | Source | Note |
 |---|---|---|---|---|---|---|
-| 222 * | 15000 | 65% | - | F | [source](https://en.wikipedia.org/wiki/Bellanca_Skyrocket_II) | Jane's, 255 mph converted |
+| 222 P | 15000 | 65% | - | F | [source](https://en.wikipedia.org/wiki/Bellanca_Skyrocket_II) | Jane's, 255 mph converted |
 
-## Screen (stage 1, published numbers)
+## Screen (published numbers; like for like)
 
-- **Verdict: pass**
-- Useful load: 1,800 lb (pass) against 1,000 lb.
-- Range: 1,273 nm still-air (pass; basis: pub) against 1,000 nm.
-- Cruise: 222 KTAS at 15,000 ft (pass+) against >160 KTAS (>180 preferred).
-- Payload at 1,000 nm: Cannot be computed: no fuel quantity or no fuel flow published.
+Two screens, never mixed: the maker's figures as published, and measured or reported data. The three targets are separate floors; payload at 1,000 nm is information only.
+
+- **As published: pass**
+  - Useful load: 1,800 lb (pass) against 1,000 lb.
+  - Range: 1,273 nm (pass; not stated) against 1,000 nm.
+  - Cruise: 222 KTAS at 15,000 ft (pass+) against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): cannot be computed on this basis.
+- **Measured or reported: no data found.**
 - Aeromomentum fit (first cut): Short: AM20T 260 hp vs 435 hp (-16% speed, est. 187 KTAS).
 
 Sanity flags:
@@ -53,6 +56,10 @@ Sanity flags:
 ## Why it died
 
 Funding ran out and Bellanca and the West Virginia investors disagreed on production; $20-25M to certify (Flying, Jan 1983).
+
+## Idea ledger (what a new airplane should keep; AERO's judgement)
+
+- A laminar NACA 63-series wing and molded composite fuselage halves over honeycomb in the 1970s: about 230 kt with six seats.
 
 ## Rights and provenance (known so far; research, not legal advice)
 

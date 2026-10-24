@@ -29,19 +29,26 @@ Grades: F factory/brochure/designer claim; T type certificate data sheet; P flig
 | Usable fuel | 62.3 US gal | T | [source](https://www.easa.europa.eu/bg/downloads/17339/en) | - |
 | Published range | 600 nm | P | [source](https://www.aopa.org/news-and-media/all-news/1994/november/pilot/ruschmeyer-r90-230-rg) | IFR |
 
-Cruise settings (the starred row is the one screened for speed):
+Cruise settings (P = screened as published, M = screened as measured; the basis follows the grade unless a setting states it):
 
 | KTAS | Altitude, ft | Power | Fuel flow, gph | Grade | Source | Note |
 |---|---|---|---|---|---|---|
-| 165 * | 7000 | 75% | 14.5 | P | [source](https://www.aopa.org/news-and-media/all-news/1994/november/pilot/ruschmeyer-r90-230-rg) | - |
+| 165 M | 7000 | 75% | 14.5 | P | [source](https://www.aopa.org/news-and-media/all-news/1994/november/pilot/ruschmeyer-r90-230-rg) | - |
 
-## Screen (stage 1, published numbers)
+## Screen (published numbers; like for like)
 
-- **Verdict: fail** - UL -125 lb, range -291 nm
-- Useful load: 875 lb (fail) against 1,000 lb.
-- Range: 709 nm still-air (fail; basis: calc) against 1,000 nm.
-- Cruise: 165 KTAS at 7,000 ft (pass) against >160 KTAS (>180 preferred).
-- Payload at 1,000 nm: Does not reach 1,000 nm on usable fuel: 709 nm still-air maximum.
+Two screens, never mixed: the maker's figures as published, and measured or reported data. The three targets are separate floors; payload at 1,000 nm is information only.
+
+- **As published: incomplete: no speed, fails on the rest** - UL -3 lb, range -400 nm
+  - Useful load: 997 lb (near) against 1,000 lb.
+  - Range: 600 nm (fail; IFR) against 1,000 nm.
+  - Cruise: not found against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): cannot be computed on this basis.
+- **Measured or reported: fail** - UL -125 lb, range -291 nm
+  - Useful load: 875 lb (fail) against 1,000 lb.
+  - Range: 709 nm (fail; still air, no reserve, from fuel and measured flow) against 1,000 nm.
+  - Cruise: 165 KTAS at 7,000 ft (pass) against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): cannot (709 nm max).
 - Aeromomentum fit (first cut): Yes: AM20T (260 hp) for 230 hp.
 
 Sanity flags:
@@ -52,6 +59,10 @@ Sanity flags:
 ## Why it died
 
 Bankrupt June 1996; Solaris bought the assets in 1999 but no deliveries were found (Flying).
+
+## Idea ledger (what a new airplane should keep; AERO's judgement)
+
+- A certified German composite four-seater with a derated 230 hp engine; ended by its maker's bankruptcy, not by the design.
 
 ## Rights and provenance (known so far; research, not legal advice)
 

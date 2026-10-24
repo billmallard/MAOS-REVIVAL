@@ -29,20 +29,27 @@ Grades: F factory/brochure/designer claim; T type certificate data sheet; P flig
 | Usable fuel | 102 US gal | T | [source](https://www.easa.europa.eu/sites/default/files/dfu/EASA.IM_.A.516_Issue%205_20180621.pdf) | - |
 | Published range | 1,270 nm | F | [source](http://web.archive.org/web/20171228025049/http://cessna.txtav.com:80/en/piston/cessna-ttx) | not stated |
 
-Cruise settings (the starred row is the one screened for speed):
+Cruise settings (P = screened as published, M = screened as measured; the basis follows the grade unless a setting states it):
 
 | KTAS | Altitude, ft | Power | Fuel flow, gph | Grade | Source | Note |
 |---|---|---|---|---|---|---|
-| 219 * | 22000 | 75% | 16 | P | [source](https://planeandpilotmag.com/cessna-ttx/) | spec box |
-| 180 | 12000 | - | 15.5 | P | [source](https://www.aopa.org/news-and-media/all-news/2013/july/01/cessna-delivers-ttx) | lean of peak |
+| 219 P | 22000 | 75% | 16 | P | [source](https://planeandpilotmag.com/cessna-ttx/) | spec box |
+| 180 M | 12000 | - | 15.5 | P | [source](https://www.aopa.org/news-and-media/all-news/2013/july/01/cessna-delivers-ttx) | lean of peak |
 
-## Screen (stage 1, published numbers)
+## Screen (published numbers; like for like)
 
-- **Verdict: pass**
-- Useful load: 1,027 lb (pass) against 1,000 lb.
-- Range: 1,396 nm still-air (pass; basis: calc) against 1,000 nm.
-- Cruise: 219 KTAS at 22,000 ft (pass+) against >160 KTAS (>180 preferred).
-- Payload at 1,000 nm: 589 lb with no reserve; 517 lb with a 45 min reserve. Setting: 219 KTAS at 16.0 gph.
+Two screens, never mixed: the maker's figures as published, and measured or reported data. The three targets are separate floors; payload at 1,000 nm is information only.
+
+- **As published: pass**
+  - Useful load: 1,065 lb (pass) against 1,000 lb.
+  - Range: 1,270 nm (pass; not stated) against 1,000 nm.
+  - Cruise: 219 KTAS at 22,000 ft (pass+) against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): 627 / 555 @ 219 kt, 16.0 gph.
+- **Measured or reported: pass**
+  - Useful load: 1,027 lb (pass) against 1,000 lb.
+  - Range: 1,185 nm (pass; still air, no reserve, from fuel and measured flow) against 1,000 nm.
+  - Cruise: 180 KTAS at 12,000 ft (pass+) against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): 510 / 441 @ 180 kt, 15.5 gph.
 - Aeromomentum fit (first cut): Short: AM20T 260 hp vs 310 hp (-6% speed, est. 207 KTAS).
 
 Sanity flags:
@@ -52,6 +59,10 @@ Sanity flags:
 ## Why it died
 
 44 sold in 2015, 23 in 2017, against 355 Cirrus singles; production stopped 2018 (AOPA).
+
+## Idea ledger (what a new airplane should keep; AERO's judgement)
+
+- Certified all-composite four-seater with side-stick and 219 KTAS at FL220; lost on market share, not on performance.
 
 ## Rights and provenance (known so far; research, not legal advice)
 

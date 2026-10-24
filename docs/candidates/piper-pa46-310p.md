@@ -29,21 +29,28 @@ Grades: F factory/brochure/designer claim; T type certificate data sheet; P flig
 | Usable fuel | 120 US gal | T | FAA DRS, TCDS A25SO Rev 42, 16 Feb 2026, read 2026-10-24 (archived: docs/longlist/sources/tcds-A25SO-rev42-2026-02-16.pdf); value unchanged from Rev 26 | 122 total, 12 lb unusable |
 | Published range | 1,300 nm | P | [source](https://australianaviation.com.au/1985/06/airtest-piper-malibu/) | 120 gal, power and reserve not stated |
 
-Cruise settings (the starred row is the one screened for speed):
+Cruise settings (P = screened as published, M = screened as measured; the basis follows the grade unless a setting states it):
 
 | KTAS | Altitude, ft | Power | Fuel flow, gph | Grade | Source | Note |
 |---|---|---|---|---|---|---|
-| 205 * | 22000 | 65% | 15 | P | [source](https://australianaviation.com.au/1985/06/airtest-piper-malibu/) | flight test |
+| 205 | 22000 | 65% | 15 | P | [source](https://australianaviation.com.au/1985/06/airtest-piper-malibu/) | flight test |
 | 180 | 20000 | 55% | 12 | P | [source](https://australianaviation.com.au/1985/06/airtest-piper-malibu/) | overweight ferry flight |
-| 210 | 25000 | 75% | - | B | [source](https://www.flyingmag.com/used-aircraft-guide-piper-malibu-and-mirage-cheap-for-what-they-do/) | owner-reported |
+| 210 M | 25000 | 75% | - | B | [source](https://www.flyingmag.com/used-aircraft-guide-piper-malibu-and-mirage-cheap-for-what-they-do/) | owner-reported |
 
-## Screen (stage 1, published numbers)
+## Screen (published numbers; like for like)
 
-- **Verdict: pass**
-- Useful load: 1,400 lb (pass) against 1,000 lb.
-- Range: 1,800 nm still-air (pass; basis: calc) against 1,000 nm.
-- Cruise: 205 KTAS at 22,000 ft (pass+) against >160 KTAS (>180 preferred).
-- Payload at 1,000 nm: 1,000 lb with no reserve; 946 lb with a 45 min reserve. Setting: 180 KTAS at 12.0 gph.
+Two screens, never mixed: the maker's figures as published, and measured or reported data. The three targets are separate floors; payload at 1,000 nm is information only.
+
+- **As published: incomplete: no speed**
+  - Useful load: 1,455 lb (pass) against 1,000 lb.
+  - Range: 1,300 nm (pass; 120 gal, power and reserve not stated) against 1,000 nm.
+  - Cruise: not found against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): cannot be computed on this basis.
+- **Measured or reported: pass**
+  - Useful load: 1,400 lb (pass) against 1,000 lb.
+  - Range: 1,800 nm (pass; still air, no reserve, from fuel and measured flow) against 1,000 nm.
+  - Cruise: 210 KTAS at 25,000 ft (pass+) against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): 1,000 / 946 @ 180 kt, 12.0 gph.
 - Aeromomentum fit (first cut): Short: AM20T 260 hp vs 310 hp (-6% speed, est. 193 KTAS).
 
 Sanity flags:
@@ -55,6 +62,10 @@ Sanity flags:
 ## Why it died
 
 Engine problems led to a 1987 voluntary grounding request; replaced by the PA-46-350P Mirage. The type lives on as the M350 (Flying).
+
+## Idea ledger (what a new airplane should keep; AERO's judgement)
+
+- Cabin-class pressurised six-seat single; its engine troubles show how much an airframe's reputation rides on its powerplant.
 
 ## Rights and provenance (known so far; research, not legal advice)
 
