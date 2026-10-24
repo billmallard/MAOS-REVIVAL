@@ -224,3 +224,60 @@ NEW["rohr-2-175"] = dict(
     next="""- Browser checks for the book (WorldCat, eBay, Biblio, AbeBooks by ISBN 978-0-615-59079-0); buying is Bill's call.
 - If Bill wants to go further: a cranked-delta four-seat sketch with a real weight and balance and an elevon trim check (AERO), and a SAFETY view on the shaft drive (asked on AER-3785 first).""",
 )
+
+
+# Deep-dive axes (brief, 2026-10-24). Numbers from docs/shortlist/check/axes/
+# (axes.py): Pratt gust dn per 30 ft/s at 150 KEAS and 8,000 ft, MTOW; best L/D
+# from the calibrated build-up with propeller drag excluded (real engine-out
+# glide is worse); T-hangar door 40 ft (E). The planform trade itself is argued
+# once, in the planform study (AER-3807, docs/studies/planform/), not here.
+PLANFORM_LINK = "the planform study (AER-3807, `docs/studies/planform/`)"
+AXES = {
+    "bellanca-t250-aries": f"""**Aspect ratio 5.8**: a moderate, constant-chord wing, on the conventional side of {PLANFORM_LINK}.
+
+- **Storage.** 31.3 ft span, 8 ft 7 in high (AOPA): fits a 40 ft T-hangar door with room to spare. No folding; not trailerable without removing the wings.
+- **Construction with home-shop tools.** This is its strongest axis. The wing is constant-chord, so every rib is the same: one set of CNC-routed form blocks makes them all. The skins are flat or single-curve aluminium, designed that way to cut production cost; blanks can be routed, but bending them needs a brake and the riveting is hand work. The largest part is a 15.7 ft half-wing; the root spar is about 7.8 in deep, a machined or built-up metal spar that may need a service. Fittings suit a small CNC mill.
+- **Safety.** Published stalls 63 kt clean and 56 kt in landing configuration (72 and 64 mph); AOPA measured 69 and 63 mph IAS. AOPA described no stall break, so stall character is unrecorded; it did note weak yaw damping after a rudder input. Best L/D about 15.7 at 114 KTAS. Spin behaviour: not on record. One NTSB event in about 50 years, on four aircraft, proves little.
+- **Ride comfort.** Gust dn 1.66: the roughest of the shortlist with the Meyers, because its 18.5 lb/ft2 wing loading is low. Cabin 45 in wide, 115 in long, 48.5 in high (AOPA): roomy for the class. Noise: not recorded.""",
+    "express-2000": f"""**Aspect ratio 7.4**: conventional, on the high-aspect-ratio side of {PLANFORM_LINK}.
+
+- **Storage.** 31 ft span: fits a 40 ft T-hangar door. No folding.
+- **Construction with home-shop tools.** A molded vinylester/E-glass/foam airframe. The molds are the problem: a 15.5 ft half-wing and a four-seat fuselage are far beyond a large-format printer's envelope. Plugs could be CNC-routed from foam in sections and faired, and the molds laid up at home, but tooling at this size is a service job or a kit maker's. A fresh tail (see above) is the one new tool a revival must make. Root spar about 9.5 in deep.
+- **Safety.** See the stall-and-yaw study above: weak directional stability, a measured clean stall of 67 KCAS against a published 55-58 kt, and stalls in climbing turns in the record. Best L/D about 14.3 at 108 KTAS with its fixed gear.
+- **Ride comfort.** Gust dn 1.57 at 22.2 lb/ft2. Cabin 44 in wide (CAFE). Owners compare it to a fast 182 for room (builder opinion).""",
+    "lancair-iv-p": f"""**Aspect ratio 9.3**: the high-aspect-ratio, high-wing-loading end of {PLANFORM_LINK}.
+
+- **Storage.** 30.2 ft span (the LX7 re-wing goes to 34 ft): fits a 40 ft T-hangar door. No folding.
+- **Construction with home-shop tools.** A pressurised molded composite airframe. The pressure vessel and the 36 lb/ft2 wing are not home-shop parts; molds are unlocated, so any revival re-tools. Small parts and fittings suit a home mill; the airframe does not.
+- **Safety.** The stall is the issue: CAFE measured 66 KIAS; owners report 82-90 kt in practice; Kitplanes called the stall bad. The record's stall-spin half follows from that. The LX7's re-wing claims a docile stall at 63 KIAS, unmeasured. Best L/D about 16.6 at 137 KTAS: good glide, at a high speed.
+- **Ride comfort.** Gust dn 1.09: the smoothest of the shortlist, because of its high wing loading. That is the same number that makes the stall fast.""",
+    "meyers-200d": f"""**Aspect ratio 5.8**: moderate, with a 23015-to-4412 wing and strong washout; conventional in {PLANFORM_LINK}.
+
+- **Storage.** 30.5 ft span, 7 ft 4 in high: fits a 40 ft T-hangar door. No folding.
+- **Construction with home-shop tools.** The welded 4130 cage suits a home shop with a CNC router (jig boards and tube-notching fixtures) and a welder; welding certification is the skill, not the tool. The original riveted aluminium skin over the cage needed heavy hand fitting, which is why it was built at a loss; a re-derivation would design the skin for CNC-cut, matched-hole parts. Root spar about 12.7 in deep at the root (the 15% section). Fittings suit a small mill.
+- **Safety.** Benign stall with aileron authority into the stall, credited to its washout (AvWeb; AOPA 1991). Published landing-configuration stall 47 kt (Jane's) against 54 kt (Davisson): unresolved. Best L/D about 14.5 at 109 KTAS. The steel cage is a crash-survivability asset; no in-flight breakup on record.
+- **Ride comfort.** Gust dn 1.66 at 18.6 lb/ft2: as rough as the Aries. Near-360 deg visibility; cabin dimensions not published.""",
+    "mooney-301": f"""**Aspect ratio 9.0**: a high-aspect-ratio laminar wing, on the conventional side of {PLANFORM_LINK}.
+
+- **Storage.** 36.7 ft span: fits a 40 ft T-hangar door with little margin. No folding.
+- **Construction with home-shop tools.** A pressurised riveted metal airframe: not a home-shop design. A revival is a new design, so this axis would be set by that design, not by the 301.
+- **Safety.** Its test pilot found pitch authority "almost non-existent" with rapid inputs in gusty air on approach and called the stabilator "certainly not certifiable". Best L/D about 16.7 at 119 KTAS.
+- **Ride comfort.** Gust dn 1.40 at 26.7 lb/ft2. Pressurisation was meant to give a quiet, high cabin.""",
+    "cozy-mkiv": f"""**Aspect ratio 9.1** (main wing; plus a canard): high aspect ratio, in the pusher camp of {PLANFORM_LINK}.
+
+- **Storage.** 28.1 ft span: fits a 40 ft T-hangar door. Canard pushers are long; check hangar depth.
+- **Construction with home-shop tools.** The benchmark: moldless foam and glass, built by plans builders without tooling. Cores are hot-wired or CNC-routed; no molds. The cost is hours and weight scatter.
+- **Safety.** The canard stalls first and limits the main wing's angle of attack: stall resistance is the type's selling point. Best L/D about 16.3 at 102 KTAS.
+- **Ride comfort.** Gust dn 1.51 at 23.6 lb/ft2 (main wing only; the canard adds lift slope, so this is optimistic). Semi-reclined seats; a tight rear cabin.""",
+    "rohr-2-175": f"""**Aspect ratio 2.2**: the low-aspect-ratio delta at the far end of {PLANFORM_LINK}, which weighs this trade for the mission. Here, only its own numbers:
+
+- **Storage.** 20 ft span, with the outer wings and fin folding so it fits a single-car garage (TWITT; Fraser): the best storage idea in the survey. At four seats and AR 3-4 (Study 1) the span grows to 25-29 ft and still fits a 40 ft T-hangar door unfolded; folding would bring it to garage or trailer width.
+- **Construction with home-shop tools.** A sparless foam-core fibreglass skin: cores are exactly what a home CNC router cuts, in sections. The fold joint (FRP piano hinges and torsion bosses) and the duct are the hard parts. The deep root (about 12% of a 14.7 ft chord, about 21 in) makes the structure efficient without a spar.
+- **Safety.** No accident; one drive-coupling failure; a spin chute was carried in test. A low-aspect-ratio delta stalls at high angle of attack with little break and needs a high landing attitude (Study 1: 59-70 kt touchdown at four seats). Best L/D about 9-10 for the AR 2.2 four-seater, against 14-17 for the conventional designs: a much poorer engine-out glide.
+- **Ride comfort.** Its lift-curve slope is about half a conventional wing's, so gusts move it less for the same wing loading. Gust dn 1.78 as built (a light 8.1 lb/ft2), 1.17 for the four-seat AR 2.2 version at 13.8 lb/ft2: nearly as smooth as the IV-P at 36 lb/ft2. That is the low-aspect-ratio school's best argument, and AER-3807 weighs it.""",
+}
+for _k, _v in AXES.items():
+    (NEW if _k in NEW else UPDATES).setdefault(_k, {})["axes"] = _v
+
+UPDATES["lancair-iv-p"]["bill"] += " Elon's follow-up (PR #6) found no Austin holder in the public record; it still shows JetEXE, Sacramento."
+NEW["rohr-2-175"]["next"] += "\n- A lead from Elon (PR #6): SDASM holds a signed copy of Bill Chana's memoir, *Over the Wing: The Bill Chana Story* (2003), as archival object 5291. Chana was the 2-175's deputy programme manager; whether it covers the 2-175 is not known. Reading it is museum contact, so Bill's call."

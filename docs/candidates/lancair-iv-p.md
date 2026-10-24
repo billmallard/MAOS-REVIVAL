@@ -82,7 +82,7 @@ Our own check, from published geometry and weights, calibrated against published
 
 ### Bill's call
 
-Bill, 2026-10-24: kept. He believes the assets went to a new company in Austin, Texas, within about two years, which is re-tooling to support existing customers (Elon verifies, AER-3805). He knows the Oregon shop that re-wings and remanufactures Lancairs: "quite impressive actually, but it's not cheap."
+Bill, 2026-10-24: kept. He believes the assets went to a new company in Austin, Texas, within about two years, which is re-tooling to support existing customers (Elon verifies, AER-3805). He knows the Oregon shop that re-wings and remanufactures Lancairs: "quite impressive actually, but it's not cheap." Elon's follow-up (PR #6) found no Austin holder in the public record; it still shows JetEXE, Sacramento.
 
 ### Verdict
 
@@ -104,6 +104,15 @@ Read across a row only within one column's basis. The three targets are separate
 | Range | 1,347 nm (pass; 65%, 24,000 ft, 45 min reserve (1,550 sm)) | 1,779 nm (pass; still air, no reserve, from fuel and measured flow at 284 KTAS) | 1,058 nm, still air, no reserve, full fuel from MTOW, at 262 hp and 20,000 ft |
 | Cruise | 278 KTAS at 23,000 ft (pass+) | 284 KTAS at 24,000 ft (pass+) | 248 KTAS at 262 hp and 20,000 ft |
 | Screen | pass | partial: range pass, speed pass | see the verdict |
+
+### The deep-dive axes: storage, home-shop construction, safety, ride
+
+**Aspect ratio 9.3**: the high-aspect-ratio, high-wing-loading end of the planform study (AER-3807, `docs/studies/planform/`).
+
+- **Storage.** 30.2 ft span (the LX7 re-wing goes to 34 ft): fits a 40 ft T-hangar door. No folding.
+- **Construction with home-shop tools.** A pressurised molded composite airframe. The pressure vessel and the 36 lb/ft2 wing are not home-shop parts; molds are unlocated, so any revival re-tools. Small parts and fittings suit a home mill; the airframe does not.
+- **Safety.** The stall is the issue: CAFE measured 66 KIAS; owners report 82-90 kt in practice; Kitplanes called the stall bad. The record's stall-spin half follows from that. The LX7's re-wing claims a docile stall at 63 KIAS, unmeasured. Best L/D about 16.6 at 137 KTAS: good glide, at a high speed.
+- **Ride comfort.** Gust dn 1.09: the smoothest of the shortlist, because of its high wing loading. That is the same number that makes the stall fast.
 
 ### Independent performance check
 

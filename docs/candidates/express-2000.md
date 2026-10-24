@@ -109,6 +109,15 @@ Read across a row only within one column's basis. The three targets are separate
 | Cruise | not found | 169 KTAS at 6,190 ft (pass) | 160 KTAS at 150 hp and 8,000 ft |
 | Screen | incomplete: no speed | near miss | see the verdict |
 
+### The deep-dive axes: storage, home-shop construction, safety, ride
+
+**Aspect ratio 7.4**: conventional, on the high-aspect-ratio side of the planform study (AER-3807, `docs/studies/planform/`).
+
+- **Storage.** 31 ft span: fits a 40 ft T-hangar door. No folding.
+- **Construction with home-shop tools.** A molded vinylester/E-glass/foam airframe. The molds are the problem: a 15.5 ft half-wing and a four-seat fuselage are far beyond a large-format printer's envelope. Plugs could be CNC-routed from foam in sections and faired, and the molds laid up at home, but tooling at this size is a service job or a kit maker's. A fresh tail (see above) is the one new tool a revival must make. Root spar about 9.5 in deep.
+- **Safety.** See the stall-and-yaw study above: weak directional stability, a measured clean stall of 67 KCAS against a published 55-58 kt, and stalls in climbing turns in the record. Best L/D about 14.3 at 108 KTAS with its fixed gear.
+- **Ride comfort.** Gust dn 1.57 at 22.2 lb/ft2. Cabin 44 in wide (CAFE). Owners compare it to a fast 182 for room (builder opinion).
+
 ### The stall and yaw problem, and what fixes it
 
 **What the record shows** (sources and the full accident table: `docs/shortlist/check/express/README.md`):

@@ -110,6 +110,15 @@ Read across a row only within one column's basis. The three targets are separate
 | Cruise | 235 KTAS at 25,000 ft (pass+) | not found | 222 KTAS at 270 hp and 20,000 ft |
 | Screen | near miss | partial: UL pass | see the verdict |
 
+### The deep-dive axes: storage, home-shop construction, safety, ride
+
+**Aspect ratio 9.0**: a high-aspect-ratio laminar wing, on the conventional side of the planform study (AER-3807, `docs/studies/planform/`).
+
+- **Storage.** 36.7 ft span: fits a 40 ft T-hangar door with little margin. No folding.
+- **Construction with home-shop tools.** A pressurised riveted metal airframe: not a home-shop design. A revival is a new design, so this axis would be set by that design, not by the 301.
+- **Safety.** Its test pilot found pitch authority "almost non-existent" with rapid inputs in gusty air on approach and called the stabilator "certainly not certifiable". Best L/D about 16.7 at 119 KTAS.
+- **Ride comfort.** Gust dn 1.40 at 26.7 lb/ft2. Pressurisation was meant to give a quiet, high cabin.
+
 ### The registry, against Bill's recollection
 
 **The public record shows one Mooney 301 (Mooney M30), and none flying.** In the FAA registry download of 2026-10-24, the M30 model code (5872030) has exactly one aircraft in its history: N301MX, serial 0000, cancelled 26 July 1989. Nothing is registered on it today, and no current or past registration, amateur-built included, is a 301 copy or replica. The query was checked against a positive control (the Mooney M22 code returns 14). Flying magazine's June 1983 first-flight report calls the aircraft "M30 number one", a company proof-of-concept aircraft, and says a pre-production prototype would follow; no later source has one built. The airframe went to Tarbes in 1987, came back to Kerrville, and was scrapped (wings cut off, the rest to an A&P school in Abilene, Texas; Mooney Events, citing Mooney staff).

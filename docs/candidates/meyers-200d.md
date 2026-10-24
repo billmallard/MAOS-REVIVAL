@@ -110,6 +110,15 @@ Read across a row only within one column's basis. The three targets are separate
 | Cruise | 182 KTAS at altitude not stated (pass+) | 187 KTAS at altitude not stated (pass+) | 174 KTAS at 185 hp and 8,000 ft |
 | Screen | fail | near miss, speed unconditioned | see the verdict |
 
+### The deep-dive axes: storage, home-shop construction, safety, ride
+
+**Aspect ratio 5.8**: moderate, with a 23015-to-4412 wing and strong washout; conventional in the planform study (AER-3807, `docs/studies/planform/`).
+
+- **Storage.** 30.5 ft span, 7 ft 4 in high: fits a 40 ft T-hangar door. No folding.
+- **Construction with home-shop tools.** The welded 4130 cage suits a home shop with a CNC router (jig boards and tube-notching fixtures) and a welder; welding certification is the skill, not the tool. The original riveted aluminium skin over the cage needed heavy hand fitting, which is why it was built at a loss; a re-derivation would design the skin for CNC-cut, matched-hole parts. Root spar about 12.7 in deep at the root (the 15% section). Fittings suit a small mill.
+- **Safety.** Benign stall with aileron authority into the stall, credited to its washout (AvWeb; AOPA 1991). Published landing-configuration stall 47 kt (Jane's) against 54 kt (Davisson): unresolved. Best L/D about 14.5 at 109 KTAS. The steel cage is a crash-survivability asset; no in-flight breakup on record.
+- **Ride comfort.** Gust dn 1.66 at 18.6 lb/ft2: as rough as the Aries. Near-360 deg visibility; cabin dimensions not published.
+
 ### Independent performance check
 
 Model: `docs/shortlist/check/models/meyers-200d.json`; result: `docs/shortlist/check/results/meyers-200d.json`. Method in [SHORTLIST.md](../SHORTLIST.md#method).
