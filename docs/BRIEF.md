@@ -79,6 +79,32 @@ useful, high cruise on a 180–200 hp engine. Every candidate is compared with i
 - Safety record: an NTSB/accident-history summary for the type.
 - What modern manufacturing would change: mass, cost and build hours.
 
+## The deep-dive axes (added 2026-10-24, Bill)
+
+Beyond the three targets, every shortlisted design is judged on four concerns
+Bill named, and these are part of the deep dive, not footnotes:
+
+1. **Storage.** Hangar footprint against a standard T-hangar door, height, and
+   whether the wings or tail fold, or the airplane is trailerable. Span is the
+   driver; the Rohr 2-175 folded both its wings and its fin.
+2. **Construction with modern in-home tools.** What a builder can make in a home
+   shop with a large-format 3D printer, a CNC router and a small CNC mill (molds,
+   plugs, jigs, fittings), against what still has to go to a service, as well as
+   the services route already costed.
+3. **Safety.** Stall character (gentle or abrupt; warning; departure tendency),
+   spin resistance, engine-out glide ratio, and any accident pattern tied to the
+   configuration.
+4. **Ride comfort.** Gust response, from the sharp-edged or Pratt gust formula
+   using each design's own lift-curve slope and wing loading, alongside cabin
+   room and noise where known.
+
+**Planform is the thread through all four.** There is a live argument between
+the traditional high-aspect-ratio view of efficient aircraft and an emerging
+low-aspect-ratio school, especially among pusher designs. The Rohr 2-175 is a
+low-aspect-ratio delta, and the Prescott Pusher is a conventional wing. The
+planform study (its own board issue) weighs that trade for this mission, and
+every dossier states its aspect ratio and where it sits in that argument.
+
 ## Rules
 
 - **Diverge before converging.** Stage 1 is an unranked long list of at least 25
