@@ -9,11 +9,11 @@ Stage 1 stub, generated from `docs/longlist/candidates.json` by `docs/longlist/m
 | Origin | experimental kit or plans |
 | Designer / maker | Tom Prescott, Prescott Aeronautical |
 | Years | 1985 first flight; kits to ~1989 |
-| Number built | 68 kits; 25-35 completed by 1991 |
-| Survivors / registered | not counted |
+| Number built | 68 kits (Wings Over Kansas); 19 airframes ever on the US register (FAA registry 2026-10-24), plus at least 2 abroad |
+| Survivors / registered | 4 current US registrations (N41PP museum, N10JS, N200SX, N40LE); 2 likely airworthy |
 | Seats | 4 |
-| Configuration | Pusher, 4 seats, fixed tricycle gear |
-| Construction | Steel-tube fuselage, CAD/CAM-designed |
+| Configuration | Pusher, 4 seats (2+2), engine in the tail cone on a 12 in prop extension (no drive shaft), T-tail, retractable or fixed tricycle gear |
+| Construction | TIG-welded 4130 square-tube cage with non-structural fibreglass shells; riveted aluminium wing, NLF(1)-0215F; CAD/CAM-designed to Part 23 |
 | Engine | Lycoming O-360, 180 hp |
 
 ## Published numbers
@@ -25,7 +25,7 @@ Grades: F factory/brochure/designer claim; T type certificate data sheet; P flig
 | MTOW | 2,400 lb | F | [source](https://1000aircraftphotos.com/Contributions/6802.htm) | - |
 | Empty weight | 1,550 lb | F | [source](https://1000aircraftphotos.com/Contributions/6802.htm) | - |
 | Useful load | 850 lb | F | [source](https://1000aircraftphotos.com/Contributions/6802.htm) | - |
-| Useful load, fleet or as-weighed | not found | | | |
+| Useful load, fleet or as-weighed | 739 lb | P | [source](https://www.kitplanes.com/archive-may-1988/) | one builder aircraft weighed (N747P, 1,661 lb finished with ballast, Sport Aviation 1991, via the stage 3 Prescott research file docs/shortlist/check/prescott/README.md); not a fleet average |
 | Usable fuel | 56.5 US gal | F | [source](https://1000aircraftphotos.com/Contributions/6802.htm) | second prototype |
 | Published range | 869 nm | F | [source](https://1000aircraftphotos.com/Contributions/6802.htm) | not stated (1,000 mi) |
 
@@ -33,7 +33,7 @@ Cruise settings (P = screened as published, M = screened as measured; the basis 
 
 | KTAS | Altitude, ft | Power | Fuel flow, gph | Grade | Source | Note |
 |---|---|---|---|---|---|---|
-| 151 M | - | 73% | - | P | [source](https://www.kitplanes.com/archive-may-1988/) | measured, Kitplanes May 1988 |
+| 151 M | - | 73% | - | P | [source](https://www.kitplanes.com/archive-may-1988/) | measured, Kitplanes May 1988 (LeRoy Cook), second prototype N42PP; altitude, weight and rpm not published |
 | 165 P | 7500 | - | - | F | [source](https://1000aircraftphotos.com/Contributions/6802.htm) | brochure, 190 mph converted |
 
 ## Screen (published numbers; like for like)
@@ -45,33 +45,35 @@ Two screens, never mixed: the maker's figures as published, and measured or repo
   - Range: 869 nm (fail; not stated (1,000 mi)) against 1,000 nm.
   - Cruise: 165 KTAS at 7,500 ft (pass) against >160 KTAS (>180 preferred).
   - Payload at 1,000 nm (information): cannot (866 nm max).
-- **Measured or reported: partial: speed near, speed unconditioned** - speed -9 kt
-  - Useful load: - lb (?) against 1,000 lb.
+- **Measured or reported: partial: UL fail, speed near, speed unconditioned** - UL -261 lb, speed -9 kt
+  - Useful load: 739 lb (fail) against 1,000 lb.
   - Range: - nm (?; none found) against 1,000 nm.
   - Cruise: 151 KTAS at an unstated altitude (near) against >160 KTAS (>180 preferred).
-  - Payload at 1,000 nm (information): cannot be computed on this basis.
+  - Payload at 1,000 nm (information): cannot (866 nm max).
 - Aeromomentum fit (first cut): Yes: AM20T (260 hp) for 180 hp.
 
 Sanity flags:
 
-- none raised
+- fleet useful load 111 lb below factory
+- Bill's top-interest design (AER-3783, 2026-10-24): full deep dive in the stage 3 dossier
 
 ## Why it died
 
-Builders cited slow parts delivery; kits stopped ~1989 and the company folded 1991 (Kitplanes; SDASM).
+Early handling and performance disappointment tied to a far-aft CG (pitch sensitivity, hard rotation), a financing change from pay-as-you-build to pay-up-front (Tom Prescott, 2007), slow parts, and a 1988 sale abroad; folded 1989-1991 with builders mid-kit (Kitplanes; SDASM; Sport Aviation).
 
 ## Idea ledger (what a new airplane should keep; AERO's judgement)
 
-- A four-seat pusher designed with CAD/CAM in the 1980s around a steel-tube fuselage, aimed at a low-cost kit.
-- Lesson: slow parts supply killed it before the airframe could prove itself; kit logistics are part of the design.
+- A pusher without a drive shaft: engine in the tail cone, prop on a 12 in extension; no drive failure on record.
+- A welded tube cage with all systems installed before non-structural shells go on; CAD/CAM-designed from the start; the engineering archive survives at SDASM.
+- Lesson: an engine in the tail sets the CG, gear position and prop clearance together; the Prescott's handling complaints trace to that.
 
 ## Rights and provenance (known so far; research, not legal advice)
 
-Not found. Owned by the stage 2 rights research (AER-3787).
+No TC. Engineering record survives at SDASM (SC.10269); rights holder unknown (docs/rights/prescott-pusher.md, PR #6). Owned by the stage 2 rights research (AER-3787).
 
 ## Safety record
 
-Not found.
+4 confirmed US NTSB events, 1 fatal (Ford V-6 conversion, LAX90DUM02), plus a probable fifth (fatal, Ford V-6). Pusher-specific: a door into the prop (CEN09CA386) and a prop separation (LAX05LA270). Pitch-up stall in a go-around (MIA92LA186).
 
 ## Not yet done
 
