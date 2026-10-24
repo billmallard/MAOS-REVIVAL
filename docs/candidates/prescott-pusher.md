@@ -25,7 +25,7 @@ Grades: F factory/brochure/designer claim; T type certificate data sheet; P flig
 | MTOW | 2,400 lb | F | [source](https://1000aircraftphotos.com/Contributions/6802.htm) | - |
 | Empty weight | 1,550 lb | F | [source](https://1000aircraftphotos.com/Contributions/6802.htm) | - |
 | Useful load | 850 lb | F | [source](https://1000aircraftphotos.com/Contributions/6802.htm) | - |
-| Useful load, fleet or as-weighed | 739 lb | P | [source](https://www.kitplanes.com/archive-may-1988/) | one builder aircraft weighed (N747P, 1,661 lb finished with ballast, Sport Aviation 1991, via the stage 3 Prescott research file docs/shortlist/check/prescott/README.md); not a fleet average |
+| Useful load, fleet or as-weighed | 739 lb | P | [source](http://web.archive.org/web/20241217134717/https://p.pdfhall.com/russ-and-marcia-taylors-prescott-pusher_5b6d873e097c4748748b4604.html) | one builder aircraft weighed (N747P: 1,555 lb in the shop, 1,661 lb finished with ballast for CG; Jack Cox, Sport Aviation, September 1991); not a fleet average |
 | Usable fuel | 56.5 US gal | F | [source](https://1000aircraftphotos.com/Contributions/6802.htm) | second prototype |
 | Published range | 869 nm | F | [source](https://1000aircraftphotos.com/Contributions/6802.htm) | not stated (1,000 mi) |
 
