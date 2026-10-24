@@ -1,0 +1,18 @@
+{
+ "Fuselage": {
+  "theo_ft2": 198.13,
+  "wet_ft2": 190.248
+ },
+ "Wing": {
+  "theo_ft2": 231.21,
+  "wet_ft2": 204.55
+ },
+ "Htail": {
+  "theo_ft2": 62.0469,
+  "wet_ft2": 58.1998
+ },
+ "Vtail": {
+  "theo_ft2": 24.6388,
+  "wet_ft2": 24.586
+ }
+}

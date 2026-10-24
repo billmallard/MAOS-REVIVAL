@@ -1,0 +1,24 @@
+pf_AR10_V_cdf
+#Mach
+0.25
+#IYsym IZsym Zsym
+0 0 0.0
+#Sref Cref Bref
+113.4632 3.5300 33.6843
+#Xref Yref Zref
+1.1615 0.0 0.0
+#CDp
+0.0
+SURFACE
+Wing
+12 1.0 28 -2.0
+YDUPLICATE
+0.0
+SECTION
+0.0 0.0 0.0 4.6461 0.0
+NACA
+2415
+SECTION
+0.6388 16.8422 0.0 2.0907 0.0
+NACA
+2415

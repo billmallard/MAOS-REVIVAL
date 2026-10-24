@@ -209,12 +209,12 @@ def vsp(p, a, S, rule):
          "sweep": math.degrees(math.atan2(a["xr_tip"] - a["xf_tip"], g["gap"])),
          "x": x0 + a["xf_tip"], "y": g["b"] / 2, "z": -1.2},
     ]
-    return pf._run_vsp({"id": f"jw_{rule}", "fuselage": pf.FUS, "surfaces": surfaces})
+    return pf._run_vsp({"id": f"jw_{rule}{'' if pf.CDF == 1.29 else '_cdf'}", "fuselage": pf.FUS, "surfaces": surfaces})
 
 
 def evaluate(p, rule, W_fixed):
     W0, S = 2700.0, 150.0
-    a = avl(p, S, f"jw_{rule}")
+    a = avl(p, S, f"jw_{rule}{'' if pf.CDF == 1.29 else '_cdf'}")
     for _ in range(30):
         g = geom(p, S)
         if rule == "V":
@@ -228,7 +228,7 @@ def evaluate(p, rule, W_fixed):
             W0 = W0n
             break
         W0 = W0n
-    a = avl(p, S, f"jw_{rule}")
+    a = avl(p, S, f"jw_{rule}{'' if pf.CDF == 1.29 else '_cdf'}")
     g = a["geom"]
     wet = vsp(p, a, S, rule)
     pl = JPlane(p, S, a, wet)
@@ -295,10 +295,11 @@ def _main():
         json.dump(rows, open(os.path.join(HERE, "results", "calib.json"), "w"), indent=1)
         print(r)
         return
+    tag = "" if pf.CDF == 1.29 else f"_cdf{int(round(pf.CDF * 100))}"
     rule = "S" if "--rule" in sys.argv and sys.argv[sys.argv.index("--rule") + 1] == "S" else "V"
     Wf = pf.calibrate_fixed()
     r = evaluate(JW, rule, Wf)
-    json.dump(r, open(os.path.join(HERE, "results", f"joined_{rule}.json"), "w"), indent=1)
+    json.dump(r, open(os.path.join(HERE, "results", f"joined_{rule}{tag}.json"), "w"), indent=1)
     print(json.dumps({k: (round(v, 3) if isinstance(v, float) else v) for k, v in r.items()}, indent=0))
 
 

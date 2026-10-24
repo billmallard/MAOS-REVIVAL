@@ -66,6 +66,8 @@ PROP = {"diameter_ft": 6.0, "install": 0.90}
 GEAR_DQ = 0.10           # retractable, doors and gaps (E); 1.5 ft2 more extended
 STOPPED_PROP_DQ = 1.0    # ft2, stopped fixed-pitch 6 ft prop (E; none if feathered)
 CDF = 1.29               # survey fleet drag factor (AER-3783 calib.json)
+if "--cdf" in sys.argv:  # sensitivity: measured pushers need 1.35-1.72 (AER-3783)
+    CDF = float(sys.argv[sys.argv.index("--cdf") + 1])
 UDE = 50.0               # ft/s, design gust at Vc
 V_GUST_KEAS = 150.0      # same equivalent speed for every point
 
@@ -356,7 +358,7 @@ def size(p, rule, W_fixed, S_fixed=150.0):
     """Iterate W0 and S. rule 'V': S for V_TD at W0 with the usable landing
     CL; rule 'S': S fixed. AVL is re-run on the final planform."""
     W0, S = 2900.0, 150.0
-    a = avlgen.run(f"pf_{p['id']}_{rule}", S, p["AR"], p["taper"], sweep_le(p), p["airfoil"])
+    a = avlgen.run(f"pf_{p['id']}_{rule}{'' if CDF == 1.29 else '_cdf'}", S, p["AR"], p["taper"], sweep_le(p), p["airfoil"])
     for _ in range(30):
         g = geom(p, S)
         if rule == "V":
@@ -371,7 +373,7 @@ def size(p, rule, W_fixed, S_fixed=150.0):
             W0 = W0n
             break
         W0 = W0n
-    a = avlgen.run(f"pf_{p['id']}_{rule}", S, p["AR"], p["taper"], sweep_le(p), p["airfoil"])
+    a = avlgen.run(f"pf_{p['id']}_{rule}{'' if CDF == 1.29 else '_cdf'}", S, p["AR"], p["taper"], sweep_le(p), p["airfoil"])
     return W0, S, a
 
 
@@ -387,7 +389,7 @@ def evaluate(p, rule, W_fixed):
     W0, S, a = size(p, rule, W_fixed)
     g = geom(p, S)
     Sh, Sv = tails(p, g)
-    wet = _run_vsp({"id": f"pf_{p['id']}_{rule}", "fuselage": FUS,
+    wet = _run_vsp({"id": f"pf_{p['id']}_{rule}{'' if CDF == 1.29 else '_cdf'}", "fuselage": FUS,
                     "surfaces": _surfaces(p, g, Sh, Sv)})
     pl = Plane(p, S, a, wet)
     Ww, Wh, Wv = weights(p, g, W0)
@@ -513,4 +515,5 @@ if __name__ == "__main__":
               f"R0 {r['range0']:5.0f} R45 {r['range45']:5.0f} LR {r['range_lr']:5.0f} "
               f"dn {r['dn_gust']:.2f} sink {r['sink_app']:.0f} Fcap {r['F_cap']:.0f}", flush=True)
     os.makedirs(os.path.join(HERE, "results"), exist_ok=True)
-    json.dump(out, open(os.path.join(HERE, "results", f"sweep_{rule}.json"), "w"), indent=1)
+    tag = "" if CDF == 1.29 else f"_cdf{int(round(CDF * 100))}"
+    json.dump(out, open(os.path.join(HERE, "results", f"sweep_{rule}{tag}.json"), "w"), indent=1)
