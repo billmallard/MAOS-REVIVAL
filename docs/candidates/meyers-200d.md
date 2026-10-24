@@ -79,7 +79,7 @@ TCDS 3A18 holder: Interceptor Aviation Inc., Bethany OK (2014; GlobalParts affil
 
 <!-- stage3:start -->
 
-## Stage 3: shortlist rank 4 of 5 (AER-3783)
+## Stage 3: shortlist rank 5 of 6 (AER-3783)
 
 Our own check, from published geometry and weights, calibrated against published flight data. Method, calibration and the Aeromomentum assumptions are in [docs/SHORTLIST.md](../SHORTLIST.md). Rights are research, not legal advice. Nobody has been contacted.
 
@@ -89,7 +89,7 @@ Bill, 2026-10-24: "Interesting to me." He can't afford the rights and is "not su
 
 ### Verdict
 
-**Rank 4.** As published it fails range (782 nm on normal fuel with a 45-minute reserve) and passes useful load (1,060 lb) and speed (182 KTAS at 75%, altitude not stated). As measured it is a near miss: about 900 lb useful at the fleet-typical 2,100 lb empty, and 178 KTAS at 8,500 ft on about 67% (AOPA 1991). Our check needs a drag factor of 1.41 to match AOPA's point, just above the fleet band, which fits a 1960s riveted airframe with the skin waviness and protrusions Davisson noted; it gives 857 nm still air on 74 gal at 65% and 8,000 ft. On an AM20T: 178-189 KTAS, 831-863 nm on full fuel. So the speed is there and the range and empty weight are not, and both are what a re-derivation would fix: more fuel in the wing and a lighter structure. It ranks below the Express because a re-derivation is a new airplane, and above the 301 because a holder, a type certificate, drawings and 58 registered aircraft exist.
+**Rank 5.** As published it fails range (782 nm on normal fuel with a 45-minute reserve) and passes useful load (1,060 lb) and speed (182 KTAS at 75%, altitude not stated). As measured it is a near miss: about 900 lb useful at the fleet-typical 2,100 lb empty, and 178 KTAS at 8,500 ft on about 67% (AOPA 1991). Our check needs a drag factor of 1.41 to match AOPA's point, just above the fleet band, which fits a 1960s riveted airframe with the skin waviness and protrusions Davisson noted; it gives 857 nm still air on 74 gal at 65% and 8,000 ft. On an AM20T: 178-189 KTAS, 831-863 nm on full fuel. So the speed is there and the range and empty weight are not, and both are what a re-derivation would fix: more fuel in the wing and a lighter structure. It ranks below the Express because a re-derivation is a new airplane, and above the 301 because a holder, a type certificate, drawings and 58 registered aircraft exist.
 
 ### Idea ledger (what a new airplane should keep)
 
@@ -109,6 +109,15 @@ Read across a row only within one column's basis. The three targets are separate
 | Range | 782 nm (fail; normal fuel, 45 min reserve) | 1,153 nm (pass; still air, no reserve, from fuel and measured flow at 187 KTAS) | 857 nm, still air, no reserve, full fuel from MTOW, at 185 hp and 8,000 ft |
 | Cruise | 182 KTAS at altitude not stated (pass+) | 187 KTAS at altitude not stated (pass+) | 174 KTAS at 185 hp and 8,000 ft |
 | Screen | fail | near miss, speed unconditioned | see the verdict |
+
+### The deep-dive axes: storage, home-shop construction, safety, ride
+
+**Aspect ratio 5.8**: moderate, with a 23015-to-4412 wing and strong washout; conventional in the planform study (AER-3807, `docs/studies/planform/`).
+
+- **Storage.** 30.5 ft span, 7 ft 4 in high: fits a 40 ft T-hangar door. No folding.
+- **Construction with home-shop tools.** The welded 4130 cage suits a home shop with a CNC router (jig boards and tube-notching fixtures) and a welder; welding certification is the skill, not the tool. The original riveted aluminium skin over the cage needed heavy hand fitting, which is why it was built at a loss; a re-derivation would design the skin for CNC-cut, matched-hole parts. Root spar about 12.7 in deep at the root (the 15% section). Fittings suit a small mill.
+- **Safety.** Benign stall with aileron authority into the stall, credited to its washout (AvWeb; AOPA 1991). Published landing-configuration stall 47 kt (Jane's) against 54 kt (Davisson): unresolved. Best L/D about 14.5 at 109 KTAS. The steel cage is a crash-survivability asset; no in-flight breakup on record.
+- **Ride comfort.** Gust dn 1.66 at 18.6 lb/ft2: as rough as the Aries. Near-360 deg visibility; cabin dimensions not published.
 
 ### Independent performance check
 

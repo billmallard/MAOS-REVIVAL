@@ -106,6 +106,15 @@ Read across a row only within one column's basis. The three targets are separate
 | Cruise | 191 KTAS at 8,000 ft (pass+) | 177 KTAS at 8,021 ft (pass) | 175 KTAS at 131 hp and 8,000 ft |
 | Screen | pass | fail | see the verdict |
 
+### The deep-dive axes: storage, home-shop construction, safety, ride
+
+**Aspect ratio 9.1** (main wing; plus a canard): high aspect ratio, in the pusher camp of the planform study (AER-3807, `docs/studies/planform/`).
+
+- **Storage.** 28.1 ft span: fits a 40 ft T-hangar door. Canard pushers are long; check hangar depth.
+- **Construction with home-shop tools.** The benchmark: moldless foam and glass, built by plans builders without tooling. Cores are hot-wired or CNC-routed; no molds. The cost is hours and weight scatter.
+- **Safety.** The canard stalls first and limits the main wing's angle of attack: stall resistance is the type's selling point. Best L/D about 16.3 at 102 KTAS.
+- **Ride comfort.** Gust dn 1.51 at 23.6 lb/ft2 (main wing only; the canard adds lift slope, so this is optimistic). Semi-reclined seats; a tight rear cabin.
+
 ### Independent performance check
 
 Model: `docs/shortlist/check/models/cozy-mkiv.json`; result: `docs/shortlist/check/results/cozy-mkiv.json`. Method in [SHORTLIST.md](../SHORTLIST.md#method).

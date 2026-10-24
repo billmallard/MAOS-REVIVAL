@@ -239,6 +239,8 @@ def block(i):
         parts += ["### Idea ledger (what a new airplane should keep)", ""]
         parts += [f"- {x}" for x in n["ideas"]] + [""]
     parts += like_for_like(i)
+    if n.get("axes"):
+        parts += ["### The deep-dive axes: storage, home-shop construction, safety, ride", "", n["axes"].strip(), ""]
     for k in n.get("extra_sections", []):
         parts += [f"### {k[0]}", "", k[1].strip(), ""]
     for r in n["results"]:

@@ -1,0 +1,6 @@
+## Prescott Pusher (prototype 2 standard, O-360 180 hp)  (results at drag factor 1.29, fleet calibration (no published point with known power))
+Reference condition {'alt_ft': 7500, 'hp': 135, 'W': 2300}: 169 KTAS, CD0 0.0203, D/q par 2.24 ft2, ind 0.40 ft2, eta 0.785, L/D 11.3
+Orig engine 135 hp @ 7500 ft: 170 KTAS, range 865 nm, payload@1000 cannot/cannot
+AM20T swap delta installed mass +61 lb
+  AM-low: 195 hp @ 8000 ft -> 197 KTAS, UL 789, range 694 nm, payload@1000 cannot/cannot; [opt k 1.16: 205 KTAS, cannot] eco 166 KTAS payload cannot/cannot
+  AM-high: 195 hp @ 16000 ft -> 210 KTAS, UL 789, range 718 nm, payload@1000 cannot/cannot; [opt k 1.16: 219 KTAS, cannot] eco 176 KTAS payload cannot/cannot

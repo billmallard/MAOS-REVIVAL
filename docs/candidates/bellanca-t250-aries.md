@@ -77,7 +77,7 @@ One NTSB record in about 50 years: FTW83LA173 (1983, N51AG prototype), a taxi br
 
 <!-- stage3:start -->
 
-## Stage 3: shortlist rank 1 of 5 (AER-3783)
+## Stage 3: shortlist rank 1 of 6 (AER-3783)
 
 Our own check, from published geometry and weights, calibrated against published flight data. Method, calibration and the Aeromomentum assumptions are in [docs/SHORTLIST.md](../SHORTLIST.md). Rights are research, not legal advice. Nobody has been contacted.
 
@@ -106,6 +106,15 @@ Read across a row only within one column's basis. The three targets are separate
 | Range | 1,017 nm (pass; published 1,170 statute miles at economy cruise with 45-min reserve (AOPA table labels the power 55%, its economy speed line says 65%); 990 sm (860 nm) at 75% with 45-min reserve; altitude not stated) | not found | 1,008 nm, still air, no reserve, full fuel from MTOW, at 162 hp and 8,000 ft |
 | Cruise | 181 KTAS at altitude not stated (pass+) | 181 KTAS at 6,500 ft (pass+) | 172 KTAS at 162 hp and 8,000 ft |
 | Screen | pass, speed unconditioned | partial: speed pass | see the verdict |
+
+### The deep-dive axes: storage, home-shop construction, safety, ride
+
+**Aspect ratio 5.8**: a moderate, constant-chord wing, on the conventional side of the planform study (AER-3807, `docs/studies/planform/`).
+
+- **Storage.** 31.3 ft span, 8 ft 7 in high (AOPA): fits a 40 ft T-hangar door with room to spare. No folding; not trailerable without removing the wings.
+- **Construction with home-shop tools.** This is its strongest axis. The wing is constant-chord, so every rib is the same: one set of CNC-routed form blocks makes them all. The skins are flat or single-curve aluminium, designed that way to cut production cost; blanks can be routed, but bending them needs a brake and the riveting is hand work. The largest part is a 15.7 ft half-wing; the root spar is about 7.8 in deep, a machined or built-up metal spar that may need a service. Fittings suit a small CNC mill.
+- **Safety.** Published stalls 63 kt clean and 56 kt in landing configuration (72 and 64 mph); AOPA measured 69 and 63 mph IAS. AOPA described no stall break, so stall character is unrecorded; it did note weak yaw damping after a rudder input. Best L/D about 15.7 at 114 KTAS. Spin behaviour: not on record. One NTSB event in about 50 years, on four aircraft, proves little.
+- **Ride comfort.** Gust dn 1.66: the roughest of the shortlist with the Meyers, because its 18.5 lb/ft2 wing loading is low. Cabin 45 in wide, 115 in long, 48.5 in high (AOPA): roomy for the class. Noise: not recorded.
 
 ### Independent performance check
 
