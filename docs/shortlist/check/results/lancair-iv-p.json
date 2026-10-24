@@ -1,0 +1,164 @@
+{
+ "id": "lancair-iv-p",
+ "name": "Lancair IV-P (TSIO-550, 30.2 ft wing)",
+ "wet": {
+  "Fuselage": {
+   "theo_ft2": 234.092,
+   "wet_ft2": 228.029
+  },
+  "Wing": {
+   "theo_ft2": 202.425,
+   "wet_ft2": 176.032
+  },
+  "HTail": {
+   "theo_ft2": 32.5621,
+   "wet_ft2": 26.8708
+  },
+  "Fin": {
+   "theo_ft2": 21.7569,
+   "wet_ft2": 17.9408
+  }
+ },
+ "calibration": [
+  {
+   "pub": {
+    "ktas": 278,
+    "alt_ft": 23000,
+    "hp": 262,
+    "gph": 18,
+    "weight_lb": 3200,
+    "grade": "P",
+    "note": "AOPA Pilot Jun 1994, 75%, lean of peak"
+   },
+   "W": 3200,
+   "our_ktas": 281.16874376848705,
+   "d_ktas_pct": 1.1398358879449733,
+   "eta": 0.8367774141089865,
+   "LD": 12.594085701002411,
+   "Dq_par": 1.696495359857942,
+   "Dq_ind": 0.27860642954859,
+   "our_hp_at_pub_ktas": 254.87183931157335,
+   "our_gph_at_pub_ktas": 17.841028751810132,
+   "k_match": 1.029816816414268
+  }
+ ],
+ "assumptions": [
+  "Wing span 30.2 ft, area 98 ft2 (F, factory); RXM5-217 root / NACA 64-212 tip (Lednicer). Taper ratio 0.5 assumed (E): root 4.33 ft, tip 2.16 ft.",
+  "Fuselage 25 ft long (F); max width 4.1 ft (46 in cabin + walls) and height 4.4 ft: E, ours.",
+  "Tails sized by volume coefficient (E, Raymer table 6.4 GA single): horizontal Vh 0.65 -> 15.9 ft2, vertical Vv 0.045 -> 10.2 ft2, arm 13 ft.",
+  "Laminar run x_tr: wing 0.25, tails 0.20, fuselage 0.05.",
+  "Retractable gear, doors closed: no gear term; leakage covered by the 5% excrescence line.",
+  "Turbo TSIO-550 flat-rated to 25,000 ft (E). Cooling factor 1.3 for a twin-turbo intercooled installation (E).",
+  "Published-point weight unstated: 3,200 lb assumed (E).",
+  "Original installed engine mass 633 lb = typical published dry weight x 1.15 for mount, baffles, exhaust and oil cooler (E; per-variant check owed by MANUFACTURING)."
+ ],
+ "k_own": 1.029816816414268,
+ "k_fleet": 1.29,
+ "k_alt": 1.029816816414268,
+ "k_basis": "fleet calibration (own points read cleaner than the fleet)",
+ "drag_factor": 1.29,
+ "breakdown": {
+  "cond": {
+   "alt_ft": 23000,
+   "hp": 262,
+   "W": 3200
+  },
+  "ktas": 254.68993287176093,
+  "items": [
+   [
+    "Wing",
+    0.6535908131355949,
+    "Swet 176.0 ft2, Re 5.1M, Cf 0.00254, FF 1.462, Q 1.00, x_tr 0.25"
+   ],
+   [
+    "HTail",
+    0.11509037477753963,
+    "Swet 26.9 ft2, Re 2.9M, Cf 0.00301, FF 1.354, Q 1.05, x_tr 0.20"
+   ],
+   [
+    "Fin",
+    0.0709631185200404,
+    "Swet 17.9 ft2, Re 3.9M, Cf 0.00283, FF 1.332, Q 1.05, x_tr 0.20"
+   ],
+   [
+    "Fuselage",
+    0.6526613479682064,
+    "Swet 228.0 ft2, Re 37.7M, Cf 0.00226, FF 1.265, Q 1.00, x_tr 0.05"
+   ],
+   [
+    "cooling",
+    0.15400585492040447,
+    "Raymer 12.39 x 1.30"
+   ],
+   [
+    "leakage+protuberance",
+    0.0823155754660893,
+    "5% of the rest"
+   ],
+   [
+    "calibration factor",
+    0.5013018545884839,
+    "x1.290 on the build-up (calibration; basis stated above)"
+   ]
+  ],
+  "Dq_par": 2.229928939376359,
+  "Dq_ind": 0.41382067134725015,
+  "CD0": 0.022754376932411828,
+  "eta": 0.8324822896040766,
+  "LD": 11.466908026004237
+ },
+ "orig": {
+  "alt_ft": 20000,
+  "hp": 262,
+  "ktas": 247.82344560019777,
+  "range_nm_noreserve_fullfuel_mtow": 1057.9755998985122,
+  "hours": 4.269069850660115,
+  "climb_allowance_lb": 50.16161616161616,
+  "payload_1000_0": 855.1353491655773,
+  "fuel_1000_0_lb": 494.8646508344228,
+  "payload_1000_45": null,
+  "fuel_1000_45_lb": 575.6681560761633
+ },
+ "am_model": "AM20T",
+ "am_dmass_lb": -241.75,
+ "am": {
+  "AM-low": {
+   "alt_ft": 8000.0,
+   "hp": 195.0,
+   "ktas": 199.65914443402872,
+   "empty": 2200.0,
+   "useful": 1350.0,
+   "useful_opt": 1591.75,
+   "range_nm_fullfuel": 1136.0244388760846,
+   "gph": 14.625,
+   "payload_1000_0": 881.320592545843,
+   "fuel_1000_0_lb": 468.67940745415706,
+   "payload_1000_45": null,
+   "fuel_1000_45_lb": 533.1507371177922,
+   "eco_payload_1000_0": 962.0253510781099,
+   "eco_payload_1000_45": 920.1835435224158,
+   "eco_ktas": 160.78279336661342,
+   "opt_ktas": 217.82822664592672,
+   "opt_payload_1000_45": 1094.4705162180037
+  },
+  "AM-high": {
+   "alt_ft": 16000.0,
+   "hp": 195.0,
+   "ktas": 211.27844457989025,
+   "empty": 2200.0,
+   "useful": 1350.0,
+   "useful_opt": 1591.75,
+   "range_nm_fullfuel": 1154.9244070046163,
+   "gph": 14.625,
+   "payload_1000_0": 888.2949756451139,
+   "fuel_1000_0_lb": 461.70502435488595,
+   "payload_1000_45": 824.0628655030399,
+   "fuel_1000_45_lb": 525.93713449696,
+   "eco_payload_1000_0": 952.7031504038732,
+   "eco_payload_1000_45": 911.2178697184769,
+   "eco_ktas": 164.49660675596786,
+   "opt_ktas": 231.05108290454234,
+   "opt_payload_1000_45": 1100.4170796201925
+  }
+ }
+}

@@ -1,0 +1,158 @@
+{
+ "id": "express-2000",
+ "name": "Wheeler Express FT (CAFE N360EZ)",
+ "assumptions": [
+  "Geometry for the cruciform-tail Express FT (CAFE N360EZ): wing span 31 ft, area 130.29 ft2, tip chord 37.5 in, NLF(1)-0215F at 15% t/c, length 25.67 ft (P, CAFE). Root chord set to 5.28 ft so the trapezoid closes CAFE's area.",
+  "Fuselage max width 3.9 ft (44 in cabin + walls) and height 4.1 ft: E, ours; the CAFE report gives neither.",
+  "Horizontal tail total 22.4 ft2 (9.33 ft x 2.4 ft, stabilizer 13.14 ft2 per CAFE plus an estimated elevator); fin 12 ft2: E, ours.",
+  "Laminar run x_tr: wing 0.30, tails 0.20, fuselage 0.05 (builder composite finish; NLF(1)-0215F bucket not credited in full).",
+  "Fixed gear, 6.00x6 mains with pants: D/q 0.60 ft2 for three faired wheels and legs (E, Gudmundsson ch. 15 faired-wheel range).",
+  "CAFE powers are not published: hp is estimated from manifold pressure, rpm and density altitude by Gagg-Ferrar (E). Points at full throttle only.",
+  "Original installed engine mass 380 lb = typical published dry weight x 1.15 for mount, baffles, exhaust and oil cooler (E; per-variant check owed by MANUFACTURING)."
+ ],
+ "Sref": 130.29,
+ "fuselage": {
+  "length": 25.67,
+  "width": 3.9,
+  "height": 4.1,
+  "profile": "tractor"
+ },
+ "surfaces": [
+  {
+   "name": "Wing",
+   "span": 31.0,
+   "croot": 5.28,
+   "ctip": 3.125,
+   "tc_root": 0.15,
+   "tc_tip": 0.15,
+   "sweep": 3,
+   "x": 7.0,
+   "z": -1.2
+  },
+  {
+   "name": "HTail",
+   "span": 9.33,
+   "croot": 2.6,
+   "ctip": 2.2,
+   "tc_root": 0.09,
+   "x": 22.3,
+   "z": 0.4
+  },
+  {
+   "name": "Fin",
+   "span": 4.0,
+   "croot": 4.0,
+   "ctip": 2.0,
+   "tc_root": 0.09,
+   "vertical": true,
+   "sym": false,
+   "sweep": 35,
+   "x": 21.0,
+   "z": 0.6
+  }
+ ],
+ "components": [
+  {
+   "name": "Wing",
+   "kind": "surface",
+   "lref": 4.3,
+   "tc": 0.15,
+   "xc": 0.4,
+   "sweep_tc": 0,
+   "xtr": 0.3,
+   "Q": 1.0
+  },
+  {
+   "name": "HTail",
+   "kind": "surface",
+   "lref": 2.4,
+   "tc": 0.09,
+   "xc": 0.4,
+   "xtr": 0.2,
+   "Q": 1.05
+  },
+  {
+   "name": "Fin",
+   "kind": "surface",
+   "lref": 3.0,
+   "tc": 0.09,
+   "xc": 0.3,
+   "sweep_tc": 30,
+   "xtr": 0.2,
+   "Q": 1.05
+  },
+  {
+   "name": "Fuselage",
+   "kind": "body",
+   "lref": 25.67,
+   "dmax": 4.0,
+   "xtr": 0.05,
+   "Q": 1.0
+  }
+ ],
+ "fixed_Dq": [
+  [
+   "fixed gear, faired",
+   0.6
+  ]
+ ],
+ "cooling_factor": 1.0,
+ "excrescence_frac": 0.05,
+ "lifting": [
+  {
+   "S": 130.29,
+   "AR": 7.38,
+   "share": 1.0
+  }
+ ],
+ "prop": {
+  "diameter_ft": 5.96,
+  "install": 1.0
+ },
+ "engine": {
+  "hp": 210,
+  "bsfc": 0.45,
+  "crit_alt_ft": 0
+ },
+ "orig_installed_lb": 380,
+ "weights": {
+  "mtow": 2895,
+  "empty": 1994
+ },
+ "fuel_usable_gal": 92,
+ "fuel_density": 6.0,
+ "published": [
+  {
+   "ktas": 169.2,
+   "alt_ft": 6190,
+   "hp": 169,
+   "gph": 11.1,
+   "weight_lb": 2885,
+   "grade": "P",
+   "note": "CAFE, full throttle 25.4 in/2780 rpm, density alt; hp E (Gagg-Ferrar)"
+  },
+  {
+   "ktas": 166.1,
+   "alt_ft": 7791,
+   "hp": 149,
+   "gph": 10.5,
+   "weight_lb": 2871,
+   "grade": "P",
+   "note": "CAFE, 24.1 in/2600 rpm (about full throttle with ram), peak-speed mixture; hp E"
+  },
+  {
+   "ktas": 152.7,
+   "alt_ft": 9813,
+   "hp": 139,
+   "gph": 9.7,
+   "weight_lb": 2840,
+   "grade": "P",
+   "note": "CAFE, 21.4 in/2597 rpm (about full throttle); hp E; excluded from calibration: 14 kt slower than the 7,791 ft point for 2,000 ft more altitude, so it was probably not at full throttle and the hp estimate is high",
+   "use_for_k": false
+  }
+ ],
+ "orig_cruise": {
+  "alt_ft": 8000,
+  "hp": 150
+ }
+}

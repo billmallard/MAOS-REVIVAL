@@ -1,0 +1,147 @@
+{
+ "id": "berkut-360",
+ "name": "Berkut 360 (IO-360 205 hp)",
+ "wet": {
+  "Fuselage": {
+   "theo_ft2": 124.429,
+   "wet_ft2": 117.959
+  },
+  "Wing": {
+   "theo_ft2": 135.876,
+   "wet_ft2": 85.1465
+  },
+  "Strake": {
+   "theo_ft2": 88.3087,
+   "wet_ft2": 61.9919
+  },
+  "Canard": {
+   "theo_ft2": 25.1602,
+   "wet_ft2": 22.6438
+  },
+  "Winglets": {
+   "theo_ft2": 16.9817,
+   "wet_ft2": 16.7717
+  }
+ },
+ "calibration": [],
+ "assumptions": [
+  "Span 26.67 ft and length 18.5 ft (F, Jane's 1993-94 via Wikipedia). Wing area 110 ft2 is unsourced (E, low confidence). Panels and strakes scaled from the CAFE-measured Cozy by span ratio 0.95 (E).",
+  "Tandem two-seat fuselage: width 2.6 ft, height 3.4 ft (E). Canard 12 ft2, 11.5 ft span; winglets 2 x 8 ft2 (E).",
+  "Fully retractable gear: no gear term. Laminar run as the Cozy. Canard carries 20% of the lift (E).",
+  "Prop 66 in constant speed (E). No measured performance exists, so the fleet-median calibration factor applies."
+ ],
+ "k_own": null,
+ "k_fleet": 1.29,
+ "k_alt": 1.16,
+ "k_basis": "fleet calibration (no published point with known power)",
+ "drag_factor": 1.29,
+ "breakdown": {
+  "cond": {
+   "alt_ft": 8000,
+   "hp": 150,
+   "W": 1850
+  },
+  "ktas": 217.7187273881387,
+  "items": [
+   [
+    "Wing",
+    0.2714799254887162,
+    "Swet 85.1 ft2, Re 5.0M, Cf 0.00228, FF 1.396, Q 1.00, x_tr 0.35"
+   ],
+   [
+    "Strake",
+    0.2067030807069618,
+    "Swet 62.0 ft2, Re 9.2M, Cf 0.00242, FF 1.315, Q 1.05, x_tr 0.20"
+   ],
+   [
+    "Canard",
+    0.10488746371096332,
+    "Swet 22.6 ft2, Re 2.0M, Cf 0.00280, FF 1.655, Q 1.00, x_tr 0.35"
+   ],
+   [
+    "Winglets",
+    0.06318006488014269,
+    "Swet 16.8 ft2, Re 3.5M, Cf 0.00276, FF 1.298, Q 1.05, x_tr 0.25"
+   ],
+   [
+    "Fuselage",
+    0.3167768502247784,
+    "Swet 118.0 ft2, Re 35.5M, Cf 0.00216, FF 1.242, Q 1.00, x_tr 0.10"
+   ],
+   [
+    "cooling",
+    0.06113339219182612,
+    "Raymer 12.39 x 1.00"
+   ],
+   [
+    "leakage+protuberance",
+    0.051208038860169426,
+    "5% of the rest"
+   ],
+   [
+    "calibration factor",
+    0.3118569566584318,
+    "x1.290 on the build-up (calibration; basis stated above)"
+   ]
+  ],
+  "Dq_par": 1.3872257727219899,
+  "Dq_ind": 0.1021408875055208,
+  "CD0": 0.012611143388381726,
+  "eta": 0.8367923342250899,
+  "LD": 9.84735125847681
+ },
+ "orig": {
+  "alt_ft": 8000,
+  "hp": 150,
+  "ktas": 217.78185740789337,
+  "range_nm_noreserve_fullfuel_mtow": 1033.5112489056362,
+  "hours": 4.745626018653734,
+  "climb_allowance_lb": 19.696969696969695,
+  "payload_1000_0": 635.6167329118143,
+  "fuel_1000_0_lb": 329.3832670881856,
+  "payload_1000_45": null,
+  "fuel_1000_45_lb": 379.35949268037933
+ },
+ "am_model": "AM20T",
+ "am_dmass_lb": 16.25,
+ "am": {
+  "AM-low": {
+   "alt_ft": 8000.0,
+   "hp": 195.0,
+   "ktas": 239.16496722976052,
+   "empty": 1051.25,
+   "useful": 948.75,
+   "useful_opt": 948.75,
+   "range_nm_fullfuel": 872.7960044120621,
+   "gph": 14.625,
+   "payload_1000_0": null,
+   "fuel_1000_0_lb": 385.8273458170601,
+   "payload_1000_45": null,
+   "fuel_1000_45_lb": 450.85564269615,
+   "eco_payload_1000_0": 650.1939491784676,
+   "eco_payload_1000_45": 607.9819438543061,
+   "eco_ktas": 204.63005063377122,
+   "opt_ktas": 248.56845139429143,
+   "opt_payload_1000_45": null
+  },
+  "AM-high": {
+   "alt_ft": 16000.0,
+   "hp": 195.0,
+   "ktas": 256.1808721807346,
+   "empty": 1051.25,
+   "useful": 948.75,
+   "useful_opt": 948.75,
+   "range_nm_fullfuel": 906.1125593427479,
+   "gph": 14.625,
+   "payload_1000_0": null,
+   "fuel_1000_0_lb": 371.10268571788845,
+   "payload_1000_45": null,
+   "fuel_1000_45_lb": 436.0255668859406,
+   "eco_payload_1000_0": 658.1090934197792,
+   "eco_payload_1000_45": 615.9794707250952,
+   "eco_ktas": 218.4158130919039,
+   "opt_ktas": 266.33356587576674,
+   "opt_payload_1000_45": null
+  }
+ }
+}

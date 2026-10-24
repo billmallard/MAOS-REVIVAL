@@ -1,0 +1,211 @@
+{
+ "id": "express-2000",
+ "name": "Wheeler Express FT (CAFE N360EZ)",
+ "wet": {
+  "Fuselage": {
+   "theo_ft2": 226.078,
+   "wet_ft2": 217.675
+  },
+  "Wing": {
+   "theo_ft2": 269.802,
+   "wet_ft2": 239.144
+  },
+  "HTail": {
+   "theo_ft2": 45.8789,
+   "wet_ft2": 39.7711
+  },
+  "Fin": {
+   "theo_ft2": 25.5872,
+   "wet_ft2": 22.232
+  }
+ },
+ "calibration": [
+  {
+   "pub": {
+    "ktas": 169.2,
+    "alt_ft": 6190,
+    "hp": 169,
+    "gph": 11.1,
+    "weight_lb": 2885,
+    "grade": "P",
+    "note": "CAFE, full throttle 25.4 in/2780 rpm, density alt; hp E (Gagg-Ferrar)"
+   },
+   "W": 2885,
+   "our_ktas": 181.1088864232377,
+   "d_ktas_pct": 7.038348949904072,
+   "eta": 0.8297019717532422,
+   "LD": 11.435038131221093,
+   "Dq_par": 2.3432609197342775,
+   "Dq_ind": 0.3906709783418164,
+   "our_hp_at_pub_ktas": 144.20388885984076,
+   "our_gph_at_pub_ktas": 10.815291664488058,
+   "k_match": 1.1970296886163396
+  },
+  {
+   "pub": {
+    "ktas": 166.1,
+    "alt_ft": 7791,
+    "hp": 149,
+    "gph": 10.5,
+    "weight_lb": 2871,
+    "grade": "P",
+    "note": "CAFE, 24.1 in/2600 rpm (about full throttle with ram), peak-speed mixture; hp E"
+   },
+   "W": 2871,
+   "our_ktas": 173.8509715120654,
+   "d_ktas_pct": 4.666448833272363,
+   "eta": 0.8288153302844937,
+   "LD": 12.403011225391753,
+   "Dq_par": 2.3566752441815924,
+   "Dq_ind": 0.5027861038266759,
+   "our_hp_at_pub_ktas": 134.72367581955055,
+   "our_gph_at_pub_ktas": 10.104275686466291,
+   "k_match": 1.125688710791792
+  },
+  {
+   "pub": {
+    "ktas": 152.7,
+    "alt_ft": 9813,
+    "hp": 139,
+    "gph": 9.7,
+    "weight_lb": 2840,
+    "grade": "P",
+    "note": "CAFE, 21.4 in/2597 rpm (about full throttle); hp E; excluded from calibration: 14 kt slower than the 7,791 ft point for 2,000 ft more altitude, so it was probably not at full throttle and the hp estimate is high",
+    "use_for_k": false
+   },
+   "W": 2840,
+   "our_ktas": 171.33997364084928,
+   "d_ktas_pct": 12.206924453732348,
+   "eta": 0.8280725008336648,
+   "LD": 12.97342779870122,
+   "Dq_par": 2.3735717888984316,
+   "Dq_ind": 0.5914675653618797,
+   "our_hp_at_pub_ktas": 110.4570401640626,
+   "our_gph_at_pub_ktas": 8.284278012304695,
+   "k_match": 1.3380160328113107
+  }
+ ],
+ "assumptions": [
+  "Geometry for the cruciform-tail Express FT (CAFE N360EZ): wing span 31 ft, area 130.29 ft2, tip chord 37.5 in, NLF(1)-0215F at 15% t/c, length 25.67 ft (P, CAFE). Root chord set to 5.28 ft so the trapezoid closes CAFE's area.",
+  "Fuselage max width 3.9 ft (44 in cabin + walls) and height 4.1 ft: E, ours; the CAFE report gives neither.",
+  "Horizontal tail total 22.4 ft2 (9.33 ft x 2.4 ft, stabilizer 13.14 ft2 per CAFE plus an estimated elevator); fin 12 ft2: E, ours.",
+  "Laminar run x_tr: wing 0.30, tails 0.20, fuselage 0.05 (builder composite finish; NLF(1)-0215F bucket not credited in full).",
+  "Fixed gear, 6.00x6 mains with pants: D/q 0.60 ft2 for three faired wheels and legs (E, Gudmundsson ch. 15 faired-wheel range).",
+  "CAFE powers are not published: hp is estimated from manifold pressure, rpm and density altitude by Gagg-Ferrar (E). Points at full throttle only.",
+  "Original installed engine mass 380 lb = typical published dry weight x 1.15 for mount, baffles, exhaust and oil cooler (E; per-variant check owed by MANUFACTURING)."
+ ],
+ "k_own": 1.1613591997040658,
+ "k_fleet": 1.29,
+ "k_alt": 1.1613591997040658,
+ "k_basis": "fleet calibration (own points read cleaner than the fleet)",
+ "drag_factor": 1.29,
+ "breakdown": {
+  "cond": {
+   "alt_ft": 6190,
+   "hp": 169,
+   "W": 2885
+  },
+  "ktas": 164.43589333134452,
+  "items": [
+   [
+    "Wing",
+    0.7362879429059409,
+    "Swet 239.1 ft2, Re 6.5M, Cf 0.00231, FF 1.336, Q 1.00, x_tr 0.30"
+   ],
+   [
+    "HTail",
+    0.14454747359991196,
+    "Swet 39.8 ft2, Re 3.6M, Cf 0.00290, FF 1.195, Q 1.05, x_tr 0.20"
+   ],
+   [
+    "Fin",
+    0.07719661546745511,
+    "Swet 22.2 ft2, Re 4.6M, Cf 0.00277, FF 1.193, Q 1.05, x_tr 0.20"
+   ],
+   [
+    "Fuselage",
+    0.605524755708259,
+    "Swet 217.7 ft2, Re 39.0M, Cf 0.00227, FF 1.224, Q 1.00, x_tr 0.05"
+   ],
+   [
+    "fixed gear, faired",
+    0.6,
+    "fixed allowance"
+   ],
+   [
+    "cooling",
+    0.08854318743919182,
+    "Raymer 12.39 x 1.00"
+   ],
+   [
+    "leakage+protuberance",
+    0.11260499875603794,
+    "5% of the rest"
+   ],
+   [
+    "calibration factor",
+    0.6857644424242711,
+    "x1.290 on the build-up (calibration; basis stated above)"
+   ]
+  ],
+  "Dq_par": 3.050469416301068,
+  "Dq_ind": 0.574888608242001,
+  "CD0": 0.023412920533433634,
+  "eta": 0.823485426049055,
+  "LD": 10.460698467894535
+ },
+ "orig": {
+  "alt_ft": 8000,
+  "hp": 150,
+  "ktas": 160.26038587668285,
+  "range_nm_noreserve_fullfuel_mtow": 1242.074362919082,
+  "hours": 7.750351754892403,
+  "climb_allowance_lb": 24.03636363636364,
+  "payload_1000_0": 455.7554257951112,
+  "fuel_1000_0_lb": 445.24457420488886,
+  "payload_1000_45": 406.5003395066303,
+  "fuel_1000_45_lb": 494.49966049336973
+ },
+ "am_model": "AM20T",
+ "am_dmass_lb": 11.25,
+ "am": {
+  "AM-low": {
+   "alt_ft": 8000.0,
+   "hp": 195.0,
+   "ktas": 178.53120450292198,
+   "empty": 2005.25,
+   "useful": 889.75,
+   "useful_opt": 889.75,
+   "range_nm_fullfuel": 1062.3138816475914,
+   "gph": 14.625,
+   "payload_1000_0": 375.67525609410507,
+   "fuel_1000_0_lb": 514.0747439058949,
+   "payload_1000_45": null,
+   "fuel_1000_45_lb": 578.276007000569,
+   "eco_payload_1000_0": 480.51846375454875,
+   "eco_payload_1000_45": 438.97660974905807,
+   "eco_ktas": 148.51841831796582,
+   "opt_ktas": 185.6554453855659,
+   "opt_payload_1000_45": null
+  },
+  "AM-high": {
+   "alt_ft": 16000.0,
+   "hp": 195.0,
+   "ktas": 190.76966540166475,
+   "empty": 2005.25,
+   "useful": 889.75,
+   "useful_opt": 889.75,
+   "range_nm_fullfuel": 1115.4411152322584,
+   "gph": 14.625,
+   "payload_1000_0": 393.3080877324479,
+   "fuel_1000_0_lb": 496.44191226755214,
+   "payload_1000_45": null,
+   "fuel_1000_45_lb": 560.4166789712422,
+   "eco_payload_1000_0": 486.6335258290405,
+   "eco_payload_1000_45": 445.32544598960396,
+   "eco_ktas": 156.6817995283655,
+   "opt_ktas": 198.5078266838761,
+   "opt_payload_1000_45": 346.53461626258047
+  }
+ }
+}

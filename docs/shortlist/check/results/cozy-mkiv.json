@@ -1,0 +1,239 @@
+{
+ "id": "cozy-mkiv",
+ "name": "Cozy MKIV (CAFE N494CZ, IO-360 180 hp)",
+ "wet": {
+  "Fuselage": {
+   "theo_ft2": 134.661,
+   "wet_ft2": 127.18
+  },
+  "Wing": {
+   "theo_ft2": 150.681,
+   "wet_ft2": 88.8513
+  },
+  "Strake": {
+   "theo_ft2": 104.568,
+   "wet_ft2": 72.6355
+  },
+  "Canard": {
+   "theo_ft2": 31.0217,
+   "wet_ft2": 26.9639
+  },
+  "Winglets": {
+   "theo_ft2": 19.9524,
+   "wet_ft2": 19.6866
+  }
+ },
+ "calibration": [
+  {
+   "pub": {
+    "ktas": 182.3,
+    "alt_ft": 854,
+    "hp": 174,
+    "gph": 12.9,
+    "weight_lb": 1669,
+    "grade": "R",
+    "note": "CAFE measured, WOT 29.2 in/2691 rpm, density alt; hp E"
+   },
+   "W": 1669,
+   "our_ktas": 205.34664342658704,
+   "d_ktas_pct": 12.642152181342304,
+   "eta": 0.7934376721626824,
+   "LD": 7.618031184410288,
+   "Dq_par": 1.510398706106491,
+   "Dq_ind": 0.06320428614695603,
+   "our_hp_at_pub_ktas": 124.60473453346184,
+   "our_gph_at_pub_ktas": 9.345355090009638,
+   "k_match": 1.3924129120794078
+  },
+  {
+   "pub": {
+    "ktas": 177.4,
+    "alt_ft": 5880,
+    "hp": 143,
+    "gph": 10.7,
+    "weight_lb": 1890,
+    "grade": "R",
+    "note": "CAFE, WOT 25.1 in/2615 rpm; hp E"
+   },
+   "W": 1890,
+   "our_ktas": 198.54892489176171,
+   "d_ktas_pct": 11.921603659392165,
+   "eta": 0.792679890993169,
+   "LD": 10.15912564747919,
+   "Dq_par": 1.5362520757896476,
+   "Dq_ind": 0.12532045530246855,
+   "our_hp_at_pub_ktas": 106.49599275670604,
+   "our_gph_at_pub_ktas": 7.987199456752954,
+   "k_match": 1.3608461407959567
+  },
+  {
+   "pub": {
+    "ktas": 176.7,
+    "alt_ft": 8021,
+    "hp": 131,
+    "gph": 10.0,
+    "weight_lb": 1864,
+    "grade": "R",
+    "note": "CAFE, WOT 23.5 in/2607 rpm, best power; hp E"
+   },
+   "W": 1864,
+   "our_ktas": 195.78207903456754,
+   "d_ktas_pct": 10.799139238578137,
+   "eta": 0.7923931636282707,
+   "LD": 10.78866466670603,
+   "Dq_par": 1.5478775021325102,
+   "Dq_ind": 0.14706774319639535,
+   "our_hp_at_pub_ktas": 100.70577152881347,
+   "our_gph_at_pub_ktas": 7.5529328646610105,
+   "k_match": 1.3219582283038562
+  },
+  {
+   "pub": {
+    "ktas": 169.5,
+    "alt_ft": 12032,
+    "hp": 112,
+    "gph": 8.2,
+    "weight_lb": 1874,
+    "grade": "R",
+    "note": "CAFE, WOT 20.1 in/2545 rpm; hp E"
+   },
+   "W": 1874,
+   "our_ktas": 190.38387951131844,
+   "d_ktas_pct": 12.32087286803447,
+   "eta": 0.7916138922122458,
+   "LD": 12.348926201989698,
+   "Dq_par": 1.5719750166256468,
+   "Dq_ind": 0.21391322751257352,
+   "our_hp_at_pub_ktas": 84.93042755593407,
+   "our_gph_at_pub_ktas": 6.3697820666950555,
+   "k_match": 1.3636837271990316
+  }
+ ],
+ "assumptions": [
+  "Wing span 28.1 ft, chords 41.5/21 in, LE sweep 23 deg (P, CAFE N494CZ). Strakes (fuel tanks) modelled as a separate inboard surface, 9.5 ft overall span, 7.0/3.5 ft chords (E). CAFE wing area 101.4 ft2 is taken as the reference area (designer figure 88.3 ft2).",
+  "Canard 12.6 ft span, 14.7 ft2, Roncz R1145MS 18.8% t/c (F/P). Winglets 57 in tall (P), 9.5 ft2 each (E).",
+  "Fuselage 16.9 ft (F); width 3.5 ft (39 in cabin + walls), height 3.6 ft: E.",
+  "Laminar run x_tr: wing and canard 0.35 (moldless glass, Eppler 1230 mod), winglets 0.25, fuselage 0.10 (no prop slipstream over it).",
+  "Fixed mains with pants and retracted nose: D/q 0.30 ft2 (E). Canard carries 20% of the lift (E).",
+  "Fixed-pitch 64 in 3-blade wood prop: installation 0.95 (E). CAFE hp is not published: estimated from MP, rpm and density altitude by Gagg-Ferrar at full throttle (E). CAFE says the wing-cuff instrumentation cost about 3 kt."
+ ],
+ "k_own": 1.359725252094563,
+ "k_fleet": 1.29,
+ "k_alt": 1.29,
+ "k_basis": "own published points",
+ "drag_factor": 1.359725252094563,
+ "breakdown": {
+  "cond": {
+   "alt_ft": 854,
+   "hp": 174,
+   "W": 1669
+  },
+  "ktas": 183.87240632101376,
+  "items": [
+   [
+    "Wing",
+    0.2717726528252247,
+    "Swet 88.9 ft2, Re 5.2M, Cf 0.00227, FF 1.348, Q 1.00, x_tr 0.35"
+   ],
+   [
+    "Strake",
+    0.2325673077764429,
+    "Swet 72.6 ft2, Re 9.7M, Cf 0.00240, FF 1.269, Q 1.05, x_tr 0.20"
+   ],
+   [
+    "Canard",
+    0.11748589007271355,
+    "Swet 27.0 ft2, Re 2.3M, Cf 0.00273, FF 1.598, Q 1.00, x_tr 0.35"
+   ],
+   [
+    "Winglets",
+    0.07018564510525893,
+    "Swet 19.7 ft2, Re 3.9M, Cf 0.00271, FF 1.253, Q 1.05, x_tr 0.25"
+   ],
+   [
+    "Fuselage",
+    0.38948214117836333,
+    "Swet 127.2 ft2, Re 32.7M, Cf 0.00220, FF 1.393, Q 1.00, x_tr 0.10"
+   ],
+   [
+    "fixed mains, faired; nose retracted",
+    0.3,
+    "fixed allowance"
+   ],
+   [
+    "cooling",
+    0.0748957417945202,
+    "Raymer 12.39 x 1.00"
+   ],
+   [
+    "leakage+protuberance",
+    0.07281946893762618,
+    "5% of the rest"
+   ],
+   [
+    "calibration factor",
+    0.5500950382405754,
+    "x1.360 on the build-up (calibration; basis stated above)"
+   ]
+  ],
+  "Dq_par": 2.079303885930725,
+  "Dq_ind": 0.09831747697732171,
+  "CD0": 0.02050595548255153,
+  "eta": 0.7882915414999376,
+  "LD": 6.865902750431488
+ },
+ "orig": {
+  "alt_ft": 8000,
+  "hp": 131,
+  "ktas": 174.67005108078496,
+  "range_nm_noreserve_fullfuel_mtow": 828.6963050174593,
+  "hours": 4.744352565822443,
+  "climb_allowance_lb": 19.939393939393938,
+  "payload_1000_0": null,
+  "fuel_1000_0_lb": 356.6582361939758,
+  "payload_1000_45": null,
+  "fuel_1000_45_lb": 399.9528151630312
+ },
+ "am_model": "AM20T",
+ "am_dmass_lb": 63.25,
+ "am": {
+  "AM-low": {
+   "alt_ft": 8000.0,
+   "hp": 195.0,
+   "ktas": 202.3758685282172,
+   "empty": 1242.25,
+   "useful": 807.75,
+   "useful_opt": 807.75,
+   "range_nm_fullfuel": 645.3106886649784,
+   "gph": 14.625,
+   "payload_1000_0": null,
+   "fuel_1000_0_lb": 451.6623486200452,
+   "payload_1000_45": null,
+   "fuel_1000_45_lb": 516.3085335240398,
+   "eco_payload_1000_0": null,
+   "eco_payload_1000_45": null,
+   "eco_ktas": 172.45384485382107,
+   "opt_ktas": 206.29662352414738,
+   "opt_payload_1000_45": null
+  },
+  "AM-high": {
+   "alt_ft": 16000.0,
+   "hp": 195.0,
+   "ktas": 217.11826581695126,
+   "empty": 1242.25,
+   "useful": 807.75,
+   "useful_opt": 807.75,
+   "range_nm_fullfuel": 667.7735306347527,
+   "gph": 14.625,
+   "payload_1000_0": null,
+   "fuel_1000_0_lb": 432.05772248541933,
+   "payload_1000_45": null,
+   "fuel_1000_45_lb": 496.5509559353952,
+   "eco_payload_1000_0": null,
+   "eco_payload_1000_45": null,
+   "eco_ktas": 184.19472500505842,
+   "opt_ktas": 221.36153664216454,
+   "opt_payload_1000_45": null
+  }
+ }
+}

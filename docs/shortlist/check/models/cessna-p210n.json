@@ -1,0 +1,38 @@
+{"id":"cessna-p210n","name":"Cessna P210N (TSIO-520-P, 1980 POH)",
+ "assumptions":[
+  "Wing span 36.75 ft, area 175 ft2 (P, POH three-view); chords 64/44 in (Wikipedia, consistent with the area); NACA 64A215 / 64A412 (Lednicer).",
+  "Fuselage 28.17 ft (P); width 4.0 ft (44 in cabin + skin) and height 4.8 ft: E, ours.",
+  "Horizontal tail 13 ft span (P) x 2.77 ft mean chord = 36 ft2 (E, Vh ~0.65); fin 19.4 ft2 (E, Vv 0.045).",
+  "Riveted aluminium: laminar run x_tr wing 0.10, tails 0.05, fuselage 0.",
+  "Retractable gear without main gear doors (1979 on): open wells and legs D/q 0.30 ft2 (E). Wing strut-free.",
+  "Turbo TSIO-520-P: 285 hp max continuous (T, TCDS 3A21), flat-rated to 20,000 ft (E). Cooling factor 1.3 (E). BSFC 0.50 at the POH recommended lean (derived from the POH: 19.2 gph at 80% of 285 hp).",
+  "POH points at 4,000 lb, ISA."],
+ "Sref":175.0,
+ "fuselage":{"length":28.17,"width":4.0,"height":4.8,"profile":"tractor"},
+ "surfaces":[
+  {"name":"Wing","span":36.75,"croot":5.33,"ctip":3.67,"tc_root":0.15,"tc_tip":0.12,"sweep":0,"x":8.0,"z":1.9},
+  {"name":"HTail","span":13.0,"croot":3.2,"ctip":2.34,"tc_root":0.10,"x":24.3,"z":0.0},
+  {"name":"Fin","span":5.5,"croot":4.7,"ctip":2.4,"tc_root":0.10,"vertical":true,"sym":false,"sweep":35,"x":23.3,"z":0.8}],
+ "components":[
+  {"name":"Wing","kind":"surface","lref":4.8,"tc":0.14,"xc":0.40,"xtr":0.10,"Q":1.0},
+  {"name":"HTail","kind":"surface","lref":2.8,"tc":0.10,"xc":0.30,"xtr":0.05,"Q":1.05},
+  {"name":"Fin","kind":"surface","lref":3.6,"tc":0.10,"xc":0.30,"sweep_tc":30,"xtr":0.05,"Q":1.05},
+  {"name":"Fuselage","kind":"body","lref":28.17,"dmax":4.4,"xtr":0.0,"Q":1.0}],
+ "fixed_Dq":[["retractable gear, no main doors (open wells)",0.30]],
+ "cooling_factor":1.3,"excrescence_frac":0.05,
+ "lifting":[{"S":175.0,"AR":7.72,"share":1.0}],
+ "prop":{"diameter_ft":6.67,"install":1.0},
+ "engine":{"hp":285,"bsfc":0.50,"crit_alt_ft":20000},
+ "orig_installed_lb":552,
+ "weights":{"mtow":4000,"empty":2342},
+ "fuel_usable_gal":89,"fuel_density":6.0,
+ "published":[
+  {"ktas":170,"alt_ft":10000,"hp":222,"gph":18.0,"weight_lb":4000,"grade":"P","note":"POH Fig 5-7, 78%"},
+  {"ktas":152,"alt_ft":10000,"hp":177,"gph":13.7,"weight_lb":4000,"grade":"P","note":"POH, 62%"},
+  {"ktas":187,"alt_ft":20000,"hp":228,"gph":19.2,"weight_lb":4000,"grade":"P","note":"POH, 80%"},
+  {"ktas":176,"alt_ft":20000,"hp":202,"gph":16.3,"weight_lb":4000,"grade":"P","note":"POH, 71%"},
+  {"ktas":157,"alt_ft":20000,"hp":171,"gph":13.5,"weight_lb":4000,"grade":"P","note":"POH, 60%"},
+  {"ktas":193,"alt_ft":23000,"hp":231,"gph":19.2,"weight_lb":4000,"grade":"P","note":"POH, 81%"},
+  {"ktas":171,"alt_ft":23000,"hp":188,"gph":14.8,"weight_lb":4000,"grade":"P","note":"POH, 66%"}],
+ "orig_cruise":{"alt_ft":20000,"hp":202}
+}

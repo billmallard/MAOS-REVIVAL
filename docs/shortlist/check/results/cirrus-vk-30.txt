@@ -1,0 +1,8 @@
+## Cirrus VK-30 (IO-540 290 hp prototype)  (results at drag factor 1.29, fleet calibration (own points read cleaner than the fleet))
+Reference condition {'alt_ft': 4500, 'hp': 203, 'W': 3300}: 196 KTAS, CD0 0.0183, D/q par 2.20 ft2, ind 0.26 ft2, eta 0.833, L/D 11.8
+  pub 205 KTAS @ 4500 ft, 203 hp (P) -> ours 216 KTAS (+5.4%, k_match 1.15), power for pub speed 177 hp, 13.3 gph vs pub 15.5 gph
+  pub 211 KTAS @ 5000 ft, 217 hp (F) -> ours 221 KTAS (+4.8%, k_match 1.13), power for pub speed 192 hp, 14.4 gph vs pub 16.7 gph
+Orig engine 200 hp @ 8000 ft: 201 KTAS, range 1206 nm, payload@1000 874/807
+AM20T swap delta installed mass -121 lb
+  AM-low: 195 hp @ 8000 ft -> 199 KTAS, UL 1350, range 1225 nm, payload@1000 880/815; [opt k 1.15: 208 KTAS, 954] eco 165 KTAS payload 973/931
+  AM-high: 195 hp @ 16000 ft -> 212 KTAS, UL 1350, range 1257 nm, payload@1000 890/825; [opt k 1.15: 221 KTAS, 963] eco 174 KTAS payload 973/930

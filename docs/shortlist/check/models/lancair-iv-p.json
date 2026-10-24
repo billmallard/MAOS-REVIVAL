@@ -1,0 +1,134 @@
+{
+ "id": "lancair-iv-p",
+ "name": "Lancair IV-P (TSIO-550, 30.2 ft wing)",
+ "assumptions": [
+  "Wing span 30.2 ft, area 98 ft2 (F, factory); RXM5-217 root / NACA 64-212 tip (Lednicer). Taper ratio 0.5 assumed (E): root 4.33 ft, tip 2.16 ft.",
+  "Fuselage 25 ft long (F); max width 4.1 ft (46 in cabin + walls) and height 4.4 ft: E, ours.",
+  "Tails sized by volume coefficient (E, Raymer table 6.4 GA single): horizontal Vh 0.65 -> 15.9 ft2, vertical Vv 0.045 -> 10.2 ft2, arm 13 ft.",
+  "Laminar run x_tr: wing 0.25, tails 0.20, fuselage 0.05.",
+  "Retractable gear, doors closed: no gear term; leakage covered by the 5% excrescence line.",
+  "Turbo TSIO-550 flat-rated to 25,000 ft (E). Cooling factor 1.3 for a twin-turbo intercooled installation (E).",
+  "Published-point weight unstated: 3,200 lb assumed (E).",
+  "Original installed engine mass 633 lb = typical published dry weight x 1.15 for mount, baffles, exhaust and oil cooler (E; per-variant check owed by MANUFACTURING)."
+ ],
+ "Sref": 98.0,
+ "fuselage": {
+  "length": 25.0,
+  "width": 4.1,
+  "height": 4.4,
+  "profile": "tractor"
+ },
+ "surfaces": [
+  {
+   "name": "Wing",
+   "span": 30.2,
+   "croot": 4.33,
+   "ctip": 2.16,
+   "tc_root": 0.17,
+   "tc_tip": 0.12,
+   "sweep": 3,
+   "x": 7.5,
+   "z": -1.3
+  },
+  {
+   "name": "HTail",
+   "span": 8.6,
+   "croot": 2.2,
+   "ctip": 1.5,
+   "tc_root": 0.1,
+   "x": 21.6,
+   "z": 0.3
+  },
+  {
+   "name": "Fin",
+   "span": 4.0,
+   "croot": 3.4,
+   "ctip": 1.7,
+   "tc_root": 0.1,
+   "vertical": true,
+   "sym": false,
+   "sweep": 35,
+   "x": 20.8,
+   "z": 0.5
+  }
+ ],
+ "components": [
+  {
+   "name": "Wing",
+   "kind": "surface",
+   "lref": 3.4,
+   "tc": 0.15,
+   "xc": 0.4,
+   "xtr": 0.25,
+   "Q": 1.0
+  },
+  {
+   "name": "HTail",
+   "kind": "surface",
+   "lref": 1.9,
+   "tc": 0.1,
+   "xc": 0.35,
+   "xtr": 0.2,
+   "Q": 1.05
+  },
+  {
+   "name": "Fin",
+   "kind": "surface",
+   "lref": 2.6,
+   "tc": 0.1,
+   "xc": 0.3,
+   "sweep_tc": 30,
+   "xtr": 0.2,
+   "Q": 1.05
+  },
+  {
+   "name": "Fuselage",
+   "kind": "body",
+   "lref": 25.0,
+   "dmax": 4.25,
+   "xtr": 0.05,
+   "Q": 1.0
+  }
+ ],
+ "fixed_Dq": [],
+ "cooling_factor": 1.3,
+ "excrescence_frac": 0.05,
+ "lifting": [
+  {
+   "S": 98.0,
+   "AR": 9.31,
+   "share": 1.0
+  }
+ ],
+ "prop": {
+  "diameter_ft": 6.33,
+  "install": 1.0
+ },
+ "engine": {
+  "hp": 350,
+  "bsfc": 0.42,
+  "crit_alt_ft": 25000
+ },
+ "orig_installed_lb": 633,
+ "weights": {
+  "mtow": 3550,
+  "empty": 2200
+ },
+ "fuel_usable_gal": 88,
+ "fuel_density": 6.0,
+ "published": [
+  {
+   "ktas": 278,
+   "alt_ft": 23000,
+   "hp": 262,
+   "gph": 18,
+   "weight_lb": 3200,
+   "grade": "P",
+   "note": "AOPA Pilot Jun 1994, 75%, lean of peak"
+  }
+ ],
+ "orig_cruise": {
+  "alt_ft": 20000,
+  "hp": 262
+ }
+}

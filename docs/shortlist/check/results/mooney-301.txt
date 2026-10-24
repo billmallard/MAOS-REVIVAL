@@ -1,0 +1,7 @@
+## Mooney 301 (TIO-540 360 hp prototype)  (results at drag factor 1.29, fleet calibration (own points read cleaner than the fleet))
+Reference condition {'alt_ft': 17500, 'hp': 270, 'W': 3700}: 217 KTAS, CD0 0.0210, D/q par 3.14 ft2, ind 0.48 ft2, eta 0.827, L/D 11.0
+  pub 237.5 KTAS @ 17500 ft, 270 hp (P) -> ours 239 KTAS (+0.7%, k_match 1.02), power for pub speed 266 hp, 18.6 gph vs pub 18 gph
+Orig engine 270 hp @ 20000 ft: 222 KTAS, range 1056 nm, payload@1000 885/cannot
+AM20T swap delta installed mass -207 lb
+  AM-low: 195 hp @ 8000 ft -> 176 KTAS, UL 1452, range 1143 nm, payload@1000 922/858; [opt k 1.02: 193 KTAS, 1,107] eco 142 KTAS payload 1,015/973
+  AM-high: 195 hp @ 16000 ft -> 187 KTAS, UL 1452, range 1169 nm, payload@1000 931/867; [opt k 1.02: 205 KTAS, 1,114] eco 146 KTAS payload 1,006/964

@@ -1,0 +1,36 @@
+{"id":"cozy-mkiv","name":"Cozy MKIV (CAFE N494CZ, IO-360 180 hp)",
+ "assumptions":[
+  "Wing span 28.1 ft, chords 41.5/21 in, LE sweep 23 deg (P, CAFE N494CZ). Strakes (fuel tanks) modelled as a separate inboard surface, 9.5 ft overall span, 7.0/3.5 ft chords (E). CAFE wing area 101.4 ft2 is taken as the reference area (designer figure 88.3 ft2).",
+  "Canard 12.6 ft span, 14.7 ft2, Roncz R1145MS 18.8% t/c (F/P). Winglets 57 in tall (P), 9.5 ft2 each (E).",
+  "Fuselage 16.9 ft (F); width 3.5 ft (39 in cabin + walls), height 3.6 ft: E.",
+  "Laminar run x_tr: wing and canard 0.35 (moldless glass, Eppler 1230 mod), winglets 0.25, fuselage 0.10 (no prop slipstream over it).",
+  "Fixed mains with pants and retracted nose: D/q 0.30 ft2 (E). Canard carries 20% of the lift (E).",
+  "Fixed-pitch 64 in 3-blade wood prop: installation 0.95 (E). CAFE hp is not published: estimated from MP, rpm and density altitude by Gagg-Ferrar at full throttle (E). CAFE says the wing-cuff instrumentation cost about 3 kt."],
+ "Sref":101.4,
+ "fuselage":{"length":16.9,"width":3.5,"height":3.6,"profile":"pusher"},
+ "surfaces":[
+  {"name":"Wing","span":28.1,"croot":3.46,"ctip":1.75,"tc_root":0.14,"tc_tip":0.12,"sweep":23,"x":9.5,"z":-0.7},
+  {"name":"Strake","span":9.5,"croot":7.0,"ctip":3.5,"tc_root":0.12,"tc_tip":0.12,"sweep":40,"x":7.0,"z":-0.7},
+  {"name":"Canard","span":12.6,"croot":1.17,"ctip":1.17,"tc_root":0.188,"x":1.5,"z":0.3},
+  {"name":"Winglets","span":4.75,"croot":2.8,"ctip":1.2,"tc_root":0.10,"vertical":true,"y":14.0,"x":13.8,"z":-0.7,"sweep":30}],
+ "components":[
+  {"name":"Wing","kind":"surface","lref":2.7,"tc":0.13,"xc":0.30,"sweep_tc":20,"xtr":0.35,"Q":1.0},
+  {"name":"Strake","kind":"surface","lref":5.0,"tc":0.12,"xc":0.30,"sweep_tc":35,"xtr":0.20,"Q":1.05},
+  {"name":"Canard","kind":"surface","lref":1.17,"tc":0.188,"xc":0.30,"xtr":0.35,"Q":1.0},
+  {"name":"Winglets","kind":"surface","lref":2.0,"tc":0.10,"xc":0.30,"sweep_tc":25,"xtr":0.25,"Q":1.05},
+  {"name":"Fuselage","kind":"body","lref":16.9,"dmax":3.55,"xtr":0.10,"Q":1.0}],
+ "fixed_Dq":[["fixed mains, faired; nose retracted",0.30]],
+ "cooling_factor":1.0,"excrescence_frac":0.05,
+ "lifting":[{"S":86.7,"AR":9.1,"share":0.80},{"S":14.7,"AR":10.8,"share":0.20}],
+ "prop":{"diameter_ft":5.33,"install":0.95},
+ "engine":{"hp":180,"bsfc":0.45,"crit_alt_ft":0},
+ "orig_installed_lb":328,
+ "weights":{"mtow":2050,"empty":1179},
+ "fuel_usable_gal":50.74,"fuel_density":6.0,
+ "published":[
+  {"ktas":182.3,"alt_ft":854,"hp":174,"gph":12.9,"weight_lb":1669,"grade":"R","note":"CAFE measured, WOT 29.2 in/2691 rpm, density alt; hp E"},
+  {"ktas":177.4,"alt_ft":5880,"hp":143,"gph":10.7,"weight_lb":1890,"grade":"R","note":"CAFE, WOT 25.1 in/2615 rpm; hp E"},
+  {"ktas":176.7,"alt_ft":8021,"hp":131,"gph":10.0,"weight_lb":1864,"grade":"R","note":"CAFE, WOT 23.5 in/2607 rpm, best power; hp E"},
+  {"ktas":169.5,"alt_ft":12032,"hp":112,"gph":8.2,"weight_lb":1874,"grade":"R","note":"CAFE, WOT 20.1 in/2545 rpm; hp E"}],
+ "orig_cruise":{"alt_ft":8000,"hp":131}
+}

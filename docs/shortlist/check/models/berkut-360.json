@@ -1,0 +1,31 @@
+{"id":"berkut-360","name":"Berkut 360 (IO-360 205 hp)",
+ "assumptions":[
+  "Span 26.67 ft and length 18.5 ft (F, Jane's 1993-94 via Wikipedia). Wing area 110 ft2 is unsourced (E, low confidence). Panels and strakes scaled from the CAFE-measured Cozy by span ratio 0.95 (E).",
+  "Tandem two-seat fuselage: width 2.6 ft, height 3.4 ft (E). Canard 12 ft2, 11.5 ft span; winglets 2 x 8 ft2 (E).",
+  "Fully retractable gear: no gear term. Laminar run as the Cozy. Canard carries 20% of the lift (E).",
+  "Prop 66 in constant speed (E). No measured performance exists, so the fleet-median calibration factor applies."],
+ "Sref":110.0,
+ "fuselage":{"length":18.5,"width":2.6,"height":3.4,"profile":"pusher"},
+ "surfaces":[
+  {"name":"Wing","span":26.67,"croot":3.29,"ctip":1.66,"tc_root":0.14,"tc_tip":0.12,"sweep":23,"x":9.8,"z":-0.7},
+  {"name":"Strake","span":8.5,"croot":6.6,"ctip":3.3,"tc_root":0.12,"tc_tip":0.12,"sweep":40,"x":7.5,"z":-0.7},
+  {"name":"Canard","span":11.5,"croot":1.04,"ctip":1.04,"tc_root":0.188,"x":1.5,"z":0.3},
+  {"name":"Winglets","span":4.5,"croot":2.5,"ctip":1.1,"tc_root":0.10,"vertical":true,"y":13.3,"x":14.0,"z":-0.7,"sweep":30}],
+ "components":[
+  {"name":"Wing","kind":"surface","lref":2.6,"tc":0.13,"xc":0.30,"sweep_tc":20,"xtr":0.35,"Q":1.0},
+  {"name":"Strake","kind":"surface","lref":4.8,"tc":0.12,"xc":0.30,"sweep_tc":35,"xtr":0.20,"Q":1.05},
+  {"name":"Canard","kind":"surface","lref":1.04,"tc":0.188,"xc":0.30,"xtr":0.35,"Q":1.0},
+  {"name":"Winglets","kind":"surface","lref":1.8,"tc":0.10,"xc":0.30,"sweep_tc":25,"xtr":0.25,"Q":1.05},
+  {"name":"Fuselage","kind":"body","lref":18.5,"dmax":3.0,"xtr":0.10,"Q":1.0}],
+ "fixed_Dq":[],
+ "cooling_factor":1.0,"excrescence_frac":0.05,
+ "lifting":[{"S":98.0,"AR":7.3,"share":0.80},{"S":12.0,"AR":11.0,"share":0.20}],
+ "prop":{"diameter_ft":5.5,"install":1.0},
+ "engine":{"hp":205,"bsfc":0.45,"crit_alt_ft":0},
+ "orig_installed_lb":375,
+ "weights":{"mtow":2000,"empty":1035},
+ "fuel_usable_gal":58.1,"fuel_density":6.0,
+ "published":[],
+ "ref_condition":{"alt_ft":8000,"hp":150,"W":1850},
+ "orig_cruise":{"alt_ft":8000,"hp":150}
+}

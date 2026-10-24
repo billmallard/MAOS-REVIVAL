@@ -1,0 +1,7 @@
+## Lancair IV-P (TSIO-550, 30.2 ft wing)  (results at drag factor 1.29, fleet calibration (own points read cleaner than the fleet))
+Reference condition {'alt_ft': 23000, 'hp': 262, 'W': 3200}: 255 KTAS, CD0 0.0228, D/q par 2.23 ft2, ind 0.41 ft2, eta 0.832, L/D 11.5
+  pub 278 KTAS @ 23000 ft, 262 hp (P) -> ours 281 KTAS (+1.1%, k_match 1.03), power for pub speed 255 hp, 17.8 gph vs pub 18 gph
+Orig engine 262 hp @ 20000 ft: 248 KTAS, range 1058 nm, payload@1000 855/cannot
+AM20T swap delta installed mass -242 lb
+  AM-low: 195 hp @ 8000 ft -> 200 KTAS, UL 1350, range 1136 nm, payload@1000 881/cannot; [opt k 1.03: 218 KTAS, 1,094] eco 161 KTAS payload 962/920
+  AM-high: 195 hp @ 16000 ft -> 211 KTAS, UL 1350, range 1155 nm, payload@1000 888/824; [opt k 1.03: 231 KTAS, 1,100] eco 164 KTAS payload 953/911

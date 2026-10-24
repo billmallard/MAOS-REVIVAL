@@ -1,0 +1,159 @@
+{
+ "id": "velocity-xl-rg-100gal",
+ "name": "Velocity XL-RG, optional 100 gal tanks",
+ "assumptions": [
+  "Wing span 34 ft, area 132.5 ft2 incl. strakes (F, factory; Jane's 2013-14 gives 31 ft / 102 ft2, which matches the smaller SE: unresolved). Panels and strakes scaled from the CAFE-measured Cozy by span ratio 1.21 (E).",
+  "Canard 18.67 ft span, 22.8 ft2 (F). Winglets 2 x 12 ft2 (E).",
+  "Fuselage 20 ft (F); width 4.2 ft (47.5 in cabin), height 4.3 ft: E.",
+  "Laminar run as the Cozy. Retractable gear: no gear term. Canard carries 20% of the lift (E).",
+  "Prop 74 in 3-blade constant speed (E; diameter not found). Published-point weight unstated: 2,600 lb assumed (E).",
+  "Variant: optional tanks, 100 gal usable (stage 1, factory option); weights unchanged."
+ ],
+ "Sref": 132.5,
+ "fuselage": {
+  "length": 20.0,
+  "width": 4.2,
+  "height": 4.3,
+  "profile": "pusher"
+ },
+ "surfaces": [
+  {
+   "name": "Wing",
+   "span": 34.0,
+   "croot": 4.19,
+   "ctip": 2.12,
+   "tc_root": 0.14,
+   "tc_tip": 0.12,
+   "sweep": 23,
+   "x": 11.0,
+   "z": -0.8
+  },
+  {
+   "name": "Strake",
+   "span": 11.5,
+   "croot": 8.0,
+   "ctip": 4.2,
+   "tc_root": 0.12,
+   "tc_tip": 0.12,
+   "sweep": 40,
+   "x": 8.3,
+   "z": -0.8
+  },
+  {
+   "name": "Canard",
+   "span": 18.67,
+   "croot": 1.22,
+   "ctip": 1.22,
+   "tc_root": 0.188,
+   "x": 1.6,
+   "z": 0.3
+  },
+  {
+   "name": "Winglets",
+   "span": 5.5,
+   "croot": 3.1,
+   "ctip": 1.3,
+   "tc_root": 0.1,
+   "vertical": true,
+   "y": 17.0,
+   "x": 16.5,
+   "z": -0.8,
+   "sweep": 30
+  }
+ ],
+ "components": [
+  {
+   "name": "Wing",
+   "kind": "surface",
+   "lref": 3.3,
+   "tc": 0.13,
+   "xc": 0.3,
+   "sweep_tc": 20,
+   "xtr": 0.35,
+   "Q": 1.0
+  },
+  {
+   "name": "Strake",
+   "kind": "surface",
+   "lref": 6.0,
+   "tc": 0.12,
+   "xc": 0.3,
+   "sweep_tc": 35,
+   "xtr": 0.2,
+   "Q": 1.05
+  },
+  {
+   "name": "Canard",
+   "kind": "surface",
+   "lref": 1.22,
+   "tc": 0.188,
+   "xc": 0.3,
+   "xtr": 0.35,
+   "Q": 1.0
+  },
+  {
+   "name": "Winglets",
+   "kind": "surface",
+   "lref": 2.3,
+   "tc": 0.1,
+   "xc": 0.3,
+   "sweep_tc": 25,
+   "xtr": 0.25,
+   "Q": 1.05
+  },
+  {
+   "name": "Fuselage",
+   "kind": "body",
+   "lref": 20.0,
+   "dmax": 4.25,
+   "xtr": 0.1,
+   "Q": 1.0
+  }
+ ],
+ "fixed_Dq": [],
+ "cooling_factor": 1.0,
+ "excrescence_frac": 0.05,
+ "lifting": [
+  {
+   "S": 109.7,
+   "AR": 10.5,
+   "share": 0.8
+  },
+  {
+   "S": 22.8,
+   "AR": 15.3,
+   "share": 0.2
+  }
+ ],
+ "prop": {
+  "diameter_ft": 6.17,
+  "install": 1.0
+ },
+ "engine": {
+  "hp": 310,
+  "bsfc": 0.45,
+  "crit_alt_ft": 0
+ },
+ "orig_installed_lb": 495,
+ "weights": {
+  "mtow": 2800,
+  "empty": 1800
+ },
+ "fuel_usable_gal": 100,
+ "fuel_density": 6.0,
+ "published": [
+  {
+   "ktas": 190,
+   "alt_ft": 3000,
+   "hp": 232,
+   "gph": 15,
+   "weight_lb": 2600,
+   "grade": "P",
+   "note": "GA News 2005 pilot report, factory demonstrator, 75% of 310 hp"
+  }
+ ],
+ "orig_cruise": {
+  "alt_ft": 8000,
+  "hp": 210
+ }
+}

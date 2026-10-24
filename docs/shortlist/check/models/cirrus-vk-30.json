@@ -1,0 +1,143 @@
+{
+ "id": "cirrus-vk-30",
+ "name": "Cirrus VK-30 (IO-540 290 hp prototype)",
+ "assumptions": [
+  "Wing span 38.66 ft, area 120 ft2 (P, AOPA Pilot Apr 1990); NLF(1)-0414F, 14% t/c. Taper 0.5 assumed (E): root 4.14 ft, tip 2.07 ft.",
+  "Fuselage 26 ft (P); max width 4.3 ft (4 ft cabin + walls) and height 4.5 ft: E, ours. Engine buried; prop at tail cone.",
+  "Tails sized by volume coefficient (E): horizontal Vh 0.60 -> 18.6 ft2, vertical (upper + ventral) Vv 0.04 -> 15.5 ft2, arm 12 ft.",
+  "Laminar run x_tr: wing 0.35 (NLF section, builder finish), tails 0.20, fuselage 0.05.",
+  "Retractable gear: no gear term.",
+  "Cooling factor 1.2: buried engine with side scoops and a fan (E). Pusher prop behind the body: no installation penalty or credit (E).",
+  "Published-point weight unstated: 3,300 lb assumed (E).",
+  "Original installed engine mass 512 lb = typical published dry weight x 1.15 for mount, baffles, exhaust and oil cooler (E; per-variant check owed by MANUFACTURING)."
+ ],
+ "Sref": 120.0,
+ "fuselage": {
+  "length": 26.0,
+  "width": 4.3,
+  "height": 4.5,
+  "profile": "pusher_tail"
+ },
+ "surfaces": [
+  {
+   "name": "Wing",
+   "span": 38.66,
+   "croot": 4.14,
+   "ctip": 2.07,
+   "tc_root": 0.14,
+   "tc_tip": 0.14,
+   "sweep": 2,
+   "x": 9.0,
+   "z": -0.5
+  },
+  {
+   "name": "HTail",
+   "span": 9.0,
+   "croot": 2.5,
+   "ctip": 1.6,
+   "tc_root": 0.1,
+   "x": 22.0,
+   "z": -0.6
+  },
+  {
+   "name": "Fin",
+   "span": 4.5,
+   "croot": 4.2,
+   "ctip": 2.0,
+   "tc_root": 0.1,
+   "vertical": true,
+   "sym": false,
+   "sweep": 35,
+   "x": 21.0,
+   "z": 0.6
+  }
+ ],
+ "components": [
+  {
+   "name": "Wing",
+   "kind": "surface",
+   "lref": 3.2,
+   "tc": 0.14,
+   "xc": 0.4,
+   "xtr": 0.35,
+   "Q": 1.0
+  },
+  {
+   "name": "HTail",
+   "kind": "surface",
+   "lref": 2.1,
+   "tc": 0.1,
+   "xc": 0.35,
+   "xtr": 0.2,
+   "Q": 1.05
+  },
+  {
+   "name": "Fin",
+   "kind": "surface",
+   "lref": 3.2,
+   "tc": 0.1,
+   "xc": 0.3,
+   "sweep_tc": 30,
+   "xtr": 0.2,
+   "Q": 1.05
+  },
+  {
+   "name": "Fuselage",
+   "kind": "body",
+   "lref": 26.0,
+   "dmax": 4.4,
+   "xtr": 0.05,
+   "Q": 1.0
+  }
+ ],
+ "fixed_Dq": [],
+ "cooling_factor": 1.2,
+ "excrescence_frac": 0.05,
+ "lifting": [
+  {
+   "S": 120.0,
+   "AR": 12.45,
+   "share": 1.0
+  }
+ ],
+ "prop": {
+  "diameter_ft": 6.17,
+  "install": 1.0
+ },
+ "engine": {
+  "hp": 290,
+  "bsfc": 0.45,
+  "crit_alt_ft": 0
+ },
+ "orig_installed_lb": 512,
+ "weights": {
+  "mtow": 3550,
+  "empty": 2200
+ },
+ "fuel_usable_gal": 95,
+ "fuel_density": 6.0,
+ "published": [
+  {
+   "ktas": 205,
+   "alt_ft": 4500,
+   "hp": 203,
+   "gph": 15.5,
+   "weight_lb": 3300,
+   "grade": "P",
+   "note": "AOPA Pilot Apr 1990, about 70% of 290 hp"
+  },
+  {
+   "ktas": 211,
+   "alt_ft": 5000,
+   "hp": 217,
+   "gph": 16.7,
+   "weight_lb": 3550,
+   "grade": "F",
+   "note": "spec block, 75%, manufacturer's calculation"
+  }
+ ],
+ "orig_cruise": {
+  "alt_ft": 8000,
+  "hp": 200
+ }
+}
