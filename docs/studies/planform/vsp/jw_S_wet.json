@@ -1,0 +1,18 @@
+{
+ "Fuselage": {
+  "theo_ft2": 198.13,
+  "wet_ft2": 196.601
+ },
+ "Front": {
+  "theo_ft2": 154.135,
+  "wet_ft2": 135.807
+ },
+ "Rear": {
+  "theo_ft2": 153.335,
+  "wet_ft2": 152.886
+ },
+ "Tipfin": {
+  "theo_ft2": 12.951,
+  "wet_ft2": 12.5017
+ }
+}

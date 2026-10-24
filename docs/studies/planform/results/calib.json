@@ -62,5 +62,21 @@
   "Kg": 0.7981154615376627,
   "dn": 2.6602167008559903,
   "note": "main wing 88.3 ft2 + canard 14.7 ft2, b 28.1, W 2,050 (F, cozyaircraft.com); taper 0.5 E; AR is the main wing's"
+ },
+ {
+  "id": "stratos",
+  "label": "Ligeti Stratos (closed wing)",
+  "AR": 3.81788704318937,
+  "S": 80.99842588574066,
+  "b": 17.585301837270343,
+  "W": 414,
+  "WS": 5.11702806528559,
+  "CLa": 3.8077342669906686,
+  "mac": 2.3509944229802424,
+  "e_inv": 1.227,
+  "mu": 21.566147275459222,
+  "Kg": 0.706398629018895,
+  "dn": 7.9164523443139805,
+  "note": "b 5.36 m, S 7.52-7.53 m2, gross 188 kg (F, Jane's 1987-88 via Wikipedia); front swept 30 deg, gap/span 0.11 E (Reese 3-view)"
  }
 ]

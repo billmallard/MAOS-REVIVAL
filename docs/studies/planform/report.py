@@ -166,6 +166,53 @@ def calib_table():
     return "\n".join(out)
 
 
+def closed_table():
+    """The closed-wing point against three sweep points, rule A."""
+    cw = json.load(open(os.path.join(HERE, "results", "joined_V.json")))
+    sw = {r["id"]: r for r in json.load(open(os.path.join(HERE, "results", "sweep_V.json")))["points"]}
+    cols = [("CW (closed wing)", cw), ("AR10", sw["AR10"]), ("AR6.5", sw["AR6.5"]), ("D3", sw["D3"])]
+    out = ["| Rule A, same touchdown speed | " + " | ".join(c for c, _ in cols) + " |",
+           "|---|" + "---|" * len(cols)]
+
+    def row(name, f):
+        out.append(f"| {name} | " + " | ".join(f(r) for _, r in cols) + " |")
+
+    def cap(r):
+        return r.get("F_cap", r.get("F_cap_front"))
+    row("AR on total area / span efficiency e_inv (AVL)", lambda r: f"{r['AR']:.1f} / {r['e_inv']:.3f}")
+    row("Wing area, ft2 / span, ft", lambda r: f"{r['S']:.0f} / {r['b']:.1f}")
+    row("Gross weight, lb / wing loading, psf", lambda r: f"{r['W0']:.0f} / {r['WS']:.1f}")
+    row("Wing + tail (or tip-fin) weight, lb", lambda r: f"{r['W_wing']:.0f} + {r['W_tail']:.0f}")
+    row("Wetted area, ft2", lambda r: f"{r['wet_total']:.0f}")
+    row("Cruise KTAS, 12,000 ft, 195 hp", lambda r: f"{r['Vc']:.0f}")
+    row("Induced share: climb / cruise / reserve",
+        lambda r: f"{r['ind_share_climb']*100:.0f}% / {r['ind_share_cruise']*100:.0f}% / {r['ind_share_res']*100:.0f}%")
+    row("Best L/D (KEAS)", lambda r: f"{r['LDmax']:.1f} ({r['V_LDmax']})")
+    row("Climb SL / 12,000 ft, fpm", lambda r: f"{r['roc_sl']:.0f} / {r['roc_cr']:.0f}")
+    row("Service ceiling, ft", lambda r: f"{r['ceiling']:,.0f}")
+    row("Range 195 hp, 0 / 45 min reserve, nm", lambda r: f"{r['range0']:.0f} / {r['range45']:.0f}")
+    row("Best-range distance, nm", lambda r: f"{r['range_lr']:.0f}")
+    row("Height, ft (E)", lambda r: f"{r['height']:.1f}")
+    row("Trailer fold panel length, ft",
+        lambda r: f"{r.get('panel_fold', max(0.0, (r['b'] - 8.5) / 2)):.1f}")
+    row("Root spar depth, in", lambda r: f"{r['h_spar_in']:.1f}")
+    row("Spar-cap force, ultimate, lb", lambda r: f"{cap(r):,.0f}" + (" per wing, cantilever bound" if "F_cap_front" in r else ""))
+    row("Power-off approach sink, fpm", lambda r: f"{r['sink_app']:.0f}")
+    row("Engine-out glide, prop stopped", lambda r: f"{r['LD_glide']:.1f}")
+    row("Delta n per 10 ft/s (Pratt)", lambda r: f"{r['dn_per_10fps']:.2f}")
+    return "\n".join(out)
+
+
+def box_table():
+    d = json.load(open(os.path.join(HERE, "results", "boxcheck.json")))
+    gaps = ["0.05", "0.10", "0.15", "0.20", "0.25"]
+    out = ["| Gap / span | " + " | ".join(gaps) + " |", "|---|" + "---|" * len(gaps)]
+    for kind, lab in (("biplane", "Open biplane"), ("box", "Prandtl box (tip panels)"),
+                      ("joined", "Joined wing, no vertical gap at the tips")):
+        out.append(f"| {lab} | " + " | ".join(f"{d[f'{kind} {g}']:.3f}" for g in gaps) + " |")
+    return "\n".join(out)
+
+
 def all_tables():
     parts = []
     for rule, title in (("V", "Sizing rule A: same touchdown speed (61 kt at gross)"),
@@ -180,6 +227,7 @@ if __name__ == "__main__":
     if "--doc" in sys.argv:
         t = open(os.path.join(HERE, "planform.template.md")).read()
         t = t.replace("{{TABLES}}", all_tables()).replace("{{CALIB}}", calib_table())
+        t = t.replace("{{CLOSED}}", closed_table()).replace("{{BOX}}", box_table())
         open(os.path.join(HERE, "..", "planform.md"), "w").write(t)
         open(os.path.join(HERE, "results", "tables.md"), "w").write(all_tables() + "\n")
     else:
