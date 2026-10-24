@@ -94,11 +94,29 @@ The kit was sold in 33 sub-kits, each with a manual and a video
 complete and maintain their own aircraft are not in question. The right to sell
 new kits or plans is the open one.
 
+**Type club or builder group: none found** (Bill asked for this on AER-3805;
+identify only, no contact). Probes, 2026-10-24:
+- web searches for a Prescott Pusher owners' or builders' group, including on
+  groups.io and Yahoo Groups: nothing;
+- the Homebuilt Homepage clubs list: the page is gone (404);
+- a Pilots of America thread (April 2021): owners' and onlookers' discussion of
+  one aircraft for sale. It is not a group and holds no plans (L).
+
+The likeliest holders of builder documentation are individual builders and the
+SDASM collection itself. Separately, an R/C 1/5-scale model plan of the Pusher
+is published on Outerzone. That is a model plan, not the aircraft's drawings
+(L).
+
 ## Patents and trademarks
 
-- **Patents:** none identified; anything from the 1980s has expired.
-- **"PRESCOTT PUSHER" trademark:** not checked. USPTO search tools were not
-  reachable from this desk.
+- **Patents: none found.** Google Patents, priority dates 1980-1991, assignee
+  "Prescott Aeronautical": 0 results. Inventor "Prescott" with "airplane": 18
+  results, none aeronautical (hearing aids, optics, roof racks). Positive
+  control: inventor "Westergren", assignee "Rohr" returns US 3,931,943, the
+  Rohr 2-175 rudder patent, as expected. Anything filed in that period would
+  have expired by now anyway.
+- **"PRESCOTT PUSHER" trademark:** not checked. USPTO's search API refused
+  the request (HTTP 405), and its web tool needs a browser.
 
 ## Fleet
 
@@ -165,6 +183,14 @@ AERO owns the full "why it died" question.
   10 pages), read 2026-10-24 (P).
   https://sandiegoairandspace.org/collection/item/prescott-aeronautical-corporation
   https://sandiegoairandspace.org/files/Prescott_Aeronautical_Corporation_Collection-FG-SC.10269.pdf
+- SDASM ArchivesSpace record for SC.10269 (resource 398; extent 4 cubic feet),
+  read 2026-10-24 (P). https://sdasmarchives.libraryhost.com/repositories/2/resources/398
+- Google Patents queries, 2026-10-24 (P for absence, with control).
+  https://patents.google.com/
+- Pilots of America, "Prescott Pusher" thread, April 2021 (L).
+  https://www.pilotsofamerica.com/community/threads/prescott-pusher.131882/
+- Outerzone, Prescott Pusher R/C plan oz14320 (L).
+  https://outerzone.co.uk/plan_details.asp?ID=14320
 - FAA Aircraft Registry, ReleasableAircraft.zip, downloaded 2026-10-24 (P).
   https://registry.faa.gov/database/ReleasableAircraft.zip
 - Wings Over Kansas, "The History of Kansas Aircraft Manufacturing, 1899-1993",
