@@ -12,11 +12,13 @@ where they run out. It does not say the design may be copied.
 - **A live type, still in production in evolved form.** Piper Aircraft, Inc. holds
   TCDS A25SO. The same type certificate covers today's M350, M500 and M600. A
   current-production line is the least likely case for a sale or licence.
-- **Piper is owned by the government of Brunei** through Imprimis (since 2009).
+- **Piper is wholly owned by the Strategic Development Capital Fund of Brunei's
+  Ministry of Finance** (Brunei MoF press release, 5 August 2026). Imprimis bought
+  Piper for Brunei in 2009.
 - **The fleet is mid-sized:** 212 piston PA-46-310Ps on the US registry, plus 4
   turboprop conversions.
 - **The practical path is modification, not revival:** used airframes improved by
-  STC. This path is proven too: the JetPROP turbine conversion (Rocket Engineering)
+  STC. This path is proven too: the JetPROP DLX turbine conversion
   is an STC on this airframe.
 - **A new-build copy needs counsel**, and more so here than on the P210N, because
   the type is a live product its holder still sells.
@@ -57,8 +59,10 @@ None.
 
 ## STCs on this airframe
 
-- **JetPROP** turbine conversion (Rocket Engineering): an STC covering everything
-  forward of the firewall. Some parts are available only from Rocket.
+- **JetPROP DLX** turbine conversion (JetPROP LLC, Spokane, associated with Rocket
+  Engineering): a Pratt & Whitney PT6A-34 derated to 560 shp replaces the piston
+  engine. It was FAA-certified in 1998 (AOPA Pilot, July 2000; Flight
+  International; S).
 
 ## The paths
 
@@ -89,5 +93,9 @@ None.
 - AVweb, "Piper Likes Future With Imprimis". https://avweb.com/?p=120368
 - Aviation Pros, "Piper Aircraft Acquired by Imprimis".
   https://www.aviationpros.com/home/news/10382808/piper-aircraft-acquired-by-imprimis-to-secure-new-growth-opportunities
-- EuroGA forum thread (JetPROP STC parts, owner account). Secondary.
-  https://euroga.org/forums/how-much-would-you-pay-to-fly-this-cessna-p210-turbine-silver-eagle/9667?page=5
+- AOPA Pilot, "JetPROP DLX", July 2000.
+  https://www.aopa.org/news-and-media/all-news/2000/july/pilot/jetprop-dlx
+- Flight International, "JetProp-converted Malibu gets US go-ahead".
+  https://www.flightglobal.com/jetprop-converted-malibu-gets-us-go-ahead/23635.article
+- Brunei Ministry of Finance press release, 5 August 2026.
+  https://www.mof.gov.bn/2026/08/05/pr_05082026_sdcfund/
