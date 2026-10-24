@@ -14,11 +14,14 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 T_DOOR_W, T_DOOR_H_SMALL, T_DOOR_H_STD, T_DEPTH = 40.0, 9 + 5 / 12, 12.0, 30.0  # Hayward small/standard T
 CLEAR = 1.0                     # ft each side at the door (E, ours)
 TRAILER_W = 8.5                 # 102 in, 23 CFR 658.15
+# Home-tier envelope as confirmed by MANUFACTURING (AER-3784, PR #5,
+# docs/manufacturing/planform_parts.py; prices read 2026-10-24)
 ROUTER = (98.75 / 12, 49.5 / 12)  # Avid PRO4896 work area, ft
-PRINT_BIG = 1005 / 304.8        # BigRep ONE cube edge, ft
-PRINT_TALL = (600 / 304.8, 600 / 304.8, 1200 / 304.8)  # Modix BIG-120Z
-MILL = (18.0, 11.0, 16.25)      # Tormach 1100MX travels, in
+ROUTER_Z = 12.0                 # in, the PRO4896's 12 in Z option
+PRINT_TILE = 800 / 304.8        # Elegoo OrangeStorm Giga, 800 x 800 x 1,000 mm, ft
+MILL = (23.0, 21.0, 6.1)        # Langmuir MR-1 travels, in
 GARAGE = 24.0                   # ft, two-car garage, square (E, ours)
+WORK_ROOM = 2.0                 # ft each side for layup, bagging, infusion (MANUFACTURING, E)
 
 
 def tiles(L, W, tile):
@@ -31,11 +34,13 @@ def shop(r):
     # half-wing skin plug: bounding box in plan view (semi-span x root chord)
     L, W = max(semi, r["cr"]), min(semi, r["cr"])
     router = tiles(L, W, ROUTER)
-    printer = math.ceil(L / PRINT_BIG) * math.ceil(W / PRINT_BIG)
-    # one-piece centre section for the deltas (root chord x fuselage width + 2 ft)
-    fits_garage = max(semi + 2, r["cr"] + 2) <= GARAGE
+    printer = math.ceil(L / PRINT_TILE) * math.ceil(W / PRINT_TILE)
+    fits_garage = L <= GARAGE - 2 * WORK_ROOM
+    # female skin mold depth ~0.6 x root thickness + 3 in (MANUFACTURING, E)
+    depth = 0.6 * r["h_spar_in"] / 0.95 + 3.0
     return {"semi": semi, "plug_L": L, "plug_W": W, "router_tiles": router,
-            "print_tiles": printer, "garage": fits_garage}
+            "print_tiles": printer, "garage": fits_garage, "mold_depth": depth,
+            "z_ok": depth <= ROUTER_Z}
 
 
 def storage(r):
@@ -122,8 +127,9 @@ def tables(d, title):
     out.append("|---|" + "---|" * len(P))
     srow("Half-wing plug bounding box, ft", lambda s, r: f"{s['plug_L']:.1f} x {s['plug_W']:.1f}", sh)
     srow("4x8 router sheets per plug face (Avid PRO4896)", lambda s, r: f"{s['router_tiles']}", sh)
-    srow("1 m printer tiles per plug face (BigRep ONE)", lambda s, r: f"{s['print_tiles']}", sh)
-    srow("Half-wing mold fits a 24 ft garage", lambda s, r: yn(s["garage"]), sh)
+    srow("800 mm printer tiles per plug face (OrangeStorm Giga)", lambda s, r: f"{s['print_tiles']}", sh)
+    srow("Female mold depth, in / fits 12 in router Z", lambda s, r: f"{s['mold_depth']:.0f} / {yn(s['z_ok'])}", sh)
+    srow("Half-wing mold fits a 24 ft garage with 2 ft working room", lambda s, r: yn(s["garage"]), sh)
     srow("Root spar depth, in", lambda s, r: f"{r['h_spar_in']:.1f}", sh)
     srow("Root bending, ultimate, ft-lb", lambda s, r: f"{r['M_root']:,.0f}", sh)
     srow("Spar cap force, ultimate, lb", lambda s, r: f"{r['F_cap']:,.0f}", sh)
@@ -213,6 +219,22 @@ def box_table():
     return "\n".join(out)
 
 
+def cdf_table():
+    """Drag-factor sensitivity: measured pushers need 1.35-1.72 (AER-3783)."""
+    a = {r["id"]: r for r in json.load(open(os.path.join(HERE, "results", "sweep_V.json")))["points"]}
+    b = {r["id"]: r for r in json.load(open(os.path.join(HERE, "results", "sweep_V_cdf150.json")))["points"]}
+    ja = json.load(open(os.path.join(HERE, "results", "joined_V.json")))
+    jb = json.load(open(os.path.join(HERE, "results", "joined_V_cdf150.json")))
+    ids = list(a) + ["CW"]
+    a["CW"], b["CW"] = ja, jb
+    out = ["| Rule A | " + " | ".join(ids) + " |", "|---|" + "---|" * len(ids)]
+    out.append("| Cruise KTAS, x1.29 / x1.5 | " + " | ".join(f"{a[i]['Vc']:.0f} / {b[i]['Vc']:.0f}" for i in ids) + " |")
+    out.append("| Best L/D, x1.29 / x1.5 | " + " | ".join(f"{a[i]['LDmax']:.1f} / {b[i]['LDmax']:.1f}" for i in ids) + " |")
+    out.append("| Range 195 hp no reserve, nm, x1.29 / x1.5 | " + " | ".join(f"{a[i]['range0']:.0f} / {b[i]['range0']:.0f}" for i in ids) + " |")
+    out.append("| Best-range distance, nm, x1.29 / x1.5 | " + " | ".join(f"{a[i]['range_lr']:.0f} / {b[i]['range_lr']:.0f}" for i in ids) + " |")
+    return "\n".join(out)
+
+
 def all_tables():
     parts = []
     for rule, title in (("V", "Sizing rule A: same touchdown speed (61 kt at gross)"),
@@ -228,6 +250,7 @@ if __name__ == "__main__":
         t = open(os.path.join(HERE, "planform.template.md")).read()
         t = t.replace("{{TABLES}}", all_tables()).replace("{{CALIB}}", calib_table())
         t = t.replace("{{CLOSED}}", closed_table()).replace("{{BOX}}", box_table())
+        t = t.replace("{{CDF}}", cdf_table())
         open(os.path.join(HERE, "..", "planform.md"), "w").write(t)
         open(os.path.join(HERE, "results", "tables.md"), "w").write(all_tables() + "\n")
     else:

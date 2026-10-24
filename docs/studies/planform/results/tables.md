@@ -54,8 +54,9 @@
 |---|---|---|---|---|---|---|
 | Half-wing plug bounding box, ft | 16.8 x 4.6 | 15.0 x 5.0 | 13.5 x 5.2 | 11.2 x 6.6 | 16.0 x 13.8 | 23.6 x 13.0 |
 | 4x8 router sheets per plug face (Avid PRO4896) | 5 | 4 | 4 | 3 | 8 | 12 |
-| 1 m printer tiles per plug face (BigRep ONE) | 12 | 10 | 10 | 8 | 25 | 32 |
-| Half-wing mold fits a 24 ft garage | yes | yes | yes | yes | yes | no |
+| 800 mm printer tiles per plug face (OrangeStorm Giga) | 14 | 12 | 12 | 15 | 42 | 45 |
+| Female mold depth, in / fits 12 in router Z | 8 / yes | 8 / yes | 8 / yes | 10 / yes | 15 / no | 20 / no |
+| Half-wing mold fits a 24 ft garage with 2 ft working room | yes | yes | yes | yes | yes | no |
 | Root spar depth, in | 7.4 | 8.0 | 8.3 | 10.5 | 18.3 | 26.9 |
 | Root bending, ultimate, ft-lb | 56,131 | 49,774 | 45,231 | 37,711 | 43,200 | 40,575 |
 | Spar cap force, ultimate, lb | 100,930 | 83,295 | 72,735 | 47,799 | 31,531 | 20,121 |
@@ -140,8 +141,9 @@
 |---|---|---|---|---|---|---|
 | Half-wing plug bounding box, ft | 19.4 x 5.3 | 17.3 x 5.8 | 15.6 x 6.0 | 12.2 x 7.2 | 12.3 x 10.6 | 15.7 x 8.7 |
 | 4x8 router sheets per plug face (Avid PRO4896) | 5 | 5 | 4 | 3 | 6 | 6 |
-| 1 m printer tiles per plug face (BigRep ONE) | 12 | 12 | 10 | 12 | 16 | 15 |
-| Half-wing mold fits a 24 ft garage | yes | yes | yes | yes | yes | yes |
+| 800 mm printer tiles per plug face (OrangeStorm Giga) | 24 | 21 | 18 | 15 | 25 | 24 |
+| Female mold depth, in / fits 12 in router Z | 8 / yes | 9 / yes | 9 / yes | 10 / yes | 12 / yes | 14 / no |
+| Half-wing mold fits a 24 ft garage with 2 ft working room | yes | yes | yes | yes | yes | yes |
 | Root spar depth, in | 8.5 | 9.2 | 9.6 | 11.5 | 14.0 | 18.0 |
 | Root bending, ultimate, ft-lb | 66,357 | 59,096 | 53,560 | 41,775 | 31,924 | 25,508 |
 | Spar cap force, ultimate, lb | 103,773 | 85,512 | 74,516 | 48,442 | 30,362 | 18,947 |

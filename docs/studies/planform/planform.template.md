@@ -221,9 +221,30 @@ says "The design owner retains the IP" and aims "to induce a licensing
 arrangement for production". It also says the original prototype had been in
 storage for 20 years. The project domains have lapsed, and the only
 public drawings are a 2003 third-party three-view and a French model plan.
+Elon's rights file (MAOS-REVIVAL PR #8, `docs/rights/ligeti-stratos.md`) adds
+two points. The Google Code project carries a GPL v2 label, but its repository
+holds only an initial directory-structure commit. And a 2008 TWITT talk records
+that no drawings or design specifications existed for Ron Ligeti to work from.
 Elon's rights work (AER-3805) owns the question. For reconstruction, what is
 publicly in hand today is a three-view and published specifications, not
 drawings.
+
+## Drag-factor sensitivity: pushers read draggier
+
+The sweep uses the survey's fleet factor of x1.29. But every pusher in the
+survey with measured points needed more to match its published speeds (stage 3,
+AER-3783): Cozy 1.36 (CAFE), Prescott 1.35 (brochure) and 1.46-1.67 (Kitplanes'
+measured point), Velocity 1.63, Defiant 1.72 (push-pull). Candidate causes are
+propeller efficiency in the fuselage wake, cooling of a buried engine, and the
+short propellers that ground clearance forces. None is tested here. At x1.5:
+
+{{CDF}}
+
+Every point loses 10-11 kt and about 6% of range, and **the ranking does not
+change**, because the propulsor is the same on every point. But the absolute
+numbers matter for the 180 kt preference. At pusher-typical drag the deltas
+(166-170 KTAS) and AR4 fall below it, while AR6.5-10 and the closed wing stay at
+or just under 180.
 
 ## Calibration: real airplanes
 
@@ -393,28 +414,43 @@ folding** (shorter panels, lower loads at the hinge). **High AR is better for
 door height.**
 
 **3. Home-shop construction.** **Low AR wins on loads and spar depth. High AR
-wins on part size.** At equal touchdown speed the deltas' root spars are 18-27 in
-deep against 7-8 in on AR8-10. Their ultimate spar-cap forces are 20,000-32,000 lb
-against 83,000-101,000 lb, which allows lighter root fittings and simpler wing
-attachment. But a delta half-wing plug is 16-24 ft by 13-14 ft. That is 8-12
-sheets on a 4 x 8 ft CNC router per face, and 25-32 tiles on a 1 m-cube printer.
-The D2 half-wing mold does not fit a 24 ft garage. A high-AR half-wing is 15-17 ft
-by 5 ft: 4-5 router sheets per face, and a single garage holds it. What goes to
-a service is similar either way. High AR needs pultruded carbon spar caps sized
-for about 100,000 lb, and root fittings at that load want certified bar stock
-and heat treatment, even though a Tormach-class mill (18 x 11 in travel) can cut
-them. A low-AR wing needs a large infusion table and oven space for one-piece
-centre sections. MANUFACTURING's independent desk scaling on AER-3784
-(`docs/manufacturing/planform_parts.py`, MAOS-REVIVAL PR #5; E) agrees. From AR10
-to the AR2 delta, root spar depth roughly doubles and cap force falls about 4.5
-times (109,000 lb to 24,000 lb ultimate, at its own fixed areas). Mold area
-follows wing area, not aspect ratio. It adds a limit this study did not test:
-female skin molds run 8-14 in deep, so the deltas' molds exceed a 12 in Z-axis
-router, while AR 4 and above fit. Plugs stacked from routed slabs avoid the
-limit. It also judges that root fittings at AR 8-10 loads belong at a machining
-service, while those at AR 4 and below come within a benchtop mill working in
-plate, still with inspection. The home-tool envelopes used here are public-spec
-assumptions. MANUFACTURING was asked to confirm them.
+wins on part size.**
+
+- **Loads and spars.** At equal touchdown speed the deltas' root spars are
+  18-27 in deep against 7-8 in on AR8-10. Their ultimate spar-cap forces are
+  20,000-32,000 lb against 83,000-101,000 lb. MANUFACTURING judges (AER-3784,
+  PR #5) that root fittings at AR 8-10 loads belong at a machining service, while
+  at AR 4 and below they come within a benchtop mill working in plate (still with
+  inspection).
+- **Part size.** A delta half-wing plug is 16-24 ft by 13-14 ft: 8-12 sheets per
+  face on a 4 x 8 ft router, and 42-45 tiles on an 800 mm home printer. A high-AR
+  half-wing is 15-17 ft by 5 ft: 4-5 router sheets and 12-14 printer tiles.
+- **Router depth.** Female skin molds run about 0.6 x root thickness + 3 in
+  deep (MANUFACTURING's rule, E). That is 8 in for the straight wings and 15-20 in
+  for the deltas. The 12 in Z option on a home router takes the first and not the
+  second, so delta plugs must be stacked from routed slabs.
+- **Shop floor.** With 2 ft of working room around the mold, a 24 ft garage
+  takes a 20 ft mold. Every point but the AR2 delta fits.
+- **What goes to a service** is similar either way. High AR needs pultruded
+  carbon spar caps sized for about 100,000 lb, and fittings in certified,
+  heat-treated stock. Low AR needs a large infusion table and oven space for
+  one-piece centre sections.
+
+MANUFACTURING's independent scaling (`docs/manufacturing/planform_parts.py`, E)
+agrees on the trend. From AR10 to the AR2 delta at its own fixed areas, spar
+depth roughly doubles and cap force falls about 4.5 times (109,000 lb to
+24,000 lb). Mold area follows wing area, not aspect ratio. The home-tool envelope
+used here is MANUFACTURING's home tier:
+
+| Tool | Envelope | Price read 2026-10-24 |
+|---|---|---|
+| Avid PRO4896 router | 49.5 x 98.75 in, 12 in Z | $11,389 + $100 for 12 in Z |
+| Elegoo OrangeStorm Giga printer | 800 x 800 x 1,000 mm | $2,499 (sale) |
+| Langmuir MR-1 mill | 23 x 21 x 6.1 in | $5,195 |
+| Garage | 24 ft square, 2 ft working room | (E, ours) |
+
+The industrial BigRep and Tormach machines first assumed here were replaced on
+MANUFACTURING's advice.
 
 **4. Safety.** **The record favours low AR on the stall and high AR on the glide
 and the approach.**
@@ -486,7 +522,7 @@ All under [`docs/studies/planform/`](planform/).
 | `calib.py` | Calibration planforms: AVL and Pratt |
 | `joined.py`, `boxcheck.py` | The closed-wing point and the Stratos calibration; AVL test of biplane, box and joined-wing span efficiency |
 | `report.py` | Tables and storage/shop columns; `--doc` builds this file from `planform.template.md` |
-| `perf.py`, `vspgen.py` | Copied unchanged from the stage 3 check (AER-3783) |
+| `perf.py`, `vspgen.py` | Corf.py`, `vspgen.py` | Copied unchanged from the stage 3 check (AER-3783) |
 | `avl/`, `vsp/` | Every AVL deck and OpenVSP script the tables came from, with CompGeom outputs |
 | `results/` | `sweep_V.json`, `sweep_S.json`, `calib.json`, `tables.md` |
 | `research/` | Calibration and safety desk research, and the quote audit |
