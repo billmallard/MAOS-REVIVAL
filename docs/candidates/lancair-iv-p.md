@@ -61,6 +61,11 @@ Sanity flags:
 
 Kits ended 2012; in 2016 the company sold older lines to concentrate on the Evolution (Wikipedia).
 
+## Idea ledger (what a new airplane should keep; AERO's judgement)
+
+- Pressurisation and FL240 cruise in a kit, the fastest piston four-seater of its era (published 287 KTAS at 24,000 ft).
+- Re-wing data point to follow (Oregon remanufacturer, Bill): a new wing on the same airframe as the fix for the stall-spin record.
+
 ## Rights and provenance (known so far; research, not legal advice)
 
 Neibauer -> Bartels (2003) -> Huffstutlers, Lancair International (2017) -> JetEXE / Lancair Aerospace (2023). Owned by the stage 2 rights research (AER-3787).

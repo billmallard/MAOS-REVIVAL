@@ -62,6 +62,10 @@ Sanity flags:
 
 The Pressurized Centurion ended with Cessna's 1986 piston shutdown; the P210R sold only ~40 against the Malibu (P&P 2005).
 
+## Idea ledger (what a new airplane should keep; AERO's judgement)
+
+- Six seats, pressurisation and a large, well-documented fleet: the calibration case for the method. Kit builders now attempt 210 analogs (see the long list).
+
 ## Rights and provenance (known so far; research, not legal advice)
 
 TCDS 3A21 holder: Textron Aviation Inc. (from Cessna, 2015). Owned by the stage 2 rights research (AER-3787).

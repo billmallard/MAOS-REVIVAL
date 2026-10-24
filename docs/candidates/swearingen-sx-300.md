@@ -60,6 +60,10 @@ Sanity flags:
 
 Company cited lack of certification progress; Kitplanes suggests the fatal turboprop-prototype crash cost it military interest.
 
+## Idea ledger (what a new airplane should keep; AERO's judgement)
+
+- Ed Swearingen's all-metal, 240 kt two-seat kit: proof that a small, clean metal airframe can match composites on speed.
+
 ## Rights and provenance (known so far; research, not legal advice)
 
 Airight LLC (Jim Ryan, 1994); parts inventory now with the SX300 Group. Formal rights holder not found. Owned by the stage 2 rights research (AER-3787).

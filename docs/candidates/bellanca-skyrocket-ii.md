@@ -57,6 +57,10 @@ Sanity flags:
 
 Funding ran out and Bellanca and the West Virginia investors disagreed on production; $20-25M to certify (Flying, Jan 1983).
 
+## Idea ledger (what a new airplane should keep; AERO's judgement)
+
+- A laminar NACA 63-series wing and molded composite fuselage halves over honeycomb in the 1970s: about 230 kt with six seats.
+
 ## Rights and provenance (known so far; research, not legal advice)
 
 Bellanca family / AviaBellanca (1996-97 SkyRocket III kit attempt); fate of molds after 1997 not found; airframe donated 2020. Owned by the stage 2 rights research (AER-3787).

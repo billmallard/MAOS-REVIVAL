@@ -133,6 +133,12 @@ def stub(c):
         "",
         cell(c.get("why_died")),
         "",
+        "## Idea ledger (what a new airplane should keep; AERO's judgement)",
+        "",
+    ]
+    L += [f"- {x}" for x in c.get("ideas", [])] or ["- none recorded yet"]
+    L += [
+        "",
         "## Rights and provenance (known so far; research, not legal advice)",
         "",
         cell(c.get("rights")) + " Owned by the stage 2 rights research (AER-3787).",

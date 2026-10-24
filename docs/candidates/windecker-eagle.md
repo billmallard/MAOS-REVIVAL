@@ -56,6 +56,11 @@ Sanity flags:
 
 Out of money after spending more than $20M on certification in the 1970 recession; a 1979 revival priced above a Bonanza (Smithsonian).
 
+## Idea ledger (what a new airplane should keep; AERO's judgement)
+
+- The first FAA-certified all-composite airplane (with Dow): proof, in 1969, that composites could be certified.
+- Lesson: a $20M+ certification bill with no production volume behind it.
+
 ## Rights and provenance (known so far; research, not legal advice)
 
 TC A7SW: Windecker -> Composite Aircraft Corp (1979) -> EAGLEAERO -> Wei Hang (~2015, with 2 airframes). Current holder unconfirmed. Owned by the stage 2 rights research (AER-3787).

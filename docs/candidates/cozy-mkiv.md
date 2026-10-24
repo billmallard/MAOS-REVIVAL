@@ -67,6 +67,11 @@ Sanity flags:
 
 Not dead. Aircraft Spruce has held exclusive rights since 1 Jan 2004 and sells plans and components (http://www.cozyaircraft.com/czmain.htm).
 
+## Idea ledger (what a new airplane should keep; AERO's judgement)
+
+- Side-by-side front seats in a canard pusher: the Long-EZ layout widened to four seats without losing its cruise efficiency on 180 hp.
+- Moldless foam-and-glass construction that a plans builder can do without tooling; the cost is build hours and builder-to-builder weight scatter (871 lb useful on the CAFE aircraft against 1,000 lb designed).
+
 ## Rights and provenance (known so far; research, not legal advice)
 
 Aircraft Spruce (exclusive marketing rights from Co-Z Development, 2004); also bought Brock metal-parts tooling 2005. Owned by the stage 2 rights research (AER-3787).

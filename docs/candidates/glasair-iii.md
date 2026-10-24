@@ -56,6 +56,10 @@ Sanity flags:
 
 Stoddard-Hamilton went bankrupt in 2001; Advanced Aero Components now offers the G3 Heritage.
 
+## Idea ledger (what a new airplane should keep; AERO's judgement)
+
+- A two-seat fibreglass kit at about 224 KTAS on 300 hp; revived as a carbon kit, so the design outlived its company.
+
 ## Rights and provenance (known so far; research, not legal advice)
 
 Wathen / Glasair Aviation (2001) -> Jilin Hanxing (2012) -> Advanced Aero Components (II/III assets, 2017). Owned by the stage 2 rights research (AER-3787).

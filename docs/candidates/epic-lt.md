@@ -60,6 +60,10 @@ Sanity flags:
 
 Bankrupt Aug 2009; stopped LT kit orders in 2013 to focus on the E1000 (Wikipedia).
 
+## Idea ledger (what a new airplane should keep; AERO's judgement)
+
+- A carbon-composite six-seat pressurised kit turboprop that grew into a certified type (E1000).
+
 ## Rights and provenance (known so far; research, not legal advice)
 
 Builders group + CAIGA (2010) -> Filev (2012) -> Eves majority (2024, unverified). Owned by the stage 2 rights research (AER-3787).

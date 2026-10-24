@@ -57,6 +57,10 @@ Sanity flags:
 
 Repeated certification slips, including an engine change when Lycoming would not certify the IO-390 for mogas (Wikipedia/AvWeb).
 
+## Idea ledger (what a new airplane should keep; AERO's judgement)
+
+- Retractable trailing-link gear, gull-wing doors, an airframe parachute and a low-drag carbon shape on 260 hp; the certification time it took is the lesson.
+
 ## Rights and provenance (known so far; research, not legal advice)
 
 Textron eAviation (Pipistrel acquired 2022). Owned by the stage 2 rights research (AER-3787).

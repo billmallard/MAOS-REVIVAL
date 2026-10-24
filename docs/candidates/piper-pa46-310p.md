@@ -63,6 +63,10 @@ Sanity flags:
 
 Engine problems led to a 1987 voluntary grounding request; replaced by the PA-46-350P Mirage. The type lives on as the M350 (Flying).
 
+## Idea ledger (what a new airplane should keep; AERO's judgement)
+
+- Cabin-class pressurised six-seat single; its engine troubles show how much an airframe's reputation rides on its powerplant.
+
 ## Rights and provenance (known so far; research, not legal advice)
 
 TCDS A25SO holder: Piper Aircraft, Inc. (owned by the Government of Brunei). Owned by the stage 2 rights research (AER-3787).

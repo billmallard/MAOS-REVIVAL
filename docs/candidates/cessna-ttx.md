@@ -60,6 +60,10 @@ Sanity flags:
 
 44 sold in 2015, 23 in 2017, against 355 Cirrus singles; production stopped 2018 (AOPA).
 
+## Idea ledger (what a new airplane should keep; AERO's judgement)
+
+- Certified all-composite four-seater with side-stick and 219 KTAS at FL220; lost on market share, not on performance.
+
 ## Rights and provenance (known so far; research, not legal advice)
 
 TC A00003SE: Textron Aviation. Chain: Pacific Aviation Composites -> Lancair -> Columbia (bankrupt 2007) -> Cessna. Owned by the stage 2 rights research (AER-3787).

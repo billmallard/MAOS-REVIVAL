@@ -60,6 +60,11 @@ Sanity flags:
 
 Discontinued 1993 as Cirrus moved to certified aircraft; replacement wing announced 1996 for ~28 kits (Wikipedia).
 
+## Idea ledger (what a new airplane should keep; AERO's judgement)
+
+- A laminar-flow composite wing and a clean pusher fuselage that reached about 200 KTAS on 290-300 hp, the design the Cirrus team learned on before the SR20.
+- Lesson: its long shaft drive, cruise-flap flutter and aft-CG spin recovery are what a pusher with a buried engine must design out.
+
 ## Rights and provenance (known so far; research, not legal advice)
 
 Cirrus Design, now Cirrus Aircraft. No support program found. Owned by the stage 2 rights research (AER-3787).

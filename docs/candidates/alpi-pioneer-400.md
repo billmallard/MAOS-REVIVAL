@@ -59,6 +59,10 @@ Sanity flags:
 
 Not dead; permit/experimental category only.
 
+## Idea ledger (what a new airplane should keep; AERO's judgement)
+
+- A four-seat retractable on a 115 hp Rotax: shows how far a light, clean airframe goes on little power, and what that costs in useful load.
+
 ## Rights and provenance (known so far; research, not legal advice)
 
 Alpi Aviation. Owned by the stage 2 rights research (AER-3787).

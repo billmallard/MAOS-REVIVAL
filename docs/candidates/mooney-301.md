@@ -66,6 +66,11 @@ Sanity flags:
 
 Republic Steel's takeover by LTV forced the sale of Mooney. The prototype was about 200 lb over its projected weight and, with aero work unfinished, slower than desired; the new French-led owners wanted close to 300 kt, which needed a turbine, and moved the effort into the Socata joint venture that became the TBM 700 (Mooney Events; Plane & Pilot; docs/rights/mooney-301.md).
 
+## Idea ledger (what a new airplane should keep; AERO's judgement)
+
+- A laminar wing, pressurisation and six seats on 360 hp, the concept behind the TBM 700.
+- Lesson: the prototype flew about 200 lb heavy and slower than planned; weight control was the failure, not the layout.
+
 ## Rights and provenance (known so far; research, not legal advice)
 
 No TC; one prototype, scrapped. M30 data went to Socata in 1987; whether Mooney International or Daher holds it is not shown (docs/rights/mooney-301.md). Owned by the stage 2 rights research (AER-3787).

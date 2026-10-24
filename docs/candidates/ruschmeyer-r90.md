@@ -60,6 +60,10 @@ Sanity flags:
 
 Bankrupt June 1996; Solaris bought the assets in 1999 but no deliveries were found (Flying).
 
+## Idea ledger (what a new airplane should keep; AERO's judgement)
+
+- A certified German composite four-seater with a derated 230 hp engine; ended by its maker's bankruptcy, not by the design.
+
 ## Rights and provenance (known so far; research, not legal advice)
 
 EASA TC holder: Bernd Hager, Hannover (2022). Owned by the stage 2 rights research (AER-3787).

@@ -60,6 +60,11 @@ Sanity flags:
 
 Builders cited slow parts delivery; kits stopped ~1989 and the company folded 1991 (Kitplanes; SDASM).
 
+## Idea ledger (what a new airplane should keep; AERO's judgement)
+
+- A four-seat pusher designed with CAD/CAM in the 1980s around a steel-tube fuselage, aimed at a low-cost kit.
+- Lesson: slow parts supply killed it before the airframe could prove itself; kit logistics are part of the design.
+
 ## Rights and provenance (known so far; research, not legal advice)
 
 Not found. Owned by the stage 2 rights research (AER-3787).

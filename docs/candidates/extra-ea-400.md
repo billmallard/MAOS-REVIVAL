@@ -63,6 +63,11 @@ Sanity flags:
 
 About 16,000 labour hours and a ~$1M price; the company ran into financial trouble (P&P 2022).
 
+## Idea ledger (what a new airplane should keep; AERO's judgement)
+
+- A high-wing, pressurised, six-seat composite single with a T-tail.
+- Lesson: about 16,000 labour hours per airplane made it unaffordable; the build method is the failure.
+
 ## Rights and provenance (known so far; research, not legal advice)
 
 EASA TC holder: Aerospace Composites GmbH, Laupheim (Oct 2025). Earlier SST Flugtechnik (insolvent 2025); design rights to Jiangsu A-Star, China (2014). Owned by the stage 2 rights research (AER-3787).

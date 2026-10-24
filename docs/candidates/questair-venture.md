@@ -59,6 +59,11 @@ Sanity flags:
 
 Questair was struggling to come out of bankruptcy in 1991 (Kitplanes); the fixed-gear Spirit did not save it.
 
+## Idea ledger (what a new airplane should keep; AERO's judgement)
+
+- Compound-curve metal skins and a very small, very clean two-seat airframe that cruised near 235 kt on 280 hp.
+- Proof that wetted area, not material, sets cruise efficiency; a modern composite or stretch-formed version keeps the shape.
+
 ## Rights and provenance (known so far; research, not legal advice)
 
 Questair Venture LLC (Dan Myers, Jim Cook) since 2013: parts, support, a few original kits. Owned by the stage 2 rights research (AER-3787).

@@ -63,6 +63,10 @@ Sanity flags:
 
 Less payload than the Comanche B and a 400 hp burn; the whole line ended when the 1972 Agnes flood destroyed Lock Haven tooling (AvWeb).
 
+## Idea ledger (what a new airplane should keep; AERO's judgement)
+
+- A fast, strong four-seater with an eight-cylinder engine; heavy and thirsty, and its tooling was lost in the 1972 flood.
+
 ## Rights and provenance (known so far; research, not legal advice)
 
 TCDS 1A15 holder: Piper Aircraft, Inc. Owned by the stage 2 rights research (AER-3787).

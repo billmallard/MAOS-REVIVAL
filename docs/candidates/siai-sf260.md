@@ -60,6 +60,10 @@ Sanity flags:
 
 No reason found; production ended in 2017.
 
+## Idea ledger (what a new airplane should keep; AERO's judgement)
+
+- Aerobatic, fast and strong: 175 KTAS at 6,000 ft on 260 hp with three seats (flight manual), from a small, clean wing.
+
 ## Rights and provenance (known so far; research, not legal advice)
 
 EASA TC holder: Leonardo S.p.A. FAA TCDS A10EU. Owned by the stage 2 rights research (AER-3787).

@@ -55,6 +55,11 @@ Sanity flags:
 
 Hi-Shear internal problems ended the first effort; Wing Aircraft Co. went bankrupt in July 1982 (Jane's; 1000aircraftphotos).
 
+## Idea ledger (what a new airplane should keep; AERO's judgement)
+
+- A two-seat, flush-riveted, chem-milled light twin: twin redundancy in a small, fast airframe.
+- Rotax-powered analogs shown at AERO Friedrichshafen 2026 (Bill) suggest the idea is alive; see the analog rows when added.
+
 ## Rights and provenance (known so far; research, not legal advice)
 
 TC A9WE: Hi-Shear -> Wing Aircraft Co.; Emerald Enterprises (San Diego) as of 1998 per Wikipedia, unsourced. Owned by the stage 2 rights research (AER-3787).

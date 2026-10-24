@@ -61,6 +61,11 @@ Sanity flags:
 
 Lawsuits between Ronneberg and Murphy bankrupted both; later owners did not last and a 2003 sale fell through (Wikipedia).
 
+## Idea ledger (what a new airplane should keep; AERO's judgement)
+
+- Molded carbon and glass parts that turned the Long-EZ shape into a retractable 200 kt two-seater.
+- Lesson: over 100 molded parts meant expensive tooling and kits (Bill: 'expensive to build'); molds are an asset only while someone keeps them.
+
 ## Rights and provenance (known so far; research, not legal advice)
 
 Ronneberg -> Renaissance Composites (Riley, 1996) -> Berkut Engineering and Design. Current holder not public. Owned by the stage 2 rights research (AER-3787).

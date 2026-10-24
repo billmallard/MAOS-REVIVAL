@@ -64,6 +64,11 @@ Sanity flags:
 
 Hand-built with minimal tooling; 'it took $4 million to produce $3 million worth' (P&P).
 
+## Idea ledger (what a new airplane should keep; AERO's judgement)
+
+- Steel-tube cabin cage inside a metal semimonocoque: crash protection and a reputation for strength and fine handling.
+- Lesson: hand-built at a loss ($4M to make $3M of airplanes); a re-derivation must design for cheap production from the start.
+
 ## Rights and provenance (known so far; research, not legal advice)
 
 TCDS 3A18 holder: Interceptor Aviation Inc., Bethany OK (2014; GlobalParts affiliate). Owned by the stage 2 rights research (AER-3787).

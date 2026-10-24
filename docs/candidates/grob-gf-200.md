@@ -56,6 +56,10 @@ Sanity flags:
 
 No production partner found; Grob moved to GF 250/300 concepts, also unfunded (Flight).
 
+## Idea ledger (what a new airplane should keep; AERO's judgement)
+
+- A mid-mounted engine with a shaft to a pusher prop behind a T-tail and a laminar composite wing: the VK-30's idea done by a sailplane maker.
+
 ## Rights and provenance (known so far; research, not legal advice)
 
 Grob Aerospace insolvent 2008 -> H3 Aerospace (Grob Aircraft, 2009) -> Helsing (2025). Whether GF 200 data transferred is not found. Owned by the stage 2 rights research (AER-3787).

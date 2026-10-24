@@ -61,6 +61,11 @@ Sanity flags:
 
 RAF stopped selling all plans in June 1985 over product-liability exposure after a lawsuit (Wikipedia, Rutan VariEze).
 
+## Idea ledger (what a new airplane should keep; AERO's judgement)
+
+- The efficiency benchmark of the class: two seats and over 1,000 nm on about 115 hp, from low wetted area, a pusher prop in clean air and a canard that will not stall the main wing first.
+- Lesson: plans were withdrawn for liability, not performance; a revival's builder-support and liability model matters as much as the airframe.
+
 ## Rights and provenance (known so far; research, not legal advice)
 
 Rutan Aircraft Factory retains rights; plans not sold. Owned by the stage 2 rights research (AER-3787).

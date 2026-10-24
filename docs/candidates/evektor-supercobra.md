@@ -56,6 +56,10 @@ Sanity flags:
 
 Development slowed for lack of funding in June 2007; certification targets missed (Flight; AvWeb).
 
+## Idea ledger (what a new airplane should keep; AERO's judgement)
+
+- A four-to-five-seat retractable from a European light-aircraft maker, stopped by funding before certification.
+
 ## Rights and provenance (known so far; research, not legal advice)
 
 Evektor-Aerotechnik / Brno University of Technology. No TC exists. Owned by the stage 2 rights research (AER-3787).

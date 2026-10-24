@@ -63,6 +63,11 @@ Sanity flags:
 
 Not dead. Kits and a factory transition course are still offered (Kitplanes).
 
+## Idea ledger (what a new airplane should keep; AERO's judgement)
+
+- A canard pusher with a real cabin: four or five seats, gull-wing doors and retractable gear, sold as a kit continuously since the 1980s.
+- Raptor note (successor attempt, see the Raptor section when added): what it tried and why it failed belongs here as a lesson.
+
 ## Rights and provenance (known so far; research, not legal advice)
 
 Maher -> Scott and Duane Swing (1992) -> Rocket Racing (2008) -> Swing family again (2010). Owned by the stage 2 rights research (AER-3787).

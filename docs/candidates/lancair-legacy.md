@@ -60,6 +60,10 @@ Sanity flags:
 
 Last kit announced May 2016; continuing 'will require a significant investment' (Lancair).
 
+## Idea ledger (what a new airplane should keep; AERO's judgement)
+
+- A two-seat composite cruiser at 230 kt on 310 hp with a modern cockpit and fast build kit.
+
 ## Rights and provenance (known so far; research, not legal advice)
 
 Same Lancair chain as the IV-P. Owned by the stage 2 rights research (AER-3787).

@@ -58,6 +58,10 @@ Sanity flags:
 
 The Tiara engine family was a commercial failure (fuel burn in the 1973 oil crisis); no source states Robin's own reason.
 
+## Idea ledger (what a new airplane should keep; AERO's judgement)
+
+- An all-metal French four-seat retractable whose geared Tiara engine failed in service; the airframe was never the problem.
+
 ## Rights and provenance (known so far; research, not legal advice)
 
 EASA TC holder: CEAPR, Darois (from Apex, 2013). Owned by the stage 2 rights research (AER-3787).

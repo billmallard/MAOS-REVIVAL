@@ -61,6 +61,10 @@ Sanity flags:
 
 Mooney furloughed its staff in Nov 2019 after 8 deliveries in three quarters (AvWeb).
 
+## Idea ledger (what a new airplane should keep; AERO's judgement)
+
+- Mooney's steel-tube cage and low-drag airframe: 237 KTAS on 280 hp with four seats, from careful drag cleanup over decades.
+
 ## Rights and provenance (known so far; research, not legal advice)
 
 TC 2A3: Mooney International Corp (US owner group took 80% in 2020). Owned by the stage 2 rights research (AER-3787).

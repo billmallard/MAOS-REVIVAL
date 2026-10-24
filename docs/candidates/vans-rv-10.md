@@ -61,6 +61,10 @@ Sanity flags:
 
 Not dead. Still produced and supported.
 
+## Idea ledger (what a new airplane should keep; AERO's judgement)
+
+- The commercial success the others are measured against: a fast-build metal kit with matched-hole parts that thousands of builders can finish, and a large, predictable fleet.
+
 ## Rights and provenance (known so far; research, not legal advice)
 
 Van's Aircraft. Owned by the stage 2 rights research (AER-3787).

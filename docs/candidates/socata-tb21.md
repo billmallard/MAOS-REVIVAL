@@ -61,6 +61,10 @@ Sanity flags:
 
 Build-to-order after 9/11; all marketing and production ended by 2012 (Wikipedia citing Flight).
 
+## Idea ledger (what a new airplane should keep; AERO's judgement)
+
+- A turbocharged four-seater with a roomy cabin from a large European maker; ended by the post-2001 market, not the design.
+
 ## Rights and provenance (known so far; research, not legal advice)
 
 EASA TC holder: Daher Aircraft SAS. FAA TCDS A51EU. Owned by the stage 2 rights research (AER-3787).

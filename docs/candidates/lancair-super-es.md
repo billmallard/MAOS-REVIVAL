@@ -56,6 +56,10 @@ Sanity flags:
 
 Out of production since 2012; no reason given (lancair.com).
 
+## Idea ledger (what a new airplane should keep; AERO's judgement)
+
+- A four-seat composite kit with fixed gear that cruises fast enough to need no retract; its concept became the certified Columbia/Cessna 350/400 line.
+
 ## Rights and provenance (known so far; research, not legal advice)
 
 Same Lancair chain as the IV-P. Owned by the stage 2 rights research (AER-3787).

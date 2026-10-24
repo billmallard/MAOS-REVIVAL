@@ -61,6 +61,11 @@ Sanity flags:
 
 The 1979 certification effort lost its financing; plans ended with RAF's 1985 liability stop (Wikipedia; P&P).
 
+## Idea ledger (what a new airplane should keep; AERO's judgement)
+
+- Centerline-thrust twin: engine-out without asymmetric thrust or a Vmc problem, which matters when both engines are uncertified conversions.
+- Moldless construction, no flaps, canard stall protection; record shows no engine-out accident on about 30 aircraft.
+
 ## Rights and provenance (known so far; research, not legal advice)
 
 Rutan Aircraft Factory; not marketed. Owned by the stage 2 rights research (AER-3787).

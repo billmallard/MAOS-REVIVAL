@@ -64,6 +64,11 @@ Sanity flags:
 
 A fatal four-occupant crash before Oshkosh 1990 contracted sales and bankrupted Wheeler; EDI (1996) and Express Aircraft Co. also failed (CAFE report).
 
+## Idea ledger (what a new airplane should keep; AERO's judgement)
+
+- Four real seats and a 1,000 lb design useful load on 210 hp, with the best-measured performance in the survey (CAFE 1997).
+- An NLF(1)-0215F laminar wing on a kit; a cruciform tail on the FT variant. Stall and yaw behaviour is the open issue (stage 3).
+
 ## Rights and provenance (known so far; research, not legal advice)
 
 Wheeler -> Express Design Inc. (1992) -> Express Aircraft Co. (1996/97) -> Composite Aircraft Technology (2007). Current holder not found. Owned by the stage 2 rights research (AER-3787).

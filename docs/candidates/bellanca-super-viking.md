@@ -64,6 +64,10 @@ Sanity flags:
 
 Bankrupt in 1980; custom-order production from 1984, bankrupt again in 2001 (AvWeb).
 
+## Idea ledger (what a new airplane should keep; AERO's judgement)
+
+- A wooden wing and steel-tube fuselage on a fast four-seater: unusual materials can work, but low-rate production of them did not pay.
+
 ## Rights and provenance (known so far; research, not legal advice)
 
 TCDS A18CE holder (2002): Alexandria Aircraft LLC; reported move to Sulphur OK as Bellanca Aircraft Inc. (2022) unverified. Owned by the stage 2 rights research (AER-3787).
