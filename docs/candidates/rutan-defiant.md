@@ -76,13 +76,33 @@ No configuration-specific pattern found. Single-engine climb 150-400 fpm dependi
 
 <!-- stage3:start -->
 
-## Stage 3: shortlist rank 1 of 8 (AER-3783)
+## Stage 3: checked, then dropped from the shortlist by Bill (2026-10-24)
 
 Our own check, from published geometry and weights, calibrated against published flight data. Method, calibration and the Aeromomentum assumptions are in [docs/SHORTLIST.md](../SHORTLIST.md). Rights are research, not legal advice. Nobody has been contacted.
 
-### Verdict
+### Bill's call
+
+Bill, 2026-10-24: "no chance. Rutan has it and it's not what I'm after." Dropped from the shortlist; the long-list row stays.
+
+### Verdict (stage 3, before Bill's review)
 
 **Rank 1.** It is the only direct Aeromomentum fit, gives twin redundancy for uncertified engines with no Vmc problem, has a clean record, and died for reasons a revival removes. Its weakness is drag. The published numbers say it is 1.7 times draggier than its geometry, so its payload at 1,000 nm with a 45 min reserve is cannot to 669 lb at 178-190 KTAS, and 807-821 lb at 150-159 KTAS. Its geometry is also the thinnest-sourced of the top four: the canard, chords and fuselage section are all estimates.
+
+### Idea ledger (what a new airplane should keep)
+
+- Centreline thrust: two engines with no asymmetric-thrust or Vmc problem, the right answer when both engines are uncertified automotive conversions. The record shows no engine-out accident on about 30 aircraft.
+- A canard that protects the main wing from stalling, on a twin.
+
+### Published, measured and our check, side by side
+
+Read across a row only within one column's basis. The three targets are separate floors.
+
+| | As published | Measured or reported | Our check, original engine |
+|---|---|---|---|
+| Useful load | 1,290 lb (pass) | not found | 1,350 lb (the empty weight the model uses: 1,600 lb) |
+| Range | 1,128 nm (pass; not stated) | 1,094 nm (pass; still air, no reserve, from fuel and measured flow) | 1,237 nm, still air, no reserve, full fuel from MTOW, at 200 hp and 9,000 ft |
+| Cruise | 184 KTAS at 8,000 ft (pass+) | 162 KTAS at 10,000 ft (pass) | 167 KTAS at 200 hp and 9,000 ft |
+| Screen | pass | partial: range pass, speed pass | see the verdict |
 
 ### Independent performance check
 
@@ -160,6 +180,5 @@ The 1979 certification programme lost its financing, and RAF stopped selling all
 - Measure N78RA at the Hiller museum (canard, chords, cowls) if Bill approves contact; it would replace most of the estimated geometry.
 - A drag study of the two cooling installations and the prop question (AERO, if it goes forward).
 - The modern rebuild's empty weight (MANUFACTURING, stage 4): the plans prototype's 1,600 lb is the only figure.
-- What a modern rebuild changes in mass, cost and build hours (MANUFACTURING, stage 4, AER-3784).
 
 <!-- stage3:end -->

@@ -76,13 +76,33 @@ Ronneberg -> Renaissance Composites (Riley, 1996) -> Berkut Engineering and Desi
 
 <!-- stage3:start -->
 
-## Stage 3: shortlist rank 7 of 8 (AER-3783)
+## Stage 3: checked, then dropped from the shortlist by Bill (2026-10-24)
 
 Our own check, from published geometry and weights, calibrated against published flight data. Method, calibration and the Aeromomentum assumptions are in [docs/SHORTLIST.md](../SHORTLIST.md). Rights are research, not legal advice. Nobody has been contacted.
 
-### Verdict
+### Bill's call
+
+Bill, 2026-10-24: "not likely. These were expensive to build." Dropped from the shortlist; the long-list row stays.
+
+### Verdict (stage 3, before Bill's review)
 
 **Rank 7.** It is the only two-seater on the shortlist, and it cannot be checked. No measured performance exists, and its wing area is unsourced. Our fleet-calibrated model gives 239 KTAS on 195 hp, faster than the designer's own 191 KTAS cruise claim, which says the geometry is wrong. On weight and fuel alone: 949 lb useful, and 1,000 nm only at economy power (608-616 lb with reserve). Its range and payload are grade E.
+
+### Idea ledger (what a new airplane should keep)
+
+- Molded carbon and glass parts that took the Long-EZ shape to a retractable 200 kt class two-seater.
+- Lesson: over 100 molded parts made the kit expensive to build (Bill's reason) and left the design hostage to its molds, which are now lost.
+
+### Published, measured and our check, side by side
+
+Read across a row only within one column's basis. The three targets are separate floors.
+
+| | As published | Measured or reported | Our check, original engine |
+|---|---|---|---|
+| Useful load | 965 lb (near) | not found | 965 lb (the empty weight the model uses: 1,035 lb) |
+| Range | 1,315 nm (pass; economy cruise, 30 min reserve) | not found | 1,034 nm, still air, no reserve, full fuel from MTOW, at 150 hp and 8,000 ft |
+| Cruise | 208 KTAS at 8,000 ft (pass+) | 180 KTAS at altitude not stated (pass+) | 218 KTAS at 150 hp and 8,000 ft |
+| Screen | near miss | partial: speed pass, speed unconditioned | see the verdict |
 
 ### Independent performance check
 
@@ -144,6 +164,5 @@ Lawsuits between the founding partners bankrupted both, later owners did not las
 
 - Primary geometry and one measured cruise point; nothing else changes this rank.
 - Trace the molds (Elon).
-- What a modern rebuild changes in mass, cost and build hours (MANUFACTURING, stage 4, AER-3784).
 
 <!-- stage3:end -->

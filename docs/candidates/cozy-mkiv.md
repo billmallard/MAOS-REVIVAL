@@ -82,13 +82,29 @@ Co-Z FAQ cites two fatal accidents (to ~2009); a four-aboard MKIV was lost off C
 
 <!-- stage3:start -->
 
-## Stage 3: shortlist rank reference (AER-3783)
+## Stage 3: reference (AER-3783)
 
 Our own check, from published geometry and weights, calibrated against published flight data. Method, calibration and the Aeromomentum assumptions are in [docs/SHORTLIST.md](../SHORTLIST.md). Rights are research, not legal advice. Nobody has been contacted.
 
 ### Verdict
 
-**Reference.** On our check it fails harder than the published record. The CAFE-weighed empty weight is 1,179 lb, giving 871 lb useful, not 1,000. On its IO-360 it does 175 KTAS at 8,000 ft and 829 nm on full usable fuel with no reserve, so it cannot carry any payload over 1,000 nm. Every shortlisted design except the Berkut beats it on payload at 1,000 nm.
+**Reference, on two bases that are kept apart.** As published (cozyaircraft.com specs), the Cozy MKIV passes all three floors: 1,000 lb useful, 191 KTAS at 75% and 8,000 ft, and 1,130 nm (1,300 statute miles) at 40% power. As measured on the CAFE Foundation's test aircraft it gives 871 lb useful (1,179 lb empty against the 2,050 lb design gross), 177 KTAS at 8,000 ft at full throttle, and 1,049 nm still air with no reserve at 12,000 ft lean. The gap is empty weight: the designer's 1,050 lb against one equipped builder aircraft at 1,179 lb. Our drag check matches CAFE's measured speeds with a factor of 1.36. Candidates are compared with the Cozy published-to-published and measured-to-measured. The first version of the long list called it a near miss on 951 nm; that was a basis mismatch (a max-cruise claim against a 40% power range), not a units error.
+
+### Idea ledger (what a new airplane should keep)
+
+- Side-by-side front seats in a canard pusher: the Long-EZ layout widened to four seats without losing its cruise efficiency on 180 hp.
+- Moldless construction a plans builder can do without tooling; the cost is build hours and weight scatter between builders.
+
+### Published, measured and our check, side by side
+
+Read across a row only within one column's basis. The three targets are separate floors.
+
+| | As published | Measured or reported | Our check, original engine |
+|---|---|---|---|
+| Useful load | 1,000 lb (pass) | 871 lb (fail) | 871 lb (the empty weight the model uses: 1,179 lb) |
+| Range | 1,129 nm (pass; 40% power, 12,000 ft, reserve not stated (1,300 mi converted)) | 1,049 nm (pass; still air, no reserve, from fuel and measured flow) | 829 nm, still air, no reserve, full fuel from MTOW, at 131 hp and 8,000 ft |
+| Cruise | 191 KTAS at 8,000 ft (pass+) | 177 KTAS at 8,021 ft (pass) | 175 KTAS at 131 hp and 8,000 ft |
+| Screen | pass | fail | see the verdict |
 
 ### Independent performance check
 

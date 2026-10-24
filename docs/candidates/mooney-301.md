@@ -82,13 +82,41 @@ No accidents found.
 
 <!-- stage3:start -->
 
-## Stage 3: shortlist rank 3 of 8 (AER-3783)
+## Stage 3: shortlist rank 5 of 5 (AER-3783)
 
 Our own check, from published geometry and weights, calibrated against published flight data. Method, calibration and the Aeromomentum assumptions are in [docs/SHORTLIST.md](../SHORTLIST.md). Rights are research, not legal advice. Nobody has been contacted.
 
+### Bill's call
+
+Bill, 2026-10-24: "Interesting. There are a few active flying examples." Kept. On the flying examples, the record disagrees; see "The registry, against Bill's recollection" below.
+
 ### Verdict
 
-**Rank 3.** It has the best payload-range on our numbers (858-867 lb over 1,000 nm with reserve) and is the only six-seater close to the mission. It ranks third because there is nothing to revive but published dimensions, the rights are an attorney question, the tail is known-bad, and its published speed reads 9% optimistic against the fleet calibration.
+**Rank 5.** It has the best payload-range on our numbers (858-867 lb over 1,000 nm with reserve, as information) and is the only six-seat design close to the mission. It ranks last because nothing of it survives to revive: one airframe, scrapped; drawings that went to Socata in 1987; rights unresolved between Mooney International and Daher; a tail its test pilot called "certainly not certifiable"; and a published speed that reads 9% optimistic against the fleet calibration. A revival is a new design that takes its layout as a reference.
+
+### Idea ledger (what a new airplane should keep)
+
+- A laminar wing, pressurisation and six seats on 360 hp, with a deliberately tiny low-drag cowl inlet: the concept that became the TBM 700.
+- Lesson: the prototype flew about 200 lb heavy and slower than planned; weight control failed, not the layout.
+
+### Published, measured and our check, side by side
+
+Read across a row only within one column's basis. The three targets are separate floors.
+
+| | As published | Measured or reported | Our check, original engine |
+|---|---|---|---|
+| Useful load | 1,452 lb (pass) | 1,252 lb (pass) | 1,452 lb (the empty weight the model uses: 2,548 lb) |
+| Range | 986 nm (near; cruise, 45 min reserve) | not found | 1,056 nm, still air, no reserve, full fuel from MTOW, at 270 hp and 20,000 ft |
+| Cruise | 235 KTAS at 25,000 ft (pass+) | not found | 222 KTAS at 270 hp and 20,000 ft |
+| Screen | near miss | partial: UL pass | see the verdict |
+
+### The registry, against Bill's recollection
+
+**The public record shows one Mooney 301 (Mooney M30), and none flying.** In the FAA registry download of 2026-10-24, the M30 model code (5872030) has exactly one aircraft in its history: N301MX, serial 0000, cancelled 26 July 1989. Nothing is registered on it today, and no current or past registration, amateur-built included, is a 301 copy or replica. The query was checked against a positive control (the Mooney M22 code returns 14). Flying magazine's June 1983 first-flight report calls the aircraft "M30 number one", a company proof-of-concept aircraft, and says a pre-production prototype would follow; no later source has one built. The airframe went to Tarbes in 1987, came back to Kerrville, and was scrapped (wings cut off, the rest to an A&P school in Abilene, Texas; Mooney Events, citing Mooney staff).
+
+**What may explain the difference (inference).** The likeliest is the **Mooney M22 Mustang**: Mooney's other pressurised single, about 36 built, 14 still on the US register, fewer actually flying. The second is the 301's descendant, the **TBM 700 family**, often described as the 301 living on (about 1,011 US registrations). Less likely: Mooney's other speed-named models (201, 231, 252), or Piper's six-seat PA-32R-301. A photo or an N-number from Bill would settle it, and would change this dossier if it shows a 301 airframe.
+
+Sources: FAA Aircraft Registry, ReleasableAircraft.zip (MASTER, DEREG, ACFTREF), 2026-10-24; https://www.aeroresourcesinc.com/uploads/198306-1983%20Mooney%20301%20Prototype.pdf ; https://mooneyevents.com/Mooney301.html
 
 ### Independent performance check
 

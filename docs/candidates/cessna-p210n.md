@@ -77,13 +77,33 @@ Early detonation engine failures led to a turbo retrofit AD; 210 family accident
 
 <!-- stage3:start -->
 
-## Stage 3: shortlist rank 8 of 8 (calibration case) (AER-3783)
+## Stage 3: calibration case, not a candidate (AER-3783)
 
 Our own check, from published geometry and weights, calibrated against published flight data. Method, calibration and the Aeromomentum assumptions are in [docs/SHORTLIST.md](../SHORTLIST.md). Rights are research, not legal advice. Nobody has been contacted.
 
+### Bill's call
+
+Bill, 2026-10-24: probably worthwhile, and kit builders are attempting 210 analogs, "but it's not solving some of what I'm after in the innovation side." Kept only as the calibration case.
+
 ### Verdict
 
-**Rank 8.** It is here to calibrate the method. Seven POH points match the build-up with factors of 1.26-1.32, tight enough to anchor the fleet calibration. As a candidate it fails on the AM20T: 161-171 KTAS, and it cannot reach 1,000 nm at continuous power.
+**Calibration case.** Seven POH points match the build-up with drag factors of 1.26-1.32, tight enough to anchor the fleet calibration every other design is checked against. As a candidate it is a live, firmly held certified type, and Bill has set it aside on innovation. The 210-class kits he mentioned are in the long list (fixed-gear, high-wing five-to-six-seat kits; none is a retractable 210 copy).
+
+### Idea ledger (what a new airplane should keep)
+
+- Six seats, pressurisation and a large, well-documented fleet: the reference for the method.
+- The 210-class kits (Bearhawk 5, Murphy Moose and others) show builders want a six-seat utility airplane; none offers the 210's retractable speed.
+
+### Published, measured and our check, side by side
+
+Read across a row only within one column's basis. The three targets are separate floors.
+
+| | As published | Measured or reported | Our check, original engine |
+|---|---|---|---|
+| Useful load | 1,574 lb (pass) | 1,480 lb (pass) | 1,658 lb (the empty weight the model uses: 2,342 lb) |
+| Range | 925 nm (near; standard fuel, power and reserve not stated) | not found | 829 nm, still air, no reserve, full fuel from MTOW, at 202 hp and 20,000 ft |
+| Cruise | 196 KTAS at 20,000 ft (pass+) | 199 KTAS at 20,000 ft (pass+) | 179 KTAS at 202 hp and 20,000 ft |
+| Screen | near miss | partial: UL pass, speed pass | see the verdict |
 
 ### Independent performance check
 

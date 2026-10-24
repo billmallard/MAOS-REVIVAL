@@ -8,6 +8,9 @@ prose below is AERO's reading of them and of the sources in check/geometry/.
 Re-running replaces everything between the stage 3 markers and nothing else.
 """
 import os
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 CAND = os.path.join(HERE, "..", "candidates")
@@ -17,6 +20,9 @@ END = "<!-- stage3:end -->"
 N = {}
 
 N["rutan-defiant"] = dict(
+    status="dropped",
+    bill='Bill, 2026-10-24: "no chance. Rutan has it and it\'s not what I\'m after." Dropped from the shortlist; the long-list row stays.',
+    ideas=['Centreline thrust: two engines with no asymmetric-thrust or Vmc problem, the right answer when both engines are uncertified automotive conversions. The record shows no engine-out accident on about 30 aircraft.', 'A canard that protects the main wing from stalling, on a twin.'],
     rank="1 of 8",
     results=["rutan-defiant"],
     engine="""- **Power.** Two AM15T (160 hp each, 215 lb dry; grade F) replace two O-320s at 160 hp: the only design on the shortlist whose published power the Aeromomentum line matches directly. At the assumed 75% continuous rating that is 240 hp in cruise, the same as the brochure's 75% point.
@@ -67,6 +73,9 @@ N["mooney-301"] = dict(
 )
 
 N["cirrus-vk-30"] = dict(
+    status="dropped",
+    bill='Bill, 2026-10-24: "no thanks". Dropped from the shortlist; the long-list row stays.',
+    ideas=['A laminar composite wing on a clean pusher fuselage: the fastest result on our check (199-212 KTAS on an assumed 195 hp).', 'Lesson for any buried-engine pusher, the Rohr 2-175 included: three of its five fatal accidents trace to the shaft drive, a flutter-prone cruise flap and spin recovery at aft CG. A shaft and its couplings must be designed and tested as primary structure.'],
     rank="4 of 8",
     results=["cirrus-vk-30"],
     engine="""- **Power.** The AM20T at 195 hp assumed continuous replaces a 290-300 hp IO-540 or IO-550 cruising at about 200 hp. On a low-drag pusher that gives 199-212 KTAS: the fastest result on the shortlist.
@@ -81,6 +90,9 @@ N["cirrus-vk-30"] = dict(
 )
 
 N["velocity-xl-rg"] = dict(
+    status="dropped",
+    bill='Bill, 2026-10-24: "no chance." Dropped from the shortlist; the long-list row stays.',
+    ideas=['A canard pusher with a real cabin (four or five seats, gull-wing doors), sold continuously as a kit since the 1980s.', "**The Raptor (a lesson, not a Velocity product).** Peter Muller's Raptor Aircraft (about 2013-2021) tried to scale the Velocity-type canard pusher into a pressurised five-seater on his own Audi 3.0 TDI diesel conversion. It promised 300 KTAS at FL250 for about $130,000, and took about 1,500 escrowed $2,000 deposits (archived raptor-aircraft.com specs page, F; Aero-News, P). The prototype came out more than 800 lb over its design weight (Aero-News; 3,144 lb empty against a 2,300 lb estimate, per the company's own weighing video as cited by Wikipedia, L). Its first real flight, on 10 October 2020, lasted about three minutes, with pitch and lateral oscillations and the powerplant near its temperature limits (Aero-News, P). The engine failed in February 2021 (L). A reduction-drive failure put it in a Nebraska cornfield in August 2021 (N352TD, registration cancelled 2022; Aero-News, P; FAA registry, B). No link to Velocity Inc. was found. **What it teaches:** weight control, an engine and reduction drive proven before the airframe, and professional flight test. Those are the risks an Aeromomentum installation carries too. Sources: https://www.aero-news.net/index.cfm?do=main.textpost&id=39a13f1f-1ad0-4979-9371-e4644989ce85 ; https://www.aero-news.net/index.cfm?do=main.textpost&id=86ec99b2-5784-4217-8b71-22dc71e07bb1 ; https://web.archive.org/web/20200201043759/http://www.raptor-aircraft.com/specs.html ; https://en.wikipedia.org/wiki/Raptor_Aircraft_Raptor"],
     rank="5 of 8",
     results=["velocity-xl-rg", "velocity-xl-rg-100gal"],
     engine="""- **Power.** The AM20T at 195 hp assumed continuous replaces a 260-310 hp IO-540 or IO-550 (stage 1 matched the 260 hp build). That gives 186-199 KTAS.
@@ -110,6 +122,9 @@ N["express-2000"] = dict(
 )
 
 N["berkut-360"] = dict(
+    status="dropped",
+    bill='Bill, 2026-10-24: "not likely. These were expensive to build." Dropped from the shortlist; the long-list row stays.',
+    ideas=['Molded carbon and glass parts that took the Long-EZ shape to a retractable 200 kt class two-seater.', "Lesson: over 100 molded parts made the kit expensive to build (Bill's reason) and left the design hostage to its molds, which are now lost."],
     rank="7 of 8",
     results=["berkut-360"],
     engine="""- **Power.** The AM20T at 195 hp assumed continuous replaces a 205 hp IO-360 (most builders chose a 260 hp IO-540). Stage 1 called it a direct fit.
@@ -151,14 +166,79 @@ N["cozy-mkiv"] = dict(
 )
 
 
+# Revision 2 (after Bill's review, 2026-10-24): updates, additions, new ranks.
+from narrative_rev2 import UPDATES, NEW  # noqa: E402
+for _k, _v in UPDATES.items():
+    N[_k].update(_v)
+N.update(NEW)
+
+
+def like_for_like(i):
+    """Published, measured and our check side by side (brief, amended
+    2026-10-24): compare published-to-published and measured-to-measured."""
+    import json
+    import sys
+    sys.path.insert(0, os.path.join(HERE, "..", "longlist"))
+    import screen as S
+    cands = {c["id"]: c for c in json.load(open(os.path.join(HERE, "..", "longlist", "candidates.json")))}
+    c = cands.get(i)
+    rp = os.path.join(HERE, "check", "results", i + ".json")
+    if c is None or not os.path.exists(rp):
+        return []
+    r = json.load(open(rp))
+    P, M = S.screen_col(c, "pub"), S.screen_col(c, "meas")
+    o = r["orig"]
+    m = json.load(open(os.path.join(HERE, "check", "models", i + ".json")))
+    ul_chk = m["weights"]["mtow"] - m["weights"]["empty"]
+
+    def spd(col):
+        if col["spd"] is None:
+            return "not found"
+        return (f"{col['spd']:.0f} KTAS at {S.fmt(col['alt'], ' ft') if col['alt'] else 'altitude not stated'}"
+                f" ({col['spd_s']})")
+
+    def rng(col):
+        return "not found" if col["rng"] is None else f"{col['rng']:,.0f} nm ({col['rng_s']}; {col['rng_note']})"
+
+    def ul(col):
+        return "not found" if col["ul"] is None else f"{col['ul']:,.0f} lb ({col['ul_s']})"
+    return [
+        "### Published, measured and our check, side by side", "",
+        "Read across a row only within one column's basis. The three targets are separate floors.", "",
+        "| | As published | Measured or reported | Our check, original engine |",
+        "|---|---|---|---|",
+        f"| Useful load | {ul(P)} | {ul(M)} | {ul_chk:,.0f} lb (the empty weight the model uses: {m['weights']['empty']:,} lb) |",
+        f"| Range | {rng(P)} | {rng(M)} | {o['range_nm_noreserve_fullfuel_mtow']:,.0f} nm, still air, no reserve, full fuel from MTOW, at {o['hp']:.0f} hp and {o['alt_ft']:,.0f} ft |",
+        f"| Cruise | {spd(P)} | {spd(M)} | {o['ktas']:.0f} KTAS at {o['hp']:.0f} hp and {o['alt_ft']:,.0f} ft |",
+        f"| Screen | {P['overall']} | {M['overall'] if S.cell(M) != '-' else 'no measured data'} | see the verdict |",
+        "",
+    ]
+
+
 def block(i):
     n = N[i]
-    parts = [START, "", f"## Stage 3: shortlist rank {n['rank']} (AER-3783)", "",
+    st = n.get("status", "ranked")
+    if st == "dropped":
+        head = "## Stage 3: checked, then dropped from the shortlist by Bill (2026-10-24)"
+    elif st in ("calibration", "reference"):
+        head = f"## Stage 3: {n['rank']} (AER-3783)"
+    else:
+        head = f"## Stage 3: shortlist rank {n['rank']} (AER-3783)"
+    parts = [START, "", head, "",
              "Our own check, from published geometry and weights, calibrated against "
              "published flight data. Method, calibration and the Aeromomentum "
              "assumptions are in [docs/SHORTLIST.md](../SHORTLIST.md). Rights are "
-             "research, not legal advice. Nobody has been contacted.", "",
-             "### Verdict", "", n["verdict"], ""]
+             "research, not legal advice. Nobody has been contacted.", ""]
+    if n.get("bill"):
+        parts += ["### Bill's call", "", n["bill"], ""]
+    parts += ["### Verdict" + (" (stage 3, before Bill's review)" if st == "dropped" else ""), "",
+              n["verdict"], ""]
+    if n.get("ideas"):
+        parts += ["### Idea ledger (what a new airplane should keep)", ""]
+        parts += [f"- {x}" for x in n["ideas"]] + [""]
+    parts += like_for_like(i)
+    for k in n.get("extra_sections", []):
+        parts += [f"### {k[0]}", "", k[1].strip(), ""]
     for r in n["results"]:
         snip = open(os.path.join(HERE, "check", "results", r + "_stage3.md")).read()
         title = "Independent performance check" + (
@@ -168,9 +248,11 @@ def block(i):
               "### Rights and provenance (stage 2)", "", n["rights"], "",
               "### Safety record", "", n["safety"], "",
               "### Why it died, and whether a revival fixes it", "", n["died"], "",
-              "### Not yet done", "", n["next"],
-              "- What a modern rebuild changes in mass, cost and build hours "
-              "(MANUFACTURING, stage 4, AER-3784).", "", END]
+              "### Not yet done", "", n["next"]]
+    if st != "dropped":
+        parts += ["- What a modern rebuild changes in mass, cost and build hours "
+                  "(MANUFACTURING, stage 4, AER-3784)."]
+    parts += ["", END]
     return "\n".join(parts)
 
 
