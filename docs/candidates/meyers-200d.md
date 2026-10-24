@@ -62,7 +62,7 @@ Sanity flags:
 
 ## Why it died
 
-Hand-built with minimal tooling; 'it took $4 million to produce $3 million worth' (P&P).
+Hand-built with minimal tooling; after 75 Aero Commander 200Ds, 'it took $4 million to produce $3 million worth' (Plane & Pilot, Jan/Feb 2024, https://planeandpilotmag.com/this-incredible-plane-meyers-aero-commander-200/; the first version of this row cited the 2009 directory page, which does not contain it).
 
 ## Idea ledger (what a new airplane should keep; AERO's judgement)
 
