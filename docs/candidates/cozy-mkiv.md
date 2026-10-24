@@ -189,7 +189,7 @@ Short note (reference). Method, prices and sources are in [docs/MANUFACTURING.md
 
 **Original construction:** Rutan-style moldless, the same as the Defiant. Plans still sold.
 
-**Modern route:** the Defiant's molded-carbon arithmetic, scaled to the Cozy's 336 ft2 wetted area.
+**Modern route:** the molded-carbon arithmetic of the Defiant worked example in [MANUFACTURING.md](../MANUFACTURING.md#how-the-composite-deltas-are-built), scaled to the Cozy's 336 ft2 wetted area.
 
 **Empty weight:** a molded rebuild would weigh **1,030-1,110 lb** against CAFE's weighed 1,179, so useful load **940-1,020 lb** (stage 3: 871). That brings even the reference near the 1,000 lb floor, which is the clearest single illustration of what moldless construction costs. Engine change +18 to +57 lb.
 

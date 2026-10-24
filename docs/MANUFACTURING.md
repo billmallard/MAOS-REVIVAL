@@ -1,69 +1,77 @@
 # Stage 4: what modern manufacturing changes for each shortlisted design
 
 **Status:** stage 4 of the legacy survey (AER-3784), compiled 2026-10-24 by
-MANUFACTURING. It builds on the stage 3 shortlist (`docs/SHORTLIST.md`, PR #4)
-and Elon's rights files (`docs/rights/`, PR #3). Bill decides which designs, if
-any, go to development.
+MANUFACTURING, and revised the same day for the stage 3 revision 2 shortlist
+(`docs/SHORTLIST.md`, PR #4 at `031f641`). It also uses Elon's rights files
+(`docs/rights/`, PR #3). Bill decides which designs, if any, go to development.
 
 This is a desk study. Nothing has been weighed, quoted or built by us. Every
 price is from a public page or article, dated; every weight and hour figure
 names its source and grade, or is marked as our estimate (E). No vendor, kit
 seller, rights holder or museum has been contacted.
 
-Order of work, per the assignment: the **Rutan Defiant** and the **Lancair
-IV-P** (AERO's recommendation to Bill) get a full study; the other six and the
-Cozy reference get a short note. Each dossier in `docs/candidates/` carries its
-own stage 4 section.
+**Scope after Bill's review.** AERO's revised ranking is the priority order
+until Bill picks:
+
+1. Bellanca T-250 Aries (new)
+2. Wheeler Express
+3. Lancair IV-P
+4. Meyers 200D (new, a re-derivation)
+5. Mooney 301
+
+The Aries and the Express get full studies. The IV-P keeps its full study from
+the first version. The Meyers and the 301 get notes. Bill dropped the Defiant,
+VK-30, Velocity and Berkut, so their stage 4 sections are gone; the first
+version is in git history at `b2b3137`. The P210N stays as a calibration case,
+and the Cozy MKIV as the reference.
 
 ## What this stage finds
 
-1. **Modern manufacturing is a large lever only on the moldless designs.** The
-   Defiant (and the Cozy reference) are hand-laid glass over full-depth
-   hot-wired foam, then filled and sanded. A molded carbon rebuild takes out
-   85-245 lb of airframe weight on the Defiant. The IV-P, VK-30, Velocity and
-   Berkut were already factory-molded kits; re-tooling them buys 0-125 lb. The
-   CAFE weighings say the same thing in one line: the moldless Cozy came in 12%
-   over its brochure empty weight, the molded IV-P 0.6% (R).
-2. **Defiant: rebuild empty weight 1,360-1,620 lb** against the 1,600 lb plans
-   prototype, so useful load 1,330-1,590 lb against stage 3's 1,350. The heavy
-   end starts from 1,680-1,700 lb: the pilot report's "equipped, as tested" figure
-   and Wikipedia's 1,701 (no weighed Defiant was found). With
-   our corrected engine credit, 1,300-1,580 lb.
-3. **IV-P: rebuild empty weight 2,140-2,360 lb**, useful load 1,190-1,410 lb.
-   Its weight is decided by two choices, not by manufacturing: the engine
-   (-150 to -242 lb, if CG allows it to be kept) and **deleting
-   pressurisation** (-100 to -200 lb, and it removes the door seal, dump valve,
-   bleed plumbing and extra plies). On an engine with no published critical
-   altitude, pressurisation buys nothing in AERO's check.
-4. **AERO's engine dry weights need three corrections** (see
-   [Engine check](#engine-check)). The IV-P's TSIO-550 is about 80 lb lighter
-   than assumed (TCDS E5SO: 470 lb with turbos), so its swap saves 150-242 lb,
-   not 242. The CAFE-weighed IV-P flew a 360 hp Regan TIO-540, not a TSIO-550.
-   And Aeromomentum's own pages say its listed weights "tend to be the fairly
-   typical installed weight". If that is right, AERO's dry x 1.25 rule
-   double-counts 54 lb per AM15T and 71 lb per AM20T. We do not credit it; it
-   is a question for Aeromomentum, which needs Bill's go-ahead.
-5. **A molded Defiant kit is a hours-and-weight purchase, not a cash saving.**
-   Tooling is our estimate of $100-300k. At a 10-unit run the molded kit costs
-   the builder roughly $50-120k more than buying raw materials, saves 1,500-2,500
-   build hours, and is 65-145 lb lighter than a modernised moldless one-off. The
-   tooling share falls below a tenth of the kit price at about 10-40 airframes.
-   The Defiant's own history (176 plans sets, about 30 finished, 24 registered)
-   says the market is that size, so the run is marginal.
-6. **Lost or never-existing tooling:** the Defiant never had molds (moldless);
-   the Berkut's and Express's molds are unaccounted for; the Mooney 301 has
-   nothing left but published dimensions; the IV-P's molds have no known
-   location since 2017 (the 2023 JetEXE molds claim was withdrawn). Every revival
-   on the list is therefore a re-derivation: new geometry, new laminate schedule,
-   new molds.
-
-7. **A home shop (about $20-49k of tools) can make molded-weight parts.** It
-   saves $20-50k of cash against a service kit on the Defiant, at 1,700-3,500
-   more builder hours, almost all of them mold-making. The molds outlive one
-   airplane, so a group of three to five builders sharing them changes the
-   answer. Engine mounts, gear legs, driveshafts, pressure-hull sealing and
-   heat-treated parts stay with services on every design. See
-   [The home-shop route](#the-home-shop-route).
+1. **Aries: rebuild empty weight 1,780-2,000 lb.** Useful load is 1,150-1,370 lb
+   against the factory 1,300; with our engine credit, empty is 1,690-1,940 lb.
+   Modern manufacturing doesn't make it much lighter. What it changes is cost:
+   the Aries was designed around flat and single-curve skins, so a matched-hole
+   kit needs no compound molds or stretch-forming. Tooling is the cheapest of any
+   design here, about $40-120k (E), and pays back below 10% of kit price at about
+   3-12 airframes. Its range shortfall at continuous power is a fuel question:
+   about 20 more gallons in integral wing bays costs 10-20 lb empty.
+2. **Express: rebuild empty weight 1,770-2,030 lb.** Useful load is 865-1,125 lb
+   against the weighed 901, so at the light end it clears the 1,000 lb floor.
+   Three things do it: replacing the vinylester E-glass (the heaviest laminate on
+   the shortlist) with infused carbon/epoxy, lighter tail surfaces, and losing the
+   56-62 lb of nose ballast S-90 owners carry. The heavy end assumes none of that
+   ballast is in the weighed baseline. The re-derived tail and "complete kits" are
+   manufacturing tasks with a price, set out below.
+3. **IV-P: rebuild empty weight 2,140-2,360 lb, useful load 1,190-1,410 lb.**
+   Manufacturing barely moves it. The engine (-150 to -242 lb, if CG allows it)
+   and deleting pressurisation (-100 to -200 lb) are what move it. RDD's LX7
+   re-wing is a data point the other way: +150 lb empty for a one-piece carbon
+   wing with 180 gal, at about $821,000 complete (AvWeb 2019).
+4. **Meyers 200D: re-derived empty weight 1,840-2,160 lb.** Useful load is 840-1,160
+   lb at the original 3,000 lb gross, and the swap saves 105-133 lb with engine
+   credit. A production re-derivation keeps the steel-tube cage. The cage tubes
+   and gussets are laser-cut by a service and jig-welded; the four-tank fuel
+   system becomes two integral tanks of about 100 gal.
+5. **AERO's engine dry weights, checked against the engine type data sheets.**
+   - The Meyers IO-520-A is 431 lb (TCDS E5CE), not 415, so its swap saves
+     105-133 lb, not 89.
+   - The Aries O-540-A4D5 is 375 lb without starter and alternator (TCDS E-295).
+     That puts its swap at 63-81 lb, close to AERO's 64.
+   - The IV-P's TSIO-550 is 470 lb with turbos (TCDS E5SO), not 550.
+   - Aeromomentum's own pages say its listed weights "tend to be the fairly
+     typical installed weight". If that is right, AERO's dry x 1.25 rule
+     double-counts 71 lb per AM20T. We don't credit it; asking Aeromomentum needs
+     Bill's go-ahead.
+6. **Every design on the list is a re-derivation:** the IV-P's molds are lost,
+   the Express's are unaccounted for, the 301 and the Meyers are new designs from
+   a layout, and the Aries's drawings sit with a dormant TC holder.
+7. **A home shop (about $20-49k of tools) makes molded-weight composite parts and
+   matched-hole metal parts.** On the Express it saves about $30-60k against a
+   complete kit, at 1,750-4,000 more builder hours, nearly all of them
+   mold-making (more cash on the IV-P, whose re-derived kit costs more). On the metal Aries it saves more cash, $40-90k, for 600-1,200
+   more hours of cutting, deburring and drilling. Engine mounts, gear legs,
+   pressure-hull sealing, welded primary structure and heat-treated parts stay
+   with services. See [The home-shop route](#the-home-shop-route).
 
 ## Rebuild empty weight, all designs
 
@@ -72,34 +80,31 @@ Generated by `docs/manufacturing/weights.py` from
 outcome and "heavy" the heaviest; the range is not a confidence interval, it is
 the spread of the stated assumptions. Useful load is MTOW (as stage 3) less the
 rebuild empty weight. The engine swap is kept apart, as in stage 3, because no
-one has checked CG; options (deleting pressurisation, adjustable props) are in
-each dossier but not in these totals.
+one has checked CG. Options (deleting pressurisation, more fuel, the LX7 wing)
+are in each dossier but not in these totals.
 
 | Design | Stage 3 empty, lb (basis) | Airframe change, lb | Rebuild empty, lb (no engine credit) | Useful load, lb (stage 3 -> stage 4) | Engine change, lb (our check) | Rebuild empty with engine credit, lb | Grade |
 |---|---|---|---|---|---|---|---|
-| Rutan Defiant | 1,600 (F) | -245 to -85 | 1,360-1,620 | 1,350 -> 1,330-1,590 | -60 to -32 | 1,300-1,580 | E |
+| Bellanca T-250 Aries | 1,850 (F) | -75 to +50 | 1,780-2,000 | 1,300 -> 1,150-1,370 | -81 to -63 | 1,690-1,940 | E |
+| Wheeler Express | 1,994 (R) | -225 to -20 | 1,770-2,030 | 901 -> 865-1,125 | -6 to +23 | 1,760-2,050 | E |
 | Lancair IV-P | 2,200 (F) | -55 to +25 | 2,140-2,360 | 1,350 -> 1,190-1,410 | -242 to -150 | 1,900-2,220 | E |
+| Meyers 200D (re-derivation) | 1,940 (F) | -95 to +60 | 1,840-2,160 | 1,060 -> 840-1,160 | -133 to -105 | 1,710-2,060 | E |
 | Mooney 301 | 2,548 (F) | -65 to +50 | 2,480-2,700 | 1,452 -> 1,300-1,520 | -293 to -205 | 2,190-2,500 | E |
-| Cirrus VK-30 | 2,200 (F) | -125 to -25 | 2,080-2,380 | 1,350 -> 1,170-1,470 | -131 to -102 | 1,940-2,270 | E |
-| Velocity XL-RG | 1,800 (F) | -95 to -20 | 1,600-1,830 | 1,000 -> 970-1,200 | -131 to -83 | 1,470-1,750 | E |
-| Wheeler Express | 1,994 (R) | -130 to -20 | 1,860-2,030 | 901 -> 865-1,035 | -6 to +23 | 1,860-2,050 | E |
-| Berkut 360 | 1,035 (F) | -35 to +30 | 1,000-1,190 | 965 -> 810-1,000 | +18 to +20 | 1,020-1,210 | E |
 | Cessna P210N | 2,342 (T) | +0 to +0 | 2,340-2,430 | 1,658 -> 1,570-1,660 | -178 to -150 | 2,160-2,280 | E |
 | Cozy MKIV (reference) | 1,179 (R) | -150 to -65 | 1,030-1,110 | 871 -> 940-1,020 | +18 to +57 | 1,050-1,170 | E |
 
 Notes on reading it:
 
 - The stage 3 useful load here is MTOW less stage 3 empty weight. AERO's
-  Express headline (890 lb) also subtracts its +11 lb engine; ours keeps the
-  engine apart.
-- Several heavy ends are *worse* than stage 3 because they start from
-  equipped figures (Defiant 1,680 as tested and 1,701, IV-P 1,058 kg / 2,332 lb listed),
-  not from the brochure. That is the fleet-heavier-than-brochure pattern the
-  brief warns about, and we did not round it away.
-- The ranking consequence, for AERO: on the Defiant the midpoint gains about
-  110 lb of useful load over stage 3; on the IV-P the midpoint is about 50 lb below
-  stage 3 unless pressurisation is deleted; the Mooney 301 and VK-30 move
-  less than their engine credits do.
+  headlines may also subtract an engine change; ours keeps the engine apart.
+- Heavy ends that start from equipped figures (IV-P listed at 1,058 kg / 2,332 lb,
+  Meyers at about 2,100 lb from owner data, Aries +100 lb on a 1977 spec-table
+  weight) can come out *worse* than stage 3. That is the fleet-heavier-than-
+  brochure pattern the brief warns about, and we did not round it away.
+- For AERO's ranking: the Express is the design manufacturing moves most (its
+  useful-load range spans the 1,000 lb floor). The Aries, IV-P and 301 move less
+  than their engine credits do. The Meyers moves by its engine credit and by
+  whatever gross weight a re-derivation is designed to.
 
 ## How the composite deltas are built
 
@@ -111,8 +116,11 @@ Areal weights (E, from published fabric weights):
 | 3K carbon twill 200 gsm, vacuum infusion | 0.041 lb/ft2 | 35-40% | 0.063-0.068 |
 | Same, prepreg | 0.041 lb/ft2 | 35% | 0.063 |
 
-Defiant, on AERO's OpenVSP wetted areas (wing 240, canard 31, winglets 16,
-fuselage 228 ft2):
+Worked example: the Rutan Defiant, on AERO's OpenVSP wetted areas (wing 240,
+canard 31, winglets 16, fuselage 228 ft2). Bill dropped the Defiant from the
+shortlist on 2026-10-24. The example stays because it is the clearest
+moldless-against-molded comparison, and the Cozy reference line scales from it.
+
 
 - **Lifting surfaces, original.** Glass skins on the outer face only, about 2
   plies: 64-71 lb. Full-depth foam core: wing volume about 0.68 x t/c x
@@ -131,7 +139,7 @@ fuselage 228 ft2):
   pinhole fill only: 26-31 lb. **Change -25 to -55 lb.**
 
 The same arithmetic scaled by wetted area gives the Cozy reference line. For
-designs that were already molded (VK-30, Velocity, Express, Berkut) only the
+designs that were already molded (the Express, and the IV-P) only the
 skin-laminate step applies, and for the Express it is larger because its
 vinylester E-glass is the heaviest laminate on the shortlist.
 
@@ -143,94 +151,98 @@ schedule needs STRUCTURES, and only if a design goes to development.
 ## Engine check
 
 AERO asked us to check its original-engine dry weights, which were typical
-figures. A researcher read the engine type certificate data sheets (FAA DRS
-guest API) and the Lycoming operator manuals on 2026-10-24. The catch: for the
-same Lycoming, the operator manual includes starter and alternator and the
-TCDS does not (1E4 marks its weights "Less starter and alternator"), about 30 lb
-apart. We re-fetched every TCDS figure below from DRS ourselves (O-320-D2A 255,
-O-360-A1A 258, IO-360-A1A 293, IO-540-D4A5 379 on the TCDS basis). The
-operator-manual figures came from a research agent and were not re-fetched; they
-are consistent with the TCDS figure plus a starter and alternator. AERO's x1.15 installation factor fits the
-manual basis. For Continentals we found no document saying what "basic dry"
-includes, so we add 0-25 lb for starter and alternator (E).
+figures. We read the engine type certificate data sheets ourselves through the
+FAA DRS guest API on 2026-10-24. For the same Lycoming, the operator manual
+includes starter and alternator and the TCDS does not; 1E4 marks its weights
+"Less starter and alternator", and the difference is about 30 lb. AERO's x1.15
+installation factor fits the manual basis, so for Lycomings we add 20-35 lb to
+the TCDS figure (E). For Continentals we found no document saying what "basic
+dry" includes, so we add 0-25 lb (E).
 
 | Design | Engine flown (source) | AERO's assumed dry, lb | Published dry, lb (basis) | Original installed, lb (x1.15) | AERO's swap change | Our swap change |
 |---|---|---|---|---|---|---|
-| Rutan Defiant | 2x O-320 160 hp on the plans prototype; O-360 180 hp on N78RA from 1986 and on many builds (dash numbers not found) | 268 each | O-320-D2A 278, O-360-A1A 290 (Lycoming 60297-30 and 60297-12, manual basis, not re-fetched; TCDS E-274 255 and E-286 258) | 639-667 | -8 | -60 to -32 |
-| Lancair IV-P | TSIO-550-E or -B, 350 hp (not confirmed by a builder or Lancair document); CAFE's N114L flew a Regan TIO-540, 360 hp | 550 | 470.2 including both turbos, intercoolers not listed (TCDS E5SO Rev 13) | 541-633 | -242 | -242 to -150 |
-| Mooney 301 | "360 hp TSIO-540" in every source; TCDS E14EA lists no 360 hp TIO-540, the maximum is 350 | 520 | 350 hp TIO-540 variants 518-595 (-J2BD/-N2BD 518, -R2AD 524, -W2A 554, -J2B 558, -V2AD 565, -AE2A 595; E14EA Rev 22 Note 10) | 596-684 | -207 | -293 to -205 |
-| Cirrus VK-30 | IO-550-G 300 hp on later aircraft | 445 | 429 (E3SO Rev 12) | 493-522 | -121 | -131 to -102 |
-| Velocity XL-RG | IO-540 260 hp or IO-550-N 310 hp | 430 | IO-540-D4A5 412 (manual, not re-fetched; TCDS 1E4 379), IO-550-N 428.97 (E3SO) | 474-522 | -104 | -131 to -83 |
+| Bellanca T-250 Aries | O-540-A4D5, 250 hp (dossier); 51A: IO-540-C4B5 | 395 | 375, without starter and alternator (TCDS E-295 Rev 19, Note 5) | 454-472 | -64 | -81 to -63 |
 | Wheeler Express | IO-360-ES1B 210 hp (CAFE report) | 330 | 320 (E1CE Rev 21) | 368-397 | +11 | -6 to +23 |
-| Berkut 360 | IO-360 at 205 hp (not a certified rating; dash number not found) | 326 | IO-360-A1A 324, -C1C 322 (manual, not re-fetched; TCDS 1E10 293 and 291) | 371-373 | +16 | +18 to +20 |
-| Cessna P210N | TSIO-520-P, -AF from s/n 761 (aircraft TCDS 3A21 Rev 50) | 480 | 470 including turbo; intercooler is a Cessna part (E8CE Rev 24) | 541-569 | -161 | -178 to -150 |
-| Cozy MKIV | O-360 180 hp (dash number not found); IO-360 common | 285 | O-360-A1A 290, IO-360-A1A 324 (manual, not re-fetched; TCDS 258 and 293) | 334-373 | +63 | +18 to +57 |
+| Lancair IV-P | TSIO-550-E or -B, 350 hp (not confirmed by a builder or Lancair document); CAFE's N114L flew a Regan TIO-540, 360 hp | 550 | 470.2 including both turbos, intercoolers not listed (TCDS E5SO Rev 13) | 541-633 | -242 | -242 to -150 |
+| Meyers 200D | IO-520-A, 285 hp (dossier) | 415 | 431 (TCDS E5CE Rev 27) | 496-524 | -89 | -133 to -105 |
+| Mooney 301 | "360 hp TSIO-540" in every source; TCDS E14EA lists no 360 hp TIO-540, the maximum is 350 | 520 | 350 hp TIO-540 variants 518-595 (-J2BD/-N2BD 518, -R2AD 524, -W2A 554, -J2B 558, -V2AD 565, -AE2A 595; E14EA Rev 22 Note 10) | 596-684 | -207 | -293 to -205 |
+| Cessna P210N (calibration) | TSIO-520-P, -AF from s/n 761 (aircraft TCDS 3A21 Rev 50) | 480 | 470 including turbo; intercooler is a Cessna part (E8CE Rev 24) | 541-569 | -161 | -178 to -150 |
+| Cozy MKIV (reference) | O-360 180 hp (dash number not found); IO-360 common | 285 | O-360-A1A 290, IO-360-A1A 324 (manual, not re-fetched; TCDS 258 and 293) | 334-373 | +63 | +18 to +57 |
 
-Aeromomentum (aeromomentum.com, read 2026-10-24): AM15T 160 hp, 215 lb,
-2.588:1 gearbox, $17,700-18,800; AM20T 260 hp, 285 lb, $27,995 in the spec table,
-$29,700 for the 300 hp version (F). The same pages say both "the installation
-adds about 25% to the base engine weight" and "the weights listed tend to be the
-fairly typical installed weight". AERO read the first. If the second is meant,
-the AM installed mass is about 250 lb (AM15T) and 320 lb (AM20T) with the 35 lb
-radiator allowance, and every swap above improves by 54 lb per AM15T or 71 lb
-per AM20T. Only Aeromomentum can say which is meant.
+Aeromomentum (aeromomentum.com, read 2026-10-24): AM20T 260 hp, 285 lb,
+$27,995 in the spec table, $29,700 for the 300 hp version (F). The same pages say
+both "the installation adds about 25% to the base engine weight" and "the weights
+listed tend to be the fairly typical installed weight". AERO read the first. If
+the second is meant, the AM20T installed mass is about 320 lb with the 35 lb
+radiator allowance, and every swap above improves by about 71 lb. Only
+Aeromomentum can say which is meant.
 
-## Cost, hours, tooling and skill floor: the two lead designs
+## Cost, hours, tooling and skill floor
 
 Prices are public and dated 2026-10-24 unless stated. Our estimates are marked
 E and are bands, not quotes. A band published here gets carried into other
 documents as if it were a fact; please carry the E with it.
 
-### Rutan Defiant
+**Composite tooling estimate (E).** No public price exists for a GA mold set.
+Large-format printing bureaus (Thermwood, CEAD, AES, Massivit) and tooling-board
+makers are quote-only, and asking would be vendor contact. Our build-up per ft2
+of mold surface: plug material $15-40, CNC machining $20-60, mold laminate and
+backing structure $20-40, and 2-4 h of labour at $60-90/h, so $120-360/ft2. Mold
+surface is the wetted area times 1.3 for flanges, returns and split lines.
+Printed molds may cut material cost about a third and lead time by half (IACMI
+2017; CompositesWorld 2021), which we do not credit. For scale, Kitplanes (Jul
+2024) puts the capital to rebuild a whole kit company at $5-15M; this is the
+molds alone.
 
-| | Original (plans, moldless) | Modern one-off builder (moldless, carbon, cores cut from files) | Modern kit (molded carbon, small run) |
+### Bellanca T-250 Aries (metal, matched-hole)
+
+| | Original (certified, 1976-80) | Modern one-off builder (parts cut from files) | Modern matched-hole kit (small run) |
 |---|---|---|---|
-| Builder hours | No RAF build-hour figure found (a "2000" on the pilot-report page is engine TBO). One Defiant "took 15 years to build. Some take 20." (P, AOPA Pilot Apr 2020); N171D took 7,500-8,000 h over 35 years (P, Twin & Turbine Jan 2026) | 3,500-6,000 (E): deletes template making and hand core cutting, keeps contouring | 2,000-3,500 (E). Anchors: RV-10 2,000 (F, Van's via forum); Velocity 2,000 slow-build, 1,000 Fastbuild (F, velocityaircraft.com); twin firewall-forward work counted twice |
-| Airframe change | baseline | -100 to -20 lb (E: carbon skins on full-depth cores; core and fill stay) | -245 to -85 lb (table above) |
-| Composite materials per airframe | about $35-50k (E: Cozy MKIV section kits sum to about $30k+ at Spruce, scaled by wetted area 1.5x) | $15-30k (E, from listed prices: carbon twill $28.50-39.50/lin yd, PRO-SET INF-114 $1,670/14.2 gal, Divinycell H80 1/2 in $217/sheet, plus 30% scrap and $3-6k consumables) plus core cutting $3-8k (E; no public price) | inside the kit price |
-| Airframe kit price | n/a | n/a | $80-140k at a 10-25 unit run (E, including the tooling share). Market anchors: Velocity XL $77k base, +$16k retract, +$52k Fastbuild; RV-10 $89.6k standard, $116.3k quick-build (F) |
-| Tooling | none | none | $100-300k (E): about 670 ft2 of mold surface at $120-360/ft2, plus $20-60k of jigs. No public price for a mold set exists; see below |
-| Engines | 2x O-320 | 2x AM15T, $35.4-37.6k (F) | same |
-| Bought subsystems | builder-made nose gear | main gear bow $2,650 (F, AeroComposites); Matco W51LT wheels and brakes $1,096/pair (F, Spruce); nose gear actuator, two radiators and two firewall-forward kits $8-16k (E); props 2x $2-5k (E, not researched); panel $8-25k (E) | same |
-| All-in to fly | | $90-160k (E) | $140-240k (E) |
-| Skill floor | High: wet layup, hot-wire cores, contour fill; 17% of plans sets were finished | High, plus vacuum bagging | Medium: bonding pre-molded parts with structural adhesive (surface prep and fit are the risk), two firewall-forward installations, systems. One composite workshop |
+| Builder hours | factory-built; about four completed | 3,500-5,000 (E): parts from files, holes final-drilled by hand | 2,500-3,500 (E). Anchors: RV-10 2,000 (F, Van's, via forum); builders report 2,600-3,600 standard (anecdotal). The Aries adds retractable gear and flush riveting on a laminar wing |
+| Airframe change | baseline | -30 to +40 lb (structure) | same |
+| Airframe parts | | aluminium, rivets and hardware $25-40k (E); 2024-T3 at 0.032-0.040 in is not offered by SendCutSend, so cutting goes to a home router or a full-service sheet-metal shop (not contacted) | $100-150k kit (E). Anchors: RV-10 $89,600 standard and $116,300 quick-build (F, vansaircraft.com, read 2026-10-24) |
+| Tooling | | none beyond the builder's | $40-120k (E): CAD and CNC programs; 150-250 unique formed parts at $150-400 per form block or press die; $10-30k of assembly jigs; $8-25k of composite molds for the cowl, tips and fairings. No compound or stretch-formed skins, because the design avoided them |
+| Crossover | | | tooling under 10% of the kit price at about 3-12 airframes |
+| Engine | O-540, 250 hp | AM20T, $27,995-29,700 (F) | same |
+| All-in to fly | | $85-160k (E) | $155-240k (E: kit, engine, firewall-forward $5-10k, prop $5-12k, panel $15-40k) |
+| Skill floor | | Medium-high: final-drilling and fitting without matched holes | Medium: Van's-level riveting. The critical skill is flush riveting and dimpling to laminar-wing quality, since waviness costs the laminar run AERO credited (x_tr 0.25) |
 
-**Tooling estimate (E).** No public price exists for a GA mold set; large-format
-printing bureaus (Thermwood, CEAD, AES, Massivit) and tooling-board makers are
-quote-only, and asking would be vendor contact. Our build-up per ft2 of mold
-surface: plug material $15-40, CNC machining $20-60, mold laminate and backing
-structure $20-40, and 2-4 h of labour at $60-90/h, so $120-360/ft2. Mold surface
-is the 515 ft2 wetted area times 1.3 for flanges, returns and split lines: about
-670 ft2. Printed molds may cut material cost about a third and lead time by half
-(IACMI 2017; CompositesWorld 2021), not credited. For scale, Kitplanes (Jul 2024)
-puts the capital to rebuild a whole kit company at $5-15M; this is the molds
-alone.
+**First, what to delete.** The carburettor, magnetos, carb heat and mixture
+control (EFI). The single air-cooled inlet and its baffles (one radiator in a
+duct). The 1977 avionics and vacuum system (EFIS). In a kit, any part whose
+only job was certification paperwork; amateur-built eligibility itself is not
+our ruling.
 
-**Crossover.** Tooling per airframe is $20-60k at 5 units, $10-30k at 10, $4-12k
-at 25. Against a parts-and-hardware cost of about $70-110k (E), the tooling share
-drops below 10% of the kit price at about 10-40 airframes. Against a one-off builder
-buying raw materials, the kit never wins in cash: shop labour and tooling cost
-more than the materials. What the builder buys is time and weight, roughly
-$20-80 per hour saved at a 10-unit run (a $50-120k premium for 1,500-2,500 hours), plus 65-145 lb. A one-off builder
-cannot justify the molds at all.
+**What it adds.** A radiator duct, a backup power source for the ECU, and, as
+an option, about 20 gal of integral wing tankage. A constant-chord wing holds
+about 11 gal per foot of span between the spars (E), so a little under a foot
+of extra bay per side.
 
-**First, what to delete.** Before choosing materials, the rebuild drops:
+### Wheeler Express (composite, complete kit)
 
-- Hot-wire templates, hand-cut full-depth foam cores and their jigging (the
-  core goes; skins are molded).
-- Contour filling and sanding with micro (in-mold surface).
-- Hand-laid flat parts: bulkheads, firewalls, consoles, seat backs (CNC-cut from
-  bought sandwich panel, ordered from files).
-- Glass UNI spar caps laid up by the builder (bought pultruded carbon).
-- The builder-made retract nose-gear mechanism, the recurring accident item
-  (bought actuator unit; RAF issued a mandatory change in 1987).
-- Carburettors, magnetos, carb heat, primer and mixture controls, twice (EFI
-  engines), and the vacuum system if fitted (EFIS).
-- Two sets of air-cooled baffles and cowl inlets sized for them (liquid
-  cooling; one radiator per engine in a duct).
+| | Original kit (c. 1990-2007) | Modern complete kit (re-tooled, small run) |
+|---|---|---|
+| Builder hours | 2,000 claimed by the kit maker; 5,000 for the CAFE aircraft (F/P, CAFE APR) | 2,000-3,000 (E), if the kit is complete: every part molded and trimmed, hardware, firewall-forward package and documented assembly |
+| Airframe change | baseline (1,994.1 lb weighed, R) | -225 to -20 lb (table above) |
+| Kit price | $34,995 (F, CAFE APR, c. 1998) | $90-150k (E). Anchors: Velocity XL $77,000 base, +$16,000 retract (F, velocityaircraft.com, read 2026-10-24) |
+| Tooling | molds unaccounted for since about 2009 | $100-300k (E): about 675 ft2 of mold surface at $120-360/ft2, plus jigs. That includes the new tail: an S-90-size low tail, or a 20-24 ft2 fin, with dorsal and ventral fins |
+| Crossover | | tooling under 10% of the kit price at about 7-33 airframes |
+| Engine | IO-360-ES 210 hp (CAFE) | AM20T, $27,995-29,700 (F) |
+| All-in to fly | | $145-240k (E) |
+| Skill floor | High: incomplete kits and plans left builders fabricating and documenting their own parts | Medium: bonding cured molded parts with structural adhesive; one composite workshop |
 
-What it adds: two radiators and coolant loops (inside AERO's 35 lb each), and a
-backup power source per ECU (+10-20 lb).
+**First, what to delete.** The vinylester E-glass laminate (infused
+carbon/epoxy instead). The cruciform tail and its 1995 retrofit letter (a
+re-derived tail, flight-tested before any kit ships). Nose ballast. The IO-360's
+baffles, carburettor or injection controls and magnetos. And the incomplete
+kit: every part the old builders had to make or document themselves.
+
+**What "complete kit" means in manufacturing terms.** A closed bill of
+materials; every part from a mold or a file; matched and pre-drilled hardpoints;
+a firewall-forward package for the AM20T; a wiring harness; and an assembly
+manual that has been built from by someone other than its author. AERO's
+dossier names the market lesson: "nothing sells kits like kits completed and on
+the flight line" (B).
 
 ### Lancair IV-P
 
@@ -246,7 +258,7 @@ the table only as the case where they turn up.
 | Builder hours | 5,000-6,000 estimated (F, CAFE APR, with Fast-Build); about 4,500 for one builder with fastbuild wing (P, AOPA Pilot Apr 2005) | 3,500-5,000 (E): pressurisation deletion and a kit firewall-forward take out 100-300 h; builder assist (Velocity charges $95/h) takes out more | same |
 | Airframe change | baseline | -55 to +25 lb (table above) | -55 to +25 lb |
 | Kit price | $104,500 incl. wing mating and Fast-Build (F, CAFE APR); about $200k in 2026 dollars (E, CPI x1.9) | $150-220k airframe (E) plus the tooling share: $4-27k per airframe at 10-25 units | $150-220k (E) plus licence terms (unknown; rights) |
-| Tooling | holder's | $90-270k (E: about 584 ft2 of mold surface at the Defiant rates, plus jigs), plus measuring an airframe and re-deriving its structure (STRUCTURES; access to an airframe is Bill's call) | mold refurbishment $20-80k (E) plus a new cowl and radiator duct, $8-25k (E: 40-60 ft2 of mold surface) |
+| Tooling | holder's | $90-270k (E: about 584 ft2 of mold surface at the rates below, plus jigs), plus measuring an airframe and re-deriving its structure (STRUCTURES; access to an airframe is Bill's call) | mold refurbishment $20-80k (E) plus a new cowl and radiator duct, $8-25k (E: 40-60 ft2 of mold surface) |
 | Crossover | | tooling under 10% of the kit price at about 5-20 airframes | |
 | Engine | TSIO-550, 350 hp | AM20T, $27,995-29,700 (F) | same |
 | All-in to fly | | $205-340k (E: kit with tooling share, engine, firewall-forward $5-10k, prop $5-12k, panel $15-40k) | $200-310k (E) |
@@ -265,6 +277,27 @@ the table only as the case where they turn up.
 
 What it does not delete: the 36 lb/ft2 wing that AERO ties to the stall-spin
 record. Manufacturing cannot help that.
+
+### Meyers 200D (re-derivation, note)
+
+A production re-derivation keeps the welded 4130 cage that is the design's
+point. Cut the tubes and gussets with a tube-laser service (quote-only; not
+contacted), fit them in a welding jig, and weld. Skin it in matched-hole
+aluminium. Replace the four-tank, one-gauge fuel system (ten of its 26 accidents
+are fuel starvation) with two integral wing tanks of about 100 gal. Tooling is
+low: a welding jig and form blocks, $30-90k (E). The skill floor is set by the
+welding. A cage welded by an amateur is primary structure, so either the builder
+is a qualified welder or the cage comes welded from a shop. Rebuild empty
+weight, at the original 3,000 lb gross: 1,840-2,160 lb (E). A re-derivation at
+about 3,300 lb gross, as AERO suggests, would carry its own structure weight;
+that needs STRUCTURES if it goes forward.
+
+### Mooney 301 (note)
+
+Unchanged from the first version: a matched-hole aluminium re-derivation. It
+should be unpressurised, because pressurisation costs 100-200 lb and the rivet
+sealing a pressure hull needs is the step most beyond an amateur. Rebuild empty
+weight, pressurised: 2,480-2,700 lb.
 
 ## The home-shop route
 
@@ -313,24 +346,26 @@ Service kit figures are from the sections above. All E unless sourced.
 
 | Design | Make at home | Still a service or bought part | Home route vs service route: hours and cash |
 |---|---|---|---|
-| **Rutan Defiant** | Wing and canard plugs or cores: a wing panel is about 14 x 7 ft, which takes 4-6 tiles on a 4x8 router. Fuselage half-plugs (23 ft long, about 26 in deep each) as stacked 6-12 in slabs. Bulkheads, firewalls and ribs from bought carbon panel. Printed jigs, drill guides, wingtip, fairing, inlet and duct molds. Milled control and gear fittings | Two welded 4130 engine mounts; gear bow ($2,650, AeroComposites); pultruded carbon caps; canopy; radiators; props; engines; anodising | **Home CNC moldless:** 3,000-5,000 h against 3,500-6,000 for a service-cut one-off; +$21-44k in tools ($34-49k for the core shop with or without hot-wire, net of $5-13k of service cutting saved); weight the same (-100 to -20 lb). **Home molded:** mold surface about 670 ft2 means 1,300-2,700 h and $10-27k of tooling materials. Total 3,700-7,000 h and $59-91k cash (tools, molds, composite materials), against $80-140k and 2,000-3,500 h for a service kit. The weight matches the kit (-245 to -85 lb). It saves $20-50k and costs 1,700-3,500 extra hours |
-| **Lancair IV-P** | The same plug and mold work from a measured airframe: about 584 ft2, 1,200-2,300 h, $9-23k of tooling materials. Infusion with a tent-oven post-cure instead of prepreg | Measuring the airframe (scanner or service; access is Bill's call); cowl and radiator duct can be home-molded; pressure-door seals, latches and windows if it stays pressurised; engine mount | **Home molded:** 5,100-8,100 h (molds, layup 400-800 h, assembly as the kit) and $58-87k against a re-derived kit at $155-250k with tooling share and 3,500-5,000 h. Pressurised laminate quality is the risk at home; unpressurised removes most of it |
-| **Mooney 301** (metal) | Ribs, bulkheads, gussets and skins up to the bed size, cut from 2024-T3 on the router with pilot holes, then final-drilled. Routed MDF/HDPE form blocks for hammer-formed flanges. Milled fittings | Skins longer than 8 ft (tile or a shop with a bigger bed); long press-brake bends; heat treatment; landing gear. Pressurisation should not be attempted at home: sealing a riveted pressure hull is the step that most needs a shop | Against a matched-hole kit cut by a service: +600-1,200 h of cutting, deburring and drilling at home (E), and router accuracy +/-0.005 in means drilling to final size by hand, not from the machine |
-| **Cirrus VK-30** | Same composite route as the Defiant, on 514 ft2 of wetted area | Driveshaft, couplings and bearing: bought, never home-turned (the 2018 fatal was a coupling failure) | As the Defiant, scaled to area |
-| **Velocity XL-RG** | Jigs and fittings only | It is a live molded kit: buy it | None worth having |
-| **Wheeler Express** | Home molds at 519 ft2 wetted, including the new tail | As the Defiant | As the Defiant, scaled to area |
-| **Berkut 360** | Home molds on about 305 ft2 wetted (two seats), about 400 ft2 of mold surface: 800-1,600 h | Gear, canopy, engine | The best home-mold candidate by size, if the lost molds stay lost |
+| **Bellanca T-250 Aries** (metal) | Ribs, bulkheads, gussets and skins up to 4 x 8 ft, cut from 2024-T3 on the router with pilot holes, then final-drilled. The wing skin wraps about 6 ft of chord, so it needs a chordwise splice on a 4 ft bed, or a shop with a 5 x 10 ft bed. Routed form blocks for hammer-formed flanges; milled fittings; home-molded cowl, tips and fairings | Gear legs and retract actuators; the stabilator's balance weight and hinge fittings if they are heat-treated; engine mount; long press-brake bends | +600-1,200 h of cutting, deburring and drilling over a service-cut kit, so 3,100-4,700 h. Cash $45-74k (tools $20-34k plus materials $25-40k) against a $100-150k kit, so it saves $40-90k. That needs someone to publish the CAD files first; the kit price pays for them |
+| **Wheeler Express** | Home molds from a measured airframe: about 675 ft2, 1,350-2,700 h, $10-27k of tooling materials, including the new tail | Engine mount, gear legs, canopy, radiator | Home-molded: 3,750-7,000 h and $59-91k, against a complete kit at 2,000-3,000 h and $90-150k, at the same weight |
+| **Lancair IV-P** | The same plug and mold work from a measured airframe: about 584 ft2, 1,200-2,300 h, $9-23k of tooling materials. Infusion with a tent-oven post-cure instead of prepreg | Measuring the airframe (scanner or service; access is Bill's call); pressure-door seals, latches and windows if it stays pressurised; engine mount | Home-molded: 5,100-8,100 h and $58-87k, against a re-derived kit at 3,500-5,000 h and $155-250k with tooling share. Pressurised laminate quality is the home-shop risk; unpressurised removes most of it |
+| **Meyers 200D** (re-derivation) | Skins, ribs and gussets cut on the router; welding-jig parts and tube-cluster gussets routed or milled; milled fittings | The welded tube cage (a tube-laser service for cutting, and a qualified welder); gear; tanks sealed by the builder or a shop | Skins as the Aries. The cage is the step a home shop should not own unless the builder is a qualified welder |
+| **Mooney 301** (metal) | As the Aries | As the Aries; never a home-sealed pressure hull | +600-1,200 h over a service-cut kit (E) |
 | **Cessna P210N** | Not applicable | | |
 | **Cozy MKIV** (reference) | Designed as a garage build: hot-wire cores and routed bulkheads replace templates and hand cutting | As now | Saves templating hours; the weight stays moldless |
 
-**What the table says.** A home shop buys a molded-weight airframe for $20-50k
-less cash than a service kit, at 1,700-3,500 more builder hours, and the extra
-hours are almost all mold-making. The molds outlive one airplane. If three to
-five builders share one mold set, the mold hours per builder fall to roughly
-300-900. Whether a shared mold set is lawful for a given design is a rights
-question, not ours. The things a home shop should not make are the same on
-every design: welded engine mounts (unless the builder is a qualified welder),
-landing-gear legs, driveshafts, pressure-hull sealing, and anything heat-treated.
+**What the table says.** On the Express a home shop buys a molded-weight
+airframe for about $30-60k less cash than a complete kit, at 1,750-4,000 more
+builder hours, nearly all mold-making; the IV-P saves more, because its
+re-derived kit carries more tooling. The molds outlive one
+airplane: if three to five builders share a set, the mold hours per builder fall
+to roughly 300-900. On the metal Aries the home shop saves more cash, $40-90k,
+for fewer extra hours, because there are no molds to make. Whether a shared
+mold set or published CAD files are lawful for a given design is a rights
+question, not ours. The parts a home shop should not make are the same on every
+design: welded engine mounts and welded primary structure (unless the builder
+is a qualified welder), landing-gear legs, pressure-hull sealing, and anything
+heat-treated.
 
 ### Planform and home-tool envelopes (input to AER-3807)
 
@@ -380,75 +415,73 @@ conservative. Cap separation is 0.85 x root thickness. All E.
 
 ## The rebuild questions AERO listed
 
-**Tractor noses and radiator ducts (IV-P, Mooney 301).** A new cowl is a small
-tooling job: a CNC-routed or printed plug and a glass mold, 40-60 ft2 of mold
-surface, $8-25k (E). The radiator wants a ducted chin or belly installation; the
-duct is two or three molded parts. The useful thing manufacturing can do for CG
-is put mass ahead of the firewall: radiator and coolant (about 35 lb), battery
-(about 25 lb), and a longer mount (+3-8 lb). That recovers part of the nose
-moment, not 150-240 lb of it. Whether the rest is ballast or a loading limit is
+**Tractor noses and radiator ducts (Aries, IV-P, Meyers, Mooney 301).** Every
+design on the list is now a tractor. A new cowl is a small tooling job: a
+CNC-routed or printed plug and a glass mold, 40-60 ft2 of mold surface, $8-25k
+(E), or home-molded. The radiator wants a ducted chin or belly installation; the
+duct is two or three molded parts. For CG, what manufacturing can do is put mass
+ahead of the firewall: radiator and coolant (about 35 lb), battery (about 25 lb),
+and a longer mount (+3-8 lb). That recovers part of the nose moment, not all of
+a 63-242 lb engine saving. Whether the rest is ballast or a loading limit is
 AERO's weight-and-balance, which nobody has run yet.
 
-**Defiant twin liquid-cooled installation and props.** Two independent
-coolant loops, each with its own radiator: the front one in the cowl inlet, the
-rear one in a ducted belly scoop (the plans' rear belly scoop overheated on at
-least one build). Masses are inside AERO's 35 lb per engine. The AM15T turns the
-prop at about 2,240 rpm through its 2.588:1 gearbox (5,800 rpm rated). The
-plans forbade constant-speed props for two reasons: the pilot cannot tell which
-engine failed, and the rear prop risked fatigue in the wake. The first is now a
-display question an engine monitor can answer; the second is a structures and
-vibration question that needs STRUCTURES before anyone picks a prop. We list
-adjustable props as an option (+20 to +50 lb, E), not in the totals.
+**Aries fuel.** About 20 gal of integral wing tankage closes the 90 nm shortfall
+at continuous power. It costs 10-20 lb empty (ribs, sealant, access panels) and
+a little under a foot more of tank bay per side. Integral tanks need sealing,
+which is a learnable builder skill. It is not the pressure-hull job.
 
-**Mooney 301 pressurisation.** For an amateur metal rebuild, deleting it is
-the single largest simplification available. It removes the outflow and safety
+**Express tail and complete kits.** The re-derived tail is part of the mold set
+above, not an extra. Built in infused carbon, the tail surfaces can come in well
+under the 81 lb one S-90 owner weighed, and that removes the reason for nose
+ballast. The tail still has to be flight-tested for stall and departure before a
+kit ships. That is AERO's and a test pilot's job, not a manufacturing claim.
+
+**Mooney 301 pressurisation.** For an amateur metal rebuild, deleting it is the
+single largest simplification available. It removes the outflow and safety
 valves, controller, bleed plumbing, door seals, pressure bulkheads and, above
-all, sealing every rivet of the pressure hull, which is a large and
-skill-sensitive build step. What is left is plain matched-hole riveting at the
-Van's skill floor. It saves 100-200 lb (F/P basis in the dossier). Whether the
-mission can live without it on an engine with no published critical altitude
-is Bill's and AERO's call.
+all, the sealing of every rivet in the pressure hull. It saves 100-200 lb. Whether
+the mission can live without it is Bill's and AERO's call.
 
-**VK-30 shaft drive.** Every part is buyable: carbon driveshaft tube, flexible
-couplings, a bearing and its carrier. Manufacturing is not the obstacle. The
-obstacle is the torsional design of a geared engine on a 6.5 ft shaft, and the
-2018 fatal accident was a coupling failure. That needs a torsional analysis and
-a rig test before any route matters, which is STRUCTURES and AERO work, not a
-manufacturing ruling.
+**Meyers fuel system and cage.** See the note above. The cage is the
+re-derivation's identity and also its welding-skill floor.
+
+**Rohr 2-175 scale-up (only if Bill carries it forward).** AERO lists three
+questions for us: the sparless foam-core skin, the fold joint and the duct. We
+have not started them, and will once Bill carries the design forward.
 
 ## Tooling that is lost or never existed
 
 | Design | Original tooling | What re-deriving it would take |
 |---|---|---|
-| Rutan Defiant | None: moldless. Plans in builders' hands (176 sets); master drawings not public | New molded geometry from the plans and a measured airframe (N78RA at Hiller is the obvious one; contact is Bill's call). Whether using the plans is lawful is Elon's and an attorney's question |
+| Bellanca T-250 Aries | Drawings and jigs with a dormant TC holder (A11SW, Anderson Greenwood); not located | Measure one of the four registered aircraft (contact is Bill's call), or recover the drawings through the rights route (Elon, AER-3805) |
+| Wheeler Express | Unknown since about 2009 | Re-derive from about 55 active airframes and the CAFE data, with a new tail |
 | Lancair IV-P | No known location since the 2017 Uvalde sale; the 2023 JetEXE molds claim was withdrawn | Re-derive from one of about 235 registered airframes, unless the molds turn up. Chain of title to an attorney first |
+| Meyers 200D | TC, drawings, jigs and tooling offered for sale in 2019; no sale found | A re-derivation from published geometry and the concept, as Bill asked; what the public record supports is with Elon (AER-3805) |
 | Mooney 301 | Nothing: airframe scrapped, data to Tarbes 1987 | A new design from published geometry; a library copy of Jane's 1983-84 and Air International Jan 1984 first |
-| Cirrus VK-30 | Held by Cirrus | Not pursued |
-| Velocity XL-RG | Live, at Velocity Inc. | Not a revival |
-| Wheeler Express | Unknown since about 2009 | Re-derive from many airframes and the CAFE data, with a new tail |
-| Berkut 360 | Over 100 molded parts; molds unaccounted for since 2009 | Find the molds, or re-derive from an airframe |
 | Cessna P210N | Textron | Not a revival |
 
 ## Hand-offs
 
-- **To AERO:** the rebuild empty weights above (the useful-load numbers in
-  stage 3 move pound for pound with them), the engine-mass corrections, and the
-  Aeromomentum installed-weight question. The nose CG for the IV-P and Mooney
-  301 is your weight-and-balance.
+- **To AERO:**
+  - the rebuild empty weights above, which the stage 3 useful loads move with
+    pound for pound
+  - the engine-mass corrections, including the Meyers IO-520-A
+  - the Aeromomentum installed-weight question
+  - the nose CG on four tractors, which is your weight-and-balance
 - **To Elon and the board:** build cost, hours, tooling and skill floor for the
-  two lead designs, above. For the Defiant, whether the plans in builders'
-  hands can lawfully seed a molded re-derivation decides whether any of this
-  is usable.
-- **To Bill, through Elon, only if a design goes forward:** STRUCTURES for a
-  real laminate schedule and the Defiant's aft-prop fatigue question;
-  permission to measure N78RA or an IV-P; a question to Aeromomentum on its
-  installed weights.
+  Aries, Express and IV-P, above. For every design, whether a re-derivation, a
+  shared mold set or published CAD files are lawful decides what is usable.
+- **To Bill, through Elon, only if a design goes forward:**
+  - STRUCTURES, for a real laminate schedule or sheet-metal gauges, and for the
+    Meyers at a higher gross weight
+  - permission to measure an Aries, an Express or an IV-P
+  - a question to Aeromomentum on its installed weights
 
 ## Reproduce
 
 ```sh
 cd docs/manufacturing
-python3 weights.py          # prints the tables in this file and the dossiers
+python3 weights.py          # prints the weight tables in this file and the dossiers
 python3 weights.py --json   # writes results.json
 python3 planform_parts.py   # the planform tables in the home-shop section
 ```

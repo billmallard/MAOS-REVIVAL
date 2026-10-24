@@ -206,6 +206,7 @@ Full study (lead design). Method, prices and sources are in [docs/MANUFACTURING.
 | New nose: cowl, radiator duct and mount for a liquid-cooled engine | -10 | +15 | Cowl similar; duct and longer mount may add | E |
 | **Rebuild empty weight, no engine credit** | **2,140** | **2,360** | sum, rounded to 10 lb | E |
 | Option, not in the total: Delete pressurisation (build it as an unpressurised IV) | -200 | -100 | IV and IV-P differ 'only in the ply schedule ... and the door latch' (CAFE APR); brochure IV 2,000 vs IV-P 2,200 (F). P210 vs T210 about 100 lb at 3.35 psi (P, Aviation Consumer 2001) | F/P |
+| Option, not in the total: LX7-style one-piece carbon wing with 180 gal (RDD re-wing, a data point) | +150 | +150 | RDD: empty 2,350 against stock 2,200 lb, MTOW 3,750; $821,000 complete (AvWeb 2019) | F |
 
 **Cost, hours, tooling, skill floor (detail and sources in [MANUFACTURING.md](../MANUFACTURING.md#lancair-iv-p)):**
 
@@ -222,5 +223,7 @@ Full study (lead design). Method, prices and sources are in [docs/MANUFACTURING.
 **Rebuild questions:** the new nose is a small tooling job. Radiator, coolant and battery ahead of the firewall plus a slightly longer mount recover part of the nose moment, not 150-240 lb of it; the rest is AERO's weight-and-balance. Nothing in manufacturing changes the 36 lb/ft2 wing behind the stall-spin record.
 
 **Home-shop route** ([MANUFACTURING.md](../MANUFACTURING.md#the-home-shop-route), tools about $20-49k, prices read 2026-10-24, all E): Home molds from a measured airframe cost about 584 ft2 of mold surface. Total home-molded: 5,100-8,100 h and $58-87k, against a re-derived kit at 3,500-5,000 h and $155-250k. Pressurised laminate quality is the home-shop risk.
+
+**RDD LX7 re-wing (data point):** a one-piece carbon wing with 180 gal, +150 lb empty (2,350 against 2,200 lb) and about $821,000 complete (F, RDD via AvWeb 2019). It shows what a modern wing costs in weight on this airframe; it is listed as an option, not in the total.
 
 <!-- stage4:end -->
