@@ -20,7 +20,9 @@ record, read on one consistent basis, meets the targets", not "it performs".
   production; c = prototype that never reached production; d = foreign.
 - **Useful load** screens on the fleet or as-weighed figure where one exists,
   because kit-built and equipped certified aircraft run heavier than the
-  brochure; the factory figure is shown beside it.
+  brochure; the factory figure is shown beside it. For a one-off prototype
+  known to have flown heavier than its published design weight, the screen
+  uses our as-flown estimate (grade E) and shows the design figure beside it.
 - **Range** is the still-air, no-reserve range from usable fuel and a
   published fuel flow at the best published setting, so every row is on one
   basis. "(pub)" means no flow was published and the published range is used
@@ -28,7 +30,8 @@ record, read on one consistent basis, meets the targets", not "it performs".
 - **Cruise** is the best-graded speed figure that states its conditions
   (flight test over brochure). `*` means the altitude is unstated or below
   6,000 ft; such a speed is not accepted at face value and the verdict says
-  "speed unconditioned".
+  "speed unconditioned". `(design)` means the speed is a design or marketing
+  target with no flight-test figure behind it.
 - **Payload at 1,000 nm** is useful load minus the fuel to fly 1,000 nm at the
   setting that leaves the most payload, with no reserve and with 45 min at the
   same flow. "cannot" means the usable fuel does not hold it.
@@ -124,7 +127,7 @@ real gap in the market, not only in this list.
 | 26 | [Piper PA-24-400 Comanche 400](../candidates/piper-comanche-400.md) | 4 | b | 1,331 pass (fleet; 1,490 factory) | 1,325 pass (calc) | 185 @ alt n/s pass+ * | pass, speed unconditioned | 770 / 698 @ 171 kt, 16.0 gph | Short: AM20T 260 hp vs 400 hp (-13% speed, est. 160 KTAS) | Heavy and thirsty; the 1972 flood destroyed the Comanche tooling |
 | 27 | [Rohr 2-175 (71X)](../candidates/rohr-2-175.md) | 2 | c | - ? | - ? | 152 @ alt n/s near * | fail (1,450 lb gross weight) | no fuel flow or fuel published | Yes: AM15T (160 hp) for 150 hp | Cut in Rohr's 1975 retrenchment; airframes and drawings destroyed |
 | 28 | [Bellanca 19-25 Skyrocket II](../candidates/bellanca-skyrocket-ii.md) | 6 | c | 1,800 pass | 1,273 pass (pub) | 222 @ 15,000 ft pass+ | pass | no fuel flow or fuel published | Short: AM20T 260 hp vs 435 hp (-16% speed, est. 187 KTAS) | Money ran out amid founder-investor disputes before certification |
-| 29 | [Mooney 301](../candidates/mooney-301.md) | 6 | c | 1,452 pass | 1,193 pass (calc) | 235 @ 25,000 ft pass+ | pass | 949 / 860 @ 235 kt, 19.7 gph | Short: AM20T 260 hp vs 360 hp (-10% speed, est. 211 KTAS) | LTV takeover forced Mooney's sale; new owners wanted 300 kt; became the TBM 700 |
+| 29 | [Mooney 301](../candidates/mooney-301.md) | 6 | c | 1,252 pass (as-flown est.; 1,452 design) | 1,193 pass (calc) | 235 @ 25,000 ft pass+ (design) | pass | 749 / 660 @ 235 kt, 19.7 gph | Short: AM20T 260 hp vs 360 hp (-10% speed, est. 211 KTAS) | LTV takeover forced Mooney's sale; new owners wanted 300 kt; became the TBM 700 |
 | 30 | [Pipistrel Panthera](../candidates/pipistrel-panthera.md) | 4 | c, d | 1,023 pass | 728 fail (calc) | 194 @ 8,000 ft pass+ | fail (range -272 nm) | cannot: 728 nm max on usable fuel | Yes: AM20T (260 hp) for 260 hp | Certification slipped for a decade; Textron bought Pipistrel in 2022 |
 | 31 | [Grob GF 200](../candidates/grob-gf-200.md) | 5 | c, d | - ? | 1,431 pass (pub) | 240 @ alt n/s pass+ * | incomplete | no fuel flow or fuel published | Short: AM20T 260 hp vs 270 hp (-1% speed, est. 237 KTAS) | Grob found no partner to fund production |
 | 32 | [Evektor VUT100-131i SuperCobra](../candidates/evektor-supercobra.md) | 4 | c, d | 1,213 pass | 1,000 pass (pub) | 175 @ alt n/s pass * | pass, speed unconditioned | no fuel flow or fuel published | Short: AM20T 260 hp vs 315 hp (-6% speed, est. 164 KTAS) | Funding ran out in 2007 before certification |
@@ -171,7 +174,7 @@ are findings, not footnotes.
 - **Piper PA-24-400 Comanche 400**: published range 860 nm vs 1,325 nm from fuel and flow; screen speed has no altitude, or is below 6,000 ft; fleet useful load 159 lb below factory.
 - **Rohr 2-175 (71X)**: screen speed has no altitude, or is below 6,000 ft; 1,450 lb gross weight: a 1,000 lb useful load is physically out of reach; a revival would be a new design inspired by it.
 - **Bellanca 19-25 Skyrocket II**: FAI C-1c/C-1d speed records 1975, 246-284 kt (measured, grade R); NASA/Ohio State flight test measured CD0 = 0.016 (NTRS 19770054238); no fuel capacity found, so the range cannot be built up.
-- **Mooney 301**: published range 986 nm vs 1,193 nm from fuel and flow.
+- **Mooney 301**: published range 986 nm vs 1,193 nm from fuel and flow; as-flown useful load estimate 200 lb below the published design figure; useful load and cruise are design figures; the only prototype was ~200 lb over projected weight and 'slower than desired', and no as-flown speed or weight is published (Mooney Events; docs/rights/mooney-301.md); the published 986 nm range is a 45 min reserve figure; fuel and flow give 1,016 nm on that basis, consistent within 3%; 1,000 nm plus 45 min at 235 kt and 19.7 gph needs 98.6 of 100 gal with no climb allowance; below 231 KTAS at the same flow (about 4 kt under the design figure) it cannot carry the reserve (at Jane's 225 kt it needs 102 gal); 235 KTAS at 270 hp, 25,000 ft, 4,000 lb implies CD0 ~0.019 (AR 9.0, e 0.80, prop eta 0.80; AERO, grade E), optimistic for a 1983 pressurized single; at CD0 +20% the same power gives ~220 KTAS, still a pass on speed.
 - **Pipistrel Panthera**: published range 1,460 nm vs 728 nm from fuel and flow; weights do not add: 2,899 - 1,797 != 1,023; the 1,460 nm claim is reproduced exactly by 420 L (2 x 210 L) at the published flow, while the published 770 lb full-fuel payload implies ~42-55 gal; both cannot be true, and the fuel quantity needs a primary source.
 - **Grob GF 200**: screen speed has no altitude, or is below 6,000 ft; empty weight not found, so useful load cannot be screened.
 - **Evektor VUT100-131i SuperCobra**: screen speed has no altitude, or is below 6,000 ft; weights do not add: 3,197 - 1,940 != 1,213.
@@ -194,13 +197,19 @@ are findings, not footnotes.
    all three targets with real margin (P210N, PA-46-310P, Mooney 301,
    Skyrocket II, Lancair IV-P) sit at 3,550-4,100 lb gross and 285-435 hp.
    That is above the AM20T's 260 hp, so on the cube-root estimate they lose
-   3-16% of cruise speed on an Aeromomentum engine.
+   3-16% of cruise speed on an Aeromomentum engine. The Mooney 301's margin
+   rests on design figures: its only prototype flew about 200 lb heavy and
+   slower than planned, by an amount never published.
 3. **The 45-minute reserve is the binding constraint, not the headline
    numbers.** Five passes (P210N, Velocity XL-RG, Rutan Defiant, Lancair Super
    ES, Mooney M22) cannot carry fuel for 1,000 nm plus 45 min in their
    standard tanks. The passes that can, with a 45 min reserve: Epic LT
-   1,787 lb (turbine), PA-46-310P 946, Lancair IV-P 914, Mooney 301 860,
-   Cirrus VK-30 827, Comanche 400 698, Acclaim Type S 556, TTx 517.
+   1,787 lb (turbine), PA-46-310P 946, Lancair IV-P 914, Cirrus VK-30 827,
+   Comanche 400 698, Mooney 301 660, Acclaim Type S 556, TTx 517. The Mooney
+   301 figure is on its as-flown weight estimate and its design cruise; the
+   reserve leg uses 98.6 of its 100 gal, so it holds only if the prototype
+   really cruised within about 4 kt (231 KTAS) of the design speed at the
+   design flow.
 4. **Direct Aeromomentum fits among the passes and near misses**, at or under
    260 hp: Rutan Defiant (2x AM15T at the prototype's power), Velocity XL-RG
    (260 hp build), Express (210 hp), Berkut 360, TB-21, Wing Derringer

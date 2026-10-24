@@ -74,6 +74,10 @@ def stub(c):
         num_row("Empty weight", c.get("empty")),
         num_row("Useful load", c.get("useful")),
         num_row("Useful load, fleet or as-weighed", c.get("useful_fleet")),
+    ]
+    if c.get("useful_asflown"):
+        L.append(num_row("Useful load, as-flown estimate", c.get("useful_asflown")))
+    L += [
         num_row("Usable fuel", c.get("fuel_gal"), "US gal"),
     ]
     if c.get("fuel_opt_gal"):

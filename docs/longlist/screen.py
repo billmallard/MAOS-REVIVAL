@@ -71,8 +71,10 @@ def val(field):
 
 
 def useful(c):
-    """Screen on the fleet figure where one is published, else the factory."""
-    return val(c.get("useful_fleet")) or val(c.get("useful"))
+    """Screen on the fleet figure where one is published, then an as-flown
+    estimate (a one-off prototype known to have flown heavier than its
+    published design figure), else the factory."""
+    return val(c.get("useful_fleet")) or val(c.get("useful_asflown")) or val(c.get("useful"))
 
 
 def flow(c, s):
@@ -209,6 +211,10 @@ def flags(c):
         d = val(c["useful"]) - val(c["useful_fleet"])
         if d > 0:
             out.append(f"fleet useful load {d:,.0f} lb below factory")
+    if c.get("useful_asflown") and c.get("useful"):
+        d = val(c["useful"]) - val(c["useful_asflown"])
+        if d > 0:
+            out.append(f"as-flown useful load estimate {d:,.0f} lb below the published design figure")
     opt = val(c.get("fuel_opt_gal"))
     if opt:
         r = max((x["rng"] for x in legs(c, opt)), default=None)
@@ -253,6 +259,8 @@ def table(cands):
         ul_txt = f"{fmt(s['ul'])} {s['ul_s']}"
         if c.get("useful_fleet"):
             ul_txt += f" (fleet; {fmt(val(c.get('useful')))} factory)"
+        elif c.get("useful_asflown"):
+            ul_txt += f" (as-flown est.; {fmt(val(c.get('useful')))} design)"
         rng_txt = f"{fmt(s['rng'])} {s['rng_s']}" + (f" ({s['rng_basis']})" if s["rng_basis"] else "")
         if s["spd"] is None:
             spd_txt = "-"
@@ -260,6 +268,8 @@ def table(cands):
             spd_txt = f"{s['spd']:.0f} @ {fmt(s['alt'], ' ft') if s['alt'] else 'alt n/s'} {s['spd_s']}"
             if not s["alt_ok"]:
                 spd_txt += " *"
+            if screen_setting(c).get("design"):
+                spd_txt += " (design)"
         b = best_leg(c)
         if b is None:
             pay = "no fuel flow or fuel published"
