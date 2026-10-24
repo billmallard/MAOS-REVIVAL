@@ -28,7 +28,7 @@ Source quality: **P** primary or official record; **S** reputable secondary;
 - **The manufacturer does not support the type.** Mooney's technical-publications
   library explicitly excludes the M22. Its only M22 manuals are a 1967 POH and
   *preliminary* maintenance and parts manuals. Owners make or salvage parts.
-- **The fleet is tiny:** 14 registered, about 9 with standard airworthiness
+- **The fleet is tiny:** 14 registered, 10 with standard airworthiness
   certificates, "a handful" flying.
 - **The name is not available.** "MUSTANG" for aircraft is a live Textron mark
   (Citation Mustang). "MOONEY" is a live Mooney International mark.
@@ -124,13 +124,16 @@ None.
 
 - FAA registry, make/model MOONEY M22, 2026-10-24: **14 aircraft**, all with valid
   registration (P). By certificate:
-  - 9 standard/normal
-  - 2 standard with no airworthiness date
+  - 10 standard: 8 in the normal category, 2 with no category recorded
   - 2 special flight permit (dated 1973 and 1979)
   - 1 restricted (probably a data error)
   - 1 experimental exhibition (certificate dated February 2026)
-- **Built:** about 31 production serials plus prototypes, from the TCDS and
-  Mooney's publications list. Other sources say 36, and some say the mid-20s.
+  - Recounted from the ReleasableAircraft download of 2026-10-24
+    (`CERTIFICATION` field: 8 x `1N`, 2 x `1`, 2 x `8..`, 1 x `31`, 1 x `43`).
+    The first pass listed 15; AERO caught it.
+- **Built:** about 31 production serials plus prototypes. The TCDS lists 25
+  explicit serials plus "700001 and on", and Mooney's publications list shows 6
+  in 1970. Other sources say 36, and some say the mid-20s.
 - **Airworthy:** unknown. "Only a handful are flying" (Historynet, 2020; S).
 
 ## Why it died
