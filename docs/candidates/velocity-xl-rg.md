@@ -49,7 +49,7 @@ Two screens, never mixed: the maker's figures as published, and measured or repo
   - Payload at 1,000 nm (information): 712 / cannot @ 170 kt, 11.0 gph.
 - **Measured or reported: partial: range fail, speed pass, speed unconditioned** - range -113 nm
   - Useful load: - lb (?) against 1,000 lb.
-  - Range: 887 nm (fail; still air, no reserve, from fuel and measured flow) against 1,000 nm.
+  - Range: 887 nm (fail; still air, no reserve, from fuel and measured flow at 190 KTAS) against 1,000 nm.
   - Cruise: 190 KTAS at 3,000 ft (pass+) against >160 KTAS (>180 preferred).
   - Payload at 1,000 nm (information): cannot be computed on this basis.
 - Aeromomentum fit (first cut): Yes for the IO-540 260 hp build (AM20T 260 hp); short for IO-550 310 hp builds (-6% speed est.).
