@@ -8,8 +8,8 @@ contacted. Fed by AERO, stage 1 batch 1.
 This is research, not legal advice. It reports what public records show and
 where they run out. It does not say the design may be copied.
 
-Source quality: **A** primary (government record, official company document);
-**B** trade press or reputable reference; **C** forum, retailer or aggregator.
+Source quality: **P** primary (government record, official company document);
+**S** trade press or reputable reference; **L** forum, retailer or aggregator.
 
 ## Summary
 
@@ -26,7 +26,7 @@ Source quality: **A** primary (government record, official company document);
   Piper's own claim and secondary accounts. Whether the drawings survive was not
   established. As TC holder, Piper should still hold the type design data.
 - **The fleet is small:** 75 PA-24-400s on the US registry, 74 of them valid, about
-  68 with a standard airworthiness certificate.
+  69 with a standard airworthiness certificate.
 - **The 400 is the Comanche variant the aftermarket skips.** Most Comanche mods
   cover every model except the 400, and its parts are scarcer than other Pipers'.
 
@@ -34,11 +34,11 @@ Source quality: **A** primary (government record, official company document);
 
 | Item | Finding | Source and quality |
 |---|---|---|
-| TCDS | 1A15, Rev 34, 7 August 2006. It covers PA-24, -250, -260 and -400. | Archived FAA TCDS PDF (govdocs1 corpus, file 473592). A, archived copy. |
-| Holder | Piper Aircraft, Inc., Vero Beach FL. The New Piper Aircraft, Inc. transferred TC 1A15 to it on 7 August 2006. | Same. A, archived. |
-| PA-24-400 approval | 27 December 1963, CAR 3, Lycoming IO-720-A1A/-A1B. Serials 26-2 to 26-148. | Same. A, archived. |
-| Production | "Approved for manufacture of spare parts only under Production Certificate No. 206." | Same. A, archived. |
-| Status | "Current", sub-status blank, in FAA DRS. Rev 34 (2006) is still the latest; DRS holds only Rev 33 (1997, The New Piper Aircraft Inc.) and Rev 34. New Zealand validated the TC in 2012 (TAR 99/19 Rev 2). | FAA DRS, read 2026-10-24. A. NZ CAA. A. |
+| TCDS | 1A15, Rev 34, 7 August 2006. It covers PA-24, -250, -260 and -400. | Archived FAA TCDS PDF (govdocs1 corpus, file 473592). P, archived copy. |
+| Holder | Piper Aircraft, Inc., Vero Beach FL. The New Piper Aircraft, Inc. transferred TC 1A15 to it on 7 August 2006. | Same. P, archived. |
+| PA-24-400 approval | 27 December 1963, CAR 3, Lycoming IO-720-A1A/-A1B. Serials 26-2 to 26-148. | Same. P, archived. |
+| Production | "Approved for manufacture of spare parts only under Production Certificate No. 206." | Same. P, archived. |
+| Status | "Current", sub-status blank, in FAA DRS. Rev 34 (2006) is still the latest; DRS holds only Rev 33 (1997, The New Piper Aircraft Inc.) and Rev 34. New Zealand validated the TC in 2012 (TAR 99/19 Rev 2). | FAA DRS, read 2026-10-24. P. NZ CAA. P. |
 
 DRS method: see `README.md` in this directory.
 
@@ -46,25 +46,25 @@ DRS method: see `README.md` in this directory.
 
 - **Ownership.** Piper is "wholly owned by the Strategic Development Capital Fund
   under the Investment Division of Brunei Darussalam's Ministry of Finance" (Brunei
-  MoF press release, 5 August 2026; A). Imprimis bought Piper from American
-  Capital in May 2009, acting for Brunei (AvWeb; Flying; B).
-- **Support.** Piper's Service Bulletin/Letter Index (P/N 762-332, December 2020; A)
+  MoF press release, 5 August 2026; P). Imprimis bought Piper from American
+  Capital in May 2009, acting for Brunei (AvWeb; Flying; S).
+- **Support.** Piper's Service Bulletin/Letter Index (P/N 762-332, December 2020; P)
   lists recent PA-24-400 items: SB 1189 (stabilator horn, AD 2012-17-06), SB 1266
   (fuel warning placard, 2014, AD 2015-24-05), SB 1284B (2019), SL 1093B (2017).
-- **Parts.** "Not as readily available as, say, for Cherokees" (AOPA, 2018; B). AvWeb
-  says most Comanche mods are "available for all Comanches except the 400" (B).
+- **Parts.** "Not as readily available as, say, for Cherokees" (AOPA, 2018; S). AvWeb
+  says most Comanche mods are "available for all Comanches except the 400" (S).
 
 ## Drawings and tooling
 
 - **Tooling.** Hurricane Agnes flooded the Lock Haven plant on 23 June 1972,
   damaging about 250 aircraft, including 21 Comanches and 25 Twin Comanches. The
   International Comanche Society says Piper *claimed* the Comanche and Twin Comanche
-  tooling and dies were destroyed (comancheflyers.com; B). No primary Piper
+  tooling and dies were destroyed (comancheflyers.com; S). No primary Piper
   document confirming it was found. **Status: reported destroyed, Piper's own
   claim.**
 - **Drawings.** No surviving location was found.
   - The Piper Aviation Museum archive in Lock Haven lists books, photographs,
-    manuals and files from 1935 to 1984. Engineering drawings are not listed (B/C).
+    manuals and files from 1935 to 1984. Engineering drawings are not listed (S/L).
   - As TC holder and spare-parts production certificate holder, Piper is obliged to
     keep the type design data. Where it is held is not public.
 - **International Comanche Society** (founded 1972). It has a technical committee
@@ -72,7 +72,7 @@ DRS method: see `README.md` in this directory.
   licence or STCs.
 - **Webco Aircraft.** It is a known Comanche gear and parts repairer, but not a data
   holder. FAA Unapproved Parts Notification 2008-S20070083021 calls it a
-  noncertificated facility working "without using approved data" (A). This matters
+  noncertificated facility working "without using approved data" (P). This matters
   only as a warning about unapproved data in the Comanche parts market.
 
 ## Kit or plans rights
@@ -86,7 +86,8 @@ None.
   PA-24-400 eligible), and McFarlane (formerly PMA Products) hardware for the
   PA-24/-250/-260, though not listed for the -400.
 - No Piper licence to a third party for Comanche parts was found.
-- The FAA PMA database could not be searched (same DRS blocking).
+- A PMA search in FAA DRS for the PA-24-400 was not run for this pass. DRS is
+  readable (see `README.md`); it is an open item.
 
 ## Patents and trademarks
 
@@ -95,13 +96,14 @@ None.
   were found. Expired patents do **not** release Piper's type design data.
 - **Trademarks.** No Piper "COMANCHE" mark was found in an aggregator index
   (Trademarkia). Live COMANCHE marks belong to others: Sikorsky (toys, printed
-  matter) and White River Marine (class 12, boats). The USPTO's own search was
-  blocked, so **this is not a clearance**. A pre-electronic Piper registration may
+  matter) and White River Marine (class 12, boats). A USPTO-direct search was
+  not reached for this file (its search front end blocked automated access), so
+  **this is not a clearance**. A pre-electronic Piper registration may
   exist and not be indexed. A revival would not use the name in any case.
 
 ## Fleet
 
-- FAA registry download (ReleasableAircraft, files dated 23 October 2026; A), model
+- FAA registry download (ReleasableAircraft, files dated 23 October 2026; P), model
   code PIPER PA-24-400:
   - 75 records, 74 with valid status.
   - 69 with a standard airworthiness certificate.
@@ -113,10 +115,10 @@ None.
 
 - **The 400 variant.** High running cost: 16.4 gph at economy cruise, a $28,750
   base price, the IO-720's 1,800 h TBO, and rear-cylinder cooling trouble. Beyond
-  about 300 miles it carried less payload than the 260 (Piper Flyer; AvWeb; B).
+  about 300 miles it carried less payload than the 260 (Piper Flyer; AvWeb; S).
 - **The whole Comanche line** ended with the 1972 flood. Piper chose not to retool.
   Pilot (UK) reports it was generally believed Piper already planned to stop,
-  because the Comanche had a high parts count and was expensive to build (B).
+  because the Comanche had a high parts count and was expensive to build (S).
 
 **Note for the screen:** the reasons the 400 died, fuel burn and engine cost, are
 exactly what an Aeromomentum re-engine would change. That is AERO's call, but it
@@ -128,7 +130,7 @@ is why this candidate is worth more than its sales record suggests.
 |---|---|---|
 | **Buy the TC** | A transaction with Piper for TC 1A15, or a 400-only carve-out. | Precedent exists (the PA-36 sale, 1981). But 1A15 also carries the 180/250/260 fleets Piper supports, so a whole-TC sale is a large ask. Requires contact; not done. |
 | **License** | A licence from Piper for the type design data, for new manufacture or a re-engined derivative. | Plausible to ask. Requires contact; not done. |
-| **Modify existing airframes** | Re-engine and improve PA-24-400s by STC. | Possible, but the fleet is small (about 68) and the aftermarket has already skipped the 400. A wider fleet base would mean starting from the PA-24-260 airframe, which is a different candidate. |
+| **Modify existing airframes** | Re-engine and improve PA-24-400s by STC. | Possible, but the fleet is small (69 with standard certificates) and the aftermarket has already skipped the 400. A wider fleet base would mean starting from the PA-24-260 airframe, which is a different candidate. |
 | **Re-derive from an airframe** | Measure a Comanche and build a new design. | Airframes are available. Legally this needs counsel: Piper still holds the data and supports the type. |
 
 ## Where an aviation IP attorney is needed
