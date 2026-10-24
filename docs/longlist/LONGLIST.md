@@ -161,14 +161,13 @@ real gap in the market, not only in this list.
 | 44 | [Sling Twin (MOSAIC light twin, working name)](../candidates/sling-twin.md) | 4 | c, d | - | incomplete: no UL or range or speed | - | no measured data | no fuel flow published | Yes: 2x AM15T (160 hp) for 160 hp | Concept; not dead |
 <!-- screen-table:end -->
 
-**Counts, excluding the reference row.** As published: 14 pass, 5 near miss,
-9 fail, and 9 incomplete (eight have no maker's speed in our data, only flight
-reports; one has no useful load). Six of the published passes and near misses
-rest on a speed with no altitude, or one below 6,000 ft. Measured: 2 pass
-(PA-46-310P, TTx), 4 near miss (Express, Meyers 200D, Extra EA-400, TB-21),
-2 fail, 18 partial and 11 with no measured data. The first version of this list
-screened one mixed column (15 pass, 7 near miss, 14 fail, 1 incomplete); the
-two columns replace it.
+**Counts, excluding the reference row (44 rows).** As published: 16 pass,
+5 near miss, 11 fail, and 12 incomplete (eight have no maker's speed in our data,
+only flight reports; the rest lack a useful load or range, mostly the newest
+Derringer analogs). Measured: 2 pass (PA-46-310P, TTx), 4 near miss (Express,
+Meyers 200D, Extra EA-400, TB-21), 2 fail, 19 partial and 17 with no measured
+data. The first version of this list screened one mixed column over 37 rows
+(15 pass, 7 near miss, 14 fail, 1 incomplete); the two columns replace it.
 
 ## Sanity flags
 
