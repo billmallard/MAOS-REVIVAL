@@ -381,6 +381,27 @@ for a 740 lb single-seater and is not scaled here.
   have nearly the same span (27.6 and 27.0 ft) and come within 130 fpm in climb
   and 2,000 ft in ceiling.
 
+### Wainfan's arguments, tested against the sweep
+
+Bill asked for the low-AR case in Wainfan's own words, tested claim by claim.
+The quotes below come from his written work and were re-checked against the
+fetched sources. His AirVenture talk was not reviewed, and no written claim of
+his on ride or on drag at cruise speed was found.
+
+| His claim | Where | What the sweep says | Verdict |
+|---|---|---|---|
+| Induced drag follows span: "all wings of the same span will generate the same amount of induced drag regardless of wing chord, area or aspect ratio" | Kitplanes, 14 May 2020 | At equal touchdown speed, D3 (27.6 ft) and AR6.5 (27.0 ft) come within 130 fpm in climb and 2,000 ft in ceiling, despite AR 3 against 6.5. D3's remaining deficit is extra wetted area and lost leading-edge suction, not aspect ratio | **Supported** |
+| Structural efficiency from a short, deep structure | NAG-1-03054 report; BatRay page ("high structural efficiency") | Spar-cap force is two to five times lower and the root spar two to three times deeper, at either sizing. But Raymer's wing weight is higher for the deltas at equal touchdown speed (265-316 lb against 179-234 lb), because the area grows. It is lower only at equal area (167-174 lb against 226-293 lb) | **Supported on loads; on weight, it depends on the sizing rule** |
+| "Outstanding payload fraction" | BatRay page | The sweep's deltas come out at 0.36-0.38, the same as the straight wings. The Dyke's designer figures give 0.46, and his own fit gives 0.47-0.50 at AR 1-3. Raymer's equations are not built to capture this | **Not tested.** This is the study's largest open question |
+| No classical stall; vortex lift at high angle of attack | NAG-1-03054 report | The record supports a mushing stall near 30 degrees for AR 1-3 (his Facetmobile, Verhees, NACA free-flight models). It also records roll-control loss on tailless deltas and a high-sink mush on the Dyke. The sweep adds that a delta needs 25-33 degrees for CLmax, which a landing attitude cannot use | **Supported for the stall itself; the landing does not get to use it** |
+| A slow landing from low wing loading | NAG-1-03054 report | True only if the area grows two to three times (rule A, 8-11 psf), and that costs 12-18 kt of cruise. At equal area the deltas touch down at 80-92 kt | **Supported, at a cruise-speed price** |
+| The structural gain is "just sufficient" to overcome the aerodynamic disadvantage | NAG-1-03054 report, section 5 | At equal touchdown speed the deltas give up 7-9% of cruise speed and 22-28% of best range against AR10. Whether structure buys that back is the open weight question above | **Consistent.** The sweep cannot close it either way |
+| Flat panels suit CNC; lower parts count; "can cost up to 50% less" | NAG-1-03054 report | Not modelled here. MANUFACTURING finds that mold area follows wing area, not aspect ratio, and a delta usually carries more area | **Not tested** |
+| "a lot of standard T-hangars are 38 feet wide" | Kitplanes, 14 May 2020 | All rule A wings pass a 38 ft door. At equal area only AR10 (38.7 ft) fails | **Supported.** The hangar caps span; it does not require low AR |
+
+Newer designs building on his work: his own BatRay, under construction with a
+Jabiru 3300 ([wainfan.co](https://wainfan.co/)). No other was found.
+
 The full research tables, with every source and grade, are in
 [planform/research/calibration.md](planform/research/calibration.md) and
 [planform/research/safety.md](planform/research/safety.md). Their quotes were
@@ -452,8 +473,17 @@ a service is similar either way. High AR needs pultruded carbon spar caps sized
 for about 100,000 lb, and root fittings at that load want certified bar stock
 and heat treatment, even though a Tormach-class mill (18 x 11 in travel) can cut
 them. A low-AR wing needs a large infusion table and oven space for one-piece
-centre sections. This axis is the least settled. Its home-tool envelopes are
-assumptions until MANUFACTURING's in-home tool work on AER-3784 replaces them.
+centre sections. MANUFACTURING's independent desk scaling on AER-3784
+(`docs/manufacturing/planform_parts.py`, MAOS-REVIVAL PR #5; E) agrees. From AR10
+to the AR2 delta, root spar depth roughly doubles and cap force falls about 4.5
+times (109,000 lb to 24,000 lb ultimate, at its own fixed areas). Mold area
+follows wing area, not aspect ratio. It adds a limit this study did not test:
+female skin molds run 8-14 in deep, so the deltas' molds exceed a 12 in Z-axis
+router, while AR 4 and above fit. Plugs stacked from routed slabs avoid the
+limit. It also judges that root fittings at AR 8-10 loads belong at a machining
+service, while those at AR 4 and below come within a benchtop mill working in
+plate, still with inspection. The home-tool envelopes used here are public-spec
+assumptions. MANUFACTURING was asked to confirm them.
 
 **4. Safety.** **The record favours low AR on the stall and high AR on the glide
 and the approach.**
