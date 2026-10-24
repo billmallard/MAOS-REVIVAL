@@ -105,7 +105,7 @@ Read across a row only within one column's basis. The three targets are separate
 | | As published | Measured or reported | Our check, original engine |
 |---|---|---|---|
 | Useful load | 1,045 lb (pass) | 901 lb (near) | 901 lb (the empty weight the model uses: 1,994 lb) |
-| Range | 1,401 nm (pass; CAFE-computed VFR range at 9.7 gph) | 1,745 nm (pass; still air, no reserve, from fuel and measured flow) | 1,242 nm, still air, no reserve, full fuel from MTOW, at 150 hp and 8,000 ft |
+| Range | 1,401 nm (pass; CAFE-computed VFR range at 9.7 gph) | 1,745 nm (pass; still air, no reserve, from fuel and measured flow at 110 KTAS) | 1,242 nm, still air, no reserve, full fuel from MTOW, at 150 hp and 8,000 ft |
 | Cruise | not found | 169 KTAS at 6,190 ft (pass) | 160 KTAS at 150 hp and 8,000 ft |
 | Screen | incomplete: no speed | near miss | see the verdict |
 

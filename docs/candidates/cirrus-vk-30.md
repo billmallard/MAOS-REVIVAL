@@ -99,7 +99,7 @@ Read across a row only within one column's basis. The three targets are separate
 | | As published | Measured or reported | Our check, original engine |
 |---|---|---|---|
 | Useful load | 1,350 lb (pass) | not found | 1,350 lb (the empty weight the model uses: 2,200 lb) |
-| Range | 1,130 nm (pass; not stated (1,300 mi converted)) | 1,256 nm (pass; still air, no reserve, from fuel and measured flow) | 1,206 nm, still air, no reserve, full fuel from MTOW, at 200 hp and 8,000 ft |
+| Range | 1,130 nm (pass; not stated (1,300 mi converted)) | 1,256 nm (pass; still air, no reserve, from fuel and measured flow at 205 KTAS) | 1,206 nm, still air, no reserve, full fuel from MTOW, at 200 hp and 8,000 ft |
 | Cruise | 211 KTAS at 5,000 ft (pass+) | 205 KTAS at 4,500 ft (pass+) | 201 KTAS at 200 hp and 8,000 ft |
 | Screen | pass, speed unconditioned | partial: range pass, speed pass, speed unconditioned | see the verdict |
 
