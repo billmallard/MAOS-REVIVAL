@@ -88,7 +88,7 @@ data that does exist (the notes and the CAD model) is with the family.
 | The fatal-crash aircraft | Crashed 22 September 1987 near Penfield, Victoria. AHSA calls it the first production Mk II and says "The damaged aircraft was repaired and is on display at the Ballarat Air Museum, Victoria." AHSA puts "some 340 hours" on the Mk I prototype; aeropedia puts 340 hours on the crashed aircraft; TWITT says over 700 hours in all. Wikipedia calls the crashed aircraft the prototype | AHSA, S; aeropedia, L; TWITT, S; Wikipedia, L |
 | A second airframe | "crashed at Mangalore injuring the pilot and it was restored to static display standard at Holbrook for the Australian Ultralight Museum", registered 19-7441, c/n S3-001 | aeropedia, L |
 | A third, unfinished | "only a fibreglass shell and was not completed but has survived", on display "at a museum in the Ballarat / Bendigo area" | aeropedia, L |
-| Public data | Jane's 1987-88 figures, via Wikipedia (span 5.36 m, wing area 7.53 m², MTOW 188 kg, Wortmann airfoil, König SD 570 at 21 kW). Spec pages for the first-generation prototype and second-generation production aircraft are archived on ligeti-stratos.com (first captured in 2012 for the second generation and 2015 for the first, on the repurposed domain, so treat them as reposts). TWITT No. 262 reproduces spec sheets and CAD views. ATSB report 198701462 | L; P (archived pages, ATSB report not read); S |
+| Public data | Jane's 1987-88 figures, via Wikipedia (span 5.36 m, wing area 7.53 m², MTOW 188 kg, Wortmann airfoil, König SD 570 at 21 kW). Spec pages for all four variants (original and new, prototype and production) are on the family's own ligeti-stratos.com, in Wayback captures of 2 and 16 July 2006 (P). All four carry the same 1985-87 first-generation figures ("Built in 1985-87", König 24 hp, span 5.36 m, area 7.52 m², empty 78 kg, gross 188 kg, max 180 km/h), so no separate second-generation specification is on record. Later copies on the repurposed domain (2012, 2015) are reposts. TWITT No. 262 reproduces spec sheets and CAD views. ATSB report 198701462 | L; P (archived pages, ATSB report not read); S |
 
 Three accounts of which airframe is where do not agree: the 2006 project page,
 AHSA and aeropedia. The museum holdings are the likeliest survivors to measure.
@@ -153,8 +153,8 @@ Visiting or asking any museum, or the family, is contact and Bill's call.
 - ASIC status of Ligeti Aero-Nautical Pty Ltd.
 - Which museum holds which airframe (Holbrook, Ballarat): resolve from public
   museum catalogues.
-- The archived spec pages (first-generation prototype, second-generation
-  production) for AERO's planform study.
+- The four 2006 spec pages carry one spec set, for the 1985-87 aircraft. For
+  AERO's planform study, that is the only primary specification on record.
 
 ## Sources
 
@@ -165,6 +165,11 @@ Visiting or asking any museum, or the family, is contact and Bill's call.
   https://web.archive.org/web/20060702121649/http://www.ligeti-stratos.com:80/concept.htm
   https://web.archive.org/web/20120728095846/http://ligeti-stratos.com:80/concept.html
   https://web.archive.org/web/20060702121701/http://www.ligeti-stratos.com:80/project_status.htm
+- ligeti-stratos.com spec pages, Wayback captures of 2 and 16 July 2006 (P):
+  https://web.archive.org/web/20060716002418/http://www.ligeti-stratos.com:80/aircraft_original_prototype.htm
+  https://web.archive.org/web/20060716002203/http://www.ligeti-stratos.com:80/aircraft_original_production.htm
+  https://web.archive.org/web/20060716002354/http://www.ligeti-stratos.com:80/aircraft_new_prototype.htm
+  https://web.archive.org/web/20060702123215/http://www.ligeti-stratos.com:80/aircraft_new_production.htm
 - Wayback CDX listings for both domains, read 2026-10-24 (P).
 - Google Code Archive, project `ligeti-stratos`, project.json and wikis.json;
   control project `protobuf`. Read 2026-10-24 (P).
