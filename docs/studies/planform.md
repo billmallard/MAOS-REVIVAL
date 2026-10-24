@@ -31,6 +31,11 @@ stall and spin, it reports what the flight and accident record says and labels i
 5. **The home-shop trade runs both ways.** High aspect ratio means long, thin,
    highly loaded spars and fittings. Low aspect ratio means low loads but big
    molds: 8-12 router sheets per skin face against 4-5.
+6. **A third family, the closed wing (Ligeti Stratos layout), tops the
+   efficiency rows:** best L/D 17.8, glide 14.8, a 28,000 ft ceiling and 5.9 ft
+   height. But it rides the hardest (0.66 g per 10 ft/s), it has the thinnest
+   spars (4 in), and its weight and stall rest on assumptions no flown
+   four-seater has tested.
 
 ## The fixed mission and what varies
 
@@ -289,6 +294,131 @@ methods above.
   fuselage (E). The deltas' fins are larger (25-29 sq ft against 11-15 sq ft),
   sized by a volume coefficient of 0.03 on a 0.45-root-chord arm (E, ours).
 
+## A third family: the closed wing (Ligeti Stratos)
+
+Bill asked for the Ligeti Stratos as its own branch. The research is in
+[planform/research/stratos.md](planform/research/stratos.md).
+
+**What the Stratos was.** It was a single-seat closed-wing ultralight by
+Charles (Karol) Ligeti, a Czechoslovak chemical engineer who came to Australia
+in 1977. The S1 prototype first flew on 25 April 1985 and flew about 340 hours,
+including Oshkosh in 1986. The low front wing is swept back about 30 degrees and
+the high rear wing is straight. Vertical tip fins join them and double as split
+rudders and airbrakes. There is no tail, and the ducted fan is a pusher.
+
+Its figures are designer claims or Jane's (F): span 5.36 m, area 7.52-7.53 m2
+(AR 3.8 on total area), empty 78 kg, gross 188 kg, cruise about 97 kt, stall
+58 km/h, glide 20:1. Its gap/span of about 0.11 is our reading of a 2003
+third-party three-view (E). No independent flight test was found.
+
+**Joined wing or box?** The Stratos is a box (Prandtl) system with a swept lower
+wing, not a Wolkovitch joined wing. That matters, because the span-efficiency
+gain lives in the vertical gap at the tips. AVL on two rectangular wings of equal
+span and total area (AR 7, `boxcheck.py`, inviscid) gives:
+
+| Gap / span | 0.05 | 0.10 | 0.15 | 0.20 | 0.25 |
+|---|---|---|---|---|---|
+| Open biplane | 1.087 | 1.179 | 1.252 | 1.312 | 1.365 |
+| Prandtl box (tip panels) | 1.085 | 1.189 | 1.279 | 1.359 | 1.432 |
+| Joined wing, no vertical gap at the tips | 0.961 | 0.969 | 0.979 | 0.992 | 1.005 |
+
+A box at gap/span 0.11-0.20 reaches e of 1.2-1.36. The literature agrees:
+Prandtl's TN-182 table gives about 1.29 at 0.11 and 1.47 at 0.2 for an optimally
+loaded box, and Kroo (1996) gives 1.46 for a box against 1.05 for a diamond
+joined wing at gap/span 0.2. A joined wing whose wings meet without a vertical
+gap gets almost nothing (0.96-1.0 here). **The "best wing system" claim holds
+for a box, not for a joined wing.**
+
+**The mission point.** CW is a Stratos-layout closed wing at AR 7 on total area
+and gap/span 0.11, on the same fuselage, engine, calibration and 61 kt sizing as
+the sweep (`joined.py`). AVL gives e_inv 1.233. The tip fins replace the fin, and
+there is no tail. Assumptions specific to it (E): two-wing landing CLmax 1.45
+with plain flaps on the front wing, and Raymer's wing equation on each wing
+separately. The tip joint's structural relief and the rear wing's buckling
+penalty are not modelled, so the wing weight could move either way. Each wing's
+spar load is bounded as a cantilever. Rule B (same area) lands within 1% of rule
+A, because rule A's area is already 153 sq ft.
+
+| Rule A, same touchdown speed | CW (closed wing) | AR10 | AR6.5 | D3 |
+|---|---|---|---|---|
+| AR on total area / span efficiency e_inv (AVL) | 7.0 / 1.233 | 10.0 / 0.992 | 6.5 / 0.994 | 3.0 / 1.000 |
+| Wing area, ft2 / span, ft | 153 / 32.7 | 113 / 33.7 | 112 / 27.0 | 255 / 27.6 |
+| Gross weight, lb / wing loading, psf | 2796 / 18.3 | 2716 / 23.9 | 2662 / 23.7 | 2738 / 10.7 |
+| Wing + tail (or tip-fin) weight, lb | 339 + 13 | 234 + 37 | 179 + 38 | 265 + 28 |
+| Wetted area, ft2 | 504 | 480 | 478 | 701 |
+| Cruise KTAS, 12,000 ft, 195 hp | 190 | 194 | 192 | 180 |
+| Induced share: climb / cruise / reserve | 59% / 9% / 70% | 60% / 10% / 70% | 62% / 15% / 70% | 58% / 16% / 63% |
+| Best L/D (KEAS) | 17.8 (91) | 16.7 (96) | 14.0 (105) | 13.2 (106) |
+| Climb SL / 12,000 ft, fpm | 1716 / 1058 | 1722 / 1033 | 1603 / 870 | 1475 / 741 |
+| Service ceiling, ft | 28,000 | 26,500 | 23,000 | 21,000 |
+| Range 195 hp, 0 / 45 min reserve, nm | 973 / 821 | 996 / 840 | 985 / 830 | 925 / 780 |
+| Best-range distance, nm | 1593 | 1544 | 1321 | 1197 |
+| Height, ft (E) | 5.9 | 9.4 | 8.9 | 11.0 |
+| Trailer fold panel length, ft | 12.1 | 12.6 | 9.3 | 9.6 |
+| Root spar depth, in | 4.0 | 7.4 | 8.3 | 18.3 |
+| Spar-cap force, ultimate, lb | 96,000 per wing, cantilever bound | 100,930 | 72,735 | 31,531 |
+| Power-off approach sink, fpm | 901 | 1071 | 1237 | 955 |
+| Engine-out glide, prop stopped | 14.8 | 13.5 | 11.4 | 11.1 |
+| Delta n per 10 ft/s (Pratt) | 0.66 | 0.54 | 0.48 | 0.56 |
+
+**The closed wing, axis by axis.**
+- **Performance:** the best in the study on L/D, climb at altitude, ceiling and
+  best range. Cruise speed is 2-4 kt below AR6.5-10, because its wetted area is
+  slightly higher.
+- **Storage:** the lowest airplane in the study, at 5.9 ft, because no fin is
+  needed. Its span (32.7 ft) is close to AR10's. Trailering needs a fold of two
+  wings plus the tip fins, a harder mechanism than one wing.
+- **Home shop:** four thin panels, about 4 in deep at the root, and an
+  over-constrained structure whose loads depend on the joint's stiffness. That
+  makes it the hardest of the families to size in a home shop, and the least
+  suited to a simple cantilever analysis.
+- **Safety:** the best engine-out glide (14.8) and the lowest approach sink. The
+  record on its stall is mixed. The prototype was reported to have "no adverse
+  flying characteristics". A 1/6-scale wind-tunnel model of NASA's JW-1 joined wing (TM-101083)
+  showed an unstable stall and lost lateral stability as the front
+  wing stalled.
+- **Ride:** the hardest in the study, at 0.66 g per 10 ft/s, because its
+  lift-curve slope is high (4.6 per rad) and its wing loading moderate (18 psf).
+
+**The crash, as the record states it.** Charles Ligeti died on 22 September
+1987 at Penfield, Victoria, on the first flight of the modified production
+Stratos (BASI/ATSB report [198701462](https://www.atsb.gov.au/investigations/198701462)).
+**The official record does not blame the closed-wing configuration.** It
+contrasts the crashed airframe with the prototype, which "appeared to suffer no
+adverse flying characteristics" over about 340 hours. It attributes the
+accident, as "likely", to design changes on the production airframe that were
+not tested before the flight. Chief among them were full-span elevators on the
+front wing, which the report says would sharpen that wing's stall and aggravate
+the nose-down pitch. The changes also removed the main wing's dihedral and
+lowered the engine and duct. The significant factors listed are that the pilot
+"encountered unforeseen circumstances beyond his capabilities" and that the
+aircraft was test-flown too low to recover. The report also says it could not
+positively determine all the reasons.
+
+**Verdict: the layout itself was not found to be the cause. How the
+modifications interacted with it remains undetermined.** A second airframe was
+destroyed on its first test flight on 10 July 1988, at Mangalore (ATSB
+[198801418](https://www.atsb.gov.au/investigations/198801418)). The cause was
+engine power loss, and the record lists "a lack of elevator response" in the
+landing attempt as a factor. Read with the pilot's report of near-neutral pitch
+stability after the power loss, that suggests a strong coupling between power
+and pitch in the lowered-duct layout. That is our reading, not the record's
+finding.
+
+**Open source.** The project site (ligetistratos.com) said by November 2007 that the Stratos was
+made available as "the first of a complete line of Open Source aircraft". A 2012
+page states an intent to "Distribute the plans gratis; at no charge". No licence
+or file set was found in the 2006-2013 archived copies. The most recent primary
+source cuts the other way. A 2014 LGT Aerospace project paper by Ron Ligeti
+([archived](https://web.archive.org/web/20140826172206/http://lgtaerospace.com/attachments/article/15/Stratos%20Project.pdf))
+says "The design owner retains the IP" and aims "to induce a licensing
+arrangement for production". It also says the original prototype had been in
+storage for 20 years. The project domains have lapsed, and the only
+public drawings are a 2003 third-party three-view and a French model plan.
+Elon's rights work (AER-3805) owns the question. For reconstruction, what is
+publicly in hand today is a three-view and published specifications, not
+drawings.
+
 ## Calibration: real airplanes
 
 ### Geometry, wing loading, lift-curve slope and gust response
@@ -303,10 +433,12 @@ Where chords are not published, taper is assumed (E).
 | Dyke Delta JD-2 | 2.86 | 22.2 | 173 | 1,950 | 11.3 | 2.95 | 15.2 / 0.65 | 2.57 | 0.51 | b, S: Wikipedia / Wainfan PAV table; W 1,950 F; modelled as a straight-TE cropped delta, taper 0.10 E (the real wing is a double delta) |
 | Wainfan Facetmobile FMX-4 | 1.05 | 15.0 | 214 | 740 | 3.5 | 1.49 | 5.6 / 0.45 | 2.93 | 0.59 | b, S, W: Wainfan NASA PAV report 2004 (F); modelled as a cropped delta taper 0.30 E (real: faceted lifting body) |
 | Cozy MKIV (wing + canard) | 8.94 | 28.1 | 103 | 2,050 | 19.9 | 4.40 | 51.7 / 0.80 | 2.66 | 0.53 | main wing 88.3 ft2 + canard 14.7 ft2, b 28.1, W 2,050 (F, cozyaircraft.com); taper 0.5 E; AR is the main wing's |
+| Ligeti Stratos (closed wing) | 3.82 | 17.6 | 81 | 414 | 5.1 | 3.81 | 21.6 / 0.71 | 7.92 | 1.58 | b 5.36 m, S 7.52-7.53 m2, gross 188 kg (F, Jane's 1987-88 via Wikipedia); front swept 30 deg, gap/span 0.11 E (Reese 3-view) |
 | Rohr 2-175 | not determinable (area not found) | 20 (de Piolenc) or 30 (aerofiles) | not found | 1,450 | - | - | - | - | - | see below |
 
-The Facetmobile row is on the common 150 KEAS basis for comparison only; the
-airplane itself reached 96 kt (designer flight test). The Cozy's two official
+The Facetmobile and Stratos rows are on the common 150 KEAS basis for comparison
+only. At 3.5 and 5.1 psf the formula's numbers are not meaningful for them, and
+the airplanes themselves cruised at about 80-97 kt. The Cozy's two official
 sources disagree on canard span and total area (12.6 ft and 103.0 sq ft summed,
 against 11.5 ft and 101.4 sq ft); the factory figures are used.
 
@@ -553,6 +685,7 @@ All under [`docs/studies/planform/`](planform/).
 | `planform.py` | The sweep: sizing, weights, OpenVSP wetted areas, performance, landing, gust, structure |
 | `avlgen.py` | AVL deck generator and runner |
 | `calib.py` | Calibration planforms: AVL and Pratt |
+| `joined.py`, `boxcheck.py` | The closed-wing point and the Stratos calibration; AVL test of biplane, box and joined-wing span efficiency |
 | `report.py` | Tables and storage/shop columns; `--doc` builds this file from `planform.template.md` |
 | `perf.py`, `vspgen.py` | Copied unchanged from the stage 3 check (AER-3783) |
 | `avl/`, `vsp/` | Every AVL deck and OpenVSP script the tables came from, with CompGeom outputs |
@@ -560,4 +693,4 @@ All under [`docs/studies/planform/`](planform/).
 | `research/` | Calibration and safety desk research, and the quote audit |
 
 To regenerate, run inside `/maos-work/aero/analysis/AER-3807` with the `maos`
-tool containers: `python3 planform.py; python3 planform.py --rule S; python3 calib.py; python3 report.py --doc`.
+tool containers: `python3 planform.py; python3 planform.py --rule S; python3 calib.py; python3 joined.py; python3 joined.py --rule S; python3 joined.py --calib; python3 boxcheck.py; python3 report.py --doc`.
