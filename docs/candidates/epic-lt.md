@@ -47,7 +47,7 @@ Two screens, never mixed: the maker's figures as published, and measured or repo
   - Payload at 1,000 nm (information): cannot be computed on this basis.
 - **Measured or reported: partial: range pass, speed pass**
   - Useful load: - lb (?) against 1,000 lb.
-  - Range: 1,767 nm (pass; still air, no reserve, from fuel and measured flow) against 1,000 nm.
+  - Range: 1,767 nm (pass; still air, no reserve, from fuel and measured flow at 270 KTAS) against 1,000 nm.
   - Cruise: 317 KTAS at 27,000 ft (pass+) against >160 KTAS (>180 preferred).
   - Payload at 1,000 nm (information): cannot be computed on this basis.
 - Aeromomentum fit (first cut): No: turbine; no Aeromomentum equivalent.

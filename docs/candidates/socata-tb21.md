@@ -48,7 +48,7 @@ Two screens, never mixed: the maker's figures as published, and measured or repo
   - Payload at 1,000 nm (information): cannot (983 nm max).
 - **Measured or reported: near miss** - UL -20 lb
   - Useful load: 980 lb (near) against 1,000 lb.
-  - Range: 1,175 nm (pass; still air, no reserve, from fuel and measured flow) against 1,000 nm.
+  - Range: 1,175 nm (pass; still air, no reserve, from fuel and measured flow at 169 KTAS) against 1,000 nm.
   - Cruise: 169 KTAS at 25,000 ft (pass) against >160 KTAS (>180 preferred).
   - Payload at 1,000 nm (information): 540 / 484 @ 169 kt, 12.4 gph.
 - Aeromomentum fit (first cut): Yes: AM20T (260 hp) for 250 hp.

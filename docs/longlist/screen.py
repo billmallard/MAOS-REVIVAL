@@ -187,9 +187,9 @@ def best_speed(c, b):
 def calc_range(c, b):
     """Still-air, no-reserve range from usable fuel and flow, on basis b only."""
     fuel = val(c.get("fuel_gal_meas")) if b == "meas" and c.get("fuel_gal_meas") else val(c.get("fuel_gal"))
-    R = [fuel / s["gph"] * s["ktas"] for s in settings(c)
+    R = [(fuel / s["gph"] * s["ktas"], s["ktas"]) for s in settings(c)
          if basis(s) == b and s.get("ktas") and s.get("gph") and fuel]
-    return max(R, default=None)
+    return max(R, default=(None, None))
 
 
 def verdict(states):
@@ -211,12 +211,12 @@ def screen_col(c, b):
         rng = c.get("range", {}).get("nm")
         rng_note = c.get("range", {}).get("basis", "")
         if rng is None:
-            rng = calc_range(c, "pub")
-            rng_note = "derived from published fuel and flow" if rng else ""
+            rng, kt = calc_range(c, "pub")
+            rng_note = f"derived from published fuel and flow at {kt:.0f} KTAS" if rng else ""
     else:
         ul = val(c.get("useful_fleet")) or val(c.get("useful_asflown"))
-        rng = calc_range(c, "meas")
-        rng_note = "still air, no reserve, from fuel and measured flow" if rng else ""
+        rng, kt = calc_range(c, "meas")
+        rng_note = f"still air, no reserve, from fuel and measured flow at {kt:.0f} KTAS" if rng else ""
     s = best_speed(c, b)
     spd, alt = s.get("ktas"), s.get("alt_ft")
     alt_ok = alt is not None and alt >= ALT_MIN

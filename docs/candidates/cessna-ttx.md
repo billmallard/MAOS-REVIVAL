@@ -47,7 +47,7 @@ Two screens, never mixed: the maker's figures as published, and measured or repo
   - Payload at 1,000 nm (information): 627 / 555 @ 219 kt, 16.0 gph.
 - **Measured or reported: pass**
   - Useful load: 1,027 lb (pass) against 1,000 lb.
-  - Range: 1,185 nm (pass; still air, no reserve, from fuel and measured flow) against 1,000 nm.
+  - Range: 1,185 nm (pass; still air, no reserve, from fuel and measured flow at 180 KTAS) against 1,000 nm.
   - Cruise: 180 KTAS at 12,000 ft (pass+) against >160 KTAS (>180 preferred).
   - Payload at 1,000 nm (information): 510 / 441 @ 180 kt, 15.5 gph.
 - Aeromomentum fit (first cut): Short: AM20T 260 hp vs 310 hp (-6% speed, est. 207 KTAS).
