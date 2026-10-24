@@ -4,17 +4,17 @@
   "mtow": 2400,
   "stage3_empty": 1550,
   "stage3_useful": 850,
-  "airframe_delta_light": -130,
-  "airframe_delta_heavy": -20,
-  "empty_light": 1420,
+  "airframe_delta_light": -175,
+  "airframe_delta_heavy": -35,
+  "empty_light": 1380,
   "empty_heavy": 1630,
   "useful_light": 770,
-  "useful_heavy": 980,
+  "useful_heavy": 1020,
   "engine_delta_lb": [
    54,
    71
   ],
-  "empty_light_eng": 1470,
+  "empty_light_eng": 1430,
   "empty_heavy_eng": 1700
  },
  "bellanca-t250-aries": {
