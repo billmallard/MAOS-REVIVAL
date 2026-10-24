@@ -14,10 +14,12 @@ Source quality: **P** primary or official record; **S** reputable secondary;
 ## Summary
 
 - **Same holder chain as the IV-P.** The 2017 sale named the "ES" among the
-  out-of-production kits sold to Lancair International LLC (Uvalde, TX). The
-  Lancair business, molds and IP were then sold to JetEXE Aviation (Sacramento)
-  in October 2023. It trades as Lancair Aerospace (company release, P/S; AvWeb,
-  S). See lancair-iv-p.md for the chain in full.
+  out-of-production kits sold to Lancair International LLC (Uvalde, TX). JetEXE
+  Aviation (Sacramento) bought the Lancair business from the Huffstutlers in
+  October 2023 and trades as Lancair Aerospace (company release, P/S; AvWeb, S).
+  **No public source lists what the 2023 purchase covered**; an earlier version
+  of this file said "molds and IP", which no source supports. See
+  lancair-iv-p.md for the chain and the open title question.
 - **The Super ES is a variant of the ES** (the ES with the 310 hp IO-550-N), not
   a separate kit line (Wikipedia, L). The 2017 release says "ES". It does not
   name the Super ES. I read it as included; counsel should confirm.
@@ -60,8 +62,8 @@ Same as the IV-P (see lancair-iv-p.md):
 
 ## Drawings, molds and tooling
 
-- Moved from Redmond to Uvalde in 2017. Reported sold to JetEXE, with molds and
-  IP, in 2023 (company release, P/S; AvWeb, S).
+- Moved from Redmond to Uvalde in 2017 (company release, P/S). Where they went
+  after JetEXE's 2023 purchase is not public; see lancair-iv-p.md.
 - **Whether ES molds survive and in what state is not public.**
 - Philippine Aerospace Development Corporation reportedly built 6 ES units (L).
   If so, there may have been a second tooling set or licence. Not verified.
@@ -103,7 +105,7 @@ company decision.
 
 | Path | What it would take | Assessment |
 |---|---|---|
-| **Buy** | Buy the ES design, molds and data from JetEXE / Lancair Aerospace. | Plausible. It is the same holder as the IV-P, so one conversation would cover both. Requires contact; not done. |
+| **Buy** | Buy the ES design, molds and data from JetEXE / Lancair Aerospace. | Plausible but unproven: same open chain of title as the IV-P, so one inquiry would cover both. Requires contact; not done. |
 | **License** | Licence the ES data and molds. | Same. |
 | **Modify existing airframes** | Work with the ~100 ES-family registered airframes. | Upgrades only. Not production. |
 | **Re-derive from an airframe** | Measure an ES and design anew. | Physically easy. Lawfulness depends on the holder's rights. **Attorney needed.** The certified LC40 is a separate design under a Textron TC and is not a short cut. |

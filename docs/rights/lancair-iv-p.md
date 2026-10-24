@@ -3,7 +3,16 @@
 **Stage:** 2, rights and provenance. **Researcher:** Elon (census legwork
 delegated, judgement mine). **Board issue:** AER-3787. **Date:** 2026-10-24.
 **Status:** first pass, desk research from public sources only. Nobody has been
-contacted. From AERO's stage 1 long list (pass).
+contacted. From AERO's stage 1 long list (pass). **Updated 2026-10-24** for
+AERO's stage 3 question (rank 2): what did the 2023 JetEXE purchase cover, and
+does it include licensing the IV-P design or its kit tooling? See "The 2023
+JetEXE purchase" below.
+
+**Correction.** The first pass of this file quoted AvWeb as reporting a sale of
+"older kit designs, molds, and intellectual property". AvWeb and Kitplanes say
+no such thing; neither article contains "mold" or "intellectual" (re-read
+2026-10-24). The quote was wrong and is withdrawn. What the articles do say is
+below.
 
 This is research, not legal advice. It reports what public records show and
 where they run out. It does not say the design may be copied.
@@ -16,13 +25,15 @@ Source quality: **P** primary or official record; **S** reputable secondary;
 - **No type certificate. The IV-P is a kit.** FAA DRS returns nothing for "IV-P"
   (P). The certified Lancair line (LC40/41/42, now Textron, TC A00003SE) is a
   different design.
-- **The rights moved twice, and the holder today is identifiable.**
+- **The rights moved at least once on the record, and maybe twice.**
   - February 2017: Lancair International Inc. (Redmond, OR) sold all
     out-of-production kit models, including the IV and IV-P, with "all assets,
     intellectual designs, and ongoing support business", to Lancair International
     LLC of Uvalde, Texas (Mark and Conrad Huffstutler) (company release, P/S).
-  - October 2023: JetEXE Aviation of Sacramento bought the Lancair kit business,
-    reported to include older kit designs, molds and IP (AvWeb, Kitplanes, S).
+  - October 2023: JetEXE Aviation of Sacramento bought the Lancair kit business
+    from the Huffstutlers (AvWeb, Kitplanes, S). **No public source lists what
+    that purchase covered.** Nothing says the IV-P drawings, molds, tooling or
+    design rights passed to JetEXE.
 - **The trading name today is Lancair Aerospace**, Sacramento Executive Airport,
   CEO Capt. Augustine Joseph. It sells new designs (Mako, Barracuda) and supports
   the IV, IV-P and IV-PT with service bulletins and parts (lancair.com, P/S).
@@ -33,9 +44,13 @@ Source quality: **P** primary or official record; **S** reputable secondary;
   2011 (L).
 - **"Mountain Aviation" did not show up** in any Lancair record found. The chain
   runs Oregon, then Texas, then California.
-- **This is a real candidate for a licence or purchase**: a small, identifiable
-  holder that does not sell IV-P kits. That is a question for Bill at the
-  shortlist stage, not now.
+- **Who could license or sell the IV-P design today is not established.** The
+  2017 Texas buyer is still an active company, the 2023 purchase terms are
+  private, and owner forums report a legal dispute between the parties and
+  describe Lancair as "effectively defunct" by April 2026 (L). Lancair Aerospace
+  says the IV-P kit is out of production and offers support only (P). This is
+  still a candidate for a licence or purchase, but the first step is chain of
+  title, not price. Contact is Bill's call at the shortlist stage.
 
 ## Type certificate
 
@@ -61,7 +76,10 @@ None: amateur-built. Read from FAA DRS, 2026-10-24.
   Comptroller open data, P). Whether it still holds anything after the 2023 sale
   is not shown.
 - **JetEXE Aviation Corporation** (California) bought the business in October
-  2023 and moved the parts division to Sacramento (AvWeb, Kitplanes, S). The site
+  2023 (AvWeb, Kitplanes, S). A post signed by Lancair Aerospace's CEO in March
+  2024 describes "our transition from Lancair International to Lancair Aerospace
+  ... physically relocating the Parts division to our new facility in
+  Sacramento" (LancairLive forum, L; the account is the company's own). The site
   now trades as **Lancair Aerospace**, 6273 Freeport Blvd, Sacramento, © 2026
   (lancair.com, P/S). California SOS records were not reachable.
 - **Support:** active. Lancair Aerospace lists service bulletins for the IV,
@@ -72,10 +90,46 @@ None: amateur-built. Read from FAA DRS, 2026-10-24.
 
 - **2017:** inventories, production fixtures and support materials moved from
   Redmond to Garner Field, Uvalde, Texas (company release, P/S).
-- **2023:** reported sale to JetEXE of "older kit designs, molds, and
-  intellectual property" (AvWeb, S). The purchase agreement is not public, so the
-  exact asset list is unconfirmed.
-- **Do the IV-P molds survive in usable condition?** Not stated anywhere public.
+- **Before 2017:** an April 2017 lancair.com post says "aircraft molds,
+  fixtures, inventory and support equipment" also came to Uvalde from the
+  Philippine plant in Cebu (P).
+- **2023 onward:** no public source says where the IV-P molds went. Owner forum
+  posts say inventory was being moved in February 2024 ("not quite sure where it
+  will end up"), and in March 2025 ask whether the "two new partners" are "still
+  in legal action ... since the sale and attempted move from Uvalde" (L).
+- **Last firm location: Uvalde, 2017.** Whether the IV-P molds survive, and in
+  what condition, is not stated anywhere public.
+
+### The 2023 JetEXE purchase
+
+The question from AERO's stage 3 was what JetEXE bought, and whether it can
+license the IV-P design or its tooling.
+
+| Source | What it says | Grade |
+|---|---|---|
+| AvWeb, 10 Oct 2023 (Kitplanes and Flying ran the same text) | Lancair "sold off older kit designs, and that business was purchased by JetEXE from Mark and Conrad Huffstatter, of Uvalde, Texas, who had hoped to revive the kit production but were concentrating on fleet support in recent years." Re-read 2026-10-24. | S |
+| Airframer, 11 Oct 2023 (press-release rewrite) | "JetEXE Aviation has acquired Lancair"; Mark Huffstutler promises "a seamless transition". No asset list. | S |
+| AvWeb, same article | JetEXE plans "designs that incorporate sustainable energy technologies". No mention of the IV-P. | S |
+| lancair.com/iv-ivp | "The Lancair IV and IV-P series of aircraft kits are out of production. We continue to support these famous aircraft with parts and technical assistance." Re-read 2026-10-24. | P |
+| LancairLive, owners' board member, Feb 2024 | "They are considering what model to re-introduce as a kit." | L |
+| LancairLive, Apr 2026 | "Lancair is effectively defunct. We haven't heard anything from the owners in quite a while." | L |
+
+**Reading.** The 2017 sale listed its assets, and named the IV-P. The 2023 sale,
+on the public record, did not. It may have been an asset purchase or a purchase
+of the Texas LLC itself; the LLC is still active (Texas Comptroller, P), which
+fits either. So whether JetEXE holds the IV-P design, or the Huffstutlers' LLC
+still does, is open. Nothing public says either party offers or intends to
+license the IV-P design or its tooling.
+
+**Licensing precedent.** Lancair has licensed before: the Calima T-90 trainer is
+"a strategic alliance between ... CIAC and Lancair", built in Colombia with
+components "coming from Lancair in Uvalde, Texas" (lancair.com, P). The Mako
+and Barracuda were developed in house at Uvalde, not bought in (AOPA 2018, S).
+
+**Litigation.** The forum's "legal action" is not confirmed. CourtListener shows
+no relevant federal case filed since 2023; the same search does return older
+Lancair federal cases (for example D. Or. 6:09-cv-06134), so the search works. A
+dispute, if real, is probably in Texas state court, which was not searched.
 
 ## Kit or plans rights
 
@@ -122,16 +176,19 @@ stage.
 
 | Path | What it would take | Assessment |
 |---|---|---|
-| **Buy** | Buy the IV-P design, molds and data from JetEXE / Lancair Aerospace. | Plausible. The holder is small, identifiable and does not sell IV-P kits. Requires contact; not done. |
-| **License** | Licence the IV-P data and molds, with or without the brand. | Plausible for the same reasons. The holder supports the fleet, so it may prefer a licence to a sale. |
+| **Buy** | Buy the IV-P design, molds and data from whichever of JetEXE / Lancair Aerospace or the Texas LLC holds them. | Plausible but unproven. The holder is not established, the molds are unlocated since 2017, and the parties may be in dispute. Requires contact; not done. |
+| **License** | Licence the IV-P data and molds, with or without the brand. | Lancair has licensed before (Calima T-90). Same chain-of-title problem as buying. |
 | **Modify existing airframes** | Work with the ~235 registered IV-Ps. | Possible as upgrades (the RDD LX7 shows the pattern), but this is not new production. |
 | **Re-derive from an airframe** | Measure an IV-P and design anew. | Physically easy: many airframes. Lawfulness depends on the holder's rights in drawings and molds. **Attorney needed.** |
 
 ## Where an aviation IP attorney is needed
 
-1. **What JetEXE actually bought in 2023**, and from whom: the Texas LLC is still
-   active, and the Oregon corporation that sold in 2017 is still active too.
-   Confirm the chain of title for the IV-P designs and molds.
+1. **What JetEXE actually bought in 2023**, and from whom: an asset purchase or
+   the LLC itself? The Texas LLC is still active, and so is the Oregon
+   corporation that sold in 2017. Confirm the chain of title for the IV-P designs
+   and molds, and whether any dispute between the parties clouds it. Public
+   records that might help: Texas UCC filings, the Texas SOS filing history for
+   file 0802270082, Uvalde County court records.
 2. **The joint trademark ownership** (JetEXE and Akyna Medical Management) and
    whether design rights are held the same way.
 3. **Terms of any purchase or licence**, including product-liability exposure for
@@ -142,7 +199,9 @@ stage.
 
 - California SOS status of JetEXE Aviation Corporation and any Lancair Aerospace
   entity (site not reachable from here).
-- Whether IV-P molds survive and in what state.
+- Whether IV-P molds survive, where, and in what state (last firm: Uvalde 2017).
+- The reported legal dispute between the post-2023 partners: Texas state courts.
+- California SOS record for JetEXE: asset purchase or interest purchase.
 - Whether "Mountain Aviation" ever held any Lancair asset. Nothing found.
 - Exact IV vs IV-P split in the registry (model strings are inconsistent).
 
@@ -159,6 +218,16 @@ stage.
 - AvWeb, "JetEXE Buys Lancair, Plans Sustainable Designs", October 2023 (S).
   https://www.avweb.com/aviation-news/jetexe-buys-lancair-plans-sustainable-designs/
 - Kitplanes, "JetEXE Buys Lancair" (S). https://www.kitplanes.com/jetexe-buys-lancair/
+- Airframer, "JetEXE builds GA presence with Lancair acquisition", 11 October
+  2023 (S). https://www.airframer.com/news/story/jetexe-builds-ga-presence-with-lancair-acquisition
+- Lancair Aerospace, IV/IV-P page, re-read 2026-10-24 (P). https://lancair.com/iv-ivp/
+- Lancair, "Philippine-based manufacturing moves to new Texas home", April 2017
+  (P). https://lancair.com/philippine-based-manufacturing-moves-to-new-texas-home/
+- Lancair, "Synergy: Calima T-90" (P). https://lancair.com/synergy-calima-t-90/
+- AOPA, "Lancair introduces Barracuda", 26 July 2018 (S).
+  https://aopa.org/news-and-media/all-news/2018/july/26/lancair-introduces-barracuda
+- LancairLive owners' forum, transition thread, 2024-2026 (L).
+  https://www.lancairlive.com/viewtopic.php?p=799
 - Kitplanes, "Lancair Sold" (S). https://www.kitplanes.com/lancair-sold/
 - AOPA, "Lancair announces restructuring", 28 July 2016 (S).
   https://aopa.org/news-and-media/all-news/2016/july/28/lancair
