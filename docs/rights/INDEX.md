@@ -5,8 +5,9 @@ the screen, plus the Rohr 2-175 (Bill's example) and the Cozy MKIV (the
 reference). Details, sources and attorney questions are in each file. Research,
 not legal advice. Nobody has been contacted. As of 2026-10-24.
 
-The last four rows were added from Bill's review on 2026-10-24 (AER-3805): the
-Prescott Pusher, the Bellanca T-250 Aries, one Rotax Derringer analog, and the
+The last five rows were added from Bill's review on 2026-10-24 (AER-3805): the
+Prescott Pusher, the Bellanca T-250 Aries, six Derringer analogs in two rows,
+and the
 RDD LX7 as a data point under the Lancair IV-P.
 
 **How to read "Rights picture":**
@@ -47,6 +48,7 @@ RDD LX7 as a data point under the Lancair IV-P.
 | [Prescott Pusher](prescott-pusher.md) | to be settled (AERO) | Kit, no TC; company closed 1989-1991 | Open question: no rights buyer found. **SDASM holds the drawings, loads and test reports** (SC.10269) | Find the owner (SDASM's "Bill of Sale" folder); re-derive from the archive, with counsel |
 | [Bellanca T-250 Aries](bellanca-t-250-aries.md) | to be screened (AERO) | TC A11SW, Current, Anderson, Greenwood and Co.; Bellanca only licensed it | Open question: holder of record absorbed via Keystone and Tyco; Emerson now owns the brand | Find who holds A11SW, then buy |
 | [Alpi Pioneer 800 Twin](alpi-pioneer-800-twin.md) | benchmark | New product, AERO 2026; certification route not established | Firmly held; a live product | Benchmark only |
+| [Five more Derringer analogs](derringer-analogs.md) | benchmark | Tecnam P2006T NG (FAA A62CE), Diamond DA42-VI (FAA A57CE), AT-P AT-6, Jabiru J432, Sling Twin | Firmly held; live makers | Benchmark only |
 | [RDD LX7](lancair-rdd-lx7.md) | data point | Re-winged Lancair IV-P conversions and a kit, Redmond, Oregon | No design rights claimed; works on owners' airframes | Idea and data point for the IV-P |
 
 ## Contact

@@ -8,7 +8,7 @@ public sources only. Nobody has been contacted.
 Derringer were shown at AERO Friedrichshafen this year (AER-3783). AERO is
 identifying and comparing them. This is the one I could identify with
 confidence from public coverage. If AERO names others, they get files of their
-own.
+own. (They are covered in [`derringer-analogs.md`](derringer-analogs.md).)
 
 This is research, not legal advice.
 
@@ -49,9 +49,11 @@ Source quality: **P** primary or official record; **S** reputable secondary;
 ## Open items
 
 - Alpi Aviation's legal entity and the Pioneer 800 Twin's certification route.
-- Other Rotax light twins shown at AERO 2026 (AERO's search). The only other
-  Rotax 916iS headline from the show found here, the Bristell B23-916iS, has one
-  160 hp engine, so it is not a Derringer analog (afm.aero, S).
+- AERO has since named five more analogs (Tecnam P2006T NG, Diamond DA42-VI,
+  AT-P AT-6 Twin PSE, Jabiru J432, Sling Twin). They are covered together in
+  [`derringer-analogs.md`](derringer-analogs.md). The Bristell B23-916iS, another
+  Rotax 916iS headline from the show, has one 160 hp engine, so it is not a
+  Derringer analog (afm.aero, S).
 
 ## Sources
 
