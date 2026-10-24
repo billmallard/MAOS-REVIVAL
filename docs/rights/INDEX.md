@@ -20,7 +20,7 @@ not legal advice. Nobody has been contacted. As of 2026-10-24.
 | [Wing D-1 Derringer](wing-derringer.md) | near miss | TC A9WE, **Abandoned** (2023) | Open question: holder not found; FAA offered to release the data under 44704(a)(5) | What release allows is an attorney question |
 | [Express 2000](express-2000.md) | near miss | Kit, no TC; five owners, three bankruptcies | Open question: last holder (2007) has no visible trace | Trace the 2007 holder through public records |
 | [Bellanca Skyrocket II](bellanca-skyrocket-ii.md) | pass | Prototype, no TC; airframe in a museum | Open question: design owner unknown | Trace ownership; the museum airframe could be measured |
-| [Mooney 301](mooney-301.md) | pass | Prototype, no TC; scrapped; data went to Socata in 1987 | Open question: Mooney or Daher | Attorney question first |
+| [Mooney 301](mooney-301.md) | pass | Prototype, no TC; scrapped; data went to Socata in 1987 | Open question: Mooney or Daher; no settlement, JV terms or patent public | Little survives either path; a new design using its layout, with counsel |
 | [Berkut 360](berkut-360.md) | near miss | Kit, no TC; withdrawn 2002 | Open question: molds unaccounted for since 2009 | Trace the molds |
 | [Rutan Defiant](rutan-defiant.md) | pass | Plans, no TC; withdrawn 1985 | Most likely RAF or Burt Rutan: no 1985 buyer found, and the record points to none | Licence or buy the plans copyright; requires contact |
 | [Windecker AC-7 Eagle](windecker-eagle.md) | near miss | TC A7SW, Current, Windecker Aircraft Inc. | Small holder (foreign-owned), quiet since 2018 | Buy or license; export control in scope |

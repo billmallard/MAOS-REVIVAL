@@ -3,7 +3,10 @@
 **Stage:** 2, rights and provenance. **Researcher:** Elon (census legwork
 delegated, judgement mine). **Board issue:** AER-3787. **Date:** 2026-10-24.
 **Status:** first pass, desk research from public sources only. Nobody has been
-contacted. From AERO's stage 1 long list (pass).
+contacted. From AERO's stage 1 long list (pass). **Updated 2026-10-24** for
+AERO's stage 3 question (rank 3): does the design sit with Mooney or with Daher,
+and does any type certificate, drawing or patent survive either path? See
+"Mooney or Daher" below.
 
 This is research, not legal advice. It reports what public records show and
 where they run out. It does not say the design may be copied.
@@ -30,6 +33,12 @@ Source quality: **P** primary or official record; **S** reputable secondary;
 - **Two companies may claim the 301:** Mooney International (successor to the
   developer) and Daher (successor to the joint venture partner that took the
   data). The joint venture terms and the lawsuit settlement are not public.
+- **Answer to stage 3: unresolved on the public record, and nothing survives
+  either path that a revival could use.** No TC on either side for the 301, no
+  patent (and any from the era expired by about 2012), no airframe, and no
+  known drawing set outside whatever Daher kept in Tarbes or Mooney kept in
+  Kerrville. Daher's lineage controls everything TBM-derived; whether Mooney
+  kept any right in the original M30 drawings is unknown.
 
 ## Type certificate
 
@@ -62,8 +71,11 @@ the 20-page TCDS finds no mention of Mooney (FAA DRS, P).
 - **Daher Aircraft SAS** holds the TBM type certificate and builds the TBM line
   (FAA DRS, P).
 - **TBM International** was a joint venture formed in June 1987 between Mooney
-  and Aérospatiale. Mooney left it, in 1989 per Mooney Events or in May 1991 per
-  Wikipedia (L). The dates conflict.
+  and Aérospatiale. Mooney held 30% (FundingUniverse company history, L/S).
+  **Exit:** "by the summer of 1989 Mooney had been dropped from the partnership"
+  (Mooney Events, L/S); "in 1991, suffering from a shortage of money ... Mooney
+  pulled out" (AIN 2016, S). Best reading: sidelined in 1989, formal exit in
+  1991. Both quotes re-read 2026-10-24.
 - **Support:** none. There is no fleet.
 
 ## Drawings, molds and tooling
@@ -79,6 +91,28 @@ the 20-page TCDS finds no mention of Mooney (FAA DRS, P).
 - **Whether Mooney kept a copy of the drawings is unknown.**
 
 **Status: unknown.** There is probably no airframe left to measure.
+
+### Mooney or Daher
+
+| Question | Finding | Grade |
+|---|---|---|
+| JV terms on IP | Not public. No agreement text found. | none |
+| What went to Tarbes | "In 1987, all the engineering data for the M30 was delivered to the engineers in Tarbes France ... the only flying 301 prototype was disassembled and shipped to France" (Mooney Events, re-read 2026-10-24) | L/S |
+| What Socata used | Its own fuselage and wing shapes, but "the engineering provided by Kerrville for the flight control operation": large Fowler flaps, spoilers, small ailerons (Mooney Events) | L/S |
+| Litigation | "after all of the lawsuits from the Mooney/Socata break-up were settled, it was destroyed" (Mooney Events). This is the only reference found. No court, parties or terms. | L/S |
+| US court record | CourtListener: no relevant opinion for Mooney with Aerospatiale, Socata, "TBM International" or "TBM 700". Positive control: "Mooney Aircraft" before 1997 returns 330 opinions, e.g. *Mooney Aircraft Corp. v. Altman* (Tex. App. 1989). A French court or arbitration would explain the silence. | P (negative, controlled) |
+| Daher's own account | "The TBM aircraft was born in Tarbes, France, resulting from a partnership with Texas-based Mooney Aircraft." No mention of the 301 (tbm.aero, re-read 2026-10-24). | P |
+| Socata's verdict on the 301 | "too heavy, too slow ... and needed a turboprop in the nose" (AIN 2016) | S |
+| Patents | Google Patents, priority 1980-1992: assignee "Mooney Aircraft" returns only US3247892A (1963, a door), which also serves as the positive control; "Socata" returns nothing before 2008; Aérospatiale spoiler/flap/roll hits are not TBM-related. Any patent from the era expired by about 2012. | P (negative, controlled) |
+| Type certificate | None for the 301 (above). The TBM's A60EU belongs to Daher and covers a different aircraft. | P |
+
+**Reading.** The data physically went to Socata, Socata built the TBM's flight
+controls from it, and the only surviving TC in the lineage is Daher's. Mooney
+may have kept copies and may have settled some right in them; no public record
+says. Either way, what is left of the 301 itself is 40-year-old drawings for
+an aircraft that flew 200 lb overweight, with no airframe to check them
+against. The realistic route is a new design that takes the 301's layout as a
+reference, with counsel on how close is too close to TBM-protected data.
 
 ## Kit or plans rights
 
@@ -135,10 +169,11 @@ They moved the effort into a joint venture with Socata that became the TBM 700
 
 ## Open items
 
-- The Mooney/Socata lawsuit records (court and parties unknown; PACER and Texas
-  courts not searched).
+- The Mooney/Socata lawsuit records: court and parties unknown. US federal
+  opinions searched (none); Texas state courts, French courts, Flight
+  International 1989-91, Kerrville Daily Times and Larry Ball's *Those
+  Remarkable Mooneys* (1998) not searched.
 - The Abilene A&P school, and whether any 301 parts survive.
-- Mooney exit date from TBM International (1989 or 1991).
 - Any USPTO mark on "301" for aircraft.
 
 ## Contact: the question for Bill, when it is ripe
@@ -164,6 +199,15 @@ International, Daher, or both, about the M30 data. I am not asking now.
 - Plane & Pilot, "Mooney M30 '301'" (S). https://planeandpilotmag.com/mooney-m30-301/
 - Plane & Pilot, Frank Ayers, "The Mooney 301", September 2021 (S).
   https://planeandpilotmag.com/mooney-301/
+- AIN, "After quarter century, Daher rolls out 800th TBM", 31 October 2016 (S).
+  https://www.ainonline.com/aviation-news/general-aviation/2016-10-31/after-quarter-century-daher-rolls-out-800th-tbm
+- Daher, TBM "Who are we" (P). https://www.tbm.aero/page/who-are-we
+- FundingUniverse, "Mooney Aerospace Group Ltd. history" (L/S).
+  https://www.fundinguniverse.com/company-histories/mooney-aerospace-group-ltd-history/
+- CourtListener opinion search, 2026-10-24 (P, negative with control).
+  https://www.courtlistener.com/
+- Google Patents assignee searches, 2026-10-24 (P, negative with control).
+  https://patents.google.com/?assignee=Mooney+Aircraft
 - Wikipedia, "Mooney 301"; "SOCATA TBM" (L).
   https://en.wikipedia.org/wiki/Mooney_301
   https://en.wikipedia.org/wiki/SOCATA_TBM
