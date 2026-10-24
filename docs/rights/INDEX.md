@@ -5,6 +5,10 @@ the screen, plus the Rohr 2-175 (Bill's example) and the Cozy MKIV (the
 reference). Details, sources and attorney questions are in each file. Research,
 not legal advice. Nobody has been contacted. As of 2026-10-24.
 
+The last four rows were added from Bill's review on 2026-10-24 (AER-3805): the
+Prescott Pusher, the Bellanca T-250 Aries, one Rotax Derringer analog, and the
+RDD LX7 as a data point under the Lancair IV-P.
+
 **How to read "Rights picture":**
 - **Open question:** the holder is unknown or unresolved, so ownership has to be
   established before anything else.
@@ -25,7 +29,7 @@ not legal advice. Nobody has been contacted. As of 2026-10-24.
 | [Rutan Defiant](rutan-defiant.md) | pass | Plans, no TC; withdrawn 1985 | Most likely RAF or Burt Rutan: no 1985 buyer found, and the record points to none | Licence or buy the plans copyright; requires contact |
 | [Windecker AC-7 Eagle](windecker-eagle.md) | near miss | TC A7SW, Current, Windecker Aircraft Inc. | Small holder (foreign-owned), quiet since 2018 | Buy or license; export control in scope |
 | [Piper Comanche 400](piper-pa-24-400-comanche-400.md) | pass | TC 1A15, Current, Piper | Firmly held, but Piper has sold a legacy design before | Licence or carve-out; the fleet is small |
-| [Lancair IV-P](lancair-iv-p.md) | pass | Kit, no TC; Lancair Aerospace (JetEXE) supports it | Open question: what JetEXE bought in 2023 is not public; molds unlocated since 2017 | Settle chain of title, then license |
+| [Lancair IV-P](lancair-iv-p.md) | pass | Kit, no TC; Lancair Aerospace (JetEXE, Sacramento) supports it | Open question: what JetEXE bought in 2023 is not public; molds unlocated since 2017; no Austin holder found | Settle chain of title, then license |
 | [Lancair Super ES](lancair-super-es.md) | pass | Kit, no TC; same holder as the IV-P | Small holder; whether the Super ES passed in the 2017 sale is unconfirmed | License |
 | [Extra EA-400](extra-ea-400.md) | near miss | EASA.A.011, new holder Oct 2025; FAA A43CE still names the insolvent SST | Open question: the EASA and FAA records disagree, and a Chinese firm claims rights | Attorney question first |
 | [Evektor SuperCobra](evektor-supercobra.md) | pass | Prototype, no TC | Open question: Evektor and a university may share rights | Trace the grant terms |
@@ -40,6 +44,10 @@ not legal advice. Nobody has been contacted. As of 2026-10-24.
 | [Piper Malibu](piper-pa-46-310p-malibu.md) | pass | TC A25SO, Current, Piper; same TC as the M-Class | Firmly held | Modify existing airframes |
 | [Socata TB-21](socata-tb21.md) | near miss | EASA.A.378 / FAA A51EU, Current, Daher | Firmly held | Modify existing airframes |
 | [Rohr 2-175](rohr-2-175.md) | fail (useful load) | Prototype, no TC; airframes and documentation destroyed | Nothing to own | Configuration reference only |
+| [Prescott Pusher](prescott-pusher.md) | to be settled (AERO) | Kit, no TC; company closed 1989-1991 | Open question: no rights buyer found. **SDASM holds the drawings, loads and test reports** (SC.10269) | Find the owner (SDASM's "Bill of Sale" folder); re-derive from the archive, with counsel |
+| [Bellanca T-250 Aries](bellanca-t-250-aries.md) | to be screened (AERO) | TC A11SW, Current, Anderson, Greenwood and Co.; Bellanca only licensed it | Open question: holder of record absorbed via Keystone and Tyco; Emerson now owns the brand | Find who holds A11SW, then buy |
+| [Alpi Pioneer 800 Twin](alpi-pioneer-800-twin.md) | benchmark | New product, AERO 2026; certification route not established | Firmly held; a live product | Benchmark only |
+| [RDD LX7](lancair-rdd-lx7.md) | data point | Re-winged Lancair IV-P conversions and a kit, Redmond, Oregon | No design rights claimed; works on owners' airframes | Idea and data point for the IV-P |
 
 ## Contact
 
