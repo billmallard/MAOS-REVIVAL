@@ -22,11 +22,11 @@ Grades: F factory/brochure/designer claim; T type certificate data sheet; P flig
 
 | Quantity | Value | Grade | Source | Note |
 |---|---|---|---|---|
-| MTOW | 4,000 lb | T | [source](http://web.archive.org/web/20210412155802/https://rgl.faa.gov/Regulatory_and_Guidance_Library/rgMakeModel.nsf/0/47f698e4f039604186257ed2006ca246/$FILE/3A21_Rev_49.pdf) | - |
+| MTOW | 4,000 lb | T | FAA DRS, TCDS 3A21 Rev 50, 18 Nov 2021, read 2026-10-24 (archived: docs/longlist/sources/tcds-3A21-rev50-2021-11-18.pdf); value unchanged from Rev 49 | - |
 | Empty weight | 2,426 lb | F | [source](https://www.aopa.org/go-fly/aircraft-and-ownership/aircraft-fact-sheets/cessna-p210) | 1982 standard empty |
 | Useful load | 1,574 lb | F | [source](https://www.aopa.org/go-fly/aircraft-and-ownership/aircraft-fact-sheets/cessna-p210) | - |
 | Useful load, fleet or as-weighed | 1,480 lb | B | [source](https://www.aviationconsumer.com/aircraftreviews/cessna-p210-centurion/) | owners report 900-1,000 lb payload with full fuel; midpoint + 87 gal |
-| Usable fuel | 87 US gal | T | [source](http://web.archive.org/web/20210412155802/https://rgl.faa.gov/Regulatory_and_Guidance_Library/rgMakeModel.nsf/0/47f698e4f039604186257ed2006ca246/$FILE/3A21_Rev_49.pdf) | S/N 761 on; 89 earlier |
+| Usable fuel | 87 US gal | T | FAA DRS, TCDS 3A21 Rev 50, 18 Nov 2021, read 2026-10-24 (archived: docs/longlist/sources/tcds-3A21-rev50-2021-11-18.pdf); value unchanged from Rev 49 | S/N 761 on; 89 earlier |
 | Published range | 925 nm | F | [source](https://australianaviation.com.au/1978/06/p210cessnas-high-flying-single/) | standard fuel, power and reserve not stated |
 
 Cruise settings (the starred row is the one screened for speed):

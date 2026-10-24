@@ -54,7 +54,7 @@ Produced and sold at a loss, contributing to Mooney's 1969 bankruptcy; dropped b
 
 ## Rights and provenance (known so far; research, not legal advice)
 
-TCDS A6SW (holder line not read). Mooney chain to Mooney International (US Financial LLC, 2020). Owned by the stage 2 rights research (AER-3787).
+TCDS A6SW Rev 6 (1 Dec 1973), status Current, holder line still "Mooney Aircraft Corporation" with no transfer recorded (FAA DRS, read 2026-10-24); the M20 TC 2A3 records every transfer to Mooney International. Who holds A6SW today is open. Mooney chain to Mooney International (US Financial LLC, 2020). Owned by the stage 2 rights research (AER-3787).
 
 ## Safety record
 

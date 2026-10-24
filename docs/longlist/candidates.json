@@ -1338,7 +1338,7 @@
   "mtow": [
    4000,
    "T",
-   "http://web.archive.org/web/20210412155802/https://rgl.faa.gov/Regulatory_and_Guidance_Library/rgMakeModel.nsf/0/47f698e4f039604186257ed2006ca246/$FILE/3A21_Rev_49.pdf",
+   "FAA DRS, TCDS 3A21 Rev 50, 18 Nov 2021, read 2026-10-24 (archived: docs/longlist/sources/tcds-3A21-rev50-2021-11-18.pdf); value unchanged from Rev 49",
    ""
   ],
   "empty": [
@@ -1362,7 +1362,7 @@
   "fuel_gal": [
    87,
    "T",
-   "http://web.archive.org/web/20210412155802/https://rgl.faa.gov/Regulatory_and_Guidance_Library/rgMakeModel.nsf/0/47f698e4f039604186257ed2006ca246/$FILE/3A21_Rev_49.pdf",
+   "FAA DRS, TCDS 3A21 Rev 50, 18 Nov 2021, read 2026-10-24 (archived: docs/longlist/sources/tcds-3A21-rev50-2021-11-18.pdf); value unchanged from Rev 49",
    "S/N 761 on; 89 earlier"
   ],
   "cruise": [
@@ -1428,7 +1428,7 @@
   "mtow": [
    4100,
    "T",
-   "http://web.archive.org/web/20161115030530/http://rgl.faa.gov/Regulatory_and_Guidance_Library/rgMakeModel.nsf/0/cc5508e501348b6086257fe0006776ce/$FILE/A25SO_Rev26.pdf",
+   "FAA DRS, TCDS A25SO Rev 42, 16 Feb 2026, read 2026-10-24 (archived: docs/longlist/sources/tcds-A25SO-rev42-2026-02-16.pdf); value unchanged from Rev 26",
    ""
   ],
   "empty": [
@@ -1452,7 +1452,7 @@
   "fuel_gal": [
    120,
    "T",
-   "http://web.archive.org/web/20161115030530/http://rgl.faa.gov/Regulatory_and_Guidance_Library/rgMakeModel.nsf/0/cc5508e501348b6086257fe0006776ce/$FILE/A25SO_Rev26.pdf",
+   "FAA DRS, TCDS A25SO Rev 42, 16 Feb 2026, read 2026-10-24 (archived: docs/longlist/sources/tcds-A25SO-rev42-2026-02-16.pdf); value unchanged from Rev 26",
    "122 total, 12 lb unusable"
   ],
   "cruise": [
@@ -2022,7 +2022,7 @@
   },
   "why_died_short": "Sold at a loss; helped bankrupt Mooney in 1969",
   "why_died": "Produced and sold at a loss, contributing to Mooney's 1969 bankruptcy; dropped by Butler/Aerostar (Wikipedia; P&P).",
-  "rights": "TCDS A6SW (holder line not read). Mooney chain to Mooney International (US Financial LLC, 2020).",
+  "rights": "TCDS A6SW Rev 6 (1 Dec 1973), status Current, holder line still \"Mooney Aircraft Corporation\" with no transfer recorded (FAA DRS, read 2026-10-24); the M20 TC 2A3 records every transfer to Mooney International. Who holds A6SW today is open. Mooney chain to Mooney International (US Financial LLC, 2020).",
   "safety": "1975 fatal in-flight fire from a loose fuel-line nut (ASN)."
  },
  {

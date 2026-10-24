@@ -22,11 +22,11 @@ Grades: F factory/brochure/designer claim; T type certificate data sheet; P flig
 
 | Quantity | Value | Grade | Source | Note |
 |---|---|---|---|---|
-| MTOW | 4,100 lb | T | [source](http://web.archive.org/web/20161115030530/http://rgl.faa.gov/Regulatory_and_Guidance_Library/rgMakeModel.nsf/0/cc5508e501348b6086257fe0006776ce/$FILE/A25SO_Rev26.pdf) | - |
+| MTOW | 4,100 lb | T | FAA DRS, TCDS A25SO Rev 42, 16 Feb 2026, read 2026-10-24 (archived: docs/longlist/sources/tcds-A25SO-rev42-2026-02-16.pdf); value unchanged from Rev 26 | - |
 | Empty weight | 2,645 lb | F | [source](https://www.aopa.org/go-fly/aircraft-and-ownership/aircraft-fact-sheets/piper-malibu-mirage) | - |
 | Useful load | 1,455 lb | F | [source](https://www.aopa.org/go-fly/aircraft-and-ownership/aircraft-fact-sheets/piper-malibu-mirage) | - |
 | Useful load, fleet or as-weighed | 1,400 lb | B | [source](https://www.flyingmag.com/used-aircraft-guide-piper-malibu-and-mirage-cheap-for-what-they-do/) | 'typical useful loads' |
-| Usable fuel | 120 US gal | T | [source](http://web.archive.org/web/20161115030530/http://rgl.faa.gov/Regulatory_and_Guidance_Library/rgMakeModel.nsf/0/cc5508e501348b6086257fe0006776ce/$FILE/A25SO_Rev26.pdf) | 122 total, 12 lb unusable |
+| Usable fuel | 120 US gal | T | FAA DRS, TCDS A25SO Rev 42, 16 Feb 2026, read 2026-10-24 (archived: docs/longlist/sources/tcds-A25SO-rev42-2026-02-16.pdf); value unchanged from Rev 26 | 122 total, 12 lb unusable |
 | Published range | 1,300 nm | P | [source](https://australianaviation.com.au/1985/06/airtest-piper-malibu/) | 120 gal, power and reserve not stated |
 
 Cruise settings (the starred row is the one screened for speed):
