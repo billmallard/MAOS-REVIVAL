@@ -151,9 +151,9 @@ existing customers. Checked 2026-10-24, public sources only:
 
 | Probe | Result | Grade |
 |---|---|---|
-| Texas Comptroller, active franchise-tax holders with "LANCAIR" in the name | Four: Lancair of Texas, Inc. (Fort Worth, 2000); Lancair International, LLC (Uvalde, 2015, the 2017 buyer); Lancair 455JB LLC (Dallas, chartered 23 April 2026, which reads like a single-aircraft holding company); Lancair Owners and Builders Organization, Inc. (2015, the owners' group). **None in Austin.** The same query finds the known Uvalde LLC, so it works. | P |
+| Texas Comptroller, active franchise-tax holders with "LANCAIR" in the name | Four entries: Lancair of Texas, Inc. (Fort Worth, 2000; SOS status code "R" since 22 January 2013, so "active" is loose for this one); Lancair International, LLC (Uvalde, 2015, the 2017 buyer); Lancair 455JB LLC (Dallas, chartered 23 April 2026, which reads like a single-aircraft holding company); Lancair Owners and Builders Organization, Inc. (2015, the owners' group). **None in Austin.** The same query finds the known Uvalde LLC, so it works. | P |
 | Oregon SOS, "LANCAIR" | Only Lancair International Inc. (Redmond/Bend, 2003), the 2017 seller | P |
-| lancair.com, re-read 2026-10-24 | "Lancair Aerospace, KSAC Sacramento Executive Airport, 6273 Freeport Blvd, Sacramento"; © 2026; CEO Capt. Augustine Joseph, "president and owner of several international business corporations, including JetEXE Aviation and Advanced International Aviation". No Texas address except a legacy 830 (Uvalde) phone number | P/S |
+| lancair.com, re-read 2026-10-24 | Home page: "Lancair Aerospace KSAC Sacramento Executive Airport 6273 Freeport Blvd, Sacramento, CA 95822"; © 2026. About page: CEO Capt. Augustine Joseph, "president and owner of several international business corporations, including JetEXE Aviation and Advanced International Aviation". No Texas address except a legacy 830 (Uvalde) phone number | P/S |
 | Press searches (AvWeb, Kitplanes, Flying, Aero-News, FLYER), 2024-2026 | Nothing newer than the October 2023 JetEXE purchase | S |
 | LancairLive owners' forum | Not readable from here (the server refuses automated reads) | — |
 

@@ -53,7 +53,7 @@ Read directly from FAA DRS, 2026-10-24.
 | 200D | Approved 25 November 1964; Continental IO-520-A; serials 290, 292 and up | Same. P. |
 | Basis and dates | CAR 3 (1956, through Amendment 3-1); TC issued 6 March 1958; applied for 30 April 1957 | Same. P. |
 | Production basis | None. Each aircraft needs FAA conformity inspection | Same. P. |
-| Drawings cited | Meyers drawings A60B005, B60B010; Interceptor drawings D69B031, C63R160; Interceptor Report 60M018 | Same. P. |
+| Drawings cited | Meyers drawings A60B005, B60B010, C60B010; Interceptor drawings D69B031, C63R160; Interceptor Report 60M018 | Same. P. |
 
 ## Holder or seller today
 
@@ -133,7 +133,7 @@ turboprop 400, which was certified in 1971 but never financed for production (L)
 | **Buy the TC** | Establish who owns Interceptor Aviation, or the TC, after VSE's 2021 purchase of GlobalParts. Then buy TC 3A18 with its drawings and tooling. | The strongest buy case in this batch. The holder already offered exactly this package in 2019. Requires contact; not done. |
 | **License** | A licence from the same owner. | Possible, but a holder that wanted to sell outright may prefer a sale. |
 | **Modify existing airframes** | STC an engine change onto existing 200Ds. | Possible, but a 58-aircraft fleet gives a small market. |
-| **Re-derive from an airframe** | Measure a 200D and build a new design. | Physically easy (steel tube, metal skins), and the TCDS gives the whole weight, balance and speed envelope. The path Bill asked to sharpen (AER-3805): see "Re-derivation" above. **Attorney needed** before measuring or copying anything. |
+| **Re-derive from an airframe** | Measure a 200D and build a new design. | Physically easy (steel tube, metal skins), and the TCDS gives the whole weight, balance and speed envelope. The path Bill asked to sharpen (AER-3805): see "Re-derivation" below. **Attorney needed** before measuring or copying anything. |
 
 ## Re-derivation: a new design inspired by the 200D
 
@@ -147,7 +147,7 @@ answer; nothing here depends on it.
 
 | Source | What it yields | What it does not | Grade |
 |---|---|---|---|
-| **TCDS 3A18 Rev 19** (read in full, 8 pages) | Maximum weight 3,000 lb. CG envelope (+31.5 to +33.8 in at 3,000 lb, +23.6 to +33.8 in at 2,207 lb) from a stated datum, the front face of the firewall. Seat stations (+30, +70), baggage 200 lb at +100, fuel 80 gal (two 20 gal mains at +22, two 20 gal auxiliaries at +41). Control throws (flaps 40 deg; aileron +22/-9.5 deg; elevator +32/-20 deg; rudder +/-21 deg). Vne 205 kt, Vno 182 kt, Va 115 kt, Vfe 109 kt. Engine IO-520-A, 285 hp at 2,700 rpm. Propeller diameters 78-84 in. Certification basis CAR 3. The AFM date (25 November 1964) and the numbers of six Meyers and Interceptor drawings | No geometry: no span, area, chord, incidence, tail size or structure. The drawings are cited by number, not published | P |
+| **TCDS 3A18 Rev 19** (read in full, 8 pages) | Maximum weight 3,000 lb. CG envelope (+31.5 to +33.8 in at 3,000 lb, +23.6 to +33.8 in at 2,207 lb) from a stated datum, the front face of the firewall. Seat stations (+30, +70), baggage 200 lb at +100, fuel 80 gal (two 20 gal mains at +22, two 20 gal auxiliaries at +41). Control throws (flaps 40 deg; aileron +22/-9.5 deg; elevator +32/-20 deg; rudder +/-21 deg). Vne 205 kt, Vno 182 kt, Va 115 kt, Vfe 109 kt. Engine IO-520-A, 285 hp at 2,700 rpm. Propeller diameters 78-84 in. Certification basis CAR 3. The AFM date (25 November 1964) and the numbers of five Meyers and Interceptor drawings (A60B005, B60B010, C60B010, C63R160, D69B031) and one report (60M018) | No geometry: no span, area, chord, incidence, tail size or structure. The drawings are cited by number, not published | P |
 | **Interceptor 400 on the same TCDS** (model 400, approved 20 August 1971) | The growth path, measured by the FAA: TPE331 turboprop at 400 shp; 4,005 lb takeoff, 4,030 lb ramp, 3,200 lb zero fuel; fuel 155.4 gal; pressurised cabin structure with a 2,000-hour life limit; maximum operating altitude 24,000 ft; CG +27.0 to +33.0 in. Special conditions in FAA Docket 9972, 12 November 1969 | The same airframe family took a 33% weight increase and pressurisation on one TC. That is evidence the 200's structure has margin, not a measurement of it | P |
 | **Jane's All the World's Aircraft 1967-68**, as transcribed by Wikipedia | Span 30 ft 6 in; length 24 ft 4 in; height 7 ft 4 in; wing area 161.5 sq ft; empty 1,940 lb; maximum cruise 210 mph (180 kt); stall 47 kt, wheels and flaps down | Not read in the original. Treat as a lead to the Jane's page | L (S once Jane's is read) |
 | **Airfoils** (UIUC "Incomplete Guide to Airfoil Usage") | Root NACA 23015, tip NACA 4412, for the Meyers 200, the Aero Commander 200 and the Interceptor 400 | A compiled list, not a drawing. The sections themselves are public NACA data | S |
@@ -167,14 +167,15 @@ way. It is a 1950s steel truss, and a new design would not copy it.
 These are questions to counsel, not conclusions. Two statutes frame them, and
 how they apply here is the attorney's call:
 
-- Trade secrets. Federal law defines "improper means" as including theft,
-  bribery, misrepresentation, breach of a duty of secrecy, or espionage, and
-  says it "does not include reverse engineering, independent derivation, or any
+- Trade secrets. Federal law says "improper means" "includes theft,
+  bribery, misrepresentation, breach or inducement of a breach of a duty to
+  maintain secrecy, or espionage through electronic or other means", and that it "does not include reverse engineering, independent derivation, or any
   other lawful means of acquisition" (18 USC 1839(6), P).
-- Copyright. "The design of a useful article ... shall be considered a
-  pictorial, graphic, or sculptural work only if, and only to the extent that,
-  such design incorporates pictorial, graphic, or sculptural features that can
-  be identified separately from ... the utilitarian aspects of the article"
+- Copyright. "the design of a useful article, as defined in this section,
+  shall be considered a pictorial, graphic, or sculptural work only if, and
+  only to the extent that, such design incorporates pictorial, graphic, or
+  sculptural features that can be identified separately from, and are capable
+  of existing independently of, the utilitarian aspects of the article"
   (17 USC 101, P). Drawings, manuals and the AFM are written works in their own
   right.
 

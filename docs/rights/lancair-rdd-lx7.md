@@ -23,9 +23,10 @@ company says about itself, not for whether its performance claims are true.
   LLC, registry 38977492, registered 18 October 2006; principal place of
   business 2244 SE Airport Way, Suite 130, Redmond (Oregon SOS, P). Co-owners
   David McRae (sales, marketing, business development) and Eric Schmidlin
-  (engineering, manufacturing), per its leadership page (P). It has "been
+  (engineering, manufacturing, business development), per its leadership page (P). It has "been
   providing expert ownership assistance for high-performance personal aircraft
-  (certified and experimental) since 2006" (rddent.com, P).
+  (certified and experimental) since 2006" (boilerplate in its releases on
+  rddent.com/news, P).
 - **What it does.** "RDD finds existing Lancair IV-P aircraft with valid
   operating certificates, takes them in house, cuts off the tail, removes the
   wing, strips all the systems out (including engine, landing gear and
@@ -69,10 +70,10 @@ comparison against the stock IV-P; these are the inputs.
 | Max gross | 3,750 lb | 3,850 lb | 3,750 lb |
 | Useful load (computed: gross minus empty) | 1,400 lb | 1,600 lb | 1,650 lb |
 | Fuel | 180 US gal | 180 US gal | 125 US gal |
-| Payload with full fuel (as published) | 320 lb | 294 lb | 900 lb |
+| Payload with full fuel (as published) | 320 lb | 294 lb (see note) | 900 lb |
 | Max cruise | 260 KTAS at FL250, 24 gph | 315 KTAS at FL250, 40 gph | — |
-| Economy cruise | 250 KTAS at FL250, 18 gph | 280 KTAS, 30 gph | — |
-| Range | 1,690 nm at max cruise, 2,250 nm at economy | 1,300 nm at max cruise | — |
+| Economy cruise | 250 KTAS at FL250, 18 gph | 280 KTAS, 30 gph, altitude not stated | — |
+| Range | 1,690 nm at max cruise ("with 1 hour reserve"); "2,250" at economy, unit not stated, nm assumed | 1,300 nm at max cruise | — |
 | Stall, Vso | 63 KIAS | 58 KIAS | — |
 | Cabin differential | 5 psid | 5 psid | none |
 
@@ -84,9 +85,21 @@ reduce stall (and therefore approach) speeds" (AvWeb 2019, S). The IV-P's stall
 and accident record is the reason it died (see the IV-P file). RDD's answer is
 to keep the fuselage and replace the lifting surfaces.
 
-**Caveats.** These are manufacturer figures, not tests. The 2,250 nm economy
-range is at 18 gph with 180 gal, which is 10 hours, with no reserve stated on
-that line. The 2019 AvWeb piece says 260 KTAS piston and 285 KTAS turboprop at
+**Caveats.** These are manufacturer figures, not tests.
+- **Range.** 180 gal at 18 gph is 10 h, which is 2,500 nm at 250 KTAS. The
+  published 2,250 is therefore about 9 h, so it already holds back about 1 h
+  (or a climb allowance). The reserve basis for that line is not stated. At
+  max cruise, 180 gal at 24 gph is 7.5 h, or 1,950 nm at 260 KTAS. The site's
+  1,690 nm is 6.5 h, matching its stated 1 h reserve.
+- **Turboprop payload.** 1,600 lb useful minus 180 gal of Jet A at about 6.7
+  lb/gal (1,206 lb) gives about 394 lb, not the published 294 lb. The piston's
+  320 lb does check (1,400 - 1,080). The turboprop figure is internally
+  inconsistent and is probably a typo. It is kept as published.
+- **Stall speeds.** AERO notes that the published Vso values imply a CLmax of
+  about 2.85 (piston) and 3.45 (turboprop) at gross. The second is beyond what
+  a double-slotted flap usually gives. AERO carries it as a brochure claim to
+  test (AER-3783).
+- **Speeds moved between sources.** The 2019 AvWeb piece says 260 KTAS piston and 285 KTAS turboprop at
 20,000 ft. The current site says 315 KTAS turboprop at FL250. The figures moved
 between sources.
 

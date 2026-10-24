@@ -55,7 +55,7 @@ Read directly from FAA DRS, 2026-10-24.
 | Status | "Current"; one version in DRS history (Rev 2, 1 July 1980; "Reformatted 2/94") | Same. P. |
 | Approvals | Model 51, 28 July 1976; Model 51A, 16 June 1980 | Same. P. |
 | Basis | 14 CFR Part 23 effective 1 February 1965, through Amendment 13. Applied for 12 December 1973 | Same. P. |
-| Seats | 4, or 5 with the optional fifth seat (Anderson, Greenwood Drawing 519012) | Same. P. |
+| Seats | 4 (2 at +112, 2 at +147), or 5 with a fifth seat at +182 (Anderson, Greenwood Drawing 519012) | Same. P. |
 | Engine | Lycoming O-540-A4D5 (Model 51) or IO-540-C4B5 (Model 51A), 250 hp at 2,575 rpm | Same. P. |
 | Maximum weight | 3,150 lb | Same. P. |
 | Fuel | 80 gal, two wing tanks at +117; 76 gal usable | Same. P. |
@@ -101,8 +101,9 @@ AG-14). Positive control: "Model" = M22 returns A6SW (P).
   next source to check.
 - **Construction:** all-metal, with a laminar-flow wing and a fuselage with an
   intentional "near absence of curved lines aft the engine" for easy production
-  (Wikipedia, citing AOPA Pilot, March 1977, L). Airfoil: NACA "60-412" (UIUC
-  airfoil list, S).
+  (Wikipedia, citing Berl Brechner, March 1977, via aeroresourcesinc.com, L;
+  Plane & Pilot attributes Brechner's 1977 report to AOPA Pilot, S). Airfoil: NACA "60-412" per the UIUC
+  airfoil list (S); Wikipedia gives "NACA 600412 modified" (L).
 
 ## Kit or plans rights
 
@@ -132,9 +133,10 @@ None.
 
 ## Why it died
 
-Anderson Greenwood bought control of Bellanca to build the Aries. Bellanca was
-weaker than expected, having just spent heavily on the composite Skyrocket II,
-and went into Chapter 11 in July 1980 (8th Cir., P; Plane & Pilot, S). The Aries
+Anderson and Greenwood "secured a controlling interest in Bellanca" to build
+the Aries (Plane & Pilot, S). Bellanca was weaker than expected, having just
+spent heavily on the composite Skyrocket II (Plane & Pilot, S), and went into
+Chapter 11 in July 1980 (8th Cir., P). The Aries
 production run ended with it. The design itself was not the cause on the record.
 Its owner was a valve company, and the 1976 arrangement licensed manufacture
 to Bellanca rather than building the aircraft itself (8th Cir., P). The 1985

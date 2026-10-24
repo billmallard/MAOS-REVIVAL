@@ -15,8 +15,9 @@ Source quality: **P** primary or official record; **S** reputable secondary;
 
 ## Summary
 
-- **No type certificate. A kit, built to Part 23 standards.** Every registered
-  example is experimental (FAA registry, P). Wikipedia says it "was designed to
+- **No type certificate. A kit, built to Part 23 standards.** Three of the four
+  registered examples are experimental; the fourth, N40LE, has no
+  classification on record (FAA registry, P). Wikipedia says it "was designed to
   FAR Part 23 certification standards of the time" (L, citing Sport Aviation,
   March 1986).
 - **The engineering record survives, in a public archive.** The San Diego Air &
@@ -46,9 +47,11 @@ Source quality: **P** primary or official record; **S** reputable secondary;
 
 ## Type certificate
 
-None. Amateur-built kit. The prototype, N41PP (s/n 001, 1985), is registered to
-"Prescott Aeronautical" in Kansas, experimental (FAA registry, P). The Kansas
-Aviation Museum displays a Prescott Pusher (Wikipedia, L).
+None. Amateur-built kit. The prototype, N41PP (s/n 001, 1985), lists
+manufacturer PRESCOTT AERONAUTICAL and is **registered to the Kansas Aviation
+Museum, Wichita**. Its category is Experimental, Market Survey / Research and
+Development, with an airworthiness date of 24 September 1986 (FAA registry, P).
+So the museum's displayed Pusher is the prototype.
 
 ## Holder or seller today
 
@@ -74,7 +77,7 @@ Aviation Museum displays a Prescott Pusher (Wikipedia, L).
 ## Drawings, molds and tooling
 
 - **Drawings: survive, at SDASM.** The listing is drawing-number by
-  drawing-number. Series V alone runs to about 165 folders across Boxes 3 and 4. Series II has
+  drawing-number. Series V alone runs to 185 folders (Box 3 folders 1-86, Box 4 folders 1-99). Series II has
   installation, engineering and original tooling drawings.
 - **The design was CAD/CAM from the start.** The Pusher was "the first aircraft
   in its class totally designed using CAD/CAM" (SDASM, P). The archive holds
@@ -89,8 +92,10 @@ Aviation Museum displays a Prescott Pusher (Wikipedia, L).
 ## Kit or plans rights
 
 The kit was sold in 33 sub-kits, each with a manual and a video
-(airplanezone, L). SDASM holds the manuals for kits 101-131 and the videotapes
-(P). No one has sold the kit since the company closed. The builders' rights to
+(airplanezone, L). SDASM holds the manuals for kits 101-131 (P). The
+videotapes were "removed from this collection and transferred to the Audio
+Visual Collections", so they are still at SDASM but not in SC.10269 (finding
+guide, P). No one has sold the kit since the company closed. The builders' rights to
 complete and maintain their own aircraft are not in question. The right to sell
 new kits or plans is the open one.
 
@@ -121,9 +126,9 @@ is published on Outerzone. That is a model plan, not the aircraft's drawings
 ## Fleet
 
 - FAA registry, 2026-10-24 (P), records whose make or model names the Prescott
-  Pusher: **4**. N41PP (s/n 001, the prototype, Kansas), N10JS (s/n 008,
+  Pusher: **4**. N41PP (s/n 001, the prototype, Kansas Aviation Museum, experimental R&D), N10JS (s/n 008,
   California, airworthiness 1991), N200SX (s/n 100, Florida, 1996) and N40LE
-  (s/n 32, Illinois, no airworthiness date).
+  (s/n 32, Illinois, classification "Unknown", no airworthiness date).
 - **This is a lower bound.** Amateur-built aircraft are registered under the
   builder's name and model string. AERO is doing the full survivor count.
 - **Built:** 68 kits sold (Wings Over Kansas, S). By 1991 there were "approximately
