@@ -186,7 +186,7 @@ Mission targets: useful load >= 1,000 lb, range >= 1,000 nm, cruise > 160 KTAS (
   - 2003 projection: cruise 230 kt at 22,000 ft, 210 kt at 60%; empty 4,200 lb, gross 6,300 lb, useful 2,100 lb, 720 lb payload with full fuel (F, AOPA 2003 report on company figures).
   - As built: empty about 1,260 lb (30%) over projection, and 160 lb payload with full fuel (via Wikipedia, citing 2007 evaluation flights).
   - Range 892 nm at 75% (via Wikipedia).
-- Why it failed: empty-weight growth, cash burn on the A700 jet, then bankruptcy (via Wikipedia). Category: technical (weight) plus money.
+- Why it failed: Adam Aircraft filed for Chapter 7 bankruptcy in February 2008 (via Wikipedia). Empty-weight growth is on the record (via Wikipedia); that it caused the failure is our inference, not the page's. Category: money, with a weight lesson.
 - Idea worth keeping: centerline push-pull thrust removes asymmetric engine-out handling. The bigger lesson is weight: a composite airframe drawn by a top team still came in 30% heavy. Weight margins must be earned in detailed design.
 - Relevance: a weight-growth warning for any composite 6-seat at 1,000 lb useful.
 - Sources:
@@ -218,7 +218,7 @@ Mission targets: useful load >= 1,000 lb, range >= 1,000 nm, cruise > 160 KTAS (
 - Designer / maker: Société Wassmer, Issoire, France.
 - Years: WA-50 prototype first flight 22 Mar 1966; production 1969-1977 (via Wikipedia).
 - Number built: 154 in total: WA-51 39, WA-52 59, WA-54 55 (via Wikipedia).
-- Seats: 4. Retractable tricycle gear (via Wikipedia).
+- Seats: 4. Fixed tricycle gear on the production WA-51, WA-52 and WA-54; only the WA-50 prototype had retractable gear (via Wikipedia).
 - Engines: Lycoming O-320 at 150 hp, IO-320 at 160 hp, or O-360 at 180 hp, depending on variant (via Wikipedia; flugzeuginfo).
 - Performance:
   - WA-54: cruise 260 km/h at 1,700 m, range 1,340 km, empty 620 kg, gross 1,130 kg (via Wikipedia, citing Jane's, F).
@@ -242,7 +242,7 @@ Mission targets: useful load >= 1,000 lb, range >= 1,000 nm, cruise > 160 KTAS (
 - Performance:
   - 300C as marketed in 2003: 166 kt max cruise, 147 kt economy at about 13 gph, useful load 1,100 lb, range 1,460 mi with no reserve, price $290,000 (F, AvWeb 2003).
   - Wikipedia gives 147 kt at 8,000 ft, 905 nm, empty 2,300 lb, gross 3,400 lb.
-- Why it failed: certification dragged from 2007 to 2016 without a TC. Prototypes crashed in 2007 and 2014. There were funding shortfalls and Canadian tax-refund disputes, and the founder died in 2019 (via Wikipedia). Category: certification cost and money.
+- Why it failed: certification dragged from 2007 to 2016 without a TC. Prototypes crashed in 2007 and 2014. There were funding shortfalls and Canadian tax-refund disputes, and owner Richard Silva died in 2019 (via Wikipedia). Category: certification cost and money.
 - Idea worth keeping: a composite amphibian still offered about 1,100 lb useful at 3,400 lb gross, showing what composite structure allows at this size. The failure is a textbook case of certification scope outrunning funding.
 - Relevance: low-medium. Use it as a structural-weight and program-risk reference only.
 - Sources:
@@ -252,7 +252,7 @@ Mission targets: useful load >= 1,000 lb, range >= 1,000 nm, cruise > 160 KTAS (
 ### 12. LearAvia Lear Fan 2100
 
 - Designer / maker: Bill Lear (died 1978), LearAvia; production planned in Belfast (via Wikipedia).
-- Years: first flight 1 Jan 1981; abandoned 1985 (via Wikipedia). Built: 3, all now in museums.
+- Years: first flight 1 Jan 1981; abandoned 1985 (via Wikipedia). Built: 3; two are in museums and the third is on static display at the FAA Civil Aerospace Medical Institute (via Wikipedia).
 - Seats: 2 crew plus 6 passengers, pressurized (via Wikipedia).
 - Engines: 2 x PT6B-35F at 650 shp each, driving one pusher propeller through a combining gearbox on separate shafts (via Wikipedia).
 - Performance: cruise 322 mph at 40,000 ft, range 1,783 mi, empty 4,100 lb, gross 7,350 lb (via Wikipedia, F). Useful load is about 3,250 lb (E, AeroCommons arithmetic).
@@ -291,7 +291,7 @@ Mission targets: useful load >= 1,000 lb, range >= 1,000 nm, cruise > 160 KTAS (
 3. Toyota FV2400: installed weight, BSFC and the actual reasons for cancellation are missing. Only secondary sources were found.
 4. Bellanca Aries T-250: TCDS not located in DRS. Need a TCDS number for gross weight, fuel and engine (to settle 76 vs 80 gal).
 5. Jetcruzer 450: spin-resistance certification is claimed by Wikipedia but absent from the TCDS text. Check the FAA spin-resistance criteria history and AFM.
-6. Wassmer WA-54: empty weight of 620 kg looks low for a retractable 4-seat. Verify against a DGAC or EASA TCDS or a Jane's scan.
+6. Wassmer WA-54: verify the 620 kg empty weight (fixed gear) against a DGAC or EASA TCDS or a Jane's scan.
 7. Commander 114TC: production count for the 114TC alone is not found. The 200 hp figure in Plane and Pilot conflicts with the TCDS 270 hp.
 8. Liquid-cooled precedents not yet sourced: TCM Voyager liquid-cooled engines (Rutan Voyager rear engine, TSIOL-550 in the Lancair IV-P option); Orenda OE600 V8; Teledyne GAP diesel under NASA GAP. These are engine-side follow-ups.
 9. Laminar-flow evidence for the Bellanca Aries is only a Wikipedia mention. A NASA NTRS search for Aries or Anderson-Greenwood wing data would firm it up.

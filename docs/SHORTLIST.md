@@ -196,9 +196,9 @@ figures are as published and graded in the research note
 | Diamond DA50 (2007 programme) | 2007-09, prototypes | An airframe designed from the start for gasoline, diesel or turboprop up to 350 hp; fixed gear at 180 kt | Programme shelved |
 | Scaled Composites Catbird | 1988, 1 | A three-surface, flapless laminar composite five-seater: 192 mph average on 8.9 gph over a CAFE course (R) | A one-off demonstrator |
 | Commander 114TC | 1995-2002 | A roomy, strong turbocharged four-seater: 187 KTAS at 75% (P) | Capital and market |
-| Adam A500 | 2002-08, 7 | Centreline push-pull twin, and a warning: about 160 lb of payload with full fuel as built against 2,100 lb planned (via Wikipedia) | Empty-weight growth and money |
+| Adam A500 | 2002-08, 7 | Centreline push-pull twin, and a warning: about 160 lb of payload with full fuel as built against 2,100 lb planned (via Wikipedia) | Bankruptcy in 2008, after empty-weight growth (via Wikipedia) |
 | AASI Jetcruzer | 1989-2002, 5 | A canard pusher certified against spin-resistance criteria | Money; wrong size and engine for us |
-| Wassmer WA-50 series | 1966-77, 154 | The first certified all-composite production four-seater | Small maker, small market |
+| Wassmer WA-50 series | 1966-77, 154 | The first certified all-composite production four-seater | Working-capital problems; receivership in 1977 (via Wikipedia) |
 | Seawind 300C | 1982-2021, about 80 kits | A composite amphibian that still carried 1,100 lb (F) | Certification and funding |
 | Lear Fan 2100 | 1981-85, 3 | Buried engines driving one pusher prop through shafts, in a pressurised composite fuselage: the Rohr's propulsion idea at a larger scale | Certification cost and money |
 
