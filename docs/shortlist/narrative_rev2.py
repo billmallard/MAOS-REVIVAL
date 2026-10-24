@@ -281,3 +281,125 @@ for _k, _v in AXES.items():
 
 UPDATES["lancair-iv-p"]["bill"] += " Elon's follow-up (PR #6) found no Austin holder in the public record; it still shows JetEXE, Sacramento."
 NEW["rohr-2-175"]["next"] += "\n- A lead from Elon (PR #6): SDASM holds a signed copy of Bill Chana's memoir, *Over the Wing: The Bill Chana Story* (2003), as archival object 5291. Chana was the 2-175's deputy programme manager; whether it covers the 2-175 is not known. Reading it is museum contact, so Bill's call."
+
+
+PRESCOTT_CONFIG = """
+Sources and the full fleet and accident tables: `docs/shortlist/check/prescott/README.md`.
+
+- **The engine sits in the tail cone, right behind the cabin, and drives the propeller through a 12 in extension, not a drive shaft.** Sport Aviation (March 1986): "the shaft is only 12" long." Prescott chose it deliberately: "Early in the design, I decided not to accept the challenges associated with a mid-engine aircraft and the six to eight foot drive shaft that the mid-engine dictates" (RCM, July 1986, F). The museum's drawing list has a "prop extension" (15302) and an adapter bushing, and no coupling, bearing or damper drawings, so it is most likely a bolted flange spacer (our inference). **No drive failure is on record.** The one drive-train event is a wooden propeller that separated in cruise two weeks after being refitted, with elongated bolt holes, cause undetermined (NTSB LAX05LA270).
+- **Propeller:** 65 in recommended, 68 in the largest flown (F). Ground clearance is not published and is called marginal in several sources; the short gear that clearance forced meant a small propeller.
+- **Tail:** a T-tail on a swept fin, horizontal tail 29.3 ft2 (11 ft span). The 1/5-scale plan drawn by Prescott shows a small ventral fin ahead of the propeller; not confirmed at full scale.
+- **Cooling:** air-cooled, in the tail cone. The prototype overheated its oil until the cooler moved to the nose; builders report a hot right rear cylinder (AOPA 1986; Sport Aviation 1991).
+- **Structure:** a TIG-welded 4130 square-tube cage with non-structural fibreglass shells flush-riveted to bulkheads (3-8 plies, CAD-cut patterns), so everything can be installed before the shells go on. Aluminium wing: a press-brake-formed 2024 C-spar with nested extrusion caps, stretch-formed leading edges on CAD/CAM steel dies, NLF(1)-0215F section. Spar tested beyond +3.8/-1.5 g; gear drop-tested to 5.5 g; designed to Part 23 but never certificated (Sport Aviation 1986; Prescott 2007).
+- **Gear:** fibreglass mains and an Airite nose gear, hydraulic retraction (fixed and retractable kits were offered). The mains sit far aft because the flight CG is far aft; rotation was hard (Wainfan, Kitplanes).
+- **Dimensions** (Prescott 2007, F): span 29 ft 4 in, wing 110.8 ft2 (aspect ratio 7.8), length 20 ft 3 in, height 8 ft 9 in, cabin 42.5 in wide. 2,400 lb gross (designed for 2,250, loads report and tests redone at 2,400); 1,550 lb factory empty; 56.5 gal in the wing leading edges (prototype 2). No dimensioned three-view survives online; the RCM 1/5-scale plan (Outerzone oz14320) is drawn by the designer, with a full-scale dimension table.
+- **The fleet** (FAA registry, 2026-10-24): 4 current registrations and 15 deregistered, so 19 airframes ever on the US register. Likely airworthy now: N10JS (Allison 250 turbine) and N200SX (O-540). N41PP, the first prototype, is at the Kansas Aviation Museum. Two more are known abroad. Builders re-engined widely (O-540, Ford V-6, Mazda rotary, Allison 250). **The one weighed builder aircraft**, N747P, came out at 1,555 lb in the shop and 1,661 lb finished with ballast for CG (Sport Aviation 1991), so 739 lb useful: two adults and full fuel. Its first customer called it "really only a two-seat airplane" (Syracuse, Kitplanes).
+"""
+
+PRESCOTT_GAP = """
+**The brochure's 165 KTAS at 7,500 ft against Kitplanes' measured 151 KTAS at 73%.** Kitplanes' May 1988 figure ("174 mph true at 73% power", second prototype) has no published altitude, weight or rpm; the full article was not reachable. Our model resolves the two this way:
+
+| Claim | Drag factor our model needs to reproduce it | Reading |
+|---|---|---|
+| Brochure: 165 KTAS at 7,500 ft, 75% (135 hp), 2,400 lb | 1.35 | Inside the fleet band (1.16-1.36): the brochure is consistent with the airframe's geometry |
+| Kitplanes: 151 KTAS at 73% (131 hp), if flown at sea level | 1.46 | Draggier than the band |
+| The same, if flown at 7,500 ft | 1.67 | Much draggier: Defiant-like |
+
+So either Kitplanes flew low and the airplane is 10-25% draggier than its geometry predicts, or the 73% was optimistic: on prototype 1 the fixed-pitch wood propeller held the engine to 2,400-2,600 rpm. The builders' verdict sides with the measurement: "The Prescott Pusher with the 180-hp Lycoming really didn't match up to its marketing numbers" (Syracuse, Kitplanes, B), and Wainfan wrote that "once it got into the air, it proved to have disappointing performance." We carry both bases in every result below, labelled, and never mix them. Every pusher in this survey with measured points reads draggy (Defiant 1.72, Velocity 1.63); the planform study (AER-3807) is the place to test whether that is the configuration.
+"""
+
+PRESCOTT_LEVERS = """
+Bill's question: on an Aeromomentum engine, turbo-normalised at altitude, what moves useful load (850 lb published, 150 short), range (869 nm published, about 130 short) and speed, and does it clear all three floors? Script and full tables: `docs/shortlist/check/prescott/levers.py`. Assumptions: 195 / 120 hp continuous and 8,000 / 16,000 ft critical altitudes are ours; the structure deltas are placeholders until MANUFACTURING (AER-3784) answers; the 75 and 90 gal tankage is our estimate (the 15% wing has about 280 gal of geometric volume).
+
+**The engine sits in the tail, so engine weight costs twice.** Every pound added behind the cabin needs about 1.3 lb of nose ballast to keep the CG where it was (our estimate of the arms), and the Prescott's CG was already its weak point. The AM20T is 61 lb heavier installed than the O-360, which costs about 82 lb of ballast; the AM15T is 26 lb lighter and saves about 35 lb.
+
+| Lever | Useful load | KTAS (brochure basis / measured basis) | Range, nm, full fuel, still air, at continuous power |
+|---|---|---|---|
+| As published (O-360) | 850 | 165 at 7,500 ft (published) | 869, reserve not stated (published) |
+| AM20T alone, 16,000 ft critical altitude | 707 (-143) | 207 / 196 | 705 / 669 |
+| AM15T alone, 16,000 ft | 911 | 169 / 159 | 934 / 883 |
+| AM20T + 90 gal | 707 | 207 / 196 | 1,187 / 1,127 |
+| AM20T + 90 gal + 200 lb lighter structure, at 2,400 lb | 907 | 207 / 196 | 1,187 / 1,127 |
+| **AM20T + 90 gal + a 2,700 lb gross structure no more than 100 lb heavier per pound of gross than today's (net -100 lb)** | **1,077** | **204 / 194** | **1,172 / 1,112** |
+| AM15T + 90 gal + 200 lb lighter, at 2,400 lb | 1,111 | 169 / **159** | 1,587 / 1,503 |
+
+**What each lever buys.** More power at altitude buys speed and nothing else: the AM20T lifts cruise to 194-207 KTAS and costs useful load through the tail-cone weight. More fuel buys range and nothing else: 90 gal clears 1,000 nm at continuous power on both bases. A lighter structure buys useful load pound for pound, but at 2,400 lb even 200 lb lighter leaves the AM20T version at 907 lb. **It clears all three floors on both bases only as a re-derivation**: a structure designed for about 2,700 lb gross, about 100 lb lighter than today's structure would be at that weight, 90 gal, and the AM20T. The AM15T alternative clears load and range at 2,400 lb with a 200 lb lighter structure, but its cruise speed falls to the floor (159-169 KTAS). With 90 gal aboard at 2,700 lb, the AM20T re-derivation carries about 540 lb of people and baggage: it is a four-seater with full fuel only for light occupants, as the original was.
+
+**The real constraint is balance, not power.** The AM20T makes the Prescott fast, but its weight in the tail cone makes the documented aft-CG problem worse. A re-derivation would move the wing aft or lengthen the forward fuselage to put the CG where the gear and the tail want it, and that, not the engine, is the design work.
+"""
+
+PRESCOTT_DIED = """
+On the record (sources in `docs/shortlist/check/prescott/README.md`):
+
+1. **Handling and performance disappointed, early and publicly.** AOPA Pilot (1986) was briefed on a ground-effect pitch-up, found pitch "quite sensitive" at low speed, and noted "no aerodynamic warning" at the stall. Builders reported early lift-off and pitch oscillation from an aft CG ("Yes, we narrowed the CG envelope after that flight"), roll-off at lift-off, and hard rotation. Its first customer called it "somewhat of a ground hog". A retrospective puts it bluntly: "What ultimately killed the market for the Prescott Pusher, however, was the negative buzz generated after some early completions" (airplanezone, L).
+2. **The layout's own consequence.** Wainfan: "A rear-engine airplane like the Prescott Pusher is very challenging aerodynamically because the flight CG is so far aft on the fuselage." That put the mains aft, which made rotation hard, and kept the gear short for propeller clearance, which forced a small, inefficient propeller.
+3. **Financing and control.** Tom Prescott's own account (2007): "The original marketing grass-roots pay-as-you-go approach was elevated to a high-dollar pay-up-front strategy", and his and Stan Blankenship's key contributions "evaporated in the face of requirements demanded by the financial backer." He also says the delivered kits "had the essence but not all the aerodynamic and structural refinements envisioned or planned".
+4. **Parts.** The first customer to fly started "as builder number 29 and I finished first–only because I kept dogging Prescott for parts" (Syracuse, 1989); "the Prescott team was much better at marketing than producing parts."
+5. **The end.** In October 1988 Kitplanes reported the company "was being sold to an Australian outfit, which offered no plans about further development"; kit sales stopped in early 1989; SDASM says the company folded in 1991 with builders still completing aircraft. The second prototype was later registered to "Pusher Aircraft Inc", Wichita, until 2018: a lead for the rights work (passed to Elon).
+
+**Does a revival fix it?** The business causes (parts, financing model), yes. The handling causes trace to the aft CG of an engine in the tail; a revival fixes them only by redesigning the balance (wing position, gear, forward fuselage) and flight-testing rotation and stall warning. That is engineering, not a kit-logistics fix.
+"""
+
+PRESCOTT_ROHR = """
+Bill's two highest-interest designs may share a theme: a clean forward fuselage with the propeller at the back. **What the evidence shows:**
+
+| | Prescott Pusher | Rohr 2-175 |
+|---|---|---|
+| Engine | In the tail cone right behind the cabin | Buried in the fuselage behind the seats |
+| Drive | 12 in prop extension; no drive failure on record | Short extension shaft; redesigned for vibration; one coupling failure in flight |
+| Propulsor | Open 65-68 in prop, marginal ground clearance | 40 in fan in a duct, enclosed |
+| Planform | Conventional, AR 7.8, T-tail | Tailless delta, AR 2.2, elevons |
+| Structure | Steel-tube cage, fibreglass shells, riveted aluminium wing | Sparless foam-core fibreglass stressed skin |
+| Storage | 29.3 ft span, no folding | 20 ft span, outer wings and fin fold for a single-car garage |
+| Seats, weight | 4 (really 2+2), 2,400 lb | 2, 1,450 lb |
+| Cooling | Oil overheat fixed by moving the cooler; hot rear cylinder | Dorsal scoop and exhaust ejector; no overheating at 108 deg F |
+| Takeoff and pitch | Pitch-sensitive in ground effect, aft CG, hard rotation | Dog-tooth added for pitch-up; few flights, no handling record to speak of |
+
+**What they share is real, and it is mass at the back.** Both put the propeller behind a clean cabin, and both pay for it in balance: the Prescott's documented aft-CG handling and nose ballast, and the 2-175's scale-up limit (Study 1 of its dossier), where two rows of seats ahead of the engine strain a tailless wing's trim range. Both also had to work at cooling an engine with no propeller blowing over it. **Where they differ is everything else**: planform (the opposite ends of the aspect-ratio argument), propulsor (open prop with a clearance problem against a duct that removes it), structure and storage. So the configuration is a thread in its benefits (a clean, quiet cabin and a protected or short drive) and in its one shared problem (CG); the planform is not shared, and AER-3807 weighs that separately.
+"""
+
+NEW["prescott-pusher"] = dict(
+    rank="2 of 6",
+    results=["prescott-pusher"],
+    bill='Bill, 2026-10-24: "Prescott Pusher should also be of high interest. This is possibly the top of my list as a target of interest." Moved to the top tier and given the full treatment.',
+    verdict="""**Rank 2, top tier.** As published it passes speed (165 KTAS at 7,500 ft) and misses useful load by 150 lb (850) and range by about 130 nm (869 nm, reserve not stated). As measured it is weaker: the one weighed builder aircraft had 739 lb useful, and Kitplanes measured 151 KTAS at 73% at an unpublished altitude, which our model can reproduce only with a drag factor of 1.46-1.67 against the brochure's 1.35. On an AM20T it is fast (194-207 KTAS) but the engine's weight in the tail costs about 143 lb of useful load with ballast; **it clears all three floors on both drag bases only as a re-derivation**: about 2,700 lb gross, a structure about 100 lb lighter than today's would be at that weight, 90 gal, and the AM20T (1,077 lb, 1,112-1,172 nm, 194-204 KTAS). Its two great assets are a short 12 in prop extension instead of a drive shaft, and the best-preserved engineering record in the survey (SDASM SC.10269: drawings, loads report, wind-tunnel evaluation, structural tests). Its weakness is balance: a far-aft CG that made rotation hard and pitch sensitive, which a heavier engine in the tail makes worse. It ranks behind the Aries, which clears the floors on a straight engine swap, and ahead of the Express, because its engineering survives and it has no long shaft or known tail flaw.""",
+    ideas=["**A pusher without a drive shaft.** Engine in the tail cone, prop on a 12 in extension: the clean forward fuselage and quiet cabin of a pusher without the VK-30's shaft risk. No drive failure is on record.",
+           "**Build sequence for a home shop.** A welded tube cage with every system installed before non-structural fibreglass shells go on; shells from CAD-cut patterns. The plugs cost about a tenth of the $200,000 factory tooling (Sport Aviation 1986).",
+           "**CAD/CAM from day one** (\"the first aircraft in its class totally designed using CAD/CAM\", SDASM), with stretch-formed leading edges on CAD-made dies: a 1980s preview of a digital kit.",
+           "**An NLF(1)-0215F laminar wing** with reflexed flaps and ailerons, on a metal structure.",
+           "**The archive.** Drawings, loads, wind-tunnel and structural test reports in a public museum collection: the strongest re-derivation basis in the survey (rights and use terms: attorney, per Elon).",
+           "Lesson: put the CG, the main gear and the propeller clearance together first; an engine in the tail drives all three, and the Prescott's handling complaints trace to that.",
+           "Lesson: a financing model that turned pay-as-you-build into pay-up-front, and parts that lagged marketing, lost the builders' trust before the airplane could earn it."],
+    axes=f"""**Aspect ratio 7.8**: a conventional wing, on the high-aspect-ratio side of {PLANFORM_LINK}; the Rohr 2-175 is its opposite.
+
+- **Storage.** 29.3 ft span, 20.3 ft long, 8 ft 9 in high: fits a 40 ft T-hangar door. The wings bolt on with two bolts per side at the root (Sport Aviation 1986), but no folding or quick removal is described.
+- **Construction with home-shop tools.** A good fit. The 4130 square-tube cage is router-jig and welder work; the non-structural shells come off plugs, and plugs are what a home CNC router and a large-format printer can make in sections. The riveted aluminium wing used press-brake spars and stretch-formed leading edges on steel dies; the dies are a service job, the rest is home-shop sheet metal. Largest part a 14.7 ft half-wing; root spar about 8.2 in deep. Builders praised the fit of the sub-kits and found the fibreglass shell the worst job.
+- **Safety.** Stall: "super gentle, with practically zero roll tendency" (Sport Aviation 1986) but with "no aerodynamic warning" (AOPA 1986, which saw stall strips being tried); full-stall landings end abruptly (Kitplanes 1988). Spin: never tested as far as the record shows. Takeoff pitch sensitivity and aft-CG lift-off are the documented hazard. Best L/D about 15.7 at 110 KTAS (propeller drag excluded). Pusher-specific events: a door that came off into the propeller (CEN09CA386), and a propeller that separated (LAX05LA270). Both fatal accidents were Ford V-6 conversions.
+- **Ride comfort.** Gust dn 1.63 at 21.7 lb/ft2: in the rough half of the shortlist. AOPA (1986) found bumps took three to four pitch oscillations to settle. Cabin 42.5 in wide, "same as a Bonanza"; rear seats sit higher, on the carry-through; quiet enough at taxi for normal conversation (Sport Aviation 1986).""",
+    extra_sections=[("Configuration in detail, and the fleet", PRESCOTT_CONFIG),
+                    ("Published against measured: the 165 against the 151", PRESCOTT_GAP),
+                    ("Where it lands on an Aeromomentum engine, and what moves it", PRESCOTT_LEVERS),
+                    ("Why it died, properly", PRESCOTT_DIED),
+                    ("The Prescott and the Rohr 2-175: is the configuration the thread?", PRESCOTT_ROHR)],
+    engine="""- **AM20T** (260 hp; 195 hp assumed continuous): 194-207 KTAS at its critical altitude, but 61 lb heavier installed than the O-360, in the tail, which needs about 82 lb of nose ballast (E). See the levers table.
+- **AM15T** (160 hp; 120 hp assumed continuous): 26 lb lighter, keeps useful load, cruises at the 160 KTAS floor.
+- **Cooling:** liquid cooling would end the tail-cone air-cooling struggle, with a radiator inlet where the oil cooler went (the nose) or in the cone; not designed.
+- **Propeller:** the geared Aeromomentum output and a constant-speed prop should recover some of the efficiency the short fixed-pitch prop lost; clearance still limits diameter.""",
+    rights="""Open question (Elon, `docs/rights/prescott-pusher.md`, PR #6). No type certificate; a kit. The engineering record survives at the San Diego Air & Space Museum (Prescott Aeronautical Corporation Collection, SC.10269, open for research): the general-assembly drawing and well over a hundred part drawings including the prop extension, the basic loads report, a wind-tunnel evaluation, structural test reports, the pilot's manual and all kit manuals. Who owns the design rights is not known: the company stopped trading in 1989-1991, and no buyer or bankruptcy record has been found; the second prototype's later owner, "Pusher Aircraft Inc" of Wichita (registry to 2018), is a lead. Custody of papers is not ownership of copyright; an attorney is needed before any use. Reading the collection is museum contact, so Bill's call.""",
+    safety="""Record (NTSB bulk databases and CAROL, plus foreign reports): 4 confirmed US events, 1 fatal (N58PP, 1990, a Ford V-6 conversion whose engine seized on its first flight, LAX90DUM02), and a probable fifth, also fatal and also a Ford V-6 (N75FM, 1990, CHI90DEE10). Two events are tied to the pusher layout: the cabin door came off in flight and struck the propeller (N19PP, 2009, CEN09CA386), and a wooden propeller separated in cruise (N43PP, 2005, LAX05LA270). One go-around ended in a pitch-up and stall (N747P, 1992, MIA92LA186) on an aircraft whose builder had reported pitch sensitivity and roll-off at lift-off. About 20 airframes with unknown hours: no rate is possible.""",
+    died="See \"Why it died, properly\" above: early handling and performance disappointment tied to the aft CG of an engine in the tail, a financing change from pay-as-you-build to pay-up-front, parts that lagged marketing, and a sale abroad in 1988. A revival fixes the business causes directly and the handling causes only by redesigning the balance.",
+    next="""- MANUFACTURING (AER-3784): the modern-structure empty-weight delta, which replaces our placeholders in the levers table.
+- Kitplanes May 1988 in full (the 151 KTAS conditions), Flying (Oct 1985, Apr 1988) and Popular Mechanics (Aug 1986): not reachable online; a library or a purchased scan would settle the measured basis.
+- Reading SDASM SC.10269 (the loads report, the wind-tunnel evaluation, the weight-and-balance schedule): museum contact, Bill's call. It would replace most of our estimates.
+- A re-derivation sketch at about 2,700 lb with the CG, gear and propeller clearance laid out together (AERO, if it goes forward).""",
+)
+# re-rank: Aries 1, Prescott 2, Express 3, IV-P 4, Meyers 5, Mooney 301 6
+NEW["bellanca-t250-aries"]["rank"] = "1 of 6"
+UPDATES["express-2000"]["rank"] = "3 of 6"
+UPDATES["lancair-iv-p"]["rank"] = "4 of 6"
+NEW["meyers-200d"]["rank"] = "5 of 6"
+UPDATES["mooney-301"]["rank"] = "6 of 6"
+UPDATES["express-2000"]["verdict"] = UPDATES["express-2000"]["verdict"].replace("**Rank 2.**", "**Rank 3.**").replace("It ranks below the Aries because", "It ranks below the Aries and the Prescott because").replace("and because its rights are orphaned.", "because its rights are orphaned, and because the Prescott's engineering record survives where the Express's does not.")
+UPDATES["lancair-iv-p"]["verdict"] = UPDATES["lancair-iv-p"]["verdict"].replace("**Rank 3.**", "**Rank 4.**")
+NEW["meyers-200d"]["verdict"] = NEW["meyers-200d"]["verdict"].replace("**Rank 4.**", "**Rank 5.**")
+UPDATES["mooney-301"]["verdict"] = UPDATES["mooney-301"]["verdict"].replace("**Rank 5.**", "**Rank 6.**")

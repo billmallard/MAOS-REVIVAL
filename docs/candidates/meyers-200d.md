@@ -79,7 +79,7 @@ TCDS 3A18 holder: Interceptor Aviation Inc., Bethany OK (2014; GlobalParts affil
 
 <!-- stage3:start -->
 
-## Stage 3: shortlist rank 4 of 5 (AER-3783)
+## Stage 3: shortlist rank 5 of 6 (AER-3783)
 
 Our own check, from published geometry and weights, calibrated against published flight data. Method, calibration and the Aeromomentum assumptions are in [docs/SHORTLIST.md](../SHORTLIST.md). Rights are research, not legal advice. Nobody has been contacted.
 
@@ -89,7 +89,7 @@ Bill, 2026-10-24: "Interesting to me." He can't afford the rights and is "not su
 
 ### Verdict
 
-**Rank 4.** As published it fails range (782 nm on normal fuel with a 45-minute reserve) and passes useful load (1,060 lb) and speed (182 KTAS at 75%, altitude not stated). As measured it is a near miss: about 900 lb useful at the fleet-typical 2,100 lb empty, and 178 KTAS at 8,500 ft on about 67% (AOPA 1991). Our check needs a drag factor of 1.41 to match AOPA's point, just above the fleet band, which fits a 1960s riveted airframe with the skin waviness and protrusions Davisson noted; it gives 857 nm still air on 74 gal at 65% and 8,000 ft. On an AM20T: 178-189 KTAS, 831-863 nm on full fuel. So the speed is there and the range and empty weight are not, and both are what a re-derivation would fix: more fuel in the wing and a lighter structure. It ranks below the Express because a re-derivation is a new airplane, and above the 301 because a holder, a type certificate, drawings and 58 registered aircraft exist.
+**Rank 5.** As published it fails range (782 nm on normal fuel with a 45-minute reserve) and passes useful load (1,060 lb) and speed (182 KTAS at 75%, altitude not stated). As measured it is a near miss: about 900 lb useful at the fleet-typical 2,100 lb empty, and 178 KTAS at 8,500 ft on about 67% (AOPA 1991). Our check needs a drag factor of 1.41 to match AOPA's point, just above the fleet band, which fits a 1960s riveted airframe with the skin waviness and protrusions Davisson noted; it gives 857 nm still air on 74 gal at 65% and 8,000 ft. On an AM20T: 178-189 KTAS, 831-863 nm on full fuel. So the speed is there and the range and empty weight are not, and both are what a re-derivation would fix: more fuel in the wing and a lighter structure. It ranks below the Express because a re-derivation is a new airplane, and above the 301 because a holder, a type certificate, drawings and 58 registered aircraft exist.
 
 ### Idea ledger (what a new airplane should keep)
 

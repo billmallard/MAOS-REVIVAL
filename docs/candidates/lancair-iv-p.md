@@ -76,7 +76,7 @@ NTSB narrative WPR12FA180: 26% of Lancairs in accidents, 19% fatal (model and pe
 
 <!-- stage3:start -->
 
-## Stage 3: shortlist rank 3 of 5 (AER-3783)
+## Stage 3: shortlist rank 4 of 6 (AER-3783)
 
 Our own check, from published geometry and weights, calibrated against published flight data. Method, calibration and the Aeromomentum assumptions are in [docs/SHORTLIST.md](../SHORTLIST.md). Rights are research, not legal advice. Nobody has been contacted.
 
@@ -86,7 +86,7 @@ Bill, 2026-10-24: kept. He believes the assets went to a new company in Austin, 
 
 ### Verdict
 
-**Rank 3.** It has the speed: 200-211 KTAS on our check at an assumed 195 hp, and about 235 aircraft on the register. It ranks third for three reasons: the worst fatal record in the survey, with its stall-spin half tied to a 36 lb/ft2 wing loading; a cut to about 55% of its design power on an AM20T, which costs climb far more than cruise; and an open chain of title. The RDD LX7 re-wing (below) is the evidence that the wing problem can be engineered out, at a price.
+**Rank 4.** It has the speed: 200-211 KTAS on our check at an assumed 195 hp, and about 235 aircraft on the register. It ranks third for three reasons: the worst fatal record in the survey, with its stall-spin half tied to a 36 lb/ft2 wing loading; a cut to about 55% of its design power on an AM20T, which costs climb far more than cruise; and an open chain of title. The RDD LX7 re-wing (below) is the evidence that the wing problem can be engineered out, at a price.
 
 ### Idea ledger (what a new airplane should keep)
 

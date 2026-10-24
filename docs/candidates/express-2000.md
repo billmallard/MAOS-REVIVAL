@@ -79,7 +79,7 @@ Wheeler -> Express Design Inc. (1992) -> Express Aircraft Co. (1996/97) -> Compo
 
 <!-- stage3:start -->
 
-## Stage 3: shortlist rank 2 of 5 (AER-3783)
+## Stage 3: shortlist rank 3 of 6 (AER-3783)
 
 Our own check, from published geometry and weights, calibrated against published flight data. Method, calibration and the Aeromomentum assumptions are in [docs/SHORTLIST.md](../SHORTLIST.md). Rights are research, not legal advice. Nobody has been contacted.
 
@@ -89,7 +89,7 @@ Bill, 2026-10-24: "Very interesting... I never understood why this didn't do bet
 
 ### Verdict
 
-**Rank 2.** The best-evidenced design on the shortlist (a CAFE flight test and a weighed aircraft), with four real seats on 210-260 hp. On the long list's published column it passes useful load (1,045 lb, the kit maker's) and range (1,401 nm, which is CAFE's computed VFR range, not a maker's figure) but has no maker's speed; as measured it misses useful load by 99 lb (901 lb on the weighed aircraft) and cruises 169 KTAS at 6,190 ft. On an AM20T our check gives 179-191 KTAS and 1,062-1,115 nm on full fuel at continuous power. Its accident record is the problem, and the dig below connects it to the tail, the power the tail was asked to handle, and stall speeds higher than published, each with a stated fix and cost. It died of business execution, which a revival can fix. It ranks below the Aries because the tail must be re-derived and flight-tested before anything else, and because its rights are orphaned.
+**Rank 3.** The best-evidenced design on the shortlist (a CAFE flight test and a weighed aircraft), with four real seats on 210-260 hp. On the long list's published column it passes useful load (1,045 lb, the kit maker's) and range (1,401 nm, which is CAFE's computed VFR range, not a maker's figure) but has no maker's speed; as measured it misses useful load by 99 lb (901 lb on the weighed aircraft) and cruises 169 KTAS at 6,190 ft. On an AM20T our check gives 179-191 KTAS and 1,062-1,115 nm on full fuel at continuous power. Its accident record is the problem, and the dig below connects it to the tail, the power the tail was asked to handle, and stall speeds higher than published, each with a stated fix and cost. It died of business execution, which a revival can fix. It ranks below the Aries and the Prescott because the tail must be re-derived and flight-tested before anything else, because its rights are orphaned, and because the Prescott's engineering record survives where the Express's does not.
 
 ### Idea ledger (what a new airplane should keep)
 

@@ -6,6 +6,8 @@
 |---|---|---|---|---|---|---|---|---|
 | Bellanca (Anderson Greenwood) T-250 Aries (Model 51, O-540 250 hp) [AM-low] | AM20T | 8k | 185 (186) | 1,300 (1,364) | 906 | cannot | cannot (cannot) | 154: 901 / 859 |
 | Bellanca (Anderson Greenwood) T-250 Aries (Model 51, O-540 250 hp) [AM-high] | AM20T | 16k | 197 (198) | 1,300 (1,364) | 919 | cannot | cannot (cannot) | 161: 903 / 861 |
+| Prescott Pusher (prototype 2 standard, O-360 180 hp) [AM-low] | AM20T | 8k | 197 (205) | 789 (789) | 694 | cannot | cannot (cannot) | 166: cannot / cannot |
+| Prescott Pusher (prototype 2 standard, O-360 180 hp) [AM-high] | AM20T | 16k | 210 (219) | 789 (789) | 718 | cannot | cannot (cannot) | 176: cannot / cannot |
 | Wheeler Express FT (CAFE N360EZ) [AM-low] | AM20T | 8k | 179 (186) | 890 (890) | 1,062 | 376 | cannot (cannot) | 149: 481 / 439 |
 | Wheeler Express FT (CAFE N360EZ) [AM-high] | AM20T | 16k | 191 (199) | 890 (890) | 1,115 | 393 | cannot (347) | 157: 487 / 445 |
 | Lancair IV-P (TSIO-550, 30.2 ft wing) [AM-low] | AM20T | 8k | 200 (218) | 1,350 (1,592) | 1,136 | 881 | cannot (1,094) | 161: 962 / 920 |
@@ -34,6 +36,7 @@
 | Candidate | Matched factor (own points) | Factor used | Basis |
 |---|---|---|---|
 | Bellanca (Anderson Greenwood) T-250 Aries (Model 51, O-540 250 hp) | 1.30 | 1.30 | own published points |
+| Prescott Pusher (prototype 2 standard, O-360 180 hp) | - | 1.29 | fleet calibration (no published point with known power) |
 | Wheeler Express FT (CAFE N360EZ) | 1.16 | 1.29 | fleet calibration (own points read cleaner than the fleet) |
 | Lancair IV-P (TSIO-550, 30.2 ft wing) | 1.03 | 1.29 | fleet calibration (own points read cleaner than the fleet) |
 | Meyers / Aero Commander 200D (IO-520-A 285 hp) | 1.41 | 1.41 | own published points |

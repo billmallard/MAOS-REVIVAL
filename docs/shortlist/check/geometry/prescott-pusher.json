@@ -1,0 +1,317 @@
+{
+ "id": "prescott-pusher",
+ "variant": "Prescott Pusher kit standard as defined by Prescott Aeronautical (second prototype N42PP, s/n 002, later N128S, 'frozen design', 1987). Where only prototype-1 (N41PP, 1985-86) or 1986 design-table figures exist, that is stated in the note. Published figures disagree by 1-2 ft on span and 3 sq ft on area between sources; all variants given in notes.",
+ "config": "pusher, low wing, T-tail with small ventral fin under the prop disc (seen on the RCM 1/5 model plan), engine in the tail cone directly behind the cabin driving the propeller through a ~12 in propeller extension (not a long driveshaft); tricycle gear, retractable on most kits (fixed-gear kit offered)",
+ "wing": {
+  "span": {
+   "v": 29.33,
+   "unit": "ft",
+   "grade": "F",
+   "src": "https://1000aircraftphotos.com/Contributions/6802.htm",
+   "note": "29 ft 4 in, Tom Prescott's spec on 1000aircraftphotos (N42PP page, 2007). Sport Aviation Mar 1986 (prototype 1, Dick Cavin): 28.5 ft; RCM Jul 1986 designer table: 30.00 ft; Wikipedia 28 ft 5 in."
+  },
+  "area": {
+   "v": 110.8,
+   "unit": "ft2",
+   "grade": "F",
+   "src": "https://1000aircraftphotos.com/Contributions/6802.htm",
+   "note": "Prescott spec 110.8 sq ft, AR 7.76. Sport Aviation Mar 1986: 110 sq ft, AR 7.3, mean chord 3.93 ft; RCM Jul 1986 designer table: 113 sq ft."
+  },
+  "root_chord": {
+   "v": 4.67,
+   "unit": "ft",
+   "grade": "F",
+   "src": "https://outerzone.co.uk/download_file.asp?planID=14320&FileType=Supp&Filename=Prescott_Pusher_oz14320_article.pdf",
+   "note": "RCM July 1986 table 'Prototype' column (Tom Prescott); with 30.00 ft span / 113 sq ft geometry. Not confirmed for kit."
+  },
+  "tip_chord": {
+   "v": 3.0,
+   "unit": "ft",
+   "grade": "F",
+   "src": "https://outerzone.co.uk/download_file.asp?planID=14320&FileType=Supp&Filename=Prescott_Pusher_oz14320_article.pdf",
+   "note": "RCM July 1986 table; model data sheet gives 64.3% taper ratio. Sport Aviation 1986: spar caps 3 laminations at root tapering to 1 at tip; wing tapered in planform and thickness."
+  },
+  "sweep_le_deg": {
+   "v": 10.25,
+   "unit": "deg",
+   "grade": "P",
+   "src": "http://web.archive.org/web/20231210045500/https://p.pdfhall.com/tom-prescotts-pusher_5b7134c2097c4780378b4584.html",
+   "note": "Sport Aviation Mar 1986 'sweep angle is 10.25 degrees' (reference line not stated); same article later says 10.5; RCM model sheet 10.3 deg. Dihedral 3 deg, incidence 2 deg, washout -1.5 deg (Sport Aviation). Drooped 'Super Tips'."
+  },
+  "airfoil": "NASA NLF(1)-0215F at root and tip, modified at root; ailerons and flaps reflex to -5 deg in cruise [P, Sport Aviation Mar 1986; F, RCM 1986 model sheet]",
+  "tc_root": {
+   "v": 0.15,
+   "unit": "-",
+   "grade": "P",
+   "src": "http://web.archive.org/web/20231210045500/https://p.pdfhall.com/tom-prescotts-pusher_5b7134c2097c4780378b4584.html",
+   "note": "'It is 15% thick.'"
+  },
+  "tc_tip": {
+   "v": 0.15,
+   "unit": "-",
+   "grade": "P",
+   "src": "http://web.archive.org/web/20231210045500/https://p.pdfhall.com/tom-prescotts-pusher_5b7134c2097c4780378b4584.html",
+   "note": "same section root and tip per Sport Aviation"
+  },
+  "winglets": "no; drooped (downturned) 'Super Tips' added after Feb 1984 R/C model tests [P, Sport Aviation Mar 1986]"
+ },
+ "canard_or_htail": {
+  "kind": "htail",
+  "span": {
+   "v": 11.0,
+   "unit": "ft",
+   "grade": "F",
+   "src": "https://outerzone.co.uk/download_file.asp?planID=14320&FileType=Supp&Filename=Prescott_Pusher_oz14320_article.pdf",
+   "note": "T-tail; RCM Jul 1986 designer table 'Prototype' column"
+  },
+  "area": {
+   "v": 29.3,
+   "unit": "ft2",
+   "grade": "F",
+   "src": "https://outerzone.co.uk/download_file.asp?planID=14320&FileType=Supp&Filename=Prescott_Pusher_oz14320_article.pdf",
+   "note": "RCM Jul 1986 table; single full-span elevator with trim tab (AOPA Pilot Mar 1986). Elevator incidence changed -1.5 to -3.0 deg on prototype 1 (AOPA)."
+  },
+  "chord": {
+   "v": 2.75,
+   "unit": "ft",
+   "grade": "E",
+   "src": "https://outerzone.co.uk/download_file.asp?planID=14320&FileType=Supp&Filename=Prescott_Pusher_oz14320_article.pdf",
+   "note": "E: mean of RCM table root 3.33 ft / tip 2.17 ft"
+  },
+  "airfoil": "NACA 66(1)-012 [E: from the 1/5-scale R/C model data sheet, RCM Jul 1986; full-scale section not separately published]",
+  "tc": {
+   "v": 0.12,
+   "unit": "-",
+   "grade": "E",
+   "src": "https://outerzone.co.uk/download_file.asp?planID=14320&FileType=Supp&Filename=Prescott_Pusher_oz14320_article.pdf",
+   "note": "from NACA 66(1)-012 on model sheet"
+  }
+ },
+ "vtail": {
+  "count": 1,
+  "area_each": {
+   "v": 16.1,
+   "unit": "ft2",
+   "grade": "E",
+   "src": "https://outerzone.co.uk/download_file.asp?planID=14320&FileType=Supp&Filename=Prescott_Pusher_oz14320_article.pdf",
+   "note": "E: model sheet fin height 8.5 in x average width 10.9 in (incl. rudder) at 1/5 scale = 92.7 sq in x 25. Stand-off scale model; treat as rough."
+  },
+  "height": {
+   "v": 3.54,
+   "unit": "ft",
+   "grade": "E",
+   "src": "https://outerzone.co.uk/download_file.asp?planID=14320&FileType=Supp&Filename=Prescott_Pusher_oz14320_article.pdf",
+   "note": "E: 8.5 in model fin height x 5"
+  },
+  "root_chord": null,
+  "tip_chord": null,
+  "note": "Swept fin carrying a T-tail; the RCM plan also shows a small ventral 'sub fin' under the tail cone. Vertical stab static test 12 May 1986 and vertical tail test report 006 exist in SDASM SC.10269 (not read)."
+ },
+ "fuselage": {
+  "length": {
+   "v": 20.28,
+   "unit": "ft",
+   "grade": "F",
+   "src": "https://1000aircraftphotos.com/Contributions/6802.htm",
+   "note": "20 ft 3.4 in (Prescott); RCM table 20.28 ft"
+  },
+  "max_width": {
+   "v": 3.67,
+   "unit": "ft",
+   "grade": "F",
+   "src": "https://outerzone.co.uk/download_file.asp?planID=14320&FileType=Supp&Filename=Prescott_Pusher_oz14320_article.pdf",
+   "note": "RCM Jul 1986 table 'Width'"
+  },
+  "max_height": null,
+  "cabin_width": {
+   "v": 42.5,
+   "unit": "in",
+   "grade": "P",
+   "src": "http://web.archive.org/web/20231210045500/https://p.pdfhall.com/tom-prescotts-pusher_5b7134c2097c4780378b4584.html",
+   "note": "'Cabin width is a comfortable 42.5\" inside.' Prescott spec: 3 ft 6 in. Sport Aviation: cabin 'same as a Bonanza'."
+  },
+  "note": "TIG-welded square 4130 steel-tube frame (3/4 in x .035 wall typical; 1-1/4 in x .065 wing carry-through) carrying a non-structural fiberglass shell (3-8 plies) riveted to metal bulkheads; shells epoxied top and bottom. Overall height 8 ft 9 in (Prescott spec, F) vs 9.67 ft (RCM 1986 table, F). Left-side gull-wing/clamshell canopy door hinged at top. Baggage 100 lb (Prescott spec)."
+ },
+ "nacelles_or_booms": "none",
+ "gear": "tricycle; fiberglass main legs (7 lb each, drop tested to 5.5 g) and Airite nose gear; hydraulic retraction (electric pump, emergency hand pump) on retractable kits; fixed-gear kit offered at lower price. 5.00x5 wheels. Main gear moved ~8 in forward on prototype 2 (Kitplanes May 1988). [P, Sport Aviation Mar 1986; AOPA Pilot Mar 1986; Kitplanes]",
+ "cooling": "air-cooled flat engine in the tail cone, baffled (drawings 15901/15902); oil cooler moved to the nose (nose inlet) after the first two flights overheated the oil; a spinner added between flights 2 and 3 improved cooling (AOPA Pilot Mar 1986). Builder N747P: right rear cylinder persistently hot (Sport Aviation Sep 1991). Inlet sizes not published.",
+ "prop": {
+  "diameter": {
+   "v": 65,
+   "unit": "in",
+   "grade": "F",
+   "src": "https://1000aircraftphotos.com/Contributions/6802.htm",
+   "note": "factory-recommended 65 in; maximum flown 68 in (Tom Prescott, 2007). Ground clearance not published; airplanezone and Prescott both cite marginal clearance."
+  },
+  "blades": 2,
+  "type": "fixed (wood) on prototype 1 and many kits; Hoffmann 3-blade constant-speed ordered 1986; Taylor N747P fitted MT 3-blade CS; Prescott spec lists 'four-bladed variable pitch' (Avia project); I-EFTP (turbine) lists 5 blades",
+  "rpm_cruise": null
+ },
+ "engine": {
+  "model": "Lycoming O-360 180 hp (kit standard); builders fitted IO-360 (180-200 hp), O-540/IO-540, Ford V-6 (Blanton), Mazda rotary, Allison 250 turbine",
+  "hp": {
+   "v": 180,
+   "unit": "hp",
+   "grade": "F",
+   "src": "https://1000aircraftphotos.com/Contributions/6802.htm",
+   "note": ""
+  },
+  "turbo": false,
+  "dry_weight": null
+ },
+ "weights": {
+  "mtow": {
+   "v": 2400,
+   "unit": "lb",
+   "grade": "F",
+   "src": "https://1000aircraftphotos.com/Contributions/6802.htm",
+   "note": "Prescott: original design TOGW 2,250 lb; loads report modified and structure tested at 2,400 lb, +3.8/-1.5 g. Owner Ole Sindberg (N40LE, O-540) uses 2,600 lb normal / 2,800 lb alternate (quoted by Prescott, not endorsed)."
+  },
+  "empty": {
+   "v": 1550,
+   "unit": "lb",
+   "grade": "F",
+   "src": "https://1000aircraftphotos.com/Contributions/6802.htm",
+   "note": "Factory projected. AOPA Pilot Mar 1986: design empty 1,220 lb. Builder N747P: 1,555 lb in the shop, 1,661 lb finished with paint/interior/avionics plus ballast needed for c.g. (Sport Aviation Sep 1991, P)."
+  },
+  "max_landing": null,
+  "zero_fuel_max": null
+ },
+ "fuel_usable": {
+  "v": 56.5,
+  "unit": "gal",
+  "grade": "P",
+  "src": "https://www.kitplanes.com/archive-may-1988/",
+  "note": "wing leading-edge tanks on prototype 2 (capacity 45 -> 56.5 gal); total vs usable not stated. Prototype 1: 45 gal fuselage tank under the rear seat."
+ },
+ "perf_points": [
+  {
+   "ktas": 151,
+   "alt_ft": null,
+   "power_pct_or_hp": "73% (O-360 180 hp)",
+   "gph": null,
+   "weight_lb": null,
+   "grade": "P",
+   "src": "https://www.kitplanes.com/archive-may-1988/",
+   "note": "Kitplanes May 1988, LeRoy Cook, N42PP: '174 mph true at 73% power'. Altitude, weight, OAT, rpm, prop not given in the archive summary; the full article was not found online."
+  },
+  {
+   "ktas": 165,
+   "alt_ft": 7500,
+   "power_pct_or_hp": null,
+   "gph": null,
+   "weight_lb": 2400,
+   "grade": "F",
+   "src": "https://1000aircraftphotos.com/Contributions/6802.htm",
+   "note": "Prescott spec 190 mph at 7,500 ft; Prescott says all technical data were tested at 2,400 lb TOGW. Power setting not stated."
+  },
+  {
+   "ktas": 174,
+   "alt_ft": null,
+   "power_pct_or_hp": "max cruise",
+   "gph": null,
+   "weight_lb": null,
+   "grade": "F",
+   "src": "https://1000aircraftphotos.com/Contributions/6802.htm",
+   "note": "Prescott spec 'Max cruise speed: 200 mph'"
+  },
+  {
+   "ktas": null,
+   "alt_ft": 0,
+   "power_pct_or_hp": "'blue printed' engine, 200+ hp",
+   "gph": null,
+   "weight_lb": 2400,
+   "grade": "F",
+   "src": "https://1000aircraftphotos.com/Contributions/6802.htm",
+   "note": "N42PP 200 mph CAS (174 KCAS) on a sea-level standard day (Tom Prescott 2007); not a TAS figure; non-standard engine"
+  },
+  {
+   "ktas": null,
+   "alt_ft": null,
+   "power_pct_or_hp": "full throttle, 2,600 rpm, fixed-pitch wood cruise prop",
+   "gph": null,
+   "weight_lb": 2250,
+   "grade": "P",
+   "src": "http://web.archive.org/web/20231210045500/https://p.pdfhall.com/tom-prescotts-pusher_5b7134c2097c4780378b4584.html",
+   "note": "N41PP Jan 1986, Wichita (Jabara), OAT mid-40s F: IAS 'just over 170 mph' with flaps -5; author says speed figures meaningless until the right prop is fitted"
+  },
+  {
+   "ktas": 156,
+   "alt_ft": 7500,
+   "power_pct_or_hp": "75%, retractable, CS prop",
+   "gph": null,
+   "weight_lb": 2250,
+   "grade": "F",
+   "src": "https://www.aeroresourcesinc.com/uploads/198603-1986%20Prescott%20Pusher%20Kit.pdf",
+   "note": "design objective stated to AOPA Pilot Mar 1986; max speed objective 160 kt; SL climb objective 980 fpm; approach-config stall 57 kt"
+  },
+  {
+   "ktas": null,
+   "alt_ft": null,
+   "power_pct_or_hp": "climb, fixed-pitch prop",
+   "gph": null,
+   "weight_lb": 2250,
+   "grade": "P",
+   "src": "http://web.archive.org/web/20231210045500/https://p.pdfhall.com/tom-prescotts-pusher_5b7134c2097c4780378b4584.html",
+   "note": "climb 800-1100 fpm at 110 mph after clean-up; takeoff ~27 s into near-zero wind (N41PP, Jan 1986)"
+  },
+  {
+   "ktas": null,
+   "alt_ft": null,
+   "power_pct_or_hp": "stall",
+   "gph": null,
+   "weight_lb": 2250,
+   "grade": "P",
+   "src": "http://web.archive.org/web/20231210045500/https://p.pdfhall.com/tom-prescotts-pusher_5b7134c2097c4780378b4584.html",
+   "note": "58-66 mph IAS by flap/gear configuration (N41PP). Prescott spec: 72 mph clean, 66 mph full flap (F). Kitplanes 1988: break at 66 mph indicated. AOPA 1986: no aerodynamic warning. Builder N747P: 72 -> 60 mph with gap seals (B, via Sport Aviation 1991)."
+  }
+ ],
+ "three_view_urls": [
+  "https://outerzone.co.uk/plan_details.asp?ID=14320 (RCM plan 971, Jul 1986, 1/5-scale R/C model by Tom Prescott, 3 sheets; side and top fuselage views, fin; not full-scale dimensioned, but the companion article gives a full-scale dimension table)",
+  "https://outerzone.co.uk/download_file.asp?planID=14320&FileType=Supp&Filename=Prescott_Pusher_oz14320_article.pdf (RCM article with 'Prototype' dimension table)"
+ ],
+ "safety": {
+  "ntsb_total": {
+   "v": 4,
+   "unit": "-",
+   "grade": "B",
+   "src": "https://data.ntsb.gov/carol-main-public/",
+   "note": "US NTSB events 1982-2026 with make or model PRESCOTT: LAX90DUM02 (N58PP, 1990), MIA92LA186 (N747P, 1992), LAX05LA270 (N43PP, 2005), CEN09CA386 (N19PP, 2009). Same set from the local NTSB avall/Pre2008 databases and from CAROL (make/model contains PRESCOTT; model contains PUSHER), and by every known N-number. Plus a probable fifth, CHI90DEE10 (N75FM 'Pierson Pusher', fatal, Ford V-6, 2,400 lb MGW, FAA s/n 028); not confirmed as a Prescott kit. Non-US (ASN): Germany 22 May 2002 gear-up landing; Austria OE-VPJ 12 May 2004 crashed from ~5 m on a test flight."
+  },
+  "ntsb_fatal": {
+   "v": 1,
+   "unit": "-",
+   "grade": "B",
+   "src": "https://app.ntsb.gov/pdfgenerator/ReportGeneratorFile.ashx?EventID=20001212X23153&AKey=1&RType=Final&IType=FA",
+   "note": "N58PP 1990 (Ford V-6, engine seizure 3 min into first flight). 2 if N75FM is a Prescott; Vic Syracuse (Kitplanes) writes of 'a couple of fatalities on other Blanton-equipped Prescott Pushers due to engine failures', which fits both."
+  },
+  "fleet_size_for_rate": {
+   "v": 19,
+   "unit": "-",
+   "grade": "B",
+   "src": "https://registry.faa.gov/database/ReleasableAircraft.zip",
+   "note": "Distinct Prescott airframes ever on the FAA register (4 current + 15 deregistered, counting s/n 030 under N41TP and N655TH once; excludes N75FM). Hours flown unknown; most logged ~100-150 h before their events. 68 kits sold; Wings Over Kansas says 3 factory aircraft."
+  },
+  "pattern": "RECORD: 4 confirmed US accidents, 1 fatal. Two are directly tied to the pusher layout: N43PP lost its wooden propeller in cruise at 7,500 ft (attach bolts gone, three bolt holes elongated; cause undetermined; prop had just been removed and refitted), and N19PP's top-hinged cabin door opened on approach, departed and struck the pusher propeller (partial power loss, forced landing). N747P's go-around from 5 ft pitched up and stalled; the same builder-pilot had reported pitch sensitivity, a 75 mph rotation and a 20 deg uncommanded right roll at lift-off without gap seals (Sport Aviation Sep 1991). Kitplanes columnist Vic Syracuse (first customer aircraft) reports his first flight jumped off early and oscillated in pitch from an aft c.g. and the c.g. envelope was narrowed after it. The fatal N58PP (and probably N75FM) were Ford V-6 auto-engine conversions that failed on initial climb. No extension-shaft or drive failure appears in any record; the design uses a ~12 in prop extension, not a driveshaft. INFERENCE: the configuration-linked risks for a revival are prop attachment/strike on the extension flange, objects (doors, parts) going through the prop, aft c.g. and pitch behaviour at rotation and go-around, and rear-engine cooling. The record is too small (about 20 airframes) for rates.",
+  "notable": [
+   "1990-05-17 - San Diego (Brown Field) CA - N58PP s/n 42, Ford V-6 260 hp - 1 fatal - total power loss just after takeoff on a ~3-min first flight; No.3 piston seized, carb float set very lean, vent capped; cause engine failure from internal mechanical failure (builder maintenance) - NTSB LAX90DUM02 - https://app.ntsb.gov/pdfgenerator/ReportGeneratorFile.ashx?EventID=20001212X23153&AKey=1&RType=Final&IType=FA",
+   "1990-09-30 - Kankakee IL - N75FM 'Pierson Pusher' (FAA: MUNTWYLER/PIERSON PUSHER, 4 seats, s/n 028; NTSB: s/n 1, 2 seats), Ford 3.8 V-6 - 1 fatal - power loss on climb-out (carb choke activated; nose-gear release handle resembled choke handle), stall - NTSB CHI90DEE10 - Prescott identity unconfirmed - https://app.ntsb.gov/pdfgenerator/ReportGeneratorFile.ashx?EventID=20001212X24208&AKey=1&RType=Final&IType=FA",
+   "1992-09-20 - Plant City FL - N747P s/n 013 (Taylor), IO-360 180 hp, 106 h - 0 fatal (1 minor) - go-around at ~5 ft, nose pitched up, stall, gear collapse, hit parked aircraft; cause failure to maintain airspeed - NTSB MIA92LA186 - https://app.ntsb.gov/pdfgenerator/ReportGeneratorFile.ashx?EventID=20001211X15757&AKey=1&RType=Final&IType=LA",
+   "2002-05-22 - Donaueschingen, Germany - registration not given - 0 fatal - landed gear-up (BFU 3X080-0/02 via ASN) - https://aviation-safety.net/wikibase/440282",
+   "2004-05-12 - Bad Voeslau, Austria - OE-VPJ msn 025 - 0 fatal, destroyed - fell from ~5 m on a test flight; cause not published (ASN, news-sourced) - https://aviation-safety.net/wikibase/191809",
+   "2005-08-14 - Redding CA - N43PP s/n 050, IO-360-C1C 200 hp, 154 h - 1 serious - propeller separated in cruise at 7,500 ft; bolts missing, three bolt holes elongated; cause in-flight separation of the propeller for undetermined reasons - NTSB LAX05LA270 - https://app.ntsb.gov/pdfgenerator/ReportGeneratorFile.ashx?EventID=20050817X01262&AKey=1&RType=Final&IType=LA",
+   "2009-06-24 - Ashville OH - N19PP s/n 009, IO-360-C1C 200 hp, 104 h - 0 injured - cabin door opened in flight, departed and struck the pusher prop; partial power loss; forced landing, left main collapsed - NTSB CEN09CA386 - https://data.ntsb.gov/carol-repgen/api/Aviation/ReportMain/GenerateNewestReport/74130/pdf"
+  ]
+ },
+ "why_died_detail": "Not only slow parts. (1) Handling and performance reputation: every 1986 press report flagged pitch sensitivity and ground-effect pitch-up at rotation (AOPA Pilot Mar 1986; Kitplanes Oct 1986 as quoted May 1988). Customer builders reported high rotation speeds, PIO and uncommanded rolls at take-off (airplanezone), and performance below the marketing (Syracuse: 'a good 2+2 airplane, somewhat of a ground hog'). (2) Layout: the rear engine put the c.g. far aft. The main gear sat aft for prop clearance, which made rotation hard, and a short gear meant a small prop (airplanezone; Kitplanes Wind Tunnel). (3) Business: financed by investors (Jack DeBoer major investor; Linden Blue invested June 1985 and became chairman/CEO). Tom Prescott blames a switch from pay-as-you-build to pay-up-front demanded by the financial backer, and the loss of his and Stan Blankenship's roles. Parts were slow (Syracuse was builder 29 and finished first only by chasing parts). By Sep 1987 about 150 had bought the first (trim tab) kit, with half expected to drop out (Sport Aviation Apr 1988). Kit sales stopped in 1988: Kitplanes Oct 1988 reported the company quitting Wichita and 'being sold to an Australian outfit'. SDASM puts the final fold in 1991. (4) Build burden: 33 sub-kits; factory claimed 1,500 h; SDASM says about five years per aircraft. A revival would have to fix the c.g./gear/prop-clearance geometry and the pitch feel (bobweights, gap seals, gear moved forward were partial fixes), and prove the performance honestly.",
+ "rights_hints": "FAA DEREG: second prototype N128S (s/n 002, ex-N42PP) registered to 'PUSHER AIRCRAFT INC', 8100 E 22nd St N, Wichita KS, airworthiness 2000-03-01, cancelled 2018-01-11 (P, FAA ReleasableAircraft.zip). Bernhard Klein (1000aircraftphotos 5648, 2006) says N128S was held 'by Prescott'. Kitplanes (25th Anniversary: Engines of Change) reports Oct 1988 sale of the company 'to an Australian outfit'. SDASM SC.10269 has a Bill of Sale folder. See _prescott_rights.md.",
+ "gaps": [
+  "Kitplanes May 1988 test conditions (altitude, weight, OAT, rpm, prop) for 174 mph TAS at 73%: only the 2022 archive summary is online; the full article and Kitplanes Oct 1986 report were not found (archive.org, Google, aeroresourcesinc).",
+  "Flying Oct 1985 (p.106), Flying Apr 1988 (Eric Weiner, 'Un-conventional Values'), Popular Mechanics Aug 1986: Google Books blocked automated access (403/CAPTCHA) and the Books API quota was exhausted.",
+  "Sport Aviation Apr 1988 (Cavin, 'Prescott Pusher II'): only the first page is visible on the pdfhall Wayback copy.",
+  "Prop ground clearance, fuel flow at any cruise point, tail areas from a primary full-scale source, fin chords, inlet areas, engine dry weight.",
+  "Construction of the 12 in prop extension (solid flange spacer vs shaft with bearings/damper): only 'prop extension' (dwg 15302) and 'Bushing - prop adapter' (15303) are listed in SDASM; no damper or bearing drawing listed.",
+  "Builder-fleet empty weights beyond N747P (1,555/1,661 lb): listings found (winglist I-EFTP, Barnstormers PDF) repeat factory 703 kg / 1,550 lb.",
+  "Which registered aircraft are recently active: FlightAware pages give no flight history without login."
+ ]
+}

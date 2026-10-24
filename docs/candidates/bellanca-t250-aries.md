@@ -77,7 +77,7 @@ One NTSB record in about 50 years: FTW83LA173 (1983, N51AG prototype), a taxi br
 
 <!-- stage3:start -->
 
-## Stage 3: shortlist rank 1 of 5 (AER-3783)
+## Stage 3: shortlist rank 1 of 6 (AER-3783)
 
 Our own check, from published geometry and weights, calibrated against published flight data. Method, calibration and the Aeromomentum assumptions are in [docs/SHORTLIST.md](../SHORTLIST.md). Rights are research, not legal advice. Nobody has been contacted.
 
