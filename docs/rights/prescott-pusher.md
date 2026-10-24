@@ -66,9 +66,30 @@ So the museum's displayed Pusher is the prototype.
   aircraft" (P).
 - **Corporate status:** Kansas Secretary of State records not searched (no open
   data found). **Open item.**
-- **Successor:** none found. A secondary search summary named a successor sales
-  company and Prescott's estate as possible holders; I could not find the
-  primary source, so it is not relied on here.
+- **A reported sale to an Australian buyer, October 1988.** Kitplanes, quoting
+  its own October 1988 "Twice Around the Patch" column: "Prescott Aeronautical,
+  which marketed the Prescott Pusher, is quitting its Wichita, Kansas,
+  operation. The company was being sold to an Australian outfit, which offered
+  no plans about further development of the design." (Kitplanes, "25th
+  Anniversary: Engines of Change", Marc Cook, 17 March 2009, S). The buyer is not
+  named. Whether the sale closed is not stated. If it did, the design rights may
+  have left the US in 1988 or 1989. AERO found this lead (AER-3805).
+- **"Pusher Aircraft Inc", Wichita: a later holder of the second prototype.**
+  The FAA deregistered-aircraft file shows N128S, serial 002, the same
+  make/model code as the prototype N41PP (so a Prescott Pusher), built 1987,
+  registered to PUSHER AIRCRAFT INC, Wichita, KS. Certificate issued 22 January
+  1996, airworthiness date 6 March 1997, last action 1 March 2000, cancelled 11
+  January 2018, certification code 41 (experimental) (FAA registry DEREG, P).
+  AERO found the lead. AERO also reports the aircraft was earlier N42PP; the
+  current records do not show that link (the N42PP entries found belong to
+  other aircraft), so it is unconfirmed. A Wichita company named for the
+  aircraft, holding the second prototype from 1996, is the strongest candidate
+  so far for a successor to Prescott's assets. **Its corporate record, and
+  whether it held any design rights, are not established.** Kansas SOS was not
+  searched.
+- **Successor otherwise:** none found. A secondary search summary named a
+  successor sales company and Prescott's estate as possible holders; I could
+  not find the primary source, so it is not relied on here.
 - **The SDASM "Bill of Sale" folder** (Box 1, Series I, Folder 5) is the most
   direct lead on where the assets went. Reading it means visiting the archive or
   asking SDASM for a copy. That is contact with a museum, so it is Bill's call
@@ -147,7 +168,7 @@ AERO owns the full "why it died" question.
 
 | Path | What it would take | Assessment |
 |---|---|---|
-| **Buy or license the design** | Find who owns Prescott Aeronautical's rights: an asset buyer (the "Bill of Sale" folder), a dissolved corporation's shareholders, or no one. | Plausible and maybe cheap, because there is no live business. Needs the owner identified first. |
+| **Buy or license the design** | Find who owns Prescott Aeronautical's rights: the 1988 Australian buyer, Pusher Aircraft Inc of Wichita, an asset buyer named in the "Bill of Sale" folder, a dissolved corporation's shareholders, or no one. | Plausible and maybe cheap, because there is no live business. Needs the owner identified first. |
 | **Re-derive from the archive** | Use the SDASM drawings, loads and test reports as the engineering basis for a new design. | **The strongest reconstruction case in the survey.** The data is there. Whether it may be used depends on who owns the copyright and on SDASM's terms of use. **Attorney needed.** |
 | **Re-derive from an airframe** | Measure one of the flying examples. | Physically possible, but much weaker than the archive. |
 | **Modify existing airframes** | A handful of flying aircraft. | Not a business. |
@@ -170,7 +191,9 @@ AERO owns the full "why it died" question.
 
 ## Open items
 
-- Kansas Secretary of State history for Prescott Aeronautical Corporation.
+- Kansas Secretary of State history for Prescott Aeronautical Corporation and
+  for Pusher Aircraft Inc (Wichita).
+- The October 1988 Australian buyer: its name, and whether the sale closed.
 - Federal bankruptcy record, D. Kan., 1989-1991. CourtListener returns no
   opinion and no docket for "Prescott Aeronautical" (2026-10-24). The same
   search for "Anderson-Greenwood Aviation" returns the known Bellanca opinions,
@@ -198,6 +221,11 @@ AERO owns the full "why it died" question.
   https://outerzone.co.uk/plan_details.asp?ID=14320
 - FAA Aircraft Registry, ReleasableAircraft.zip, downloaded 2026-10-24 (P).
   https://registry.faa.gov/database/ReleasableAircraft.zip
+- Kitplanes, "25th Anniversary: Engines of Change", Marc Cook, 17 March 2009,
+  quoting its October 1988 issue (S).
+  https://www.kitplanes.com/25th-anniversary-engines-of-change/
+- FAA Aircraft Registry, DEREG file, N128S (s/n 002, PUSHER AIRCRAFT INC),
+  downloaded 2026-10-24 (P).
 - Wings Over Kansas, "The History of Kansas Aircraft Manufacturing, 1899-1993",
   Carl Chance, 2008 (S). https://wingsoverkansas.com/legacy/a93/
 - Wikipedia, "Prescott Pusher" (L), citing Flying (October 1985), Popular
