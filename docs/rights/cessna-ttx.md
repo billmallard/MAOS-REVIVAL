@@ -56,7 +56,8 @@ Read directly from FAA DRS, 2026-10-24.
 - **History.** Lance Neibauer's Lancair Company certified the LC40 in 1998 and
   renamed itself Columbia Aircraft. Columbia entered Chapter 11 in 2007. Cessna's
   $26.4 million auction bid was approved by the US Bankruptcy Court for the
-  District of Oregon on 28 November 2007 (GA News, S; Wikipedia, L). Cessna moved
+  District of Oregon on 28 November 2007 (GA News, S, for the bid; Wikipedia, L,
+  for the date). Cessna moved
   production from Bend, Oregon to Independence, Kansas in 2009 (S).
 - **Support.** At the 2018 cancellation Textron said it remained committed to
   "supporting our existing customer base across all platforms" (AvWeb, S). The

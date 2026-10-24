@@ -18,9 +18,10 @@ Source quality: **P** primary or official record; **S** reputable secondary;
   bought the designs from Co-Z Development and has had "the exclusive right to
   market these designs" since 1 January 2004 (Aircraft Spruce product page; P,
   the holder's own statement).
-- **It claims US copyright and says it licenses nobody else.** The designs are
-  "protected with U.S. copyrights, and we have owned them since 2004 without
-  licensing others to copy or distribute them" (same, P).
+- **It claims US copyright and says it licenses nobody else.** "These designs
+  are protected with U.S. copyrights, and we have licensed no one else to copy
+  all or any part of these designs to sell, loan, or give to others" (same, P;
+  quote corrected 2026-10-24 to the page's exact wording).
 - **Plans are on sale: $500, to builders only.** Each buyer signs a licence to
   build one airplane. The licence also bars using the drawings to design
   "another aircraft" (Aircraft Spruce licence form, P).

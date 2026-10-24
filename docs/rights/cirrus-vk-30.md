@@ -112,7 +112,7 @@ do not cover the VK-30.
 Cirrus stopped selling the kit in 1993 to put everything into the certified SR20.
 The founders concluded from the VK-30 that a conventional layout and a certified
 production aircraft were the way forward (Wikipedia, L; Plane & Pilot, S). The
-1996 plan for a "stronger replacement wing" points to a wing problem on delivered
+1996 plan for a "stronger replacement wing" (Wikipedia, L) points to a wing problem on delivered
 kits; that is my reading, not a sourced finding. So the engine was not the only
 issue, and a re-engine does not fix the story on its own. That is AERO's call.
 

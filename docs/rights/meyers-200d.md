@@ -58,7 +58,8 @@ Read directly from FAA DRS, 2026-10-24.
 - **Interceptor Aviation Inc.** was formed by GlobalParts Group (Augusta, KS)
   after it bought "the type certificate, intellectual property, tooling and
   assets of the Meyers Aircraft Model 200 type design" on 31 March 2014
-  (GlobalParts release via AviationPros; AvWeb; S). GlobalParts promised parts
+  (GlobalParts release via AviationPros, S; AvWeb confirms only the type
+  certificate purchase, S). GlobalParts promised parts
   and support for about 100 flying Meyers 200s (S).
 - **Bethany, Oklahoma** is where GlobalParts bought Tulakes Aero in July 2014 (S).
   That explains the TCDS address.

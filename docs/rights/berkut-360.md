@@ -17,10 +17,14 @@ Source quality: **P** primary or official record; **S** reputable secondary;
 - **The rights have changed hands at least three times, and the last known
   holder died in 2009.** The chain runs from the Ronneberg-Murphy partnership
   (1989-92), to Experimental Aviation, Inc. (bankrupt), to Renaissance
-  Composites (1996), to Vicki Cruse's Berkut Engineering and Design, Inc.
-  (January 2001). That company withdrew the kit in 2002 (Wikipedia, L).
-- **Cruse kept ownership until her death on 22 August 2009** (Wikipedia, L;
-  Kitplanes, S). Who holds the molds, drawings and kit rights since then is
+  Composites (1996), to Vicki Cruse's Berkut Engineering and Design, Inc. That
+  company withdrew the kit in 2002 (Wikipedia, L). **When and how the assets
+  reached Cruse is not settled:** the "January 2001" sale from Renaissance came
+  from a Wikipedia sentence tagged "failed verification" in 2011 and removed in
+  June 2026, and Kitplanes says Cruse "formed Berkut Engineering in the early
+  1990s" (S). Corrected 2026-10-24.
+- **Cruse kept ownership until her death on 22 August 2009** (date: Wikipedia,
+  L; Kitplanes reported the death on 24 August 2009, S). Who holds the molds, drawings and kit rights since then is
   **not shown by any public record found.** This is the decisive open fact.
 - **The designer is still active.** Dave Ronneberg is the registered owner of
   two aircraft built by "Berkut Engineering and Design" (model Mobius), one
@@ -59,9 +63,10 @@ All registered Berkuts are in the "Amateur" category (FAA registry, P).
   - Lawsuits between the two bankrupted Ronneberg, Murphy and the company.
   - 1996: Richard Riley and Renaissance Composites revive the kit, with
     Ronneberg as consultant.
-  - January 2001: Renaissance sells the assets to Vicki Cruse, who forms
-    Berkut Engineering and Design, Inc. The 2002 website names Ronneberg and
-    Cruse as principals (S).
+  - Assets reach Vicki Cruse's Berkut Engineering and Design, Inc.: January
+    2001 per a since-removed, failed-verification Wikipedia sentence (L), or a
+    company formed "in the early 1990s" per Kitplanes (S). Unresolved. The 2002
+    website names Ronneberg and Cruse as principals (S).
   - 2002: kit withdrawn. A 2003 deal with Republic Aerospace fell through.
     Ronneberg turned the project toward UAVs.
   - 22 August 2009: Cruse dies at the World Aerobatic Championships in England.
@@ -88,8 +93,8 @@ All registered Berkuts are in the "Amateur" category (FAA registry, P).
 
 ## Kit or plans rights
 
-- Kit rights passed with the company assets in 1996 and 2001 (Wikipedia, L).
-  No later transfer is public.
+- Kit rights passed with the company assets in 1996 (Wikipedia, L) and later to
+  Cruse's company, date unresolved (above). No later transfer is public.
 - **Rutan lineage.** Ronneberg held an RAF Long-EZ builder licence (bought the
   second plans set; S). RAF licensed one airplane per plans set and stopped
   licensing in 1985 (see the Defiant file). Whether a kit derived from a

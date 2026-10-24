@@ -89,9 +89,9 @@ that never led to a TC would not appear in DRS anyway.
 
 ## Kit or plans rights
 
-- **Skyrocket III kit, 1996-98.** AviaBellanca offered kits at $85,000 (basic) or
-  $97,000 (fast-build), and pressurized versions at $102,000-118,000. Build time
-  was estimated at 3,500 hours (Flight International, S; forum, L).
+- **Skyrocket III kit, 1996-98.** Flight International gives "$75,000 minus
+  engine and avionics" (S). A forum thread gives $85,000 (basic), $97,000
+  (fast-build), $102,000-118,000 pressurized, and a 3,500-hour build (L).
 - **Deliveries:** Wikipedia says 11 kits had been delivered by 1998 (L). A forum
   says there is no evidence any were delivered (L). No Skyrocket III appears in
   the FAA registry under the model searched. Unresolved.

@@ -18,7 +18,7 @@ Source quality: **P** primary or official record; **S** reputable secondary;
   FAA TCDS A51EU Rev 18 (30 August 2021) is "Current" and names Daher Aerospace
   (P).
 - **The holder is large, solvent and still supports the type.** Daher builds the
-  TBM and Kodiak. Owner press says it still ships TB airframe parts (S).
+  TBM and Kodiak. Owner press says the TB line is still supported (S).
 - **The TB-21 shares one TC with four sister models.** A sale or licence would
   cover a family TC that supports about 2,000 aircraft, not just the TB-21.
   That makes Daher less likely to let it go.
@@ -56,8 +56,10 @@ SAS in April 2026. This is the same group, so it is a lag, not a gap.
   plan, the TBM and Kodiak moved into a new Daher Aircraft division from 1
   January 2026 (AIN, 7 Feb 2024; Daher press release; S/P). The EASA rename
   matches this (P).
-- **Support:** owner and trade press say Daher still supports the TB line and
-  ships airframe parts from France and the US (Aviation Consumer; AOPA; S).
+- **Support:** AOPA (2017) says "Socata still provides product support"; Aviation
+  Consumer (2011) says SOCATA Aircraft USA "still supports all models" (S). An
+  earlier version said Daher ships airframe parts from France and the US; neither
+  source says that, and it is withdrawn.
   Daher has opened a new spares and support centre in western France that covers
   legacy GA types (AviTrader; S). A New Zealand AD schedule of 31 July 2025 still
   lists the TB family as Daher Aerospace products (P).

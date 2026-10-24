@@ -100,7 +100,7 @@ None. Certified type.
   "Extra Flugzeugbau GmbH", type certificated (P). AIN counted 9 in February 2025
   (S). No EA-500 is on the US register.
 - **Positive control:** the same query for MOONEY M22 returns 14 (P).
-- **Built:** MSN 003 to 028 under the EASA TCDS, which fits "27 built" (L). Six
+- **Built:** MSN 003 to 028 under the EASA TCDS, which fits the 27 built reported by Wikipedia (L). Six
   EA-500 serials (1002-1007) are listed (P). AIN was unsure any EA-500 was ever
   delivered (S).
 

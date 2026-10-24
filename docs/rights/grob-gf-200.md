@@ -23,7 +23,7 @@ Source quality: **P** primary or official record; **S** reputable secondary;
 - **The company has changed hands twice since.** Grob Aerospace went insolvent
   in August 2008. H3 Aerospace bought "the training aircraft and support
   business" in January 2009 (Grob Aircraft AG, later SE). In June 2025 Helsing
-  signed to buy Grob Aircraft SE (S; P, Grob press release).
+  signed to buy Grob Aircraft SE (S; P, Grob press release; the quoted phrase is from Wikipedia "Grob Aircraft", L).
 - **Whether the GF 200 data went to H3 in 2009 is not shown publicly.** The 2009
   deal covered trainers and support. A shelved 1990s demonstrator may have stayed
   with the insolvency estate.

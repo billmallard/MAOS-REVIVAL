@@ -61,8 +61,9 @@ October 2013 transfer (P). A6SW has no matching entry.
 ## The holder today
 
 - **Ownership.** US Financial, LLC has owned Mooney International since September
-  2020, with Jonny Pollack as CEO. It says support of the existing fleet (7,000+
-  aircraft) comes first (Plane & Pilot, S; Wikipedia, L).
+  2020, with Jonny Pollack as CEO. It says support of the existing fleet comes first (Plane & Pilot, S, for
+  Pollack and support; Wikipedia, L, for US Financial, the date and "more than
+  7,000" aircraft).
 - **Mooney's website** (© 2026 Mooney International Corporation, Kerrville TX) says
   its service-centre directory and publications index were "recovered from a June
   2026 website archive" (P). That suggests a recent disruption. No bankruptcy or
@@ -77,7 +78,8 @@ October 2013 transfer (P). A6SW has no matching entry.
     68-22-PC-P (1968).
   - The master technical publications library is labelled "M20 thru M20TN
     (EXCLUDING M22)".
-  - The Mooney Flyer (August 2024; S): "no longer supported by the manufacturer".
+  - The Mooney Flyer (August 2024; S): "a vintage airplane that no longer was supported by the manufacturer"
+    (quote corrected 2026-10-24).
 
 ## Drawings and tooling
 

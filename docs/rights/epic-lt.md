@@ -65,7 +65,8 @@ LT: none, amateur-built. Related certified type below. Read from FAA DRS,
     builders got North America; CAIGA got the rest of the world.
   - March 2012: Vladislav Filev (S7) bought Epic through Engineering LLC; the
     Filev family then held it through MVF Key Investments (Cyprus) until 2024
-    (AvWeb, "Epic Sold To Russian Firm", S).
+    (AvWeb, "Epic Sold To Russian Firm", S, for the 2012 sale to "Engineering
+    LLC"; Wikipedia, L, for Filev and the later holding).
   - 2024: Tanya Eves bought a majority share. She is described as owner and head
     of business development (TechCrunch author profile, S).
 - **Oregon SOS open data (P):**

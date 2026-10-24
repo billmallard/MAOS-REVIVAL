@@ -18,8 +18,8 @@ Source quality: **P** primary or official record; **S** reputable secondary;
   (© 2026) and lists the XL, SE and V-Twin (P, company site).
 - **The owner is the Swing family.** Duane and Scott Swing bought the assets
   from founder Danny Maher in 1992. Rocket Racing interests owned the company
-  from April 2008. The Swings bought it back on 26 May 2010 (company site, P;
-  Wikipedia, L). No later change of ownership was found.
+  from April 2008. The Swings bought it back on 26 May 2010 (Wikipedia, L; the
+  company site gives neither event). No later change of ownership was found.
 - **The rights, the molds and the support are all in one live company.** That
   makes it the simplest rights picture in this batch. It also means nothing
   here is free to take.
