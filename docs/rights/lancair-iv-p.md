@@ -107,7 +107,7 @@ license the IV-P design or its tooling.
 
 | Source | What it says | Grade |
 |---|---|---|
-| AvWeb, 10 Oct 2023 (Kitplanes and Flying ran the same text) | Lancair "sold off older kit designs, and that business was purchased by JetEXE from Mark and Conrad Huffstatter, of Uvalde, Texas, who had hoped to revive the kit production but were concentrating on fleet support in recent years." Re-read 2026-10-24. | S |
+| AvWeb, 10 Oct 2023 (Kitplanes and Flying ran the same text) | Lancair "sold off older kit designs, and that business was purchased by JetEXE from Mark and Conrad Huffstatter [sic], of Uvalde, Texas, who had hoped to revive the kit production but were concentrating on fleet support in recent years." Re-read 2026-10-24. | S |
 | Airframer, 11 Oct 2023 (press-release rewrite) | "JetEXE Aviation has acquired Lancair"; Mark Huffstutler promises "a seamless transition". No asset list. | S |
 | AvWeb, same article | JetEXE plans "designs that incorporate sustainable energy technologies". No mention of the IV-P. | S |
 | lancair.com/iv-ivp | "The Lancair IV and IV-P series of aircraft kits are out of production. We continue to support these famous aircraft with parts and technical assistance." Re-read 2026-10-24. | P |

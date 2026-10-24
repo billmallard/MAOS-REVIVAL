@@ -8,9 +8,8 @@ AERO's stage 3 question (rank 1): who bought the design rights in 1985, and what
 does the holder own? See "The 1985 'sale' of rights" below.
 
 **Model number.** Rutan's own memoir calls the design the "Model 40 Defiant"
-(Ch24, P), and Hiller's page says "Defiant 40". "Model 74" for the plans-built
-version appears in AERO's stage 3 files; I did not find it in the Canard Pushers
-I read. AERO to confirm the source.
+(Ch24, P), and Hiller's page says "Defiant 40". "Model 74" traces only to Wikipedia (L); AERO
+confirmed this on review and its stage 3 files now use Model 40.
 
 This is research, not legal advice. It reports what public records show and
 where they run out. It does not say the design may be copied.
@@ -26,7 +25,7 @@ Source quality: **P** primary or official record; **S** reputable secondary;
   RAF, updated May 2025; S).
 - **Each plans buyer got a licence to build one airplane.** Plans sold without
   that licence were for study only. RAF once allowed transfers between
-  builders, but stopped in 1985 (Canard Pusher 54, January 1988; memoir; S).
+  builders, but stopped in 1985 (Canard Pusher 54, January 1988; memoir; P).
 - **No evidence that anyone bought the Defiant rights in 1985.** One sentence
   in Canard Pusher 54 (January 1988) says "since mid 1985 when rights to the RAF
   designs were sold". It is a reworded reprint of a Canard Pusher 46 paragraph
@@ -43,11 +42,11 @@ Source quality: **P** primary or official record; **S** reputable secondary;
   Sikorsky and Lockheed Martin. There is no type certificate and no live
   patent.
 - **RAF stopped trading in 2002.** Its 109th and last Canard Pusher went out in
-  2002. Support passed to builder groups (memoir, S). Corporate status was not
+  2002. Support passed to builder groups (memoir, P). Corporate status was not
   verified.
 - **Rutan still objects to unlicensed building.** In February 2025 he wrote that
   "some people are still building RAF homebuilt aircraft, without license and
-  without approval from RAF, using bogus plans" (memoir, S). That is the
+  without approval from RAF, using bogus plans" (memoir, P). That is the
   holder's current, public attitude.
 - **The prototype survives.** N78RA is at the Hiller Aviation Museum, San Carlos,
   California. Its FAA registration was cancelled in 2013, with the museum as
@@ -71,14 +70,14 @@ Every registered Defiant is in the "Amateur" category (FAA registry, P).
 
 ## Holder or seller today
 
-- **Nobody sells Defiant plans.** RAF stopped in June 1985 (memoir, S).
-- **Why it stopped** (memoir, S):
+- **Nobody sells Defiant plans.** RAF stopped in June 1985 (memoir, P).
+- **Why it stopped** (memoir, P):
   - Scaled Composites, founded 1982, needed Rutan's full attention.
   - Builder support was a heavy load, much of it for the least able builders.
   - Lawsuits after accidents. Product-liability insurance was "definitely not
     affordable".
 - **RAF stayed open for support until 2002**, then "ceased being a business"
-  (memoir, S). Tonya Rutan ran the office from 1989 to 2002.
+  (memoir, P). Tonya Rutan ran the office from 1989 to 2002.
 - **Burt Rutan** lives in Coeur d'Alene, Idaho. He still registers an RAF-built
   aircraft (N187RR, Catbird) in his name, Elbert L. Rutan (FAA registry, P).
 - **California corporate record: secondary only.** Bizapedia, which republishes
@@ -91,14 +90,14 @@ Every registered Defiant is in the "Amateur" category (FAA registry, P).
   (Ch19, P); if a newer RAF entity exists, perhaps in Idaho, it was not found.
 - **Support today** comes from independent groups: the Canard Owners and
   Builders Association, and Rutan Aircraft Flying Experience (RAFE), Waller,
-  Texas (memoir, S). RAFE is a separate registrant; it is not RAF (FAA
+  Texas (memoir, P). RAFE is a separate registrant; it is not RAF (FAA
   registry, P).
 
 ## Drawings, molds and tooling
 
 - **The Defiant used Rutan's moldless technique.** There are no production
   molds to inherit.
-- **Drawings:** the Model 74 plans exist in builders' hands (176 sets sold).
+- **Drawings:** the homebuilder plans exist in builders' hands (176 sets sold).
   AOPA says the plans came from Fred Keller's build of the second prototype at
   Rutan's request (AOPA Pilot 2020, S). Who holds the master drawings is not
   public.
@@ -188,7 +187,7 @@ Rutan built the Defiant to prove a safe light twin that needs no pilot action
 after an engine failure. Certification funding was not found in 1979, and the
 big manufacturers ignored it. RAF sold plans for only a year before it stopped
 all plans sales in June 1985. The reasons were Scaled Composites, the support
-load and lawsuits (Wikipedia, L; AOPA 2020, S; memoir, S).
+load and lawsuits (Wikipedia, L; AOPA 2020, S; memoir, P).
 
 ## The paths
 
@@ -222,7 +221,7 @@ load and lawsuits (Wikipedia, L; AOPA 2020, S; memoir, S).
 ## Sources
 
 - Burt Rutan, *Burt Rutan's Aviation Biography*, chapter 19, "Rutan Aircraft
-  Factory", version 28b, updated 5 May 2025 (S; designer's own account).
+  Factory", version 28b, updated 5 May 2025 (P; designer's own account).
   https://burtrutan.com/brab/PDF/BRAB-Ch19-RAF.pdf
 - Burt Rutan, *Burt Rutan's Aviation Biography*, chapter 24, Defiant and
   Boomerang (P; designer's own account).

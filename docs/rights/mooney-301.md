@@ -110,7 +110,7 @@ the 20-page TCDS finds no mention of Mooney (FAA DRS, P).
 controls from it, and the only surviving TC in the lineage is Daher's. Mooney
 may have kept copies and may have settled some right in them; no public record
 says. Either way, what is left of the 301 itself is 40-year-old drawings for
-an aircraft that flew 200 lb overweight, with no airframe to check them
+an aircraft that flew about 200 lb overweight, with no airframe to check them
 against. The realistic route is a new design that takes the 301's layout as a
 reference, with counsel on how close is too close to TBM-protected data.
 
