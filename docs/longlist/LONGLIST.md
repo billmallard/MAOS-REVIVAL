@@ -1,6 +1,11 @@
-# Stage 1 long list: 37 candidates and the reference, screened against the targets
+# Stage 1 long list: 44 candidates and the reference, screened against the targets
 
 **Status:** stage 1 of the legacy survey (AER-3786), compiled 2026-10-24 by AERO.
+**Revised 2026-10-24 after Bill's review** (AER-3783): screened like for like in two
+columns, the three targets as separate floors, an idea ledger in every stub, and
+seven rows added: the Bellanca T-250 Aries and six current light twins that
+answer Bill's note on Rotax-powered Derringer analogs at AERO Friedrichshafen
+2026. The 210-class kits Bill mentioned are noted below, not screened.
 **Unranked.** Row order is by origin, then by when the data arrived. It is not a
 preference. Ranking is stage 3 and happens only after this list is posted.
 
@@ -147,6 +152,13 @@ real gap in the market, not only in this list.
 | 35 | [Robin HR100/285 Tiara](../candidates/robin-hr100-285.md) | 4 | d | 1,234 pass; 1,266 pass; 158 @ alt n/s * near | near miss, speed unconditioned (speed -2 kt) | - | no measured data | pub: cannot (612 nm max) | Short: AM20T 260 hp vs 285 hp (-3% speed, est. 153 KTAS) | Its geared Continental Tiara engine failed in the market |
 | 36 | [Ruschmeyer R90-230RG](../candidates/ruschmeyer-r90.md) | 4 | d | 997 near; 600 fail; - | incomplete: no speed, fails on the rest (UL -3 lb, range -400 nm) | 875 fail; 709 fail; 165 @ 7,000 ft pass | fail (UL -125 lb, range -291 nm) | meas: cannot (709 nm max) | Yes: AM20T (260 hp) for 230 hp | Ruschmeyer bankrupt 1996; Solaris revival never delivered |
 | 37 | [SIAI-Marchetti SF.260](../candidates/siai-sf260.md) | 3 | d | 895 fail; 1,040 pass; 175 @ 6,000 ft pass | fail (UL -105 lb) | - ?; 806 fail; 165 @ 15,000 ft pass | partial: range fail, speed pass (range -194 nm) | pub: cannot (775 nm max) | Yes: AM20T (260 hp) for 260 hp | Military trainer; civil sales a sideline; ended 2017 |
+| 38 | [Bellanca (Anderson-Greenwood) T-250 Aries](../candidates/bellanca-t250-aries.md) | 4 | b | 1,300 pass; 1,017 pass; 181 @ alt n/s * pass+ | pass, speed unconditioned | - ?; - ?; 181 @ 6,500 ft pass+ | partial: speed pass | pub: 879 / cannot @ 174 kt, 12.2 gph (est. flow) | Yes: AM20T (260 hp) for 250 hp | Bellanca, the intended producer, went into receivership in 1980 before production got going |
+| 39 | [Alpi Aviation Pioneer 800 Twin](../candidates/alpi-pioneer-800-twin.md) | 4 | c, d | 1,356 pass; - ?; 200 @ 15,000 ft pass+ | incomplete: no range | - | no measured data | no fuel flow published | Yes: 2x AM15T (160 hp) for 160 hp | Prototype/kit in development; not dead |
+| 40 | [Tecnam P2006T NG](../candidates/tecnam-p2006t-ng.md) | 4 | d | 904 near; 930 near; 148 @ alt n/s * fail | fail (UL -96 lb, range -70 nm, speed -12 kt) | - | no measured data | pub: 604 / cannot @ 148 kt, 7.4 gph | Yes: 2x AM13 (100 hp) for 100 hp | In production; not dead |
+| 41 | [Diamond DA42-VI (similar-engine comparison)](../candidates/diamond-da42-vi.md) | 4 | d | 1,276 pass; 1,100 pass; 190 @ 16,000 ft pass+ | pass | - | no measured data | pub: cannot (707 nm max) | Yes: 2x AM20T (260 hp) for 168 hp | In production; not dead |
+| 42 | [AT-P Aviation AT-6 Twin PSE](../candidates/atp-at6-twin-pse.md) | 4 | c, d | - ?; 935 near; 160 @ alt n/s * pass | incomplete: no UL (range -65 nm) | - | no measured data | no fuel flow published | Yes: 2x AM15T (160 hp) for 141 hp | Prototype in flight test; not dead |
+| 43 | [Jabiru J432 Twin](../candidates/jabiru-j432.md) | 4 | a, d | 617 fail; 550 fail; 125 @ alt n/s * fail | fail (UL -383 lb, range -450 nm, speed -35 kt) | - | no measured data | no fuel flow published | Yes: 2x AM13 (100 hp) for 80 hp | Low-volume kit/factory; not dead |
+| 44 | [Sling Twin (MOSAIC light twin, working name)](../candidates/sling-twin.md) | 4 | c, d | - | incomplete: no UL or range or speed | - | no measured data | no fuel flow published | Yes: 2x AM15T (160 hp) for 160 hp | Concept; not dead |
 <!-- screen-table:end -->
 
 **Counts, excluding the reference row.** As published: 14 pass, 5 near miss,
@@ -176,7 +188,7 @@ are findings, not footnotes.
 - **Van's RV-10**: fleet useful load 75 lb below factory.
 - **Epic LT**: included only to represent the 6-seat kit class; a turbine airframe is outside the Aeromomentum mission.
 - **Alpi Pioneer 400**: a light-sport-scale four-seater; listed as the foreign kit benchmark, far below the targets.
-- **Cessna P210N Pressurized Centurion**: fleet useful load 94 lb below factory; owners add tip tanks to reach 1,000 nm with reserve; on factory fuel it is marginal.
+- **Cessna P210N Pressurized Centurion**: fleet useful load 94 lb below factory; owners add tip tanks to reach 1,000 nm with reserve; on factory fuel it is marginal; kit builders are attempting 210-class airplanes (Bill); what exists is fixed-gear 5-6 seat high-wing kits, none a retractable 210 copy: see '210-class kits' in LONGLIST.md.
 - **Piper PA-46-310P Malibu**: published range 1,300 nm vs 1,800 nm from fuel and flow; fleet useful load 55 lb below factory; a live type family (M350 in production), so not orphaned.
 - **Mooney M20TN Acclaim Type S**: with optional tanks (128 gal) still-air range is 1,969 nm.
 - **Cessna TTx / Columbia 400**: fleet useful load 38 lb below factory.
@@ -187,7 +199,7 @@ are findings, not footnotes.
 - **Piper PA-24-400 Comanche 400**: published range 860 nm vs 1,325 nm from fuel and flow; screen speed has no altitude, or is below 6,000 ft; fleet useful load 159 lb below factory.
 - **Rohr 2-175 (71X)**: 1,450 lb gross weight: a 1,000 lb useful load is physically out of reach; a revival would be a new design inspired by it.
 - **Bellanca 19-25 Skyrocket II**: FAI C-1c/C-1d speed records 1975, 246-284 kt (measured, grade R); NASA/Ohio State flight test measured CD0 = 0.016 (NTRS 19770054238); no fuel capacity found, so the range cannot be built up.
-- **Mooney 301**: published range 986 nm vs 1,193 nm from fuel and flow; as-flown useful load estimate 200 lb below the published design figure; useful load and cruise are design figures; the only prototype was ~200 lb over projected weight and 'slower than desired', and no as-flown speed or weight is published (Mooney Events; docs/rights/mooney-301.md); the published 986 nm range is a 45 min reserve figure; fuel and flow give 1,016 nm on that basis, consistent within 3%; 1,000 nm plus 45 min at 235 kt and 19.7 gph needs 98.6 of 100 gal with no climb allowance; below 231 KTAS at the same flow (about 4 kt under the design figure) it cannot carry the reserve (at Jane's 225 kt it needs 102 gal); 235 KTAS at 270 hp, 25,000 ft, 4,000 lb implies CD0 ~0.019 (AR 9.0, e 0.80, prop eta 0.80; AERO, grade E), optimistic for a 1983 pressurized single; at CD0 +20% the same power gives ~220 KTAS, still a pass on speed.
+- **Mooney 301**: published range 986 nm vs 1,193 nm from fuel and flow; as-flown useful load estimate 200 lb below the published design figure; useful load and cruise are design figures; the only prototype was ~200 lb over projected weight and 'slower than desired', and no as-flown speed or weight is published (Mooney Events; docs/rights/mooney-301.md); the published 986 nm range is a 45 min reserve figure; fuel and flow give 1,016 nm on that basis, consistent within 3%; 1,000 nm plus 45 min at 235 kt and 19.7 gph needs 98.6 of 100 gal with no climb allowance; below 231 KTAS at the same flow (about 4 kt under the design figure) it cannot carry the reserve (at Jane's 225 kt it needs 102 gal); 235 KTAS at 270 hp, 25,000 ft, 4,000 lb implies CD0 ~0.019 (AR 9.0, e 0.80, prop eta 0.80; AERO, grade E), optimistic for a 1983 pressurized single; at CD0 +20% the same power gives ~220 KTAS, still a pass on speed; Bill recalls a few active flying examples. The FAA registry shows one M30 ever registered (N301MX, s/n 0000, cancelled 26 July 1989), none current, and no replica or amateur-built copy (registry download 2026-10-24, with an M22 positive control of 14). Likeliest explanation, an inference: the Mooney M22 Mustang (14 registered) or the 301's descendant, the TBM 700 family.
 - **Pipistrel Panthera**: published range 1,460 nm vs 728 nm from fuel and flow; weights do not add: 2,899 - 1,797 != 1,023; the 1,460 nm claim is reproduced exactly by 420 L (2 x 210 L) at the published flow, while the published 770 lb full-fuel payload implies ~42-55 gal; both cannot be true, and the fuel quantity needs a primary source.
 - **Grob GF 200**: screen speed has no altitude, or is below 6,000 ft; empty weight not found, so useful load cannot be screened.
 - **Evektor VUT100-131i SuperCobra**: screen speed has no altitude, or is below 6,000 ft; weights do not add: 3,197 - 1,940 != 1,213.
@@ -196,7 +208,44 @@ are findings, not footnotes.
 - **Robin HR100/285 Tiara**: published range 1,266 nm vs 612 nm from fuel and flow; screen speed has no altitude, or is below 6,000 ft; with optional tanks (111.5 gal) still-air range is 1,174 nm.
 - **Ruschmeyer R90-230RG**: published range 600 nm vs 709 nm from fuel and flow; fleet useful load 122 lb below factory.
 - **SIAI-Marchetti SF.260**: published range 1,040 nm vs 806 nm from fuel and flow.
+- **Bellanca (Anderson-Greenwood) T-250 Aries**: screen speed has no altitude, or is below 6,000 ft.
+- **Tecnam P2006T NG**: screen speed has no altitude, or is below 6,000 ft.
+- **Diamond DA42-VI (similar-engine comparison)**: published range 1,100 nm vs 707 nm from fuel and flow.
+- **AT-P Aviation AT-6 Twin PSE**: screen speed has no altitude, or is below 6,000 ft.
+- **Jabiru J432 Twin**: screen speed has no altitude, or is below 6,000 ft.
 <!-- flags:end -->
+
+## Derringer analogs (Bill: Rotax-powered analogs shown at AERO 2026)
+
+Six current light twins are added as rows, each marked as an analog of the Wing
+Derringer. **None is a two-seater**, as the Derringer was; no two-seat Rotax twin
+was found at AERO 2025 or 2026. The closest is the **Alpi Pioneer 800 Twin**
+(four seats, 2x Rotax 916iS 160 hp, low wing, retractable gear, 1,356 lb useful
+by the maker), shown at AERO 2026 and unflown at the show; its claimed 200 kt at
+FL150 is a design figure. The Tecnam P2006T NG and Diamond DA42-VI were also at
+AERO 2026 and are certified; the DA42 is here as the certified precedent for
+twin automotive-derived engines. The AT-P AT-6 Twin, Jabiru J432 and Sling Twin
+were not at AERO 2026. Sources are in each stub.
+
+## 210-class kits (Bill: kit builders are attempting 210 analogs)
+
+No kit was found that copies the Cessna 210 itself (high wing, six seats,
+retractable gear, about 300 hp), and none is marketed as a 210 replacement. What
+builders use are big fixed-gear high-wing utility kits, closer to a 206/207 than
+a 210. Noted, not screened (they are not revival candidates):
+
+| Kit | Status | Seats | Engine | Useful load | Note |
+|---|---|---|---|---|---|
+| Bearhawk 5 | Bearhawk Aircraft / AviPro, in production; first flight May 2020; about 25 US-registered | 5-6 | IO-580 315 hp (prototype) | 1,488 lb, prototype as weighed (Kitplanes, P) | The most active of the class |
+| Murphy Moose | Murphy Aircraft (owned by Duofu International since 2022), still selling kits; about 36 US-registered | 6 | M14P radial 360 hp, others | - | Some built with LS3 V8s |
+| Barr 6 / Morrison 6 | Kit rights to Morrison Aircraft (Australia) 2006; status unclear | 6 | - | - | The closest on speed by its published figures |
+| Comp Air 6 | Comp Air, Florida; about 13 US-registered; availability unclear | 5-6 | - | - | |
+| Sherpa K500 | Sherpa Aircraft; about 6 US-registered; status unclear | 5 | IO-720 400 hp | 2,165 lb (F) | |
+
+Sources: Kitplanes (https://www.kitplanes.com/the-big-bearhawk/), AvWeb
+(https://www.avweb.com/aviation-news/famous-for-its-rebel-light-aircraft-design-murphy-aircraft-is-one-of-the-originals),
+the makers' pages and Wikipedia (L); registry counts from the FAA download of
+2026-10-24.
 
 ## What the screen says so far (no ranking)
 
