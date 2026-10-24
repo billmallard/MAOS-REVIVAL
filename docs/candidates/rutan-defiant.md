@@ -7,7 +7,7 @@ Stage 1 stub, generated from `docs/longlist/candidates.json` by `docs/longlist/m
 | | |
 |---|---|
 | Origin | experimental kit or plans |
-| Designer / maker | Burt Rutan, RAF (Model 40/74) |
+| Designer / maker | Burt Rutan, RAF (Model 40) |
 | Years | 1978 first flight; plans 1984-85 |
 | Number built | 176 plans sets; ~30 completed |
 | Survivors / registered | ~20 (Twin & Turbine 2026) |
