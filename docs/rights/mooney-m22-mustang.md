@@ -166,6 +166,14 @@ dossier, not here.
 2. **The terms of any purchase or licence**, if Bill authorises an approach.
 3. **Re-derivation from a measured airframe**, depending on the answer to 1.
 
+**The abandonment route (49 USC 44704(a)(5); see `README.md`).** If the FAA,
+using due diligence, could not find the owner of record or an heir, it could
+designate A6SW abandoned and release the engineering data it holds. Here the
+owner of record is a 1973 name whose likely successor, Mooney International,
+exists and can be found. So this route would probably end with the FAA finding
+an owner, not releasing data. Still, a request would force the holder question
+into the open. Filing one is an outward act and Bill's call.
+
 ## Open items
 
 - FAA records on the A6SW holder chain. A public-records request (FOIA) to the FAA
