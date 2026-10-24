@@ -57,6 +57,7 @@ Sanity flags:
 
 - fleet useful load 94 lb below factory
 - owners add tip tanks to reach 1,000 nm with reserve; on factory fuel it is marginal
+- kit builders are attempting 210-class airplanes (Bill); what exists is fixed-gear 5-6 seat high-wing kits, none a retractable 210 copy: see '210-class kits' in LONGLIST.md
 
 ## Why it died
 

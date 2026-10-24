@@ -1518,7 +1518,8 @@
   "rights": "TCDS 3A21 holder: Textron Aviation Inc. (from Cessna, 2015).",
   "safety": "Early detonation engine failures led to a turbo retrofit AD; 210 family accidents 20% fuel, 14% gear-up (Aviation Consumer).",
   "flags": [
-   "owners add tip tanks to reach 1,000 nm with reserve; on factory fuel it is marginal"
+   "owners add tip tanks to reach 1,000 nm with reserve; on factory fuel it is marginal",
+   "kit builders are attempting 210-class airplanes (Bill); what exists is fixed-gear 5-6 seat high-wing kits, none a retractable 210 copy: see '210-class kits' in LONGLIST.md"
   ],
   "ideas": [
    "Six seats, pressurisation and a large, well-documented fleet: the calibration case for the method. Kit builders now attempt 210 analogs (see the long list)."
@@ -2451,7 +2452,8 @@
    "useful load and cruise are design figures; the only prototype was ~200 lb over projected weight and 'slower than desired', and no as-flown speed or weight is published (Mooney Events; docs/rights/mooney-301.md)",
    "the published 986 nm range is a 45 min reserve figure; fuel and flow give 1,016 nm on that basis, consistent within 3%",
    "1,000 nm plus 45 min at 235 kt and 19.7 gph needs 98.6 of 100 gal with no climb allowance; below 231 KTAS at the same flow (about 4 kt under the design figure) it cannot carry the reserve (at Jane's 225 kt it needs 102 gal)",
-   "235 KTAS at 270 hp, 25,000 ft, 4,000 lb implies CD0 ~0.019 (AR 9.0, e 0.80, prop eta 0.80; AERO, grade E), optimistic for a 1983 pressurized single; at CD0 +20% the same power gives ~220 KTAS, still a pass on speed"
+   "235 KTAS at 270 hp, 25,000 ft, 4,000 lb implies CD0 ~0.019 (AR 9.0, e 0.80, prop eta 0.80; AERO, grade E), optimistic for a 1983 pressurized single; at CD0 +20% the same power gives ~220 KTAS, still a pass on speed",
+   "Bill recalls a few active flying examples. The FAA registry shows one M30 ever registered (N301MX, s/n 0000, cancelled 26 July 1989), none current, and no replica or amateur-built copy (registry download 2026-10-24, with an M22 positive control of 14). Likeliest explanation, an inference: the Mooney M22 Mustang (14 registered) or the 301's descendant, the TBM 700 family"
   ],
   "ideas": [
    "A laminar wing, pressurisation and six seats on 360 hp, the concept behind the TBM 700.",
@@ -3045,6 +3047,457 @@
   "safety": "Not researched.",
   "ideas": [
    "Aerobatic, fast and strong: 175 KTAS at 6,000 ft on 260 hp with three seats (flight manual), from a small, clean wing."
+  ]
+ },
+ {
+  "id": "bellanca-t250-aries",
+  "name": "Bellanca (Anderson-Greenwood) T-250 Aries",
+  "seats": 4,
+  "origin": [
+   "b"
+  ],
+  "designer": "Marvin Greenwood, Anderson, Greenwood & Co. (Houston)",
+  "years": "first flight 1973; TC A11SW 28 Jul 1976 (Model 51), Model 51A Jun 1980; production stopped with Bellanca receivership 1980",
+  "built": "4 flying airframes (prototype s/n 0001 + s/n 0003-0005) plus 1 static-test airframe",
+  "flying": "4 registered, all valid (FAA registry 2026-10-24); 3 standard + prototype as experimental",
+  "config": "Low wing single, 4-5 seats, T-tail stabilator, retractable tricycle gear",
+  "construction": "All-aluminum, flat skins and single curves, flush riveted; laminar constant-chord wing",
+  "engine": "Lycoming O-540-A4D5, 250 hp, carbureted (51A: IO-540-C4B5)",
+  "hp": 250,
+  "engines": 1,
+  "turbo": false,
+  "mtow": [
+   3150,
+   "T",
+   "https://drs.faa.gov/api/content/alf/5b718d89-7d42-46a1-b537-9a3fbe563124",
+   ""
+  ],
+  "empty": [
+   1850,
+   "F",
+   "https://aeroresourcesinc.com/uploads/197703-1977%20Bellanca%20Aries%20T-250.pdf",
+   "dry; Plane & Pilot 2010 lists 1,888"
+  ],
+  "useful": [
+   1300,
+   "F",
+   "https://aeroresourcesinc.com/uploads/197703-1977%20Bellanca%20Aries%20T-250.pdf",
+   "AOPA spec table; 1,262 using P&P empty"
+  ],
+  "fuel_gal": [
+   76,
+   "T",
+   "https://drs.faa.gov/api/content/alf/5b718d89-7d42-46a1-b537-9a3fbe563124",
+   "usable (80 total)"
+  ],
+  "cruise": [
+   {
+    "ktas": 180.7,
+    "alt_ft": 6500,
+    "power_pct": 73,
+    "gph": null,
+    "grade": "P",
+    "src": "https://aeroresourcesinc.com/uploads/197703-1977%20Bellanca%20Aries%20T-250.pdf",
+    "note": "AOPA Pilot flight check Mar 1977, prototype N51AG, 208 mph TAS, 22.5 inHg full throttle / 2300 rpm, partially loaded (weight not stated)",
+    "screen": true
+   },
+   {
+    "ktas": 180.7,
+    "alt_ft": null,
+    "power_pct": 75,
+    "gph": null,
+    "grade": "F",
+    "src": "https://aeroresourcesinc.com/uploads/197703-1977%20Bellanca%20Aries%20T-250.pdf",
+    "note": "manufacturer normal cruise 208 mph; altitude not stated"
+   },
+   {
+    "ktas": 173.8,
+    "alt_ft": null,
+    "power_pct": 65,
+    "gph": null,
+    "grade": "F",
+    "src": "https://aeroresourcesinc.com/uploads/197703-1977%20Bellanca%20Aries%20T-250.pdf",
+    "note": "manufacturer economy cruise 200 mph; altitude not stated"
+   }
+  ],
+  "range": {
+   "nm": 1017,
+   "basis": "published 1,170 statute miles at economy cruise with 45-min reserve (AOPA table labels the power 55%, its economy speed line says 65%); 990 sm (860 nm) at 75% with 45-min reserve; altitude not stated",
+   "grade": "F",
+   "src": "https://aeroresourcesinc.com/uploads/197703-1977%20Bellanca%20Aries%20T-250.pdf"
+  },
+  "why_died_short": "Bellanca, the intended producer, went into receivership in 1980 before production got going",
+  "why_died": "Anderson Greenwood took control of a struggling Bellanca to build the Aries at Alexandria MN. The Viking plant was nearly idle in 1977 and A-G still had to raise production capital (AOPA 1977). Bellanca went into receivership in 1980 (Plane & Pilot), reportedly drained by the Skyrocket II program. Only about 4 flying airframes were completed. No safety or technical failure is recorded.",
+  "rights": "TCDS A11SW (Current, Rev 2 1980): holder Anderson, Greenwood and Company, Houston, former holder Bellanca. The A-G valve business later passed via Keystone/Tyco/Pentair to Emerson (secondary sources, unverified), so the TC may sit dormant with a valve company.",
+  "safety": "One NTSB record in about 50 years: FTW83LA173 (1983, N51AG prototype), a taxi brake failure with gear collapse and no injuries. AOPA test noted narrow gear track and weak yaw damping.",
+  "ideas": [
+   "A laminar, constant-chord, flush-riveted metal wing on a fuselage built from flat and single-curve skins to cut production cost: speed (181 KTAS at 6,500 ft on 73% of 250 hp, AOPA 1977) from a design meant to be cheap to build.",
+   "A 250 hp, 1,300 lb useful, four-to-five-seat airframe that is a direct AM20T-class fit; its type certificate (A11SW) is still current and apparently dormant.",
+   "Lesson: it died with its producer (Bellanca's 1980 receivership), not on a technical or safety failure; one NTSB record in about 50 years, on four aircraft."
+  ]
+ },
+ {
+  "id": "alpi-pioneer-800-twin",
+  "name": "Alpi Aviation Pioneer 800 Twin",
+  "seats": 4,
+  "origin": [
+   "c",
+   "d"
+  ],
+  "designer": "Alpi Aviation srl, San Quirino, Italy (founder Corrado Rusalen per aerokurier 2022)",
+  "years": "Unpowered airframe shown AERO 2022; demonstrator with 2x Rotax 916iS shown AERO 2026; flight testing to start after AERO 2026",
+  "built": "1 demonstrator",
+  "flying": "Not confirmed; fliegermagazin (24 Apr 2026) says flight testing starts after AERO 2026",
+  "config": "Low wing light twin, 4 seats, retractable gear, ballistic parachute",
+  "construction": "Wood primary structure; fuselage with carbon shell, wings GRP-laminated (fliegermagazin)",
+  "engine": "2x Rotax 916iS, 160 hp takeoff",
+  "hp": 160,
+  "engines": 2,
+  "turbo": true,
+  "mtow": [
+   2976,
+   "F",
+   "https://www.fliegermagazin.de/news/aero-2026-alpi-aviation-stellt-pioneer-800-twin-aus/",
+   "derived: empty 735 kg + useful 615 kg = 1350 kg, converted; MTOW not stated directly"
+  ],
+  "empty": [
+   1620,
+   "F",
+   "https://www.fliegermagazin.de/news/aero-2026-alpi-aviation-stellt-pioneer-800-twin-aus/",
+   "'rund 735 Kilogramm', converted; manufacturer figure via fliegermagazin"
+  ],
+  "useful": [
+   1356,
+   "F",
+   "https://www.fliegermagazin.de/news/aero-2026-alpi-aviation-stellt-pioneer-800-twin-aus/",
+   "615 kg, converted; manufacturer figure via fliegermagazin"
+  ],
+  "fuel_gal": null,
+  "cruise": [
+   {
+    "ktas": 162,
+    "alt_ft": 0,
+    "power_pct": 75,
+    "gph": null,
+    "grade": "F",
+    "src": "https://www.fliegermagazin.de/news/aero-2026-alpi-aviation-stellt-pioneer-800-twin-aus/",
+    "note": "Manufacturer claim via fliegermagazin: 162 kt at MSL, 75% power; weight not stated; knots assumed TAS; unflown prototype claim",
+    "screen": false
+   },
+   {
+    "ktas": 200,
+    "alt_ft": 15000,
+    "power_pct": 75,
+    "gph": null,
+    "grade": "F",
+    "src": "https://www.fliegermagazin.de/news/aero-2026-alpi-aviation-stellt-pioneer-800-twin-aus/",
+    "note": "Manufacturer claim via fliegermagazin: 200 kt at FL150, 75% power; weight not stated; unflown prototype claim. Aviation et Pilote video (YouTube, 4 May 2026) instead says up to 200 kt at FL100: conflict",
+    "screen": false
+   }
+  ],
+  "why_died_short": "Prototype/kit in development; not dead",
+  "why_died": "Shown on Alpi stand B3-207 at AERO 2026. Planned as an Experimental kit in Europe, aiming for FAA MOSAIC (light-sport) approval in the US. Factory-built from EUR 600,000 net; kit price not published (fliegermagazin). Earlier plan (2022): 2x Rotax 912ULS/915iS, about EUR 350,000, first deliveries 2024 (aerokurier 2022). That timeline slipped.",
+  "rights": "Current OEM design (Alpi Aviation)",
+  "safety": "No service history; not flight-tested as of AERO 2026 per fliegermagazin",
+  "analog_of": "wing-derringer",
+  "ideas": [
+   "The closest current analog of the Derringer idea (a small, fast, retractable light twin), on two Rotax 916iS: shown at AERO 2026, unflown at the show."
+  ]
+ },
+ {
+  "id": "tecnam-p2006t-ng",
+  "name": "Tecnam P2006T NG",
+  "seats": 4,
+  "origin": [
+   "d"
+  ],
+  "designer": "Costruzioni Aeronautiche Tecnam SpA, Italy",
+  "years": "NG launched AERO 2024; EASA TC (Section B, P2006T NG) 19 Feb 2025; FAA certification expected Q4 2026",
+  "built": null,
+  "flying": "In delivery in multiple markets (Tecnam, Flying Jan 2026)",
+  "config": "High wing light twin, 4 seats, retractable gear",
+  "construction": "Metal (aluminium) airframe",
+  "engine": "2x Rotax 912 iSc3 Sport, 100 hp",
+  "hp": 100,
+  "engines": 2,
+  "turbo": false,
+  "mtow": [
+   2844,
+   "T",
+   "https://www.easa.europa.eu/en/downloads/7264/en",
+   "1290 kg, EASA TCDS A.185 Issue 19 (20 Apr 2026), Section B P2006T NG; converted"
+  ],
+  "empty": [
+   1940,
+   "F",
+   "https://www.tecnam.com/aircraft/p2006t-ng/",
+   "880 kg standard empty weight, converted. Tecnam site blocks scripted fetch (HTTP 520); read via WebFetch"
+  ],
+  "useful": [
+   904,
+   "F",
+   "https://www.tecnam.com/aircraft/p2006t-ng/",
+   "410 kg, factory figure, converted"
+  ],
+  "fuel_gal": [
+   52.8,
+   "T",
+   "https://www.easa.europa.eu/en/downloads/7264/en",
+   "capacity 200 L (194 L usable per TCDS), converted"
+  ],
+  "cruise": [
+   {
+    "ktas": 148,
+    "alt_ft": null,
+    "power_pct": null,
+    "gph": 7.4,
+    "grade": "F",
+    "src": "https://www.tecnam.com/aircraft/p2006t-ng/",
+    "note": "Factory max cruise speed 148 kt / 274 km/h; altitude, power and weight not stated; assumed TAS. gph = 2 x 3.7 USG/h factory fuel consumption (power not stated)",
+    "screen": false
+   }
+  ],
+  "range": {
+   "nm": 930,
+   "basis": "Factory range 930 nm (1722 km); reserve, altitude, power not stated; nautical miles",
+   "grade": "F",
+   "src": "https://www.tecnam.com/aircraft/p2006t-ng/"
+  },
+  "why_died_short": "In production; not dead",
+  "why_died": "Shown at AERO 2025 by German dealer GM Aviation (stand A4-319; fliegermagazin 9 Apr 2025) and at AERO 2026 on Tecnam's stand (aerokurier 28 Apr 2026). Orders for 4 P2006T NG were announced at AERO 2026 (afm.aero). US/Canada launch Jan 2026; FAA certification expected Q4 2026. Price not published.",
+  "rights": "Current OEM type (Tecnam), EASA TC A.185",
+  "safety": "Not checked here",
+  "analog_of": "wing-derringer",
+  "ideas": [
+   "Proof that a certified light twin on two 100 hp Rotax engines sells, as a trainer; far below the survey's speed floor."
+  ]
+ },
+ {
+  "id": "diamond-da42-vi",
+  "name": "Diamond DA42-VI (similar-engine comparison)",
+  "seats": 4,
+  "origin": [
+   "d"
+  ],
+  "designer": "Diamond Aircraft Industries, Wiener Neustadt, Austria",
+  "years": "Current production; new DA42-VI demonstrator debuted publicly at AERO 2026",
+  "built": null,
+  "flying": "In production",
+  "config": "Low wing light twin, 4 seats, retractable gear",
+  "construction": "Composite",
+  "engine": "2x Austro Engine AE 300 turbocharged 2.0 L diesel, 168 hp",
+  "hp": 168,
+  "engines": 2,
+  "turbo": true,
+  "mtow": [
+   4407,
+   "F",
+   "https://www.diamondaircraft.com/en/private-owners/aircraft/da42/tech-specs/",
+   "1,999 kg, factory"
+  ],
+  "empty": [
+   3131,
+   "F",
+   "https://www.diamondaircraft.com/en/private-owners/aircraft/da42/tech-specs/",
+   "1,420 kg 'without options', factory"
+  ],
+  "useful": [
+   1276,
+   "F",
+   "https://www.diamondaircraft.com/en/private-owners/aircraft/da42/tech-specs/",
+   "579 kg 'Max. useful load', factory"
+  ],
+  "fuel_gal": [
+   76.4,
+   "F",
+   "https://www.diamondaircraft.com/en/private-owners/aircraft/da42/tech-specs/",
+   "capacity 289 L incl. 100 L auxiliary tank (main 189 L = 50.0 gal); factory conversion"
+  ],
+  "cruise": [
+   {
+    "ktas": 175,
+    "alt_ft": 16000,
+    "power_pct": 75,
+    "gph": null,
+    "grade": "F",
+    "src": "https://www.diamondaircraft.com/en/private-owners/aircraft/da42/tech-specs/",
+    "note": "Cruise at 75%, 16,000 ft, MTOM, ISA (324 km/h TAS)",
+    "screen": true
+   },
+   {
+    "ktas": 190,
+    "alt_ft": 16000,
+    "power_pct": null,
+    "gph": null,
+    "grade": "F",
+    "src": "https://www.diamondaircraft.com/en/private-owners/aircraft/da42/tech-specs/",
+    "note": "Max cruising speed at MCP, 16,000 ft, MTOM, ISA (352 km/h TAS)",
+    "screen": false
+   }
+  ],
+  "range": {
+   "nm": 1100,
+   "basis": "60% power, 12,000 ft, incl. auxiliary tank, incl. climb, no reserves; nautical. Max range 1,225 nm at FL180, 50% power, no reserves. Fuel burn at 60% = 10.4 US gal/h total",
+   "grade": "F",
+   "src": "https://www.diamondaircraft.com/en/private-owners/aircraft/da42/tech-specs/"
+  },
+  "why_died_short": "In production; not dead",
+  "why_died": "Similar-engine comparator, not Rotax. The DA42-VI demonstrator debuted at AERO 2026 (Diamond release 7 May 2026). At AERO 2025 Diamond showed only a DA50 and a DA62; no DA42 was named (Diamond Diary 29 Apr 2025; fliegermagazin 9 Apr 2025). Price not published.",
+  "rights": "Current OEM type (Diamond)",
+  "safety": "Not checked here",
+  "analog_of": "wing-derringer",
+  "ideas": [
+   "A light twin on two automotive-derived 2.0 L turbodiesels: the nearest certified precedent for twin automotive-derived engines, and a benchmark for an Aeromomentum twin."
+  ]
+ },
+ {
+  "id": "atp-at6-twin-pse",
+  "name": "AT-P Aviation AT-6 Twin PSE",
+  "seats": 4,
+  "origin": [
+   "c",
+   "d"
+  ],
+  "designer": "Tomasz Antoniewski / AT-P Aviation, Mielec, Poland",
+  "years": "Work began 2012, restarted 2022 (PARP grant); first flight March 2026; flight test to Nov 2026",
+  "built": "1 prototype",
+  "flying": "Prototype in flight test (2026)",
+  "config": "Three-surface (canard + conventional tail) light twin, 4 seats, ballistic parachute; gear type not confirmed in sources fetched",
+  "construction": "All-metal (aluminium)",
+  "engine": "2x Rotax 915 iS, 141 hp (planned upgrade to 916 iS, 160 hp)",
+  "hp": 141,
+  "engines": 2,
+  "turbo": true,
+  "mtow": null,
+  "empty": null,
+  "useful": null,
+  "fuel_gal": null,
+  "cruise": [
+   {
+    "ktas": 160,
+    "alt_ft": null,
+    "power_pct": null,
+    "gph": null,
+    "grade": "F",
+    "src": "https://generalaviationnews.com/2026/03/24/flight-tests-begin-on-new-twin-trainer/",
+    "note": "'Initial technical specifications' (designer target); altitude, power and weight not stated; unclear whether TAS",
+    "screen": false
+   }
+  ],
+  "range": {
+   "nm": 935,
+   "basis": "Initial specification; reserve, altitude, power not stated; nautical (nm)",
+   "grade": "F",
+   "src": "https://generalaviationnews.com/2026/03/24/flight-tests-begin-on-new-twin-trainer/"
+  },
+  "why_died_short": "Prototype in flight test; not dead",
+  "why_died": "Targets FAA MOSAIC light-sport category; US debut aimed at SUN 'n FUN / Oshkosh 2027 (GAN 24 Mar 2026). Not found at AERO 2025 or AERO 2026.",
+  "rights": "Current developer design (AT-P Aviation)",
+  "safety": "No service history",
+  "analog_of": "wing-derringer",
+  "ideas": [
+   "A four-seat Rotax 915 light-twin prototype in flight test (2026)."
+  ]
+ },
+ {
+  "id": "jabiru-j432",
+  "name": "Jabiru J432 Twin",
+  "seats": 4,
+  "origin": [
+   "a",
+   "d"
+  ],
+  "designer": "Jabiru Aircraft, Bundaberg, Australia",
+  "years": "First flew 2013; US debut EAA AirVenture July 2026",
+  "built": "~3 known (one each in Australia, South Africa, USA per AOPA)",
+  "flying": "Yes (AOPA 23 Jul 2026)",
+  "config": "Light twin, 4 seats, two engine pods on the nose, fixed-pitch props; derived from J230/J430 airframe",
+  "construction": "Composite (Jabiru family); not re-verified here",
+  "engine": "2x Jabiru 2200 GEN4, 80 hp (AOPA says 85 hp)",
+  "hp": 80,
+  "engines": 2,
+  "turbo": false,
+  "mtow": [
+   1676,
+   "F",
+   "https://jabiru.aero/j432-twin-ultimate/",
+   "760 kg (Experimental), converted"
+  ],
+  "empty": [
+   1058,
+   "F",
+   "https://jabiru.aero/j432-twin-ultimate/",
+   "480 kg, converted"
+  ],
+  "useful": [
+   617,
+   "F",
+   "https://jabiru.aero/j432-twin-ultimate/",
+   "280 kg 'Usable weight' (Experimental), converted"
+  ],
+  "fuel_gal": [
+   35.7,
+   "F",
+   "https://jabiru.aero/j432-twin-ultimate/",
+   "capacity 135 L, converted"
+  ],
+  "cruise": [
+   {
+    "ktas": 125,
+    "alt_ft": null,
+    "power_pct": null,
+    "gph": null,
+    "grade": "F",
+    "src": "https://jabiru.aero/j432-twin-ultimate/",
+    "note": "'125 knots TAS'; altitude, power and weight not stated; fuel burn 30-32 L/h total (7.9-8.5 US gal/h, converted)",
+    "screen": false
+   }
+  ],
+  "range": {
+   "nm": 550,
+   "basis": "Factory range 550 nm, endurance 4.5 h; reserve not stated; nautical",
+   "grade": "F",
+   "src": "https://jabiru.aero/j432-twin-ultimate/"
+  },
+  "why_died_short": "Low-volume kit/factory; not dead",
+  "why_died": "Similar-small-engine comparator (Jabiru, not Rotax). Sold as factory-built, kit or builder-assist; US importer seeking light-sport category certification under Part 22 (AOPA). Not found at AERO 2025 or AERO 2026. Price not published.",
+  "rights": "Current OEM design (Jabiru)",
+  "safety": "Not checked here",
+  "analog_of": "wing-derringer",
+  "ideas": [
+   "A low-cost kit twin on two small Jabiru engines; below the speed floor."
+  ]
+ },
+ {
+  "id": "sling-twin",
+  "name": "Sling Twin (MOSAIC light twin, working name)",
+  "seats": 4,
+  "origin": [
+   "c",
+   "d"
+  ],
+  "designer": "Sling Aircraft, South Africa",
+  "years": "Announced July 2026; aims to show at EAA AirVenture 2027",
+  "built": "0",
+  "flying": "No",
+  "config": "Low wing light twin, 4 seats as LSA / 6 seats as Experimental Amateur-Built, retractable tricycle gear, whole-airplane parachute (renderings)",
+  "construction": null,
+  "engine": "2x Rotax 916 iS, 160 hp takeoff / 137 hp continuous",
+  "hp": 160,
+  "engines": 2,
+  "turbo": true,
+  "mtow": null,
+  "empty": null,
+  "useful": null,
+  "fuel_gal": null,
+  "cruise": [],
+  "why_died_short": "Concept; not dead",
+  "why_died": "Concept announced 25-31 Jul 2026 (AvBrief, AeroTime), after AERO 2026. Not shown at AERO. Sling has not disclosed performance, dimensions, price or first-flight timing.",
+  "rights": "Current OEM concept (Sling)",
+  "safety": "None",
+  "analog_of": "wing-derringer",
+  "ideas": [
+   "A MOSAIC-era light twin concept on two Rotax 916iS; nothing flown or published to screen."
   ]
  }
 ]

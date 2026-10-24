@@ -61,6 +61,7 @@ Sanity flags:
 - the published 986 nm range is a 45 min reserve figure; fuel and flow give 1,016 nm on that basis, consistent within 3%
 - 1,000 nm plus 45 min at 235 kt and 19.7 gph needs 98.6 of 100 gal with no climb allowance; below 231 KTAS at the same flow (about 4 kt under the design figure) it cannot carry the reserve (at Jane's 225 kt it needs 102 gal)
 - 235 KTAS at 270 hp, 25,000 ft, 4,000 lb implies CD0 ~0.019 (AR 9.0, e 0.80, prop eta 0.80; AERO, grade E), optimistic for a 1983 pressurized single; at CD0 +20% the same power gives ~220 KTAS, still a pass on speed
+- Bill recalls a few active flying examples. The FAA registry shows one M30 ever registered (N301MX, s/n 0000, cancelled 26 July 1989), none current, and no replica or amateur-built copy (registry download 2026-10-24, with an M22 positive control of 14). Likeliest explanation, an inference: the Mooney M22 Mustang (14 registered) or the 301's descendant, the TBM 700 family
 
 ## Why it died
 
