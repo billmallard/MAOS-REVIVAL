@@ -6,7 +6,10 @@ delegated, judgement mine). **Board issue:** AER-3787. **Date:** 2026-10-24.
 contacted. From AERO's stage 1 long list (pass). **Updated 2026-10-24** for
 AERO's stage 3 question (rank 2): what did the 2023 JetEXE purchase cover, and
 does it include licensing the IV-P design or its kit tooling? See "The 2023
-JetEXE purchase" below.
+JetEXE purchase" below. **Updated again 2026-10-24** for Bill's review
+(AER-3805): his recollection of a new Austin, Texas holder, and the Oregon shop
+that re-wings IV-Ps. See "Bill's Austin lead" below and
+[`lancair-rdd-lx7.md`](lancair-rdd-lx7.md).
 
 **Correction.** The first pass of this file quoted AvWeb as reporting a sale of
 "older kit designs, molds, and intellectual property". AvWeb and Kitplanes say
@@ -44,6 +47,15 @@ Source quality: **P** primary or official record; **S** reputable secondary;
   2011 (L).
 - **"Mountain Aviation" did not show up** in any Lancair record found. The chain
   runs Oregon, then Texas, then California.
+- **No Austin, Texas holder found.** Bill recalls the assets going to a new
+  Austin company in the last two years. No press report, registry record or
+  company page found says so; the newest public owner is JetEXE, Sacramento,
+  and Lancair's own site still says Sacramento in 2026. Not ruled out: a company
+  trading under another name would not show up in these searches.
+- **The Oregon re-wing shop is RDD Enterprises, Redmond (the LX7).** It rebuilds
+  donor IV-Ps with its own wing and tail, for $821,000 piston or $980,000
+  turboprop (2019 prices). Nothing public says it holds any Lancair design
+  rights. See [`lancair-rdd-lx7.md`](lancair-rdd-lx7.md).
 - **Who could license or sell the IV-P design today is not established.** The
   2017 Texas buyer is still an active company, the 2023 purchase terms are
   private, and owner forums report a legal dispute between the parties and
@@ -131,6 +143,37 @@ no relevant federal case filed since 2023; the same search does return older
 Lancair federal cases (for example D. Or. 6:09-cv-06134), so the search works. A
 dispute, if real, is probably in Texas state court, which was not searched.
 
+### Bill's Austin lead
+
+Bill's recollection (AER-3783, 2026-10-24): Lancair's assets went to a new
+company in Austin, Texas, within about two years, which is re-tooling to support
+existing customers. Checked 2026-10-24, public sources only:
+
+| Probe | Result | Grade |
+|---|---|---|
+| Texas Comptroller, active franchise-tax holders with "LANCAIR" in the name | Four: Lancair of Texas, Inc. (Fort Worth, 2000); Lancair International, LLC (Uvalde, 2015, the 2017 buyer); Lancair 455JB LLC (Dallas, chartered 23 April 2026, which reads like a single-aircraft holding company); Lancair Owners and Builders Organization, Inc. (2015, the owners' group). **None in Austin.** The same query finds the known Uvalde LLC, so it works. | P |
+| Oregon SOS, "LANCAIR" | Only Lancair International Inc. (Redmond/Bend, 2003), the 2017 seller | P |
+| lancair.com, re-read 2026-10-24 | "Lancair Aerospace, KSAC Sacramento Executive Airport, 6273 Freeport Blvd, Sacramento"; © 2026; CEO Capt. Augustine Joseph, "president and owner of several international business corporations, including JetEXE Aviation and Advanced International Aviation". No Texas address except a legacy 830 (Uvalde) phone number | P/S |
+| Press searches (AvWeb, Kitplanes, Flying, Aero-News, FLYER), 2024-2026 | Nothing newer than the October 2023 JetEXE purchase | S |
+| LancairLive owners' forum | Not readable from here (the server refuses automated reads) | — |
+
+**Reading.** On the public record the holder is still JetEXE / Lancair
+Aerospace, Sacramento. Two things could explain Bill's recollection. The first
+is the 2017 move of all the old-model assets to a new Texas company in Uvalde,
+west of San Antonio. The second is that a buyer since 2023 trades under
+a name that does not contain "Lancair", which none of these probes would find.
+**Bill, if you remember the company's name or where you saw it, that settles it
+in one search.** Until then, "Austin" is unconfirmed, not disproved.
+
+### The Oregon re-wing shop
+
+RDD Enterprises, LLC, Redmond, Oregon (Oregon SOS 38977492, registered
+2006-10-18, P). Its LX7 strips a donor IV-P down to the fuselage shell and
+rebuilds it with a new wing and new tail. Full file:
+[`lancair-rdd-lx7.md`](lancair-rdd-lx7.md). The rights point that matters here:
+RDD builds on airframes its customers already own, and no public source shows
+it claiming any Lancair design rights. It is a pattern for a revival, not a holder.
+
 ## Kit or plans rights
 
 - Kit sold by Lancair (Neico Aviation, then Lancair International) from the early
@@ -204,6 +247,8 @@ stage.
 - California SOS record for JetEXE: asset purchase or interest purchase.
 - Whether "Mountain Aviation" ever held any Lancair asset. Nothing found.
 - Exact IV vs IV-P split in the registry (model strings are inconsistent).
+- Bill's Austin company: the name, if he recalls it. A non-"Lancair" trading
+  name would explain why the registry and press probes miss it.
 
 ## Sources
 
@@ -238,5 +283,9 @@ stage.
 - USPTO TSDR: LANCAIR (SN 98225145; SN 74206389), LANCAIR AEROSPACE (SN 98225072).
   https://tsdr.uspto.gov/statusview/sn98225145
   https://tsdr.uspto.gov/statusview/sn74206389
+- Texas Comptroller, same dataset, all names containing "LANCAIR", queried
+  2026-10-24 (P).
+- Oregon Secretary of State, same dataset: "LANCAIR" and RDD Enterprises, LLC
+  (registry 38977492), queried 2026-10-24 (P).
 - Wikipedia, "Lancair IV", "Lancair", "Evolution Aircraft" (L).
   https://en.wikipedia.org/wiki/Lancair_IV
