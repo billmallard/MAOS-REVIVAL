@@ -166,7 +166,7 @@ Full study (lead design). Method, prices and sources are in [docs/MANUFACTURING.
 
 | Item | Light, lb | Heavy, lb | Basis | Grade |
 |---|---|---|---|---|
-| Starting empty weight | 2,200 | 2,340 | 2,200 owner's manual (F); CAFE weighed N114L at 2,212.5-2,215.5 with a 360 hp Regan TIO-540 (R, CAFE APR c.2000); a 2000 IV-P listed at 2,332 with TSIO-550-E, 4-blade MT, glass panel (B, planesales.com.au, read 2026-10-24) | F/R/B |
+| Starting empty weight | 2,200 | 2,340 | 2,200 owner's manual (F); CAFE weighed N114L at 2,212.5-2,215.5 with a 360 hp Regan TIO-540 (R, CAFE APR c.2000); a 2000 IV-P listed at 1,058 kg (2,332 lb, our conversion) with TSIO-550-E, 4-blade MT, glass panel (B, planesales.com.au, read 2026-10-24) | F/R/B |
 | Airframe re-derived into new molds (the originals have no known location) in out-of-autoclave prepreg or infusion | -30 | +0 | Already a factory-molded kit (CAFE: 0.6% over brochure). Little structural weight left to take out | E |
 | Panel: current EFIS and harness | -20 | +0 | Later IV-Ps already fly glass panels | E |
 | EFI engine: backup battery and bus | +5 | +10 | One ECU | E |

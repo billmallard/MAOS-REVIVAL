@@ -169,7 +169,7 @@ Full study (lead design). Method, prices and sources are in [docs/MANUFACTURING.
 
 | Item | Light, lb | Heavy, lb | Basis | Grade |
 |---|---|---|---|---|
-| Starting empty weight | 1,600 | 1,700 | 1,600 standard (F, RAF via pilot report, 337skymaster.com/defiant.htm); 1,680 'equipped, as tested' (P, same report) and VH-DFY 1,680 with IO-360s and glass panel (B, aeropedia.com.au, 2019); Wikipedia 1,701. No weighed builder Defiant found | F/P/B |
+| Starting empty weight | 1,600 | 1,700 | 1,600 standard (F, RAF via pilot report, 337skymaster.com/defiant.htm); 1,680 'equipped, as tested' (P, same report) and aeropedia.com.au (2019) also gives 1,680 lb (762 kg) in its general Defiant spec, not as a weighing of VH-DFY (F/secondary); Wikipedia 1,701. No weighed builder Defiant found | F/P/B |
 | Wing, canard, winglets: full-depth hot-wired foam cores with wet-laid glass skins -> molded carbon sandwich skins on spar and ribs, pultruded carbon spar caps | -95 | -40 | Laminate and core arithmetic on AERO's wetted areas (287 ft2): removes 90-120 lb of full-depth foam, adds an inner face, light core and ribs. See the method section | E |
 | Fuselage shell: wet-laid glass/foam sandwich -> infused carbon sandwich in female molds | -60 | -30 | 228 ft2 shell; 3 plies wet BID at 0.11-0.12 lb/ft2/ply against 2-3 plies infused 200 gsm carbon at 0.066 | E |
 | Bulkheads, firewalls, consoles: hand-laid -> CNC-cut from bought carbon sandwich panel | -15 | -5 | about 40 lb of flat glass/foam parts; flat carbon panel about 35-60% lighter | E |
@@ -184,7 +184,7 @@ Full study (lead design). Method, prices and sources are in [docs/MANUFACTURING.
 
 | | Original (moldless plans) | Modern one-off (moldless carbon) | Modern molded kit (10-25 unit run) |
 |---|---|---|---|
-| Builder hours | RAF 2,000 (F); 15-20 years typical (P); N171D 7,500-8,000 h (P) | 3,500-6,000 (E) | 2,000-3,500 (E) |
+| Builder hours | No RAF figure found; one build "took 15 years ... Some take 20" (P, AOPA Apr 2020); N171D 7,500-8,000 h (P) | 3,500-6,000 (E) | 2,000-3,500 (E) |
 | Airframe change | baseline | -100 to -20 lb (E) | -245 to -85 lb (E) |
 | Tooling | none | none | $100-300k (E) |
 | All-in to fly | | $90-160k (E) | $140-240k (E) |

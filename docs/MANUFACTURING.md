@@ -26,7 +26,8 @@ own stage 4 section.
    over its brochure empty weight, the molded IV-P 0.6% (R).
 2. **Defiant: rebuild empty weight 1,360-1,620 lb** against the 1,600 lb plans
    prototype, so useful load 1,330-1,590 lb against stage 3's 1,350. The heavy
-   end starts from the 1,680-1,700 lb that equipped Defiants actually weigh. With
+   end starts from 1,680-1,700 lb: the pilot report's "equipped, as tested" figure
+   and Wikipedia's 1,701 (no weighed Defiant was found). With
    our corrected engine credit, 1,300-1,580 lb.
 3. **IV-P: rebuild empty weight 2,140-2,360 lb**, useful load 1,190-1,410 lb.
    Its weight is decided by two choices, not by manufacturing: the engine
@@ -83,8 +84,8 @@ Notes on reading it:
 - The stage 3 useful load here is MTOW less stage 3 empty weight. AERO's
   Express headline (890 lb) also subtracts its +11 lb engine; ours keeps the
   engine apart.
-- Several heavy ends are *worse* than stage 3 because they start from what
-  equipped aircraft actually weigh (Defiant 1,680-1,700, IV-P 2,332 listed),
+- Several heavy ends are *worse* than stage 3 because they start from
+  equipped figures (Defiant 1,680 as tested and 1,701, IV-P 1,058 kg / 2,332 lb listed),
   not from the brochure. That is the fleet-heavier-than-brochure pattern the
   brief warns about, and we did not round it away.
 - The ranking consequence, for AERO: on the Defiant the midpoint gains about
@@ -176,9 +177,9 @@ documents as if it were a fact; please carry the E with it.
 
 | | Original (plans, moldless) | Modern one-off builder (moldless, carbon, cores cut from files) | Modern kit (molded carbon, small run) |
 |---|---|---|---|
-| Builder hours | RAF quoted 2,000 (F). "15-20 years" typical (P, AOPA Pilot Apr 2020); N171D took 7,500-8,000 h over 35 years (P, Twin & Turbine Jan 2026) | 3,500-6,000 (E): deletes template making and hand core cutting, keeps contouring | 2,000-3,500 (E). Anchors: RV-10 2,000 (F, Van's via forum); Velocity 2,000 slow-build, 1,000 Fastbuild (F, velocityaircraft.com); twin firewall-forward work counted twice |
+| Builder hours | No RAF build-hour figure found (a "2000" on the pilot-report page is engine TBO). One Defiant "took 15 years to build. Some take 20." (P, AOPA Pilot Apr 2020); N171D took 7,500-8,000 h over 35 years (P, Twin & Turbine Jan 2026) | 3,500-6,000 (E): deletes template making and hand core cutting, keeps contouring | 2,000-3,500 (E). Anchors: RV-10 2,000 (F, Van's via forum); Velocity 2,000 slow-build, 1,000 Fastbuild (F, velocityaircraft.com); twin firewall-forward work counted twice |
 | Airframe change | baseline | -100 to -20 lb (E: carbon skins on full-depth cores; core and fill stay) | -245 to -85 lb (table above) |
-| Composite materials per airframe | about $35-50k (E: Cozy MKIV section kits sum to about $30k+ at Spruce, scaled by wetted area 1.5x) | $15-30k (E, from listed prices: carbon twill $28.50-56/lin yd, PRO-SET INF-114 $1,670/14.2 gal, Divinycell H80 1/2 in $217/sheet, plus 30% scrap and $3-6k consumables) plus core cutting $3-8k (E; no public price) | inside the kit price |
+| Composite materials per airframe | about $35-50k (E: Cozy MKIV section kits sum to about $30k+ at Spruce, scaled by wetted area 1.5x) | $15-30k (E, from listed prices: carbon twill $28.50-39.50/lin yd, PRO-SET INF-114 $1,670/14.2 gal, Divinycell H80 1/2 in $217/sheet, plus 30% scrap and $3-6k consumables) plus core cutting $3-8k (E; no public price) | inside the kit price |
 | Airframe kit price | n/a | n/a | $80-140k at a 10-25 unit run (E, including the tooling share). Market anchors: Velocity XL $77k base, +$16k retract, +$52k Fastbuild; RV-10 $89.6k standard, $116.3k quick-build (F) |
 | Tooling | none | none | $100-300k (E): about 670 ft2 of mold surface at $120-360/ft2, plus $20-60k of jigs. No public price for a mold set exists; see below |
 | Engines | 2x O-320 | 2x AM15T, $35.4-37.6k (F) | same |
