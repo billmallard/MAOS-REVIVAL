@@ -570,10 +570,10 @@
   ],
   "designer": "Tom Prescott, Prescott Aeronautical",
   "years": "1985 first flight; kits to ~1989",
-  "built": "68 kits; 25-35 completed by 1991",
-  "flying": "not counted",
-  "config": "Pusher, 4 seats, fixed tricycle gear",
-  "construction": "Steel-tube fuselage, CAD/CAM-designed",
+  "built": "68 kits (Wings Over Kansas); 19 airframes ever on the US register (FAA registry 2026-10-24), plus at least 2 abroad",
+  "flying": "4 current US registrations (N41PP museum, N10JS, N200SX, N40LE); 2 likely airworthy",
+  "config": "Pusher, 4 seats (2+2), engine in the tail cone on a 12 in prop extension (no drive shaft), T-tail, retractable or fixed tricycle gear",
+  "construction": "TIG-welded 4130 square-tube cage with non-structural fibreglass shells; riveted aluminium wing, NLF(1)-0215F; CAD/CAM-designed to Part 23",
   "engine": "Lycoming O-360, 180 hp",
   "hp": 180,
   "turbo": false,
@@ -609,7 +609,7 @@
     "gph": null,
     "grade": "P",
     "src": "https://www.kitplanes.com/archive-may-1988/",
-    "note": "measured, Kitplanes May 1988",
+    "note": "measured, Kitplanes May 1988 (LeRoy Cook), second prototype N42PP; altitude, weight and rpm not published",
     "screen": true
    },
    {
@@ -628,13 +628,23 @@
    "grade": "F",
    "src": "https://1000aircraftphotos.com/Contributions/6802.htm"
   },
-  "why_died_short": "Slow parts supply and weak sales; company folded 1991",
-  "why_died": "Builders cited slow parts delivery; kits stopped ~1989 and the company folded 1991 (Kitplanes; SDASM).",
-  "rights": "Not found.",
-  "safety": "Not found.",
+  "why_died_short": "Aft-CG handling reputation, financing change, slow parts; folded 1989-91",
+  "why_died": "Early handling and performance disappointment tied to a far-aft CG (pitch sensitivity, hard rotation), a financing change from pay-as-you-build to pay-up-front (Tom Prescott, 2007), slow parts, and a 1988 sale abroad; folded 1989-1991 with builders mid-kit (Kitplanes; SDASM; Sport Aviation).",
+  "rights": "No TC. Engineering record survives at SDASM (SC.10269); rights holder unknown (docs/rights/prescott-pusher.md, PR #6).",
+  "safety": "4 confirmed US NTSB events, 1 fatal (Ford V-6 conversion, LAX90DUM02), plus a probable fifth (fatal, Ford V-6). Pusher-specific: a door into the prop (CEN09CA386) and a prop separation (LAX05LA270). Pitch-up stall in a go-around (MIA92LA186).",
   "ideas": [
-   "A four-seat pusher designed with CAD/CAM in the 1980s around a steel-tube fuselage, aimed at a low-cost kit.",
-   "Lesson: slow parts supply killed it before the airframe could prove itself; kit logistics are part of the design."
+   "A pusher without a drive shaft: engine in the tail cone, prop on a 12 in extension; no drive failure on record.",
+   "A welded tube cage with all systems installed before non-structural shells go on; CAD/CAM-designed from the start; the engineering archive survives at SDASM.",
+   "Lesson: an engine in the tail sets the CG, gear position and prop clearance together; the Prescott's handling complaints trace to that."
+  ],
+  "useful_fleet": [
+   739,
+   "P",
+   "http://web.archive.org/web/20241217134717/https://p.pdfhall.com/russ-and-marcia-taylors-prescott-pusher_5b6d873e097c4748748b4604.html",
+   "one builder aircraft weighed (N747P: 1,555 lb in the shop, 1,661 lb finished with ballast for CG; Jack Cox, Sport Aviation, September 1991); not a fleet average"
+  ],
+  "flags": [
+   "Bill's top-interest design (AER-3783, 2026-10-24): full deep dive in the stage 3 dossier"
   ]
  },
  {
