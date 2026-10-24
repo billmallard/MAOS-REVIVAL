@@ -47,7 +47,7 @@ secondary; **L** low (wiki, forum, aggregator).
   commit is dated 31 July 2006. The 2008 TWITT talk came two years in. Later the domains were taken over by spam: pharmacy pages on
   ligetistratos.com from 2010, and directory and electric-car pages alongside
   reposted Stratos text on ligeti-stratos.com from 2012.
-  Today ligeti-stratos.com refuses connections, and ligetistratos.com redirects
+  Today ligeti-stratos.com does not answer, and ligetistratos.com redirects
   to a domain sales page. The 2006 captures are the primary record.
 - **Airframes: accounts conflict, but at least one survives in a museum.** Three
   were built (Wikipedia; aeropedia). One crashed and killed the designer on 22
@@ -88,7 +88,7 @@ data that does exist (the notes and the CAD model) is with the family.
 | The fatal-crash aircraft | Crashed 22 September 1987 near Penfield, Victoria. AHSA calls it the first production Mk II and says "The damaged aircraft was repaired and is on display at the Ballarat Air Museum, Victoria." AHSA puts "some 340 hours" on the Mk I prototype; aeropedia puts 340 hours on the crashed aircraft; TWITT says over 700 hours in all. Wikipedia calls the crashed aircraft the prototype | AHSA, S; aeropedia, L; TWITT, S; Wikipedia, L |
 | A second airframe | "crashed at Mangalore injuring the pilot and it was restored to static display standard at Holbrook for the Australian Ultralight Museum", registered 19-7441, c/n S3-001 | aeropedia, L |
 | A third, unfinished | "only a fibreglass shell and was not completed but has survived", on display "at a museum in the Ballarat / Bendigo area" | aeropedia, L |
-| Public data | Jane's 1987-88 figures, via Wikipedia (span 5.36 m, wing area 7.53 m², MTOW 188 kg, Wortmann airfoil, König SD 570 at 21 kW). Spec pages for the first-generation prototype and second-generation production aircraft are archived on ligeti-stratos.com (2012-2015 captures, on the repurposed domain, so treat them as reposts). TWITT No. 262 reproduces spec sheets and CAD views. ATSB report 198701462 | L; P (archived pages, ATSB report not read); S |
+| Public data | Jane's 1987-88 figures, via Wikipedia (span 5.36 m, wing area 7.53 m², MTOW 188 kg, Wortmann airfoil, König SD 570 at 21 kW). Spec pages for the first-generation prototype and second-generation production aircraft are archived on ligeti-stratos.com (first captured in 2012 for the second generation and 2015 for the first, on the repurposed domain, so treat them as reposts). TWITT No. 262 reproduces spec sheets and CAD views. ATSB report 198701462 | L; P (archived pages, ATSB report not read); S |
 
 Three accounts of which airframe is where do not agree: the 2006 project page,
 AHSA and aeropedia. The museum holdings are the likeliest survivors to measure.
