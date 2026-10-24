@@ -169,4 +169,6 @@ Short note. Method, prices and sources are in [docs/MANUFACTURING.md](../MANUFAC
 
 Cost and hours not studied (short note). Skill floor: Van's-level riveting if unpressurised; well above it if pressurised.
 
+**Home-shop route** ([MANUFACTURING.md](../MANUFACTURING.md#the-home-shop-route), tools about $20-49k, prices read 2026-10-24, all E): The home router cuts 0.032-0.040 in 2024-T3, which SendCutSend does not offer, for about 600-1,200 more hours than a service-cut kit. Final holes are drilled by hand, since router accuracy is +/-0.005 in. Do not seal a pressure hull at home.
+
 <!-- stage4:end -->

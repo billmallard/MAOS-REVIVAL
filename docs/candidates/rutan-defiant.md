@@ -196,4 +196,6 @@ Engines 2x AM15T $35.4-37.6k (F, aeromomentum.com, 2026-10-24). The kit's toolin
 
 **Reproducibility:** whether the plans in builders' hands can lawfully seed a molded re-derivation is Elon's and an attorney's question (stage 2). Measuring N78RA at Hiller would replace most of the estimated geometry; contact is Bill's call.
 
+**Home-shop route** ([MANUFACTURING.md](../MANUFACTURING.md#the-home-shop-route), tools about $20-49k, prices read 2026-10-24, all E): Home molds cost about 670 ft2 of mold surface, 1,300-2,700 h and $10-27k of materials. Total home-molded: 3,700-7,000 h and $59-91k, against a service kit at 2,000-3,500 h and $80-140k, at the same weight.
+
 <!-- stage4:end -->

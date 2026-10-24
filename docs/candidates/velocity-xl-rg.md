@@ -216,4 +216,6 @@ Short note. Method, prices and sources are in [docs/MANUFACTURING.md](../MANUFAC
 
 Hours: 2,000 slow-build, 1,000 Fastbuild (F, velocityaircraft.com FAQ); builder assist $95/h.
 
+**Home-shop route** ([MANUFACTURING.md](../MANUFACTURING.md#the-home-shop-route), tools about $20-49k, prices read 2026-10-24, all E): A live molded kit: the home shop adds jigs and fittings only.
+
 <!-- stage4:end -->

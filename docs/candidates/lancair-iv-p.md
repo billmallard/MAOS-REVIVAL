@@ -188,4 +188,6 @@ Full study (lead design). Method, prices and sources are in [docs/MANUFACTURING.
 
 **Rebuild questions:** the new nose is a small tooling job. Radiator, coolant and battery ahead of the firewall plus a slightly longer mount recover part of the nose moment, not 150-240 lb of it; the rest is AERO's weight-and-balance. Nothing in manufacturing changes the 36 lb/ft2 wing behind the stall-spin record.
 
+**Home-shop route** ([MANUFACTURING.md](../MANUFACTURING.md#the-home-shop-route), tools about $20-49k, prices read 2026-10-24, all E): Home molds from a measured airframe cost about 584 ft2 of mold surface. Total home-molded: 5,100-8,100 h and $58-87k, against a re-derived kit at 3,500-5,000 h and $155-250k. Pressurised laminate quality is the home-shop risk.
+
 <!-- stage4:end -->

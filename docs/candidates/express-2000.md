@@ -175,4 +175,6 @@ Short note. Method, prices and sources are in [docs/MANUFACTURING.md](../MANUFAC
 
 Hours: 2,000 factory, 5,000 for the CAFE aircraft (F/P, CAFE APR); kit $34,995 then.
 
+**Home-shop route** ([MANUFACTURING.md](../MANUFACTURING.md#the-home-shop-route), tools about $20-49k, prices read 2026-10-24, all E): Home molds as the Defiant, scaled to 519 ft2 wetted, including the new tail.
+
 <!-- stage4:end -->

@@ -170,4 +170,6 @@ Short note. Method, prices and sources are in [docs/MANUFACTURING.md](../MANUFAC
 
 **Shaft drive:** every part is buyable; the obstacle is the torsional design of a geared engine on a long shaft (the 2018 fatal was a coupling failure). That needs analysis and a rig test (STRUCTURES and AERO), not a manufacturing route. Cost and hours not studied.
 
+**Home-shop route** ([MANUFACTURING.md](../MANUFACTURING.md#the-home-shop-route), tools about $20-49k, prices read 2026-10-24, all E): Home molds as the Defiant, scaled to 514 ft2 wetted. The driveshaft and couplings must be bought, never home-turned.
+
 <!-- stage4:end -->

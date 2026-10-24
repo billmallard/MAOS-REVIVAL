@@ -172,4 +172,6 @@ Short note. Method, prices and sources are in [docs/MANUFACTURING.md](../MANUFAC
 | No airframe rebuild assessed: a live certified type held by Textron; the path is modifying existing airframes | +0 | +0 | Calibration case only | - |
 | **Rebuild empty weight, no engine credit** | **2,340** | **2,430** | sum, rounded to 10 lb | E |
 
+**Home-shop route** ([MANUFACTURING.md](../MANUFACTURING.md#the-home-shop-route), tools about $20-49k, prices read 2026-10-24, all E): Not applicable.
+
 <!-- stage4:end -->

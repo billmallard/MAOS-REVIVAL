@@ -160,4 +160,6 @@ Short note. Method, prices and sources are in [docs/MANUFACTURING.md](../MANUFAC
 
 Hours: 1,500 factory (F, AOPA Pilot Dec 1994); kit $29,490 then.
 
+**Home-shop route** ([MANUFACTURING.md](../MANUFACTURING.md#the-home-shop-route), tools about $20-49k, prices read 2026-10-24, all E): The best home-mold candidate by size: about 400 ft2 of mold surface, 800-1,600 h.
+
 <!-- stage4:end -->

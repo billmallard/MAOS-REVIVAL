@@ -175,4 +175,6 @@ Short note (reference). Method, prices and sources are in [docs/MANUFACTURING.md
 
 Hours: about 2,500 (F, Spruce and CAFE APR). Plans $500 (F, Spruce, read 2026-10-24).
 
+**Home-shop route** ([MANUFACTURING.md](../MANUFACTURING.md#the-home-shop-route), tools about $20-49k, prices read 2026-10-24, all E): Designed as a garage build. CNC hot-wire cores and routed bulkheads remove templating hours; the weight stays moldless.
+
 <!-- stage4:end -->
