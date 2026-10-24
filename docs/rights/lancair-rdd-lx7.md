@@ -73,7 +73,7 @@ comparison against the stock IV-P; these are the inputs.
 | Payload with full fuel (as published) | 320 lb | 294 lb (see note) | 900 lb |
 | Max cruise | 260 KTAS at FL250, 24 gph | 315 KTAS at FL250, 40 gph | — |
 | Economy cruise | 250 KTAS at FL250, 18 gph | 280 KTAS, 30 gph, altitude not stated | — |
-| Range | 1,690 nm at max cruise ("with 1 hour reserve"); "2,250" at economy, unit not stated, nm assumed | 1,300 nm at max cruise | — |
+| Range | 1,690 nm at max cruise ("with 1 hour reserve"); "2,250" at economy, unit not stated, nm assumed | 1,300 nm at max cruise ("4.6 hours endurance max cruise with 1 hour reserve"; see note) | — |
 | Stall, Vso | 63 KIAS | 58 KIAS | — |
 | Cabin differential | 5 psid | 5 psid | none |
 
@@ -95,6 +95,12 @@ to keep the fuselage and replace the lifting surfaces.
   lb/gal (1,206 lb) gives about 394 lb, not the published 294 lb. The piston's
   320 lb does check (1,400 - 1,080). The turboprop figure is internally
   inconsistent and is probably a typo. It is kept as published.
+- **Turboprop range.** The site says "1300 NM (4.6 hours endurance max cruise
+  with 1 hour reserve)". But 180 gal at 40 gph is 4.5 h of fuel in total, so
+  4.6 h of endurance plus a 1 h reserve cannot both be true. 1,300 nm at 315
+  KTAS is 4.1 h; with a 1 h reserve, 3.5 h gives about 1,100 nm. The line is
+  internally inconsistent and is kept as published. (AERO caught this in
+  re-review.)
 - **Stall speeds.** AERO notes that the published Vso values imply a CLmax of
   about 2.85 (piston) and 3.45 (turboprop) at gross. The second is beyond what
   a double-slotted flap usually gives. AERO carries it as a brochure claim to

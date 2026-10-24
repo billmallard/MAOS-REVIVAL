@@ -20,21 +20,22 @@ Source quality: **P** primary or official record; **S** reputable secondary;
 
 | Design | Maker | Engines (per AERO's stub) | Certification status | Rights picture |
 |---|---|---|---|---|
-| Tecnam P2006T NG | Costruzioni Aeronautiche Tecnam S.p.A., Italy | 2 x Rotax 912 iSc3, 100 hp | FAA TCDS A62CE, Current, holder Tecnam, Rev 12 of 2 October 2025 (DRS, P). AERO's stub cites EASA TCDS A.185, with the NG in Section B (P, not re-read here) | Firmly held, certified, in production |
-| Diamond DA42-VI | Diamond Aircraft Industries GmbH, Austria | 2 x Austro AE 300 diesel, 168 hp (not Rotax) | FAA TCDS A57CE, Current, holder Diamond Aircraft Industries GmbH, Rev 34 of 8 July 2025, filed under model "DA 42 NG" (DRS, P) | Firmly held, certified, in production |
-| AT-P AT-6 Twin PSE | AT-P Aviation, Mielec, Poland | 2 x Rotax 915 iS | In flight test (General Aviation News, March 2026, via AERO's stub, S). No TC found or expected yet | Firmly held, a design in development |
-| Jabiru J432 | Jabiru Aircraft, Bundaberg, Australia | 2 x Jabiru 2200, 80-85 hp (not Rotax) | Sold factory-built, as a kit or with builder assist; light-sport certification sought in the US (AOPA, via AERO's stub, S). AERO did not find it at AERO 2026 | Firmly held, a live product |
-| Sling Twin | Sling Aircraft, South Africa | 2 x Rotax 916 iS | A concept shown in renderings (AERO's stub). No TC | Firmly held, a live company's concept |
+| Tecnam P2006T NG | Costruzioni Aeronautiche Tecnam S.p.A., Italy | 2 x Rotax 912 iSc3, 100 hp | EASA-certified: TCDS A.185, Section B (per AERO's stub, P, not re-read here). **FAA TCDS A62CE (Current, Rev 12, 2 October 2025) covers only the earlier P2006T, with two Rotax 912 S3 engines; it has no NG section** (DRS, P). FAA validation of the NG is pending, expected Q4 2026 (AERO's stub). Shown at AERO 2026 | Firmly held, certified, in production |
+| Diamond DA42-VI | Diamond Aircraft Industries GmbH, Austria | 2 x Austro AE 300 diesel, 168 hp (not Rotax) | FAA TCDS A57CE, Current, holder Diamond Aircraft Industries GmbH, Rev 34 of 8 July 2025. It covers the DA 42, DA 42 M-NG, DA 42 NG and DA 62, and names the engine "Austro Engine E4" (AE 300 is the trade name). The TCDS never says "DA42-VI" (DRS, P); the VI is a DA 42 NG production standard, per Diamond as relayed by AERO (not read here). Demonstrator shown at AERO 2026 (AERO's stub) | Firmly held, certified, in production |
+| AT-P AT-6 Twin PSE | AT-P Aviation, Mielec, Poland | 2 x Rotax 915 iS | In flight test, targeting FAA MOSAIC light-sport (General Aviation News, 24 March 2026, via AERO's stub, S). That route issues no type certificate, which is why none is expected. **Not found at AERO 2025 or AERO 2026** (AERO's stub) | Firmly held, a design in development |
+| Jabiru J432 | Jabiru Aircraft, Bundaberg, Australia | 2 x Jabiru 2200, 80-85 hp (not Rotax) | Sold factory-built, as a kit or with builder assist; light-sport certification sought in the US (AOPA, via AERO's stub, S). **Not found at AERO 2025 or AERO 2026** (AERO's stub) | Firmly held, a live product |
+| Sling Twin | Sling Aircraft, South Africa | 2 x Rotax 916 iS | A concept shown in renderings, **announced in July 2026, after AERO 2026** (AERO's stub). No TC | Firmly held, a live company's concept |
 
 **Positive control for the DRS reads.** "Model" = M22 returns A6SW, as in the
-other files. The DA42 history shows at least 25 superseded A57CE versions under "DA 42" (one full page of results)
-and the Current one under "DA 42 NG". So a search on the base model alone would
-have wrongly suggested no current TC.
+other files. **Read every page of a DRS result: it does not sort Current
+first.** "Model" = "DA 42" returns 35 records. Page 0 (25 records) is all
+Historical, and the Current A57CE is on page 1. My first draft of this file read
+only page 0 and drew the wrong conclusion; AERO caught it in review.
 
 ## The paths
 
 None to buy or license: all five are held by active makers. Their value to the
-survey is as benchmarks. Two are the closest certified precedents: the P2006T on
+survey is as benchmarks. Two are the closest certified precedents: the P2006T family on
 small Rotax engines, and the DA42 on twin automotive-derived engines.
 
 ## Open items

@@ -51,7 +51,9 @@ Source quality: **P** primary or official record; **S** reputable secondary;
 - Alpi Aviation's legal entity and the Pioneer 800 Twin's certification route.
 - AERO has since named five more analogs (Tecnam P2006T NG, Diamond DA42-VI,
   AT-P AT-6 Twin PSE, Jabiru J432, Sling Twin). They are covered together in
-  [`derringer-analogs.md`](derringer-analogs.md). The Bristell B23-916iS, another
+  [`derringer-analogs.md`](derringer-analogs.md). Not all were at AERO 2026: the
+  AT-6 and the Jabiru were not found there, and the Sling Twin was announced in
+  July 2026, after the show. The Bristell B23-916iS, another
   Rotax 916iS headline from the show, has one 160 hp engine, so it is not a
   Derringer analog (afm.aero, S).
 
