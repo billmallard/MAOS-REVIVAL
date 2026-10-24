@@ -1,21 +1,39 @@
 {
- "rutan-defiant": {
-  "name": "Rutan Defiant",
-  "mtow": 2950,
-  "stage3_empty": 1600,
-  "stage3_useful": 1350,
-  "airframe_delta_light": -245,
-  "airframe_delta_heavy": -85,
-  "empty_light": 1360,
-  "empty_heavy": 1620,
-  "useful_light": 1330,
-  "useful_heavy": 1590,
+ "bellanca-t250-aries": {
+  "name": "Bellanca T-250 Aries",
+  "mtow": 3150,
+  "stage3_empty": 1850,
+  "stage3_useful": 1300,
+  "airframe_delta_light": -75,
+  "airframe_delta_heavy": 50,
+  "empty_light": 1780,
+  "empty_heavy": 2000,
+  "useful_light": 1150,
+  "useful_heavy": 1370,
   "engine_delta_lb": [
-   -60,
-   -32
+   -81,
+   -63
   ],
-  "empty_light_eng": 1300,
-  "empty_heavy_eng": 1580
+  "empty_light_eng": 1690,
+  "empty_heavy_eng": 1940
+ },
+ "express-2000": {
+  "name": "Wheeler Express",
+  "mtow": 2895,
+  "stage3_empty": 1994,
+  "stage3_useful": 901,
+  "airframe_delta_light": -225,
+  "airframe_delta_heavy": -20,
+  "empty_light": 1770,
+  "empty_heavy": 2030,
+  "useful_light": 865,
+  "useful_heavy": 1125,
+  "engine_delta_lb": [
+   -6,
+   23
+  ],
+  "empty_light_eng": 1760,
+  "empty_heavy_eng": 2050
  },
  "lancair-iv-p": {
   "name": "Lancair IV-P",
@@ -35,6 +53,24 @@
   "empty_light_eng": 1900,
   "empty_heavy_eng": 2220
  },
+ "meyers-200d": {
+  "name": "Meyers 200D (re-derivation)",
+  "mtow": 3000,
+  "stage3_empty": 1940,
+  "stage3_useful": 1060,
+  "airframe_delta_light": -95,
+  "airframe_delta_heavy": 60,
+  "empty_light": 1840,
+  "empty_heavy": 2160,
+  "useful_light": 840,
+  "useful_heavy": 1160,
+  "engine_delta_lb": [
+   -133,
+   -105
+  ],
+  "empty_light_eng": 1710,
+  "empty_heavy_eng": 2060
+ },
  "mooney-301": {
   "name": "Mooney 301",
   "mtow": 4000,
@@ -52,78 +88,6 @@
   ],
   "empty_light_eng": 2190,
   "empty_heavy_eng": 2500
- },
- "cirrus-vk-30": {
-  "name": "Cirrus VK-30",
-  "mtow": 3550,
-  "stage3_empty": 2200,
-  "stage3_useful": 1350,
-  "airframe_delta_light": -125,
-  "airframe_delta_heavy": -25,
-  "empty_light": 2080,
-  "empty_heavy": 2380,
-  "useful_light": 1170,
-  "useful_heavy": 1470,
-  "engine_delta_lb": [
-   -131,
-   -102
-  ],
-  "empty_light_eng": 1940,
-  "empty_heavy_eng": 2270
- },
- "velocity-xl-rg": {
-  "name": "Velocity XL-RG",
-  "mtow": 2800,
-  "stage3_empty": 1800,
-  "stage3_useful": 1000,
-  "airframe_delta_light": -95,
-  "airframe_delta_heavy": -20,
-  "empty_light": 1600,
-  "empty_heavy": 1830,
-  "useful_light": 970,
-  "useful_heavy": 1200,
-  "engine_delta_lb": [
-   -131,
-   -83
-  ],
-  "empty_light_eng": 1470,
-  "empty_heavy_eng": 1750
- },
- "express-2000": {
-  "name": "Wheeler Express",
-  "mtow": 2895,
-  "stage3_empty": 1994,
-  "stage3_useful": 901,
-  "airframe_delta_light": -130,
-  "airframe_delta_heavy": -20,
-  "empty_light": 1860,
-  "empty_heavy": 2030,
-  "useful_light": 865,
-  "useful_heavy": 1035,
-  "engine_delta_lb": [
-   -6,
-   23
-  ],
-  "empty_light_eng": 1860,
-  "empty_heavy_eng": 2050
- },
- "berkut-360": {
-  "name": "Berkut 360",
-  "mtow": 2000,
-  "stage3_empty": 1035,
-  "stage3_useful": 965,
-  "airframe_delta_light": -35,
-  "airframe_delta_heavy": 30,
-  "empty_light": 1000,
-  "empty_heavy": 1190,
-  "useful_light": 810,
-  "useful_heavy": 1000,
-  "engine_delta_lb": [
-   18,
-   20
-  ],
-  "empty_light_eng": 1020,
-  "empty_heavy_eng": 1210
  },
  "cessna-p210n": {
   "name": "Cessna P210N",
