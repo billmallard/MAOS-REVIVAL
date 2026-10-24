@@ -29,26 +29,32 @@ Grades: F factory/brochure/designer claim; T type certificate data sheet; P flig
 | Usable fuel | 66 US gal | P | [source](https://www.kitplanes.com/sx-appeal/) | - |
 | Published range | 650 nm | P | [source](https://www.kitplanes.com/sx-appeal/) | 700-800 mi at 20 gph |
 
-Cruise settings (the starred row is the one screened for speed):
+Cruise settings (P = screened as published, M = screened as measured; the basis follows the grade unless a setting states it):
 
 | KTAS | Altitude, ft | Power | Fuel flow, gph | Grade | Source | Note |
 |---|---|---|---|---|---|---|
-| 240 * | - | 75% | 20 | P | [source](https://www.kitplanes.com/sx-appeal/) | ram air holds 75% to ~9,500 ft |
+| 240 M | - | 75% | 20 | P | [source](https://www.kitplanes.com/sx-appeal/) | ram air holds 75% to ~9,500 ft |
 | 217 | - | - | 14.5 | P | [source](https://www.kitplanes.com/sx-appeal/) | economy |
 
-## Screen (stage 1, published numbers)
+## Screen (published numbers; like for like)
 
-- **Verdict: fail** - UL -200 lb, range -12 nm
-- Useful load: 800 lb (fail) against 1,000 lb.
-- Range: 988 nm still-air (near; basis: calc) against 1,000 nm.
-- Cruise: 240 KTAS at an unstated altitude (pass+) against >160 KTAS (>180 preferred).
-- Payload at 1,000 nm: Does not reach 1,000 nm on usable fuel: 988 nm still-air maximum.
+Two screens, never mixed: the maker's figures as published, and measured or reported data. The three targets are separate floors; payload at 1,000 nm is information only.
+
+- **As published: incomplete: no speed, fails on the rest** - UL -200 lb, range -350 nm
+  - Useful load: 800 lb (fail) against 1,000 lb.
+  - Range: 650 nm (fail; 700-800 mi at 20 gph) against 1,000 nm.
+  - Cruise: not found against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): cannot be computed on this basis.
+- **Measured or reported: partial: range near, speed pass, speed unconditioned** - range -12 nm
+  - Useful load: - lb (?) against 1,000 lb.
+  - Range: 988 nm (near; still air, no reserve, from fuel and measured flow) against 1,000 nm.
+  - Cruise: 240 KTAS at an unstated altitude (pass+) against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): cannot be computed on this basis.
 - Aeromomentum fit (first cut): Short: AM20T 260 hp vs 300 hp (-5% speed, est. 229 KTAS).
 
 Sanity flags:
 
 - published range 650 nm vs 988 nm from fuel and flow
-- screen speed has no altitude, or is below 6,000 ft
 
 ## Why it died
 

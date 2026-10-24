@@ -29,21 +29,28 @@ Grades: F factory/brochure/designer claim; T type certificate data sheet; P flig
 | Usable fuel | 124 US gal | T | [source](https://docs.northeastcomanche.org/tcds/1a15-rev_34.pdf) | - |
 | Published range | 860 nm | F | [source](https://planeandpilotmag.com/1964-piper-comanche-400/) | 55%, 'w/reserve' unspecified, estimated |
 
-Cruise settings (the starred row is the one screened for speed):
+Cruise settings (P = screened as published, M = screened as measured; the basis follows the grade unless a setting states it):
 
 | KTAS | Altitude, ft | Power | Fuel flow, gph | Grade | Source | Note |
 |---|---|---|---|---|---|---|
-| 185 * | - | 75% | 22 | F | [source](https://planeandpilotmag.com/1964-piper-comanche-400/) | Jane's via P&P |
+| 185 P | - | 75% | 22 | F | [source](https://planeandpilotmag.com/1964-piper-comanche-400/) | Jane's via P&P |
 | 180 | - | 65% | 19 | F | [source](https://planeandpilotmag.com/1964-piper-comanche-400/) | - |
 | 171 | - | 55% | 16 | F | [source](https://planeandpilotmag.com/1964-piper-comanche-400/) | - |
 
-## Screen (stage 1, published numbers)
+## Screen (published numbers; like for like)
 
-- **Verdict: pass, speed unconditioned**
-- Useful load: 1,331 lb (pass) against 1,000 lb.
-- Range: 1,325 nm still-air (pass; basis: calc) against 1,000 nm.
-- Cruise: 185 KTAS at an unstated altitude (pass+) against >160 KTAS (>180 preferred).
-- Payload at 1,000 nm: 770 lb with no reserve; 698 lb with a 45 min reserve. Setting: 171 KTAS at 16.0 gph.
+Two screens, never mixed: the maker's figures as published, and measured or reported data. The three targets are separate floors; payload at 1,000 nm is information only.
+
+- **As published: fail** - range -140 nm
+  - Useful load: 1,490 lb (pass) against 1,000 lb.
+  - Range: 860 nm (fail; 55%, 'w/reserve' unspecified, estimated) against 1,000 nm.
+  - Cruise: 185 KTAS at an unstated altitude (pass+) against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): 929 / 857 @ 171 kt, 16.0 gph.
+- **Measured or reported: partial: UL pass**
+  - Useful load: 1,331 lb (pass) against 1,000 lb.
+  - Range: - nm (?; none found) against 1,000 nm.
+  - Cruise: not found against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): cannot be computed on this basis.
 - Aeromomentum fit (first cut): Short: AM20T 260 hp vs 400 hp (-13% speed, est. 160 KTAS).
 
 Sanity flags:

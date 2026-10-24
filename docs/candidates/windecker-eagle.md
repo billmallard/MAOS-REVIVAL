@@ -29,19 +29,22 @@ Grades: F factory/brochure/designer claim; T type certificate data sheet; P flig
 | Usable fuel | 86 US gal | F | [source](https://en.wikipedia.org/wiki/Windecker_Eagle) | capacity |
 | Published range | 1,070 nm | F | [source](https://en.wikipedia.org/wiki/Windecker_Eagle) | not stated |
 
-Cruise settings (the starred row is the one screened for speed):
+Cruise settings (P = screened as published, M = screened as measured; the basis follows the grade unless a setting states it):
 
 | KTAS | Altitude, ft | Power | Fuel flow, gph | Grade | Source | Note |
 |---|---|---|---|---|---|---|
-| 177 * | - | 75% | - | F | [source](https://www.aero-news.net/index.cfm?do=main.textpost&id=32a052d2-52f9-4d73-8fde-2a6233ec3c62) | 204 mph converted |
+| 177 P | - | 75% | - | F | [source](https://www.aero-news.net/index.cfm?do=main.textpost&id=32a052d2-52f9-4d73-8fde-2a6233ec3c62) | 204 mph converted |
 
-## Screen (stage 1, published numbers)
+## Screen (published numbers; like for like)
 
-- **Verdict: near miss, speed unconditioned** - range -50 nm
-- Useful load: 1,250 lb (pass) against 1,000 lb.
-- Range: 950 nm still-air (near; basis: calc, est. flow) against 1,000 nm.
-- Cruise: 177 KTAS at an unstated altitude (pass) against >160 KTAS (>180 preferred).
-- Payload at 1,000 nm: Does not reach 1,000 nm on usable fuel: 950 nm still-air maximum.
+Two screens, never mixed: the maker's figures as published, and measured or reported data. The three targets are separate floors; payload at 1,000 nm is information only.
+
+- **As published: pass, speed unconditioned**
+  - Useful load: 1,250 lb (pass) against 1,000 lb.
+  - Range: 1,070 nm (pass; not stated) against 1,000 nm.
+  - Cruise: 177 KTAS at an unstated altitude (pass) against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): cannot (950 nm max).
+- **Measured or reported: no data found.**
 - Aeromomentum fit (first cut): Short: AM20T 260 hp vs 285 hp (-3% speed, est. 172 KTAS).
 
 Sanity flags:

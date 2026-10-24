@@ -30,19 +30,22 @@ Grades: F factory/brochure/designer claim; T type certificate data sheet; P flig
 | Optional fuel | 111.5 US gal | T | [source](https://www.easa.europa.eu/nl/downloads/7168/en) | - |
 | Published range | 1,266 nm | F | [source](https://en.wikipedia.org/wiki/Robin_HR100) | economy cruise, reserve not stated |
 
-Cruise settings (the starred row is the one screened for speed):
+Cruise settings (P = screened as published, M = screened as measured; the basis follows the grade unless a setting states it):
 
 | KTAS | Altitude, ft | Power | Fuel flow, gph | Grade | Source | Note |
 |---|---|---|---|---|---|---|
-| 158 * | - | 65% | 15 | F | [source](https://en.wikipedia.org/wiki/Robin_HR100) | Jane's speed; 15 gph from an aggregator (planephd), grade E |
+| 158 P | - | 65% | 15 | F | [source](https://en.wikipedia.org/wiki/Robin_HR100) | Jane's speed; 15 gph from an aggregator (planephd), grade E |
 
-## Screen (stage 1, published numbers)
+## Screen (published numbers; like for like)
 
-- **Verdict: fail** - range -388 nm, speed -2 kt
-- Useful load: 1,234 lb (pass) against 1,000 lb.
-- Range: 612 nm still-air (fail; basis: calc) against 1,000 nm.
-- Cruise: 158 KTAS at an unstated altitude (near) against >160 KTAS (>180 preferred).
-- Payload at 1,000 nm: Does not reach 1,000 nm on usable fuel: 612 nm still-air maximum.
+Two screens, never mixed: the maker's figures as published, and measured or reported data. The three targets are separate floors; payload at 1,000 nm is information only.
+
+- **As published: near miss, speed unconditioned** - speed -2 kt
+  - Useful load: 1,234 lb (pass) against 1,000 lb.
+  - Range: 1,266 nm (pass; economy cruise, reserve not stated) against 1,000 nm.
+  - Cruise: 158 KTAS at an unstated altitude (near) against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): cannot (612 nm max).
+- **Measured or reported: no data found.**
 - Aeromomentum fit (first cut): Short: AM20T 260 hp vs 285 hp (-3% speed, est. 153 KTAS).
 
 Sanity flags:

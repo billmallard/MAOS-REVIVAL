@@ -29,21 +29,28 @@ Grades: F factory/brochure/designer claim; T type certificate data sheet; P flig
 | Usable fuel | 106.5 US gal | P | [source](https://www.aopa.org/news-and-media/all-news/2005/april/pilot/get-up-and-go) | usable, extended tanks as tested; 82-90 gal standard across sources |
 | Published range | 1,347 nm | P | [source](https://www.aopa.org/news-and-media/all-news/2005/april/pilot/get-up-and-go) | 65%, 24,000 ft, 45 min reserve (1,550 sm) |
 
-Cruise settings (the starred row is the one screened for speed):
+Cruise settings (P = screened as published, M = screened as measured; the basis follows the grade unless a setting states it):
 
 | KTAS | Altitude, ft | Power | Fuel flow, gph | Grade | Source | Note |
 |---|---|---|---|---|---|---|
-| 255 * | 16500 | 75% | 17.2 | P | [source](https://www.aopa.org/news-and-media/all-news/2005/april/pilot/get-up-and-go) | best power |
-| 284 | 24000 | 65% | 17 | P | [source](https://www.aopa.org/news-and-media/all-news/2005/april/pilot/get-up-and-go) | best economy |
-| 278 | 23000 | 75% | 18 | P | [source](https://www.aopa.org/news-and-media/all-news/1994/june/pilot/lancair-iv-p) | 50 F lean of peak; below the factory claim |
+| 255 | 16500 | 75% | 17.2 | P | [source](https://www.aopa.org/news-and-media/all-news/2005/april/pilot/get-up-and-go) | best power |
+| 284 M | 24000 | 65% | 17 | P | [source](https://www.aopa.org/news-and-media/all-news/2005/april/pilot/get-up-and-go) | best economy |
+| 278 P | 23000 | 75% | 18 | P | [source](https://www.aopa.org/news-and-media/all-news/1994/june/pilot/lancair-iv-p) | 50 F lean of peak; below the factory claim |
 
-## Screen (stage 1, published numbers)
+## Screen (published numbers; like for like)
 
-- **Verdict: pass**
-- Useful load: 1,350 lb (pass) against 1,000 lb.
-- Range: 1,779 nm still-air (pass; basis: calc) against 1,000 nm.
-- Cruise: 255 KTAS at 16,500 ft (pass+) against >160 KTAS (>180 preferred).
-- Payload at 1,000 nm: 991 lb with no reserve; 914 lb with a 45 min reserve. Setting: 284 KTAS at 17.0 gph.
+Two screens, never mixed: the maker's figures as published, and measured or reported data. The three targets are separate floors; payload at 1,000 nm is information only.
+
+- **As published: pass**
+  - Useful load: 1,350 lb (pass) against 1,000 lb.
+  - Range: 1,347 nm (pass; 65%, 24,000 ft, 45 min reserve (1,550 sm)) against 1,000 nm.
+  - Cruise: 278 KTAS at 23,000 ft (pass+) against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): 962 / 881 @ 278 kt, 18.0 gph.
+- **Measured or reported: partial: range pass, speed pass**
+  - Useful load: - lb (?) against 1,000 lb.
+  - Range: 1,779 nm (pass; still air, no reserve, from fuel and measured flow) against 1,000 nm.
+  - Cruise: 284 KTAS at 24,000 ft (pass+) against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): cannot be computed on this basis.
 - Aeromomentum fit (first cut): Short: AM20T 260 hp vs 350 hp (-9% speed, est. 231 KTAS).
 
 Sanity flags:

@@ -30,20 +30,27 @@ Grades: F factory/brochure/designer claim; T type certificate data sheet; P flig
 | Usable fuel | 100 US gal | F | [source](https://mooneyevents.com/Mooney301.html) | capacity |
 | Published range | 986 nm | F | [source](https://mooneyevents.com/Mooney301.html) | cruise, 45 min reserve |
 
-Cruise settings (the starred row is the one screened for speed):
+Cruise settings (P = screened as published, M = screened as measured; the basis follows the grade unless a setting states it):
 
 | KTAS | Altitude, ft | Power | Fuel flow, gph | Grade | Source | Note |
 |---|---|---|---|---|---|---|
-| 235 * | 25000 | 75% | 19.7 | F | [source](https://mooneyevents.com/Mooney301.html) | design/marketing figure at 'max altitude', 75% (Mooney spec sheet), not a flight-test result. The prototype was 'slower than desired' with aero work unfinished; no as-flown cruise is published (Mooney Events; docs/rights/mooney-301.md) |
+| 235 P | 25000 | 75% | 19.7 | F | [source](https://mooneyevents.com/Mooney301.html) | design/marketing figure at 'max altitude', 75% (Mooney spec sheet), not a flight-test result. The prototype was 'slower than desired' with aero work unfinished; no as-flown cruise is published (Mooney Events; docs/rights/mooney-301.md) |
 | 225 | - | - | - | F | [source](https://en.wikipedia.org/wiki/Mooney_301) | 259 mph cruise, Jane's 1983-84 pp. 444-445 (via Wikipedia); conditions not stated; also a design-era figure |
 
-## Screen (stage 1, published numbers)
+## Screen (published numbers; like for like)
 
-- **Verdict: pass**
-- Useful load: 1,252 lb (pass) against 1,000 lb.
-- Range: 1,193 nm still-air (pass; basis: calc) against 1,000 nm.
-- Cruise: 235 KTAS at 25,000 ft (pass+) against >160 KTAS (>180 preferred).
-- Payload at 1,000 nm: 749 lb with no reserve; 660 lb with a 45 min reserve. Setting: 235 KTAS at 19.7 gph.
+Two screens, never mixed: the maker's figures as published, and measured or reported data. The three targets are separate floors; payload at 1,000 nm is information only.
+
+- **As published: near miss** - range -14 nm
+  - Useful load: 1,452 lb (pass) against 1,000 lb.
+  - Range: 986 nm (near; cruise, 45 min reserve) against 1,000 nm.
+  - Cruise: 235 KTAS at 25,000 ft (pass+) against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): 949 / 860 @ 235 kt, 19.7 gph.
+- **Measured or reported: partial: UL pass**
+  - Useful load: 1,252 lb (pass) against 1,000 lb.
+  - Range: - nm (?; none found) against 1,000 nm.
+  - Cruise: not found against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): cannot be computed on this basis.
 - Aeromomentum fit (first cut): Short: AM20T 260 hp vs 360 hp (-10% speed, est. 211 KTAS).
 
 Sanity flags:

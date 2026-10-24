@@ -29,19 +29,22 @@ Grades: F factory/brochure/designer claim; T type certificate data sheet; P flig
 | Usable fuel | 90 US gal | F | [source](https://www.evektor.com/cz/vut100-cobra) | - |
 | Published range | 1,000 nm | F | [source](https://www.evektor.com/cz/vut100-cobra) | standard range, reserve not stated |
 
-Cruise settings (the starred row is the one screened for speed):
+Cruise settings (P = screened as published, M = screened as measured; the basis follows the grade unless a setting states it):
 
 | KTAS | Altitude, ft | Power | Fuel flow, gph | Grade | Source | Note |
 |---|---|---|---|---|---|---|
-| 175 * | - | - | - | F | [source](https://www.evektor.com/cz/vut100-cobra) | max cruise, no conditions |
+| 175 P | - | - | - | F | [source](https://www.evektor.com/cz/vut100-cobra) | max cruise, no conditions |
 
-## Screen (stage 1, published numbers)
+## Screen (published numbers; like for like)
 
-- **Verdict: pass, speed unconditioned**
-- Useful load: 1,213 lb (pass) against 1,000 lb.
-- Range: 1,000 nm still-air (pass; basis: pub) against 1,000 nm.
-- Cruise: 175 KTAS at an unstated altitude (pass) against >160 KTAS (>180 preferred).
-- Payload at 1,000 nm: Cannot be computed: no fuel quantity or no fuel flow published.
+Two screens, never mixed: the maker's figures as published, and measured or reported data. The three targets are separate floors; payload at 1,000 nm is information only.
+
+- **As published: pass, speed unconditioned**
+  - Useful load: 1,213 lb (pass) against 1,000 lb.
+  - Range: 1,000 nm (pass; standard range, reserve not stated) against 1,000 nm.
+  - Cruise: 175 KTAS at an unstated altitude (pass) against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): cannot be computed on this basis.
+- **Measured or reported: no data found.**
 - Aeromomentum fit (first cut): Short: AM20T 260 hp vs 315 hp (-6% speed, est. 164 KTAS).
 
 Sanity flags:

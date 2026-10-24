@@ -30,20 +30,27 @@ Grades: F factory/brochure/designer claim; T type certificate data sheet; P flig
 | Optional fuel | 128 US gal | P | [source](https://planeandpilotmag.com/mooney-acclaim-type-s-still-the-fastest/) | - |
 | Published range | 1,445 nm | F | [source](https://web.archive.org/web/20071213010048/http://www.mooney.com:80/acclaim-type-s/specifications-performance-3.html) | standard fuel, 'with res.', power not stated |
 
-Cruise settings (the starred row is the one screened for speed):
+Cruise settings (P = screened as published, M = screened as measured; the basis follows the grade unless a setting states it):
 
 | KTAS | Altitude, ft | Power | Fuel flow, gph | Grade | Source | Note |
 |---|---|---|---|---|---|---|
-| 237 * | 25000 | 75% | 22 | P | [source](https://www.planeandpilotmag.com/article/mooney-m20tn-acclaim-type-s/) | spec box; measured 239 KTAS near gross |
-| 200 | 25000 | - | 13 | P | [source](https://www.planeandpilotmag.com/article/mooney-m20tn-acclaim-type-s/) | economy, 'just under 13 gph' |
+| 237 P | 25000 | 75% | 22 | P | [source](https://www.planeandpilotmag.com/article/mooney-m20tn-acclaim-type-s/) | spec box; measured 239 KTAS near gross |
+| 200 M | 25000 | - | 13 | P | [source](https://www.planeandpilotmag.com/article/mooney-m20tn-acclaim-type-s/) | economy, 'just under 13 gph' |
 
-## Screen (stage 1, published numbers)
+## Screen (published numbers; like for like)
 
-- **Verdict: pass**
-- Useful load: 1,004 lb (pass) against 1,000 lb.
-- Range: 1,369 nm still-air (pass; basis: calc) against 1,000 nm.
-- Cruise: 237 KTAS at 25,000 ft (pass+) against >160 KTAS (>180 preferred).
-- Payload at 1,000 nm: 614 lb with no reserve; 556 lb with a 45 min reserve. Setting: 200 KTAS at 13.0 gph.
+Two screens, never mixed: the maker's figures as published, and measured or reported data. The three targets are separate floors; payload at 1,000 nm is information only.
+
+- **As published: pass**
+  - Useful load: 1,004 lb (pass) against 1,000 lb.
+  - Range: 1,445 nm (pass; standard fuel, 'with res.', power not stated) against 1,000 nm.
+  - Cruise: 237 KTAS at 25,000 ft (pass+) against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): cannot (959 nm max).
+- **Measured or reported: partial: range pass, speed pass**
+  - Useful load: - lb (?) against 1,000 lb.
+  - Range: 1,369 nm (pass; still air, no reserve, from fuel and measured flow) against 1,000 nm.
+  - Cruise: 200 KTAS at 25,000 ft (pass+) against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): cannot be computed on this basis.
 - Aeromomentum fit (first cut): Short: AM20T 260 hp vs 280 hp (-2% speed, est. 231 KTAS).
 
 Sanity flags:

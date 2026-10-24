@@ -29,25 +29,28 @@ Grades: F factory/brochure/designer claim; T type certificate data sheet; P flig
 | Usable fuel | 98 US gal | P | [source](https://planeandpilotmag.com/lancair-essuper-es-es-p/) | - |
 | Published range | 1,217 nm | F | [source](https://lancair.com/es-esp/) | not stated |
 
-Cruise settings (the starred row is the one screened for speed):
+Cruise settings (P = screened as published, M = screened as measured; the basis follows the grade unless a setting states it):
 
 | KTAS | Altitude, ft | Power | Fuel flow, gph | Grade | Source | Note |
 |---|---|---|---|---|---|---|
-| 196 * | - | - | - | F | [source](https://lancair.com/es-esp/) | 225 mph converted, no conditions |
-| 200 | 10500 | 75% | - | F | [source](https://lancair.com/wp-content/uploads/2020/01/Lancair-ES_N789KM_web-0120.pdf) | turbocharged example, 'original factory' |
+| 196 | - | - | - | F | [source](https://lancair.com/es-esp/) | 225 mph converted, no conditions |
+| 200 P | 10500 | 75% | - | F | [source](https://lancair.com/wp-content/uploads/2020/01/Lancair-ES_N789KM_web-0120.pdf) | turbocharged example, 'original factory' |
 
-## Screen (stage 1, published numbers)
+## Screen (published numbers; like for like)
 
-- **Verdict: pass, speed unconditioned**
-- Useful load: 1,300 lb (pass) against 1,000 lb.
-- Range: 1,124 nm still-air (pass; basis: calc, est. flow) against 1,000 nm.
-- Cruise: 196 KTAS at an unstated altitude (pass+) against >160 KTAS (>180 preferred).
-- Payload at 1,000 nm: 777 lb with no reserve; not possible (tanks too small) with a 45 min reserve. Setting: 200 KTAS at 17.4 gph (fuel flow is our estimate at 0.45 lb/hp/h, grade E).
+Two screens, never mixed: the maker's figures as published, and measured or reported data. The three targets are separate floors; payload at 1,000 nm is information only.
+
+- **As published: pass**
+  - Useful load: 1,300 lb (pass) against 1,000 lb.
+  - Range: 1,217 nm (pass; not stated) against 1,000 nm.
+  - Cruise: 200 KTAS at 10,500 ft (pass+) against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): 777 / cannot @ 200 kt, 17.4 gph (est. flow).
+- **Measured or reported: no data found.**
 - Aeromomentum fit (first cut): Short: AM20T 260 hp vs 310 hp (-6% speed, est. 185 KTAS).
 
 Sanity flags:
 
-- screen speed has no altitude, or is below 6,000 ft
+- none raised
 
 ## Why it died
 

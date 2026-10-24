@@ -29,20 +29,28 @@ Grades: F factory/brochure/designer claim; T type certificate data sheet; P flig
 | Usable fuel | 108 US gal | P | [source](https://www.twinandturbine.com/?p=15364) | N171D, the aircraft whose cruise is quoted; 90-120 gal across sources |
 | Published range | 1,128 nm | F | [source](https://planeandpilotmag.com/rutan-defiant) | not stated |
 
-Cruise settings (the starred row is the one screened for speed):
+Cruise settings (P = screened as published, M = screened as measured; the basis follows the grade unless a setting states it):
 
 | KTAS | Altitude, ft | Power | Fuel flow, gph | Grade | Source | Note |
 |---|---|---|---|---|---|---|
-| 162 * | 10000 | - | 16 | P | [source](https://www.twinandturbine.com/?p=15364) | N171D, 160-165 KTAS at 15-17 gph 'in the teens'; 10,000 ft used as the lower bound |
+| 184 P | 8000 | 75% | 17.8 | F | [source](http://www.cozybuilders.org/Canard_Pusher/1983-10_cp-38.pdf) | RAF plans spec, Canard Pusher 38 (Oct 1983); its text says 75% power, its spec table 70%; altitude 8,000 ft from the Skymaster spec block (https://337skymaster.com/defiant.htm), not stated in CP38 |
+| 162 M | 10000 | - | 16 | P | [source](https://www.twinandturbine.com/?p=15364) | N171D, 160-165 KTAS at 15-17 gph 'in the teens'; 10,000 ft used as the lower bound |
 | 152 | - | - | 19 | P | [source](https://www.twinandturbine.com/?p=15364) | low altitude, 150-155 KTAS at 18-20 gph |
 
-## Screen (stage 1, published numbers)
+## Screen (published numbers; like for like)
 
-- **Verdict: pass**
-- Useful load: 1,290 lb (pass) against 1,000 lb.
-- Range: 1,094 nm still-air (pass; basis: calc) against 1,000 nm.
-- Cruise: 162 KTAS at 10,000 ft (pass) against >160 KTAS (>180 preferred).
-- Payload at 1,000 nm: 697 lb with no reserve; not possible (tanks too small) with a 45 min reserve. Setting: 162 KTAS at 16.0 gph.
+Two screens, never mixed: the maker's figures as published, and measured or reported data. The three targets are separate floors; payload at 1,000 nm is information only.
+
+- **As published: pass**
+  - Useful load: 1,290 lb (pass) against 1,000 lb.
+  - Range: 1,128 nm (pass; not stated) against 1,000 nm.
+  - Cruise: 184 KTAS at 8,000 ft (pass+) against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): 710 / cannot @ 184 kt, 17.8 gph.
+- **Measured or reported: partial: range pass, speed pass**
+  - Useful load: - lb (?) against 1,000 lb.
+  - Range: 1,094 nm (pass; still air, no reserve, from fuel and measured flow) against 1,000 nm.
+  - Cruise: 162 KTAS at 10,000 ft (pass) against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): cannot be computed on this basis.
 - Aeromomentum fit (first cut): Yes: 2x AM15T (160 hp) matches the prototype's 2x 160 hp; 180 hp builds need 2x AM20T (heavier).
 
 Sanity flags:

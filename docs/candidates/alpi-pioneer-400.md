@@ -29,24 +29,30 @@ Grades: F factory/brochure/designer claim; T type certificate data sheet; P flig
 | Usable fuel | 21 US gal | P | [source](https://www.kitplanes.com/alpi-pioneer-400t/) | - |
 | Published range | 455 nm | P | [source](https://www.kitplanes.com/alpi-pioneer-400t/) | 3.5 h with reserves |
 
-Cruise settings (the starred row is the one screened for speed):
+Cruise settings (P = screened as published, M = screened as measured; the basis follows the grade unless a setting states it):
 
 | KTAS | Altitude, ft | Power | Fuel flow, gph | Grade | Source | Note |
 |---|---|---|---|---|---|---|
-| 135 * | - | - | 6.9 | P | [source](https://www.kitplanes.com/alpi-pioneer-400t/) | max cruise |
+| 135 M | - | - | 6.9 | P | [source](https://www.kitplanes.com/alpi-pioneer-400t/) | max cruise |
 
-## Screen (stage 1, published numbers)
+## Screen (published numbers; like for like)
 
-- **Verdict: fail** - UL -228 lb, range -589 nm, speed -25 kt
-- Useful load: 772 lb (fail) against 1,000 lb.
-- Range: 411 nm still-air (fail; basis: calc) against 1,000 nm.
-- Cruise: 135 KTAS at an unstated altitude (fail) against >160 KTAS (>180 preferred).
-- Payload at 1,000 nm: Does not reach 1,000 nm on usable fuel: 411 nm still-air maximum.
+Two screens, never mixed: the maker's figures as published, and measured or reported data. The three targets are separate floors; payload at 1,000 nm is information only.
+
+- **As published: incomplete: no speed, fails on the rest** - UL -228 lb, range -545 nm
+  - Useful load: 772 lb (fail) against 1,000 lb.
+  - Range: 455 nm (fail; 3.5 h with reserves) against 1,000 nm.
+  - Cruise: not found against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): cannot be computed on this basis.
+- **Measured or reported: partial: range fail, speed fail, speed unconditioned** - range -589 nm, speed -25 kt
+  - Useful load: - lb (?) against 1,000 lb.
+  - Range: 411 nm (fail; still air, no reserve, from fuel and measured flow) against 1,000 nm.
+  - Cruise: 135 KTAS at an unstated altitude (fail) against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): cannot be computed on this basis.
 - Aeromomentum fit (first cut): Yes: AM13T (140 hp) for 115 hp.
 
 Sanity flags:
 
-- screen speed has no altitude, or is below 6,000 ft
 - a light-sport-scale four-seater; listed as the foreign kit benchmark, far below the targets
 
 ## Why it died

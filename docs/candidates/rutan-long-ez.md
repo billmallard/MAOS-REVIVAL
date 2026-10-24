@@ -29,20 +29,27 @@ Grades: F factory/brochure/designer claim; T type certificate data sheet; P flig
 | Usable fuel | 52 US gal | F | [source](https://en.wikipedia.org/wiki/Rutan_Long-EZ) | - |
 | Published range | 1,243 nm | F | [source](https://aeropedia.com.au/content/rutan-long-ez/) | 40% power, 40 min reserve |
 
-Cruise settings (the starred row is the one screened for speed):
+Cruise settings (P = screened as published, M = screened as measured; the basis follows the grade unless a setting states it):
 
 | KTAS | Altitude, ft | Power | Fuel flow, gph | Grade | Source | Note |
 |---|---|---|---|---|---|---|
-| 159 * | 8000 | - | - | F | [source](https://aeropedia.com.au/content/rutan-long-ez/) | max cruising, 183 mph converted |
+| 159 P | 8000 | - | - | F | [source](https://aeropedia.com.au/content/rutan-long-ez/) | max cruising, 183 mph converted |
 | 125 | 12000 | 40% | - | F | [source](https://aeropedia.com.au/content/rutan-long-ez/) | 144 mph converted |
 
-## Screen (stage 1, published numbers)
+## Screen (published numbers; like for like)
 
-- **Verdict: fail** - UL -525 lb, speed -1 kt
-- Useful load: 475 lb (fail) against 1,000 lb.
-- Range: 1,884 nm still-air (pass; basis: calc, est. flow) against 1,000 nm.
-- Cruise: 159 KTAS at 8,000 ft (near) against >160 KTAS (>180 preferred).
-- Payload at 1,000 nm: 309 lb with no reserve; 294 lb with a 45 min reserve. Setting: 125 KTAS at 3.4 gph (fuel flow is our estimate at 0.45 lb/hp/h, grade E).
+Two screens, never mixed: the maker's figures as published, and measured or reported data. The three targets are separate floors; payload at 1,000 nm is information only.
+
+- **As published: fail** - UL -385 lb, speed -1 kt
+  - Useful load: 615 lb (fail) against 1,000 lb.
+  - Range: 1,243 nm (pass; 40% power, 40 min reserve) against 1,000 nm.
+  - Cruise: 159 KTAS at 8,000 ft (near) against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): 449 / 434 @ 125 kt, 3.4 gph (est. flow).
+- **Measured or reported: partial: UL fail** - UL -525 lb
+  - Useful load: 475 lb (fail) against 1,000 lb.
+  - Range: - nm (?; none found) against 1,000 nm.
+  - Cruise: not found against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): cannot be computed on this basis.
 - Aeromomentum fit (first cut): Yes: AM15 (120 hp) for 115 hp.
 
 Sanity flags:

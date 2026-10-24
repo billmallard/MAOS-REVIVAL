@@ -29,20 +29,27 @@ Grades: F factory/brochure/designer claim; T type certificate data sheet; P flig
 | Usable fuel | 62 US gal | T | [source](https://www.easa.europa.eu/et/downloads/7060/en) | - |
 | Published range | 1,040 nm | P | [source](https://planeandpilotmag.com/siai-marchetti-sf260/) | 55%, reserve not stated |
 
-Cruise settings (the starred row is the one screened for speed):
+Cruise settings (P = screened as published, M = screened as measured; the basis follows the grade unless a setting states it):
 
 | KTAS | Altitude, ft | Power | Fuel flow, gph | Grade | Source | Note |
 |---|---|---|---|---|---|---|
-| 175 * | 6000 | 75% | 14 | P | [source](https://www.aopa.org/news-and-media/all-news/2000/july/pilot/siai-marchetti-aermacchi-sf-260) | SF.260D flight manual |
-| 165 | 15000 | 59% | 12.7 | P | [source](https://www.aopa.org/news-and-media/all-news/2000/july/pilot/siai-marchetti-aermacchi-sf-260) | - |
+| 175 P | 6000 | 75% | 14 | P | [source](https://www.aopa.org/news-and-media/all-news/2000/july/pilot/siai-marchetti-aermacchi-sf-260) | SF.260D flight manual |
+| 165 M | 15000 | 59% | 12.7 | P | [source](https://www.aopa.org/news-and-media/all-news/2000/july/pilot/siai-marchetti-aermacchi-sf-260) | - |
 
-## Screen (stage 1, published numbers)
+## Screen (published numbers; like for like)
 
-- **Verdict: fail** - UL -105 lb, range -194 nm
-- Useful load: 895 lb (fail) against 1,000 lb.
-- Range: 806 nm still-air (fail; basis: calc) against 1,000 nm.
-- Cruise: 175 KTAS at 6,000 ft (pass) against >160 KTAS (>180 preferred).
-- Payload at 1,000 nm: Does not reach 1,000 nm on usable fuel: 806 nm still-air maximum.
+Two screens, never mixed: the maker's figures as published, and measured or reported data. The three targets are separate floors; payload at 1,000 nm is information only.
+
+- **As published: fail** - UL -105 lb
+  - Useful load: 895 lb (fail) against 1,000 lb.
+  - Range: 1,040 nm (pass; 55%, reserve not stated) against 1,000 nm.
+  - Cruise: 175 KTAS at 6,000 ft (pass) against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): cannot (775 nm max).
+- **Measured or reported: partial: range fail, speed pass** - range -194 nm
+  - Useful load: - lb (?) against 1,000 lb.
+  - Range: 806 nm (fail; still air, no reserve, from fuel and measured flow) against 1,000 nm.
+  - Cruise: 165 KTAS at 15,000 ft (pass) against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): cannot be computed on this basis.
 - Aeromomentum fit (first cut): Yes: AM20T (260 hp) for 260 hp.
 
 Sanity flags:

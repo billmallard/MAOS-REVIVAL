@@ -42,8 +42,6 @@ def num_row(label, f, unit="lb"):
 
 
 def stub(c):
-    s = S.screen(c)
-    b = S.best_leg(c)
     L = [
         f"# {c['name']}",
         "",
@@ -87,36 +85,41 @@ def stub(c):
         L.append(f"| Published range | {r['nm']:,} nm | {r['grade']} | {link(r['src'])} | {cell(r.get('basis'))} |")
     L += [
         "",
-        "Cruise settings (the starred row is the one screened for speed):",
+        "Cruise settings (P = screened as published, M = screened as measured; the basis follows the grade "
+        "unless a setting states it):",
         "",
         "| KTAS | Altitude, ft | Power | Fuel flow, gph | Grade | Source | Note |",
         "|---|---|---|---|---|---|---|",
     ]
-    scr = S.screen_setting(c)
+    sp, sm = S.best_speed(c, "pub"), S.best_speed(c, "meas")
     for x in S.settings(c):
-        star = " *" if x is scr else ""
+        star = (" P" if x is sp else "") + (" M" if x is sm else "")
         pct = f"{x['power_pct']}%" if x.get("power_pct") else "-"
         L.append(f"| {x['ktas']}{star} | {cell(x.get('alt_ft'))} | {pct} | {cell(x.get('gph'))} "
                  f"| {x['grade']} | {link(x['src'])} | {cell(x.get('note'))} |")
-    if b is None:
-        pay = "Cannot be computed: no fuel quantity or no fuel flow published."
-    elif b["p0"] is None:
-        pay = f"Does not reach 1,000 nm on usable fuel: {b['rng']:,.0f} nm still-air maximum."
-    else:
-        res = f"{b['p45']:,.0f} lb" if b["p45"] is not None else "not possible (tanks too small)"
-        pay = (f"{b['p0']:,.0f} lb with no reserve; {res} with a 45 min reserve. "
-               f"Setting: {b['s']['ktas']:.0f} KTAS at {b['gph']:.1f} gph"
-               + (" (fuel flow is our estimate at 0.45 lb/hp/h, grade E)" if b["est"] else "") + ".")
     L += [
         "",
-        "## Screen (stage 1, published numbers)",
+        "## Screen (published numbers; like for like)",
         "",
-        f"- **Verdict: {s['overall']}**" + (f" - {s['misses']}" if s["misses"] else ""),
-        f"- Useful load: {S.fmt(s['ul'])} lb ({s['ul_s']}) against 1,000 lb.",
-        f"- Range: {S.fmt(s['rng'])} nm still-air ({s['rng_s']}; basis: {s['rng_basis'] or 'none'}) against 1,000 nm.",
-        f"- Cruise: {S.fmt(s['spd'])} KTAS at {S.fmt(s['alt'], ' ft') if s['alt'] else 'an unstated altitude'} "
-        f"({s['spd_s']}) against >160 KTAS (>180 preferred).",
-        f"- Payload at 1,000 nm: {pay}",
+        "Two screens, never mixed: the maker's figures as published, and measured or reported data. "
+        "The three targets are separate floors; payload at 1,000 nm is information only.",
+        "",
+    ]
+    for lab, bb in (("As published", "pub"), ("Measured or reported", "meas")):
+        col = S.screen_col(c, bb)
+        if S.cell(col) == "-":
+            L.append(f"- **{lab}: no data found.**")
+            continue
+        spd = ("not found" if col["spd"] is None else
+               f"{S.fmt(col['spd'])} KTAS at {S.fmt(col['alt'], ' ft') if col['alt'] else 'an unstated altitude'} ({col['spd_s']})")
+        L += [
+            f"- **{lab}: {col['overall']}**" + (f" - {col['misses']}" if col["misses"] else ""),
+            f"  - Useful load: {S.fmt(col['ul'])} lb ({col['ul_s']}) against 1,000 lb.",
+            f"  - Range: {S.fmt(col['rng'])} nm ({col['rng_s']}; {col['rng_note'] or 'none found'}) against 1,000 nm.",
+            f"  - Cruise: {spd} against >160 KTAS (>180 preferred).",
+            f"  - Payload at 1,000 nm (information): {S.payload(c, bb) or 'cannot be computed on this basis'}.",
+        ]
+    L += [
         f"- Aeromomentum fit (first cut): {S.engine_fit(c)}.",
         "",
         "Sanity flags:",

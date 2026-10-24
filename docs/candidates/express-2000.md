@@ -29,22 +29,29 @@ Grades: F factory/brochure/designer claim; T type certificate data sheet; P flig
 | Usable fuel | 92 US gal | P | [source](https://www.kitplanes.com/wp-content/uploads/2025/04/Wheeler-Express-APR-CAFE-Foundation.pdf) | - |
 | Published range | 1,401 nm | P | [source](https://www.kitplanes.com/wp-content/uploads/2025/04/Wheeler-Express-APR-CAFE-Foundation.pdf) | CAFE-computed VFR range at 9.7 gph |
 
-Cruise settings (the starred row is the one screened for speed):
+Cruise settings (P = screened as published, M = screened as measured; the basis follows the grade unless a setting states it):
 
 | KTAS | Altitude, ft | Power | Fuel flow, gph | Grade | Source | Note |
 |---|---|---|---|---|---|---|
-| 169 * | 6190 | - | 11.1 | P | [source](https://www.kitplanes.com/wp-content/uploads/2025/04/Wheeler-Express-APR-CAFE-Foundation.pdf) | CAFE measured, 25.4 in / 2,780 rpm, density altitude |
+| 169 M | 6190 | - | 11.1 | P | [source](https://www.kitplanes.com/wp-content/uploads/2025/04/Wheeler-Express-APR-CAFE-Foundation.pdf) | CAFE measured, 25.4 in / 2,780 rpm, density altitude |
 | 162 | 7750 | - | 9.5 | P | [source](https://www.kitplanes.com/wp-content/uploads/2025/04/Wheeler-Express-APR-CAFE-Foundation.pdf) | CAFE measured, leaned |
 | 153 | 9813 | - | 9.7 | P | [source](https://www.kitplanes.com/wp-content/uploads/2025/04/Wheeler-Express-APR-CAFE-Foundation.pdf) | CAFE measured |
 | 110 | - | - | 5.8 | P | [source](https://www.kitplanes.com/wp-content/uploads/2025/04/Wheeler-Express-APR-CAFE-Foundation.pdf) | CAFE best mpg |
 
-## Screen (stage 1, published numbers)
+## Screen (published numbers; like for like)
 
-- **Verdict: near miss** - UL -99 lb
-- Useful load: 901 lb (near) against 1,000 lb.
-- Range: 1,745 nm still-air (pass; basis: calc) against 1,000 nm.
-- Cruise: 169 KTAS at 6,190 ft (pass) against >160 KTAS (>180 preferred).
-- Payload at 1,000 nm: 585 lb with no reserve; 559 lb with a 45 min reserve. Setting: 110 KTAS at 5.8 gph.
+Two screens, never mixed: the maker's figures as published, and measured or reported data. The three targets are separate floors; payload at 1,000 nm is information only.
+
+- **As published: incomplete: no speed**
+  - Useful load: 1,045 lb (pass) against 1,000 lb.
+  - Range: 1,401 nm (pass; CAFE-computed VFR range at 9.7 gph) against 1,000 nm.
+  - Cruise: not found against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): cannot be computed on this basis.
+- **Measured or reported: near miss** - UL -99 lb
+  - Useful load: 901 lb (near) against 1,000 lb.
+  - Range: 1,745 nm (pass; still air, no reserve, from fuel and measured flow) against 1,000 nm.
+  - Cruise: 169 KTAS at 6,190 ft (pass) against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): 585 / 559 @ 110 kt, 5.8 gph.
 - Aeromomentum fit (first cut): Yes: AM20T (260 hp) for 210 hp.
 
 Sanity flags:
