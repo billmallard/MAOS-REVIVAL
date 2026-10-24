@@ -41,7 +41,7 @@
             "grade": "F/R/B"},
    "engine_delta_lb": [-242, -150],
    "items": [
-    {"item": "Airframe re-tooled in current out-of-autoclave prepreg or infusion (if new molds are needed anyway)",
+    {"item": "Airframe re-derived into new molds (the originals have no known location) in out-of-autoclave prepreg or infusion",
      "light": -30, "heavy": 0, "grade": "E",
      "basis": "Already a factory-molded kit (CAFE: 0.6% over brochure). Little structural weight left to take out"},
     {"item": "Panel: current EFIS and harness",

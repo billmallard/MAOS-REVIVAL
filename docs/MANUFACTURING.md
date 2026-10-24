@@ -51,9 +51,10 @@ own stage 4 section.
    says the market is that size, so the run is marginal.
 6. **Lost or never-existing tooling:** the Defiant never had molds (moldless);
    the Berkut's and Express's molds are unaccounted for; the Mooney 301 has
-   nothing left but published dimensions; the IV-P's molds were reportedly sold
-   to JetEXE in 2023, condition unknown. Every revival except a licensed IV-P is
-   a re-derivation: new geometry, new laminate schedule, new molds.
+   nothing left but published dimensions; the IV-P's molds have no known
+   location since 2017 (the 2023 JetEXE molds claim was withdrawn). Every revival
+   on the list is therefore a re-derivation: new geometry, new laminate schedule,
+   new molds.
 
 ## Rebuild empty weight, all designs
 
@@ -136,21 +137,25 @@ AERO asked us to check its original-engine dry weights, which were typical
 figures. A researcher read the engine type certificate data sheets (FAA DRS
 guest API) and the Lycoming operator manuals on 2026-10-24. The catch: for the
 same Lycoming, the operator manual includes starter and alternator and the
-TCDS does not, about 30 lb apart. AERO's x1.15 installation factor fits the
+TCDS does not (1E4 marks its weights "Less starter and alternator"), about 30 lb
+apart. We re-fetched every TCDS figure below from DRS ourselves (O-320-D2A 255,
+O-360-A1A 258, IO-360-A1A 293, IO-540-D4A5 379 on the TCDS basis). The
+operator-manual figures came from a research agent and were not re-fetched; they
+are consistent with the TCDS figure plus a starter and alternator. AERO's x1.15 installation factor fits the
 manual basis. For Continentals we found no document saying what "basic dry"
 includes, so we add 0-25 lb for starter and alternator (E).
 
 | Design | Engine flown (source) | AERO's assumed dry, lb | Published dry, lb (basis) | Original installed, lb (x1.15) | AERO's swap change | Our swap change |
 |---|---|---|---|---|---|---|
-| Rutan Defiant | 2x O-320 160 hp on the plans prototype; O-360 180 hp on N78RA from 1986 and on many builds (dash numbers not found) | 268 each | O-320-D2A 278, O-360-A1A 290 (Lycoming 60297-30 and 60297-12, manual basis) | 639-667 | -8 | -60 to -32 |
+| Rutan Defiant | 2x O-320 160 hp on the plans prototype; O-360 180 hp on N78RA from 1986 and on many builds (dash numbers not found) | 268 each | O-320-D2A 278, O-360-A1A 290 (Lycoming 60297-30 and 60297-12, manual basis, not re-fetched; TCDS E-274 255 and E-286 258) | 639-667 | -8 | -60 to -32 |
 | Lancair IV-P | TSIO-550-E or -B, 350 hp (not confirmed by a builder or Lancair document); CAFE's N114L flew a Regan TIO-540, 360 hp | 550 | 470.2 including both turbos, intercoolers not listed (TCDS E5SO Rev 13) | 541-633 | -242 | -242 to -150 |
-| Mooney 301 | "360 hp TSIO-540" in every source; TCDS E14EA lists no 360 hp TIO-540, the maximum is 350 | 520 | 350 hp TIO-540 variants 518-595, turbo included (E14EA Rev 22) | 596-684 | -207 | -293 to -205 |
+| Mooney 301 | "360 hp TSIO-540" in every source; TCDS E14EA lists no 360 hp TIO-540, the maximum is 350 | 520 | 350 hp TIO-540 variants 518-595 (-J2BD/-N2BD 518, -R2AD 524, -W2A 554, -J2B 558, -V2AD 565, -AE2A 595; E14EA Rev 22 Note 10) | 596-684 | -207 | -293 to -205 |
 | Cirrus VK-30 | IO-550-G 300 hp on later aircraft | 445 | 429 (E3SO Rev 12) | 493-522 | -121 | -131 to -102 |
-| Velocity XL-RG | IO-540 260 hp or IO-550-N 310 hp | 430 | IO-540-D4A5 412 (manual), IO-550-N 429 (E3SO) | 474-522 | -104 | -131 to -83 |
+| Velocity XL-RG | IO-540 260 hp or IO-550-N 310 hp | 430 | IO-540-D4A5 412 (manual, not re-fetched; TCDS 1E4 379), IO-550-N 428.97 (E3SO) | 474-522 | -104 | -131 to -83 |
 | Wheeler Express | IO-360-ES1B 210 hp (CAFE report) | 330 | 320 (E1CE Rev 21) | 368-397 | +11 | -6 to +23 |
-| Berkut 360 | IO-360 at 205 hp (not a certified rating; dash number not found) | 326 | IO-360-A1A 324, -C1C 322 (manual) | 371-373 | +16 | +18 to +20 |
+| Berkut 360 | IO-360 at 205 hp (not a certified rating; dash number not found) | 326 | IO-360-A1A 324, -C1C 322 (manual, not re-fetched; TCDS 1E10 293 and 291) | 371-373 | +16 | +18 to +20 |
 | Cessna P210N | TSIO-520-P, -AF from s/n 761 (aircraft TCDS 3A21 Rev 50) | 480 | 470 including turbo; intercooler is a Cessna part (E8CE Rev 24) | 541-569 | -161 | -178 to -150 |
-| Cozy MKIV | O-360 180 hp (dash number not found); IO-360 common | 285 | O-360-A1A 290, IO-360-A1A 324 (manual) | 334-373 | +63 | +18 to +57 |
+| Cozy MKIV | O-360 180 hp (dash number not found); IO-360 common | 285 | O-360-A1A 290, IO-360-A1A 324 (manual, not re-fetched; TCDS 258 and 293) | 334-373 | +63 | +18 to +57 |
 
 Aeromomentum (aeromomentum.com, read 2026-10-24): AM15T 160 hp, 215 lb,
 2.588:1 gearbox, $17,700-18,800; AM20T 260 hp, 285 lb, $27,995 in the spec table,
@@ -220,15 +225,23 @@ backup power source per ECU (+10-20 lb).
 
 ### Lancair IV-P
 
-| | Original kit (c. 2000) | Modern: licensed, existing molds | Modern: re-derived, new molds |
+The IV-P molds have no known location since the Uvalde sale in 2017. The
+earlier claim that the 2023 JetEXE purchase included molds and IP was a
+misquotation, withdrawn in stage 2 and stage 3 (AERO, AER-3784 thread,
+2026-10-24). So the working route is a re-derivation from a measured airframe
+(about 235 are registered) into new molds. A licence of existing molds stays in
+the table only as the case where they turn up.
+
+| | Original kit (c. 2000) | Modern: re-derived, new molds (working route) | Modern: only if the molds turn up and can be licensed |
 |---|---|---|---|
 | Builder hours | 5,000-6,000 estimated (F, CAFE APR, with Fast-Build); about 4,500 for one builder with fastbuild wing (P, AOPA Pilot Apr 2005) | 3,500-5,000 (E): pressurisation deletion and a kit firewall-forward take out 100-300 h; builder assist (Velocity charges $95/h) takes out more | same |
 | Airframe change | baseline | -55 to +25 lb (table above) | -55 to +25 lb |
-| Kit price | $104,500 incl. wing mating and Fast-Build (F, CAFE APR); about $200k in 2026 dollars (E, CPI x1.9) | $150-220k airframe (E; the holder's price, not ours) | same plus tooling share |
-| Tooling | holder's | mold refurbishment $20-80k (E) plus a licence fee (unknown; rights) plus a new cowl and radiator duct, $8-25k (E: 40-60 ft2 of mold surface) | $90-270k (E: about 584 ft2 of mold surface, same rates, plus jigs) plus re-derivation from a measured airframe |
+| Kit price | $104,500 incl. wing mating and Fast-Build (F, CAFE APR); about $200k in 2026 dollars (E, CPI x1.9) | $150-220k airframe (E) plus the tooling share: $4-27k per airframe at 10-25 units | $150-220k (E) plus licence terms (unknown; rights) |
+| Tooling | holder's | $90-270k (E: about 584 ft2 of mold surface at the Defiant rates, plus jigs), plus measuring an airframe and re-deriving its structure (STRUCTURES; access to an airframe is Bill's call) | mold refurbishment $20-80k (E) plus a new cowl and radiator duct, $8-25k (E: 40-60 ft2 of mold surface) |
+| Crossover | | tooling under 10% of the kit price at about 5-20 airframes | |
 | Engine | TSIO-550, 350 hp | AM20T, $27,995-29,700 (F) | same |
-| All-in to fly | | $200-310k (E: kit, engine, firewall-forward $5-10k, prop $5-12k, panel $15-40k) | same, plus tooling share |
-| Skill floor | Medium-high: high-performance build, pressurised door and seal, twin-turbo installation | Medium: cured molded parts, unpressurised option removes the pressure door, seals and plumbing | same |
+| All-in to fly | | $205-340k (E: kit with tooling share, engine, firewall-forward $5-10k, prop $5-12k, panel $15-40k) | $200-310k (E) |
+| Skill floor | Medium-high: high-performance build, pressurised door and seal, twin-turbo installation | Medium: cured molded parts; the unpressurised option removes the pressure door, seals and plumbing | same |
 
 **First, what to delete.**
 
@@ -287,7 +300,7 @@ manufacturing ruling.
 | Design | Original tooling | What re-deriving it would take |
 |---|---|---|
 | Rutan Defiant | None: moldless. Plans in builders' hands (176 sets); master drawings not public | New molded geometry from the plans and a measured airframe (N78RA at Hiller is the obvious one; contact is Bill's call). Whether using the plans is lawful is Elon's and an attorney's question |
-| Lancair IV-P | Molds reportedly sold with the IP to JetEXE in 2023; condition not public | A licence, or re-derive from one of about 208 registered airframes. Attorney first |
+| Lancair IV-P | No known location since the 2017 Uvalde sale; the 2023 JetEXE molds claim was withdrawn | Re-derive from one of about 235 registered airframes, unless the molds turn up. Chain of title to an attorney first |
 | Mooney 301 | Nothing: airframe scrapped, data to Tarbes 1987 | A new design from published geometry; a library copy of Jane's 1983-84 and Air International Jan 1984 first |
 | Cirrus VK-30 | Held by Cirrus | Not pursued |
 | Velocity XL-RG | Live, at Velocity Inc. | Not a revival |
