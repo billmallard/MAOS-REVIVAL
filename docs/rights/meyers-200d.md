@@ -15,8 +15,8 @@ Source quality: **P** primary or official record; **S** reputable secondary;
 ## Summary
 
 - **The TC is live and has a small holder.** TCDS 3A18 (Models 200 to 200D, plus
-  the Interceptor 400 turboprop) is "Current", sub-status empty, Rev 19 of 31
-  July 2014 (FAA DRS, P).
+  the Interceptor 400 turboprop) is "Current", sub-status empty, Rev 19, dated
+  31 July 2014 (FAA DRS, P).
 - **The holder name differs between DRS fields.** The metadata says "Interceptor
   Aircraft Inc". The PDF holder line says "Interceptor Aviation Inc., 6900 NW 63rd
   Street, Suite 100, Bethany, Oklahoma". The ownership record says the name

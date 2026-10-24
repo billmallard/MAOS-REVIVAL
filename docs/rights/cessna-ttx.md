@@ -19,7 +19,7 @@ Source quality: **P** primary or official record; **S** reputable secondary;
   22 June 2016. Holder: Textron Aviation Inc., Wichita (FAA DRS, P).
 - **The holder chain is fully recorded.** Pacific Aviation Composites USA (1998)
   to The Lancair Company, Columbia Aircraft Manufacturing, Cessna Aircraft
-  Company (2007), and Textron Aviation (29 July 2015). 25 versions sit in DRS (P).
+  Company (2007), and Textron Aviation (29 July 2015). 26 versions sit in DRS (P).
 - **The TTx is a separate model on that TC.** The T240 was approved on 23
   January 2013, with a TSIO-550-C at 310 hp, built under Production Certificate
   PC-4 (P).
@@ -132,7 +132,7 @@ Cessna piston sales. Textron quietly ended production in January or February
 
 ## Sources
 
-- FAA DRS, TCDS A00003SE Rev 27 and version history (25 versions), read
+- FAA DRS, TCDS A00003SE Rev 27 and version history (26 versions; a metadata page holds 25, so count across pages), read
   2026-10-24. https://drs.faa.gov/browse/TCDSMODEL
 - FAA releasable aircraft database, 2026-10-24.
   https://registry.faa.gov/database/ReleasableAircraft.zip
