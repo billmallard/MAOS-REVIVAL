@@ -44,8 +44,10 @@ DRS method: see `README.md` in this directory.
   record of the P210 data being sold, licensed or released.
 - Textron states it supports legacy piston types through its own engineering and
   supply chain (it bought Able Aerospace in 2016 for repair and overhaul work).
-  The P210 is out of production; Textron no longer builds complex piston singles,
-  and in November 2025 it announced it would also end Bonanza and Baron production.
+  The P210 is out of production, and Textron no longer builds complex piston
+  singles. A secondary source (eplaneai.com) reports that in November 2025 Textron
+  announced the end of Bonanza and Baron production; Textron's own release was not
+  located.
 
 ## Kit or plans rights
 
@@ -60,7 +62,8 @@ None. It is a certified production type; no kit or plans rights exist.
 ## STCs on this airframe
 
 - **Silver Eagle** turbine conversion: Rolls-Royce (Allison) 250-B17F/2, derated
-  to 450 hp, about 215 KTAS at altitude. O&N Aircraft developed it from about 1992.
+  to 450 hp. O&N Aircraft developed it from about 1992. (Performance is left to
+  AERO's dossier; it does not bear on rights.)
   O&N closed in 2016 after Myron Olson's death, and Griggs Aircraft Refinishing took
   over the STCs. A conversion cost about $1 million (AOPA, 2018; Aviation Consumer).
 
