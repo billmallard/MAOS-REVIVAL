@@ -1,0 +1,213 @@
+{
+ "id": "mooney-301",
+ "variant": "Mooney M30 '301' proof-of-concept prototype N301MX (one built, Experimental category, first flight April 1983, Kerrville TX)",
+ "config": "tractor, low wing, conventional tail",
+ "wing": {
+  "span": {
+   "v": 36.75,
+   "unit": "ft",
+   "grade": "F",
+   "src": "https://en.wikipedia.org/wiki/Mooney_301",
+   "note": "36 ft 9 in per Air International Jan 1984 'Airdata File' pp.50-51 (cited by Wikipedia; not seen first-hand). MAOE newsletter (https://mooneyevents.com/Mooney301.html) gives 37 ft; Wikipedia prose also says 37.0 ft vs 36.42 ft for M20. Treat as 36.75-37.0 ft."
+  },
+  "area": {
+   "v": 150.0,
+   "unit": "ft2",
+   "grade": "F",
+   "src": "https://en.wikipedia.org/wiki/Mooney_301",
+   "note": "150.0 sq ft per Air International Jan 1984 via Wikipedia (secondary). Implied AR ~9.0 with 36.75 ft span; wing loading 26.7 lb/ft2 at 4000 lb."
+  },
+  "root_chord": null,
+  "tip_chord": null,
+  "sweep_le_deg": null,
+  "airfoil": "NASA NLF(1)-0315 natural-laminar-flow section root to tip (Selig/Lednicer 'Incomplete Guide to Airfoil Usage' https://m-selig.ae.illinois.edu/ads/aircraft.html; Wikipedia citing airfoils.com). Jane's 1983-84 (via Wikipedia infobox) calls it 'Mooney 0315'. High-aspect-ratio tapered planform, double-slotted Fowler flaps over ~90% of trailing-edge span, upper-surface spoilers plus small stub/'feeler' ailerons with anti-servo tabs (AOPA Pilot June 1983 https://www.aeroresourcesinc.com/uploads/198306-1983%20Mooney%20301%20Prototype.pdf).",
+  "tc_root": {
+   "v": 0.15,
+   "unit": "-",
+   "grade": "B",
+   "src": "https://m-selig.ae.illinois.edu/ads/aircraft.html",
+   "note": "From airfoil designation NLF(1)-0315 (15% t/c); secondary compilation, not a Mooney drawing."
+  },
+  "tc_tip": {
+   "v": 0.15,
+   "unit": "-",
+   "grade": "B",
+   "src": "https://m-selig.ae.illinois.edu/ads/aircraft.html",
+   "note": "Same section root to tip per compilation."
+  },
+  "winglets": "no (none visible/mentioned)"
+ },
+ "canard_or_htail": {
+  "kind": "htail",
+  "span": null,
+  "area": null,
+  "chord": null,
+  "airfoil": "Inverted cambered section ('basically an upside-down wing'), one-piece all-moving stabilator, per Mooney engineering test pilot Bob Kromer (https://themooneyflyer.com/issues/2012-OctTMF.pdf). NOTE conflict: Wikipedia says fixed horizontal stabilizer with trim-tab elevators; Kromer's first-hand account is preferred for the prototype as flown 1983-84.",
+  "tc": null
+ },
+ "vtail": {
+  "count": 1,
+  "area_each": null,
+  "height": null,
+  "root_chord": null,
+  "tip_chord": null,
+  "note": "Aft-swept fin (unlike M20's forward-raked fin) per Wikipedia; no dimensions found."
+ },
+ "fuselage": {
+  "length": {
+   "v": 29.77,
+   "unit": "ft",
+   "grade": "F",
+   "src": "https://en.wikipedia.org/wiki/Mooney_301",
+   "note": "29 ft 9.25 in per Air International Jan 1984 via Wikipedia; MAOE gives 29 ft 8 in."
+  },
+  "max_width": null,
+  "max_height": null,
+  "cabin_width": null,
+  "note": "Overall height 9 ft 10.75 in (Air International via Wikipedia; MAOE 9 ft 10 in). Pressurized 5.0 psi (8,000-9,000 ft cabin at 25,000 ft). Six seats club arrangement, center aisle, aft air-stair door, wraparound windshield; flush/butted skins, recessed windows (AOPA Pilot June 1983)."
+ },
+ "nacelles_or_booms": "none (single tractor)",
+ "gear": "retractable tricycle",
+ "cooling": "air-cooled; low-set engine with deliberately very small cooling inlets and exhaust exits (LoPresti low-drag cowl) per AOPA Pilot June 1983 and Wikipedia; single large AiResearch turbocharger with intercooler; cowl flaps not documented",
+ "prop": {
+  "diameter": {
+   "v": 78,
+   "unit": "in",
+   "grade": "F",
+   "src": "https://en.wikipedia.org/wiki/Mooney_301",
+   "note": "6 ft 6 in, per Jane's 1983-84 pp.444-445 as cited in Wikipedia infobox (not seen first-hand)."
+  },
+  "blades": 3,
+  "type": "constant speed",
+  "rpm_cruise": null
+ },
+ "engine": {
+  "model": "Lycoming TIO-540 (turbocharged, intercooled; some sources write TSIO-540); exact dash number not found",
+  "hp": {
+   "v": 360,
+   "unit": "hp",
+   "grade": "F",
+   "src": "https://www.aeroresourcesinc.com/uploads/198306-1983%20Mooney%20301%20Prototype.pdf",
+   "note": "360 hp rating stated in AOPA Pilot June 1983; Kromer: '360 takeoff horsepower'"
+  },
+  "turbo": true,
+  "dry_weight": null
+ },
+ "weights": {
+  "mtow": {
+   "v": 4000,
+   "unit": "lb",
+   "grade": "F",
+   "src": "https://mooneyevents.com/Mooney301.html",
+   "note": "Design gross 4,000 lb (MAOE; Plane & Pilot; Air International via Wikipedia)"
+  },
+  "empty": {
+   "v": 2548,
+   "unit": "lb",
+   "grade": "F",
+   "src": "https://en.wikipedia.org/wiki/Mooney_301",
+   "note": "Air International Jan 1984 via Wikipedia. MAOE useful load 1,600 lb implies 2,400 lb target empty; new owners judged it ~200 lb over target (Ball 1998 via Wikipedia)."
+  },
+  "max_landing": null,
+  "zero_fuel_max": null
+ },
+ "fuel_usable": {
+  "v": 100,
+  "unit": "gal",
+  "grade": "F",
+  "src": "https://mooneyevents.com/Mooney301.html",
+  "note": "100 US gal capacity (MAOE, Jane's via Wikipedia); usable split not stated"
+ },
+ "perf_points": [
+  {
+   "ktas": 237.5,
+   "alt_ft": 17500,
+   "power_pct_or_hp": "75% (~270 hp)",
+   "gph": 18,
+   "weight_lb": null,
+   "grade": "P",
+   "src": "https://themooneyflyer.com/issues/2012-OctTMF.pdf",
+   "note": "Bob Kromer (Mooney engineering test pilot 1983-86) speed/power tests: 'probably a 235-240 KTAS airplane at 75% power at 15,000-20,000 feet, using 18 gallons per hour'. Midpoints shown; weight not given. Flown 1984 after ownership change."
+  },
+  {
+   "ktas": 235,
+   "alt_ft": 25000,
+   "power_pct_or_hp": "75%",
+   "gph": 19.7,
+   "weight_lb": null,
+   "grade": "F",
+   "src": "https://mooneyevents.com/Mooney301.html",
+   "note": "Factory/projected: cruise 75% power at max altitude 235 kt, 19.7 gph (MAOE newsletter). Altitude read as 25,000 ft max operating altitude. Design claim, not measured."
+  },
+  {
+   "ktas": 262,
+   "alt_ft": 25000,
+   "power_pct_or_hp": "max",
+   "gph": null,
+   "weight_lb": null,
+   "grade": "F",
+   "src": "https://planeandpilotmag.com/mooney-m30-301/",
+   "note": "Projected top speed 262 kt / 301 mph (name origin); altitude assumed 25,000 ft ceiling. Plane & Pilot and Wikipedia say the prototype was slower than expected."
+  },
+  {
+   "ktas": 225,
+   "alt_ft": null,
+   "power_pct_or_hp": "cruise (unspecified)",
+   "gph": null,
+   "weight_lb": null,
+   "grade": "F",
+   "src": "https://en.wikipedia.org/wiki/Mooney_301",
+   "note": "Jane's 1983-84 cruise 259 mph (225 kt) via Wikipedia; altitude/power not given in secondary source."
+  },
+  {
+   "ktas": null,
+   "alt_ft": null,
+   "power_pct_or_hp": "stall, flaps down",
+   "gph": null,
+   "weight_lb": null,
+   "grade": "P",
+   "src": "https://themooneyflyer.com/issues/2012-OctTMF.pdf",
+   "note": "Controlled flight at 56 KCAS (Kromer); Jane's lists 64 mph (56 kt) flaps-down stall."
+  }
+ ],
+ "three_view_urls": [],
+ "safety": {
+  "ntsb_total": {
+   "v": 0,
+   "unit": "-",
+   "grade": "B",
+   "src": "https://data.ntsb.gov/carol-main-public/",
+   "note": "CAROL query Aircraft.AircraftModel contains '301'/'M30' with make Mooney returned no Mooney 301/M30 records (see note in gaps). Prototype only; Experimental; ~70 h in 1983 plus Socata data flights late 1984."
+  },
+  "ntsb_fatal": {
+   "v": 0,
+   "unit": "-",
+   "grade": "B",
+   "src": "https://data.ntsb.gov/carol-main-public/",
+   "note": "none found"
+  },
+  "fleet_size_for_rate": {
+   "v": 1,
+   "unit": "-",
+   "grade": "F",
+   "src": "https://en.wikipedia.org/wiki/Mooney_301",
+   "note": "one prototype built"
+  },
+  "pattern": "RECORD: no accidents or incidents found. Test pilot Kromer (first-hand) reports a serious, non-certifiable pitch-control deficiency: with rapid control inputs in gusty air on approach, pitch authority became 'almost non-existent', as if the tail were in dead air. Flight Test attributed it to the inverted-airfoil one-piece stabilator; he recommended replacing it with a conventional fixed stabilizer and elevator, which was never done. INFERENCE: this is a fixable configuration issue (conventional tail), not a fundamental flaw; but any revival must treat tail design as unvalidated. No fleet means no statistical record.",
+  "notable": [
+   "1983-1984 - Kerrville TX - no damage - pitch-control deficiency in gusty-air approaches identified in flight test (Kromer, The Mooney Flyer Oct 2012, https://themooneyflyer.com/issues/2012-OctTMF.pdf); no NTSB record"
+  ]
+ },
+ "why_died_detail": "Program started 1980 (announced June 1980), delayed ~2 years by Republic Steel's reluctance to invest (AOPA Pilot Jan 1983 https://www.aopa.org/news-and-media/all-news/1983/january/pilot/the-high-and-the-mighty). Flew April 1983 (first flight ~7 Apr per MAOE; first public flight 21 Apr per AOPA Pilot June 1983) as a company 'homebuilt' proof-of-concept, ~70 h. July 1984 LTV bought Republic Steel and divested Mooney; new French-led owners (Couvelaire, with Armand Rivard) judged it ~200 lb overweight and too slow (they wanted ~300 kt) and redirected effort to a turboprop with Socata (TBM 700). Prototype also had an unresolved pitch-control problem (Kromer). Piston-single pressurized market was also collapsing in mid-1980s product-liability era. A revival with modern turbo/intercooling would need: conventional tail, weight reduction, and a market that now has the M350/M600/Malibu and TBM above it.",
+ "rights_hints": "Mooney engineering data and the prototype went to Socata (Aerospatiale) at Tarbes in 1987 under the TBM International JV (formed June 1987, Mooney + Aerospatiale); Socata test pilots flew the 301 for drag/performance data from late 1984 (Kromer). Mooney withdrew from the JV in May 1991, leaving TBM to Socata (https://en.wikipedia.org/wiki/SOCATA_TBM). Daher took 70% of Socata in 2009, 100% in 2014; name became Daher 2015. Prototype returned to Kerrville, wings removed, airframe donated/scrapped via an A&P school in Abilene TX (MAOE; Wikipedia 'citation needed'). Registration N301MX now on an unrelated Aviat Husky. INFERENCE: original M30 drawings may sit with Mooney International (current Mooney owner) or Daher archives; no public statement of who holds them was found.",
+ "gaps": [
+  "Root/tip chord, taper ratio, sweep: not published in any readable source; no three-view found online (Jane's 1983-84/1984-85 on archive.org are lending-restricted; Air International Jan 1984 not online)",
+  "Horizontal tail span/area, vertical tail dimensions: not found",
+  "Fuselage max width/height and cabin width: not found",
+  "Prop rpm in cruise, engine dash number and dry weight: not found",
+  "Measured performance with weight: only Kromer's 75%/15-20k ft/18 gph estimate; no Flying/AOPA flight-test table found",
+  "Flight International 1983 p.1142 and 1987 p.7 articles: archive offline/rate-limited (Wayback 429) during research",
+  "Conflict unresolved: span 36.75 vs 37.0 ft; stabilator (Kromer) vs fixed stab + elevator (Wikipedia)",
+  "Whether the prototype flew after 1983: Wikipedia says no, Kromer says he and Socata pilots flew it in 1984"
+ ]
+}

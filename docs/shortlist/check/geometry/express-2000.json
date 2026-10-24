@@ -1,0 +1,344 @@
+{
+ "id": "express-2000",
+ "variant": "Geometry is for the original Wheeler Express FT (cruciform tail, fixed tricycle gear) as measured by CAFE on N360EZ (Continental IO-360-ES1B 210 hp, completed 1995, tested Sept 1997). Express 2000 FT / Series 90 / Auriga share wing and fuselage but use a larger conventional low-set tail (13 ft span stabilizer, ~40% more wetted area than the Express's tail) and typically IO-540 engines and more fuel; no first-hand Express 2000 FT geometry was found.",
+ "config": "tractor, low wing, cruciform tail (original); conventional low tail on Series 90/Auriga/2000",
+ "wing": {
+  "span": {
+   "v": 31.0,
+   "unit": "ft",
+   "grade": "P",
+   "src": "https://www.kitplanes.com/wp-content/uploads/2025/04/Wheeler-Express-APR-CAFE-Foundation.pdf",
+   "note": "CAFE spec table 'CAFE FOUNDATION DATA, N360EZ' (measured/compiled by CAFE on N360EZ, an original cruciform-tail Express FT). Wikipedia/AeroCrafter gives 31 ft 6 in; aeropedia S2000 31 ft 6 in"
+  },
+  "area": {
+   "v": 130.29,
+   "unit": "ft2",
+   "grade": "P",
+   "src": "https://www.kitplanes.com/wp-content/uploads/2025/04/Wheeler-Express-APR-CAFE-Foundation.pdf",
+   "note": "CAFE spec table 'CAFE FOUNDATION DATA, N360EZ' (measured/compiled by CAFE on N360EZ, an original cruciform-tail Express FT). Wikipedia (Express Aircraft Co.) 130.0; aeropedia S2000 138 sq ft (unexplained, possibly includes extensions)"
+  },
+  "root_chord": {
+   "v": 60,
+   "unit": "in",
+   "grade": "P",
+   "src": "https://www.kitplanes.com/wp-content/uploads/2025/04/Wheeler-Express-APR-CAFE-Foundation.pdf",
+   "note": "CAFE spec table 'CAFE FOUNDATION DATA, N360EZ' (measured/compiled by CAFE on N360EZ, an original cruciform-tail Express FT)"
+  },
+  "tip_chord": {
+   "v": 37.5,
+   "unit": "in",
+   "grade": "P",
+   "src": "https://www.kitplanes.com/wp-content/uploads/2025/04/Wheeler-Express-APR-CAFE-Foundation.pdf",
+   "note": "CAFE spec table 'CAFE FOUNDATION DATA, N360EZ' (measured/compiled by CAFE on N360EZ, an original cruciform-tail Express FT); taper ratio 0.63; AR 7.4; dihedral 5 deg bottom/4 deg top; incidence +1.5 deg; 0 deg twist"
+  },
+  "sweep_le_deg": null,
+  "airfoil": "NASA NLF(1)-0215F (CAFE lists 'NLF 0215F', design CL 0.2) [P, CAFE]",
+  "tc_root": {
+   "v": 0.15,
+   "unit": "-",
+   "grade": "P",
+   "src": "https://www.kitplanes.com/wp-content/uploads/2025/04/Wheeler-Express-APR-CAFE-Foundation.pdf",
+   "note": "CAFE: t/c 15%"
+  },
+  "tc_tip": {
+   "v": 0.15,
+   "unit": "-",
+   "grade": "P",
+   "src": "https://www.kitplanes.com/wp-content/uploads/2025/04/Wheeler-Express-APR-CAFE-Foundation.pdf",
+   "note": "single airfoil listed; assumed constant (CAFE gives one t/c)"
+  },
+  "winglets": "no",
+  "sweep_note": "CAFE: 'spar perpendicular to fuselage' (straight spar, tapered planform); LE sweep not given"
+ },
+ "canard_or_htail": {
+  "kind": "htail",
+  "span": {
+   "v": 112,
+   "unit": "in",
+   "grade": "P",
+   "src": "https://www.kitplanes.com/wp-content/uploads/2025/04/Wheeler-Express-APR-CAFE-Foundation.pdf",
+   "note": "cruciform (mid-fin) swept stabilizer, CAFE spec table; CAFE text calls it a 10 ft stabilizer. Series 90/Auriga/2000 tail: 13 ft span, ~40% more wetted area (CAFE text; NTSB CEN15FA321)"
+  },
+  "area": {
+   "v": 13.14,
+   "unit": "ft2",
+   "grade": "P",
+   "src": "https://www.kitplanes.com/wp-content/uploads/2025/04/Wheeler-Express-APR-CAFE-Foundation.pdf",
+   "note": "horizontal stabilizer area per CAFE; elevator 120 in total span / 8.63 sq ft, chord 11.5 in; tail incidence -0.8 deg"
+  },
+  "chord": {
+   "v": 16.75,
+   "unit": "in",
+   "grade": "E",
+   "src": "https://www.kitplanes.com/wp-content/uploads/2025/04/Wheeler-Express-APR-CAFE-Foundation.pdf",
+   "note": "E: mean of CAFE root 25 in / tip 8.5 in chords"
+  },
+  "airfoil": "NACA 66-009 [P, CAFE]",
+  "tc": {
+   "v": 0.09,
+   "unit": "-",
+   "grade": "P",
+   "src": "https://www.kitplanes.com/wp-content/uploads/2025/04/Wheeler-Express-APR-CAFE-Foundation.pdf",
+   "note": "from NACA 66-009 designation"
+  }
+ },
+ "vtail": {
+  "count": 1,
+  "area_each": null,
+  "height": null,
+  "root_chord": null,
+  "tip_chord": null,
+  "note": "Highly swept fin with mid-mounted stabilizer (cruciform). CAFE gives only rudder: 52 in span, 4.33 sq ft, chord 12/12 in; fin span/area 'na, symmetric section'. Rudder travel 26 deg per manual (20 deg allowed); CAFE found 20 deg much better. Static height of aircraft 84 in (CAFE). Series 90 claimed 'a 20% larger tail' (Wikipedia Express Series 90, AeroCrafter)."
+ },
+ "fuselage": {
+  "length": {
+   "v": 25.67,
+   "unit": "ft",
+   "grade": "P",
+   "src": "https://www.kitplanes.com/wp-content/uploads/2025/04/Wheeler-Express-APR-CAFE-Foundation.pdf",
+   "note": "CAFE total length 25 ft 8 in. Wikipedia 26 ft; S2000/Series 90 25 ft (secondary)"
+  },
+  "max_width": null,
+  "max_height": null,
+  "cabin_width": {
+   "v": 44,
+   "unit": "in",
+   "grade": "P",
+   "src": "https://www.kitplanes.com/wp-content/uploads/2025/04/Wheeler-Express-APR-CAFE-Foundation.pdf",
+   "note": "CAFE: 44 in at shoulders, 43 in at hips; AeroCrafter via Wikipedia: 46 in"
+  },
+  "note": "Glasair-style composite (E-glass/vinyl ester, polyurethane foam core), fuselage split top/bottom; 74 in from front seatbacks to baggage bulkhead; 48x34 in gull-wing door on right side. Overall height 84 in static (CAFE); S2000 height 8 ft (aeropedia)."
+ },
+ "nacelles_or_booms": "none (single engine)",
+ "gear": "fixed tricycle with wheel pants on FT (6.00x6 mains, 5.00x5 castering nosewheel, track 135 in, wheelbase ~77.4 in from CAFE c.g. arms 93.2/15.8 in); RG versions (Express 2000RG) retractable",
+ "cooling": "air; 2 pitot inlets, downdraft; stock cowl inlet area 47.5 sq in; outlet 35 sq in with electric cowl flap fully open; N360EZ had an enclosed 'doghouse' plenum. CAFE found climb at the published Vy (70-78 kt panel) overheated CHT/oil and had to abort; cooling adequate at 95-98 kt panel. [P, CAFE]",
+ "prop": {
+  "diameter": {
+   "v": 71.5,
+   "unit": "in",
+   "grade": "P",
+   "src": "https://www.kitplanes.com/wp-content/uploads/2025/04/Wheeler-Express-APR-CAFE-Foundation.pdf",
+   "note": "Hartzell PHC-C3YF-1RF/F7663-4R (Piper Arrow 3-blade), N360EZ specific; ground clearance 9 in"
+  },
+  "blades": 3,
+  "type": "constant speed",
+  "rpm_cruise": {
+   "v": 2600,
+   "unit": "rpm",
+   "grade": "P",
+   "src": "https://www.kitplanes.com/wp-content/uploads/2025/04/Wheeler-Express-APR-CAFE-Foundation.pdf",
+   "note": "CAFE cruise points at ~2600 rpm"
+  }
+ },
+ "engine": {
+  "model": "Continental IO-360-ES1B (N360EZ); designer-recommended alternatives Lycoming IO-540-C4B5 (260 hp); Express 2000 commonly IO-540 260-300 hp",
+  "hp": {
+   "v": 210,
+   "unit": "hp",
+   "grade": "P",
+   "src": "https://www.kitplanes.com/wp-content/uploads/2025/04/Wheeler-Express-APR-CAFE-Foundation.pdf",
+   "note": "N360EZ"
+  },
+  "turbo": false,
+  "dry_weight": null
+ },
+ "weights": {
+  "mtow": {
+   "v": 2895,
+   "unit": "lb",
+   "grade": "P",
+   "src": "https://www.kitplanes.com/wp-content/uploads/2025/04/Wheeler-Express-APR-CAFE-Foundation.pdf",
+   "note": "gross weight as tested; Express Aircraft/AeroCrafter quote 3200 lb for IO-540 versions (Wikipedia); aeropedia S2000 3600 lb"
+  },
+  "empty": {
+   "v": 1994.1,
+   "unit": "lb",
+   "grade": "P",
+   "src": "https://www.kitplanes.com/wp-content/uploads/2025/04/Wheeler-Express-APR-CAFE-Foundation.pdf",
+   "note": "N360EZ as weighed by CAFE with oil; designer 'normal empty weight' 1850 lb"
+  },
+  "max_landing": null,
+  "zero_fuel_max": null
+ },
+ "fuel_usable": {
+  "v": 90,
+  "unit": "gal",
+  "grade": "P",
+  "src": "https://www.kitplanes.com/wp-content/uploads/2025/04/Wheeler-Express-APR-CAFE-Foundation.pdf",
+  "note": "92 gal total, 2 gal unusable (CAFE). Express 2000FT advertised 140 gal (search snippet of builder/company copy, unverified)"
+ },
+ "perf_points": [
+  {
+   "ktas": 152.7,
+   "alt_ft": 8493,
+   "power_pct_or_hp": "21.4 inHg / 2597 rpm (IO-360-ES 210 hp; % not stated)",
+   "gph": 9.7,
+   "weight_lb": 2840,
+   "grade": "P",
+   "src": "https://www.kitplanes.com/wp-content/uploads/2025/04/Wheeler-Express-APR-CAFE-Foundation.pdf",
+   "note": "CAFE flight 1/9.20.97 08:32:55; TAS 175.7 mph corrected for barograph-cuff drag; density alt 9813 ft; cruise. ktas converted from mph by us."
+  },
+  {
+   "ktas": 169.2,
+   "alt_ft": 4446,
+   "power_pct_or_hp": "25.4 inHg / 2780 rpm (IO-360-ES 210 hp; % not stated)",
+   "gph": 11.1,
+   "weight_lb": 2885,
+   "grade": "P",
+   "src": "https://www.kitplanes.com/wp-content/uploads/2025/04/Wheeler-Express-APR-CAFE-Foundation.pdf",
+   "note": "CAFE flight 1/9.20.97 07:45:15; TAS 194.7 mph corrected for barograph-cuff drag; density alt 6190 ft; high power (full throttle, 2780 rpm); gph as printed by CAFE. ktas converted from mph by us."
+  },
+  {
+   "ktas": 164.2,
+   "alt_ft": 5704,
+   "power_pct_or_hp": "24.1 inHg / 2598 rpm (IO-360-ES 210 hp; % not stated)",
+   "gph": 12.3,
+   "weight_lb": 2877,
+   "grade": "P",
+   "src": "https://www.kitplanes.com/wp-content/uploads/2025/04/Wheeler-Express-APR-CAFE-Foundation.pdf",
+   "note": "CAFE flight 5/9.21.97 10:36:11; TAS 189.0 mph corrected for barograph-cuff drag; density alt 7747 ft; start of leaning sweep at 24.1 in/2600 rpm. ktas converted from mph by us."
+  },
+  {
+   "ktas": 166.1,
+   "alt_ft": 5713,
+   "power_pct_or_hp": "24.1 inHg / 2602 rpm (IO-360-ES 210 hp; % not stated)",
+   "gph": 10.5,
+   "weight_lb": 2871,
+   "grade": "P",
+   "src": "https://www.kitplanes.com/wp-content/uploads/2025/04/Wheeler-Express-APR-CAFE-Foundation.pdf",
+   "note": "CAFE flight 5/9.21.97 10:41:19; TAS 191.2 mph corrected for barograph-cuff drag; density alt 7791 ft; leaning sweep, peak speed point. ktas converted from mph by us."
+  },
+  {
+   "ktas": 162.3,
+   "alt_ft": 5710,
+   "power_pct_or_hp": "24.1 inHg / 2590 rpm (IO-360-ES 210 hp; % not stated)",
+   "gph": 9.5,
+   "weight_lb": 2869,
+   "grade": "P",
+   "src": "https://www.kitplanes.com/wp-content/uploads/2025/04/Wheeler-Express-APR-CAFE-Foundation.pdf",
+   "note": "CAFE flight 5/9.21.97 10:42:56; TAS 186.8 mph corrected for barograph-cuff drag; density alt 7797 ft; leaning sweep, leanest point. ktas converted from mph by us."
+  },
+  {
+   "ktas": 110.4,
+   "alt_ft": 5784,
+   "power_pct_or_hp": "18.8 inHg / 2220 rpm (IO-360-ES 210 hp; % not stated)",
+   "gph": 5.8,
+   "weight_lb": 2863,
+   "grade": "P",
+   "src": "https://www.kitplanes.com/wp-content/uploads/2025/04/Wheeler-Express-APR-CAFE-Foundation.pdf",
+   "note": "CAFE flight 5/9.21.97 10:48:46; TAS 127.0 mph corrected for barograph-cuff drag; density alt 8536 ft; approx. Vy speed, best mpg point (21.9 mpg). ktas converted from mph by us."
+  },
+  {
+   "ktas": 87.9,
+   "alt_ft": 5787,
+   "power_pct_or_hp": "18.0 inHg / 2211 rpm (IO-360-ES 210 hp; % not stated)",
+   "gph": 5.5,
+   "weight_lb": 2859,
+   "grade": "P",
+   "src": "https://www.kitplanes.com/wp-content/uploads/2025/04/Wheeler-Express-APR-CAFE-Foundation.pdf",
+   "note": "CAFE flight 5/9.21.97 10:53:36; TAS 101.1 mph corrected for barograph-cuff drag; density alt 8635 ft; approx. Vx speed. ktas converted from mph by us."
+  },
+  {
+   "ktas": 113.0,
+   "alt_ft": 6800,
+   "power_pct_or_hp": "23.8 inHg / 2763 rpm (climb)",
+   "gph": null,
+   "weight_lb": 2840,
+   "grade": "P",
+   "src": "https://www.kitplanes.com/wp-content/uploads/2025/04/Wheeler-Express-APR-CAFE-Foundation.pdf",
+   "note": "CAFE climb: 746 fpm at density alt 6800 ft, 118 mph CAS / 130 mph TAS"
+  },
+  {
+   "ktas": 102.5,
+   "alt_ft": 3000,
+   "power_pct_or_hp": "27.2 inHg / 2760 rpm (climb)",
+   "gph": null,
+   "weight_lb": 2884,
+   "grade": "P",
+   "src": "https://www.kitplanes.com/wp-content/uploads/2025/04/Wheeler-Express-APR-CAFE-Foundation.pdf",
+   "note": "CAFE climb: 916 fpm at density alt 3000 ft, gross weight"
+  },
+  {
+   "ktas": 104.3,
+   "alt_ft": 2800,
+   "power_pct_or_hp": "28.2 inHg / 2766 rpm (climb)",
+   "gph": null,
+   "weight_lb": 2426,
+   "grade": "P",
+   "src": "https://www.kitplanes.com/wp-content/uploads/2025/04/Wheeler-Express-APR-CAFE-Foundation.pdf",
+   "note": "CAFE climb: 1297 fpm at density alt 2800 ft, light weight"
+  },
+  {
+   "ktas": null,
+   "alt_ft": null,
+   "power_pct_or_hp": "stall, clean",
+   "gph": null,
+   "weight_lb": 2865,
+   "grade": "P",
+   "src": "https://www.kitplanes.com/wp-content/uploads/2025/04/Wheeler-Express-APR-CAFE-Foundation.pdf",
+   "note": "CAFE stall 77.2 mph CAS (67.1 kt) clean; 67.2 mph CAS (58.4 kt) full flap at 2863 lb"
+  },
+  {
+   "ktas": 190.3,
+   "alt_ft": 7500,
+   "power_pct_or_hp": "75% (IO-540-K1G5 300 hp)",
+   "gph": null,
+   "weight_lb": null,
+   "grade": "B",
+   "src": "https://aeropedia.com.au/content/express-aircraft-express-s2000/",
+   "note": "Express S2000 published cruise 219 mph at 7500 ft; secondary (aeropedia, Jane's-style entry); not measured"
+  }
+ ],
+ "three_view_urls": [],
+ "safety": {
+  "ntsb_total": {
+   "v": 17,
+   "unit": "-",
+   "grade": "B",
+   "src": "https://aviation-safety.net/asndb/type/EXPR",
+   "note": "Lower bound. Counted US NTSB-numbered events in ASN wikibase type EXPR (26 entries, all jurisdictions, 1989-2025) plus SEA90FA146 (1990, filed under 'Wheeler Technology FT-210', https://aviation-safety.net/wikibase/35829). US with NTSB numbers: LAX90DUD01, SEA90FA146, CHI00LA219, LAX00LA282, MIA07LA085, ERA14LA342, CEN15FA141, WPR15LA179, CEN15FA321, WPR17FA041, WPR17FA185, ERA19FA154, WPR19FA212, CEN20LA342, CEN21LA096, CEN22FA216, plus N519EA 2025 (preliminary). NTSB CAROL could not be queried programmatically (API field names rejected); ASN may miss events filed under builder-name makes."
+  },
+  "ntsb_fatal": {
+   "v": 10,
+   "unit": "-",
+   "grade": "B",
+   "src": "https://aviation-safety.net/asndb/type/EXPR",
+   "note": "US fatal accidents 1990-2025 (SEA90FA146, CEN15FA141, CEN15FA321, WPR17FA041, WPR17FA185, ERA19FA154, WPR19FA212, CEN21LA096, CEN22FA216, N519EA 2025). Adding non-US: Regina 2006, Basel 2007, Chub Cay 2009 = 13 fatal accidents worldwide, 21 deaths (1990 counted as 3 per NTSB/ASN; CAFE report says 4)."
+  },
+  "fleet_size_for_rate": {
+   "v": 55,
+   "unit": "-",
+   "grade": "B",
+   "src": "https://www.kitplanes.com/wheeler-express-yesteryears-homebuilts/",
+   "note": "Kitplanes: 'about 100 examples have been added to the FAA registry, of which about 55 are still active'. CAFE 1997: ~300 kits sold, ~30 completed."
+  },
+  "pattern": "RECORD: Of 13 fatal accidents, about 9 are stall or loss of control in flight: 1990 N210EX spin en route (SEA90FA146); 2015 N3FC stall then spin in a steep turn, where the NTSB named the design ('poor yaw stability at low airspeed') as a contributing factor (CEN15FA321); 2016 N176PA (Series 90) steep takeoff climb then loss of control (WPR17FA041); 2017 N246TM stall in the traffic pattern (WPR17FA185); 2019 N625J (Series 2000) loss of control while maneuvering (ERA19FA154); 2019 N43FD (Series 2000) stall on final (WPR19FA212); 2020 N772BM stall in the departure turn (CEN21LA096); 2022 N44508 (turbine 2000RG) stall after engine fire (CEN22FA216); 2009 Bahamas loss of control. Non-fatal events of the same kind: 2004 Oshawa stall on a go-around with a wing drop near 90 deg (N625J, Series 2000); 2024 Chicoutimi loss of control just after takeoff. Other causes: engine failure or power loss (1989, 2007, 2015 Greeley, 2020), fuel exhaustion or contamination, and nose or main gear collapses (1997 VH-PNK, 2015, 2016). The CAFE 1997 test of N360EZ found low yaw damping (4-5 overshoots), an uncommanded right yaw after 1 g clean stalls with too little elevator until 85 kt, the fin blanking the stabilizer at high yaw so the elevator ran out, and pitot-static errors of 14 kt (reading low near the stall). A 92-gal tank tempts pilots into full-fuel, high-weight operation. INFERENCE: the stall/LOC share is high for a 4-seat single. Low-speed directional problems with the cruciform tail are documented. But several of the stall/LOC fatalities were Series 90/2000 aircraft with the bigger conventional tail, so the tail change alone does not appear to have cured the problem. Wing loading of 22-28 psf on a laminar NLF wing, heavy IO-540 conversions and aft-c.g. loading are plausible co-factors, but we have not verified them.",
+  "notable": [
+   "1989-10-26 - West Los Angeles CA - N200EX factory demonstrator, 0 fatal (2 aboard, minor injuries) - engine mechanical failure (piston pin plug wear / con rod), forced landing in residential area - NTSB LAX90DUD01 - https://aviation-safety.net/wikibase/135776",
+   "1990-07-25 - near Linch WY - N210EX second demonstrator en route to Oshkosh - 3 fatal per NTSB/ASN (CAFE report says 4) - witness saw spin; no preimpact failure; cause 'failure of the pilot to maintain control of the aircraft and/or correct the stall/spin' - NTSB SEA90FA146 - https://aviation-safety.net/wikibase/35829 ; https://www.ntsb.gov/ntsb/brief.asp?ev_id=20001212X23819",
+   "2015-07-27 - Holland MN - N3FC (cruciform tail, IO-540-C4B5 260 hp, MGW 3200 lb) - 3 fatal - stall/spin in steep right turn; contributing: 'the airplane's design, which resulted in poor yaw stability at low airspeed' (NTSB cites the CAFE test) - NTSB CEN15FA321 - https://data.ntsb.gov/carol-repgen/api/Aviation/ReportMain/GenerateNewestReport/91647/pdf",
+   "2015-02-11 - Greeley CO - N564ER - 2 fatal - loss of control in forced landing after total power loss; flight conducted with known mechanical deficiencies - NTSB CEN15FA141 - https://aviation-safety.net/wikibase/173749",
+   "2016-12-26 - Fresno CA (Sierra Sky Park) - N176PA Express S-90 - 2 fatal - abnormally steep takeoff climb, loss of control - NTSB WPR17FA041 - https://aviation-safety.net/wikibase/192272",
+   "2017-08-19 - Madras OR - N246TM - 1 fatal - stall in airport traffic pattern - NTSB WPR17FA185 - https://aviation-safety.net/wikibase/199080",
+   "2019-04-22 - near Cleveland NC - N625J Express Series 2000 - 1 fatal - loss of control while maneuvering - NTSB ERA19FA154 - https://aviation-safety.net/wikibase/224249",
+   "2019-08-07 - Camarillo CA - N43FD Express Series 2000 - 2 fatal - stall on final approach - NTSB WPR19FA212 - https://aviation-safety.net/wikibase/228012",
+   "2020-12-21 - Grand Prairie TX - N772BM Express CT - 2 fatal - stall in departure turn - NTSB CEN21LA096 - https://aviation-safety.net/wikibase/245904",
+   "2022-05-30 - near Cheyenne WY - N44508 turbine Express 2000RG - 1 fatal - stall while managing power loss and in-flight fire - NTSB CEN22FA216 - https://aviation-safety.net/wikibase/278522",
+   "2025-05-05 - near Polk OH - N519EA Express 2000 FT - 1 fatal - under investigation (preliminary) - https://aviation-safety.net/wikibase/508951",
+   "2004-06-18 - Oshawa ON - N625J Express Series 2000 - 0 fatal - stall at ~25 ft during go-around, left wing dropped near 90 deg (TSB) - https://aviation-safety.net/wikibase/73174"
+  ]
+ },
+ "why_died_detail": "Per CAFE (1997): the 1990 fatal demonstrator crash right before Oshkosh caused 'a severe contraction in sales', and Ken Wheeler went bankrupt. The business then passed through Express Design Inc. (Dave Ulrich, Redmond OR, 1992-95; Chapter 7 on 6 Jan 1996 per the Express Link newsletter cited by Wikipedia), Express Aircraft Co. LLC (Olson/Fagerstrom, Olympia WA, 1997; later under Exosphere; assets sold through bankruptcy court) and Composite Aircraft Technology (Darrell Peterson, Toledo WA, Sept 2007). Each bankruptcy left kit builders stranded. Other problems: early plans were incomplete (CAFE says the builder 'created much of the documentation'); build time ran to 2000 hr advertised against 5000 hr actual; only ~30 of ~300 kits were finished by 1997. Handling deficiencies were documented by CAFE and later by the NTSB. The owners' fix for the handling was the larger Series 90/Auriga tail, but stall/LOC fatalities continued in big-tail and heavier IO-540/turbine versions. A revival would need a properly engineered tail and directional stability (fin area, rudder travel limit, stall behavior), honest stall-margin and pitot-static work, and a sound business. A larger tail alone is not supported by the record as a cure.",
+ "rights_hints": "CAFE 1997: Express Aircraft Company (Larry Olson, Paul Fagerstrom) 'hold the rights to both the Express and the Series 90' (late 1996 purchase). Wikipedia: Composite Aircraft Technology LLC (Darrell Peterson) bought all EAC assets through bankruptcy court in Sept 2007 and moved to Toledo WA (General Aviation News 2009-09-03; EAA page lists CAT at Toledo WA). Checked 2026-10-24: compairtechllc.com now serves an unrelated Chinese-language movie site (domain lapsed) and expressaircraft.com is a parked 'coming soon' page. So CAT's current status and the rights holder are unknown. The 2025 accident aircraft is listed under 'FFF LLC Express 2000 FT'. Sources: https://www.kitplanes.com/wp-content/uploads/2025/04/Wheeler-Express-APR-CAFE-Foundation.pdf ; https://en.wikipedia.org/wiki/Wheeler_Express ; https://eaa.org/eaa/aircraft-building/kits-and-plans/d---g/express",
+ "gaps": [
+  "No first-hand Express 2000 FT geometry (tail span/area, fin, any wing change); CAT website gone and Wayback Machine was offline at research time",
+  "Vertical fin area, height and chords (CAFE gives only rudder)",
+  "Fuselage max width and height; LE sweep",
+  "Wetted areas (CAFE report does not list them)",
+  "No three-view drawing found",
+  "NTSB CAROL not queried successfully (API rejected field names); counts are from ASN and are a lower bound",
+  "Tail variant (cruciform vs conventional) for most accident aircraft not confirmed from NTSB dockets",
+  "Express 2000 FT published MTOW / fuel (140 gal claim unverified)",
+  "Engine dry weight"
+ ]
+}
