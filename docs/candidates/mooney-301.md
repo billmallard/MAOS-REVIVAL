@@ -124,7 +124,7 @@ Model: `docs/shortlist/check/models/mooney-301.json`; result: `docs/shortlist/ch
 
 ### Rights and provenance (stage 2)
 
-Open question (Elon, `docs/rights/mooney-301.md`, PR #3). There is no type certificate. The one airframe (N301MX, registration cancelled 1989) was scrapped: its wings were cut off and the rest went to an A&P school in Abilene, Texas. All M30 engineering data went to Socata at Tarbes in 1987 under a joint venture. Mooney International (successor to the developer) and Daher (successor to the joint-venture partner) may both claim it. The joint-venture terms and the lawsuit settlement are not public. Elon's file says to ask an attorney first.
+Open question (Elon, `docs/rights/mooney-301.md`, PR #3). There is no type certificate. The one airframe (N301MX, registration cancelled 1989) was scrapped: its wings were cut off and the rest went to an A&P school in Abilene, Texas. All M30 engineering data went to Socata at Tarbes in 1987 under a joint venture. Mooney International (successor to the developer) and Daher (successor to the joint-venture partner) may both claim it. The joint-venture terms and the lawsuit settlement are not public, and no court record of the dispute was found. **Unresolved on the public record, and nothing usable survives on either path** (Elon, updated 2026-10-24): no type certificate, no patent (any from the era expired by about 2012), no airframe, and no known drawing set outside whatever Daher kept in Tarbes or Mooney kept in Kerrville. The realistic route is a new design that takes the 301's layout as a reference, with counsel on how close is too close to TBM-protected data.
 
 ### Safety record
 

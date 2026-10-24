@@ -70,7 +70,7 @@ Our own check, from published geometry and weights, calibrated against published
 
 ### Verdict
 
-**Rank 2.** It is the strongest airframe that can realistically be licensed: 200-211 KTAS on 195 hp and 824 lb over 1,000 nm with reserve in the high case, with molds and a support business at a live holder. It ranks below the Defiant for three reasons: the worst fatal record in the survey, a power cut of nearly half its design power, and about 240 lb of nose ballast to find. Its published 278 KTAS reads 8% optimistic against the fleet calibration.
+**Rank 2.** It is the strongest airframe that physically survives: 200-211 KTAS on 195 hp and 824 lb over 1,000 nm with reserve in the high case, about 235 aircraft on the register to measure, and parts support still offered. Who could license or sell the design is open: the scope of the 2023 sale is not public and the molds are unlocated. That still leaves it ahead of the Mooney 301, where nothing survives at all, and the VK-30, whose holder is large and firmly set. It ranks below the Defiant for three reasons: the worst fatal record in the survey, a power cut of nearly half its design power, and about 240 lb of nose ballast to find. Its published 278 KTAS reads 8% optimistic against the fleet calibration.
 
 ### Independent performance check
 
@@ -128,7 +128,7 @@ Model: `docs/shortlist/check/models/lancair-iv-p.json`; result: `docs/shortlist/
 
 ### Rights and provenance (stage 2)
 
-Small holder (Elon, `docs/rights/lancair-iv-p.md`, PR #3). In February 2017 Lancair International Inc. sold all out-of-production kit lines, including the IV and IV-P, "with all assets, intellectual designs, and ongoing support business" to Lancair International LLC (Uvalde, TX). In October 2023 JetEXE Aviation (Sacramento) bought the Lancair kit business, reported to include older designs, molds and IP. It trades as Lancair Aerospace and still supports the IV-P with parts and service bulletins, but does not sell IV-P kits. "LANCAIR" is a live mark. This is the clearest licence-or-purchase path on the shortlist. Approaching the holder is Bill's call.
+Open question: chain of title (Elon, `docs/rights/lancair-iv-p.md`, PR #3, updated 2026-10-24). In February 2017 Lancair International Inc. sold all out-of-production kit lines, including the IV and IV-P, "with all assets, intellectual designs, and ongoing support business" to Lancair International LLC (Uvalde, TX). In October 2023 JetEXE Aviation (Sacramento) bought the Lancair kit business from the Uvalde owners. **No public source lists what that purchase covered** (an earlier version of this dossier repeated a misquotation saying it included molds and IP; it did not, and is withdrawn). The Texas LLC is still active, so whether JetEXE or the LLC holds the IV-P design is open. The molds have no known location since Uvalde in 2017. Owner-forum posts (low grade) report a legal dispute between the parties and call Lancair "effectively defunct" as of April 2026; no federal case was found, and Texas state courts were not searched. The company trades as Lancair Aerospace, says the IV-P kit is out of production, and offers parts and service bulletins. "LANCAIR" is a live mark held jointly by JetEXE and Akyna Medical Management. Lancair has licensed a design before (the Calima T-90). So it remains a licence-or-purchase candidate, but **chain of title comes before price**, and an attorney is needed for it. Approaching anyone is Bill's call.
 
 ### Safety record
 
@@ -140,7 +140,7 @@ Kit production ended in 2012, and the company sold its older lines in 2016-17 to
 
 ### Not yet done
 
-- Licence terms and the scope of the 2023 sale (Elon; contact is Bill's call).
+- Chain of title: what JetEXE bought in 2023, whether the Texas LLC still holds the IV-P design, and where the molds are (Elon, then an attorney; contact is Bill's call).
 - If it goes forward: a SAFETY review of the stall-spin pattern, asked on AER-3785 first.
 - A climb and take-off check at 195 hp, and a weight-and-balance with the lighter engine (AERO).
 - Builder-fleet empty weight: two weighed aircraft (2,140 and 2,200 lb) are all we have.

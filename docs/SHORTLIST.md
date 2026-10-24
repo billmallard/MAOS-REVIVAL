@@ -14,9 +14,9 @@ Nobody has been contacted.
 
 | Rank | Design | Seats | On the Aeromomentum line: KTAS / useful load / payload at 1,000 nm with 45 min (our check, two engine cases) | Rights (stage 2) | Safety record | Why it died; does a revival fix it? |
 |---|---|---|---|---|---|---|
-| 1 | [Rutan Defiant](candidates/rutan-defiant.md) | 4 | 178-190 KTAS / 1,350 lb / cannot-669 lb on 2x AM15T | Open question: rights "sold" in 1985 to an unnamed buyer; Rutan is alive and objects to unlicensed building | 6 NTSB events, 2 fatal, about 30 built; nose gear is the recurring item; no engine-out accident | Certification money, then liability. Yes: an experimental revival needs neither |
-| 2 | [Lancair IV-P](candidates/lancair-iv-p.md) | 4 | 200-211 / 1,350 / cannot-824 on AM20T | Small holder, still supporting the type (Lancair Aerospace / JetEXE): licence route | 88 NTSB events, 43 fatal, about 360 built; low-altitude stall-spin and engine failure followed by stall | Kits retired for newer models. The safety pattern is the real problem, and a revival does not fix it by itself |
-| 3 | [Mooney 301](candidates/mooney-301.md) | 6 | 176-187 / 1,452 / 858-867 on AM20T | Open question: Mooney International or Daher; data went to Socata in 1987. Attorney first | One prototype, no accidents; the test pilot called its pitch control "not certifiable" | Corporate sale; new owners wanted a 300 kt turboprop. Partly: the market gap is real, but nothing survives to revive except published geometry |
+| 1 | [Rutan Defiant](candidates/rutan-defiant.md) | 4 | 178-190 KTAS / 1,350 lb / cannot-669 lb on 2x AM15T | Open question: no 1985 buyer on the record; likely holder RAF or Burt Rutan, who owns little (plans copyright) and objects to unlicensed building | 6 NTSB events, 2 fatal, about 30 built; nose gear is the recurring item; no engine-out accident | Certification money, then liability. Yes: an experimental revival needs neither |
+| 2 | [Lancair IV-P](candidates/lancair-iv-p.md) | 4 | 200-211 / 1,350 / cannot-824 on AM20T | Open question: chain of title. Scope of the 2023 JetEXE purchase is not public, molds unlocated since 2017; parts support continues | 88 NTSB events, 43 fatal, about 360 built; low-altitude stall-spin and engine failure followed by stall | Kits retired for newer models. The safety pattern is the real problem, and a revival does not fix it by itself |
+| 3 | [Mooney 301](candidates/mooney-301.md) | 6 | 176-187 / 1,452 / 858-867 on AM20T | Open question: Mooney International or Daher, unresolved; nothing usable survives on either path. Attorney first | One prototype, no accidents; the test pilot called its pitch control "not certifiable" | Corporate sale; new owners wanted a 300 kt turboprop. Partly: the market gap is real, but nothing survives to revive except published geometry |
 | 4 | [Cirrus VK-30](candidates/cirrus-vk-30.md) | 5 | 199-212 / 1,350 / 815-825 on AM20T | Firmly held by Cirrus (AVIC-controlled): unlikely | 7 NTSB events, 5 fatal, about 13 built; driveshaft, cruise-flap flutter and an aft-CG spin are tied to the design | Cirrus left kits for certified aircraft. Only if the shaft drive and the flutter are designed out |
 | 5 | [Velocity XL-RG](candidates/velocity-xl-rg.md) | 4 | 186-199 / 1,000 / 440-457 on AM20T, **100 gal optional tanks only** (cannot on standard 70 gal) | Firmly held: a live product (Velocity Inc.) | 26 NTSB events, 5 fatal, about 230 built; one door-into-prop fatal; one NTSB design finding on winglet-rudder flutter | Not dead. An AM20T kit option is a partnership question, not a revival |
 | 6 | [Wheeler Express](candidates/express-2000.md) | 4 | 179-191 / 890 / cannot (439-445 at economy power) on AM20T | Open question: last holder (2007) has no visible trace | 17+ US NTSB events, 13 fatal worldwide, about 55 active; about 9 of the 13 fatal are stall or loss of control, and the NTSB named the design's poor yaw stability (CEN15FA321) | A fatal crash collapsed sales, then three bankruptcies. Only with a new tail |
@@ -109,10 +109,17 @@ factors pull them apart.
   669 lb in the high case, 807-821 lb at economy power (150-159 KTAS). Its record
   has no engine-out accident. What killed it (certification money, then
   liability) does not apply to an experimental revival. The rights are an open
-  question, but the designer is alive and identifiable.
-- **Lancair IV-P, second.** It has the strongest airframe that is actually
-  available: about 235 on the register, molds and support at a live small
-  holder, and a licence route. Our check gives 200-211 KTAS on 195 hp, and 824 lb
+  question, but no 1985 buyer is on the record, so the likely holder is one
+  living, identifiable party: RAF or Burt Rutan. He holds little beyond the plans
+  copyright, and he refused new licences in the 1980s and still objects to
+  unlicensed building.
+- **Lancair IV-P, second.** It has the strongest airframe that physically
+  survives: about 235 on the register to measure, and parts support still
+  offered. Who could license or sell the design is open. The scope of the 2023
+  JetEXE purchase is not public, the molds have no known location since 2017,
+  and low-grade reports describe a dispute between the parties. That is a
+  chain-of-title problem, not a closed door, and it still leaves the IV-P ahead
+  of the 301 (nothing survives) and the VK-30 (a large, settled holder). Our check gives 200-211 KTAS on 195 hp, and 824 lb
   over 1,000 nm with reserve in the high case. Two things hold it below the
   Defiant. Its fatal-accident record is the worst in the survey, and the stall-spin
   half of it comes from a 36 lb/ft2 wing loading that a smaller engine does not
@@ -293,8 +300,10 @@ clears or condemns a design on handling.
   achieves, so stage 4's weight estimate is the number that most changes this
   ranking.
 - **To Elon (stage 2):** the ranking. Its rights questions are what most decide
-  whether a design can go anywhere. In particular: the 1985 buyer of the Rutan
-  designs, the Lancair licence terms, and the Mooney/Daher question on the 301.
+  whether a design can go anywhere. Elon's updated files (PR #3, 2026-10-24)
+  answered the first round: no 1985 buyer of the Rutan designs, an open chain of
+  title for the IV-P, and an unresolved Mooney/Daher question on the 301. All
+  three now need an attorney, not more desk research.
 - **SAFETY is not part of this stage.** Two patterns would need SAFETY before any
   development decision: the IV-P's low-altitude stall-spin record, and the
   VK-30's shaft-drive and flutter accidents. Per the epic, that is asked on

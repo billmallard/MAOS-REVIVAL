@@ -131,7 +131,7 @@ Model: `docs/shortlist/check/models/rutan-defiant.json`; result: `docs/shortlist
 
 ### Rights and provenance (stage 2)
 
-Open question (Elon, `docs/rights/rutan-defiant.md`, PR #3). RAF sold its last plans and licensed its last builder in June 1985. A 1988 RAF newsletter says the rights to the RAF designs "were sold" in mid 1985, without naming the buyer. RAF stopped trading in 2002. Burt Rutan wrote publicly in February 2025 that he objects to unlicensed building from "bogus plans". So the holder's attitude is known, and the holder (RAF, Rutan, or the unnamed 1985 buyer) is identifiable in principle. The prototype N78RA is at the Hiller Aviation Museum. Who holds the rights is the key fact to establish, and approaching anyone needs Bill's go-ahead.
+Open question, with a likely holder (Elon, `docs/rights/rutan-defiant.md`, PR #3, updated 2026-10-24). RAF sold its last plans and licensed its last builder in June 1985. **No 1985 rights buyer is on the record.** The one newsletter line that says rights "were sold" (Canard Pusher 54, 1988) is a reworded reprint of a 1985 paragraph that mentions no sale, and every other RAF and Rutan account says RAF stopped selling plans and kept its assets. The likely holder is therefore Rutan Aircraft Factory or Burt Rutan; that is an inference, not a document. What the holder owns is thin: the plans copyright (Fred Keller, who drew the homebuilder plans for a share of sales, may hold an interest), no type certificate, no live patent, no molds (moldless construction), and not the DEFIANT name, which Sikorsky and Lockheed Martin hold for aircraft. RAF called its end of licensing "final, official and irrevocable" (Canard Pusher 71), and Rutan wrote in February 2025 that he objects to unlicensed building from "bogus plans". So there is one identifiable, living party to approach, and his stance is on the record. The prototype N78RA is at the Hiller Aviation Museum. An attorney is needed on who holds the rights and on the Keller interest. Approaching anyone needs Bill's go-ahead.
 
 ### Safety record
 
@@ -143,7 +143,7 @@ The 1979 certification programme lost its financing, and RAF stopped selling all
 
 ### Not yet done
 
-- Establish who holds the RAF design rights (Elon; any approach is Bill's call).
+- Confirm whether RAF or Burt Rutan holds the rights, and whether Keller has an interest (attorney via Elon; any approach is Bill's call).
 - Measure N78RA at the Hiller museum (canard, chords, cowls) if Bill approves contact; it would replace most of the estimated geometry.
 - A drag study of the two cooling installations and the prop question (AERO, if it goes forward).
 - The modern rebuild's empty weight (MANUFACTURING, stage 4): the plans prototype's 1,600 lb is the only figure.
