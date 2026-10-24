@@ -29,20 +29,27 @@ Grades: F factory/brochure/designer claim; T type certificate data sheet; P flig
 | Usable fuel | 95 US gal | F | [source](https://aeroresourcesinc.com/uploads/199004-1990%20Cirrus%20VK30%20Homebuilt.pdf) | - |
 | Published range | 1,130 nm | F | [source](https://www.eaa.org/eaa-museum/museum-collection/aircraft-collection-folder/1991-cirrus-vk-30---n33vk) | not stated (1,300 mi converted) |
 
-Cruise settings (the starred row is the one screened for speed):
+Cruise settings (P = screened as published, M = screened as measured; the basis follows the grade unless a setting states it):
 
 | KTAS | Altitude, ft | Power | Fuel flow, gph | Grade | Source | Note |
 |---|---|---|---|---|---|---|
-| 205 * | 4500 | 70% | 15.5 | P | [source](https://aeroresourcesinc.com/uploads/199004-1990%20Cirrus%20VK30%20Homebuilt.pdf) | prototype measured, AOPA Pilot Apr 1990 |
-| 211 | 5000 | 75% | 16.7 | F | [source](https://aeroresourcesinc.com/uploads/199004-1990%20Cirrus%20VK30%20Homebuilt.pdf) | manufacturer's calculation |
+| 205 M | 4500 | 70% | 15.5 | P | [source](https://aeroresourcesinc.com/uploads/199004-1990%20Cirrus%20VK30%20Homebuilt.pdf) | prototype measured, AOPA Pilot Apr 1990 |
+| 211 P | 5000 | 75% | 16.7 | F | [source](https://aeroresourcesinc.com/uploads/199004-1990%20Cirrus%20VK30%20Homebuilt.pdf) | manufacturer's calculation |
 
-## Screen (stage 1, published numbers)
+## Screen (published numbers; like for like)
 
-- **Verdict: pass, speed unconditioned**
-- Useful load: 1,350 lb (pass) against 1,000 lb.
-- Range: 1,256 nm still-air (pass; basis: calc) against 1,000 nm.
-- Cruise: 205 KTAS at 4,500 ft (pass+) against >160 KTAS (>180 preferred).
-- Payload at 1,000 nm: 896 lb with no reserve; 827 lb with a 45 min reserve. Setting: 205 KTAS at 15.5 gph.
+Two screens, never mixed: the maker's figures as published, and measured or reported data. The three targets are separate floors; payload at 1,000 nm is information only.
+
+- **As published: pass, speed unconditioned**
+  - Useful load: 1,350 lb (pass) against 1,000 lb.
+  - Range: 1,130 nm (pass; not stated (1,300 mi converted)) against 1,000 nm.
+  - Cruise: 211 KTAS at 5,000 ft (pass+) against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): 875 / 800 @ 211 kt, 16.7 gph.
+- **Measured or reported: partial: range pass, speed pass, speed unconditioned**
+  - Useful load: - lb (?) against 1,000 lb.
+  - Range: 1,256 nm (pass; still air, no reserve, from fuel and measured flow at 205 KTAS) against 1,000 nm.
+  - Cruise: 205 KTAS at 4,500 ft (pass+) against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): cannot be computed on this basis.
 - Aeromomentum fit (first cut): Short: AM20T 260 hp vs 290 hp (-4% speed, est. 198 KTAS).
 
 Sanity flags:
@@ -52,6 +59,11 @@ Sanity flags:
 ## Why it died
 
 Discontinued 1993 as Cirrus moved to certified aircraft; replacement wing announced 1996 for ~28 kits (Wikipedia).
+
+## Idea ledger (what a new airplane should keep; AERO's judgement)
+
+- A laminar-flow composite wing and a clean pusher fuselage that reached about 200 KTAS on 290-300 hp, the design the Cirrus team learned on before the SR20.
+- Lesson: its long shaft drive, cruise-flap flutter and aft-CG spin recovery are what a pusher with a buried engine must design out.
 
 ## Rights and provenance (known so far; research, not legal advice)
 
@@ -63,13 +75,33 @@ Cirrus Design, now Cirrus Aircraft. No support program found. Owned by the stage
 
 <!-- stage3:start -->
 
-## Stage 3: shortlist rank 4 of 8 (AER-3783)
+## Stage 3: checked, then dropped from the shortlist by Bill (2026-10-24)
 
 Our own check, from published geometry and weights, calibrated against published flight data. Method, calibration and the Aeromomentum assumptions are in [docs/SHORTLIST.md](../SHORTLIST.md). Rights are research, not legal advice. Nobody has been contacted.
 
-### Verdict
+### Bill's call
+
+Bill, 2026-10-24: "no thanks". Dropped from the shortlist; the long-list row stays.
+
+### Verdict (stage 3, before Bill's review)
 
 **Rank 4.** It has the fastest result on our numbers (199-212 KTAS, 815-825 lb over 1,000 nm with reserve). It ranks fourth because the holder is a large, state-controlled company to which it is history, and because its accident record is tied to the very features (shaft drive, flap, spin) a revival would inherit.
+
+### Idea ledger (what a new airplane should keep)
+
+- A laminar composite wing on a clean pusher fuselage: the fastest result on our check (199-212 KTAS on an assumed 195 hp).
+- Lesson for any buried-engine pusher, the Rohr 2-175 included: three of its five fatal accidents trace to the shaft drive, a flutter-prone cruise flap and spin recovery at aft CG. A shaft and its couplings must be designed and tested as primary structure.
+
+### Published, measured and our check, side by side
+
+Read across a row only within one column's basis. The three targets are separate floors.
+
+| | As published | Measured or reported | Our check, original engine |
+|---|---|---|---|
+| Useful load | 1,350 lb (pass) | not found | 1,350 lb (the empty weight the model uses: 2,200 lb) |
+| Range | 1,130 nm (pass; not stated (1,300 mi converted)) | 1,256 nm (pass; still air, no reserve, from fuel and measured flow at 205 KTAS) | 1,206 nm, still air, no reserve, full fuel from MTOW, at 200 hp and 8,000 ft |
+| Cruise | 211 KTAS at 5,000 ft (pass+) | 205 KTAS at 4,500 ft (pass+) | 201 KTAS at 200 hp and 8,000 ft |
+| Screen | pass, speed unconditioned | partial: range pass, speed pass, speed unconditioned | see the verdict |
 
 ### Independent performance check
 
@@ -141,7 +173,6 @@ The founders' own verdict was "we failed as kitmakers". The kit was too complex,
 
 - Nothing, unless Bill wants to test whether Cirrus would release it (contact is his call).
 - If it goes forward: a SAFETY review of the shaft-drive and flutter accidents, asked on AER-3785 first.
-- What a modern rebuild changes in mass, cost and build hours (MANUFACTURING, stage 4, AER-3784).
 
 <!-- stage3:end -->
 

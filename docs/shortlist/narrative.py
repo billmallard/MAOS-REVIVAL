@@ -8,6 +8,9 @@ prose below is AERO's reading of them and of the sources in check/geometry/.
 Re-running replaces everything between the stage 3 markers and nothing else.
 """
 import os
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 CAND = os.path.join(HERE, "..", "candidates")
@@ -17,6 +20,9 @@ END = "<!-- stage3:end -->"
 N = {}
 
 N["rutan-defiant"] = dict(
+    status="dropped",
+    bill='Bill, 2026-10-24: "no chance. Rutan has it and it\'s not what I\'m after." Dropped from the shortlist; the long-list row stays.',
+    ideas=['Centreline thrust: two engines with no asymmetric-thrust or Vmc problem, the right answer when both engines are uncertified automotive conversions. The record shows no engine-out accident on about 30 aircraft.', 'A canard that protects the main wing from stalling, on a twin.'],
     rank="1 of 8",
     results=["rutan-defiant"],
     engine="""- **Power.** Two AM15T (160 hp each, 215 lb dry; grade F) replace two O-320s at 160 hp: the only design on the shortlist whose published power the Aeromomentum line matches directly. At the assumed 75% continuous rating that is 240 hp in cruise, the same as the brochure's 75% point.
@@ -40,7 +46,7 @@ N["lancair-iv-p"] = dict(
 - **Mass and CG.** The installed mass falls by about 242 lb (E). That weight is in the nose of a tractor with a 36 lb/ft2 wing loading, so it has to come back as ballast or as a longer engine mount. The headline useful load (1,350 lb) takes no credit for the saving; the 1,592 lb optimistic figure takes all of it. Neither has been checked against a real weight-and-balance.
 - **Climb.** At 3,550 lb, about 195 hp continuous is roughly 55% of the power the airframe was designed around. Climb rate and high-density-altitude take-off will fall by much more than cruise speed. That is not computed here, but a revival has to quantify it.
 - **Cooling and installation.** A liquid-cooled engine and radiator replace an intercooled twin-turbo air-cooled installation that already ran hot in climb (Kitplanes 2019). The cowl is built around a flat six; a new nose is a stage 4 item.""",
-    rights="""Open question: chain of title (Elon, `docs/rights/lancair-iv-p.md`, PR #3, updated 2026-10-24). In February 2017 Lancair International Inc. sold all out-of-production kit lines, including the IV and IV-P, "with all assets, intellectual designs, and ongoing support business" to Lancair International LLC (Uvalde, TX). In October 2023 JetEXE Aviation (Sacramento) bought the Lancair kit business from the Uvalde owners. **No public source lists what that purchase covered** (an earlier version of this dossier repeated a misquotation saying it included molds and IP; it did not, and is withdrawn). The Texas LLC is still active, so whether JetEXE or the LLC holds the IV-P design is open. The molds have no known location since Uvalde in 2017. Owner-forum posts (low grade) report a legal dispute between the parties and call Lancair "effectively defunct" as of April 2026; no federal case was found, and Texas state courts were not searched. The company trades as Lancair Aerospace, says the IV-P kit is out of production, and offers parts and service bulletins. "LANCAIR" is a live mark held jointly by JetEXE and Akyna Medical Management. Lancair has licensed a design before (the Calima T-90). So it remains a licence-or-purchase candidate, but **chain of title comes before price**, and an attorney is needed for it. Approaching anyone is Bill's call.""",
+    rights="""Open question: chain of title (Elon, `docs/rights/lancair-iv-p.md`, PR #3, updated 2026-10-24). In February 2017 Lancair International Inc. sold all out-of-production kit lines, including the IV and IV-P, with "all assets, intellectual designs and ongoing support business" (company announcement, https://lancair.com/lancair-international-inc-announcing-sale-production-assets-lancair-brand-kit-components-support-assets-new-ownership-based-uvalde-texas/) to Lancair International LLC (Uvalde, TX). In October 2023 JetEXE Aviation (Sacramento) bought the Lancair kit business from the Uvalde owners. **No public source lists what that purchase covered** (an earlier version of this dossier repeated a misquotation saying it included molds and IP; it did not, and is withdrawn). The Texas LLC is still active, so whether JetEXE or the LLC holds the IV-P design is open. The molds have no known location since Uvalde in 2017. Owner-forum posts (low grade) report a legal dispute between the parties and call Lancair "effectively defunct" as of April 2026 (https://www.lancairlive.com/viewtopic.php?p=799); no federal case was found, and Texas state courts were not searched. The company trades as Lancair Aerospace, says the IV-P kit is out of production, and offers parts and service bulletins. "LANCAIR" is a live mark held jointly by JetEXE and Akyna Medical Management. Lancair has licensed a design before (the Calima T-90). So it remains a licence-or-purchase candidate, but **chain of title comes before price**, and an attorney is needed for it. Approaching anyone is Bill's call.""",
     safety="""Record (NTSB bulk databases, our own count of IV-family model strings, 1995-2026): 88 accidents, 43 fatal (49%), 79 killed, on about 360 completed aircraft. Fatal accidents fell from 19 in 2008-2016 to 3 in 2017-2026, which is consistent with the owners' group training push. The NTSB causes in the fatal accidents fall into two big groups. About 13 are low-altitude loss of airspeed or stall-spin on take-off, climb-out, go-around or manoeuvring. About 13 more begin with an engine power loss, often followed by a stall. Weather with structural overload accounts for about 7. **Inference, labelled as such:** the stall-spin group is consistent with a high wing loading and a small wing with a 66 KIAS stall (CAFE). Lower power does not change that, and lower power makes a go-around weaker.""",
     died="""Kit production ended in 2012, and the company sold its older lines in 2016-17 to concentrate on newer designs. That was not a market failure; about 360 were built. A revival therefore does not fix a cause of death. What it would have to fix is the accident pattern, through the wing (the 2019 RDD LX7 rework already offers a new airfoil with double-slotted flaps on the same area), training, and the engine-failure chain.""",
     verdict="""**Rank 2.** It is the strongest airframe that physically survives: 200-211 KTAS on 195 hp and 824 lb over 1,000 nm with reserve in the high case, about 235 aircraft on the register to measure, and parts support still offered. Who could license or sell the design is open: the scope of the 2023 sale is not public and the molds are unlocated. That still leaves it ahead of the Mooney 301, where nothing survives at all, and the VK-30, whose holder is large and firmly set. It ranks below the Defiant for three reasons: the worst fatal record in the survey, a power cut of nearly half its design power, and about 240 lb of nose ballast to find. Its published 278 KTAS reads 8% optimistic against the fleet calibration.""",
@@ -58,7 +64,7 @@ N["mooney-301"] = dict(
 - **Cooling.** The 301 used a deliberately tiny LoPresti-style low-drag inlet. A radiator needs its own duct, so the cooling-drag allowance here is a placeholder.
 - **Altitude.** The 301 was a pressurised design aimed at FL250. Without a critical altitude for the AM20T, pressurisation buys nothing in our check, and its weight is carried for no speed. A revival on this engine might be unpressurised, which changes the structure (stage 4).""",
     rights="""Open question (Elon, `docs/rights/mooney-301.md`, PR #3). There is no type certificate. The one airframe (N301MX, registration cancelled 1989) was scrapped: its wings were cut off and the rest went to an A&P school in Abilene, Texas. All M30 engineering data went to Socata at Tarbes in 1987 under a joint venture. Mooney International (successor to the developer) and Daher (successor to the joint-venture partner) may both claim it. The joint-venture terms and the lawsuit settlement are not public, and no court record of the dispute was found. **Unresolved on the public record, and nothing usable survives on either path** (Elon, updated 2026-10-24): no type certificate, no patent (any from the era expired by about 2012), no airframe, and no known drawing set outside whatever Daher kept in Tarbes or Mooney kept in Kerrville. The realistic route is a new design that takes the 301's layout as a reference, with counsel on how close is too close to TBM-protected data.""",
-    safety="""Record: no NTSB or other accident record; one prototype, about 70 h in 1983, plus Socata data flights. First-hand flight-test account (Bob Kromer, Mooney test pilot, Mooney Flyer, October 2012): with rapid inputs in gusty air on approach, pitch authority became "almost non-existent". He blamed the inverted-section one-piece stabilator and called it "certainly not certifiable"; a conventional tail was recommended and never fitted. Sources disagree on the tail layout (Wikipedia describes a fixed stabilizer with elevators); we kept the test pilot's account. **Inference:** a tail redesign would fix it, but any revival treats the tail as unvalidated. No fleet, no rate.""",
+    safety="""Record: no NTSB or other accident record; one prototype, about 70 h in 1983, plus Socata data flights. First-hand flight-test account (Bob Kromer, Mooney test pilot, Mooney Flyer, October 2012, https://themooneyflyer.com/issues/2012-OctTMF.pdf): with rapid inputs in gusty air on approach, pitch authority became "almost non-existent". He blamed the inverted-section one-piece stabilator and called it "certainly not certifiable"; a conventional tail was recommended and never fitted. Sources disagree on the tail layout (Wikipedia describes a fixed stabilizer with elevators); we kept the test pilot's account. **Inference:** a tail redesign would fix it, but any revival treats the tail as unvalidated. No fleet, no rate.""",
     died="""Republic Steel's takeover by LTV forced the sale of Mooney. The new French-led owners judged the 301 about 200 lb heavy and too slow, and wanted a 300 kt turboprop, which became the TBM 700. The market gap it was aimed at, a fast six-seat piston single, is real and is still open. But nothing survives to revive except published dimensions: a revival would be a new design that takes the 301 as its starting point.""",
     verdict="""**Rank 3.** It has the best payload-range on our numbers (858-867 lb over 1,000 nm with reserve) and is the only six-seater close to the mission. It ranks third because there is nothing to revive but published dimensions, the rights are an attorney question, the tail is known-bad, and its published speed reads 9% optimistic against the fleet calibration.""",
     next="""- The attorney question on Mooney or Daher (Elon, then Bill).
@@ -67,6 +73,9 @@ N["mooney-301"] = dict(
 )
 
 N["cirrus-vk-30"] = dict(
+    status="dropped",
+    bill='Bill, 2026-10-24: "no thanks". Dropped from the shortlist; the long-list row stays.',
+    ideas=['A laminar composite wing on a clean pusher fuselage: the fastest result on our check (199-212 KTAS on an assumed 195 hp).', 'Lesson for any buried-engine pusher, the Rohr 2-175 included: three of its five fatal accidents trace to the shaft drive, a flutter-prone cruise flap and spin recovery at aft CG. A shaft and its couplings must be designed and tested as primary structure.'],
     rank="4 of 8",
     results=["cirrus-vk-30"],
     engine="""- **Power.** The AM20T at 195 hp assumed continuous replaces a 290-300 hp IO-540 or IO-550 cruising at about 200 hp. On a low-drag pusher that gives 199-212 KTAS: the fastest result on the shortlist.
@@ -81,6 +90,9 @@ N["cirrus-vk-30"] = dict(
 )
 
 N["velocity-xl-rg"] = dict(
+    status="dropped",
+    bill='Bill, 2026-10-24: "no chance." Dropped from the shortlist; the long-list row stays.',
+    ideas=['A canard pusher with a real cabin (four or five seats, gull-wing doors), sold continuously as a kit since the 1980s.', "**The Raptor (a lesson, not a Velocity product).** Peter Muller's Raptor Aircraft (about 2013-2021) tried to scale the Velocity-type canard pusher into a pressurised five-seater on his own Audi 3.0 TDI diesel conversion. It promised 300 KTAS at FL250 for about $130,000, and took about 1,500 escrowed $2,000 deposits (archived raptor-aircraft.com specs page, F; Aero-News, P). The prototype came out \"well over 800 pounds heavier than its design weight\" (Aero-News, P): its weighing video showed 3,144 lb empty (as cited by Wikipedia, L) against the 2,300 lb estimated empty weight on its archived specs page (F). Wikipedia's own figure for the overage, 1,344 lb, implies an earlier, lower estimate. Its first real flight, on 10 October 2020, lasted about three minutes, with pitch and lateral oscillations and the powerplant near its temperature limits (Aero-News, P). The engine failed in February 2021 (L). A reduction-drive failure put it in a Nebraska cornfield in August 2021 (N352TD, registration cancelled 2022; Aero-News, P; FAA registry, B). No link to Velocity Inc. was found. **What it teaches:** weight control, an engine and reduction drive proven before the airframe, and professional flight test. Those are the risks an Aeromomentum installation carries too. Sources: https://www.aero-news.net/index.cfm?do=main.textpost&id=39a13f1f-1ad0-4979-9371-e4644989ce85 ; https://www.aero-news.net/index.cfm?do=main.textpost&id=86ec99b2-5784-4217-8b71-22dc71e07bb1 ; https://web.archive.org/web/20200201043759/http://www.raptor-aircraft.com/specs.html ; https://en.wikipedia.org/wiki/Raptor_Aircraft_Raptor"],
     rank="5 of 8",
     results=["velocity-xl-rg", "velocity-xl-rg-100gal"],
     engine="""- **Power.** The AM20T at 195 hp assumed continuous replaces a 260-310 hp IO-540 or IO-550 (stage 1 matched the 260 hp build). That gives 186-199 KTAS.
@@ -110,6 +122,9 @@ N["express-2000"] = dict(
 )
 
 N["berkut-360"] = dict(
+    status="dropped",
+    bill='Bill, 2026-10-24: "not likely. These were expensive to build." Dropped from the shortlist; the long-list row stays.',
+    ideas=['Molded carbon and glass parts that took the Long-EZ shape to a retractable 200 kt class two-seater.', "Lesson: over 100 molded parts made the kit expensive to build (Bill's reason) and left the design hostage to its molds, which are now lost."],
     rank="7 of 8",
     results=["berkut-360"],
     engine="""- **Power.** The AM20T at 195 hp assumed continuous replaces a 205 hp IO-360 (most builders chose a 260 hp IO-540). Stage 1 called it a direct fit.
@@ -151,14 +166,81 @@ N["cozy-mkiv"] = dict(
 )
 
 
+# Revision 2 (after Bill's review, 2026-10-24): updates, additions, new ranks.
+from narrative_rev2 import UPDATES, NEW  # noqa: E402
+for _k, _v in UPDATES.items():
+    N[_k].update(_v)
+N.update(NEW)
+
+
+def like_for_like(i):
+    """Published, measured and our check side by side (brief, amended
+    2026-10-24): compare published-to-published and measured-to-measured."""
+    import json
+    import sys
+    sys.path.insert(0, os.path.join(HERE, "..", "longlist"))
+    import screen as S
+    cands = {c["id"]: c for c in json.load(open(os.path.join(HERE, "..", "longlist", "candidates.json")))}
+    c = cands.get(i)
+    rp = os.path.join(HERE, "check", "results", i + ".json")
+    if c is None or not os.path.exists(rp):
+        return []
+    r = json.load(open(rp))
+    P, M = S.screen_col(c, "pub"), S.screen_col(c, "meas")
+    o = r["orig"]
+    m = json.load(open(os.path.join(HERE, "check", "models", i + ".json")))
+    ul_chk = m["weights"]["mtow"] - m["weights"]["empty"]
+
+    def spd(col):
+        if col["spd"] is None:
+            return "not found"
+        return (f"{col['spd']:.0f} KTAS at {S.fmt(col['alt'], ' ft') if col['alt'] else 'altitude not stated'}"
+                f" ({col['spd_s']})")
+
+    def rng(col):
+        return "not found" if col["rng"] is None else f"{col['rng']:,.0f} nm ({col['rng_s']}; {col['rng_note']})"
+
+    def ul(col):
+        return "not found" if col["ul"] is None else f"{col['ul']:,.0f} lb ({col['ul_s']})"
+    return [
+        "### Published, measured and our check, side by side", "",
+        "Read across a row only within one column's basis. The three targets are separate floors.", "",
+        "| | As published | Measured or reported | Our check, original engine |",
+        "|---|---|---|---|",
+        f"| Useful load | {ul(P)} | {ul(M)} | {ul_chk:,.0f} lb (the empty weight the model uses: {m['weights']['empty']:,} lb) |",
+        f"| Range | {rng(P)} | {rng(M)} | {o['range_nm_noreserve_fullfuel_mtow']:,.0f} nm, still air, no reserve, full fuel from MTOW, at {o['hp']:.0f} hp and {o['alt_ft']:,.0f} ft |",
+        f"| Cruise | {spd(P)} | {spd(M)} | {o['ktas']:.0f} KTAS at {o['hp']:.0f} hp and {o['alt_ft']:,.0f} ft |",
+        f"| Screen | {P['overall']} | {M['overall'] if S.cell(M) != '-' else 'no measured data'} | see the verdict |",
+        "",
+    ]
+
+
 def block(i):
     n = N[i]
-    parts = [START, "", f"## Stage 3: shortlist rank {n['rank']} (AER-3783)", "",
+    st = n.get("status", "ranked")
+    if st == "dropped":
+        head = "## Stage 3: checked, then dropped from the shortlist by Bill (2026-10-24)"
+    elif st == "study":
+        head = "## Stage 3: studies, not ranked (AER-3783)"
+    elif st in ("calibration", "reference"):
+        head = f"## Stage 3: {n['rank']} (AER-3783)"
+    else:
+        head = f"## Stage 3: shortlist rank {n['rank']} (AER-3783)"
+    parts = [START, "", head, "",
              "Our own check, from published geometry and weights, calibrated against "
              "published flight data. Method, calibration and the Aeromomentum "
              "assumptions are in [docs/SHORTLIST.md](../SHORTLIST.md). Rights are "
-             "research, not legal advice. Nobody has been contacted.", "",
-             "### Verdict", "", n["verdict"], ""]
+             "research, not legal advice. Nobody has been contacted.", ""]
+    if n.get("bill"):
+        parts += ["### Bill's call", "", n["bill"], ""]
+    parts += ["### Verdict" + (" (stage 3, before Bill's review)" if st == "dropped" else ""), "",
+              n["verdict"], ""]
+    if n.get("ideas"):
+        parts += ["### Idea ledger (what a new airplane should keep)", ""]
+        parts += [f"- {x}" for x in n["ideas"]] + [""]
+    parts += like_for_like(i)
+    for k in n.get("extra_sections", []):
+        parts += [f"### {k[0]}", "", k[1].strip(), ""]
     for r in n["results"]:
         snip = open(os.path.join(HERE, "check", "results", r + "_stage3.md")).read()
         title = "Independent performance check" + (
@@ -168,9 +250,11 @@ def block(i):
               "### Rights and provenance (stage 2)", "", n["rights"], "",
               "### Safety record", "", n["safety"], "",
               "### Why it died, and whether a revival fixes it", "", n["died"], "",
-              "### Not yet done", "", n["next"],
-              "- What a modern rebuild changes in mass, cost and build hours "
-              "(MANUFACTURING, stage 4, AER-3784).", "", END]
+              "### Not yet done", "", n["next"]]
+    if st != "dropped":
+        parts += ["- What a modern rebuild changes in mass, cost and build hours "
+                  "(MANUFACTURING, stage 4, AER-3784)."]
+    parts += ["", END]
     return "\n".join(parts)
 
 

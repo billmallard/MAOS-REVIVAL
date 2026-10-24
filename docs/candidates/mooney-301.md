@@ -24,37 +24,57 @@ Grades: F factory/brochure/designer claim; T type certificate data sheet; P flig
 |---|---|---|---|---|
 | MTOW | 4,000 lb | F | [source](https://mooneyevents.com/Mooney301.html) | - |
 | Empty weight | 2,548 lb | F | [source](https://en.wikipedia.org/wiki/Mooney_301) | Air International Jan 1984 |
-| Useful load | 1,452 lb | F | [source](https://en.wikipedia.org/wiki/Mooney_301) | derived; Mooney newsletter claims 1,600 |
+| Useful load | 1,452 lb | F | [source](https://en.wikipedia.org/wiki/Mooney_301) | design figure: 4,000 gross less 2,548 empty (Air International Airdata File, Jan 1984), not stated as weighed; Mooney's spec sheet claims 1,600 |
 | Useful load, fleet or as-weighed | not found | | | |
+| Useful load, as-flown estimate | 1,252 lb | E | [source](https://mooneyevents.com/Mooney301.html) | AERO lower-bound estimate: 1,452 less the prototype's ~200 lb weight overrun (Mooney Events; Wikipedia; docs/rights/mooney-301.md). If 2,548 lb already includes the overrun, ~1,400 (1,600 less 200). Never weighed in public record |
 | Usable fuel | 100 US gal | F | [source](https://mooneyevents.com/Mooney301.html) | capacity |
 | Published range | 986 nm | F | [source](https://mooneyevents.com/Mooney301.html) | cruise, 45 min reserve |
 
-Cruise settings (the starred row is the one screened for speed):
+Cruise settings (P = screened as published, M = screened as measured; the basis follows the grade unless a setting states it):
 
 | KTAS | Altitude, ft | Power | Fuel flow, gph | Grade | Source | Note |
 |---|---|---|---|---|---|---|
-| 235 * | 25000 | 75% | 19.7 | F | [source](https://mooneyevents.com/Mooney301.html) | at 'max altitude'; prototype reportedly reached only 260 kt top speed |
+| 235 P | 25000 | 75% | 19.7 | F | [source](https://mooneyevents.com/Mooney301.html) | design/marketing figure at 'max altitude', 75% (Mooney spec sheet), not a flight-test result. The prototype was 'slower than desired' with aero work unfinished; no as-flown cruise is published (Mooney Events; docs/rights/mooney-301.md) |
+| 225 | - | - | - | F | [source](https://en.wikipedia.org/wiki/Mooney_301) | 259 mph cruise, Jane's 1983-84 pp. 444-445 (via Wikipedia); conditions not stated; also a design-era figure |
 
-## Screen (stage 1, published numbers)
+## Screen (published numbers; like for like)
 
-- **Verdict: pass**
-- Useful load: 1,452 lb (pass) against 1,000 lb.
-- Range: 1,193 nm still-air (pass; basis: calc) against 1,000 nm.
-- Cruise: 235 KTAS at 25,000 ft (pass+) against >160 KTAS (>180 preferred).
-- Payload at 1,000 nm: 949 lb with no reserve; 860 lb with a 45 min reserve. Setting: 235 KTAS at 19.7 gph.
+Two screens, never mixed: the maker's figures as published, and measured or reported data. The three targets are separate floors; payload at 1,000 nm is information only.
+
+- **As published: near miss** - range -14 nm
+  - Useful load: 1,452 lb (pass) against 1,000 lb.
+  - Range: 986 nm (near; cruise, 45 min reserve) against 1,000 nm.
+  - Cruise: 235 KTAS at 25,000 ft (pass+) against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): 949 / 860 @ 235 kt, 19.7 gph.
+- **Measured or reported: partial: UL pass**
+  - Useful load: 1,252 lb (pass) against 1,000 lb.
+  - Range: - nm (?; none found) against 1,000 nm.
+  - Cruise: not found against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): cannot be computed on this basis.
 - Aeromomentum fit (first cut): Short: AM20T 260 hp vs 360 hp (-10% speed, est. 211 KTAS).
 
 Sanity flags:
 
 - published range 986 nm vs 1,193 nm from fuel and flow
+- as-flown useful load estimate 200 lb below the published design figure
+- useful load and cruise are design figures; the only prototype was ~200 lb over projected weight and 'slower than desired', and no as-flown speed or weight is published (Mooney Events; docs/rights/mooney-301.md)
+- the published 986 nm range is a 45 min reserve figure; fuel and flow give 1,016 nm on that basis, consistent within 3%
+- 1,000 nm plus 45 min at 235 kt and 19.7 gph needs 98.6 of 100 gal with no climb allowance; below 231 KTAS at the same flow (about 4 kt under the design figure) it cannot carry the reserve (at Jane's 225 kt it needs 102 gal)
+- 235 KTAS at 270 hp, 25,000 ft, 4,000 lb implies CD0 ~0.019 (AR 9.0, e 0.80, prop eta 0.80; AERO, grade E), optimistic for a 1983 pressurized single; at CD0 +20% the same power gives ~220 KTAS, still a pass on speed
+- Bill recalls a few active flying examples. The FAA registry shows one M30 ever registered (N301MX, s/n 0000, cancelled 26 July 1989), none current, and no replica or amateur-built copy (registry download 2026-10-24, with an M22 positive control of 14). Likeliest explanation, an inference: the Mooney M22 Mustang (14 registered) or the 301's descendant, the TBM 700 family
 
 ## Why it died
 
-Republic Steel's takeover by LTV forced the sale of Mooney; the new French-led owners judged the 301 ~200 lb heavy and too slow (Wikipedia).
+Republic Steel's takeover by LTV forced the sale of Mooney. The prototype was about 200 lb over its projected weight and, with aero work unfinished, slower than desired; the new French-led owners wanted close to 300 kt, which needed a turbine, and moved the effort into the Socata joint venture that became the TBM 700 (Mooney Events; Plane & Pilot; docs/rights/mooney-301.md).
+
+## Idea ledger (what a new airplane should keep; AERO's judgement)
+
+- A laminar wing, pressurisation and six seats on 360 hp, the concept behind the TBM 700.
+- Lesson: the prototype flew about 200 lb heavy and slower than planned; weight control was the failure, not the layout.
 
 ## Rights and provenance (known so far; research, not legal advice)
 
-Mooney (now Mooney International) vs Daher (TBM lineage): whether 301 data sits with either is not found. Owned by the stage 2 rights research (AER-3787).
+No TC; one prototype, scrapped. M30 data went to Socata in 1987; whether Mooney International or Daher holds it is not shown (docs/rights/mooney-301.md). Owned by the stage 2 rights research (AER-3787).
 
 ## Safety record
 
@@ -62,13 +82,41 @@ No accidents found.
 
 <!-- stage3:start -->
 
-## Stage 3: shortlist rank 3 of 8 (AER-3783)
+## Stage 3: shortlist rank 5 of 5 (AER-3783)
 
 Our own check, from published geometry and weights, calibrated against published flight data. Method, calibration and the Aeromomentum assumptions are in [docs/SHORTLIST.md](../SHORTLIST.md). Rights are research, not legal advice. Nobody has been contacted.
 
+### Bill's call
+
+Bill, 2026-10-24: "Interesting. There are a few active flying examples." Kept. On the flying examples, the record disagrees; see "The registry, against Bill's recollection" below.
+
 ### Verdict
 
-**Rank 3.** It has the best payload-range on our numbers (858-867 lb over 1,000 nm with reserve) and is the only six-seater close to the mission. It ranks third because there is nothing to revive but published dimensions, the rights are an attorney question, the tail is known-bad, and its published speed reads 9% optimistic against the fleet calibration.
+**Rank 5.** It has the best payload-range on our numbers (858-867 lb over 1,000 nm with reserve, as information) and is the only six-seat design close to the mission. It ranks last because nothing of it survives to revive: one airframe, scrapped; drawings that went to Socata in 1987; rights unresolved between Mooney International and Daher; a tail its test pilot called "certainly not certifiable"; and a published speed that reads 9% optimistic against the fleet calibration. A revival is a new design that takes its layout as a reference.
+
+### Idea ledger (what a new airplane should keep)
+
+- A laminar wing, pressurisation and six seats on 360 hp, with a deliberately tiny low-drag cowl inlet: the concept that became the TBM 700.
+- Lesson: the prototype flew about 200 lb heavy and slower than planned; weight control failed, not the layout.
+
+### Published, measured and our check, side by side
+
+Read across a row only within one column's basis. The three targets are separate floors.
+
+| | As published | Measured or reported | Our check, original engine |
+|---|---|---|---|
+| Useful load | 1,452 lb (pass) | 1,252 lb (pass) | 1,452 lb (the empty weight the model uses: 2,548 lb) |
+| Range | 986 nm (near; cruise, 45 min reserve) | not found | 1,056 nm, still air, no reserve, full fuel from MTOW, at 270 hp and 20,000 ft |
+| Cruise | 235 KTAS at 25,000 ft (pass+) | not found | 222 KTAS at 270 hp and 20,000 ft |
+| Screen | near miss | partial: UL pass | see the verdict |
+
+### The registry, against Bill's recollection
+
+**The public record shows one Mooney 301 (Mooney M30), and none flying.** In the FAA registry download of 2026-10-24, the M30 model code (5872030) has exactly one aircraft in its history: N301MX, serial 0000, cancelled 26 July 1989. Nothing is registered on it today, and no current or past registration, amateur-built included, is a 301 copy or replica. The query was checked against a positive control (the Mooney M22 code returns 14). Flying magazine's June 1983 first-flight report calls the aircraft "M30 number one", a company proof-of-concept aircraft, and says a pre-production prototype would follow; no later source has one built. The airframe went to Tarbes in 1987, came back to Kerrville, and was scrapped (wings cut off, the rest to an A&P school in Abilene, Texas; Mooney Events, citing Mooney staff).
+
+**What may explain the difference (inference).** The likeliest is the **Mooney M22 Mustang**: Mooney's other pressurised single, about 36 built, 14 still on the US register, fewer actually flying. The second is the 301's descendant, the **TBM 700 family**, often described as the 301 living on (about 1,011 US registrations). Less likely: Mooney's other speed-named models (201, 231, 252), or Piper's six-seat PA-32R-301. A photo or an N-number from Bill would settle it, and would change this dossier if it shows a 301 airframe.
+
+Sources: FAA Aircraft Registry, ReleasableAircraft.zip (MASTER, DEREG, ACFTREF), 2026-10-24; https://www.aeroresourcesinc.com/uploads/198306-1983%20Mooney%20301%20Prototype.pdf ; https://mooneyevents.com/Mooney301.html
 
 ### Independent performance check
 
@@ -78,7 +126,7 @@ Model: `docs/shortlist/check/models/mooney-301.json`; result: `docs/shortlist/ch
 
 **Model assumptions** (grade E unless a source is named):
 
-- Wing span 36.75 ft, area 150 ft2 (F, Jane's 1983-84 via Wikipedia); NLF(1)-0315. Taper 0.5 assumed (E): root 5.44 ft, tip 2.72 ft.
+- Wing span 36.75 ft, area 150 ft2 (F, Air International 'Airdata File', January 1984, via Wikipedia); NLF(1)-0315. Taper 0.5 assumed (E): root 5.44 ft, tip 2.72 ft.
 - Fuselage 29.77 ft (F); width 4.4 ft and height 4.8 ft for a six-seat pressurized cabin: E, ours.
 - Tails by volume coefficient (E): horizontal Vh 0.65 -> 26 ft2, vertical Vv 0.045 -> 15.5 ft2.
 - Laminar run x_tr: wing 0.20 (NLF section on metal; not credited in full), tails 0.05, fuselage 0.
@@ -128,7 +176,7 @@ Open question (Elon, `docs/rights/mooney-301.md`, PR #3). There is no type certi
 
 ### Safety record
 
-Record: no NTSB or other accident record; one prototype, about 70 h in 1983, plus Socata data flights. First-hand flight-test account (Bob Kromer, Mooney test pilot, Mooney Flyer, October 2012): with rapid inputs in gusty air on approach, pitch authority became "almost non-existent". He blamed the inverted-section one-piece stabilator and called it "certainly not certifiable"; a conventional tail was recommended and never fitted. Sources disagree on the tail layout (Wikipedia describes a fixed stabilizer with elevators); we kept the test pilot's account. **Inference:** a tail redesign would fix it, but any revival treats the tail as unvalidated. No fleet, no rate.
+Record: no NTSB or other accident record; one prototype, about 70 h in 1983, plus Socata data flights. First-hand flight-test account (Bob Kromer, Mooney test pilot, Mooney Flyer, October 2012, https://themooneyflyer.com/issues/2012-OctTMF.pdf): with rapid inputs in gusty air on approach, pitch authority became "almost non-existent". He blamed the inverted-section one-piece stabilator and called it "certainly not certifiable"; a conventional tail was recommended and never fitted. Sources disagree on the tail layout (Wikipedia describes a fixed stabilizer with elevators); we kept the test pilot's account. **Inference:** a tail redesign would fix it, but any revival treats the tail as unvalidated. No fleet, no rate.
 
 ### Why it died, and whether a revival fixes it
 

@@ -29,21 +29,28 @@ Grades: F factory/brochure/designer claim; T type certificate data sheet; P flig
 | Usable fuel | 60 US gal | F | [source](https://www.vansaircraft.com/rv-10/) | - |
 | Published range | 869 nm | F | [source](https://www.vansaircraft.com/rv-10/) | 55%, 8,000 ft, reserve not stated (1,000 sm) |
 
-Cruise settings (the starred row is the one screened for speed):
+Cruise settings (P = screened as published, M = screened as measured; the basis follows the grade unless a setting states it):
 
 | KTAS | Altitude, ft | Power | Fuel flow, gph | Grade | Source | Note |
 |---|---|---|---|---|---|---|
-| 171 * | 8000 | 75% | - | F | [source](https://www.vansaircraft.com/rv-10/) | at gross, 197 mph converted |
+| 171 P | 8000 | 75% | - | F | [source](https://www.vansaircraft.com/rv-10/) | at gross, 197 mph converted |
 | 153 | 8000 | 55% | - | F | [source](https://www.vansaircraft.com/rv-10/) | 176 mph converted |
-| 167 | - | - | 12 | P | [source](https://www.kitplanes.com/flight-review-seven-into-ten/) | 'realistic' 165-170 kt, ~12 gph lean of peak |
+| 167 M | - | - | 12 | P | [source](https://www.kitplanes.com/flight-review-seven-into-ten/) | 'realistic' 165-170 kt, ~12 gph lean of peak |
 
-## Screen (stage 1, published numbers)
+## Screen (published numbers; like for like)
 
-- **Verdict: fail** - range -165 nm
-- Useful load: 1,050 lb (pass) against 1,000 lb.
-- Range: 835 nm still-air (fail; basis: calc) against 1,000 nm.
-- Cruise: 171 KTAS at 8,000 ft (pass) against >160 KTAS (>180 preferred).
-- Payload at 1,000 nm: Does not reach 1,000 nm on usable fuel: 835 nm still-air maximum.
+Two screens, never mixed: the maker's figures as published, and measured or reported data. The three targets are separate floors; payload at 1,000 nm is information only.
+
+- **As published: fail** - range -131 nm
+  - Useful load: 1,125 lb (pass) against 1,000 lb.
+  - Range: 869 nm (fail; 55%, 8,000 ft, reserve not stated (1,000 sm)) against 1,000 nm.
+  - Cruise: 171 KTAS at 8,000 ft (pass) against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): cannot be computed on this basis.
+- **Measured or reported: fail** - range -165 nm
+  - Useful load: 1,050 lb (pass) against 1,000 lb.
+  - Range: 835 nm (fail; still air, no reserve, from fuel and measured flow at 167 KTAS) against 1,000 nm.
+  - Cruise: 167 KTAS at an unstated altitude (pass) against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): cannot (835 nm max).
 - Aeromomentum fit (first cut): Yes: AM20T (260 hp) for 260 hp.
 
 Sanity flags:
@@ -53,6 +60,10 @@ Sanity flags:
 ## Why it died
 
 Not dead. Still produced and supported.
+
+## Idea ledger (what a new airplane should keep; AERO's judgement)
+
+- The commercial success the others are measured against: a fast-build metal kit with matched-hole parts that thousands of builders can finish, and a large, predictable fleet.
 
 ## Rights and provenance (known so far; research, not legal advice)
 

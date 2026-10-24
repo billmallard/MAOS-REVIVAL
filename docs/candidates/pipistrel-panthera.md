@@ -29,19 +29,22 @@ Grades: F factory/brochure/designer claim; T type certificate data sheet; P flig
 | Usable fuel | 55.5 US gal | F | [source](https://web.archive.org/web/20200726071257/https://www.pipistrel-aircraft.com/aircraft/cruising/panthera/) | 210 L; usable not stated |
 | Published range | 1,460 nm | F | [source](https://www.pipistrel-aircraft.com/products/panthera/) | not stated |
 
-Cruise settings (the starred row is the one screened for speed):
+Cruise settings (P = screened as published, M = screened as measured; the basis follows the grade unless a setting states it):
 
 | KTAS | Altitude, ft | Power | Fuel flow, gph | Grade | Source | Note |
 |---|---|---|---|---|---|---|
-| 194 * | 8000 | 75% | 14.8 | F | [source](https://web.archive.org/web/20200726071257/https://www.pipistrel-aircraft.com/aircraft/cruising/panthera/) | - |
+| 194 P | 8000 | 75% | 14.8 | F | [source](https://web.archive.org/web/20200726071257/https://www.pipistrel-aircraft.com/aircraft/cruising/panthera/) | - |
 
-## Screen (stage 1, published numbers)
+## Screen (published numbers; like for like)
 
-- **Verdict: fail** - range -272 nm
-- Useful load: 1,023 lb (pass) against 1,000 lb.
-- Range: 728 nm still-air (fail; basis: calc) against 1,000 nm.
-- Cruise: 194 KTAS at 8,000 ft (pass+) against >160 KTAS (>180 preferred).
-- Payload at 1,000 nm: Does not reach 1,000 nm on usable fuel: 728 nm still-air maximum.
+Two screens, never mixed: the maker's figures as published, and measured or reported data. The three targets are separate floors; payload at 1,000 nm is information only.
+
+- **As published: pass**
+  - Useful load: 1,023 lb (pass) against 1,000 lb.
+  - Range: 1,460 nm (pass; not stated) against 1,000 nm.
+  - Cruise: 194 KTAS at 8,000 ft (pass+) against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): cannot (728 nm max).
+- **Measured or reported: no data found.**
 - Aeromomentum fit (first cut): Yes: AM20T (260 hp) for 260 hp.
 
 Sanity flags:
@@ -53,6 +56,10 @@ Sanity flags:
 ## Why it died
 
 Repeated certification slips, including an engine change when Lycoming would not certify the IO-390 for mogas (Wikipedia/AvWeb).
+
+## Idea ledger (what a new airplane should keep; AERO's judgement)
+
+- Retractable trailing-link gear, gull-wing doors, an airframe parachute and a low-drag carbon shape on 260 hp; the certification time it took is the lesson.
 
 ## Rights and provenance (known so far; research, not legal advice)
 

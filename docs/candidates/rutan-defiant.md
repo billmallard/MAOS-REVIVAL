@@ -29,20 +29,28 @@ Grades: F factory/brochure/designer claim; T type certificate data sheet; P flig
 | Usable fuel | 108 US gal | P | [source](https://www.twinandturbine.com/?p=15364) | N171D, the aircraft whose cruise is quoted; 90-120 gal across sources |
 | Published range | 1,128 nm | F | [source](https://planeandpilotmag.com/rutan-defiant) | not stated |
 
-Cruise settings (the starred row is the one screened for speed):
+Cruise settings (P = screened as published, M = screened as measured; the basis follows the grade unless a setting states it):
 
 | KTAS | Altitude, ft | Power | Fuel flow, gph | Grade | Source | Note |
 |---|---|---|---|---|---|---|
-| 162 * | 10000 | - | 16 | P | [source](https://www.twinandturbine.com/?p=15364) | N171D, 160-165 KTAS at 15-17 gph 'in the teens'; 10,000 ft used as the lower bound |
+| 184 P | 8000 | 75% | 17.8 | F | [source](http://www.cozybuilders.org/Canard_Pusher/1983-10_cp-38.pdf) | RAF plans spec, Canard Pusher 38 (Oct 1983); its text says 75% power, its spec table 70%; altitude 8,000 ft from the Skymaster spec block (https://337skymaster.com/defiant.htm), not stated in CP38 |
+| 162 M | 10000 | - | 16 | P | [source](https://www.twinandturbine.com/?p=15364) | N171D, 160-165 KTAS at 15-17 gph 'in the teens'; 10,000 ft used as the lower bound |
 | 152 | - | - | 19 | P | [source](https://www.twinandturbine.com/?p=15364) | low altitude, 150-155 KTAS at 18-20 gph |
 
-## Screen (stage 1, published numbers)
+## Screen (published numbers; like for like)
 
-- **Verdict: pass**
-- Useful load: 1,290 lb (pass) against 1,000 lb.
-- Range: 1,094 nm still-air (pass; basis: calc) against 1,000 nm.
-- Cruise: 162 KTAS at 10,000 ft (pass) against >160 KTAS (>180 preferred).
-- Payload at 1,000 nm: 697 lb with no reserve; not possible (tanks too small) with a 45 min reserve. Setting: 162 KTAS at 16.0 gph.
+Two screens, never mixed: the maker's figures as published, and measured or reported data. The three targets are separate floors; payload at 1,000 nm is information only.
+
+- **As published: pass**
+  - Useful load: 1,290 lb (pass) against 1,000 lb.
+  - Range: 1,128 nm (pass; not stated) against 1,000 nm.
+  - Cruise: 184 KTAS at 8,000 ft (pass+) against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): 710 / cannot @ 184 kt, 17.8 gph.
+- **Measured or reported: partial: range pass, speed pass**
+  - Useful load: - lb (?) against 1,000 lb.
+  - Range: 1,094 nm (pass; still air, no reserve, from fuel and measured flow at 162 KTAS) against 1,000 nm.
+  - Cruise: 162 KTAS at 10,000 ft (pass) against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): cannot be computed on this basis.
 - Aeromomentum fit (first cut): Yes: 2x AM15T (160 hp) matches the prototype's 2x 160 hp; 180 hp builds need 2x AM20T (heavier).
 
 Sanity flags:
@@ -52,6 +60,11 @@ Sanity flags:
 ## Why it died
 
 The 1979 certification effort lost its financing; plans ended with RAF's 1985 liability stop (Wikipedia; P&P).
+
+## Idea ledger (what a new airplane should keep; AERO's judgement)
+
+- Centerline-thrust twin: engine-out without asymmetric thrust or a Vmc problem, which matters when both engines are uncertified conversions.
+- Moldless construction, no flaps, canard stall protection; record shows no engine-out accident on about 30 aircraft.
 
 ## Rights and provenance (known so far; research, not legal advice)
 
@@ -63,13 +76,33 @@ No configuration-specific pattern found. Single-engine climb 150-400 fpm dependi
 
 <!-- stage3:start -->
 
-## Stage 3: shortlist rank 1 of 8 (AER-3783)
+## Stage 3: checked, then dropped from the shortlist by Bill (2026-10-24)
 
 Our own check, from published geometry and weights, calibrated against published flight data. Method, calibration and the Aeromomentum assumptions are in [docs/SHORTLIST.md](../SHORTLIST.md). Rights are research, not legal advice. Nobody has been contacted.
 
-### Verdict
+### Bill's call
+
+Bill, 2026-10-24: "no chance. Rutan has it and it's not what I'm after." Dropped from the shortlist; the long-list row stays.
+
+### Verdict (stage 3, before Bill's review)
 
 **Rank 1.** It is the only direct Aeromomentum fit, gives twin redundancy for uncertified engines with no Vmc problem, has a clean record, and died for reasons a revival removes. Its weakness is drag. The published numbers say it is 1.7 times draggier than its geometry, so its payload at 1,000 nm with a 45 min reserve is cannot to 669 lb at 178-190 KTAS, and 807-821 lb at 150-159 KTAS. Its geometry is also the thinnest-sourced of the top four: the canard, chords and fuselage section are all estimates.
+
+### Idea ledger (what a new airplane should keep)
+
+- Centreline thrust: two engines with no asymmetric-thrust or Vmc problem, the right answer when both engines are uncertified automotive conversions. The record shows no engine-out accident on about 30 aircraft.
+- A canard that protects the main wing from stalling, on a twin.
+
+### Published, measured and our check, side by side
+
+Read across a row only within one column's basis. The three targets are separate floors.
+
+| | As published | Measured or reported | Our check, original engine |
+|---|---|---|---|
+| Useful load | 1,290 lb (pass) | not found | 1,350 lb (the empty weight the model uses: 1,600 lb) |
+| Range | 1,128 nm (pass; not stated) | 1,094 nm (pass; still air, no reserve, from fuel and measured flow at 162 KTAS) | 1,237 nm, still air, no reserve, full fuel from MTOW, at 200 hp and 9,000 ft |
+| Cruise | 184 KTAS at 8,000 ft (pass+) | 162 KTAS at 10,000 ft (pass) | 167 KTAS at 200 hp and 9,000 ft |
+| Screen | pass | partial: range pass, speed pass | see the verdict |
 
 ### Independent performance check
 
@@ -147,7 +180,6 @@ The 1979 certification programme lost its financing, and RAF stopped selling all
 - Measure N78RA at the Hiller museum (canard, chords, cowls) if Bill approves contact; it would replace most of the estimated geometry.
 - A drag study of the two cooling installations and the prop question (AERO, if it goes forward).
 - The modern rebuild's empty weight (MANUFACTURING, stage 4): the plans prototype's 1,600 lb is the only figure.
-- What a modern rebuild changes in mass, cost and build hours (MANUFACTURING, stage 4, AER-3784).
 
 <!-- stage3:end -->
 

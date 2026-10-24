@@ -29,30 +29,40 @@ Grades: F factory/brochure/designer claim; T type certificate data sheet; P flig
 | Usable fuel | 65 US gal | F | [source](https://lancair.com/storage/2019/10/LA_Legacy_web_f.pdf) | - |
 | Published range | 999 nm | F | [source](https://lancair.com/storage/2019/10/LA_Legacy_web_f.pdf) | with reserve (1,150 sm) |
 
-Cruise settings (the starred row is the one screened for speed):
+Cruise settings (P = screened as published, M = screened as measured; the basis follows the grade unless a setting states it):
 
 | KTAS | Altitude, ft | Power | Fuel flow, gph | Grade | Source | Note |
 |---|---|---|---|---|---|---|
-| 230 * | 5000 | - | 14 | P | [source](https://www.kitplanes.com/legacy-act/) | measured, 2,300 rpm, 24.4 in |
-| 228 | 11500 | - | 11.6 | P | [source](https://www.kitplanes.com/legacy-act/) | owner, lean of peak |
+| 230 | 5000 | - | 14 | P | [source](https://www.kitplanes.com/legacy-act/) | measured, 2,300 rpm, 24.4 in |
+| 228 M | 11500 | - | 11.6 | P | [source](https://www.kitplanes.com/legacy-act/) | owner, lean of peak |
 
-## Screen (stage 1, published numbers)
+## Screen (published numbers; like for like)
 
-- **Verdict: fail** - UL -300 lb
-- Useful load: 700 lb (fail) against 1,000 lb.
-- Range: 1,278 nm still-air (pass; basis: calc) against 1,000 nm.
-- Cruise: 230 KTAS at 5,000 ft (pass+) against >160 KTAS (>180 preferred).
-- Payload at 1,000 nm: 395 lb with no reserve; 343 lb with a 45 min reserve. Setting: 228 KTAS at 11.6 gph.
+Two screens, never mixed: the maker's figures as published, and measured or reported data. The three targets are separate floors; payload at 1,000 nm is information only.
+
+- **As published: incomplete: no speed, fails on the rest** - UL -300 lb, range -1 nm
+  - Useful load: 700 lb (fail) against 1,000 lb.
+  - Range: 999 nm (near; with reserve (1,150 sm)) against 1,000 nm.
+  - Cruise: not found against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): cannot be computed on this basis.
+- **Measured or reported: partial: range pass, speed pass**
+  - Useful load: - lb (?) against 1,000 lb.
+  - Range: 1,278 nm (pass; still air, no reserve, from fuel and measured flow at 228 KTAS) against 1,000 nm.
+  - Cruise: 228 KTAS at 11,500 ft (pass+) against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): cannot be computed on this basis.
 - Aeromomentum fit (first cut): Short: AM20T 260 hp vs 310 hp (-6% speed, est. 217 KTAS).
 
 Sanity flags:
 
 - published range 999 nm vs 1,278 nm from fuel and flow
-- screen speed has no altitude, or is below 6,000 ft
 
 ## Why it died
 
 Last kit announced May 2016; continuing 'will require a significant investment' (Lancair).
+
+## Idea ledger (what a new airplane should keep; AERO's judgement)
+
+- A two-seat composite cruiser at 230 kt on 310 hp with a modern cockpit and fast build kit.
 
 ## Rights and provenance (known so far; research, not legal advice)
 

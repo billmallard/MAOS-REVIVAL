@@ -29,19 +29,22 @@ Grades: F factory/brochure/designer claim; T type certificate data sheet; P flig
 | Usable fuel | 92 US gal | F | [source](https://en.wikipedia.org/wiki/Mooney_M22_Mustang) | capacity |
 | Published range | 1,297 nm | F | [source](https://en.wikipedia.org/wiki/Mooney_M22_Mustang) | 45 min reserve |
 
-Cruise settings (the starred row is the one screened for speed):
+Cruise settings (P = screened as published, M = screened as measured; the basis follows the grade unless a setting states it):
 
 | KTAS | Altitude, ft | Power | Fuel flow, gph | Grade | Source | Note |
 |---|---|---|---|---|---|---|
-| 186 * | - | 65% | - | F | [source](https://en.wikipedia.org/wiki/Mooney_M22_Mustang) | normal cruise, 214 mph converted |
+| 186 P | - | 65% | - | F | [source](https://en.wikipedia.org/wiki/Mooney_M22_Mustang) | normal cruise, 214 mph converted |
 
-## Screen (stage 1, published numbers)
+## Screen (published numbers; like for like)
 
-- **Verdict: pass, speed unconditioned**
-- Useful load: 1,240 lb (pass) against 1,000 lb.
-- Range: 1,132 nm still-air (pass; basis: calc, est. flow) against 1,000 nm.
-- Cruise: 186 KTAS at an unstated altitude (pass+) against >160 KTAS (>180 preferred).
-- Payload at 1,000 nm: 753 lb with no reserve; not possible (tanks too small) with a 45 min reserve. Setting: 186 KTAS at 15.1 gph (fuel flow is our estimate at 0.45 lb/hp/h, grade E).
+Two screens, never mixed: the maker's figures as published, and measured or reported data. The three targets are separate floors; payload at 1,000 nm is information only.
+
+- **As published: pass, speed unconditioned**
+  - Useful load: 1,240 lb (pass) against 1,000 lb.
+  - Range: 1,297 nm (pass; 45 min reserve) against 1,000 nm.
+  - Cruise: 186 KTAS at an unstated altitude (pass+) against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): 753 / cannot @ 186 kt, 15.1 gph (est. flow).
+- **Measured or reported: no data found.**
 - Aeromomentum fit (first cut): Short: AM20T 260 hp vs 310 hp (-6% speed, est. 175 KTAS).
 
 Sanity flags:
@@ -51,6 +54,10 @@ Sanity flags:
 ## Why it died
 
 Produced and sold at a loss, contributing to Mooney's 1969 bankruptcy; dropped by Butler/Aerostar (Wikipedia; P&P).
+
+## Idea ledger (what a new airplane should keep; AERO's judgement)
+
+- An early pressurised single for five, in the 1960s; the cost and the company's finances, not the concept, sank it.
 
 ## Rights and provenance (known so far; research, not legal advice)
 

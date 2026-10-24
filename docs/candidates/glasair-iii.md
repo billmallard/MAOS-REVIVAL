@@ -29,20 +29,23 @@ Grades: F factory/brochure/designer claim; T type certificate data sheet; P flig
 | Usable fuel | 73 US gal | F | [source](https://web.archive.org/web/2006/http://www.glasairaviation.com/glasairIIIspecs.html) | 65 main + 8 header |
 | Published range | 1,060 nm | F | [source](https://web.archive.org/web/2006/http://www.glasairaviation.com/glasairIIIspecs.html) | standard fuel, VFR reserve |
 
-Cruise settings (the starred row is the one screened for speed):
+Cruise settings (P = screened as published, M = screened as measured; the basis follows the grade unless a setting states it):
 
 | KTAS | Altitude, ft | Power | Fuel flow, gph | Grade | Source | Note |
 |---|---|---|---|---|---|---|
-| 224 * | 8000 | 75% | - | F | [source](https://web.archive.org/web/2006/http://www.glasairaviation.com/glasairIIIspecs.html) | - |
+| 224 P | 8000 | 75% | - | F | [source](https://web.archive.org/web/2006/http://www.glasairaviation.com/glasairIIIspecs.html) | - |
 | 216 | 8000 | 65% | - | F | [source](https://web.archive.org/web/2006/http://www.glasairaviation.com/glasairIIIspecs.html) | - |
 
-## Screen (stage 1, published numbers)
+## Screen (published numbers; like for like)
 
-- **Verdict: fail** - UL -225 lb
-- Useful load: 775 lb (fail) against 1,000 lb.
-- Range: 1,078 nm still-air (pass; basis: calc, est. flow) against 1,000 nm.
-- Cruise: 224 KTAS at 8,000 ft (pass+) against >160 KTAS (>180 preferred).
-- Payload at 1,000 nm: 369 lb with no reserve; not possible (tanks too small) with a 45 min reserve. Setting: 216 KTAS at 14.6 gph (fuel flow is our estimate at 0.45 lb/hp/h, grade E).
+Two screens, never mixed: the maker's figures as published, and measured or reported data. The three targets are separate floors; payload at 1,000 nm is information only.
+
+- **As published: fail** - UL -225 lb
+  - Useful load: 775 lb (fail) against 1,000 lb.
+  - Range: 1,060 nm (pass; standard fuel, VFR reserve) against 1,000 nm.
+  - Cruise: 224 KTAS at 8,000 ft (pass+) against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): 369 / cannot @ 216 kt, 14.6 gph (est. flow).
+- **Measured or reported: no data found.**
 - Aeromomentum fit (first cut): Short: AM20T 260 hp vs 300 hp (-5% speed, est. 214 KTAS).
 
 Sanity flags:
@@ -52,6 +55,10 @@ Sanity flags:
 ## Why it died
 
 Stoddard-Hamilton went bankrupt in 2001; Advanced Aero Components now offers the G3 Heritage.
+
+## Idea ledger (what a new airplane should keep; AERO's judgement)
+
+- A two-seat fibreglass kit at about 224 KTAS on 300 hp; revived as a carbon kit, so the design outlived its company.
 
 ## Rights and provenance (known so far; research, not legal advice)
 

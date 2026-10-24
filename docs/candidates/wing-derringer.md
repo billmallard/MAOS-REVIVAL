@@ -29,19 +29,22 @@ Grades: F factory/brochure/designer claim; T type certificate data sheet; P flig
 | Usable fuel | 88 US gal | F | [source](https://en.wikipedia.org/wiki/Wing_Derringer) | capacity |
 | Published range | 1,007 nm | F | [source](https://en.wikipedia.org/wiki/Wing_Derringer) | economy cruise, 10,000 ft, reserve not stated |
 
-Cruise settings (the starred row is the one screened for speed):
+Cruise settings (P = screened as published, M = screened as measured; the basis follows the grade unless a setting states it):
 
 | KTAS | Altitude, ft | Power | Fuel flow, gph | Grade | Source | Note |
 |---|---|---|---|---|---|---|
-| 184 * | 13000 | 65% | - | F | [source](https://en.wikipedia.org/wiki/Wing_Derringer) | Jane's 1980-81 |
+| 184 P | 13000 | 65% | - | F | [source](https://en.wikipedia.org/wiki/Wing_Derringer) | Jane's 1980-81 |
 
-## Screen (stage 1, published numbers)
+## Screen (published numbers; like for like)
 
-- **Verdict: near miss** - UL -20 lb
-- Useful load: 980 lb (near) against 1,000 lb.
-- Range: 1,038 nm still-air (pass; basis: calc, est. flow) against 1,000 nm.
-- Cruise: 184 KTAS at 13,000 ft (pass+) against >160 KTAS (>180 preferred).
-- Payload at 1,000 nm: 471 lb with no reserve; not possible (tanks too small) with a 45 min reserve. Setting: 184 KTAS at 15.6 gph (fuel flow is our estimate at 0.45 lb/hp/h, grade E).
+Two screens, never mixed: the maker's figures as published, and measured or reported data. The three targets are separate floors; payload at 1,000 nm is information only.
+
+- **As published: near miss** - UL -20 lb
+  - Useful load: 980 lb (near) against 1,000 lb.
+  - Range: 1,007 nm (pass; economy cruise, 10,000 ft, reserve not stated) against 1,000 nm.
+  - Cruise: 184 KTAS at 13,000 ft (pass+) against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): 471 / cannot @ 184 kt, 15.6 gph (est. flow).
+- **Measured or reported: no data found.**
 - Aeromomentum fit (first cut): Yes: 2x AM15T (160 hp) for 160 hp.
 
 Sanity flags:
@@ -51,6 +54,11 @@ Sanity flags:
 ## Why it died
 
 Hi-Shear internal problems ended the first effort; Wing Aircraft Co. went bankrupt in July 1982 (Jane's; 1000aircraftphotos).
+
+## Idea ledger (what a new airplane should keep; AERO's judgement)
+
+- A two-seat, flush-riveted, chem-milled light twin: twin redundancy in a small, fast airframe.
+- Rotax-powered analogs shown at AERO Friedrichshafen 2026 (Bill) suggest the idea is alive; see the analog rows when added.
 
 ## Rights and provenance (known so far; research, not legal advice)
 

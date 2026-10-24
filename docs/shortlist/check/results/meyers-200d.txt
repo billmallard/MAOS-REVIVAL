@@ -1,0 +1,7 @@
+## Meyers / Aero Commander 200D (IO-520-A 285 hp)  (results at drag factor 1.41, own published points)
+Reference condition {'alt_ft': 8500, 'hp': 191, 'W': 2650}: 178 KTAS, CD0 0.0192, D/q par 3.10 ft2, ind 0.40 ft2, eta 0.829, L/D 9.1
+  pub 178 KTAS @ 8500 ft, 191 hp (P) -> ours 202 KTAS (+13.5%, k_match 1.41), power for pub speed 140 hp, 10.5 gph vs pub 14 gph
+Orig engine 185 hp @ 8000 ft: 174 KTAS, range 857 nm, payload@1000 cannot/cannot
+AM20T swap delta installed mass -89 lb
+  AM-low: 195 hp @ 8000 ft -> 178 KTAS, UL 1060, range 831 nm, payload@1000 cannot/cannot; [opt k 1.29: 184 KTAS, cannot] eco 148 KTAS payload 648/cannot
+  AM-high: 195 hp @ 16000 ft -> 189 KTAS, UL 1060, range 863 nm, payload@1000 cannot/cannot; [opt k 1.29: 196 KTAS, cannot] eco 155 KTAS payload 652/cannot

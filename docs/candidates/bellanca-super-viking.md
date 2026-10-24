@@ -30,24 +30,32 @@ Grades: F factory/brochure/designer claim; T type certificate data sheet; P flig
 | Optional fuel | 84 US gal | T | [source](http://rgl.faa.gov/Regulatory_and_Guidance_Library/rgMakeModel.nsf/0/5af52329a2061d4a86256c24005133db/$FILE/A18ce.pdf) | - |
 | Published range | 802 nm | F | [source](https://en.wikipedia.org/wiki/Bellanca_Viking) | max fuel, reserve not stated |
 
-Cruise settings (the starred row is the one screened for speed):
+Cruise settings (P = screened as published, M = screened as measured; the basis follows the grade unless a setting states it):
 
 | KTAS | Altitude, ft | Power | Fuel flow, gph | Grade | Source | Note |
 |---|---|---|---|---|---|---|
-| 165 * | 7500 | 62% | - | P | [source](https://planeandpilotmag.com/bellanca-viking-wood-fabric-and-genius/) | owner in pilot report: 165+ kt at 60-65%, flown at 7,500-8,500 ft |
-| 163 | - | 75% | - | F | [source](https://en.wikipedia.org/wiki/Bellanca_Viking) | Jane's, 188 mph converted |
+| 165 M | 7500 | 62% | - | P | [source](https://planeandpilotmag.com/bellanca-viking-wood-fabric-and-genius/) | owner in pilot report: 165+ kt at 60-65%, flown at 7,500-8,500 ft |
+| 163 P | - | 75% | - | F | [source](https://en.wikipedia.org/wiki/Bellanca_Viking) | Jane's, 188 mph converted |
 
-## Screen (stage 1, published numbers)
+## Screen (published numbers; like for like)
 
-- **Verdict: fail** - range -141 nm
-- Useful load: 1,000 lb (pass) against 1,000 lb.
-- Range: 859 nm still-air (fail; basis: calc, est. flow) against 1,000 nm.
-- Cruise: 165 KTAS at 7,500 ft (pass) against >160 KTAS (>180 preferred).
-- Payload at 1,000 nm: Does not reach 1,000 nm on usable fuel: 859 nm still-air maximum.
+Two screens, never mixed: the maker's figures as published, and measured or reported data. The three targets are separate floors; payload at 1,000 nm is information only.
+
+- **As published: fail** - range -198 nm
+  - Useful load: 1,108 lb (pass) against 1,000 lb.
+  - Range: 802 nm (fail; max fuel, reserve not stated) against 1,000 nm.
+  - Cruise: 163 KTAS at an unstated altitude (pass) against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): cannot (859 nm max).
+- **Measured or reported: partial: UL pass, speed pass**
+  - Useful load: 1,000 lb (pass) against 1,000 lb.
+  - Range: - nm (?; none found) against 1,000 nm.
+  - Cruise: 165 KTAS at 7,500 ft (pass) against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): cannot (859 nm max).
 - Aeromomentum fit (first cut): Short: AM20T 260 hp vs 285 hp (-3% speed, est. 160 KTAS).
 
 Sanity flags:
 
+- screen speed has no altitude, or is below 6,000 ft
 - fleet useful load 108 lb below factory
 - with optional tanks (84 gal) still-air range is 1,046 nm
 - turbo 17-31ATC reported at 190 kt at FL200 (AvWeb, fleet-grade)
@@ -55,6 +63,10 @@ Sanity flags:
 ## Why it died
 
 Bankrupt in 1980; custom-order production from 1984, bankrupt again in 2001 (AvWeb).
+
+## Idea ledger (what a new airplane should keep; AERO's judgement)
+
+- A wooden wing and steel-tube fuselage on a fast four-seater: unusual materials can work, but low-rate production of them did not pay.
 
 ## Rights and provenance (known so far; research, not legal advice)
 

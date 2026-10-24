@@ -1,0 +1,153 @@
+{
+ "id": "bellanca-t250-aries",
+ "name": "Bellanca (Anderson Greenwood) T-250 Aries (Model 51, O-540 250 hp)",
+ "assumptions": [
+  "Wing span 31.33 ft, area 170 ft2 (F, AOPA Pilot Mar 1977 spec table; Jane's 1980-81); constant chord 5.43 ft closes the area (E; Plane & Pilot describes a constant-chord wing). NACA 6-series laminar section, 12% t/c (B/F: '60-412' per Lednicer, '600412 modified' per Jane's).",
+  "Fuselage length 26.17 ft (F); max width 4.0 ft and height 4.4 ft from the 45 in cabin width and 48.5 in cabin height plus structure (E, ours). Slab-sided fuselage of flat and single-curve skins, flush riveted (Plane & Pilot): form factor not adjusted.",
+  "T-tail stabilator 28 ft2 (11 ft x 2.55 ft) and swept fin 15 ft2: E, ours, sized by volume coefficient (Vh about 0.5 for a stabilator, Vv 0.04, tail arm 14 ft). No tail dimensions are published.",
+  "Laminar run x_tr: wing 0.25 (flush-riveted metal laminar wing; less credit than a composite), tails 0.15, fuselage 0.05.",
+  "Retractable gear with sealed nose-gear doors and flush main doors: no fixed gear drag.",
+  "Air-cooled O-540 with a single inlet and no cowl flaps (AOPA 1977): cooling factor 1.0 (Raymer 12.39 as-is).",
+  "Original installed engine mass 455 lb = O-540 dry about 395 lb x 1.15 (E, ours; dry weight not taken from the research file, which did not look it up).",
+  "Published points: AOPA's 73% at 6,500 ft (full throttle 22.5 in / 2,300 rpm) and full throttle at 1,000 ft; weights not stated, so 0.9 x MTOW is used. hp: 73% of 250 by AOPA's calculation; 1,000 ft full throttle at Gagg-Ferrar lapse (E)."
+ ],
+ "Sref": 170.0,
+ "fuselage": {
+  "length": 26.17,
+  "width": 4.0,
+  "height": 4.4,
+  "profile": "tractor"
+ },
+ "surfaces": [
+  {
+   "name": "Wing",
+   "span": 31.33,
+   "croot": 5.43,
+   "ctip": 5.43,
+   "tc_root": 0.12,
+   "tc_tip": 0.12,
+   "sweep": 0,
+   "x": 7.5,
+   "z": -1.4
+  },
+  {
+   "name": "HTail",
+   "span": 11.0,
+   "croot": 2.55,
+   "ctip": 2.55,
+   "tc_root": 0.1,
+   "x": 23.0,
+   "z": 4.2
+  },
+  {
+   "name": "Fin",
+   "span": 4.5,
+   "croot": 4.5,
+   "ctip": 2.2,
+   "tc_root": 0.1,
+   "vertical": true,
+   "sym": false,
+   "sweep": 35,
+   "x": 20.8,
+   "z": 0.3
+  }
+ ],
+ "components": [
+  {
+   "name": "Wing",
+   "kind": "surface",
+   "lref": 5.43,
+   "tc": 0.12,
+   "xc": 0.4,
+   "sweep_tc": 0,
+   "xtr": 0.25,
+   "Q": 1.0
+  },
+  {
+   "name": "HTail",
+   "kind": "surface",
+   "lref": 2.55,
+   "tc": 0.1,
+   "xc": 0.4,
+   "xtr": 0.15,
+   "Q": 1.08
+  },
+  {
+   "name": "Fin",
+   "kind": "surface",
+   "lref": 3.4,
+   "tc": 0.1,
+   "xc": 0.3,
+   "sweep_tc": 30,
+   "xtr": 0.15,
+   "Q": 1.05
+  },
+  {
+   "name": "Fuselage",
+   "kind": "body",
+   "lref": 26.17,
+   "dmax": 4.2,
+   "xtr": 0.05,
+   "Q": 1.0
+  }
+ ],
+ "fixed_Dq": [],
+ "cooling_factor": 1.0,
+ "excrescence_frac": 0.05,
+ "lifting": [
+  {
+   "S": 170.0,
+   "AR": 5.77,
+   "share": 1.0
+  }
+ ],
+ "prop": {
+  "diameter_ft": 6.42,
+  "install": 1.0
+ },
+ "engine": {
+  "hp": 250,
+  "bsfc": 0.45,
+  "crit_alt_ft": 0
+ },
+ "orig_installed_lb": 455,
+ "weights": {
+  "mtow": 3150,
+  "empty": 1850
+ },
+ "fuel_usable_gal": 76,
+ "fuel_density": 6.0,
+ "published": [
+  {
+   "ktas": 180.7,
+   "alt_ft": 6500,
+   "hp": 182.5,
+   "gph": null,
+   "weight_lb": null,
+   "grade": "P",
+   "note": "AOPA Pilot flight check Mar 1977, prototype N51AG: 208 mph TAS, 22.5 in full throttle / 2,300 rpm, 73% by AOPA's calculation; 'partially loaded', weight not stated"
+  },
+  {
+   "ktas": 188.6,
+   "alt_ft": 1000,
+   "hp": 242,
+   "gph": null,
+   "weight_lb": null,
+   "grade": "P",
+   "note": "AOPA: 217 mph TAS full throttle, 2,575 rpm, choppy air; hp E (Gagg-Ferrar at 1,000 ft)"
+  },
+  {
+   "ktas": 180.7,
+   "alt_ft": null,
+   "hp": 187.5,
+   "gph": null,
+   "weight_lb": null,
+   "grade": "F",
+   "note": "manufacturer normal cruise 75%, 208 mph, altitude not stated (not usable for calibration)"
+  }
+ ],
+ "orig_cruise": {
+  "alt_ft": 8000,
+  "hp": 162.5
+ }
+}

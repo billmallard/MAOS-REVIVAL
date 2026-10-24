@@ -7,9 +7,10 @@ import json
 import os
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-ORDER = ["rutan-defiant", "lancair-iv-p", "mooney-301", "cirrus-vk-30",
-         "velocity-xl-rg-100gal", "velocity-xl-rg", "express-2000", "berkut-360",
-         "cessna-p210n", "cozy-mkiv"]
+ORDER = ["bellanca-t250-aries", "express-2000", "lancair-iv-p", "meyers-200d", "mooney-301",
+         "cessna-p210n", "cozy-mkiv",
+         # checked in stage 3, then dropped by Bill (2026-10-24); kept as record
+         "rutan-defiant", "cirrus-vk-30", "velocity-xl-rg-100gal", "velocity-xl-rg", "berkut-360"]
 
 
 def f0(x):

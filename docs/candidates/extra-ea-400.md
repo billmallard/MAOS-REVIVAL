@@ -29,20 +29,27 @@ Grades: F factory/brochure/designer claim; T type certificate data sheet; P flig
 | Usable fuel | 106.7 US gal | T | [source](https://www.easa.europa.eu/en/downloads/7504/en) | 404 L usable |
 | Published range | 1,300 nm | P | [source](https://planeandpilotmag.com/the-extra-ea-400-an-underappreciated-pressurized-composite-transportation-plane-from-aerobatic-masters/) | 'over 1,300 nm', no reserve stated |
 
-Cruise settings (the starred row is the one screened for speed):
+Cruise settings (P = screened as published, M = screened as measured; the basis follows the grade unless a setting states it):
 
 | KTAS | Altitude, ft | Power | Fuel flow, gph | Grade | Source | Note |
 |---|---|---|---|---|---|---|
-| 205 * | 18000 | 75% | 24 | B | [source](https://www.euroga.org/forums/extra-400/7297?page=2) | owner report |
-| 203 | 18000 | 75% | - | F | [source](https://en.wikipedia.org/wiki/Extra_EA-400) | - |
+| 205 M | 18000 | 75% | 24 | B | [source](https://www.euroga.org/forums/extra-400/7297?page=2) | owner report |
+| 203 P | 18000 | 75% | - | F | [source](https://en.wikipedia.org/wiki/Extra_EA-400) | - |
 
-## Screen (stage 1, published numbers)
+## Screen (published numbers; like for like)
 
-- **Verdict: near miss** - range -89 nm
-- Useful load: 1,102 lb (pass) against 1,000 lb.
-- Range: 911 nm still-air (near; basis: calc) against 1,000 nm.
-- Cruise: 205 KTAS at 18,000 ft (pass+) against >160 KTAS (>180 preferred).
-- Payload at 1,000 nm: Does not reach 1,000 nm on usable fuel: 911 nm still-air maximum.
+Two screens, never mixed: the maker's figures as published, and measured or reported data. The three targets are separate floors; payload at 1,000 nm is information only.
+
+- **As published: pass**
+  - Useful load: 1,347 lb (pass) against 1,000 lb.
+  - Range: 1,300 nm (pass; 'over 1,300 nm', no reserve stated) against 1,000 nm.
+  - Cruise: 203 KTAS at 18,000 ft (pass+) against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): cannot be computed on this basis.
+- **Measured or reported: near miss** - range -89 nm
+  - Useful load: 1,102 lb (pass) against 1,000 lb.
+  - Range: 911 nm (near; still air, no reserve, from fuel and measured flow at 205 KTAS) against 1,000 nm.
+  - Cruise: 205 KTAS at 18,000 ft (pass+) against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): cannot (911 nm max).
 - Aeromomentum fit (first cut): Short: AM20T 260 hp vs 325 hp (-7% speed, est. 190 KTAS).
 
 Sanity flags:
@@ -55,6 +62,11 @@ Sanity flags:
 ## Why it died
 
 About 16,000 labour hours and a ~$1M price; the company ran into financial trouble (P&P 2022).
+
+## Idea ledger (what a new airplane should keep; AERO's judgement)
+
+- A high-wing, pressurised, six-seat composite single with a T-tail.
+- Lesson: about 16,000 labour hours per airplane made it unaffordable; the build method is the failure.
 
 ## Rights and provenance (known so far; research, not legal advice)
 

@@ -29,21 +29,28 @@ Grades: F factory/brochure/designer claim; T type certificate data sheet; P flig
 | Usable fuel | 86.2 US gal | T | [source](https://easa.europa.eu/cs/downloads/7156/en) | - |
 | Published range | 1,030 nm | P | [source](https://planeandpilotmag.com/article/socata-1999-trinidad-tc/) | 65%, with reserve |
 
-Cruise settings (the starred row is the one screened for speed):
+Cruise settings (P = screened as published, M = screened as measured; the basis follows the grade unless a setting states it):
 
 | KTAS | Altitude, ft | Power | Fuel flow, gph | Grade | Source | Note |
 |---|---|---|---|---|---|---|
-| 187 * | 25000 | 75% | 16.4 | P | [source](https://peter2000.co.uk/aviation/tb20-experience/1991-03%20AOPA%20PILOT%20-%20TB21%20Cause%20Celebre.pdf) | factory-calculated, AOPA matched flow |
-| 169 | 25000 | 65% | 12.4 | P | [source](https://peter2000.co.uk/aviation/tb20-experience/1991-03%20AOPA%20PILOT%20-%20TB21%20Cause%20Celebre.pdf) | - |
+| 187 P | 25000 | 75% | 16.4 | P | [source](https://peter2000.co.uk/aviation/tb20-experience/1991-03%20AOPA%20PILOT%20-%20TB21%20Cause%20Celebre.pdf) | factory-calculated, AOPA matched flow |
+| 169 M | 25000 | 65% | 12.4 | P | [source](https://peter2000.co.uk/aviation/tb20-experience/1991-03%20AOPA%20PILOT%20-%20TB21%20Cause%20Celebre.pdf) | - |
 | 141 | 17000 | 55% | 11.1 | P | [source](https://peter2000.co.uk/aviation/tb20-experience/1991-03%20AOPA%20PILOT%20-%20TB21%20Cause%20Celebre.pdf) | - |
 
-## Screen (stage 1, published numbers)
+## Screen (published numbers; like for like)
 
-- **Verdict: near miss** - UL -20 lb
-- Useful load: 980 lb (near) against 1,000 lb.
-- Range: 1,175 nm still-air (pass; basis: calc) against 1,000 nm.
-- Cruise: 187 KTAS at 25,000 ft (pass+) against >160 KTAS (>180 preferred).
-- Payload at 1,000 nm: 540 lb with no reserve; 484 lb with a 45 min reserve. Setting: 169 KTAS at 12.4 gph.
+Two screens, never mixed: the maker's figures as published, and measured or reported data. The three targets are separate floors; payload at 1,000 nm is information only.
+
+- **As published: pass**
+  - Useful load: 1,182 lb (pass) against 1,000 lb.
+  - Range: 1,030 nm (pass; 65%, with reserve) against 1,000 nm.
+  - Cruise: 187 KTAS at 25,000 ft (pass+) against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): cannot (983 nm max).
+- **Measured or reported: near miss** - UL -20 lb
+  - Useful load: 980 lb (near) against 1,000 lb.
+  - Range: 1,175 nm (pass; still air, no reserve, from fuel and measured flow at 169 KTAS) against 1,000 nm.
+  - Cruise: 169 KTAS at 25,000 ft (pass) against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): 540 / 484 @ 169 kt, 12.4 gph.
 - Aeromomentum fit (first cut): Yes: AM20T (260 hp) for 250 hp.
 
 Sanity flags:
@@ -53,6 +60,10 @@ Sanity flags:
 ## Why it died
 
 Build-to-order after 9/11; all marketing and production ended by 2012 (Wikipedia citing Flight).
+
+## Idea ledger (what a new airplane should keep; AERO's judgement)
+
+- A turbocharged four-seater with a roomy cabin from a large European maker; ended by the post-2001 market, not the design.
 
 ## Rights and provenance (known so far; research, not legal advice)
 

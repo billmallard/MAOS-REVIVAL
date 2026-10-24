@@ -30,21 +30,28 @@ Grades: F factory/brochure/designer claim; T type certificate data sheet; P flig
 | Optional fuel | 100 US gal | F | [source](https://www.aircraftspruce.com/catalog/kitspages/velocity2.php) | - |
 | Published range | 1,150 nm | F | [source](https://www.velocityaircraft.com/xl) | 65% power, reserve not stated (1,100-1,200) |
 
-Cruise settings (the starred row is the one screened for speed):
+Cruise settings (P = screened as published, M = screened as measured; the basis follows the grade unless a setting states it):
 
 | KTAS | Altitude, ft | Power | Fuel flow, gph | Grade | Source | Note |
 |---|---|---|---|---|---|---|
-| 190 * | 3000 | 75% | 15 | P | [source](https://generalaviationnews.com/2005/03/25/velocity-xl-5/) | XL-5 RG, IO-550 310 hp, 24 in/2,400 rpm |
-| 205 | - | 75% | - | F | [source](https://www.velocityaircraft.com/xl) | upper end of 190-205 kt by engine |
+| 190 M | 3000 | 75% | 15 | P | [source](https://generalaviationnews.com/2005/03/25/velocity-xl-5/) | XL-5 RG, IO-550 310 hp, 24 in/2,400 rpm |
+| 205 P | - | 75% | - | F | [source](https://www.velocityaircraft.com/xl) | upper end of 190-205 kt by engine |
 | 170 | - | - | 11 | F | [source](https://www.velocityaircraft.com/xl) | 'over 170 kts at 11 GPH', XL-FG |
 
-## Screen (stage 1, published numbers)
+## Screen (published numbers; like for like)
 
-- **Verdict: pass, speed unconditioned**
-- Useful load: 1,100 lb (pass) against 1,000 lb.
-- Range: 1,082 nm still-air (pass; basis: calc) against 1,000 nm.
-- Cruise: 190 KTAS at 3,000 ft (pass+) against >160 KTAS (>180 preferred).
-- Payload at 1,000 nm: 712 lb with no reserve; not possible (tanks too small) with a 45 min reserve. Setting: 170 KTAS at 11.0 gph.
+Two screens, never mixed: the maker's figures as published, and measured or reported data. The three targets are separate floors; payload at 1,000 nm is information only.
+
+- **As published: pass, speed unconditioned**
+  - Useful load: 1,100 lb (pass) against 1,000 lb.
+  - Range: 1,150 nm (pass; 65% power, reserve not stated (1,100-1,200)) against 1,000 nm.
+  - Cruise: 205 KTAS at an unstated altitude (pass+) against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): 712 / cannot @ 170 kt, 11.0 gph.
+- **Measured or reported: partial: range fail, speed pass, speed unconditioned** - range -113 nm
+  - Useful load: - lb (?) against 1,000 lb.
+  - Range: 887 nm (fail; still air, no reserve, from fuel and measured flow at 190 KTAS) against 1,000 nm.
+  - Cruise: 190 KTAS at 3,000 ft (pass+) against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): cannot be computed on this basis.
 - Aeromomentum fit (first cut): Yes for the IO-540 260 hp build (AM20T 260 hp); short for IO-550 310 hp builds (-6% speed est.).
 
 Sanity flags:
@@ -56,6 +63,11 @@ Sanity flags:
 
 Not dead. Kits and a factory transition course are still offered (Kitplanes).
 
+## Idea ledger (what a new airplane should keep; AERO's judgement)
+
+- A canard pusher with a real cabin: four or five seats, gull-wing doors and retractable gear, sold as a kit continuously since the 1980s.
+- Raptor note (successor attempt, see the Raptor section when added): what it tried and why it failed belongs here as a lesson.
+
 ## Rights and provenance (known so far; research, not legal advice)
 
 Maher -> Scott and Duane Swing (1992) -> Rocket Racing (2008) -> Swing family again (2010). Owned by the stage 2 rights research (AER-3787).
@@ -66,13 +78,33 @@ Late-1980s deep-stall accidents in the original Velocity, addressed with leading
 
 <!-- stage3:start -->
 
-## Stage 3: shortlist rank 5 of 8 (AER-3783)
+## Stage 3: checked, then dropped from the shortlist by Bill (2026-10-24)
 
 Our own check, from published geometry and weights, calibrated against published flight data. Method, calibration and the Aeromomentum assumptions are in [docs/SHORTLIST.md](../SHORTLIST.md). Rights are research, not legal advice. Nobody has been contacted.
 
-### Verdict
+### Bill's call
+
+Bill, 2026-10-24: "no chance." Dropped from the shortlist; the long-list row stays.
+
+### Verdict (stage 3, before Bill's review)
 
 **Rank 5.** It is a live kit with a near Aeromomentum fit, but it reaches 1,000 nm only on optional tanks, and then with 440-457 lb of payload. Its published speed needs a 1.63 drag factor, but that rests on one point and on geometry we had to scale from the Cozy; the factory's own wing figures conflict with Jane's. Low confidence in both directions.
+
+### Idea ledger (what a new airplane should keep)
+
+- A canard pusher with a real cabin (four or five seats, gull-wing doors), sold continuously as a kit since the 1980s.
+- **The Raptor (a lesson, not a Velocity product).** Peter Muller's Raptor Aircraft (about 2013-2021) tried to scale the Velocity-type canard pusher into a pressurised five-seater on his own Audi 3.0 TDI diesel conversion. It promised 300 KTAS at FL250 for about $130,000, and took about 1,500 escrowed $2,000 deposits (archived raptor-aircraft.com specs page, F; Aero-News, P). The prototype came out "well over 800 pounds heavier than its design weight" (Aero-News, P): its weighing video showed 3,144 lb empty (as cited by Wikipedia, L) against the 2,300 lb estimated empty weight on its archived specs page (F). Wikipedia's own figure for the overage, 1,344 lb, implies an earlier, lower estimate. Its first real flight, on 10 October 2020, lasted about three minutes, with pitch and lateral oscillations and the powerplant near its temperature limits (Aero-News, P). The engine failed in February 2021 (L). A reduction-drive failure put it in a Nebraska cornfield in August 2021 (N352TD, registration cancelled 2022; Aero-News, P; FAA registry, B). No link to Velocity Inc. was found. **What it teaches:** weight control, an engine and reduction drive proven before the airframe, and professional flight test. Those are the risks an Aeromomentum installation carries too. Sources: https://www.aero-news.net/index.cfm?do=main.textpost&id=39a13f1f-1ad0-4979-9371-e4644989ce85 ; https://www.aero-news.net/index.cfm?do=main.textpost&id=86ec99b2-5784-4217-8b71-22dc71e07bb1 ; https://web.archive.org/web/20200201043759/http://www.raptor-aircraft.com/specs.html ; https://en.wikipedia.org/wiki/Raptor_Aircraft_Raptor
+
+### Published, measured and our check, side by side
+
+Read across a row only within one column's basis. The three targets are separate floors.
+
+| | As published | Measured or reported | Our check, original engine |
+|---|---|---|---|
+| Useful load | 1,100 lb (pass) | not found | 1,000 lb (the empty weight the model uses: 1,800 lb) |
+| Range | 1,150 nm (pass; 65% power, reserve not stated (1,100-1,200)) | 887 nm (fail; still air, no reserve, from fuel and measured flow at 190 KTAS) | 788 nm, still air, no reserve, full fuel from MTOW, at 210 hp and 8,000 ft |
+| Cruise | 205 KTAS at altitude not stated (pass+) | 190 KTAS at 3,000 ft (pass+) | 191 KTAS at 210 hp and 8,000 ft |
+| Screen | pass, speed unconditioned | partial: range fail, speed pass, speed unconditioned | see the verdict |
 
 ### Independent performance check
 
@@ -188,7 +220,6 @@ It did not die. It is in production. So no revival is needed, and none fixes any
 
 - Resolve the XL wing and canard dimensions (factory 34 ft / 132.5 ft2 against Jane's 31 ft / 102 ft2).
 - A measured cruise point at altitude would replace the single 3,000 ft pilot-report point.
-- What a modern rebuild changes in mass, cost and build hours (MANUFACTURING, stage 4, AER-3784).
 
 <!-- stage3:end -->
 

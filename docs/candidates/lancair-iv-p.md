@@ -29,21 +29,28 @@ Grades: F factory/brochure/designer claim; T type certificate data sheet; P flig
 | Usable fuel | 106.5 US gal | P | [source](https://www.aopa.org/news-and-media/all-news/2005/april/pilot/get-up-and-go) | usable, extended tanks as tested; 82-90 gal standard across sources |
 | Published range | 1,347 nm | P | [source](https://www.aopa.org/news-and-media/all-news/2005/april/pilot/get-up-and-go) | 65%, 24,000 ft, 45 min reserve (1,550 sm) |
 
-Cruise settings (the starred row is the one screened for speed):
+Cruise settings (P = screened as published, M = screened as measured; the basis follows the grade unless a setting states it):
 
 | KTAS | Altitude, ft | Power | Fuel flow, gph | Grade | Source | Note |
 |---|---|---|---|---|---|---|
-| 255 * | 16500 | 75% | 17.2 | P | [source](https://www.aopa.org/news-and-media/all-news/2005/april/pilot/get-up-and-go) | best power |
-| 284 | 24000 | 65% | 17 | P | [source](https://www.aopa.org/news-and-media/all-news/2005/april/pilot/get-up-and-go) | best economy |
-| 278 | 23000 | 75% | 18 | P | [source](https://www.aopa.org/news-and-media/all-news/1994/june/pilot/lancair-iv-p) | 50 F lean of peak; below the factory claim |
+| 255 | 16500 | 75% | 17.2 | P | [source](https://www.aopa.org/news-and-media/all-news/2005/april/pilot/get-up-and-go) | best power |
+| 284 M | 24000 | 65% | 17 | P | [source](https://www.aopa.org/news-and-media/all-news/2005/april/pilot/get-up-and-go) | best economy |
+| 278 P | 23000 | 75% | 18 | P | [source](https://www.aopa.org/news-and-media/all-news/1994/june/pilot/lancair-iv-p) | 50 F lean of peak; below the factory claim |
 
-## Screen (stage 1, published numbers)
+## Screen (published numbers; like for like)
 
-- **Verdict: pass**
-- Useful load: 1,350 lb (pass) against 1,000 lb.
-- Range: 1,779 nm still-air (pass; basis: calc) against 1,000 nm.
-- Cruise: 255 KTAS at 16,500 ft (pass+) against >160 KTAS (>180 preferred).
-- Payload at 1,000 nm: 991 lb with no reserve; 914 lb with a 45 min reserve. Setting: 284 KTAS at 17.0 gph.
+Two screens, never mixed: the maker's figures as published, and measured or reported data. The three targets are separate floors; payload at 1,000 nm is information only.
+
+- **As published: pass**
+  - Useful load: 1,350 lb (pass) against 1,000 lb.
+  - Range: 1,347 nm (pass; 65%, 24,000 ft, 45 min reserve (1,550 sm)) against 1,000 nm.
+  - Cruise: 278 KTAS at 23,000 ft (pass+) against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): 962 / 881 @ 278 kt, 18.0 gph.
+- **Measured or reported: partial: range pass, speed pass**
+  - Useful load: - lb (?) against 1,000 lb.
+  - Range: 1,779 nm (pass; still air, no reserve, from fuel and measured flow at 284 KTAS) against 1,000 nm.
+  - Cruise: 284 KTAS at 24,000 ft (pass+) against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): cannot be computed on this basis.
 - Aeromomentum fit (first cut): Short: AM20T 260 hp vs 350 hp (-9% speed, est. 231 KTAS).
 
 Sanity flags:
@@ -53,6 +60,11 @@ Sanity flags:
 ## Why it died
 
 Kits ended 2012; in 2016 the company sold older lines to concentrate on the Evolution (Wikipedia).
+
+## Idea ledger (what a new airplane should keep; AERO's judgement)
+
+- Pressurisation and FL240 cruise in a kit, the fastest piston four-seater of its era (published 287 KTAS at 24,000 ft).
+- Re-wing data point to follow (Oregon remanufacturer, Bill): a new wing on the same airframe as the fix for the stall-spin record.
 
 ## Rights and provenance (known so far; research, not legal advice)
 
@@ -64,13 +76,34 @@ NTSB narrative WPR12FA180: 26% of Lancairs in accidents, 19% fatal (model and pe
 
 <!-- stage3:start -->
 
-## Stage 3: shortlist rank 2 of 8 (AER-3783)
+## Stage 3: shortlist rank 3 of 5 (AER-3783)
 
 Our own check, from published geometry and weights, calibrated against published flight data. Method, calibration and the Aeromomentum assumptions are in [docs/SHORTLIST.md](../SHORTLIST.md). Rights are research, not legal advice. Nobody has been contacted.
 
+### Bill's call
+
+Bill, 2026-10-24: kept. He believes the assets went to a new company in Austin, Texas, within about two years, which is re-tooling to support existing customers (Elon verifies, AER-3805). He knows the Oregon shop that re-wings and remanufactures Lancairs: "quite impressive actually, but it's not cheap."
+
 ### Verdict
 
-**Rank 2.** It is the strongest airframe that physically survives: 200-211 KTAS on 195 hp and 824 lb over 1,000 nm with reserve in the high case, about 235 aircraft on the register to measure, and parts support still offered. Who could license or sell the design is open: the scope of the 2023 sale is not public and the molds are unlocated. That still leaves it ahead of the Mooney 301, where nothing survives at all, and the VK-30, whose holder is large and firmly set. It ranks below the Defiant for three reasons: the worst fatal record in the survey, a power cut of nearly half its design power, and about 240 lb of nose ballast to find. Its published 278 KTAS reads 8% optimistic against the fleet calibration.
+**Rank 3.** It has the speed: 200-211 KTAS on our check at an assumed 195 hp, and about 235 aircraft on the register. It ranks third for three reasons: the worst fatal record in the survey, with its stall-spin half tied to a 36 lb/ft2 wing loading; a cut to about 55% of its design power on an AM20T, which costs climb far more than cruise; and an open chain of title. The RDD LX7 re-wing (below) is the evidence that the wing problem can be engineered out, at a price.
+
+### Idea ledger (what a new airplane should keep)
+
+- Pressurisation and FL240 cruise in a kit, the fastest piston four-seater of its era (published 287 KTAS at 24,000 ft).
+- **The re-wing, as an idea and a data point.** RDD Enterprises (Redmond, Oregon) rebuilds flying IV-Ps as the LX7: a new one-piece dual-spar carbon wing with a laminar section and double-slotted flaps, a new tail, 180 gal of fuel, a BRS parachute and de-ice, on a TSIO-550-E or a PT6A. RDD's figures (F): span 34 ft (stock about 30 ft), area unchanged at 98 ft2 (AvWeb), so aspect ratio about 12 instead of 9 (E); Vso 63 KIAS piston and 58 turbine; MTOW 3,750 lb piston (stock 3,550 lb), empty 2,350 lb (stock 2,200 lb factory); 260 KTAS at FL250 on 24 gph (stock published 287 KTAS at FL240). A broker's pilot report gives 252 KTAS on 17.5 gph at FL210 and calls the stall extremely docile (P). Prices: $821,000 piston and $980,000 turbine complete (AvWeb, 2019). **What it says:** about 25 kt and 150 lb of empty weight bought a docile, slower stall and much more fuel on the same airframe. Our check (E): 63 kt at 3,750 lb on 98 ft2 implies a landing CLmax of about 2.85, at the top end for double-slotted flaps, so the claim should be measured before it is relied on. No independent flight test was found. Sources: https://www.avweb.com/aviation-news/lx7-a-thoroughly-reworked-lancair-iv-p/ ; http://www.lx7aircraft.com/lx7-piston.html ; https://txtopaviation.com/flying-the-rdd-lx7/
+- Lesson: on an airframe this fast, the wing that makes the speed is also what makes the stall unforgiving; the LX7 shows the trade.
+
+### Published, measured and our check, side by side
+
+Read across a row only within one column's basis. The three targets are separate floors.
+
+| | As published | Measured or reported | Our check, original engine |
+|---|---|---|---|
+| Useful load | 1,350 lb (pass) | not found | 1,350 lb (the empty weight the model uses: 2,200 lb) |
+| Range | 1,347 nm (pass; 65%, 24,000 ft, 45 min reserve (1,550 sm)) | 1,779 nm (pass; still air, no reserve, from fuel and measured flow at 284 KTAS) | 1,058 nm, still air, no reserve, full fuel from MTOW, at 262 hp and 20,000 ft |
+| Cruise | 278 KTAS at 23,000 ft (pass+) | 284 KTAS at 24,000 ft (pass+) | 248 KTAS at 262 hp and 20,000 ft |
+| Screen | pass | partial: range pass, speed pass | see the verdict |
 
 ### Independent performance check
 
@@ -128,7 +161,7 @@ Model: `docs/shortlist/check/models/lancair-iv-p.json`; result: `docs/shortlist/
 
 ### Rights and provenance (stage 2)
 
-Open question: chain of title (Elon, `docs/rights/lancair-iv-p.md`, PR #3, updated 2026-10-24). In February 2017 Lancair International Inc. sold all out-of-production kit lines, including the IV and IV-P, "with all assets, intellectual designs, and ongoing support business" to Lancair International LLC (Uvalde, TX). In October 2023 JetEXE Aviation (Sacramento) bought the Lancair kit business from the Uvalde owners. **No public source lists what that purchase covered** (an earlier version of this dossier repeated a misquotation saying it included molds and IP; it did not, and is withdrawn). The Texas LLC is still active, so whether JetEXE or the LLC holds the IV-P design is open. The molds have no known location since Uvalde in 2017. Owner-forum posts (low grade) report a legal dispute between the parties and call Lancair "effectively defunct" as of April 2026; no federal case was found, and Texas state courts were not searched. The company trades as Lancair Aerospace, says the IV-P kit is out of production, and offers parts and service bulletins. "LANCAIR" is a live mark held jointly by JetEXE and Akyna Medical Management. Lancair has licensed a design before (the Calima T-90). So it remains a licence-or-purchase candidate, but **chain of title comes before price**, and an attorney is needed for it. Approaching anyone is Bill's call.
+Open question: chain of title (Elon, `docs/rights/lancair-iv-p.md`, PR #3, updated 2026-10-24). In February 2017 Lancair International Inc. sold all out-of-production kit lines, including the IV and IV-P, with "all assets, intellectual designs and ongoing support business" (company announcement, https://lancair.com/lancair-international-inc-announcing-sale-production-assets-lancair-brand-kit-components-support-assets-new-ownership-based-uvalde-texas/) to Lancair International LLC (Uvalde, TX). In October 2023 JetEXE Aviation (Sacramento) bought the Lancair kit business from the Uvalde owners. **No public source lists what that purchase covered** (an earlier version of this dossier repeated a misquotation saying it included molds and IP; it did not, and is withdrawn). The Texas LLC is still active, so whether JetEXE or the LLC holds the IV-P design is open. The molds have no known location since Uvalde in 2017. Owner-forum posts (low grade) report a legal dispute between the parties and call Lancair "effectively defunct" as of April 2026 (https://www.lancairlive.com/viewtopic.php?p=799); no federal case was found, and Texas state courts were not searched. The company trades as Lancair Aerospace, says the IV-P kit is out of production, and offers parts and service bulletins. "LANCAIR" is a live mark held jointly by JetEXE and Akyna Medical Management. Lancair has licensed a design before (the Calima T-90). So it remains a licence-or-purchase candidate, but **chain of title comes before price**, and an attorney is needed for it. Approaching anyone is Bill's call.
 
 ### Safety record
 
@@ -140,10 +173,10 @@ Kit production ended in 2012, and the company sold its older lines in 2016-17 to
 
 ### Not yet done
 
-- Chain of title: what JetEXE bought in 2023, whether the Texas LLC still holds the IV-P design, and where the molds are (Elon, then an attorney; contact is Bill's call).
+- Chain of title, and Bill's Austin company (Elon, AER-3805; contact is Bill's call).
 - If it goes forward: a SAFETY review of the stall-spin pattern, asked on AER-3785 first.
 - A climb and take-off check at 195 hp, and a weight-and-balance with the lighter engine (AERO).
-- Builder-fleet empty weight: two weighed aircraft (2,140 and 2,200 lb) are all we have.
+- The LX7 wing as a modernisation path: an independent stall measurement would settle the 63 kt claim.
 - What a modern rebuild changes in mass, cost and build hours (MANUFACTURING, stage 4, AER-3784).
 
 <!-- stage3:end -->

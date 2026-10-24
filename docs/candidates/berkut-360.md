@@ -29,30 +29,42 @@ Grades: F factory/brochure/designer claim; T type certificate data sheet; P flig
 | Usable fuel | 55 US gal | F | [source](https://planeandpilotmag.com/experimental-aviation-berkut/) | - |
 | Published range | 1,315 nm | F | [source](http://www.airbum.com/pireps/PirepBerkut.html) | economy cruise, 30 min reserve |
 
-Cruise settings (the starred row is the one screened for speed):
+Cruise settings (P = screened as published, M = screened as measured; the basis follows the grade unless a setting states it):
 
 | KTAS | Altitude, ft | Power | Fuel flow, gph | Grade | Source | Note |
 |---|---|---|---|---|---|---|
-| 180 * | - | - | - | P | [source](http://www.airbum.com/pireps/PirepBerkut.html) | measured, 2,600 rpm, 19.5 in MP (Sport Aviation Feb 1995) |
-| 208 | 8000 | 75% | 10.3 | F | [source](http://www.airbum.com/pireps/PirepBerkut.html) | factory test with an earlier 'hot-rodded' engine |
+| 180 M | - | - | - | P | [source](http://www.airbum.com/pireps/PirepBerkut.html) | measured, 2,600 rpm, 19.5 in MP (Sport Aviation Feb 1995) |
+| 208 P | 8000 | 75% | 10.3 | F | [source](http://www.airbum.com/pireps/PirepBerkut.html) | factory test with an earlier 'hot-rodded' engine |
 | 187 | - | - | 7.7 | F | [source](http://www.airbum.com/pireps/PirepBerkut.html) | factory economy cruise |
 
-## Screen (stage 1, published numbers)
+## Screen (published numbers; like for like)
 
-- **Verdict: near miss, speed unconditioned** - UL -35 lb
-- Useful load: 965 lb (near) against 1,000 lb.
-- Range: 1,336 nm still-air (pass; basis: calc) against 1,000 nm.
-- Cruise: 180 KTAS at an unstated altitude (pass+) against >160 KTAS (>180 preferred).
-- Payload at 1,000 nm: 718 lb with no reserve; 683 lb with a 45 min reserve. Setting: 187 KTAS at 7.7 gph.
+Two screens, never mixed: the maker's figures as published, and measured or reported data. The three targets are separate floors; payload at 1,000 nm is information only.
+
+- **As published: near miss** - UL -35 lb
+  - Useful load: 965 lb (near) against 1,000 lb.
+  - Range: 1,315 nm (pass; economy cruise, 30 min reserve) against 1,000 nm.
+  - Cruise: 208 KTAS at 8,000 ft (pass+) against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): 718 / 683 @ 187 kt, 7.7 gph.
+- **Measured or reported: partial: speed pass, speed unconditioned**
+  - Useful load: - lb (?) against 1,000 lb.
+  - Range: - nm (?; none found) against 1,000 nm.
+  - Cruise: 180 KTAS at an unstated altitude (pass+) against >160 KTAS (>180 preferred).
+  - Payload at 1,000 nm (information): cannot be computed on this basis.
 - Aeromomentum fit (first cut): Yes: AM20T (260 hp) for 205 hp.
 
 Sanity flags:
 
-- screen speed has no altitude, or is below 6,000 ft
+- none raised
 
 ## Why it died
 
 Lawsuits between Ronneberg and Murphy bankrupted both; later owners did not last and a 2003 sale fell through (Wikipedia).
+
+## Idea ledger (what a new airplane should keep; AERO's judgement)
+
+- Molded carbon and glass parts that turned the Long-EZ shape into a retractable 200 kt two-seater.
+- Lesson: over 100 molded parts meant expensive tooling and kits (Bill: 'expensive to build'); molds are an asset only while someone keeps them.
 
 ## Rights and provenance (known so far; research, not legal advice)
 
@@ -64,13 +76,33 @@ Ronneberg -> Renaissance Composites (Riley, 1996) -> Berkut Engineering and Desi
 
 <!-- stage3:start -->
 
-## Stage 3: shortlist rank 7 of 8 (AER-3783)
+## Stage 3: checked, then dropped from the shortlist by Bill (2026-10-24)
 
 Our own check, from published geometry and weights, calibrated against published flight data. Method, calibration and the Aeromomentum assumptions are in [docs/SHORTLIST.md](../SHORTLIST.md). Rights are research, not legal advice. Nobody has been contacted.
 
-### Verdict
+### Bill's call
+
+Bill, 2026-10-24: "not likely. These were expensive to build." Dropped from the shortlist; the long-list row stays.
+
+### Verdict (stage 3, before Bill's review)
 
 **Rank 7.** It is the only two-seater on the shortlist, and it cannot be checked. No measured performance exists, and its wing area is unsourced. Our fleet-calibrated model gives 239 KTAS on 195 hp, faster than the designer's own 191 KTAS cruise claim, which says the geometry is wrong. On weight and fuel alone: 949 lb useful, and 1,000 nm only at economy power (608-616 lb with reserve). Its range and payload are grade E.
+
+### Idea ledger (what a new airplane should keep)
+
+- Molded carbon and glass parts that took the Long-EZ shape to a retractable 200 kt class two-seater.
+- Lesson: over 100 molded parts made the kit expensive to build (Bill's reason) and left the design hostage to its molds, which are now lost.
+
+### Published, measured and our check, side by side
+
+Read across a row only within one column's basis. The three targets are separate floors.
+
+| | As published | Measured or reported | Our check, original engine |
+|---|---|---|---|
+| Useful load | 965 lb (near) | not found | 965 lb (the empty weight the model uses: 1,035 lb) |
+| Range | 1,315 nm (pass; economy cruise, 30 min reserve) | not found | 1,034 nm, still air, no reserve, full fuel from MTOW, at 150 hp and 8,000 ft |
+| Cruise | 208 KTAS at 8,000 ft (pass+) | 180 KTAS at altitude not stated (pass+) | 218 KTAS at 150 hp and 8,000 ft |
+| Screen | near miss | partial: speed pass, speed unconditioned | see the verdict |
 
 ### Independent performance check
 
@@ -132,7 +164,6 @@ Lawsuits between the founding partners bankrupted both, later owners did not las
 
 - Primary geometry and one measured cruise point; nothing else changes this rank.
 - Trace the molds (Elon).
-- What a modern rebuild changes in mass, cost and build hours (MANUFACTURING, stage 4, AER-3784).
 
 <!-- stage3:end -->
 

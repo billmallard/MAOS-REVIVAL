@@ -1,163 +1,206 @@
-# Stage 3 shortlist: eight designs ranked on our own performance check
+# Stage 3 shortlist: five designs ranked on our own performance check
 
-**Status:** stage 3 of the legacy survey (AER-3783), compiled 2026-10-24 by AERO.
-It builds on the stage 1 long list (`docs/longlist/LONGLIST.md`, PR #2) and on
-Elon's stage 2 rights files (`docs/rights/`, PR #3). Bill decides which designs,
-if any, go to development.
+**Status:** stage 3 of the legacy survey (AER-3783), revision 2, compiled
+2026-10-24 by AERO after Bill's review of the first version. It builds on the
+stage 1 long list (`docs/longlist/LONGLIST.md`, PR #2) and Elon's stage 2 rights
+files (`docs/rights/`, PR #3). Bill decides which designs, if any, go further.
 
-This is a desk study. Every number below is our estimate from published geometry
-and published weights, calibrated against published flight data. Nothing has been
-flown, weighed or measured by us. Rights notes are research, not legal advice.
-Nobody has been contacted.
+**What changed since the first version.** The brief was amended (merged to
+`main`): the survey mines commercial failures for their ideas as well as their
+numbers; the three targets are separate floors; payload carried 1,000 nm is
+information, not pass or fail; and every candidate is screened like for like,
+published figures against published figures and measured against measured.
+Bill dropped the Rutan Defiant, Cirrus VK-30, Velocity XL-RG and Berkut 360,
+kept the Lancair IV-P, Mooney 301 and Wheeler Express (the Express to be dug
+into), kept the Cessna P210N only as the calibration case, and added the
+Bellanca T-250 Aries and Meyers 200D. The Rohr 2-175 stays in the analysis
+whatever the targets say, with two studies in its own section below.
+
+This is a desk study. Our numbers come from published geometry and weights,
+calibrated against published flight data. Nothing has been flown, weighed or
+measured by us. Rights notes are research, not legal advice. Nobody has been
+contacted.
 
 ## The ranking
 
-| Rank | Design | Seats | On the Aeromomentum line: KTAS / useful load / payload at 1,000 nm with 45 min (our check, two engine cases) | Rights (stage 2) | Safety record | Why it died; does a revival fix it? |
-|---|---|---|---|---|---|---|
-| 1 | [Rutan Defiant](candidates/rutan-defiant.md) | 4 | 178-190 KTAS / 1,350 lb / cannot-669 lb on 2x AM15T | Open question: no 1985 buyer on the record; likely holder RAF or Burt Rutan, who owns little (plans copyright) and objects to unlicensed building | 6 NTSB events, 2 fatal, about 30 built; nose gear is the recurring item; no engine-out accident | Certification money, then liability. Yes: an experimental revival needs neither |
-| 2 | [Lancair IV-P](candidates/lancair-iv-p.md) | 4 | 200-211 / 1,350 / cannot-824 on AM20T | Open question: chain of title. Scope of the 2023 JetEXE purchase is not public, molds unlocated since 2017; parts support continues | 88 NTSB events, 43 fatal, about 360 built; low-altitude stall-spin and engine failure followed by stall | Kits retired for newer models. The safety pattern is the real problem, and a revival does not fix it by itself |
-| 3 | [Mooney 301](candidates/mooney-301.md) | 6 | 176-187 / 1,452 / 858-867 on AM20T | Open question: Mooney International or Daher, unresolved; nothing usable survives on either path. Attorney first | One prototype, no accidents; the test pilot called its pitch control "not certifiable" | Corporate sale; new owners wanted a 300 kt turboprop. Partly: the market gap is real, but nothing survives to revive except published geometry |
-| 4 | [Cirrus VK-30](candidates/cirrus-vk-30.md) | 5 | 199-212 / 1,350 / 815-825 on AM20T | Firmly held by Cirrus (AVIC-controlled): unlikely | 7 NTSB events, 5 fatal, about 13 built; driveshaft, cruise-flap flutter and an aft-CG spin are tied to the design | Cirrus left kits for certified aircraft. Only if the shaft drive and the flutter are designed out |
-| 5 | [Velocity XL-RG](candidates/velocity-xl-rg.md) | 4 | 186-199 / 1,000 / 440-457 on AM20T, **100 gal optional tanks only** (cannot on standard 70 gal) | Firmly held: a live product (Velocity Inc.) | 26 NTSB events, 5 fatal, about 230 built; one door-into-prop fatal; one NTSB design finding on winglet-rudder flutter | Not dead. An AM20T kit option is a partnership question, not a revival |
-| 6 | [Wheeler Express](candidates/express-2000.md) | 4 | 179-191 / 890 / cannot (439-445 at economy power) on AM20T | Open question: last holder (2007) has no visible trace | 17+ US NTSB events, 13 fatal worldwide, about 55 active; about 9 of the 13 fatal are stall or loss of control, and the NTSB named the design's poor yaw stability (CEN15FA321) | A fatal crash collapsed sales, then three bankruptcies. Only with a new tail |
-| 7 | [Berkut 360](candidates/berkut-360.md) | 2 | not credible (see below) / 949 / cannot at continuous power; 608-616 at economy power | Open question: molds unaccounted for since 2009 | 9 NTSB events, 2 fatal, about 31 aircraft; builder errors and gear | Founder lawsuits and bankruptcy. Yes, if the molds are found |
-| 8 | [Cessna P210N](candidates/cessna-p210n.md) | 6 | 161-171 / 1,658 / cannot at continuous power on AM20T (89 gal) | Firmly held by Textron: modify existing airframes, not a revival | 291 NTSB events, 78 fatal, 874 built; weather, oil-system engine failures, fuel | Cessna ended pistons in 1986. Not a revival candidate; here as the calibration case |
-| ref | [Cozy MKIV](candidates/cozy-mkiv.md) | 4 | 202-217 / 808 / cannot (645-668 nm max at continuous power) on AM20T | Firmly held by Aircraft Spruce; the plans licence bars using the drawings for another design | 22 NTSB events, 7 fatal, about 350 built | Alive. Not a revival target |
+Every speed below states its basis. "As published" is the maker's figure (or,
+where marked, a flight test), screened as published. "Our check on the AM20T"
+is our drag build-up at the AM20T's assumed 195 hp continuous, in two
+critical-altitude cases (8,000 ft and 16,000 ft cruise); see
+[The Aeromomentum assumption](#the-aeromomentum-assumption).
 
-How to read the performance column. "KTAS" is our speed at the AM20T's assumed
-continuous power (195 hp, two AM15T at 240 hp for the Defiant) in the two engine
-cases set out below: critical altitude 8,000 ft, cruising at 8,000 ft (the first
-figure), and critical altitude 16,000 ft, cruising at 16,000 ft (the second).
-"Useful load" takes no credit for a lighter engine. "Payload at 1,000 nm with 45
-min" is the payload that flies 1,000 nm at that speed and altitude, from MTOW,
-with fuel for a climb allowance and a 45 min reserve at cruise power. "cannot"
-means the tanks do not hold the fuel. The full table, with the no-reserve case,
-economy power and the optimistic bounds, is [below](#results-on-the-aeromomentum-line).
+| Rank | Design | Seats | As published: useful load / range / cruise (floors) | Our check on the AM20T: KTAS / useful load / range on full fuel at continuous power (floors) | Rights (stage 2) | Safety record | Why it died; does a revival fix it? |
+|---|---|---|---|---|---|---|---|
+| 1 | [Bellanca T-250 Aries](candidates/bellanca-t250-aries.md) | 4-5 | 1,300 lb / 1,017 nm with 45 min / 181 KTAS at 75%, altitude not stated (AOPA measured 181 at 6,500 ft): **all three pass** | 185-197 / 1,300 / 906-919 nm: speed and load pass; range misses by about 90 nm at continuous power, passes at economy (154-161 KTAS) | TC A11SW current, held by Anderson Greenwood (a valve maker); stage 2 file pending | 1 NTSB event in about 50 years, no fatal; only 4 aircraft, so no rate | Its producer, Bellanca, went into receivership in 1980. Yes: nothing technical killed it |
+| 2 | [Wheeler Express](candidates/express-2000.md) | 4 | 1,045 lb / 1,401 nm (CAFE-computed) / no maker's speed; measured 169 KTAS at 6,190 ft, 901 lb weighed | 179-191 / 890 / 1,062-1,115 nm: speed and range pass; useful load misses by 110 lb on the weighed aircraft | Orphaned: five owners, three bankruptcies; last holder (2007) untraced | 18 fatal, 30 killed, on about 100 registered; the NTSB named its poor yaw stability; stall in climbing right turns, including Grand Prairie (CEN21LA096) | Business execution (incomplete kits, churn) plus a public tail problem. Yes, with a re-derived tail at 2-4 kt cruise cost and complete kits |
+| 3 | [Lancair IV-P](candidates/lancair-iv-p.md) | 4 | 1,350 lb / 1,347 nm with 45 min / 287 KTAS at FL240: **all three pass** | 200-211 / 1,350 / 1,136-1,155 nm: **all three pass** on factory empty weight | Open: chain of title (2023 sale scope not public, molds unlocated) | 88 events, 43 fatal, about 360 built; low-altitude stall-spin and engine failure followed by stall | Kits retired for newer models. The safety pattern is the real problem; the RDD LX7 re-wing shows it can be engineered out, at about 25 kt and $800k+ |
+| 4 | [Meyers 200D](candidates/meyers-200d.md) | 4 | 1,060 lb / 782 nm with 45 min / 182 KTAS at 75%, altitude not stated: range fails; measured 178 KTAS at 8,500 ft, about 900 lb fleet useful | 178-189 / 1,060 / 831-863 nm: speed and load pass on factory weight; range misses by 140-170 nm | TC 3A18 current, small holder; TC, drawings and tooling offered for sale in 2019 | 26 accidents, 6 fatal; fuel starvation from the four-tank system is the pattern; no breakups | Hand-built at a loss. Yes, as a re-derivation designed for production, with more fuel |
+| 5 | [Mooney 301](candidates/mooney-301.md) | 6 | 1,452 lb (design) / 986 nm with 45 min / 235 KTAS at FL250 (design): range near miss | 176-187 / 1,452 / 1,143-1,169 nm: **all three pass** on design weight | Open: Mooney or Daher, unresolved; nothing usable survives | One prototype, no accidents; its pitch control "not certifiable" per its test pilot | A corporate sale; new owners wanted 300 kt. Partly: the market gap is real, but nothing survives to revive |
+| cal. | [Cessna P210N](candidates/cessna-p210n.md) | 6 | Calibration case only (Bill: "not solving some of what I'm after in the innovation side") | 161-171 / 1,658 / 916-931 nm | Firmly held by Textron | 291 events, 78 fatal, 874 built | Not a revival candidate |
+| ref | [Cozy MKIV](candidates/cozy-mkiv.md) | 4 | 1,000 lb / 1,130 nm at 40% / 191 KTAS at 75%, 8,000 ft: **all three pass**. Measured (CAFE): 871 lb / 1,049 nm still air / 177 KTAS at 8,000 ft | 202-217 / 808 / 645-668 nm | Firmly held by Aircraft Spruce | 22 events, 7 fatal, about 350 built | Alive. The yardstick |
+
+**How the floors read.** Useful load is the factory empty weight's figure unless
+marked; kit-built and equipped fleets run heavier (the Cozy by 129 lb, the
+Express by 144 lb, the Meyers by about 160 lb), so read every factory useful
+load as an upper bound until stage 4 replaces it. Range on the AM20T is still
+air with no reserve on standard usable fuel at the assumed continuous power;
+every design gains range at economy power. Payload carried 1,000 nm, the old
+combined test, is in the [results table](#results-on-the-aeromomentum-line) as
+information only.
 
 ## What the check says
 
-1. **No candidate carries 1,000 lb over 1,000 nm with a 45 min reserve on an
-   Aeromomentum engine.** The best are the Mooney 301 (858-867 lb), the Lancair
-   IV-P (824 lb, high-critical-altitude case only) and the Cirrus VK-30
-   (815-825 lb). They all clear the useful-load floor (1,000 lb) and the range
-   floor (1,000 nm) separately, and all three cruise above 160 KTAS (the
-   IV-P and VK-30 above 180) at the assumed continuous power. The brief asks for
-   the two together; this is the closest any of them gets, and we did not round it up.
-
-2. **The reference fails harder than stage 1 said.** The CAFE Foundation weighed
-   the Cozy MKIV test aircraft at 1,179 lb empty, not the designer's 1,050 lb, so
-   its useful load is 871 lb, not 1,000. On its IO-360 our check gives 175 KTAS at
-   8,000 ft and 829 nm on full usable fuel with no reserve. On an AM20T the
-   heavier liquid-cooled installation drops useful load to 808 lb. Every
-   shortlisted design except the Berkut beats the Cozy on payload at 1,000 nm.
-
-3. **Our raw drag build-up is optimistic, and we corrected it rather than trust
-   it.** The three types with instrumented flight test or handbook data need 1.16
-   to 1.36 times the raw build-up to match their measured speeds: Express 1.16
-   (CAFE), P210N 1.29 (POH, seven points), Cozy 1.36 (CAFE, four points). We use
-   the median, 1.29, as the fleet calibration. The rest of the gap is cooling
-   flow, leakage, roughness and propeller losses the build-up does not see; see
-   [Method](#method).
-
-4. **Two headline speeds read cleaner than any measured airplane.** The Lancair
-   IV-P's 278 KTAS at FL230 on 262 hp (AOPA Pilot 1994) and the Mooney 301's
-   237.5 KTAS at 17,500 ft on 270 hp (its test pilot, 2012) match our raw
-   build-up at factors of 1.03 and 1.02. At the fleet calibration the same power
-   gives about 255 KTAS and 217 KTAS. That is a finding: treat those figures as
-   about 8% optimistic until a measured point says otherwise. We headline the
-   fleet calibration for both.
-
-5. **Two types read much draggier than their geometry.** The Rutan Defiant's
-   published points need a factor of 1.72 (four points, two grades). It burns
-   18 gph for 175 KTAS, 9.7 nm per gallon, against the Express's 15. Two
-   cooling systems without cowl flaps, two fixed-pitch props and the front
-   prop's slipstream over the fuselage are the likely reasons. The Velocity
-   needs 1.63, but that rests on one pilot-report point at 3,000 ft and on
-   geometry we had to scale from the Cozy, so it is low confidence. We use each
-   type's own factor, so neither is flattered. A constant-speed prop on the
-   geared Aeromomentum engine should recover some of the Defiant's loss. We
-   have not credited it.
-
-6. **The Berkut cannot be checked.** It has no measured performance anywhere, and
-   its wing area (110 ft2) is unsourced. With the fleet calibration our model gives
-   239 KTAS on 195 hp, faster than the designer's own 191 KTAS cruise claim.
-   That means the geometry is wrong, not that the airplane is fast. Its speed is
-   not credited, and its rank rests on weight and fuel alone.
-
-7. **The engine is the largest single unknown.** Aeromomentum publishes no
-   continuous rating, no critical altitude and no fuel consumption for the AM20T
-   (re-read 2026-10-24). Between our two critical-altitude cases the speed moves
-   9-15 kt. If the real continuous rating is lower than 195 hp, every speed here
-   falls; at the cube-root rule, 10% less power costs about 3.5% of cruise speed.
-   See [The Aeromomentum assumption](#the-aeromomentum-assumption).
+1. **On separate floors, two of the five clear all three on the AM20T on our
+   numbers**: the IV-P and the Mooney 301, both on factory or design empty
+   weights. The Aries clears speed and useful load and falls about 90 nm short
+   of the range floor at continuous power (it clears it at economy power). The
+   Express misses useful load on its weighed aircraft by 110 lb; the Meyers
+   misses range on its 74 gal.
+2. **The reference passes as published and misses on useful load as measured.**
+   The Cozy MKIV's published figures (1,000 lb, 1,130 nm, 191 KTAS) pass all
+   three floors. The CAFE Foundation weighed its test aircraft at 1,179 lb empty,
+   so 871 lb useful; it measured 177 KTAS at 8,000 ft; and fuel and measured flow
+   give 1,049 nm still air with no reserve. Both bases are kept and compared like
+   for like. The first long list's 951 nm was a basis mismatch, not a units error.
+3. **Our build-up agrees with two of the new designs' published speeds.** The
+   Aries's AOPA points need a drag factor of 1.26-1.34, inside the fleet band
+   (1.16-1.36), and the Meyers needs 1.41, just above it. Neither speed is
+   flattered. The Aries's published range reads about 10% optimistic.
+4. **Two headline speeds still read cleaner than any measured airplane:** the
+   IV-P's 278 KTAS and the 301's 237.5 KTAS need factors of 1.03 and 1.02. We
+   headline the fleet calibration for both, about 8% slower.
+5. **The Express's accident record has an engineering explanation and a priced
+   fix**, set out in its dossier: weak directional stability from a fin too small
+   for its fuselage (on our estimate, near neutral below about 15 ft2 of fin),
+   power raised from the 210 hp the tail was tested with to 250-300 hp, and
+   stall speeds 9-12 kt above the published figures. A 20-24 ft2 fin or the
+   S-90 tail, with dorsal and ventral fins, costs 2-4 kt of cruise.
+6. **The engine is still the largest single unknown.** Aeromomentum publishes no
+   continuous rating, critical altitude or fuel consumption for the AM20T. Our
+   two critical-altitude cases move speed by 9-15 kt.
 
 ## Why this order
 
-The ranking weighs, in this order: whether the design can be revived at all
-(rights and surviving data), what it does on the Aeromomentum line by our own
-numbers, its safety record and whether that record is tied to the
-configuration, and whether a revival fixes what killed it. Performance alone
-would put the Mooney 301, the IV-P and the VK-30 on top. The other three
-factors pull them apart.
+The ranking weighs, in order: whether there is something to revive (a design,
+data, a type certificate, airframes), what it does on the Aeromomentum line by
+our own numbers on separate floors, whether its safety record is tied to the
+configuration and fixable, whether a revival fixes what killed it, and what it
+contributes to the idea ledger.
 
-- **Rutan Defiant, first.** It is the only design whose published power matches an
-  Aeromomentum installation directly (two AM15T at 160 hp for two O-320s at 160 hp),
-  at a 8 lb lighter installed mass. Two engines on the centreline give redundancy
-  without an asymmetric-thrust problem, which matters when both engines are
-  uncertified automotive conversions. It clears all three floors on our numbers.
-  Its weakness is payload with a reserve: cannot in the low case at 178 KTAS,
-  669 lb in the high case, 807-821 lb at economy power (150-159 KTAS). Its record
-  has no engine-out accident. What killed it (certification money, then
-  liability) does not apply to an experimental revival. The rights are an open
-  question, but no 1985 buyer is on the record, so the likely holder is one
-  living, identifiable party: RAF or Burt Rutan. He holds little beyond the plans
-  copyright, and he refused new licences in the 1980s and still objects to
-  unlicensed building.
-- **Lancair IV-P, second.** It has the strongest airframe that physically
-  survives: about 235 on the register to measure, and parts support still
-  offered. Who could license or sell the design is open. The scope of the 2023
-  JetEXE purchase is not public, the molds have no known location since 2017,
-  and low-grade reports describe a dispute between the parties. That is a
-  chain-of-title problem, not a closed door, and it still leaves the IV-P ahead
-  of the 301 (nothing survives) and the VK-30 (a large, settled holder). Our check gives 200-211 KTAS on 195 hp, and 824 lb
-  over 1,000 nm with reserve in the high case. Two things hold it below the
-  Defiant. Its fatal-accident record is the worst in the survey, and the stall-spin
-  half of it comes from a 36 lb/ft2 wing loading that a smaller engine does not
-  change. And putting a 195 hp continuous engine in a 350 hp airframe removes
-  the climb margin its pilots rely on, and needs ballast to replace about 240 lb
-  of nose weight.
-- **Mooney 301, third.** It has the best payload-range on our numbers and is the only
-  six-seater that comes close to the mission. But one prototype was built, the
-  airframe was scrapped, and the data went to France. A revival is a
-  re-derivation from published geometry, with an unvalidated tail. The rights
-  question has to go to an attorney before anything else.
-- **Cirrus VK-30, fourth.** It has the best speed on our numbers. Its holder is a
-  large, state-controlled company for which the VK-30 is history, and three of
-  its five fatal accidents trace to the pusher shaft drive, a flutter-prone
-  cruise flap and spin recovery. An Aeromomentum engine is geared and liquid-cooled,
-  but it would still need the long shaft.
-- **Velocity XL-RG, Express, Berkut, P210N.** The Velocity is a live kit. It
-  passes only on its optional tanks and is a partnership question, not a revival.
-  The Express is the most orphaned and best-measured design, but it misses
-  useful load on the weighed aircraft and has a tail the NTSB has named. The
-  Berkut is the only two-seater, and it cannot be checked. The P210N calibrates
-  the method and is held by Textron.
+- **Bellanca T-250 Aries, first.** It is the only design that passes all three
+  floors as published, has a published speed our check agrees with, fits the
+  AM20T directly at the same cruise power, has a current type certificate, and
+  died for a reason (its producer's receivership) that a revival removes. It was
+  also designed to be cheap to build: flat and single-curve skins around a
+  laminar wing. Its weaknesses are that only four exist, so its clean record
+  proves little, and that it is about 90 nm short of the range floor at
+  continuous power on standard fuel.
+- **Wheeler Express, second.** It is the best-measured design in the survey, and
+  Bill's strongest interest. Its accident record is tied to the configuration,
+  but the cause is now specific (the tail, the power it was asked to handle, and
+  optimistic stall speeds), and so are the fixes and their cost. It died of
+  business execution, which a revival with complete kits fixes. It ranks below
+  the Aries because the tail must be re-derived and flight-tested first, it
+  misses useful load on its weighed aircraft, and its rights are orphaned.
+- **Lancair IV-P, third.** It has the speed (200-211 KTAS on 195 hp) and a large
+  fleet. Its fatal record is the worst in the survey and its stall-spin half is
+  tied to a 36 lb/ft2 wing loading; it would fly on about 55% of its design
+  power; and its chain of title is open. The LX7 re-wing is the evidence that the
+  wing can be fixed, and the price of doing it.
+- **Meyers 200D, fourth.** Bill's interest is the re-derivation, and that fits the
+  numbers: the speed is there and the range and empty weight are not, both of
+  which a new wing and structure designed for production would address. It ranks
+  above the 301 because a type certificate, drawings and 58 airframes exist.
+- **Mooney 301, fifth.** The best payload-range on our numbers and the only
+  six-seater near the mission, but nothing of it survives, its rights are
+  unresolved, and its tail was judged not certifiable. A revival is a new design
+  using its layout.
+
+## The Rohr 2-175: the two studies
+
+Kept in the analysis whatever the targets say (Bill: "The planform, the layout
+meets much of what I'm after"). Not ranked. Both studies are in its dossier,
+[docs/candidates/rohr-2-175.md](candidates/rohr-2-175.md):
+
+1. **Scale-up:** the 2-175's configuration taken to four seats on an AM20T, and
+   where it stops working.
+2. **Reconstructability:** what survives (photographs, three-views, the TWITT
+   talk, the patent, the SDASM collection, the tribute book) and what it yields.
+
+**Scale-up, in short.** The 2-175's own design target (152 kt at 10,000 ft on
+150 hp) is credible on our check: its geometry gives 142-151 KTAS on the power
+available. Taken to four seats on an AM20T (2,900 lb, an estimated 1,060 lb
+useful, 105 gal), the pure low-aspect-ratio delta sits on the 160 KTAS floor at
+8,000 ft; with aspect ratio 3-4 it reaches 159-172 KTAS at 8,000 ft and
+167-183 KTAS at 16,000 ft, with 1,090-1,180 nm on 105 gal. That clears the
+floors on paper, about 15-20 kt below the Express and the Aries on the same
+engine. It stops working at:
+- **landing speed**, as wing loading must about double from the 2-175's
+  8.1 lb/ft2;
+- **balance**, with the engine behind two rows of seats on a tailless wing;
+- **the drive shaft**, the weak point of every buried-engine pusher in this
+  survey;
+- **the weight estimate**, which is unproven.
+
+**Reconstructability, in short.** More survives than the stage 1 and 2 files
+knew. A Rohr engineer's labelled three-view settles the geometry (span 20 ft,
+not 30; wing 180 ft2). A dimensioned Rohr duct, fan and stator sketch and
+ten factory photographs (SDASM, 2025-26) also survive. Together they rebuild
+the outer lines and propulsor layout to about 5-10%. The structure, airfoil,
+flown propeller, weights and performance do not survive and would be
+re-engineered and then measured.
+
+**The book.** *The Rohr 2-175 (71X) FanJet: A Tribute* (Fraser with
+Westergren, self-published about 2012, 166 pages, ISBN 978-0-615-59079-0). It
+has been out of print since at least 2019. No listing or library copy was found
+in the catalogues we could reach. WorldCat, eBay, Biblio and Alibris block
+automated access and need a few minutes in a browser. Buying a copy is Bill's
+call.
+
+## Dropped by Bill, and why
+
+| Design | Bill, 2026-10-24 | What stays |
+|---|---|---|
+| Rutan Defiant | "no chance. Rutan has it and it's not what I'm after." | Long-list row; stage 3 check in its dossier; centreline thrust in the idea ledger |
+| Cirrus VK-30 | "no thanks" | Long-list row; check in its dossier; its shaft-drive lessons for any buried-engine pusher, the Rohr included |
+| Velocity XL-RG | "no chance." | Long-list row; check in its dossier; a note on Peter Muller's Raptor (the successor attempt Bill held a reservation for) in its idea ledger |
+| Berkut 360 | "not likely. These were expensive to build." | Long-list row; check in its dossier |
 
 ## Not shortlisted, and why
 
-From the 22 stage 1 passes and near misses:
-
 | Design | Reason |
 |---|---|
-| Piper PA-46-310P, Mooney Acclaim Type S, Cessna TTx, Socata TB-21 | Live type families held firmly by large OEMs (stage 2). The realistic path is modifying existing airframes, not reviving a design |
+| Piper PA-46-310P, Mooney Acclaim Type S, Cessna TTx, Socata TB-21 | Live type families held firmly by large OEMs (stage 2). The realistic path is modifying existing airframes |
 | Epic LT | Turbine; no Aeromomentum equivalent |
-| Bellanca Skyrocket II | 435 hp, no fuel capacity found, so no range check is possible. Kept on the list as a configuration reference (FAI records, NASA CD0 0.016) |
-| Piper Comanche 400, Mooney M22 | 400 and 310 hp: far from 195 hp continuous. The M22 is also pressurised and heavy; its rights are an open question (stage 2) |
-| Lancair Super ES | The same holder as the IV-P, without a measured point to calibrate against; the IV-P covers the family |
-| Wing Derringer, Windecker Eagle, Meyers 200D | Near misses kept on the long list. Their geometry is thinner than the shortlist's. The Derringer (an abandoned TC whose data the FAA offered to release) and the Windecker (a small foreign-owned TC holder) are the best rights stories in the survey, and both deserve a second look if Bill wants a certified basis |
-| Extra EA-400 | A near miss on range; the published numbers do not add up (stage 1), and the rights records disagree (stage 2) |
-| Evektor SuperCobra, Grob GF 200 | No fuel flow or no empty weight, so they cannot be screened on the same basis |
-| Rohr 2-175 | 1,450 lb gross; it cannot approach the useful-load target. Configuration reference only (stage 2: nothing survives to own) |
+| Bellanca Skyrocket II | 435 hp, no fuel capacity found. Kept on the long list as a configuration reference |
+| Piper Comanche 400, Mooney M22 | 400 and 310 hp: far from 195 hp continuous |
+| Lancair Super ES | Same holder as the IV-P; the IV-P covers the family |
+| Wing Derringer and its analogs | The Derringer (an abandoned TC) stays on the long list. Its current analogs, led by the Alpi Pioneer 800 Twin shown at AERO 2026, are four-seat Rotax twins; none is a two-seater, and none has a published range and fuel flow to screen fully (long list) |
+| Windecker Eagle | A near miss with thin geometry; the first certified all-composite airplane, in the idea ledger |
+| Extra EA-400 | The published numbers do not add up (stage 1) |
+| Evektor SuperCobra, Grob GF 200 | No fuel flow or no empty weight |
+| 210-class kits (Bearhawk 5, Murphy Moose and others) | Noted in the long list at Bill's request; fixed-gear utility kits, none a retractable 210 copy |
+
+## Ideas worth a look: commercial failures outside the long list
+
+Bill asked for further failures whose ideas deserve a look even where the
+numbers miss. These are proposals for the long list, not yet screened; the
+figures are as published and graded in the research note
+(`docs/shortlist/ideas/README.md`).
+
+| Design | Years, built | Idea worth keeping | Why it failed |
+|---|---|---|---|
+| Mooney M20L PFM | 1988-89, 41 | An automotive-derived (Porsche) engine with single-lever electronic power control in a certified four-seater: the closest precedent to an Aeromomentum installation | Support and liability, not the airframe |
+| Toyota FV2400 engine (and the TAA-1) | 1991-2002 | A certified automotive-derived V8 with dual-channel FADEC, flown in a Cessna 340 testbed | A car maker judged the market too small and the cost too high |
+| Cessna 182 JT-A diesel | 2007-15, not certified | A four-seat piston at 1,018 lb useful and 1,025 nm on paper (maker's figures), on a 227 hp diesel | The engine supplier and the certification timeline |
+| Diamond DA50 (2007 programme) | 2007-09, prototypes | An airframe designed from the start for gasoline, diesel or turboprop up to 350 hp; fixed gear at 180 kt | Programme shelved |
+| Scaled Composites Catbird | 1988, 1 | A three-surface, flapless laminar composite five-seater: 192 mph average on 8.9 gph over a CAFE course (R) | A one-off demonstrator |
+| Commander 114TC | 1995-2002 | A roomy, strong turbocharged four-seater: 187 KTAS at 75% (P) | Capital and market |
+| Adam A500 | 2002-08, 7 | Centreline push-pull twin, and a warning: about 160 lb of payload with full fuel as built against 2,100 lb planned (via Wikipedia) | Bankruptcy in 2008, after empty-weight growth (via Wikipedia) |
+| AASI Jetcruzer | 1989-2002, 5 | A canard pusher certified against spin-resistance criteria | Money; wrong size and engine for us |
+| Wassmer WA-50 series | 1966-77, 154 | The first certified all-composite production four-seater | Working-capital problems; receivership in 1977 (via Wikipedia) |
+| Seawind 300C | 1982-2021, about 80 kits | A composite amphibian that still carried 1,100 lb (F) | Certification and funding |
+| Lear Fan 2100 | 1981-85, 3 | Buried engines driving one pusher prop through shafts, in a pressurised composite fuselage: the Rohr's propulsion idea at a larger scale | Certification cost and money |
 
 ## The Aeromomentum assumption
 
@@ -182,48 +225,46 @@ go-ahead. That question is raised on the issue, not assumed.
 
 ## Results on the Aeromomentum line
 
-Our numbers, from `docs/shortlist/check/results/`. The bracketed values are the optimistic
-bound: the other drag factor (own published points, or the fleet's 1.16 for the
-Berkut) and full credit for a lighter engine.
+Our numbers, from `docs/shortlist/check/results/` (regenerate with
+`report.py`). Bracketed values are the optimistic bound: the other drag factor
+and full credit for a lighter engine. The payload columns are information only.
+The four designs Bill dropped are kept at the bottom as record.
 
 | Candidate | Engine | Cruise alt | KTAS at continuous power (optimistic) | Useful load, lb (optimistic) | Range, nm, full fuel, no reserve | Payload @ 1,000 nm, no reserve, lb | Payload @ 1,000 nm, 45 min, lb (optimistic) | Economy (65%) KTAS: payload no res / 45 min |
 |---|---|---|---|---|---|---|---|---|
-| Rutan Defiant [AM-low] | 2x AM15T | 8k | 178 (197) | 1,350 (1,358) | 1,094 | 721 | cannot (709) | 150: 858 / 807 |
-| Rutan Defiant [AM-high] | 2x AM15T | 16k | 190 (212) | 1,350 (1,358) | 1,156 | 747 | 669 (732) | 159: 871 / 821 |
-| Lancair IV-P [AM-low] | AM20T | 8k | 200 (218) | 1,350 (1,592) | 1,136 | 881 | cannot (1,094) | 161: 962 / 920 |
-| Lancair IV-P [AM-high] | AM20T | 16k | 211 (231) | 1,350 (1,592) | 1,155 | 888 | 824 (1,100) | 164: 953 / 911 |
-| Mooney 301 [AM-low] | AM20T | 8k | 176 (193) | 1,452 (1,659) | 1,143 | 922 | 858 (1,107) | 142: 1,015 / 973 |
-| Mooney 301 [AM-high] | AM20T | 16k | 187 (205) | 1,452 (1,659) | 1,169 | 931 | 867 (1,114) | 146: 1,006 / 964 |
-| Cirrus VK-30 [AM-low] | AM20T | 8k | 199 (208) | 1,350 (1,471) | 1,225 | 880 | 815 (954) | 165: 973 / 931 |
-| Cirrus VK-30 [AM-high] | AM20T | 16k | 212 (221) | 1,350 (1,471) | 1,257 | 890 | 825 (963) | 174: 973 / 930 |
-| Velocity XL-RG, 100 gal [AM-low] | AM20T | 8k | 186 (203) | 1,000 (1,104) | 1,213 | 505 | 440 (583) | 157: 613 / 571 |
-| Velocity XL-RG, 100 gal [AM-high] | AM20T | 16k | 199 (217) | 1,000 (1,104) | 1,275 | 522 | 457 (597) | 167: 620 / 578 |
-| Velocity XL-RG, 70 gal [AM-low] | AM20T | 8k | 186 (203) | 1,000 (1,104) | 825 | cannot | cannot | 157: 613 / cannot |
-| Velocity XL-RG, 70 gal [AM-high] | AM20T | 16k | 199 (217) | 1,000 (1,104) | 860 | cannot | cannot | 167: 620 / cannot |
-| Wheeler Express [AM-low] | AM20T | 8k | 179 (186) | 890 (890) | 1,062 | 376 | cannot | 149: 481 / 439 |
-| Wheeler Express [AM-high] | AM20T | 16k | 191 (199) | 890 (890) | 1,115 | 393 | cannot (347) | 157: 487 / 445 |
-| Berkut 360 [AM-low] | AM20T | 8k | not credible | 949 (949) | 873 | cannot | cannot | economy speed not credible: 650 / 608 |
-| Berkut 360 [AM-high] | AM20T | 16k | not credible | 949 (949) | 906 | cannot | cannot | economy speed not credible: 658 / 616 |
-| Cessna P210N [AM-low] | AM20T | 8k | 161 (162) | 1,658 (1,819) | 916 | cannot | cannot | 130: 1,183 / 1,142 |
-| Cessna P210N [AM-high] | AM20T | 16k | 171 (171) | 1,658 (1,819) | 931 | cannot | cannot | 132: 1,173 / 1,132 |
-| Cozy MKIV (ref) [AM-low] | AM20T | 8k | 202 (206) | 808 (808) | 645 | cannot | cannot | 172: cannot / cannot |
-| Cozy MKIV (ref) [AM-high] | AM20T | 16k | 217 (221) | 808 (808) | 668 | cannot | cannot | 184: cannot / cannot |
-
-The useful loads rest on factory empty weights for the Defiant (plans prototype),
-IV-P, VK-30, Mooney 301 and Velocity. No builder-fleet average exists for any of
-them, and stage 1 found fleets running 38-245 lb heavier than the factory
-wherever both were published. Read every useful load here as an upper bound
-until MANUFACTURING's stage 4 rebuild estimate replaces it.
+| Bellanca (Anderson Greenwood) T-250 Aries (Model 51, O-540 250 hp) [AM-low] | AM20T | 8k | 185 (186) | 1,300 (1,364) | 906 | cannot | cannot (cannot) | 154: 901 / 859 |
+| Bellanca (Anderson Greenwood) T-250 Aries (Model 51, O-540 250 hp) [AM-high] | AM20T | 16k | 197 (198) | 1,300 (1,364) | 919 | cannot | cannot (cannot) | 161: 903 / 861 |
+| Wheeler Express FT (CAFE N360EZ) [AM-low] | AM20T | 8k | 179 (186) | 890 (890) | 1,062 | 376 | cannot (cannot) | 149: 481 / 439 |
+| Wheeler Express FT (CAFE N360EZ) [AM-high] | AM20T | 16k | 191 (199) | 890 (890) | 1,115 | 393 | cannot (347) | 157: 487 / 445 |
+| Lancair IV-P (TSIO-550, 30.2 ft wing) [AM-low] | AM20T | 8k | 200 (218) | 1,350 (1,592) | 1,136 | 881 | cannot (1,094) | 161: 962 / 920 |
+| Lancair IV-P (TSIO-550, 30.2 ft wing) [AM-high] | AM20T | 16k | 211 (231) | 1,350 (1,592) | 1,155 | 888 | 824 (1,100) | 164: 953 / 911 |
+| Meyers / Aero Commander 200D (IO-520-A 285 hp) [AM-low] | AM20T | 8k | 178 (184) | 1,060 (1,149) | 831 | cannot | cannot (cannot) | 148: 648 / cannot |
+| Meyers / Aero Commander 200D (IO-520-A 285 hp) [AM-high] | AM20T | 16k | 189 (196) | 1,060 (1,149) | 863 | cannot | cannot (cannot) | 155: 652 / cannot |
+| Mooney 301 (TIO-540 360 hp prototype) [AM-low] | AM20T | 8k | 176 (193) | 1,452 (1,659) | 1,143 | 922 | 858 (1,107) | 142: 1,015 / 973 |
+| Mooney 301 (TIO-540 360 hp prototype) [AM-high] | AM20T | 16k | 187 (205) | 1,452 (1,659) | 1,169 | 931 | 867 (1,114) | 146: 1,006 / 964 |
+| Cessna P210N (TSIO-520-P, 1980 POH) [AM-low] | AM20T | 8k | 161 (162) | 1,658 (1,819) | 916 | cannot | cannot (cannot) | 130: 1,183 / 1,142 |
+| Cessna P210N (TSIO-520-P, 1980 POH) [AM-high] | AM20T | 16k | 171 (171) | 1,658 (1,819) | 931 | cannot | cannot (cannot) | 132: 1,173 / 1,132 |
+| Cozy MKIV (CAFE N494CZ, IO-360 180 hp) [AM-low] | AM20T | 8k | 202 (206) | 808 (808) | 645 | cannot | cannot (cannot) | 172: cannot / cannot |
+| Cozy MKIV (CAFE N494CZ, IO-360 180 hp) [AM-high] | AM20T | 16k | 217 (221) | 808 (808) | 668 | cannot | cannot (cannot) | 184: cannot / cannot |
+| Rutan Defiant (Model 40, 2x O-320 160 hp) [AM-low] | 2x AM15T | 8k | 178 (197) | 1,350 (1,358) | 1,094 | 721 | cannot (709) | 150: 858 / 807 |
+| Rutan Defiant (Model 40, 2x O-320 160 hp) [AM-high] | 2x AM15T | 16k | 190 (212) | 1,350 (1,358) | 1,156 | 747 | 669 (732) | 159: 871 / 821 |
+| Cirrus VK-30 (IO-540 290 hp prototype) [AM-low] | AM20T | 8k | 199 (208) | 1,350 (1,471) | 1,225 | 880 | 815 (954) | 165: 973 / 931 |
+| Cirrus VK-30 (IO-540 290 hp prototype) [AM-high] | AM20T | 16k | 212 (221) | 1,350 (1,471) | 1,257 | 890 | 825 (963) | 174: 973 / 930 |
+| Velocity XL-RG, optional 100 gal tanks [AM-low] | AM20T | 8k | 186 (203) | 1,000 (1,104) | 1,213 | 505 | 440 (583) | 157: 613 / 571 |
+| Velocity XL-RG, optional 100 gal tanks [AM-high] | AM20T | 16k | 199 (217) | 1,000 (1,104) | 1,275 | 522 | 457 (597) | 167: 620 / 578 |
+| Velocity XL-RG (IO-550 310 hp) [AM-low] | AM20T | 8k | 186 (203) | 1,000 (1,104) | 825 | cannot | cannot (cannot) | 157: 613 / cannot |
+| Velocity XL-RG (IO-550 310 hp) [AM-high] | AM20T | 16k | 199 (217) | 1,000 (1,104) | 860 | cannot | cannot (cannot) | 167: 620 / cannot |
+| Berkut 360 (IO-360 205 hp) [AM-low] | AM20T | 8k | 239 (249) | 949 (949) | 873 | cannot | cannot (cannot) | 205: 650 / 608 |
+| Berkut 360 (IO-360 205 hp) [AM-high] | AM20T | 16k | 256 (266) | 949 (949) | 906 | cannot | cannot (cannot) | 218: 658 / 616 |
 
 ## Our numbers against the published ones, on the original engines
 
 | Design | Published claim | Our number at the same power and altitude | Gap | Verdict |
 |---|---|---|---|---|
-| Rutan Defiant | 175-184 KTAS at 75%, ~8,000 ft (P/F) | matched with a 1.72 factor | draggy | Published speeds trusted; the airframe is draggier than its geometry |
+| Bellanca T-250 Aries | 181 KTAS at 6,500 ft, 73%; 189 KTAS at 1,000 ft, full throttle (P, AOPA 1977) | matched with 1.26-1.34 | - | Agrees: inside the fleet band. The published 1,017 nm with a 45 min reserve reads about 10% optimistic against our 1,008 nm still air with no reserve at 65% |
+| Meyers 200D | 178 KTAS at 8,500 ft, about 67% (P, AOPA 1991) | matched with 1.41 | draggy | Slightly above the fleet band, consistent with an old riveted airframe; its own factor is used |
 | Lancair IV-P | 278 KTAS at FL230, 262 hp (P) | 255 KTAS at the fleet calibration | -8% | Published figure optimistic, or this airplane is the cleanest measured. Unproven |
 | Mooney 301 | 237.5 KTAS at 17,500 ft, 270 hp (P) | 217 KTAS | -9% | Same as the IV-P |
-| Cirrus VK-30 | 205 KTAS at 4,500 ft, ~203 hp (P) | 196 KTAS | -4% | Close: within the calibration spread |
-| Velocity XL-RG | 190 KTAS at 3,000 ft, 232 hp (P) | matched with a 1.63 factor | draggy | Low confidence: one point, scaled geometry |
 | Wheeler Express | 169 KTAS at 6,190 ft DA, ~169 hp (P, CAFE) | 164 KTAS | -3% | Agrees: this is a calibration case |
 | Cessna P210N | 152-193 KTAS at 10,000-23,000 ft (POH) | matched with 1.26-1.32 across seven points | - | Calibration case; the spread is tight |
 | Cozy MKIV | 169-182 KTAS at 850-12,000 ft DA (R, CAFE) | matched with 1.32-1.39 across four points | - | Calibration case |
@@ -237,6 +278,8 @@ speed here hides an impossible power. Once a type's drag factor matches its
 published speed, our fuel flow at that speed checks only our BSFC (0.45, or the
 POH-derived 0.50 for the P210N and 0.42 for the lean-of-peak IV-P and 301), so
 it is not counted as independent evidence.
+
+The four designs Bill dropped keep their comparison rows in their dossiers and in the first version of this file (PR #4 history).
 
 ## Method
 
@@ -290,24 +333,28 @@ behaviour and flutter are outside it entirely. Where the safety record raises
 those, it is reported from the record and labelled as such; nothing here
 clears or condemns a design on handling.
 
+**Tail study (Express).** `docs/shortlist/check/express/tail_study.py`
+builds directional stability from the fuselage (Raymer eq. 16.47) and a
+parametric fin (Raymer eq. 12.6 lift slope; DATCOM sidewash), scales CAFE's
+measured stalls to weight and bank, and runs each tail fix through the same
+calibrated model. Its fin areas are parametric because no Express fin dimension
+is published.
+
 ## Hand-offs
 
-- **To Bill:** the card on AER-3783 asks which designs, if any, go to development.
-- **To MANUFACTURING (AER-3784, stage 4):** this shortlist, with each dossier's
-  construction, geometry sources (`docs/shortlist/check/geometry/`), the
-  empty-weight basis, and the engine-swap mass deltas. The useful load of every
-  design here moves pound for pound with the empty weight a modern rebuild
-  achieves, so stage 4's weight estimate is the number that most changes this
-  ranking.
-- **To Elon (stage 2):** the ranking. Its rights questions are what most decide
-  whether a design can go anywhere. Elon's updated files (PR #3, 2026-10-24)
-  answered the first round: no 1985 buyer of the Rutan designs, an open chain of
-  title for the IV-P, and an unresolved Mooney/Daher question on the 301. All
-  three now need an attorney, not more desk research.
+- **To Bill:** one card on AER-3783 asks which designs to take further.
+- **To MANUFACTURING (AER-3784, stage 4):** the revised shortlist. Four of five
+  designs are new to stage 4 or changed: the Aries (an all-metal design built
+  for low production cost), the Meyers (a re-derivation: steel-tube cage, new
+  wing with more fuel), the Express (with a re-derived tail), and the 301 (a new
+  design from its layout). The useful load of each moves pound for pound with the
+  empty weight a modern rebuild achieves.
+- **To Elon (stage 2, AER-3805):** rights files for the Aries (TC A11SW) and the
+  Derringer analogs; the Meyers re-derivation question; the Lancair holders and
+  Bill's Austin company; the Rohr book and the SDASM catalogue.
 - **SAFETY is not part of this stage.** Two patterns would need SAFETY before any
-  development decision: the IV-P's low-altitude stall-spin record, and the
-  VK-30's shaft-drive and flutter accidents. Per the epic, that is asked on
-  AER-3785 first.
+  development decision: the Express's stall in climbing turns and the IV-P's
+  low-altitude stall-spin record. Per the epic, that is asked on AER-3785 first.
 
 ## Reproduce
 
@@ -317,8 +364,11 @@ cp -r docs/shortlist/check /maos-work/aero/analysis/AER-3783
 cd /maos-work/aero/analysis/AER-3783
 for m in models/*.json; do python3 run_check.py "$m" > "results/$(basename "$m" .json).txt"; done   # writes vsp/, results/<id>.json; stdout is results/<id>.txt
 python3 report.py                                            # writes results/tables.md, results/<id>_stage3.md
+python3 express/tail_study.py > express/tail_study_output.md # the Express tail study
 ```
 
 `vspgen.py` expects the folder at `/maos-work/aero/analysis/AER-3783`, which the
 container sees as `/workspace/analysis/AER-3783`; change `CONTAINER` in that file
-to run it elsewhere.
+to run it elsewhere. Copy results back into the repo by reading and writing the
+files, not with plain `cp`: on this host's network share, `cp` has written NUL
+holes into fresh files.
