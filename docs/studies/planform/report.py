@@ -1,0 +1,186 @@
+"""Tables for docs/studies/planform.md from results/sweep_V.json and
+results/sweep_S.json. Adds the storage, folding and home-shop columns, which
+are geometry only (no aerodynamics).
+
+  python3 report.py > results/tables.md
+"""
+import json
+import math
+import os
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+
+# Envelopes (sources in the study's "Storage" and "Home shop" sections)
+T_DOOR_W, T_DOOR_H_SMALL, T_DOOR_H_STD, T_DEPTH = 40.0, 9 + 5 / 12, 12.0, 30.0  # Hayward small/standard T
+CLEAR = 1.0                     # ft each side at the door (E, ours)
+TRAILER_W = 8.5                 # 102 in, 23 CFR 658.15
+ROUTER = (98.75 / 12, 49.5 / 12)  # Avid PRO4896 work area, ft
+PRINT_BIG = 1005 / 304.8        # BigRep ONE cube edge, ft
+PRINT_TALL = (600 / 304.8, 600 / 304.8, 1200 / 304.8)  # Modix BIG-120Z
+MILL = (18.0, 11.0, 16.25)      # Tormach 1100MX travels, in
+GARAGE = 24.0                   # ft, two-car garage, square (E, ours)
+
+
+def tiles(L, W, tile):
+    a, b = tile
+    return min(math.ceil(L / a) * math.ceil(W / b), math.ceil(L / b) * math.ceil(W / a))
+
+
+def shop(r):
+    semi = r["b"] / 2
+    # half-wing skin plug: bounding box in plan view (semi-span x root chord)
+    L, W = max(semi, r["cr"]), min(semi, r["cr"])
+    router = tiles(L, W, ROUTER)
+    printer = math.ceil(L / PRINT_BIG) * math.ceil(W / PRINT_BIG)
+    # one-piece centre section for the deltas (root chord x fuselage width + 2 ft)
+    fits_garage = max(semi + 2, r["cr"] + 2) <= GARAGE
+    return {"semi": semi, "plug_L": L, "plug_W": W, "router_tiles": router,
+            "print_tiles": printer, "garage": fits_garage}
+
+
+def storage(r):
+    span_ok = r["b"] + 2 * CLEAR <= T_DOOR_W
+    h = r["height"]
+    # trailer: fold outboard of a centre section TRAILER_W wide
+    panel = max(0.0, (r["b"] - TRAILER_W) / 2)
+    if r["tail"] == "conv":
+        fold = f"fold aft {panel:.1f} ft panels alongside fuselage"
+    else:
+        fold = f"fold up {panel:.1f} ft panels; fin folds too"
+    return {"span_ok": span_ok, "h_small": h <= T_DOOR_H_SMALL, "h_std": h <= T_DOOR_H_STD,
+            "panel": panel, "fold": fold, "len_ok": r["length"] <= T_DEPTH,
+            "footprint": r["b"] * r["length"]}
+
+
+def yn(b):
+    return "yes" if b else "no"
+
+
+def tables(d, title):
+    P = d["points"]
+    ids = [r["id"] for r in P]
+    out = [f"### {title}\n"]
+
+    def row(name, f):
+        out.append(f"| {name} | " + " | ".join(f(r) for r in P) + " |")
+
+    out.append("| | " + " | ".join(ids) + " |")
+    out.append("|---|" + "---|" * len(P))
+    row("Planform", lambda r: r["label"])
+    row("Aspect ratio", lambda r: f"{r['AR']:.1f}")
+    row("Wing area, ft2", lambda r: f"{r['S']:.0f}")
+    row("Span, ft", lambda r: f"{r['b']:.1f}")
+    row("Root / tip chord, ft", lambda r: f"{r['cr']:.1f} / {r['ct']:.1f}")
+    row("LE sweep, deg", lambda r: f"{r['sweep_le']:.0f}")
+    row("Tail", lambda r: "H + V tail" if r["tail"] == "conv" else "fin only (tailless)")
+    row("Gross weight, lb", lambda r: f"{r['W0']:.0f}")
+    row("Empty weight, lb", lambda r: f"{r['empty']:.0f}")
+    row("Wing + tail weight, lb", lambda r: f"{r['W_wing']:.0f} + {r['W_tail']:.0f}")
+    row("Wing loading, psf", lambda r: f"{r['WS']:.1f}")
+    row("Wetted area total, ft2", lambda r: f"{r['wet_total']:.0f}")
+    row("of which wing, ft2", lambda r: f"{r['wet']['Wing']:.0f}")
+    row("AVL e_inv (inviscid)", lambda r: f"{r['e_inv']:.3f}")
+    row("AVL CL_alpha, /rad (inviscid)", lambda r: f"{r['CLa']:.2f}")
+    out.append("")
+    out.append("**1. Performance**\n")
+    out.append("| | " + " | ".join(ids) + " |")
+    out.append("|---|" + "---|" * len(P))
+    row("CD0 (calibrated)", lambda r: f"{r['CD0']:.4f}")
+    row("Parasite D/q, ft2", lambda r: f"{r['Dq_par']:.2f}")
+    row("Cruise KTAS, 12,000 ft, 195 hp", lambda r: f"{r['Vc']:.0f}")
+    row("Induced share: climb (SL, Vy)", lambda r: f"{r['ind_share_climb']*100:.0f}%")
+    row("Induced share: cruise", lambda r: f"{r['ind_share_cruise']*100:.0f}%")
+    row("Induced share: 45 min reserve (min power)", lambda r: f"{r['ind_share_res']*100:.0f}%")
+    row("Reserve leg: KEAS / gph", lambda r: f"{r['res_keas']} / {r['res_gph']:.1f}")
+    row("Best L/D (KEAS)", lambda r: f"{r['LDmax']:.1f} ({r['V_LDmax']})")
+    row("Rate of climb SL, 260 hp, fpm", lambda r: f"{r['roc_sl']:.0f}")
+    row("Rate of climb 12,000 ft, 195 hp, fpm", lambda r: f"{r['roc_cr']:.0f}")
+    row("Service ceiling, ft (100 fpm)", lambda r: f"{r['ceiling']:,.0f}")
+    row("Range at 195 hp, no reserve, nm", lambda r: f"{r['range0']:.0f}")
+    row("Range at 195 hp, 45 min reserve, nm", lambda r: f"{r['range45']:.0f}")
+    row("Range at best-range speed, no reserve, nm (KTAS)",
+        lambda r: f"{r['range_lr']:.0f} ({r['v_lr']:.0f})")
+    out.append("")
+    out.append("**2. Storage** (door: small T-hangar 40 ft x 9 ft 5 in, standard 40 ft x 12 ft; 1 ft clearance each side)\n")
+    out.append("| | " + " | ".join(ids) + " |")
+    out.append("|---|" + "---|" * len(P))
+    st = [storage(r) for r in P]
+    sh = [shop(r) for r in P]
+
+    def srow(name, f, src):
+        out.append(f"| {name} | " + " | ".join(f(x, r) for x, r in zip(src, P)) + " |")
+
+    srow("Span through a 40 ft door", lambda s, r: f"{yn(s['span_ok'])} ({r['b']:.0f} ft)", st)
+    srow("Height, ft (E)", lambda s, r: f"{r['height']:.1f}", st)
+    srow("Under 9 ft 5 in / 12 ft door", lambda s, r: f"{yn(s['h_small'])} / {yn(s['h_std'])}", st)
+    srow("Length, ft", lambda s, r: f"{r['length']:.0f}", st)
+    srow("Plan footprint (span x length), ft2", lambda s, r: f"{s['footprint']:.0f}", st)
+    srow("Trailer (8.5 ft wide): fold", lambda s, r: s["fold"], st)
+    out.append("")
+    out.append("**3. Home-shop build**\n")
+    out.append("| | " + " | ".join(ids) + " |")
+    out.append("|---|" + "---|" * len(P))
+    srow("Half-wing plug bounding box, ft", lambda s, r: f"{s['plug_L']:.1f} x {s['plug_W']:.1f}", sh)
+    srow("4x8 router sheets per plug face (Avid PRO4896)", lambda s, r: f"{s['router_tiles']}", sh)
+    srow("1 m printer tiles per plug face (BigRep ONE)", lambda s, r: f"{s['print_tiles']}", sh)
+    srow("Half-wing mold fits a 24 ft garage", lambda s, r: yn(s["garage"]), sh)
+    srow("Root spar depth, in", lambda s, r: f"{r['h_spar_in']:.1f}", sh)
+    srow("Root bending, ultimate, ft-lb", lambda s, r: f"{r['M_root']:,.0f}", sh)
+    srow("Spar cap force, ultimate, lb", lambda s, r: f"{r['F_cap']:,.0f}", sh)
+    out.append("")
+    out.append("**4. Safety**\n")
+    out.append("| | " + " | ".join(ids) + " |")
+    out.append("|---|" + "---|" * len(P))
+    row("Landing CL usable (attitude 14 deg, in ground effect)", lambda r: f"{r['CLu']:.2f}")
+    row("Limited by", lambda r: "CLmax" if r["CLu"] >= r["CLmax"] - 1e-6 else "attitude")
+    row("Touchdown speed at gross, kt", lambda r: f"{r['V_td']:.0f}")
+    row("same, with full Polhamus vortex lift, kt", lambda r: f"{r['V_td_vortex']:.0f}")
+    row("Alpha for CLmax out of ground effect, deg", lambda r: f"{r['alpha_stall_free']:.0f}")
+    row("Power-off approach at 1.3 V_td: L/D", lambda r: f"{r['LD_app']:.1f}")
+    row("Power-off approach sink, fpm", lambda r: f"{r['sink_app']:.0f}")
+    row("Engine-out glide ratio, prop stopped (KEAS)", lambda r: f"{r['LD_glide']:.1f} ({r['V_glide']})")
+    out.append("")
+    out.append("**5. Ride** (Pratt, 150 KEAS at 12,000 ft, mid-cruise weight)\n")
+    out.append("| | " + " | ".join(ids) + " |")
+    out.append("|---|" + "---|" * len(P))
+    row("Wing loading, psf", lambda r: f"{r['WS']:.1f}")
+    row("CL_alpha, /rad", lambda r: f"{r['CLa']:.2f}")
+    row("Mass ratio mu_g / alleviation K_g", lambda r: f"{r['mu_g']:.1f} / {r['Kg']:.2f}")
+    row("Delta n, 50 ft/s design gust", lambda r: f"{r['dn_gust']:.2f}")
+    row("Delta n per 10 ft/s (ride)", lambda r: f"{r['dn_per_10fps']:.2f}")
+    row("Sharp-edged, no alleviation, 50 ft/s", lambda r: f"{r['dn_sharp']:.2f}")
+    return "\n".join(out)
+
+
+def calib_table():
+    rows = json.load(open(os.path.join(HERE, "results", "calib.json")))
+    out = ["| Design | AR | Span, ft | Area, sq ft | Gross, lb | W/S, psf | CL_alpha, /rad (AVL) "
+           "| mu_g / K_g | Delta n, 50 ft/s | Delta n per 10 ft/s | Basis |",
+           "|---|---|---|---|---|---|---|---|---|---|---|"]
+    for r in rows:
+        out.append(f"| {r['label']} | {r['AR']:.2f} | {r['b']:.1f} | {r['S']:.0f} | {r['W']:,} "
+                   f"| {r['WS']:.1f} | {r['CLa']:.2f} | {r['mu']:.1f} / {r['Kg']:.2f} "
+                   f"| {r['dn']:.2f} | {r['dn'] / 5:.2f} | {r['note']} |")
+    out.append("| Rohr 2-175 | not determinable (area not found) | 20 (de Piolenc) or 30 (aerofiles) "
+               "| not found | 1,450 | - | - | - | - | - | see below |")
+    return "\n".join(out)
+
+
+def all_tables():
+    parts = []
+    for rule, title in (("V", "Sizing rule A: same touchdown speed (61 kt at gross)"),
+                        ("S", "Sizing rule B: same wing area (150 ft2)")):
+        d = json.load(open(os.path.join(HERE, "results", f"sweep_{rule}.json")))
+        parts.append(tables(d, title))
+    return "\n\n".join(parts)
+
+
+if __name__ == "__main__":
+    import sys
+    if "--doc" in sys.argv:
+        t = open(os.path.join(HERE, "planform.template.md")).read()
+        t = t.replace("{{TABLES}}", all_tables()).replace("{{CALIB}}", calib_table())
+        open(os.path.join(HERE, "..", "planform.md"), "w").write(t)
+        open(os.path.join(HERE, "results", "tables.md"), "w").write(all_tables() + "\n")
+    else:
+        print(all_tables())
