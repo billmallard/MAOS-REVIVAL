@@ -4,7 +4,7 @@ Model: `docs/shortlist/check/models/rutan-defiant.json`; result: `docs/shortlist
 
 **Model assumptions** (grade E unless a source is named):
 
-- Wing span 31.4 ft, area 133 ft2 (F, Canard Pusher #38, Model 74); LE sweep 23 deg (E, inferred). Chords not published: root 6.0 ft, tip 2.5 ft (E) close the area. Eppler-type section, 13% t/c assumed (E).
+- Wing span 31.4 ft, area 133 ft2 (F, Canard Pusher #38, plans-built version); LE sweep 23 deg (E, inferred). Chords not published: root 6.0 ft, tip 2.5 ft (E) close the area. Eppler-type section, 13% t/c assumed (E).
 - Canard not published: 20 ft2 (15% of wing, Long-EZ-like ratio), span 13 ft (E). Winglets 2 x 8 ft2, 4.5 ft high (E).
 - Fuselage 22.8 ft (Wikipedia, uncited; E), width 4.1 ft (46 in cabin), height 4.3 ft (E). Cowls at both ends.
 - Laminar run x_tr: wing and canard 0.30 (moldless glass, Rutan finish), winglets 0.20, fuselage 0.03 (front prop slipstream).
@@ -17,7 +17,7 @@ Model: `docs/shortlist/check/models/rutan-defiant.json`; result: `docs/shortlist
 
 | Published KTAS | Density alt, ft | hp | gph | Grade | Our KTAS (raw build-up) | Difference | Drag factor to match | Our hp for the published speed | Conditions |
 |---|---|---|---|---|---|---|---|---|---|
-| 184 | 8,000 | 240 | 17.8 | F | 216 | +17% | 1.55 | 159 | RAF Model 74 brochure, 75% |
+| 184 | 8,000 | 240 | 17.8 | F | 216 | +17% | 1.55 | 159 | RAF plans spec, CP38, 75% |
 | 168 | 9,000 | 176 | 13.9 | F | 193 | +15% | 1.46 | 126 | RAF brochure economy, 55% |
 | 175 | 8,000 | 240 | 18 | P | 216 | +23% | 1.78 | 141 | pilot report in N78RA, full throttle (~75%), density alt ~8,000 ft |
 | 168 | 6,500 | 208 | 15 | P | 202 | +20% | 1.66 | 131 | same pilot report, 65% |

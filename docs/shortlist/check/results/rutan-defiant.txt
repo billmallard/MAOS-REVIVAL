@@ -1,4 +1,4 @@
-## Rutan Defiant (Model 40/74, 2x O-320 160 hp)  (results at drag factor 1.72, own published points)
+## Rutan Defiant (Model 40, 2x O-320 160 hp)  (results at drag factor 1.72, own published points)
 Reference condition {'alt_ft': 8000, 'hp': 240, 'W': 2800}: 177 KTAS, CD0 0.0291, D/q par 3.87 ft2, ind 0.39 ft2, eta 0.808, L/D 7.9
   pub 184 KTAS @ 8000 ft, 240 hp (F) -> ours 216 KTAS (+17.4%, k_match 1.55), power for pub speed 159 hp, 11.9 gph vs pub 17.8 gph
   pub 168 KTAS @ 9000 ft, 176 hp (F) -> ours 193 KTAS (+15.2%, k_match 1.46), power for pub speed 126 hp, 9.5 gph vs pub 13.9 gph

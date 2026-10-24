@@ -4,8 +4,8 @@
 
 | Candidate | Engine | Cruise alt | KTAS at continuous power (optimistic) | Useful load, lb (optimistic) | Range, nm, full fuel, no reserve | Payload @ 1,000 nm, no reserve, lb | Payload @ 1,000 nm, 45 min, lb (optimistic) | Economy (65%) KTAS: payload no res / 45 min |
 |---|---|---|---|---|---|---|---|---|
-| Rutan Defiant (Model 40/74, 2x O-320 160 hp) [AM-low] | 2x AM15T | 8k | 178 (197) | 1,350 (1,358) | 1,094 | 721 | cannot (709) | 150: 858 / 807 |
-| Rutan Defiant (Model 40/74, 2x O-320 160 hp) [AM-high] | 2x AM15T | 16k | 190 (212) | 1,350 (1,358) | 1,156 | 747 | 669 (732) | 159: 871 / 821 |
+| Rutan Defiant (Model 40, 2x O-320 160 hp) [AM-low] | 2x AM15T | 8k | 178 (197) | 1,350 (1,358) | 1,094 | 721 | cannot (709) | 150: 858 / 807 |
+| Rutan Defiant (Model 40, 2x O-320 160 hp) [AM-high] | 2x AM15T | 16k | 190 (212) | 1,350 (1,358) | 1,156 | 747 | 669 (732) | 159: 871 / 821 |
 | Lancair IV-P (TSIO-550, 30.2 ft wing) [AM-low] | AM20T | 8k | 200 (218) | 1,350 (1,592) | 1,136 | 881 | cannot (1,094) | 161: 962 / 920 |
 | Lancair IV-P (TSIO-550, 30.2 ft wing) [AM-high] | AM20T | 16k | 211 (231) | 1,350 (1,592) | 1,155 | 888 | 824 (1,100) | 164: 953 / 911 |
 | Mooney 301 (TIO-540 360 hp prototype) [AM-low] | AM20T | 8k | 176 (193) | 1,452 (1,659) | 1,143 | 922 | 858 (1,107) | 142: 1,015 / 973 |
@@ -29,7 +29,7 @@
 
 | Candidate | Matched factor (own points) | Factor used | Basis |
 |---|---|---|---|
-| Rutan Defiant (Model 40/74, 2x O-320 160 hp) | 1.72 | 1.72 | own published points |
+| Rutan Defiant (Model 40, 2x O-320 160 hp) | 1.72 | 1.72 | own published points |
 | Lancair IV-P (TSIO-550, 30.2 ft wing) | 1.03 | 1.29 | fleet calibration (own points read cleaner than the fleet) |
 | Mooney 301 (TIO-540 360 hp prototype) | 1.02 | 1.29 | fleet calibration (own points read cleaner than the fleet) |
 | Cirrus VK-30 (IO-540 290 hp prototype) | 1.15 | 1.29 | fleet calibration (own points read cleaner than the fleet) |

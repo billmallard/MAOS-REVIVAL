@@ -1,6 +1,6 @@
 {
  "id": "rutan-defiant",
- "name": "Rutan Defiant (Model 40/74, 2x O-320 160 hp)",
+ "name": "Rutan Defiant (Model 40, 2x O-320 160 hp)",
  "wet": {
   "Fuselage": {
    "theo_ft2": 234.577,
@@ -28,7 +28,7 @@
     "gph": 17.8,
     "weight_lb": 2800,
     "grade": "F",
-    "note": "RAF Model 74 brochure, 75%"
+    "note": "RAF plans spec, CP38, 75%"
    },
    "W": 2800,
    "our_ktas": 216.02007328090377,
@@ -106,7 +106,7 @@
   }
  ],
  "assumptions": [
-  "Wing span 31.4 ft, area 133 ft2 (F, Canard Pusher #38, Model 74); LE sweep 23 deg (E, inferred). Chords not published: root 6.0 ft, tip 2.5 ft (E) close the area. Eppler-type section, 13% t/c assumed (E).",
+  "Wing span 31.4 ft, area 133 ft2 (F, Canard Pusher #38, plans-built version); LE sweep 23 deg (E, inferred). Chords not published: root 6.0 ft, tip 2.5 ft (E) close the area. Eppler-type section, 13% t/c assumed (E).",
   "Canard not published: 20 ft2 (15% of wing, Long-EZ-like ratio), span 13 ft (E). Winglets 2 x 8 ft2, 4.5 ft high (E).",
   "Fuselage 22.8 ft (Wikipedia, uncited; E), width 4.1 ft (46 in cabin), height 4.3 ft (E). Cowls at both ends.",
   "Laminar run x_tr: wing and canard 0.30 (moldless glass, Rutan finish), winglets 0.20, fuselage 0.03 (front prop slipstream).",
