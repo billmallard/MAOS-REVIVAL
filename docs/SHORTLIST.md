@@ -315,7 +315,7 @@ clears or condemns a design on handling.
 # from a host where `maos` is available (OpenVSP runs in the maos-aero-tools container)
 cp -r docs/shortlist/check /maos-work/aero/analysis/AER-3783
 cd /maos-work/aero/analysis/AER-3783
-for m in models/*.json; do python3 run_check.py "$m"; done   # writes vsp/ and results/
+for m in models/*.json; do python3 run_check.py "$m" > "results/$(basename "$m" .json).txt"; done   # writes vsp/, results/<id>.json; stdout is results/<id>.txt
 python3 report.py                                            # writes results/tables.md, results/<id>_stage3.md
 ```
 
