@@ -22,7 +22,7 @@ not legal advice. Nobody has been contacted. As of 2026-10-24.
 | [Bellanca Skyrocket II](bellanca-skyrocket-ii.md) | pass | Prototype, no TC; airframe in a museum | Open question: design owner unknown | Trace ownership; the museum airframe could be measured |
 | [Mooney 301](mooney-301.md) | pass | Prototype, no TC; scrapped; data went to Socata in 1987 | Open question: Mooney or Daher | Attorney question first |
 | [Berkut 360](berkut-360.md) | near miss | Kit, no TC; withdrawn 2002 | Open question: molds unaccounted for since 2009 | Trace the molds |
-| [Rutan Defiant](rutan-defiant.md) | pass | Plans, no TC; withdrawn 1985 | Open question: rights "sold" in 1985, buyer unnamed | Trace the 1985 buyer |
+| [Rutan Defiant](rutan-defiant.md) | pass | Plans, no TC; withdrawn 1985 | Most likely RAF or Burt Rutan: no 1985 buyer found, and the record points to none | Licence or buy the plans copyright; requires contact |
 | [Windecker AC-7 Eagle](windecker-eagle.md) | near miss | TC A7SW, Current, Windecker Aircraft Inc. | Small holder (foreign-owned), quiet since 2018 | Buy or license; export control in scope |
 | [Piper Comanche 400](piper-pa-24-400-comanche-400.md) | pass | TC 1A15, Current, Piper | Firmly held, but Piper has sold a legacy design before | Licence or carve-out; the fleet is small |
 | [Lancair IV-P](lancair-iv-p.md) | pass | Kit, no TC; Lancair Aerospace (JetEXE) | Small holder, still supporting the type | License |
