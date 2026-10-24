@@ -1,0 +1,8 @@
+## Bellanca (Anderson Greenwood) T-250 Aries (Model 51, O-540 250 hp)  (results at drag factor 1.30, own published points)
+Reference condition {'alt_ft': 6500, 'hp': 182.5, 'W': 2835.0}: 179 KTAS, CD0 0.0161, D/q par 2.73 ft2, ind 0.38 ft2, eta 0.830, L/D 10.3
+  pub 180.7 KTAS @ 6500 ft, 182.5 hp (P) -> ours 197 KTAS (+9.0%, k_match 1.26), power for pub speed 148 hp, 11.1 gph
+  pub 188.6 KTAS @ 1000 ft, 242 hp (P) -> ours 210 KTAS (+11.2%, k_match 1.34), power for pub speed 182 hp, 13.7 gph
+Orig engine 162.5 hp @ 8000 ft: 172 KTAS, range 1008 nm, payload@1000 848/cannot
+AM20T swap delta installed mass -64 lb
+  AM-low: 195 hp @ 8000 ft -> 185 KTAS, UL 1300, range 906 nm, payload@1000 cannot/cannot; [opt k 1.29: 186 KTAS, cannot] eco 154 KTAS payload 901/859
+  AM-high: 195 hp @ 16000 ft -> 197 KTAS, UL 1300, range 919 nm, payload@1000 cannot/cannot; [opt k 1.29: 198 KTAS, cannot] eco 161 KTAS payload 903/861

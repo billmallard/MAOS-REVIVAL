@@ -1,0 +1,225 @@
+{
+ "id": "meyers-200d",
+ "variant": "Meyers 200D / Aero Commander 200D (Continental IO-520-A, 285 hp; TCDS 3A18 model 200D approved 25 Nov 1964; s/n 290, 292 and up). Same TC covers 200 (O-470-M 240 hp), 200A/B/C (IO-470-D 260 hp; B/C convertible to IO-520-A per TCDS Note 5) and the Interceptor 400 turboprop. Geometry below is common to 200A-D per Jane's 1967-68 (via Wikipedia) and Davisson's spec box; the 200C/D have a ~3 in higher cabin roof (AOPA 1991) and the 200D flush-riveted wings.",
+ "config": "tractor, low wing, conventional tail (squared-off swept-LE fin), retractable tricycle",
+ "wing": {
+  "span": {
+   "v": 30.5,
+   "unit": "ft",
+   "grade": "F",
+   "src": "https://en.wikipedia.org/wiki/Meyers_200",
+   "note": "30 ft 6 in, Jane's All the World's Aircraft 1967-68 p.186 via Wikipedia; same in Davisson/Air Progress Sept 1975 spec box (http://www.airbum.com/pireps/PirepMeyers200D.html)"
+  },
+  "area": {
+   "v": 161.5,
+   "unit": "ft2",
+   "grade": "F",
+   "src": "https://en.wikipedia.org/wiki/Meyers_200",
+   "note": "Jane's 1967-68 via Wikipedia; same in Davisson 1975 spec box (18.6 lb/ft2 at 3,000 lb). Derived (E, this file): AR = 30.5^2/161.5 = 5.76; mean chord 161.5/30.5 = 5.30 ft. Wikipedia gives AR 5.81 for the Interceptor 400 on the same 30 ft 6 in / 161.5 ft2"
+  },
+  "root_chord": null,
+  "tip_chord": null,
+  "sweep_le_deg": null,
+  "airfoil": "NACA 23015 root, NACA 4412 tip (Lednicer, Incomplete Guide to Airfoil Usage, https://m-selig.ae.illinois.edu/ads/aircraft.html; same pair listed for the Meyers 145). AvWeb/Aviation Consumer: lots of washout, full aileron authority into the stall. Fowler-type hydraulic flaps, 40 deg max (TCDS), 20 deg half-flap detent (Davisson).",
+  "tc_root": {
+   "v": 0.15,
+   "unit": "-",
+   "grade": "E",
+   "src": "https://m-selig.ae.illinois.edu/ads/aircraft.html",
+   "note": "E: implied by NACA 23015 designation"
+  },
+  "tc_tip": {
+   "v": 0.12,
+   "unit": "-",
+   "grade": "E",
+   "src": "https://m-selig.ae.illinois.edu/ads/aircraft.html",
+   "note": "E: implied by NACA 4412 designation"
+  },
+  "winglets": "no"
+ },
+ "canard_or_htail": {
+  "kind": "htail",
+  "span": null,
+  "area": null,
+  "chord": null,
+  "airfoil": "",
+  "tc": null
+ },
+ "vtail": {
+  "count": 1,
+  "area_each": null,
+  "height": null,
+  "root_chord": null,
+  "tip_chord": null,
+  "note": "Squared-off fin, not offset (no rudder trim; engine thrust line not offset either - AvWeb, AOPA 1991). Overall height 7 ft 4 in (Jane's via Wikipedia). TCDS control throws: rudder +/-21 deg, elevator 32 up/20 down."
+ },
+ "fuselage": {
+  "length": {
+   "v": 24.33,
+   "unit": "ft",
+   "grade": "F",
+   "src": "https://en.wikipedia.org/wiki/Meyers_200",
+   "note": "24 ft 4 in, Jane's 1967-68 via Wikipedia; same in Davisson 1975. Interceptor 400: 26 ft 11.5 in (Jane's 1971-72 via https://en.wikipedia.org/wiki/Interceptor_400)"
+  },
+  "max_width": null,
+  "max_height": null,
+  "cabin_width": null,
+  "note": "4130 chrome-moly welded steel-tube cage from firewall to rear cabin bulkhead and ~3 ft out into each wing to the main-gear attach points, aluminium skins screwed/riveted over it; semi-monocoque aluminium tail cone (AvWeb UAG, Davisson 1975). Single right-side door wrapping into the roof; near-360 deg visibility. Davisson notes drag nits: skin waviness over the tube centre section, protruding landing-light screws, an air dump on the belly."
+ },
+ "nacelles_or_booms": "none",
+ "gear": "retractable tricycle, hydraulic (engine-driven pump), nosewheel same size as mains; gear doors; two emergency extension paths (hand pump, uplock release + free-fall). Vlo/Vle 170 mph (148 kt), emergency extension 210 mph (182 kt) for 200B-D (TCDS). No squat switch.",
+ "cooling": "air-cooled flat-six, conventional nose inlets; aftermarket nose bowl with extended profile and smaller inlets exists (AvWeb UAG). Cowl flaps not documented in sources read.",
+ "prop": {
+  "diameter": {
+   "v": 80,
+   "unit": "in",
+   "grade": "T",
+   "src": "https://drs.faa.gov/api/content/alf/0d815964-5145-424c-a5dc-d881aaded0c0",
+   "note": "TCDS Note 6: 200D-eligible installations are 2-blade McCauley/Hartzell constant-speed, 78-82 in; Hartzell HC-C2YF-1A/8468-4 is 80 in fixed (200D only). Some owners fit 3-blade props with IO-550 (AvWeb)"
+  },
+  "blades": 2,
+  "type": "constant speed",
+  "rpm_cruise": {
+   "v": 2400,
+   "unit": "-",
+   "grade": "P",
+   "src": "http://web.archive.org/web/20231025002213id_/https://www.meyersaircraft.org/wp-content/uploads/repository/articles/1991%20Dec%20-%20AOPA%20-%20Meyers%20200.pdf",
+   "note": "AOPA 1991 and Davisson 1975 both cruised at 2,400 rpm; owner report 2,300 rpm (AvWeb)"
+  }
+ },
+ "engine": {
+  "model": "Continental IO-520-A, 285 hp at 2,700 rpm (TCDS 3A18)",
+  "hp": {
+   "v": 285,
+   "unit": "hp",
+   "grade": "T",
+   "src": "https://drs.faa.gov/api/content/alf/0d815964-5145-424c-a5dc-d881aaded0c0",
+   "note": ""
+  },
+  "turbo": false,
+  "dry_weight": null
+ },
+ "weights": {
+  "mtow": {
+   "v": 3000,
+   "unit": "lb",
+   "grade": "T",
+   "src": "https://drs.faa.gov/api/content/alf/0d815964-5145-424c-a5dc-d881aaded0c0",
+   "note": "All 200-series models 3,000 lb. Aero Commander tested 3,350 lb but never submitted the paperwork (AvWeb UAG; AOPA 1991 says the last manufacturer completed the paperwork but FAA did not approve). Interceptor 400 got 4,005 lb on the same TC."
+  },
+  "empty": {
+   "v": 1940,
+   "unit": "lb",
+   "grade": "F",
+   "src": "https://en.wikipedia.org/wiki/Meyers_200",
+   "note": "Jane's 1967-68 (via Wikipedia) and AvWeb/Aviation Consumer factory figure. Davisson 1975 spec box: standard empty 1,985 lb, useful 1,015 lb. Real-world equipped: typically ~2,100 lb (AvWeb/Aviation Consumer UAG, grade B); AOPA Pilot Dec 1991: typical empty more than 2,100 lb, just over 450 lb payload with 74 gal. Owner of a 200C (AvWeb 2020 owner report) uses 2,100 lb average, ~900 lb useful. No individually weighed 200D figure found."
+  },
+  "max_landing": null,
+  "zero_fuel_max": null
+ },
+ "fuel_usable": {
+  "v": 74,
+  "unit": "gal",
+  "grade": "T",
+  "src": "https://drs.faa.gov/api/content/alf/0d815964-5145-424c-a5dc-d881aaded0c0",
+  "note": "TCDS 200D: 80 gal total = two 20-gal inboard mains (18.5 usable each, at +22) + two 20-gal outboard auxiliaries (18.5 usable each, at +41). Auxiliaries were optional on 200B (40 std / 80 opt, AvWeb); Jane's lists 40 gal normal, 74 usable with aux. One fuel gauge reading the selected tank only. Self-contained aluminium tanks strapped in the wing."
+ },
+ "perf_points": [
+  {
+   "ktas": 178,
+   "alt_ft": 8500,
+   "power_pct_or_hp": "~67% (full throttle 21.5 in MP, 2,400 rpm)",
+   "gph": 14,
+   "weight_lb": null,
+   "grade": "P",
+   "src": "http://web.archive.org/web/20231025002213id_/https://www.meyersaircraft.org/wp-content/uploads/repository/articles/1991%20Dec%20-%20AOPA%20-%20Meyers%20200.pdf",
+   "note": "AOPA Pilot Dec 1991, Marc E. Cook, 'Commanding Respect' pp.40-46, N31CC (200D, >2,000 h, mostly original), Sedona AZ, OAT 78 F on departure; 150 KIAS; 2 aboard. Read from scanned page 44 (archived MAOA PDF), not machine-checkable text."
+  },
+  {
+   "ktas": 177,
+   "alt_ft": null,
+   "power_pct_or_hp": "24 in MP, 2,400 rpm",
+   "gph": 15.5,
+   "weight_lb": null,
+   "grade": "P",
+   "src": "http://www.airbum.com/pireps/PirepMeyers200D.html",
+   "note": "Budd Davisson, Air Progress Sept 1975: two-way runs, slightly over 204 mph (=177 kt) with two aboard and ~60 gal; 15-16 gph. Altitude not stated. 200D (Gid Miller's), not cleaned up."
+  },
+  {
+   "ktas": 152,
+   "alt_ft": null,
+   "power_pct_or_hp": "23 in MP, 2,300 rpm, rich of peak",
+   "gph": 15.5,
+   "weight_lb": null,
+   "grade": "B",
+   "src": "https://avweb.com/?p=124801",
+   "note": "Owner report (Ed Puliam) in Aviation Consumer Aug 2020 via AvWeb UAG: plans 150-155 kt; 200C with IO-520 conversion. Lean of peak ~12 gph but 10-12 kt slower (i.e. ~140-145 kt, B)."
+  },
+  {
+   "ktas": 182,
+   "alt_ft": null,
+   "power_pct_or_hp": "max cruise (75%?)",
+   "gph": null,
+   "weight_lb": null,
+   "grade": "F",
+   "src": "https://en.wikipedia.org/wiki/Meyers_200",
+   "note": "Jane's 1967-68: max cruise 210 mph (182 kt), max 215 mph; Davisson 1975 spec box: 210 mph at 75%. AvWeb/Flying UAG: 183 kt max cruise. Plane & Pilot directory (2009, https://planeandpilotmag.com/aero-commander-200/) gives 215 mph cruise at 12 gph and a 285-hp 'Lycoming' - engine wrong, treat as unreliable."
+  },
+  {
+   "ktas": 47,
+   "alt_ft": 0,
+   "power_pct_or_hp": "stall, gear and flaps down",
+   "gph": null,
+   "weight_lb": 3000,
+   "grade": "F",
+   "src": "https://en.wikipedia.org/wiki/Meyers_200",
+   "note": "Jane's 1967-68: 54 mph (47 kt) dirty; AvWeb UAG: 47 kt dirty thanks to Fowler flaps. CONFLICT: Davisson 1975 spec box gives 62 mph (54 kt) dirty and 77 mph (67 kt) clean. AOPA 1991 approach target 70 KIAS with high sink rate below it. CLmax implied by 47 kt at 3,000 lb/161.5 ft2 = ~2.5 (E, this file) - suspiciously high for single Fowler; 54 kt implies ~1.9."
+  }
+ ],
+ "three_view_urls": [],
+ "safety": {
+  "ntsb_total": {
+   "v": 26,
+   "grade": "R",
+   "src": "https://data.ntsb.gov/avdata/FileDirectory/DownloadFile?fileID=C%3A%5Cavdata%5Cavall.zip",
+   "note": "Own count from NTSB bulk databases avall.mdb (2008-) and Pre2008.mdb (1982-2007), downloaded 2026-10-24: make MEYERS*/AERO COMMANDER/ROCKWELL with 200-series model strings (200, 200A-D, ME 200, MY-200A, AC200D, and one 'MEYERS 2000' SEA85LA157 assumed to be a 200); OTW, MAC-145, Little Toot, Midget excluded by hand. 1985-07-06 to 2024-08-31: 26 accidents (13 coded AERO COMMANDER 200D). No Interceptor 400 records. Pre-1982 events not in these files. Aviation Consumer (via Flying 2025, https://www.flyingmag.com/?p=277994) counted 45 accidents since 1964; AvWeb 2020 UAG found 20 in 35 years."
+  },
+  "ntsb_fatal": {
+   "v": 6,
+   "grade": "R",
+   "src": "https://data.ntsb.gov/avdata/FileDirectory/DownloadFile?fileID=C%3A%5Cavdata%5Cavall.zip",
+   "note": "6 fatal accidents, 8 fatalities: FTW86FA096 (200B, cause not in database), LAX95LA070 (fuel starvation, wrong tank), LAX03LA139 (low passes, alcohol), SEA05FA037 (maneuvering, low airspeed, low altitude), CEN19FA279 (misinstalled intake screen, power loss), WPR24FA290 (gusty crosswind take-off, loss of control). 23% of accidents fatal."
+  },
+  "fleet_size_for_rate": {
+   "v": 130,
+   "grade": "B",
+   "src": "https://www.flyingmag.com/?p=277994",
+   "note": "Built: ~127 (Flying/Aviation Consumer 2025), 135 (AvWeb 2020), 141 (Flying Lost Wings 2025 summary), 129 (Wikipedia Meyers Aircraft Co.), fewer than 120 (AOPA 1991). Fewer than 100 still flying (Flying 2025); ~100 flying in 2014 (AvWeb). 130 used as a mid value. Rate (inference): 26 NTSB accidents 1982-2024 / ~130 built = 20%; 6 fatal = ~5% of airframes built."
+  },
+  "pattern": "RECORD (NTSB causes, 26 events 1982-2024): fuel is dominant - 10 of 26 are fuel starvation/blockage: pilot tank mismanagement on the four-tank, one-gauge system (LAX95LA070 fatal, SEA96LA085, LAX98LA040, CEN10LA489, ERA17LA212), maintenance-induced blockage/loose lines (FTW96LA079, FTW97LA224, CHI01LA112), fuel ice (SEA91LA041) and a blocked tank vent giving false gauge reading (ERA24LA331). Other maintenance: misinstalled intake screen (CEN19FA279, fatal), unsecured throttle cable (CEN16LA275), elevator hinge attachment failure with vibration (FTW02LA032), oil starvation (CEN14LA263), cabin-heat exhaust separation/wiring fire (LAX94LA283), under-inflated oleo gear failure (ERA21LA235). Pilot handling: low-level manoeuvring/buzzing (LAX03LA139, SEA05FA037), flare PIO with nose-gear collapse (CHI08CA225), crosswind take-off loss of control (WPR24FA290). No in-flight structural breakup and no airframe AD (AvWeb, Flying). Magazines report occupants surviving tree and off-airport landings, crediting the steel cage. INFERENCE: nothing in the record is tied to the aerodynamic configuration; the recurring causes are the fuel-system design (four tanks, one selector, one gauge) and vintage-systems maintenance. The strong torque/P-factor with no thrust-line offset or rudder trim (Davisson, AOPA) and a high sink rate below ~70 KIAS are handling traits a revival should design out. Low wing loading (18.6 psf) and benign washed-out wing stall are consistent with few stall/spin accidents (one approach stall in Flying's 45-event set).",
+  "notable": [
+   "1995-01-02 - Lancaster CA - 200D, 1 fatal - fuel starvation, pilot failed to select a tank containing fuel; NTSB LAX95LA070",
+   "2005-01-18 - Hatch UT - AC200D, 2 fatal - loss of control while maneuvering, inadequate airspeed, low altitude; NTSB SEA05FA037",
+   "2019-08-20 - Howell MI - Aero Commander 200, 2 fatal - improperly installed engine intake screen blocked intake, total power loss; NTSB CEN19FA279",
+   "2024-08-31 - Novato CA - 200D, 1 fatal - failure to abort take-off or compensate for gusty crosswind, loss of control; NTSB WPR24FA290",
+   "2001-11-13 - Houston TX - 200D - left outboard elevator attachment failed, partial elevator separation and airframe vibration, landed; NTSB FTW02LA032",
+   "2024-07-26 - Valdosta GA - Aero Commander 200 - insect nest in fuel vent gave false gauge reading, fuel starvation; NTSB ERA24LA331"
+  ]
+ },
+ "why_died_detail": "Commercial, not technical. (1) Cost: Meyers hand-built each aircraft to order in Tecumseh MI with minimal tooling; the steel-tube cage plus sheet-metal skin needs extensive hand fitting (Davisson 1975). Aero Commander bought the rights and tooling in 1965, moved production to Albany GA, built ~75-80 200Ds, and found it took $4 million to produce $3 million worth of aircraft (Plane & Pilot, Frank Ayers, Jan/Feb 2024, https://planeandpilotmag.com/this-incredible-plane-meyers-aero-commander-200/; NOTE: the long-list stub cites this to the 2009 P&P directory page https://planeandpilotmag.com/aero-commander-200/, which does not contain it - the 2024 article does). Production ended 1967-68. (2) Product: priced near a V-tail Bonanza but carrying less (AvWeb); 3,000 lb gross never raised, so with typical 2,100 lb empty it is a two-seat airplane with full fuel; AOPA 1991 names limited weight-carrying ability and slow production as the two factors that did the most harm. (3) Scale: Beech built nearly 300 V35s in 1967 alone vs ~90 Aero Commander 200Ds in total (AOPA 1991). Revival attempts: Interceptor Corp. (Lymon Lyon / Thomas Itin, Norman OK) certified the pressurized TPE331 Interceptor 400 in 1971 (first flight 27 June 1969; 4,005 lb MTOW, 145 gal usable Jet-A, 24,000 ft max - TCDS), but it died on price (~$100k) and financing, with 2 built (AvWeb); 1975 rumours of new-build 200s (Davisson); 1977 a Denver company bought tooling and rights to restart the 200 (Flying May 1977 via Wikipedia Meyers Aircraft Co.); 1982 rights to Prop-Jets Inc (San Antonio), renamed Interceptor Aircraft Corp. 2008; 2014 GlobalParts Group's Interceptor Aviation Inc. bought TC and assets and floated an I-400 restart (AvWeb 22 May 2014, https://avweb.com/news/meyers-revival-eyed/); Sept 2019 TC, drawings, jigs, tooling, the I-400 and a 200 parts airframe put up for sale via AvStrategies (Aero-News 30 Sep 2019). The 1990s 'New Meyers Aircraft Co.' (Fort Pierce FL, 1996) revived the two-seat 145, not the 200, as the Micco SP20/SP26 (certified 2000, 19 built, stopped 2004). For a revival: the airframe works; what killed it (labour-intensive structure, 3,000 lb gross) is exactly what a modern build method and a gross-weight increase would address. A 1,000 lb useful-load target needs ~3,300-3,400 lb gross at today's empty weight - the 3,350 lb Aero Commander flight-tested but never certified.",
+ "notable_ideas": "(1) Welded 4130 steel-tube cage spanning firewall to rear cabin and out to the main-gear points, aluminium skin over it: crash cage plus single load path for engine, wing centre section and gear; strong survivability record, no airframe ADs or in-flight breakups. (2) Speed on modest power: 177-178 KTAS measured at 14-16 gph and ~67-75% of 285 hp (AOPA 1991, Davisson 1975) on a 161.5 ft2, AR 5.8 wing - a low-AR, low-wing-loading (18.6 psf) wing with flush rivets, NACA 230-series root and strong washout. (3) Handling: benign stall with aileron authority, high gear-extension speeds (148/182 kt) that make slowing down easy, bungee interconnect so gear/flap changes need little retrim, Fowler flaps for a low landing speed. Weak points to drop: four-tank one-gauge fuel system, no thrust offset or rudder trim, heavy controls (small yoke, push-pull tubes).",
+ "rights_hints": "TCDS 3A18 Rev 19 (31 Jul 2014) holder: Interceptor Aviation Inc., 6900 NW 63rd St, Suite 100, Bethany OK 73008 (name/address changed to Interceptor Aviation Inc., Augusta KS, 3 Apr 2014; from Prop-Jets Inc., San Antonio TX, to Interceptor Aircraft Corp., Bulverde TX, 30 Oct 2008). Production basis: none (each aircraft individually inspected by FAA) - there is no production certificate. Interceptor Aviation is a GlobalParts Group affiliate (AvWeb 2014). In Sept 2019 TC, drawings (stored in a salt mine), jigs, tooling, the I-400 and a 200 parts plane were offered for sale via AvStrategies/Brian Foley Associates (https://www.aero-news.net/index.cfm?do=main.textpost&id=7439730e-4c8f-4c2a-ab3d-d34818325db6); outcome not found. Wikipedia (Interceptor 400) says the TC still lists Interceptor Aviation as of 2026; DRS confirms Rev 19 is current. MAC-145 TC is separate (went to the Seminole Tribe / Micco, then Lanshe Aerospace 2003). Owners association: Meyers Aircraft Owners Association (meyersaircraft.org).",
+ "gaps": [
+  "Root/tip chord, taper, dihedral, twist value: not published in anything fetched; no dimensioned three-view found (Wikimedia Commons has photos only: Category:Meyers 200). Jane's 1967-68 on archive.org is lending-only and not text-searchable.",
+  "Horizontal and vertical tail span/area",
+  "Fuselage exterior width/height; cabin width",
+  "POH/AFM cruise table (power vs altitude vs TAS/fuel flow) - not found online; AOPA 1991 article has no spec box in the archived scan",
+  "Altitude for Davisson's 1975 cruise point; test weights for both magazine points",
+  "Individually weighed 200D empty weights (only fleet-typical ~2,100 lb)",
+  "Stall speed conflict: 47 kt dirty (Jane's/AvWeb) vs 54 kt dirty/67 kt clean (Davisson spec box)",
+  "Pre-1982 NTSB events (separate 1962-81 files not queried); causes for 1985-1990 records not in database narratives",
+  "CAROL web query not run separately; bulk database used instead (same source data)",
+  "Whether the 2019 sale of the TC and tooling closed, and to whom",
+  "Prop and spinner drag details, cowl inlet areas"
+ ]
+}
