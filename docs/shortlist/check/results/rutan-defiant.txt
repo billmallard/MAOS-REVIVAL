@@ -1,0 +1,10 @@
+## Rutan Defiant (Model 40, 2x O-320 160 hp)  (results at drag factor 1.72, own published points)
+Reference condition {'alt_ft': 8000, 'hp': 240, 'W': 2800}: 177 KTAS, CD0 0.0291, D/q par 3.87 ft2, ind 0.39 ft2, eta 0.808, L/D 7.9
+  pub 184 KTAS @ 8000 ft, 240 hp (F) -> ours 216 KTAS (+17.4%, k_match 1.55), power for pub speed 159 hp, 11.9 gph vs pub 17.8 gph
+  pub 168 KTAS @ 9000 ft, 176 hp (F) -> ours 193 KTAS (+15.2%, k_match 1.46), power for pub speed 126 hp, 9.5 gph vs pub 13.9 gph
+  pub 175 KTAS @ 8000 ft, 240 hp (P) -> ours 216 KTAS (+23.4%, k_match 1.78), power for pub speed 141 hp, 10.5 gph vs pub 18 gph
+  pub 168 KTAS @ 6500 ft, 208 hp (P) -> ours 202 KTAS (+20.3%, k_match 1.66), power for pub speed 131 hp, 9.9 gph vs pub 15 gph
+Orig engine 200 hp @ 9000 ft: 167 KTAS, range 1237 nm, payload@1000 788/722
+2x AM15T swap delta installed mass -8 lb
+  AM-low: 240 hp @ 8000 ft -> 178 KTAS, UL 1350, range 1094 nm, payload@1000 721/cannot; [opt k 1.29: 197 KTAS, 709] eco 150 KTAS payload 858/807
+  AM-high: 240 hp @ 16000 ft -> 190 KTAS, UL 1350, range 1156 nm, payload@1000 747/669; [opt k 1.29: 212 KTAS, 732] eco 159 KTAS payload 871/821

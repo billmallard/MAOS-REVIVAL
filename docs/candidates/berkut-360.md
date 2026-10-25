@@ -1,6 +1,6 @@
 # Berkut 360
 
-Stage 1 stub, generated from `docs/longlist/candidates.json` by `docs/longlist/make_stubs.py`. Published numbers only; nothing here is our own performance check yet.
+Stage 1 stub (extended in stage 3 below), generated from `docs/longlist/candidates.json` by `docs/longlist/make_stubs.py`. Published numbers only; nothing here is our own performance check yet.
 
 ## Identity
 
@@ -74,8 +74,95 @@ Ronneberg -> Renaissance Composites (Riley, 1996) -> Berkut Engineering and Desi
 
 2002 in-flight canard separation (N827CM); 1995 and 1996 crashes (NTSB via Wikipedia).
 
-## Not yet done
+<!-- stage3:start -->
 
-- Independent performance check (drag build-up, propeller, Breguet): stage 3, shortlist only.
-- Installed-weight and cooling comparison against the Aeromomentum engine.
-- What a modern rebuild changes (MANUFACTURING, stage 4).
+## Stage 3: checked, then dropped from the shortlist by Bill (2026-10-24)
+
+Our own check, from published geometry and weights, calibrated against published flight data. Method, calibration and the Aeromomentum assumptions are in [docs/SHORTLIST.md](../SHORTLIST.md). Rights are research, not legal advice. Nobody has been contacted.
+
+### Bill's call
+
+Bill, 2026-10-24: "not likely. These were expensive to build." Dropped from the shortlist; the long-list row stays.
+
+### Verdict (stage 3, before Bill's review)
+
+**Rank 7.** It is the only two-seater on the shortlist, and it cannot be checked. No measured performance exists, and its wing area is unsourced. Our fleet-calibrated model gives 239 KTAS on 195 hp, faster than the designer's own 191 KTAS cruise claim, which says the geometry is wrong. On weight and fuel alone: 949 lb useful, and 1,000 nm only at economy power (608-616 lb with reserve). Its range and payload are grade E.
+
+### Idea ledger (what a new airplane should keep)
+
+- Molded carbon and glass parts that took the Long-EZ shape to a retractable 200 kt class two-seater.
+- Lesson: over 100 molded parts made the kit expensive to build (Bill's reason) and left the design hostage to its molds, which are now lost.
+
+### Published, measured and our check, side by side
+
+Read across a row only within one column's basis. The three targets are separate floors.
+
+| | As published | Measured or reported | Our check, original engine |
+|---|---|---|---|
+| Useful load | 965 lb (near) | not found | 965 lb (the empty weight the model uses: 1,035 lb) |
+| Range | 1,315 nm (pass; economy cruise, 30 min reserve) | not found | 1,034 nm, still air, no reserve, full fuel from MTOW, at 150 hp and 8,000 ft |
+| Cruise | 208 KTAS at 8,000 ft (pass+) | 180 KTAS at altitude not stated (pass+) | 218 KTAS at 150 hp and 8,000 ft |
+| Screen | near miss | partial: speed pass, speed unconditioned | see the verdict |
+
+### Independent performance check
+
+Model: `docs/shortlist/check/models/berkut-360.json`; result: `docs/shortlist/check/results/berkut-360.json`. Method in [SHORTLIST.md](../SHORTLIST.md#method).
+
+**Wetted areas (OpenVSP CompGeom, parametric model from published dimensions):** Fuselage 118 ft2, Wing 85 ft2, Strake 62 ft2, Canard 23 ft2, Winglets 17 ft2; total 305 ft2.
+
+**Model assumptions** (grade E unless a source is named):
+
+- Span 26.67 ft and length 18.5 ft (F, Jane's 1993-94 via Wikipedia). Wing area 110 ft2 is unsourced (E, low confidence). Panels and strakes scaled from the CAFE-measured Cozy by span ratio 0.95 (E).
+- Tandem two-seat fuselage: width 2.6 ft, height 3.4 ft (E). Canard 12 ft2, 11.5 ft span; winglets 2 x 8 ft2 (E).
+- Fully retractable gear: no gear term. Laminar run as the Cozy. Canard carries 20% of the lift (E).
+- Prop 66 in constant speed (E). No measured performance exists, so the fleet-median calibration factor applies.
+
+**Drag factor used: 1.29** (fleet calibration (no published point with known power); fleet calibration 1.29, range 1.16-1.36). Optimistic bound: 1.16.
+
+**Drag build-up at 8,000 ft, 150 hp, 1,850 lb, with the factor applied:** 218 KTAS, CD0 0.0126 on S = 110.0 ft2, propeller efficiency 0.84, L/D 9.8.
+
+| Item | D/q, ft2 | Basis |
+|---|---|---|
+| Wing | 0.271 | Swet 85.1 ft2, Re 5.0M, Cf 0.00228, FF 1.396, Q 1.00, x_tr 0.35 |
+| Strake | 0.207 | Swet 62.0 ft2, Re 9.2M, Cf 0.00242, FF 1.315, Q 1.05, x_tr 0.20 |
+| Canard | 0.105 | Swet 22.6 ft2, Re 2.0M, Cf 0.00280, FF 1.655, Q 1.00, x_tr 0.35 |
+| Winglets | 0.063 | Swet 16.8 ft2, Re 3.5M, Cf 0.00276, FF 1.298, Q 1.05, x_tr 0.25 |
+| Fuselage | 0.317 | Swet 118.0 ft2, Re 35.5M, Cf 0.00216, FF 1.242, Q 1.00, x_tr 0.10 |
+| cooling | 0.061 | Raymer 12.39 x 1.00 |
+| leakage+protuberance | 0.051 | 5% of the rest |
+| calibration factor | 0.312 | x1.290 on the build-up (calibration; basis stated above) |
+| induced | 0.102 | Oswald (Raymer 12.48), lift split stated above |
+
+**Original engine, our numbers:** 150 hp at 8,000 ft gives 218 KTAS; still-air range on full usable fuel from MTOW 1,034 nm (climb allowance 20 lb); payload at 1,000 nm 636 lb with no reserve, cannot lb with 45 min.
+
+**On the Aeromomentum line (AM20T), our numbers.** Installed-mass change +16 lb. The headline useful load takes no credit for a lighter engine (CG ballast assumed to eat it); the number in brackets takes the full saving and the optimistic drag factor.
+
+| Candidate | Engine | Cruise alt | KTAS at continuous power (optimistic) | Useful load, lb (optimistic) | Range, nm, full fuel, no reserve | Payload @ 1,000 nm, no reserve, lb | Payload @ 1,000 nm, 45 min, lb (optimistic) | Economy (65%) KTAS: payload no res / 45 min |
+|---|---|---|---|---|---|---|---|---|
+| AM-low (critical alt 8,000 ft, assumed) | AM20T | 8k | 239 (249) | 949 (949) | 873 | cannot | cannot (cannot) | 205: 650 / 608 |
+| AM-high (critical alt 16,000 ft, assumed) | AM20T | 16k | 256 (266) | 949 (949) | 906 | cannot | cannot (cannot) | 218: 658 / 616 |
+
+### Engine fit with the Aeromomentum line
+
+- **Power.** The AM20T at 195 hp assumed continuous replaces a 205 hp IO-360 (most builders chose a 260 hp IO-540). Stage 1 called it a direct fit.
+- **Mass and CG.** About +16 lb installed (E), in the tail of a canard. Not checked.
+- **Speed.** Our model is not credible here (see below), so no Aeromomentum speed is claimed.
+
+### Rights and provenance (stage 2)
+
+Open question (Elon, `docs/rights/berkut-360.md`, PR #3). The chain runs from the Ronneberg-Murphy partnership, to Experimental Aviation Inc. (bankrupt), to Renaissance Composites (1996), to Vicki Cruse's Berkut Engineering and Design (2001), which withdrew the kit in 2002. Cruse died in 2009, and who holds the molds (over 100 molded parts by 2002) is not on any public record. The designer, Dave Ronneberg, is active and owns two related aircraft. There is no BERKUT mark.
+
+### Safety record
+
+Record (NTSB CAROL plus registrations filed under builder names): 9 events, 2 fatal, on about 31 aircraft. The fatal accidents were an accelerated stall in a high-g airshow turn (the prototype, 1995) and an in-flight canard separation because the builder never fitted the attach bolts (2002). The rest are builder errors and retractable-gear failures. The NTSB found no deep stall, rain-on-canard or pusher prop strike. The canard is a bolt-on surface whose missing attachment was fatal.
+
+### Why it died, and whether a revival fixes it
+
+Lawsuits between the founding partners bankrupted both, later owners did not last, and the kit was withdrawn in 2002 for drone work. A revival fixes that if the molds can be found; it is a business failure, not a design one.
+
+### Not yet done
+
+- Primary geometry and one measured cruise point; nothing else changes this rank.
+- Trace the molds (Elon).
+
+<!-- stage3:end -->

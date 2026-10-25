@@ -1,0 +1,7 @@
+## Velocity XL-RG, optional 100 gal tanks  (results at drag factor 1.63, own published points)
+Reference condition {'alt_ft': 3000, 'hp': 232, 'W': 2600}: 190 KTAS, CD0 0.0211, D/q par 2.79 ft2, ind 0.16 ft2, eta 0.830, L/D 7.9
+  pub 190 KTAS @ 3000 ft, 232 hp (P) -> ours 227 KTAS (+19.5%, k_match 1.63), power for pub speed 142 hp, 10.7 gph vs pub 15 gph
+Orig engine 210 hp @ 8000 ft: 191 KTAS, range 1157 nm, payload@1000 483/413
+AM20T swap delta installed mass -104 lb
+  AM-low: 195 hp @ 8000 ft -> 186 KTAS, UL 1000, range 1213 nm, payload@1000 505/440; [opt k 1.29: 203 KTAS, 583] eco 157 KTAS payload 613/571
+  AM-high: 195 hp @ 16000 ft -> 199 KTAS, UL 1000, range 1275 nm, payload@1000 522/457; [opt k 1.29: 217 KTAS, 597] eco 167 KTAS payload 620/578

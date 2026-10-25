@@ -1,0 +1,6 @@
+## Berkut 360 (IO-360 205 hp)  (results at drag factor 1.29, fleet calibration (no published point with known power))
+Reference condition {'alt_ft': 8000, 'hp': 150, 'W': 1850}: 218 KTAS, CD0 0.0126, D/q par 1.39 ft2, ind 0.10 ft2, eta 0.837, L/D 9.8
+Orig engine 150 hp @ 8000 ft: 218 KTAS, range 1034 nm, payload@1000 636/cannot
+AM20T swap delta installed mass +16 lb
+  AM-low: 195 hp @ 8000 ft -> 239 KTAS, UL 949, range 873 nm, payload@1000 cannot/cannot; [opt k 1.16: 249 KTAS, cannot] eco 205 KTAS payload 650/608
+  AM-high: 195 hp @ 16000 ft -> 256 KTAS, UL 949, range 906 nm, payload@1000 cannot/cannot; [opt k 1.16: 266 KTAS, cannot] eco 218 KTAS payload 658/616

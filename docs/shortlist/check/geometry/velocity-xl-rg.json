@@ -1,0 +1,223 @@
+{
+ "id": "velocity-xl-rg",
+ "variant": "Velocity XL-RG (Velocity Inc., Sebastian FL), 4-seat retractable, Lycoming IO-540 260/300 hp or Continental IO-550 310 hp; factory current spec page used as primary, conflicts noted",
+ "config": "canard pusher",
+ "wing": {
+  "span": {
+   "v": 34,
+   "unit": "ft",
+   "grade": "F",
+   "src": "https://www.velocityaircraft.com/xl",
+   "note": "Factory XL page (2026). CONFLICT: Wikipedia (Jane's 2013-14) gives 31 ft 0 in, and says XL span is 20 in more than SE; factory SE page gives SE span 29 ft 4 in (+20 in = 31 ft). Unresolved - the 34 ft may be a later wing or include winglet cant"
+  },
+  "area": {
+   "v": 132.5,
+   "unit": "ft2",
+   "grade": "F",
+   "src": "https://www.velocityaircraft.com/xl",
+   "note": "Factory XL main-wing area; total with canard 155.3 ft2. CONFLICT: Wikipedia gives 102 ft2, which equals the factory SE figure exactly - Wikipedia value probably SE data"
+  },
+  "root_chord": null,
+  "tip_chord": null,
+  "sweep_le_deg": null,
+  "airfoil": "UIUC Incomplete Guide to Airfoil Usage lists 'Velocity Aircraft Velocity': canard Roncz R1145MS, wing Eppler 1230 mod (https://m-selig.ae.illinois.edu/ads/aircraft.html); entry does not specify model - applying it to the XL is unverified",
+  "tc_root": null,
+  "tc_tip": null,
+  "winglets": "yes: wingtip winglets with rudders (NTSB ATL01LA029 cites winglet/rudder assembly flutter on an XL-FG). Height/area not found"
+ },
+ "canard_or_htail": {
+  "kind": "canard",
+  "span": {
+   "v": 18.67,
+   "unit": "ft",
+   "grade": "F",
+   "src": "https://www.velocityaircraft.com/xl",
+   "note": "Factory XL page '18 ft 8 in'. CONFLICT: Wikipedia gives 13 ft 8 in, identical to factory SE canard (164 in). Canard area ratio XL/SE = 22.8/19.8 suggests ~15-16 ft if chord unchanged - 18'8\" may be a typo; unresolved"
+  },
+  "area": {
+   "v": 22.8,
+   "unit": "ft2",
+   "grade": "F",
+   "src": "https://www.velocityaircraft.com/xl",
+   "note": "Factory XL page; SE canard 19.8 ft2"
+  },
+  "chord": null,
+  "airfoil": "Roncz R1145MS (UIUC generic Velocity entry, unverified for XL)",
+  "tc": null
+ },
+ "vtail": {
+  "count": 2,
+  "area_each": null,
+  "height": null,
+  "root_chord": null,
+  "tip_chord": null,
+  "note": "Winglet rudders on main-wing tips; no fuselage fin"
+ },
+ "fuselage": {
+  "length": {
+   "v": 20,
+   "unit": "ft",
+   "grade": "F",
+   "src": "https://www.velocityaircraft.com/xl",
+   "note": "Factory; Wikipedia/Jane's also 20 ft 0 in (XL 12 in longer than SE)"
+  },
+  "max_width": null,
+  "max_height": null,
+  "cabin_width": {
+   "v": 47.5,
+   "unit": "in",
+   "grade": "P",
+   "src": "https://generalaviationnews.com/2005/03/25/velocity-xl-5/",
+   "note": "General Aviation News pilot report 2005, factory XL-5 RG demo N271TC: 'extra wide cabin of 47-1/2 inches'"
+  },
+  "note": "Overall height 7 ft 9 in (factory) / 8 ft 5 in (Jane's via Wikipedia) - to winglet tops. Gull-wing canopy/doors; 4 seats or 5 with rear bench (XL-5). Wheelbase 110 in, track 80 in (factory). No flaps."
+ },
+ "nacelles_or_booms": "none",
+ "gear": "XL-RG: retractable tricycle; XL-FG fixed gear also offered (factory says FG cruises 5-7% slower; GAN: 12-15 kt penalty). Castoring nosewheel, differential braking. Not for unprepared surfaces (owner's manual)",
+ "cooling": "Air-cooled Lycoming/Continental; inlet/cowl details not found",
+ "prop": {
+  "diameter": null,
+  "blades": 3,
+  "type": "constant speed",
+  "rpm_cruise": {
+   "v": 2400,
+   "unit": "rpm",
+   "grade": "P",
+   "src": "https://generalaviationnews.com/2005/03/25/velocity-xl-5/",
+   "note": "'24 squared' 75% setting on N271TC (IO-550); prop was a 3-blade MT composite constant-speed. Wikipedia (Jane's) gives 3-blade Catto for the IO-550 spec aircraft"
+  }
+ },
+ "engine": {
+  "model": "Continental IO-550 310 hp (Jane's spec engine; also factory option) or Lycoming IO-540 260/300 hp; factory also lists TSIO-550 310 hp",
+  "hp": {
+   "v": 310,
+   "unit": "hp",
+   "grade": "F",
+   "src": "https://www.velocityaircraft.com/xl",
+   "note": "IO-550 option; 260 and 300 hp IO-540 options also listed"
+  },
+  "turbo": false,
+  "dry_weight": null
+ },
+ "weights": {
+  "mtow": {
+   "v": 2800,
+   "unit": "lb",
+   "grade": "F",
+   "src": "https://www.velocityaircraft.com/xl",
+   "note": "Factory, IO-550 310 hp / IO-540 300 hp (2,750 lb with IO-540 260 hp; 3,000 lb TSIO-550). Kitplanes Dec 2011 via Wikipedia: XL-RG 2,700 lb; Jane's: 2,701 lb"
+  },
+  "empty": {
+   "v": 1800,
+   "unit": "lb",
+   "grade": "F",
+   "src": "https://www.velocityaircraft.com/xl",
+   "note": "Factory, IO-550 (1,750 lb IO-540 260; Jane's 1,700 lb)"
+  },
+  "max_landing": null,
+  "zero_fuel_max": null
+ },
+ "fuel_usable": {
+  "v": 70,
+  "unit": "gal",
+  "grade": "F",
+  "src": "https://www.velocityaircraft.com/xl",
+  "note": "Factory capacity 70 gal, optional 92 gal; usable not stated. Jane's/Wikipedia 265 L (70 US gal)"
+ },
+ "perf_points": [
+  {
+   "ktas": 190,
+   "alt_ft": 3000,
+   "power_pct_or_hp": "75% (24 inHg / 2400 rpm), IO-550 310 hp",
+   "gph": 15,
+   "weight_lb": null,
+   "grade": "P",
+   "src": "https://generalaviationnews.com/2005/03/25/velocity-xl-5/",
+   "note": "GA News 2005 pilot report, factory XL-5 RG demonstrator N271TC, two aboard, weight not given; also 170 KIAS at 1,000 ft 22 in/2350; climb 1,500 fpm at 90 kt; rotation 65 kt"
+  },
+  {
+   "ktas": 190,
+   "alt_ft": null,
+   "power_pct_or_hp": "75%, IO-540 260 hp",
+   "gph": null,
+   "weight_lb": 2750,
+   "grade": "F",
+   "src": "https://www.velocityaircraft.com/xl",
+   "note": "Factory table: takeoff 1,500 ft, climb 1,300 fpm, ceiling 17,500 ft, range 1,200 nm; weight is gross not test weight"
+  },
+  {
+   "ktas": 205,
+   "alt_ft": null,
+   "power_pct_or_hp": "75%, IO-550 310 hp",
+   "gph": null,
+   "weight_lb": 2800,
+   "grade": "F",
+   "src": "https://www.velocityaircraft.com/xl",
+   "note": "Factory table: takeoff 1,400 ft, climb 1,500 fpm, range 1,100 nm"
+  },
+  {
+   "ktas": 250,
+   "alt_ft": 25000,
+   "power_pct_or_hp": "TSIO-550 310 hp",
+   "gph": null,
+   "weight_lb": 3000,
+   "grade": "F",
+   "src": "https://www.velocityaircraft.com/xl",
+   "note": "Factory '250+ ktas', ceiling 25,000 ft (altitude for the speed not stated; ceiling used)"
+  },
+  {
+   "ktas": 208.6,
+   "alt_ft": null,
+   "power_pct_or_hp": "75%, IO-550 310 hp",
+   "gph": null,
+   "weight_lb": 2701,
+   "grade": "F",
+   "src": "https://en.wikipedia.org/wiki/Velocity_XL",
+   "note": "Jane's 2013-14 via Wikipedia: 240 mph cruise, stall 75 mph, takeoff run 1,300 ft, landing run 1,500 ft"
+  }
+ ],
+ "three_view_urls": [],
+ "safety": {
+  "ntsb_total": {
+   "v": 26,
+   "grade": "B",
+   "src": "https://data.ntsb.gov/carol-main-public/",
+   "note": "NTSB CAROL query 2026-10-24: Make or Model contains 'VELOCITY' (also Model contains 'XL'), filtered to XL-family model strings (XL-RG, XL-FG, XL-5, TXL, SUV) = 25 (24 accidents + 1 incident ERA15IA009), plus CEN19LA313 whose narrative identifies an XL-RG. 1999-06-15 to 2026-04-17. XL-RG-specific subset 19 (18 by model string + CEN19LA313). 28 further 'Velocity' events with no model given are excluded (some may be XL). All Velocity types: 95 events 1988-2026."
+  },
+  "ntsb_fatal": {
+   "v": 5,
+   "grade": "B",
+   "src": "https://data.ntsb.gov/carol-main-public/",
+   "note": "5 fatal accidents, 9 deaths (XL family): LAX02LA072 (2), CHI04FA215 (1), LAX06LA141 (1), MIA08FA070 (3), WPR10LA381 (2)"
+  },
+  "fleet_size_for_rate": {
+   "v": 229,
+   "grade": "B",
+   "src": "https://en.wikipedia.org/wiki/Velocity_XL",
+   "note": "Kitplanes Dec 2011 buyer's guide via Wikipedia: 229 XL-family completed (XL-RG 150, XL-FG 40, XL-FG-5 21, TXL-RG-5 18). FAA registry download 2026-10-24: 107 current US registrations with XL/TXL/SUV in make/model strings, 78 of them RG. Crude record: 26 events / ~230+ built."
+  },
+  "pattern": "RECORD: XL-family causes - landing-phase loss of control/flare errors and gear-up or gear-collapse landings (ERA13CA426, GAA18CA148, ERA26LA182 gear not extended; ERA12LA431 nose-gear fatigue after shimmy; ERA25LA298, LAX06LA229); fuel (C-FPDL fatal fuel exhaustion LAX02LA072; MIA99LA184 starvation from mis-adjusted wing fuel caps/vent); engine/maintenance power losses (exhaust stack separation, aneroid setting, battery leads, undetermined); weather (CHI04FA215 VFR into IMC -> inverted flat spin and in-flight breakup, fatal; CEN18LA077 airframe icing); midair/runway collision (MIA08FA070, 3 killed). CONFIGURATION-SPECIFIC on record: (a) pusher: unlatched passenger door separated and struck the rear engine/prop -> power loss, 2 killed (WPR10LA381, Super XLRG5); propeller struck runway during aborted simulated forced landing (ERA13CA426); (b) NTSB found manufacturer's inadequate design of the winglet/rudder assembly and metal-to-composite bonding -> control-surface flutter on an XL-FG (ATL01LA029); (c) stall: XL-RG departed controlled flight during a self-planned stall test sequence and hit terrain nearly vertically with little horizontal speed, cause undetermined (LAX06LA141); XL-RG stall on go-around (WPR17LA032). No NTSB finding on rain/canard contamination found. INFERENCE (mine): LAX06LA141's near-vertical, low-forward-speed impact and CHI04FA215's flat spin are consistent with, but not proof of, a deep-stall/flat-spin mode; NTSB did not say so. Retractable-gear handling and pusher door/canopy-latch FOD are the clearest configuration-linked risks.",
+  "notable": [
+   "2001-02-03 - Sebastian FL - minor - control-surface flutter; NTSB: manufacturer's inadequate winglet/rudder design and metal-to-composite bonding (XL-FG) - ATL01LA029 - https://data.ntsb.gov/carol-repgen/api/Aviation/ReportMain/GenerateNewestReport/51451/pdf",
+   "2002-01-30 - San Diego CA - fatal (2) - fuel exhaustion from poor in-flight planning (XL-RG C-FPDL) - LAX02LA072 - https://data.ntsb.gov/carol-repgen/api/Aviation/ReportMain/GenerateNewestReport/54114/pdf",
+   "2004-08-07 - Belvidere KS - fatal (1) - non-instrument-rated VFR into IMC, inverted flat spin, in-flight breakup - CHI04FA215 - https://data.ntsb.gov/carol-repgen/api/Aviation/ReportMain/GenerateNewestReport/59844/pdf",
+   "2006-04-12 - Pearce AZ - fatal (1) - departure from controlled flight during test flight, undetermined; near-vertical impact - LAX06LA141 - https://data.ntsb.gov/carol-repgen/api/Aviation/ReportMain/GenerateNewestReport/63509/pdf",
+   "2008-03-01 - Titusville FL - fatal (3) - landed into RV-8 flight still on runway, failure to see and avoid - MIA08FA070 - https://data.ntsb.gov/carol-repgen/api/Aviation/ReportMain/GenerateNewestReport/67610/pdf",
+   "2010-08-02 - San Diego CA - fatal (2) - unlatched passenger door separated, struck rear engine assembly, power loss (Super XLRG5) - WPR10LA381 - https://data.ntsb.gov/carol-repgen/api/Aviation/ReportMain/GenerateNewestReport/76822/pdf",
+   "2018-01-15 - Santa Fe NM - serious - unforecast airframe icing, could not hold altitude, forced landing - CEN18LA077 - https://data.ntsb.gov/carol-repgen/api/Aviation/ReportMain/GenerateNewestReport/96623/pdf"
+  ]
+ },
+ "why_died_detail": "Not dead: Velocity Inc. (Sebastian FL) still sells XL kits and lists current specs. History: founded 1984 by Danny Maher (first flight Oct 1985); bought 1992 by Duane and Scott Swing; sold 2008 to Rocket Racing Composite Corp (Rocket Racing League); Swings repurchased 2010; owned by the Swing family, ~20 staff, >590 aircraft all models (Wikipedia, Velocity, Inc.). ~650 kits sold/~350 flying all models by 2005 (GA News). Limits are those of a kit: build hours, retractable-gear insurance, hard-surface only.",
+ "rights_hints": "Velocity, Inc. (Swing family) holds the design and sells kits: https://www.velocityaircraft.com/xl ; https://en.wikipedia.org/wiki/Velocity,_Inc. ; Kitplanes on the 2008 sale to Rocket Racing Group: https://www.kitplanes.com/around-the-patch-49/",
+ "gaps": [
+  "Resolve factory 34 ft / 132.5 ft2 / 18'8\" canard vs Jane's-Wikipedia 31 ft / 102 ft2 / 13'8\"",
+  "Root/tip chord, sweep, winglet height/area",
+  "External fuselage width/height",
+  "Confirmed XL airfoils and t/c",
+  "Prop diameter",
+  "Measured performance with weight (no CAFE report found; Kitplanes pilot report not retrieved)",
+  "Cooling inlet details",
+  "Three-view",
+  "ASN list (403)"
+ ]
+}

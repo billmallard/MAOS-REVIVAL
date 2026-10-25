@@ -1,0 +1,113 @@
+void main()
+{
+
+    {
+    string g = AddGeom("FUSELAGE","");
+    SetGeomName(g,"Fuselage");
+    SetParmVal(g,"Length","Design",28.1700);
+    SetParmVal(g,"X_Rel_Location","XForm",0.0000);
+    SetParmVal(g,"Z_Rel_Location","XForm",0.0000);
+    Update();
+    string xs = GetXSecSurf(g,0);
+    // grow to 8 stations
+    while (GetNumXSec(xs) < 8) { InsertXSec(g, 1, XS_ELLIPSE); Update(); }
+    for (int i=0;i<GetNumXSec(xs);i++) ChangeXSecShape(xs,i,XS_ELLIPSE);
+    Update();
+    { string x = GetXSec(xs,0);
+      SetParmVal(GetXSecParm(x,"XLocPercent"),0.0000);
+      SetParmVal(GetXSecParm(x,"Ellipse_Width"),1.0000);
+      SetParmVal(GetXSecParm(x,"Ellipse_Height"),1.4400); }
+    { string x = GetXSec(xs,1);
+      SetParmVal(GetXSecParm(x,"XLocPercent"),0.0400);
+      SetParmVal(GetXSecParm(x,"Ellipse_Width"),2.8000);
+      SetParmVal(GetXSecParm(x,"Ellipse_Height"),3.3600); }
+    { string x = GetXSec(xs,2);
+      SetParmVal(GetXSecParm(x,"XLocPercent"),0.1500);
+      SetParmVal(GetXSecParm(x,"Ellipse_Width"),3.8000);
+      SetParmVal(GetXSecParm(x,"Ellipse_Height"),4.3200); }
+    { string x = GetXSec(xs,3);
+      SetParmVal(GetXSecParm(x,"XLocPercent"),0.3000);
+      SetParmVal(GetXSecParm(x,"Ellipse_Width"),4.0000);
+      SetParmVal(GetXSecParm(x,"Ellipse_Height"),4.8000); }
+    { string x = GetXSec(xs,4);
+      SetParmVal(GetXSecParm(x,"XLocPercent"),0.4500);
+      SetParmVal(GetXSecParm(x,"Ellipse_Width"),3.8000);
+      SetParmVal(GetXSecParm(x,"Ellipse_Height"),4.5600); }
+    { string x = GetXSec(xs,5);
+      SetParmVal(GetXSecParm(x,"XLocPercent"),0.6200);
+      SetParmVal(GetXSecParm(x,"Ellipse_Width"),2.4800);
+      SetParmVal(GetXSecParm(x,"Ellipse_Height"),3.3600); }
+    { string x = GetXSec(xs,6);
+      SetParmVal(GetXSecParm(x,"XLocPercent"),0.8200);
+      SetParmVal(GetXSecParm(x,"Ellipse_Width"),1.2800);
+      SetParmVal(GetXSecParm(x,"Ellipse_Height"),2.1600); }
+    { string x = GetXSec(xs,7);
+      SetParmVal(GetXSecParm(x,"XLocPercent"),1.0000);
+      SetParmVal(GetXSecParm(x,"Ellipse_Width"),0.3200);
+      SetParmVal(GetXSecParm(x,"Ellipse_Height"),0.9600); }
+    Update();
+    }
+
+
+    {
+    string g = AddGeom("WING","");
+    SetGeomName(g,"Wing");
+    SetParmVal(g,"Span","XSec_1",18.3750);
+    SetParmVal(g,"Root_Chord","XSec_1",5.3300);
+    SetParmVal(g,"Tip_Chord","XSec_1",3.6700);
+    SetParmVal(g,"Sweep","XSec_1",0.000);
+    SetParmVal(g,"Dihedral","XSec_1",0.000);
+    SetParmVal(g,"ThickChord","XSecCurve_0",0.1500);
+    SetParmVal(g,"ThickChord","XSecCurve_1",0.1200);
+    SetParmVal(g,"X_Rel_Location","XForm",8.0000);
+    SetParmVal(g,"Y_Rel_Location","XForm",0.0000);
+    SetParmVal(g,"Z_Rel_Location","XForm",1.9000);
+    Update();
+    }
+
+
+    {
+    string g = AddGeom("WING","");
+    SetGeomName(g,"HTail");
+    SetParmVal(g,"Span","XSec_1",6.5000);
+    SetParmVal(g,"Root_Chord","XSec_1",3.2000);
+    SetParmVal(g,"Tip_Chord","XSec_1",2.3400);
+    SetParmVal(g,"Sweep","XSec_1",0.000);
+    SetParmVal(g,"Dihedral","XSec_1",0.000);
+    SetParmVal(g,"ThickChord","XSecCurve_0",0.1000);
+    SetParmVal(g,"ThickChord","XSecCurve_1",0.1000);
+    SetParmVal(g,"X_Rel_Location","XForm",24.3000);
+    SetParmVal(g,"Y_Rel_Location","XForm",0.0000);
+    SetParmVal(g,"Z_Rel_Location","XForm",0.0000);
+    Update();
+    }
+
+
+    {
+    string g = AddGeom("WING","");
+    SetGeomName(g,"Fin");
+    SetParmVal(g,"Span","XSec_1",5.5000);
+    SetParmVal(g,"Root_Chord","XSec_1",4.7000);
+    SetParmVal(g,"Tip_Chord","XSec_1",2.4000);
+    SetParmVal(g,"Sweep","XSec_1",35.000);
+    SetParmVal(g,"Dihedral","XSec_1",0.000);
+    SetParmVal(g,"ThickChord","XSecCurve_0",0.1000);
+    SetParmVal(g,"ThickChord","XSecCurve_1",0.1000);
+    SetParmVal(g,"X_Rel_Location","XForm",23.3000);
+    SetParmVal(g,"Y_Rel_Location","XForm",0.0000);
+    SetParmVal(g,"Z_Rel_Location","XForm",0.8000);
+    SetParmVal(g,"X_Rel_Rotation","XForm",90.0);
+    SetParmVal(g,"Sym_Planar_Flag","Sym",0);
+    Update();
+    }
+
+
+    Update();
+    ComputeCompGeom(SET_ALL,false,0);
+    string rid = FindLatestResultsID("Comp_Geom");
+    array<string> names = GetStringResults(rid,"Comp_Name");
+    array<double> wet = GetDoubleResults(rid,"Wet_Area");
+    array<double> th = GetDoubleResults(rid,"Theo_Area");
+    for (int i=0;i<int(names.size());i++) Print("WET|"+names[i]+"|"+th[i]+"|"+wet[i]);
+    WriteVSPFile("/workspace/analysis/AER-3783/vsp/cessna-p210n.vsp3", SET_ALL);
+}

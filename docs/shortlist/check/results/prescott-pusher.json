@@ -1,0 +1,143 @@
+{
+ "id": "prescott-pusher",
+ "name": "Prescott Pusher (prototype 2 standard, O-360 180 hp)",
+ "wet": {
+  "Fuselage": {
+   "theo_ft2": 173.746,
+   "wet_ft2": 167.005
+  },
+  "Wing": {
+   "theo_ft2": 228.576,
+   "wet_ft2": 205.446
+  },
+  "HTail": {
+   "theo_ft2": 62.4198,
+   "wet_ft2": 60.6999
+  },
+  "Fin": {
+   "theo_ft2": 35.4086,
+   "wet_ft2": 29.4073
+  }
+ },
+ "calibration": [],
+ "assumptions": [
+  "Wing span 29.33 ft, area 110.8 ft2 (F, Tom Prescott's 2007 spec, TP07); root 4.67 ft and tip 3.00 ft (F, RCM 1986 prototype table) scaled 2% to close 110.8 ft2: 4.58 / 2.94 ft. NLF(1)-0215F, 15%, root modified (P, Sport Aviation Mar 1986). Sweep about 10 deg (P).",
+  "Fuselage length 20.28 ft, width 3.67 ft (F, RCM table); height 4.3 ft (E, ours: 42.5 in cabin plus structure; overall height 8 ft 9 in includes the gear and T-tail). Engine in the tail cone, prop on a 12 in extension (P).",
+  "T-tail: horizontal tail 29.3 ft2, 11.0 ft span, root 3.33 ft, tip 2.17 ft (F, RCM prototype table). Fin about 16 ft2 (E, scaled from the 1/5-scale RCM plan).",
+  "Laminar run x_tr: wing 0.25 (NLF section on a flush-riveted metal wing with stretch-formed leading edges; less credit than a composite), tails 0.15, fuselage 0.05.",
+  "Retractable gear (prototype 2 and the retractable kit, P); the fixed-gear kit would add drag (not modelled).",
+  "Cooling factor 1.2 (E): an air-cooled engine buried in a tail cone, with a documented oil-overheat fix and a hot rear cylinder in the field (AOPA 1986; Sport Aviation 1991).",
+  "Prop 65 in (F, factory recommended), installation factor 0.95 for a pusher in the fuselage wake (E, as for the other pushers).",
+  "Original installed engine mass 330 lb = O-360 dry about 285 lb x 1.15 (E).",
+  "No published point states both altitude and power (Kitplanes May 1988: 151 KTAS at 73%, altitude not published; brochure: 165 KTAS at 7,500 ft, power not stated), so the fleet calibration is used and the two points are examined separately (see the dossier)."
+ ],
+ "k_own": null,
+ "k_fleet": 1.29,
+ "k_alt": 1.16,
+ "k_basis": "fleet calibration (no published point with known power)",
+ "drag_factor": 1.29,
+ "breakdown": {
+  "cond": {
+   "alt_ft": 7500,
+   "hp": 135,
+   "W": 2300
+  },
+  "ktas": 169.026506564153,
+  "items": [
+   [
+    "Wing",
+    0.6914989819994994,
+    "Swet 205.4 ft2, Re 5.7M, Cf 0.00251, FF 1.342, Q 1.00, x_tr 0.25"
+   ],
+   [
+    "HTail",
+    0.24643158621821293,
+    "Swet 60.7 ft2, Re 4.2M, Cf 0.00297, FF 1.265, Q 1.08, x_tr 0.15"
+   ],
+   [
+    "Fin",
+    0.10288046472965988,
+    "Swet 29.4 ft2, Re 6.6M, Cf 0.00272, FF 1.224, Q 1.05, x_tr 0.15"
+   ],
+   [
+    "Fuselage",
+    0.5319430629395195,
+    "Swet 167.0 ft2, Re 30.6M, Cf 0.00236, FF 1.351, Q 1.00, x_tr 0.05"
+   ],
+   [
+    "cooling",
+    0.08435009064314547,
+    "Raymer 12.39 x 1.20"
+   ],
+   [
+    "leakage+protuberance",
+    0.08285520932650187,
+    "5% of the rest"
+   ],
+   [
+    "calibration factor",
+    0.5045882247983964,
+    "x1.290 on the build-up (calibration; basis stated above)"
+   ]
+  ],
+  "Dq_par": 2.2445476206549353,
+  "Dq_ind": 0.40191845469979753,
+  "CD0": 0.020257650005910968,
+  "eta": 0.785106804524082,
+  "LD": 11.255920262466686
+ },
+ "orig": {
+  "alt_ft": 7500,
+  "hp": 135,
+  "ktas": 169.92607721630034,
+  "range_nm_noreserve_fullfuel_mtow": 864.5437367876615,
+  "hours": 5.087763755572232,
+  "climb_allowance_lb": 20.909090909090907,
+  "payload_1000_0": null,
+  "fuel_1000_0_lb": 378.2210215518513,
+  "payload_1000_45": null,
+  "fuel_1000_45_lb": 422.6832259057445
+ },
+ "am_model": "AM20T",
+ "am_dmass_lb": 61.25,
+ "am": {
+  "AM-low": {
+   "alt_ft": 8000.0,
+   "hp": 195.0,
+   "ktas": 196.8567819942766,
+   "empty": 1611.25,
+   "useful": 788.75,
+   "useful_opt": 788.75,
+   "range_nm_fullfuel": 694.199244959755,
+   "gph": 14.625,
+   "payload_1000_0": null,
+   "fuel_1000_0_lb": 465.6781177013056,
+   "payload_1000_45": null,
+   "fuel_1000_45_lb": 530.0844493375171,
+   "eco_payload_1000_0": null,
+   "eco_payload_1000_45": null,
+   "eco_ktas": 166.12262734959,
+   "opt_ktas": 204.7528579227941,
+   "opt_payload_1000_45": null
+  },
+  "AM-high": {
+   "alt_ft": 16000.0,
+   "hp": 195.0,
+   "ktas": 210.18658926084294,
+   "empty": 1611.25,
+   "useful": 788.75,
+   "useful_opt": 788.75,
+   "range_nm_fullfuel": 717.5193076457713,
+   "gph": 14.625,
+   "payload_1000_0": null,
+   "fuel_1000_0_lb": 448.8946823231349,
+   "payload_1000_45": null,
+   "fuel_1000_45_lb": 513.0992894728711,
+   "eco_payload_1000_0": null,
+   "eco_payload_1000_45": null,
+   "eco_ktas": 175.99041905055958,
+   "opt_ktas": 218.72426286355287,
+   "opt_payload_1000_45": null
+  }
+ }
+}

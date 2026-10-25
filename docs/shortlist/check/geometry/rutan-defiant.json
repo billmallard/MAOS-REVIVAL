@@ -1,0 +1,317 @@
+{
+ "id": "rutan-defiant",
+ "variant": "Rutan Model 40 Defiant (Rutan's memoir name; 'Model 74' for the plans version is Wikipedia only, grade L, and not in CP38), the plans-built homebuilt (Fred Keller prototype, 1983; plans 1984-85), 2x Lycoming O-320 160 hp, fixed-pitch wood props. Where noted, values are for the proof-of-concept prototype N78RA (1978), which has a shorter wing and canard span.",
+ "config": "push-pull twin canard (centerline thrust), swept aft wing with winglets",
+ "wing": {
+  "span": {
+   "v": 31.4,
+   "unit": "ft",
+   "grade": "F",
+   "src": "http://www.cozybuilders.org/Canard_Pusher/1983-10_cp-38.pdf",
+   "note": "RAF plans spec table, CP38 (Oct 1983). prototype N78RA: 29 ft 2 in (CP17 Jul 1978 comparison table). Other published values (secondary, unsourced): 30 ft 9 in (Wikipedia), 31 ft 5 in (Skymaster site/Jane's), 29 ft 7 in (Plane & Pilot)"
+  },
+  "area": {
+   "v": 133,
+   "unit": "ft2",
+   "grade": "F",
+   "src": "http://www.cozybuilders.org/Canard_Pusher/1983-10_cp-38.pdf",
+   "note": "Plans-built version per CP38; prototype N78RA 127.3 sq ft (CP17). Wikipedia's 139.4 sq ft is unsourced; whether it includes the canard is unknown"
+  },
+  "root_chord": null,
+  "tip_chord": null,
+  "sweep_le_deg": {
+   "v": 23,
+   "unit": "deg",
+   "grade": "E",
+   "src": "http://www.cozybuilders.org/Canard_Pusher/1979-10_cp-22.pdf",
+   "note": "E: inference. CP22 (Oct 1979) says the Long-EZ's new wing has a '23-degree L.E. sweep, Eppler airfoil, and wing attachments ... similar to the Defiant'. Defiant figure not published"
+  },
+  "airfoil": "Eppler section (exact designation not published; RAF says the Long-EZ wing airfoil is 'similar to that on the Defiant', CP21/CP22). The Long-EZ wing is commonly given as a modified Eppler 1230, so that is our inference only",
+  "tc_root": null,
+  "tc_tip": null,
+  "winglets": "yes; winglets with rudders give directional stability, canted inboard about 3 in from vertical (CP17 Q&A). The plans-built version had revised winglets. Heights and areas not found. A separate small ventral rudder sits forward under the nose, offset to port (Wikipedia, Hiller Museum, CP38: 'rudder is only one foot from the pilot's rudder pedals')"
+ },
+ "canard_or_htail": {
+  "kind": "canard",
+  "span": null,
+  "area": null,
+  "chord": null,
+  "airfoil": "not published. CP34 (Oct 1982): the Defiant canard runs at about twice the Long-EZ's Reynolds number (~1 million); it has a very mild nose-up change in rain and no measurable takeoff-speed effect. Elevators act as a full-span slotted flap (CP38)",
+  "tc": null,
+  "note": "The plans-built version's canard span is larger than N78RA's (CP38, CP54). T&T 2026: a folding-canard mod on N171D cuts span by 'about six feet' so the aircraft fits T-hangars, which implies a canard span well over 6 ft (unquantified). Canard static-test issue: CP52 (Jul 1987) refers to 'the CP51 announcement of Don Foreman's Defiant canard failure in a static load test conducted for the British CAA'. In a follow-up Florida test of a repaired spare canard, a lift tab failed at 5 g, which RAF attributed to an unrepresentative jig (CP52). We did not confirm what fix, if any, followed."
+ },
+ "vtail": {
+  "count": 2,
+  "area_each": null,
+  "height": null,
+  "root_chord": null,
+  "tip_chord": null,
+  "note": "Directional stability from two wingtip winglets with rudders; plus a small ventral rudder forward under the nose for control (designed to 'have no effect on stability', CP38). Yaw damping 1-2 cycles (CP38)."
+ },
+ "fuselage": {
+  "length": {
+   "v": 22.8,
+   "unit": "ft",
+   "grade": "E",
+   "src": "https://en.wikipedia.org/wiki/Rutan_Defiant",
+   "note": "Wikipedia infobox, uncited; treat as unverified (E: secondary)"
+  },
+  "max_width": null,
+  "max_height": null,
+  "cabin_width": {
+   "v": 46,
+   "unit": "in",
+   "grade": "F",
+   "src": "http://www.cozybuilders.org/Canard_Pusher/1983-10_cp-38.pdf",
+   "note": "elbow width front; 43 in at rear seats (CP38)"
+  },
+  "note": "Overall height 9.33 ft (Wikipedia, uncited). Cabin: CP17 says '2 inches wider elbow room, 8 inches longer cabin' than a Beech Duchess. Side-hinged canopy. Semi-supine seats. The plans-built version has more rear headroom than N78RA."
+ },
+ "nacelles_or_booms": "No nacelles. Both engines are on the fuselage centerline: one tractor in the nose, one pusher at the tail behind the cabin. Wing-root/rear-engine cowling fairs into the wing root. Ken Brock 8 in prop extension recommended for faired cowls (CP43). Cowl dimensions not found.",
+ "gear": "fixed main gear in fairings (wheel pants); nose gear retracts (Mooney-derived nose gear assembly, CP43). No flaps. Vlo 130 KIAS / Vle 150 (T&T 2026)",
+ "cooling": "Air-cooled. Both engines use updraft cooling designed for strong positive pressure gain with power and AoA. No cowl flaps and no oil coolers on the prototype; CHT 370 F in cruise, oil 190-200 F in hot-day climb (CP17, Rutan). Rear engine: on at least one later build (T&T 2026, N171D context) the original P-51-style belly scoop overheated and over-revved, and was replaced with two 'armpit' scoops ramming air into each cylinder bank. Scale of the problem across the fleet unknown.",
+ "prop": {
+  "diameter": {
+   "v": 69,
+   "unit": "in",
+   "grade": "F",
+   "src": "http://www.cozybuilders.org/Canard_Pusher/1978-07_cp-17.pdf",
+   "note": "fixed-pitch, prototype N78RA (CP17 comparison table). Props were Kevlar/wood (CP17). Front and rear pitched differently (Skymaster article). N78RA later had Hoffmann constant-speed feathering props (CP47-CP49); Rutan withheld approval of any CS installation (CP49)"
+  },
+  "blades": 2,
+  "type": "fixed",
+  "rpm_cruise": null
+ },
+ "engine": {
+  "model": "2x Lycoming O-320 (150/160 hp); plans allowed 150, 160 or 180 hp (O-360) per engine (CP38)",
+  "hp": {
+   "v": 160,
+   "unit": "hp",
+   "grade": "F",
+   "src": "http://www.cozybuilders.org/Canard_Pusher/1983-10_cp-38.pdf",
+   "note": "each; spec table basis"
+  },
+  "turbo": false,
+  "dry_weight": null
+ },
+ "weights": {
+  "mtow": {
+   "v": 2950,
+   "unit": "lb",
+   "grade": "F",
+   "src": "http://www.cozybuilders.org/Canard_Pusher/1983-10_cp-38.pdf",
+   "note": "Plans-built version gross weight; prototype N78RA 2900 lb (CP17)"
+  },
+  "empty": {
+   "v": 1600,
+   "unit": "lb",
+   "grade": "F",
+   "src": "http://www.cozybuilders.org/Canard_Pusher/1983-10_cp-38.pdf",
+   "note": "basic empty; equipped empty 1680 lb (CP38). Prototype IFR empty 1585 lb (CP17)"
+  },
+  "max_landing": {
+   "v": 2950,
+   "unit": "lb",
+   "grade": "P",
+   "src": "https://337skymaster.com/defiant.htm",
+   "note": "pilot-report spec block: max landing = gross"
+  },
+  "zero_fuel_max": null
+ },
+ "fuel_usable": {
+  "v": 115,
+  "unit": "gal",
+  "grade": "F",
+  "src": "http://www.cozybuilders.org/Canard_Pusher/1983-10_cp-38.pdf",
+  "note": "spec table: 115 gal (text: one 58-gal tank per engine, crossfeed available). Prototype N78RA normal load 90.5 gal (CP19); T&T N171D 108 gal"
+ },
+ "perf_points": [
+  {
+   "ktas": 188,
+   "alt_ft": 12000,
+   "power_pct_or_hp": "65% (max cruise for Defiant), 2x160 hp",
+   "gph": null,
+   "weight_lb": null,
+   "grade": "F",
+   "src": "http://www.cozybuilders.org/Canard_Pusher/1978-07_cp-17.pdf",
+   "note": "prototype N78RA without wheel pants, 'typical' early test data (Rutan)"
+  },
+  {
+   "ktas": 184,
+   "alt_ft": 12500,
+   "power_pct_or_hp": null,
+   "gph": 15.0,
+   "weight_lb": null,
+   "grade": "F",
+   "src": "http://www.cozybuilders.org/Canard_Pusher/1978-10_cp-18.pdf",
+   "note": "N78RA 1032 nm leg at 184 kt average using 84 gal; gph derived by us (84 gal / 5.6 h)"
+  },
+  {
+   "ktas": 174,
+   "alt_ft": 20000,
+   "power_pct_or_hp": null,
+   "gph": 13.2,
+   "weight_lb": null,
+   "grade": "F",
+   "src": "http://www.cozybuilders.org/Canard_Pusher/1978-10_cp-18.pdf",
+   "note": "N78RA: 174 kt at 20,000 ft at 13.2 nm/gal; gph derived by us"
+  },
+  {
+   "ktas": 175,
+   "alt_ft": 17500,
+   "power_pct_or_hp": null,
+   "gph": 10.8,
+   "weight_lb": null,
+   "grade": "F",
+   "src": "http://www.cozybuilders.org/Canard_Pusher/1979-04_cp-20.pdf",
+   "note": "N78RA Mojave-Wichita nonstop 1265 mi at 175 kt, 5.4 gph per engine"
+  },
+  {
+   "ktas": null,
+   "alt_ft": null,
+   "power_pct_or_hp": "~20% power, 1700 rpm, 13 inHg each",
+   "gph": 5.6,
+   "weight_lb": null,
+   "grade": "F",
+   "src": "http://www.cozybuilders.org/Canard_Pusher/1979-01_cp-19.pdf",
+   "note": "N78RA max-endurance flight 15 h 36 min, 80-86 KIAS, 2.8 gph per engine, peak EGT, solo, 90.5 gal start"
+  },
+  {
+   "ktas": 184,
+   "alt_ft": 8000,
+   "power_pct_or_hp": "75% (spec table says 70%), 2x160 hp",
+   "gph": 17.8,
+   "weight_lb": null,
+   "grade": "F",
+   "src": "http://www.cozybuilders.org/Canard_Pusher/1983-10_cp-38.pdf",
+   "note": "RAF plans spec, CP38 (its text says 75% power, its spec table says 70%; we use 75%); altitude 8000 ft from Skymaster spec block (https://337skymaster.com/defiant.htm), not stated in CP38"
+  },
+  {
+   "ktas": 168,
+   "alt_ft": 9000,
+   "power_pct_or_hp": "55%",
+   "gph": 13.9,
+   "weight_lb": null,
+   "grade": "F",
+   "src": "http://www.cozybuilders.org/Canard_Pusher/1983-10_cp-38.pdf",
+   "note": "RAF brochure economy cruise; altitude from Skymaster spec block"
+  },
+  {
+   "ktas": 175,
+   "alt_ft": 6500,
+   "power_pct_or_hp": "full throttle (~75%)",
+   "gph": 18,
+   "weight_lb": null,
+   "grade": "P",
+   "src": "https://337skymaster.com/defiant.htm",
+   "note": "pilot report flying N78RA with Mike Melvill; density alt ~8000 ft; 2 aboard"
+  },
+  {
+   "ktas": 168,
+   "alt_ft": 6500,
+   "power_pct_or_hp": "65%",
+   "gph": 15,
+   "weight_lb": null,
+   "grade": "P",
+   "src": "https://337skymaster.com/defiant.htm",
+   "note": "same pilot report"
+  },
+  {
+   "ktas": 139,
+   "alt_ft": 7500,
+   "power_pct_or_hp": "single engine (rear) full throttle 22.4 inHg, 2550 rpm; front feathered",
+   "gph": 12.7,
+   "weight_lb": null,
+   "grade": "F",
+   "src": "http://www.cozybuilders.org/Canard_Pusher/1988-01_cp-54.pdf",
+   "note": "N78RA with Hoffmann CS props, 121 KIAS, OAT 21 C; RAF warns not representative of plans-built Defiant"
+  },
+  {
+   "ktas": 125,
+   "alt_ft": 7500,
+   "power_pct_or_hp": "single engine (front) 23.4 inHg, 2625 rpm; rear feathered",
+   "gph": 12.7,
+   "weight_lb": null,
+   "grade": "F",
+   "src": "http://www.cozybuilders.org/Canard_Pusher/1988-01_cp-54.pdf",
+   "note": "N78RA, 108 KIAS"
+  },
+  {
+   "ktas": 152,
+   "alt_ft": null,
+   "power_pct_or_hp": "low altitude cruise, 2x O-360 180 hp",
+   "gph": 19,
+   "weight_lb": null,
+   "grade": "B",
+   "src": "https://www.twinandturbine.com/?p=15364",
+   "note": "N171D owner: '150-155 KTAS down low on 18-20 GPH (total)'; midpoints used"
+  },
+  {
+   "ktas": 162,
+   "alt_ft": null,
+   "power_pct_or_hp": "cruise 'in the teens', 2x O-360 180 hp",
+   "gph": 16,
+   "weight_lb": null,
+   "grade": "B",
+   "src": "https://www.twinandturbine.com/?p=15364",
+   "note": "N171D owner: '160-165 KTAS in the teens, burning 15-17 GPH'; midpoints used"
+  },
+  {
+   "ktas": null,
+   "alt_ft": 0,
+   "power_pct_or_hp": "climb, 2 engines / 1 engine",
+   "gph": null,
+   "weight_lb": 2950,
+   "grade": "F",
+   "src": "http://www.cozybuilders.org/Canard_Pusher/1983-10_cp-38.pdf",
+   "note": "1500 fpm twin, 310 fpm single engine at 2950 lb; 1900 fpm at 2220 lb; SE ceiling 6500 ft; stall 64 kt at 2950, 58 kt at 2200"
+  }
+ ],
+ "three_view_urls": [],
+ "safety": {
+  "ntsb_total": {
+   "v": 6,
+   "unit": "-",
+   "grade": "B",
+   "src": "https://aviation-safety.net/asndb/type/DEFI",
+   "note": "Lower bound. ASN wikibase type DEFI lists 9 occurrences 1997-2018 (6 USA, 3 Germany). US events with NTSB numbers: CHI97LA234, CHI05LA257, SEA06CA097, WPR10LA219, ERA17LA054, ERA18FA189. No pre-1997 events appear in ASN. NTSB CAROL could not be queried programmatically, so earlier accidents (e.g. Mike Cardinale's early landing accident mentioned in CP52) may be missing"
+  },
+  "ntsb_fatal": {
+   "v": 2,
+   "unit": "-",
+   "grade": "B",
+   "src": "https://aviation-safety.net/asndb/type/DEFI",
+   "note": "CHI05LA257 (2005, 1 fatal) and ERA18FA189 (2018, 1 fatal); no other fatal occurrences in ASN worldwide"
+  },
+  "fleet_size_for_rate": {
+   "v": 20,
+   "unit": "-",
+   "grade": "B",
+   "src": "https://www.twinandturbine.com/?p=15364",
+   "note": "T&T 2026: 'only about 30 Defiant airframes are believed to have been completed, and roughly 20 remain active'. Wikipedia: 19 FAA-registered in 2005; 176 plans sets sold (Linehan 2011); T&T says 'nearly 200'"
+  },
+  "pattern": "RECORD: The record is small and has no engine-failure or asymmetric-thrust (Vmc-type) accident. The largest group is the retractable nose gear: landings with the nose gear not down or not locked (SEA06CA097, where maintenance records showed two earlier repeats in 18 years; WPR10LA219, where the down-and-locked marks are hard to see by the pilot's ankle), a nose gear collapse (ERA17LA054), and a German gear-up landing in 2013. Fatal 1 (CHI05LA257): an aborted takeoff overran a 2160 ft turf strip. The NTSB quotes the owner's manual: the Defiant is 'a heavy wing-loading aircraft that required longer runways than typical general-aviation twin engine airplanes'. Fatal 2 (ERA18FA189): erratic steep descending turn after a go-around, cause undetermined, no engine anomaly. Other: canopy opened in flight after a builder-modified latch (CHI97LA234); runway excursion (Germany 2013). Designer record: CP53 (Oct 1987) reports NG-2 nose-gear retract-link failures on three Defiants (Gray, Best, Cardinale). Cardinale's aircraft ran off the runway. RAF sent all plans owners a mandatory nose-gear change dated 15 Sep 1987 and warned that a collapse could grind through the lower cowl into the carburetor bowl and cause a fire ('Ground your Defiant until you have completed this change'). Design documents: Rutan (CP49) refused to approve constant-speed props. With centerline thrust the pilot gets no yaw cue to tell which engine failed, an unfeathered CS prop leaves inadequate single-engine climb, and the aft prop's blades/hub see vibratory bending in the wake (fatigue risk). CP47 warns the accident rate may be 'considerably higher' on CS/feathering conversions. Some builders did install CS props (CP47: first Defiant flown with CS props). N78RA's front engine had a fuel-line blockage from build debris that showed only on the fuel-pressure gauge (CP54). INFERENCE: The configuration did what it promised on engine-out control. Its residual risks are the retract nose gear (a 'gear-up' trap on an otherwise fixed-gear aircraft), long takeoff runs from 22 psf wing loading with fixed-pitch props and no flaps, and canard pitch sensitivity. Rear-engine cooling problems and rear-prop fatigue are design points to engineer out, not causes in the accident record.",
+  "notable": [
+   "2005-09-07 - Bloomfield IN - N219DF - 1 fatal - runway overrun on aborted takeoff from 2160 ft turf strip into corn; inadequate preflight planning; owner's manual describes heavy wing loading needing longer runways - NTSB CHI05LA257 - https://aviation-safety.net/wikibase/44346",
+   "2018-07-12 - Plainville CT - N17DR - 1 fatal - loss of control after go-around, steep erratic turns >60 deg bank, reasons undetermined; no engine anomaly - NTSB ERA18FA189 - https://aviation-safety.net/wikibase/213182",
+   "1997-08-02 - Alma MI - N20SR - 0 fatal (3 aboard) - canopy opened at 500 ft AGL; pilot had substituted his own latch design; forced landing - NTSB CHI97LA234 - https://aviation-safety.net/wikibase/133502",
+   "2006-05-05 - Coeur d'Alene ID - N726RD - 0 fatal - landed with nose gear up (3rd time in airframe history) - NTSB SEA06CA097 - https://aviation-safety.net/wikibase/292373",
+   "2010-04-28 - Phoenix Deer Valley AZ - N23TR - 0 fatal - nose gear not positively locked; indicator hard to see - NTSB WPR10LA219 - https://aviation-safety.net/wikibase/288553",
+   "1987 (designer record, not NTSB) - NG-2 nose-gear retract link failures on three Defiants; mandatory change drawing 15 Sep 1987 - http://www.cozybuilders.org/Canard_Pusher/1987-10_cp-53.pdf",
+   "2016-11-16 - Morristown NJ - N770JL (O-360) - 0 fatal - nose gear collapse on landing - NTSB ERA17LA054 - https://aviation-safety.net/wikibase/191414"
+  ]
+ },
+ "why_died_detail": "Rutan positioned N78RA as 'merely a proof-of-concept prototype for aerodynamic research' with 'no plans to market' (CP17, 1978). RAF announced a type-certified 5-seat derivative in 1979 (CP20), but certification financing never came (Wikipedia; Skymaster article: certification cost 'scared off all the prospective investors'). The homebuilt plans came out in 1984. On 13 July 1985 RAF stopped marketing all homebuilt plans to cut overhead in a 'declining market place' and kept only builder support (CP45). That ended Defiant plans sales after roughly 176-200 sets. The engine installation plans were still unfinished in Jan 1986 (CP47), and Brock made only 50 sets of prefab metal parts (CP47). The aircraft is a big build ('two Long-EZs', 2000+ hr per RAF; one builder reports 7500-8000 hr, T&T). Only about 30 were completed. The record does not point to a safety-driven demise: the type died of business choices and build burden. A revival would need complete engine-installation documentation, modern prefab parts, a robust nose-gear indication/lock or fixed nose gear, and possibly a folding canard for hangarage (one builder's mod, T&T).",
+ "rights_hints": "Designed by Burt Rutan at Rutan Aircraft Factory (RAF). RAF stopped selling plans on 13 July 1985 but committed to continued builder support (CP45). Plane & Pilot (2010): '(No plans available.)'. RAF published the Canard Pusher newsletter into the 2000s (archive through CP109, 2002, at http://www.cozybuilders.org/Canard_Pusher/). We found nothing on who holds the Defiant plans copyright today or whether Rutan would license it. The prototype N78RA belongs to the Hiller Aviation Museum (https://www.hiller.org/defiant-40/). Rutan insisted #40 was 'just a proof-of-concept aircraft and not a prototype' (T&T 2026).",
+ "gaps": [
+  "Canard span, area, chord and airfoil (only qualitative CP statements)",
+  "Wing root/tip chord, t/c, exact Eppler designation, LE sweep (23 deg is an inference)",
+  "Winglet height/area; ventral rudder area",
+  "Fuselage length/width/height from a primary source (22.8 ft length is uncited Wikipedia)",
+  "Cowl/inlet geometry for front and rear engines",
+  "Prop diameter for the plans-built version (69 in is prototype N78RA)",
+  "No three-view drawing found online (Flight International 1978 PDF archive link is dead; Wayback Machine offline)",
+  "NTSB CAROL not queried successfully; pre-1997 NTSB events possibly missing from ASN",
+  "Current rights holder / Rutan's present stance on plans"
+ ]
+}

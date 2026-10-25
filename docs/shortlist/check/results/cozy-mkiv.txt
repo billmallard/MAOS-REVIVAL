@@ -1,0 +1,10 @@
+## Cozy MKIV (CAFE N494CZ, IO-360 180 hp)  (results at drag factor 1.36, own published points)
+Reference condition {'alt_ft': 854, 'hp': 174, 'W': 1669}: 184 KTAS, CD0 0.0205, D/q par 2.08 ft2, ind 0.10 ft2, eta 0.788, L/D 6.9
+  pub 182.3 KTAS @ 854 ft, 174 hp (R) -> ours 205 KTAS (+12.6%, k_match 1.39), power for pub speed 125 hp, 9.3 gph vs pub 12.9 gph
+  pub 177.4 KTAS @ 5880 ft, 143 hp (R) -> ours 199 KTAS (+11.9%, k_match 1.36), power for pub speed 106 hp, 8.0 gph vs pub 10.7 gph
+  pub 176.7 KTAS @ 8021 ft, 131 hp (R) -> ours 196 KTAS (+10.8%, k_match 1.32), power for pub speed 101 hp, 7.6 gph vs pub 10.0 gph
+  pub 169.5 KTAS @ 12032 ft, 112 hp (R) -> ours 190 KTAS (+12.3%, k_match 1.36), power for pub speed 85 hp, 6.4 gph vs pub 8.2 gph
+Orig engine 131 hp @ 8000 ft: 175 KTAS, range 829 nm, payload@1000 cannot/cannot
+AM20T swap delta installed mass +63 lb
+  AM-low: 195 hp @ 8000 ft -> 202 KTAS, UL 808, range 645 nm, payload@1000 cannot/cannot; [opt k 1.29: 206 KTAS, cannot] eco 172 KTAS payload cannot/cannot
+  AM-high: 195 hp @ 16000 ft -> 217 KTAS, UL 808, range 668 nm, payload@1000 cannot/cannot; [opt k 1.29: 221 KTAS, cannot] eco 184 KTAS payload cannot/cannot

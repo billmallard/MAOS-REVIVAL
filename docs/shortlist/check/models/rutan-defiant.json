@@ -1,0 +1,179 @@
+{
+ "id": "rutan-defiant",
+ "name": "Rutan Defiant (Model 40, 2x O-320 160 hp)",
+ "assumptions": [
+  "Wing span 31.4 ft, area 133 ft2 (F, Canard Pusher #38, plans-built version); LE sweep 23 deg (E, inferred). Chords not published: root 6.0 ft, tip 2.5 ft (E) close the area. Eppler-type section, 13% t/c assumed (E).",
+  "Canard not published: 20 ft2 (15% of wing, Long-EZ-like ratio), span 13 ft (E). Winglets 2 x 8 ft2, 4.5 ft high (E).",
+  "Fuselage 22.8 ft (Wikipedia, uncited; E), width 4.1 ft (46 in cabin), height 4.3 ft (E). Cowls at both ends.",
+  "Laminar run x_tr: wing and canard 0.30 (moldless glass, Rutan finish), winglets 0.20, fuselage 0.03 (front prop slipstream).",
+  "Fixed mains with pants plus retracted nose: D/q 0.40 ft2 (E). Two updraft cooling installations at factor 1.0 each (Raymer formula is per hp, so it already scales).",
+  "Canard carries 18% of the lift (E, Long-EZ class trim). Two 69 in fixed-pitch props, rear one in the fuselage wake: installation 0.97 (E).",
+  "Published-point weight unstated: 2,800 lb assumed (E).",
+  "Original installed engine mass 616 lb = typical published dry weight x 1.15 for mount, baffles, exhaust and oil cooler (E; per-variant check owed by MANUFACTURING)."
+ ],
+ "Sref": 133.0,
+ "nprops": 2,
+ "n_engines": 2,
+ "am_engine": {
+  "model": "AM15T",
+  "hp": 160,
+  "dry_lb": 215
+ },
+ "fuselage": {
+  "length": 22.8,
+  "width": 4.1,
+  "height": 4.3,
+  "profile": "pushpull"
+ },
+ "surfaces": [
+  {
+   "name": "Wing",
+   "span": 31.4,
+   "croot": 6.0,
+   "ctip": 2.5,
+   "tc_root": 0.13,
+   "tc_tip": 0.12,
+   "sweep": 23,
+   "x": 11.0,
+   "z": -0.9
+  },
+  {
+   "name": "Canard",
+   "span": 13.0,
+   "croot": 1.54,
+   "ctip": 1.54,
+   "tc_root": 0.13,
+   "x": 2.0,
+   "z": 0.3
+  },
+  {
+   "name": "Winglets",
+   "span": 4.5,
+   "croot": 2.4,
+   "ctip": 1.2,
+   "tc_root": 0.1,
+   "vertical": true,
+   "y": 15.4,
+   "x": 17.5,
+   "z": -0.9,
+   "sweep": 30
+  }
+ ],
+ "components": [
+  {
+   "name": "Wing",
+   "kind": "surface",
+   "lref": 4.4,
+   "tc": 0.13,
+   "xc": 0.3,
+   "sweep_tc": 20,
+   "xtr": 0.3,
+   "Q": 1.0
+  },
+  {
+   "name": "Canard",
+   "kind": "surface",
+   "lref": 1.54,
+   "tc": 0.13,
+   "xc": 0.3,
+   "xtr": 0.3,
+   "Q": 1.0
+  },
+  {
+   "name": "Winglets",
+   "kind": "surface",
+   "lref": 1.8,
+   "tc": 0.1,
+   "xc": 0.3,
+   "sweep_tc": 25,
+   "xtr": 0.2,
+   "Q": 1.05
+  },
+  {
+   "name": "Fuselage",
+   "kind": "body",
+   "lref": 22.8,
+   "dmax": 4.2,
+   "xtr": 0.03,
+   "Q": 1.0
+  }
+ ],
+ "fixed_Dq": [
+  [
+   "fixed mains, faired; nose retracted",
+   0.4
+  ]
+ ],
+ "cooling_factor": 1.0,
+ "excrescence_frac": 0.05,
+ "lifting": [
+  {
+   "S": 113.0,
+   "AR": 8.7,
+   "share": 0.82
+  },
+  {
+   "S": 20.0,
+   "AR": 8.45,
+   "share": 0.18
+  }
+ ],
+ "prop": {
+  "diameter_ft": 5.75,
+  "install": 0.97
+ },
+ "engine": {
+  "hp": 320,
+  "bsfc": 0.45,
+  "crit_alt_ft": 0
+ },
+ "orig_installed_lb": 616,
+ "weights": {
+  "mtow": 2950,
+  "empty": 1600
+ },
+ "fuel_usable_gal": 115,
+ "fuel_density": 6.0,
+ "published": [
+  {
+   "ktas": 184,
+   "alt_ft": 8000,
+   "hp": 240,
+   "gph": 17.8,
+   "weight_lb": 2800,
+   "grade": "F",
+   "note": "RAF plans spec, CP38, 75%"
+  },
+  {
+   "ktas": 168,
+   "alt_ft": 9000,
+   "hp": 176,
+   "gph": 13.9,
+   "weight_lb": 2800,
+   "grade": "F",
+   "note": "RAF brochure economy, 55%"
+  },
+  {
+   "ktas": 175,
+   "alt_ft": 8000,
+   "hp": 240,
+   "gph": 18,
+   "weight_lb": 2800,
+   "grade": "P",
+   "note": "pilot report in N78RA, full throttle (~75%), density alt ~8,000 ft"
+  },
+  {
+   "ktas": 168,
+   "alt_ft": 6500,
+   "hp": 208,
+   "gph": 15,
+   "weight_lb": 2800,
+   "grade": "P",
+   "note": "same pilot report, 65%"
+  }
+ ],
+ "orig_cruise": {
+  "alt_ft": 9000,
+  "hp": 200
+ }
+}

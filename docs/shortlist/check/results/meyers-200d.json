@@ -1,0 +1,164 @@
+{
+ "id": "meyers-200d",
+ "name": "Meyers / Aero Commander 200D (IO-520-A 285 hp)",
+ "wet": {
+  "Fuselage": {
+   "theo_ft2": 214.592,
+   "wet_ft2": 199.487
+  },
+  "Wing": {
+   "theo_ft2": 333.092,
+   "wet_ft2": 298.377
+  },
+  "HTail": {
+   "theo_ft2": 61.4523,
+   "wet_ft2": 54.106
+  },
+  "Fin": {
+   "theo_ft2": 30.2587,
+   "wet_ft2": 25.0268
+  }
+ },
+ "calibration": [
+  {
+   "pub": {
+    "ktas": 178,
+    "alt_ft": 8500,
+    "hp": 191,
+    "gph": 14,
+    "weight_lb": 2650,
+    "grade": "P",
+    "note": "AOPA Pilot Dec 1991 (N31CC, 200D): 21.5 in full throttle / 2,400 rpm, about 67%, two aboard; weight E"
+   },
+   "W": 2650,
+   "our_ktas": 201.95620978515603,
+   "d_ktas_pct": 13.458544823121365,
+   "eta": 0.8355154748558346,
+   "LD": 10.291438576323381,
+   "Dq_par": 2.169480682795071,
+   "Dq_ind": 0.24005020717239914,
+   "our_hp_at_pub_ktas": 139.52232027840512,
+   "our_gph_at_pub_ktas": 10.464174020880384,
+   "k_match": 1.408694880344001
+  }
+ ],
+ "assumptions": [
+  "Wing span 30.5 ft, area 161.5 ft2 (F, Jane's 1967-68; Davisson 1975). Chords not published: taper 0.5 assumed, giving root 7.06 ft and tip 3.53 ft (E, ours). NACA 23015 root, 4412 tip (Lednicer): t/c 15% / 12%.",
+  "Fuselage length 24.33 ft (F); max width 3.8 ft and height 4.2 ft (E, ours; no cabin dimensions published). Davisson notes skin waviness over the tube cage, protruding screws and a belly air dump: Q 1.05 on the fuselage (E).",
+  "Horizontal tail 30 ft2 (10.5 ft x 2.85 ft) and fin 14 ft2: E, ours, by volume coefficient (Vh about 0.55, Vv 0.04, tail arm 13 ft). No tail dimensions are published.",
+  "Laminar run x_tr: wing 0.15 (NACA 230/44-series on a riveted metal wing, flush riveted on the 200D), tails 0.10, fuselage 0.05.",
+  "Retractable gear with doors: no fixed gear drag.",
+  "Air-cooled IO-520 with conventional nose inlets: cooling factor 1.0.",
+  "Original installed engine mass 480 lb = IO-520 dry about 415 lb x 1.15 (E, ours).",
+  "Published point: AOPA Pilot Dec 1991, N31CC, 178 KTAS at 8,500 ft, full throttle 21.5 in / 2,400 rpm, about 67% (191 hp), 14 gph, two aboard; weight not stated, 2,650 lb assumed (E: fleet-typical 2,100 lb empty + two aboard + most of the fuel)."
+ ],
+ "k_own": 1.408694880344001,
+ "k_fleet": 1.29,
+ "k_alt": 1.29,
+ "k_basis": "own published points",
+ "drag_factor": 1.408694880344001,
+ "breakdown": {
+  "cond": {
+   "alt_ft": 8500,
+   "hp": 191,
+   "W": 2650
+  },
+  "ktas": 177.99999999995268,
+  "items": [
+   [
+    "Wing",
+    1.0753475845607803,
+    "Swet 298.4 ft2, Re 8.5M, Cf 0.00260, FF 1.386, Q 1.00, x_tr 0.15"
+   ],
+   [
+    "HTail",
+    0.22601752425483201,
+    "Swet 54.1 ft2, Re 4.4M, Cf 0.00309, FF 1.287, Q 1.05, x_tr 0.10"
+   ],
+   [
+    "Fin",
+    0.09846227138143486,
+    "Swet 25.0 ft2, Re 5.3M, Cf 0.00299, FF 1.252, Q 1.05, x_tr 0.10"
+   ],
+   [
+    "Fuselage",
+    0.5968145546470001,
+    "Swet 199.5 ft2, Re 37.7M, Cf 0.00228, FF 1.249, Q 1.05, x_tr 0.05"
+   ],
+   [
+    "cooling",
+    0.09599906914554977,
+    "Raymer 12.39 x 1.00"
+   ],
+   [
+    "leakage+protuberance",
+    0.10463205019947985,
+    "5% of the rest"
+   ],
+   [
+    "calibration factor",
+    0.8980142479649021,
+    "x1.409 on the build-up (calibration; basis stated above)"
+   ]
+  ],
+  "Dq_par": 3.095287302153979,
+  "Dq_ind": 0.3977873076225663,
+  "CD0": 0.019165865648012256,
+  "eta": 0.8293125434918733,
+  "LD": 9.13850473032249
+ },
+ "orig": {
+  "alt_ft": 8000,
+  "hp": 185,
+  "ktas": 174.351496296206,
+  "range_nm_noreserve_fullfuel_mtow": 857.2513295886353,
+  "hours": 4.916799383999837,
+  "climb_allowance_lb": 24.545454545454547,
+  "payload_1000_0": null,
+  "fuel_1000_0_lb": 501.14590383711027,
+  "payload_1000_45": null,
+  "fuel_1000_45_lb": 562.043962182835
+ },
+ "am_model": "AM20T",
+ "am_dmass_lb": -88.75,
+ "am": {
+  "AM-low": {
+   "alt_ft": 8000.0,
+   "hp": 195.0,
+   "ktas": 178.05455367781306,
+   "empty": 1940.0,
+   "useful": 1060.0,
+   "useful_opt": 1148.75,
+   "range_nm_fullfuel": 830.6515833880263,
+   "gph": 14.625,
+   "payload_1000_0": null,
+   "fuel_1000_0_lb": 516.1960828161273,
+   "payload_1000_45": null,
+   "fuel_1000_45_lb": 580.4167266036004,
+   "eco_payload_1000_0": 648.0689803452412,
+   "eco_payload_1000_45": null,
+   "eco_ktas": 147.849831743252,
+   "opt_ktas": 183.97901577959394,
+   "opt_payload_1000_45": null
+  },
+  "AM-high": {
+   "alt_ft": 16000.0,
+   "hp": 195.0,
+   "ktas": 189.49836777847773,
+   "empty": 1940.0,
+   "useful": 1060.0,
+   "useful_opt": 1148.75,
+   "range_nm_fullfuel": 863.1449778319635,
+   "gph": 14.625,
+   "payload_1000_0": null,
+   "fuel_1000_0_lb": 500.8036412293666,
+   "payload_1000_45": null,
+   "fuel_1000_45_lb": 564.7816542640695,
+   "eco_payload_1000_0": 651.8357493869012,
+   "eco_payload_1000_45": null,
+   "eco_ktas": 155.14715238764896,
+   "opt_ktas": 195.91452373407307,
+   "opt_payload_1000_45": null
+  }
+ }
+}

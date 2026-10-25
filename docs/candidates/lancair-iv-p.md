@@ -1,6 +1,6 @@
 # Lancair IV-P
 
-Stage 1 stub, generated from `docs/longlist/candidates.json` by `docs/longlist/make_stubs.py`. Published numbers only; nothing here is our own performance check yet.
+Stage 1 stub (extended in stage 3 below), generated from `docs/longlist/candidates.json` by `docs/longlist/make_stubs.py`. Published numbers only; nothing here is our own performance check yet.
 
 ## Identity
 
@@ -74,8 +74,118 @@ Neibauer -> Bartels (2003) -> Huffstutlers, Lancair International (2017) -> JetE
 
 NTSB narrative WPR12FA180: 26% of Lancairs in accidents, 19% fatal (model and period not stated); Wanttaja 1998-2007: 32 IV accidents, ~40% fatal.
 
-## Not yet done
+<!-- stage3:start -->
 
-- Independent performance check (drag build-up, propeller, Breguet): stage 3, shortlist only.
-- Installed-weight and cooling comparison against the Aeromomentum engine.
-- What a modern rebuild changes (MANUFACTURING, stage 4).
+## Stage 3: shortlist rank 4 of 6 (AER-3783)
+
+Our own check, from published geometry and weights, calibrated against published flight data. Method, calibration and the Aeromomentum assumptions are in [docs/SHORTLIST.md](../SHORTLIST.md). Rights are research, not legal advice. Nobody has been contacted.
+
+### Bill's call
+
+Bill, 2026-10-24: kept. He believes the assets went to a new company in Austin, Texas, within about two years, which is re-tooling to support existing customers (Elon verifies, AER-3805). He knows the Oregon shop that re-wings and remanufactures Lancairs: "quite impressive actually, but it's not cheap." Elon's follow-up (PR #6) found no Austin holder in the public record; it still shows JetEXE, Sacramento.
+
+### Verdict
+
+**Rank 4.** It has the speed: 200-211 KTAS on our check at an assumed 195 hp, and about 235 aircraft on the register. It ranks third for three reasons: the worst fatal record in the survey, with its stall-spin half tied to a 36 lb/ft2 wing loading; a cut to about 55% of its design power on an AM20T, which costs climb far more than cruise; and an open chain of title. The RDD LX7 re-wing (below) is the evidence that the wing problem can be engineered out, at a price.
+
+### Idea ledger (what a new airplane should keep)
+
+- Pressurisation and FL240 cruise in a kit, the fastest piston four-seater of its era (published 287 KTAS at 24,000 ft).
+- **The re-wing, as an idea and a data point.** RDD Enterprises (Redmond, Oregon) rebuilds flying IV-Ps as the LX7: a new one-piece dual-spar carbon wing with a laminar section and double-slotted flaps, a new tail, 180 gal of fuel, a BRS parachute and de-ice, on a TSIO-550-E or a PT6A. RDD's figures (F): span 34 ft (stock about 30 ft), area unchanged at 98 ft2 (AvWeb), so aspect ratio about 12 instead of 9 (E); Vso 63 KIAS piston and 58 turbine; MTOW 3,750 lb piston (stock 3,550 lb), empty 2,350 lb (stock 2,200 lb factory); 260 KTAS at FL250 on 24 gph (stock published 287 KTAS at FL240). A broker's pilot report gives 252 KTAS on 17.5 gph at FL210 and calls the stall extremely docile (P). Prices: $821,000 piston and $980,000 turbine complete (AvWeb, 2019). **What it says:** about 25 kt and 150 lb of empty weight bought a docile, slower stall and much more fuel on the same airframe. Our check (E): 63 kt at 3,750 lb on 98 ft2 implies a landing CLmax of about 2.85, at the top end for double-slotted flaps, so the claim should be measured before it is relied on. No independent flight test was found. Sources: https://www.avweb.com/aviation-news/lx7-a-thoroughly-reworked-lancair-iv-p/ ; http://www.lx7aircraft.com/lx7-piston.html ; https://txtopaviation.com/flying-the-rdd-lx7/
+- Lesson: on an airframe this fast, the wing that makes the speed is also what makes the stall unforgiving; the LX7 shows the trade.
+
+### Published, measured and our check, side by side
+
+Read across a row only within one column's basis. The three targets are separate floors.
+
+| | As published | Measured or reported | Our check, original engine |
+|---|---|---|---|
+| Useful load | 1,350 lb (pass) | not found | 1,350 lb (the empty weight the model uses: 2,200 lb) |
+| Range | 1,347 nm (pass; 65%, 24,000 ft, 45 min reserve (1,550 sm)) | 1,779 nm (pass; still air, no reserve, from fuel and measured flow at 284 KTAS) | 1,058 nm, still air, no reserve, full fuel from MTOW, at 262 hp and 20,000 ft |
+| Cruise | 278 KTAS at 23,000 ft (pass+) | 284 KTAS at 24,000 ft (pass+) | 248 KTAS at 262 hp and 20,000 ft |
+| Screen | pass | partial: range pass, speed pass | see the verdict |
+
+### The deep-dive axes: storage, home-shop construction, safety, ride
+
+**Aspect ratio 9.3**: the high-aspect-ratio, high-wing-loading end of the planform study (AER-3807, `docs/studies/planform/`).
+
+- **Storage.** 30.2 ft span (the LX7 re-wing goes to 34 ft): fits a 40 ft T-hangar door. No folding.
+- **Construction with home-shop tools.** A pressurised molded composite airframe. The pressure vessel and the 36 lb/ft2 wing are not home-shop parts; molds are unlocated, so any revival re-tools. Small parts and fittings suit a home mill; the airframe does not.
+- **Safety.** The stall is the issue: CAFE measured 66 KIAS; owners report 82-90 kt in practice; Kitplanes called the stall bad. The record's stall-spin half follows from that. The LX7's re-wing claims a docile stall at 63 KIAS, unmeasured. Best L/D about 16.6 at 137 KTAS: good glide, at a high speed.
+- **Ride comfort.** Gust dn 1.09: the smoothest of the shortlist, because of its high wing loading. That is the same number that makes the stall fast.
+
+### Independent performance check
+
+Model: `docs/shortlist/check/models/lancair-iv-p.json`; result: `docs/shortlist/check/results/lancair-iv-p.json`. Method in [SHORTLIST.md](../SHORTLIST.md#method).
+
+**Wetted areas (OpenVSP CompGeom, parametric model from published dimensions):** Fuselage 228 ft2, Wing 176 ft2, HTail 27 ft2, Fin 18 ft2; total 449 ft2.
+
+**Model assumptions** (grade E unless a source is named):
+
+- Wing span 30.2 ft, area 98 ft2 (F, factory); RXM5-217 root / NACA 64-212 tip (Lednicer). Taper ratio 0.5 assumed (E): root 4.33 ft, tip 2.16 ft.
+- Fuselage 25 ft long (F); max width 4.1 ft (46 in cabin + walls) and height 4.4 ft: E, ours.
+- Tails sized by volume coefficient (E, Raymer table 6.4 GA single): horizontal Vh 0.65 -> 15.9 ft2, vertical Vv 0.045 -> 10.2 ft2, arm 13 ft.
+- Laminar run x_tr: wing 0.25, tails 0.20, fuselage 0.05.
+- Retractable gear, doors closed: no gear term; leakage covered by the 5% excrescence line.
+- Turbo TSIO-550 flat-rated to 25,000 ft (E). Cooling factor 1.3 for a twin-turbo intercooled installation (E).
+- Published-point weight unstated: 3,200 lb assumed (E).
+- Original installed engine mass 633 lb = typical published dry weight x 1.15 for mount, baffles, exhaust and oil cooler (E; per-variant check owed by MANUFACTURING).
+
+**Published points against the raw build-up** (drag factor 1.00):
+
+| Published KTAS | Density alt, ft | hp | gph | Grade | Our KTAS (raw build-up) | Difference | Drag factor to match | Our hp for the published speed | Conditions |
+|---|---|---|---|---|---|---|---|---|---|
+| 278 | 23,000 | 262 | 18 | P | 281 | +1% | 1.03 | 255 | AOPA Pilot Jun 1994, 75%, lean of peak |
+
+**Drag factor used: 1.29** (fleet calibration (own points read cleaner than the fleet); fleet calibration 1.29, range 1.16-1.36). Optimistic bound: 1.03.
+
+**Drag build-up at 23,000 ft, 262 hp, 3,200 lb, with the factor applied:** 255 KTAS, CD0 0.0228 on S = 98.0 ft2, propeller efficiency 0.83, L/D 11.5.
+
+| Item | D/q, ft2 | Basis |
+|---|---|---|
+| Wing | 0.654 | Swet 176.0 ft2, Re 5.1M, Cf 0.00254, FF 1.462, Q 1.00, x_tr 0.25 |
+| HTail | 0.115 | Swet 26.9 ft2, Re 2.9M, Cf 0.00301, FF 1.354, Q 1.05, x_tr 0.20 |
+| Fin | 0.071 | Swet 17.9 ft2, Re 3.9M, Cf 0.00283, FF 1.332, Q 1.05, x_tr 0.20 |
+| Fuselage | 0.653 | Swet 228.0 ft2, Re 37.7M, Cf 0.00226, FF 1.265, Q 1.00, x_tr 0.05 |
+| cooling | 0.154 | Raymer 12.39 x 1.30 |
+| leakage+protuberance | 0.082 | 5% of the rest |
+| calibration factor | 0.501 | x1.290 on the build-up (calibration; basis stated above) |
+| induced | 0.414 | Oswald (Raymer 12.48), lift split stated above |
+
+**Original engine, our numbers:** 262 hp at 20,000 ft gives 248 KTAS; still-air range on full usable fuel from MTOW 1,058 nm (climb allowance 50 lb); payload at 1,000 nm 855 lb with no reserve, cannot lb with 45 min.
+
+**On the Aeromomentum line (AM20T), our numbers.** Installed-mass change -242 lb. The headline useful load takes no credit for a lighter engine (CG ballast assumed to eat it); the number in brackets takes the full saving and the optimistic drag factor.
+
+| Candidate | Engine | Cruise alt | KTAS at continuous power (optimistic) | Useful load, lb (optimistic) | Range, nm, full fuel, no reserve | Payload @ 1,000 nm, no reserve, lb | Payload @ 1,000 nm, 45 min, lb (optimistic) | Economy (65%) KTAS: payload no res / 45 min |
+|---|---|---|---|---|---|---|---|---|
+| AM-low (critical alt 8,000 ft, assumed) | AM20T | 8k | 200 (218) | 1,350 (1,592) | 1,136 | 881 | cannot (1,094) | 161: 962 / 920 |
+| AM-high (critical alt 16,000 ft, assumed) | AM20T | 16k | 211 (231) | 1,350 (1,592) | 1,155 | 888 | 824 (1,100) | 164: 953 / 911 |
+
+### Engine fit with the Aeromomentum line
+
+- **Power.** The AM20T (260 hp take-off, 195 hp assumed continuous) replaces a 350 hp TSIO-550 that cruises at 262 hp. Our check gives 200 KTAS at 8,000 ft (low case) and 211 KTAS at 16,000 ft (high case), against 255 KTAS at FL230 on the original engine at our fleet calibration. Without a real critical altitude for the AM20T, no FL200+ credit is taken.
+- **Mass and CG.** The installed mass falls by about 242 lb (E). That weight is in the nose of a tractor with a 36 lb/ft2 wing loading, so it has to come back as ballast or as a longer engine mount. The headline useful load (1,350 lb) takes no credit for the saving; the 1,592 lb optimistic figure takes all of it. Neither has been checked against a real weight-and-balance.
+- **Climb.** At 3,550 lb, about 195 hp continuous is roughly 55% of the power the airframe was designed around. Climb rate and high-density-altitude take-off will fall by much more than cruise speed. That is not computed here, but a revival has to quantify it.
+- **Cooling and installation.** A liquid-cooled engine and radiator replace an intercooled twin-turbo air-cooled installation that already ran hot in climb (Kitplanes 2019). The cowl is built around a flat six; a new nose is a stage 4 item.
+
+### Rights and provenance (stage 2)
+
+Open question: chain of title (Elon, `docs/rights/lancair-iv-p.md`, PR #3, updated 2026-10-24). In February 2017 Lancair International Inc. sold all out-of-production kit lines, including the IV and IV-P, with "all assets, intellectual designs and ongoing support business" (company announcement, https://lancair.com/lancair-international-inc-announcing-sale-production-assets-lancair-brand-kit-components-support-assets-new-ownership-based-uvalde-texas/) to Lancair International LLC (Uvalde, TX). In October 2023 JetEXE Aviation (Sacramento) bought the Lancair kit business from the Uvalde owners. **No public source lists what that purchase covered** (an earlier version of this dossier repeated a misquotation saying it included molds and IP; it did not, and is withdrawn). The Texas LLC is still active, so whether JetEXE or the LLC holds the IV-P design is open. The molds have no known location since Uvalde in 2017. Owner-forum posts (low grade) report a legal dispute between the parties and call Lancair "effectively defunct" as of April 2026 (https://www.lancairlive.com/viewtopic.php?p=799); no federal case was found, and Texas state courts were not searched. The company trades as Lancair Aerospace, says the IV-P kit is out of production, and offers parts and service bulletins. "LANCAIR" is a live mark held jointly by JetEXE and Akyna Medical Management. Lancair has licensed a design before (the Calima T-90). So it remains a licence-or-purchase candidate, but **chain of title comes before price**, and an attorney is needed for it. Approaching anyone is Bill's call.
+
+### Safety record
+
+Record (NTSB bulk databases, our own count of IV-family model strings, 1995-2026): 88 accidents, 43 fatal (49%), 79 killed, on about 360 completed aircraft. Fatal accidents fell from 19 in 2008-2016 to 3 in 2017-2026, which is consistent with the owners' group training push. The NTSB causes in the fatal accidents fall into two big groups. About 13 are low-altitude loss of airspeed or stall-spin on take-off, climb-out, go-around or manoeuvring. About 13 more begin with an engine power loss, often followed by a stall. Weather with structural overload accounts for about 7. **Inference, labelled as such:** the stall-spin group is consistent with a high wing loading and a small wing with a 66 KIAS stall (CAFE). Lower power does not change that, and lower power makes a go-around weaker.
+
+### Why it died, and whether a revival fixes it
+
+Kit production ended in 2012, and the company sold its older lines in 2016-17 to concentrate on newer designs. That was not a market failure; about 360 were built. A revival therefore does not fix a cause of death. What it would have to fix is the accident pattern, through the wing (the 2019 RDD LX7 rework already offers a new airfoil with double-slotted flaps on the same area), training, and the engine-failure chain.
+
+### Not yet done
+
+- Chain of title, and Bill's Austin company (Elon, AER-3805; contact is Bill's call).
+- If it goes forward: a SAFETY review of the stall-spin pattern, asked on AER-3785 first.
+- A climb and take-off check at 195 hp, and a weight-and-balance with the lighter engine (AERO).
+- The LX7 wing as a modernisation path: an independent stall measurement would settle the 63 kt claim.
+- What a modern rebuild changes in mass, cost and build hours (MANUFACTURING, stage 4, AER-3784).
+
+<!-- stage3:end -->

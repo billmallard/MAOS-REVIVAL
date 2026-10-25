@@ -1,0 +1,13 @@
+## Cessna P210N (TSIO-520-P, 1980 POH)  (results at drag factor 1.29, fleet calibration (own points read cleaner than the fleet))
+Reference condition {'alt_ft': 10000, 'hp': 222, 'W': 4000}: 171 KTAS, CD0 0.0223, D/q par 3.90 ft2, ind 0.86 ft2, eta 0.822, L/D 11.5
+  pub 170 KTAS @ 10000 ft, 222 hp (P) -> ours 189 KTAS (+11.0%, k_match 1.31), power for pub speed 176 hp, 14.7 gph vs pub 18.0 gph
+  pub 152 KTAS @ 10000 ft, 177 hp (P) -> ours 170 KTAS (+12.0%, k_match 1.32), power for pub speed 143 hp, 11.9 gph vs pub 13.7 gph
+  pub 187 KTAS @ 20000 ft, 228 hp (P) -> ours 206 KTAS (+10.0%, k_match 1.27), power for pub speed 188 hp, 15.6 gph vs pub 19.2 gph
+  pub 176 KTAS @ 20000 ft, 202 hp (P) -> ours 194 KTAS (+10.3%, k_match 1.27), power for pub speed 169 hp, 14.1 gph vs pub 16.3 gph
+  pub 157 KTAS @ 20000 ft, 171 hp (P) -> ours 177 KTAS (+13.0%, k_match 1.32), power for pub speed 143 hp, 11.9 gph vs pub 13.5 gph
+  pub 193 KTAS @ 23000 ft, 231 hp (P) -> ours 212 KTAS (+9.7%, k_match 1.26), power for pub speed 192 hp, 16.0 gph vs pub 19.2 gph
+  pub 171 KTAS @ 23000 ft, 188 hp (P) -> ours 191 KTAS (+11.4%, k_match 1.28), power for pub speed 159 hp, 13.2 gph vs pub 14.8 gph
+Orig engine 202 hp @ 20000 ft: 179 KTAS, range 829 nm, payload@1000 cannot/cannot
+AM20T swap delta installed mass -161 lb
+  AM-low: 195 hp @ 8000 ft -> 161 KTAS, UL 1658, range 916 nm, payload@1000 cannot/cannot; [opt k 1.29: 162 KTAS, cannot] eco 130 KTAS payload 1,183/1,142
+  AM-high: 195 hp @ 16000 ft -> 171 KTAS, UL 1658, range 931 nm, payload@1000 cannot/cannot; [opt k 1.29: 171 KTAS, cannot] eco 132 KTAS payload 1,173/1,132

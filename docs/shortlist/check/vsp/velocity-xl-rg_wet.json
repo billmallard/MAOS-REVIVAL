@@ -1,0 +1,22 @@
+{
+ "Fuselage": {
+  "theo_ft2": 190.843,
+  "wet_ft2": 181.387
+ },
+ "Wing": {
+  "theo_ft2": 220.813,
+  "wet_ft2": 129.557
+ },
+ "Strake": {
+  "theo_ft2": 147.135,
+  "wet_ft2": 102.422
+ },
+ "Canard": {
+  "theo_ft2": 47.7718,
+  "wet_ft2": 43.3472
+ },
+ "Winglets": {
+  "theo_ft2": 25.378,
+  "wet_ft2": 25.1224
+ }
+}

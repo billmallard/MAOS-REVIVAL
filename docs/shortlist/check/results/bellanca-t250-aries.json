@@ -1,0 +1,185 @@
+{
+ "id": "bellanca-t250-aries",
+ "name": "Bellanca (Anderson Greenwood) T-250 Aries (Model 51, O-540 250 hp)",
+ "wet": {
+  "Fuselage": {
+   "theo_ft2": 242.321,
+   "wet_ft2": 234.834
+  },
+  "Wing": {
+   "theo_ft2": 351.468,
+   "wet_ft2": 320.923
+  },
+  "HTail": {
+   "theo_ft2": 57.7463,
+   "wet_ft2": 56.9485
+  },
+  "Fin": {
+   "theo_ft2": 32.4068,
+   "wet_ft2": 25.4213
+  }
+ },
+ "calibration": [
+  {
+   "pub": {
+    "ktas": 180.7,
+    "alt_ft": 6500,
+    "hp": 182.5,
+    "gph": null,
+    "weight_lb": null,
+    "grade": "P",
+    "note": "AOPA Pilot flight check Mar 1977, prototype N51AG: 208 mph TAS, 22.5 in full throttle / 2,300 rpm, 73% by AOPA's calculation; 'partially loaded', weight not stated"
+   },
+   "W": 2835.0,
+   "our_ktas": 196.95116277517582,
+   "d_ktas_pct": 8.993449239167584,
+   "eta": 0.834890913370021,
+   "LD": 11.245528625759256,
+   "Dq_par": 2.077326066172576,
+   "Dq_ind": 0.25470516941300914,
+   "our_hp_at_pub_ktas": 147.5261945460598,
+   "our_gph_at_pub_ktas": 11.064464590954486,
+   "k_match": 1.261294721454533
+  },
+  {
+   "pub": {
+    "ktas": 188.6,
+    "alt_ft": 1000,
+    "hp": 242,
+    "gph": null,
+    "weight_lb": null,
+    "grade": "P",
+    "note": "AOPA: 217 mph TAS full throttle, 2,575 rpm, choppy air; hp E (Gagg-Ferrar at 1,000 ft)"
+   },
+   "W": 2835.0,
+   "our_ktas": 209.73890243515635,
+   "d_ktas_pct": 11.208325787463602,
+   "eta": 0.8358867098382584,
+   "LD": 9.020490100069884,
+   "Dq_par": 2.030832721020348,
+   "Dq_ind": 0.14231400868222924,
+   "our_hp_at_pub_ktas": 182.0350555553372,
+   "our_gph_at_pub_ktas": 13.652629166650291,
+   "k_match": 1.3393564904633877
+  }
+ ],
+ "assumptions": [
+  "Wing span 31.33 ft, area 170 ft2 (F, AOPA Pilot Mar 1977 spec table; Jane's 1980-81); constant chord 5.43 ft closes the area (E; Plane & Pilot describes a constant-chord wing). NACA 6-series laminar section, 12% t/c (B/F: '60-412' per Lednicer, '600412 modified' per Jane's).",
+  "Fuselage length 26.17 ft (F); max width 4.0 ft and height 4.4 ft from the 45 in cabin width and 48.5 in cabin height plus structure (E, ours). Slab-sided fuselage of flat and single-curve skins, flush riveted (Plane & Pilot): form factor not adjusted.",
+  "T-tail stabilator 28 ft2 (11 ft x 2.55 ft) and swept fin 15 ft2: E, ours, sized by volume coefficient (Vh about 0.5 for a stabilator, Vv 0.04, tail arm 14 ft). No tail dimensions are published.",
+  "Laminar run x_tr: wing 0.25 (flush-riveted metal laminar wing; less credit than a composite), tails 0.15, fuselage 0.05.",
+  "Retractable gear with sealed nose-gear doors and flush main doors: no fixed gear drag.",
+  "Air-cooled O-540 with a single inlet and no cowl flaps (AOPA 1977): cooling factor 1.0 (Raymer 12.39 as-is).",
+  "Original installed engine mass 455 lb = O-540 dry about 395 lb x 1.15 (E, ours; dry weight not taken from the research file, which did not look it up).",
+  "Published points: AOPA's 73% at 6,500 ft (full throttle 22.5 in / 2,300 rpm) and full throttle at 1,000 ft; weights not stated, so 0.9 x MTOW is used. hp: 73% of 250 by AOPA's calculation; 1,000 ft full throttle at Gagg-Ferrar lapse (E)."
+ ],
+ "k_own": 1.3003256059589603,
+ "k_fleet": 1.29,
+ "k_alt": 1.29,
+ "k_basis": "own published points",
+ "drag_factor": 1.3003256059589603,
+ "breakdown": {
+  "cond": {
+   "alt_ft": 6500,
+   "hp": 182.5,
+   "W": 2835.0
+  },
+  "ktas": 178.6544980663621,
+  "items": [
+   [
+    "Wing",
+    0.9431429716761065,
+    "Swet 320.9 ft2, Re 8.9M, Cf 0.00230, FF 1.276, Q 1.00, x_tr 0.25"
+   ],
+   [
+    "HTail",
+    0.22509275206695517,
+    "Swet 56.9 ft2, Re 4.2M, Cf 0.00297, FF 1.233, Q 1.08, x_tr 0.15"
+   ],
+   [
+    "Fin",
+    0.09270057469166049,
+    "Swet 25.4 ft2, Re 5.6M, Cf 0.00281, FF 1.236, Q 1.05, x_tr 0.15"
+   ],
+   [
+    "Fuselage",
+    0.6503303720633572,
+    "Swet 234.8 ft2, Re 42.8M, Cf 0.00224, FF 1.237, Q 1.00, x_tr 0.05"
+   ],
+   [
+    "cooling",
+    0.08844992232116111,
+    "Raymer 12.39 x 1.00"
+   ],
+   [
+    "leakage+protuberance",
+    0.09998582964096203,
+    "5% of the rest"
+   ],
+   [
+    "calibration factor",
+    0.6305944023588572,
+    "x1.300 on the build-up (calibration; basis stated above)"
+   ]
+  ],
+  "Dq_par": 2.7302968248190598,
+  "Dq_ind": 0.3761976996400618,
+  "CD0": 0.016060569557759176,
+  "eta": 0.8301033786568638,
+  "LD": 10.259656822709191
+ },
+ "orig": {
+  "alt_ft": 8000,
+  "hp": 162.5,
+  "ktas": 171.79079376499533,
+  "range_nm_noreserve_fullfuel_mtow": 1008.1607141247011,
+  "hours": 5.868537492782267,
+  "climb_allowance_lb": 25.272727272727273,
+  "payload_1000_0": 848.2449850883793,
+  "fuel_1000_0_lb": 451.75501491162055,
+  "payload_1000_45": null,
+  "fuel_1000_45_lb": 505.3978887444954
+ },
+ "am_model": "AM20T",
+ "am_dmass_lb": -63.75,
+ "am": {
+  "AM-low": {
+   "alt_ft": 8000.0,
+   "hp": 195.0,
+   "ktas": 185.13887113811177,
+   "empty": 1850.0,
+   "useful": 1300.0,
+   "useful_opt": 1363.75,
+   "range_nm_fullfuel": 905.7878946434055,
+   "gph": 14.625,
+   "payload_1000_0": null,
+   "fuel_1000_0_lb": 498.99028283270957,
+   "payload_1000_45": null,
+   "fuel_1000_45_lb": 563.4309135509202,
+   "eco_payload_1000_0": 900.7323437046946,
+   "eco_payload_1000_45": 858.950553678884,
+   "eco_ktas": 153.5652303598938,
+   "opt_ktas": 185.69169955959416,
+   "opt_payload_1000_45": null
+  },
+  "AM-high": {
+   "alt_ft": 16000.0,
+   "hp": 195.0,
+   "ktas": 197.04172791026912,
+   "empty": 1850.0,
+   "useful": 1300.0,
+   "useful_opt": 1363.75,
+   "range_nm_fullfuel": 919.4255940966065,
+   "gph": 14.625,
+   "payload_1000_0": null,
+   "fuel_1000_0_lb": 485.52905974392024,
+   "payload_1000_45": null,
+   "fuel_1000_45_lb": 549.7595118692585,
+   "eco_payload_1000_0": 902.8997587043439,
+   "eco_payload_1000_45": 861.3357057878368,
+   "eco_ktas": 161.11237903438746,
+   "opt_ktas": 197.64065557716577,
+   "opt_payload_1000_45": null
+  }
+ }
+}

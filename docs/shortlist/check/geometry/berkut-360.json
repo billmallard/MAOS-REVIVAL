@@ -1,0 +1,191 @@
+{
+ "id": "berkut-360",
+ "variant": "Berkut 360 (Experimental Aviation Inc., IO-360 205 hp) as primary; Berkut 540 (IO-540 260 hp, Renaissance Composites era, which most builders chose) noted where figures differ",
+ "config": "canard pusher",
+ "wing": {
+  "span": {
+   "v": 26.67,
+   "unit": "ft",
+   "grade": "F",
+   "src": "https://en.wikipedia.org/wiki/Berkut_360",
+   "note": "26 ft 8 in; Jane's All the World's Aircraft 1993-94 p474 as cited by Wikipedia; Aeropedia gives same for Berkut 540"
+  },
+  "area": {
+   "v": 110,
+   "unit": "ft2",
+   "grade": "E",
+   "src": "https://aeropedia.com.au/content/renaissance-composites-berkut/",
+   "note": "Unverified secondary figure (Aeropedia, Renaissance Berkut 540, origin not cited); its metric value 33.53 m2 is a conversion error (110 ft2 = 10.2 m2). Graded E for low confidence, not my estimate"
+  },
+  "root_chord": null,
+  "tip_chord": null,
+  "sweep_le_deg": null,
+  "airfoil": "Main wing Eppler 1230 mod (Long-EZ derived), canard Roncz R1145MS - UIUC Incomplete Guide to Airfoil Usage (https://m-selig.ae.illinois.edu/ads/aircraft.html) and Wikipedia",
+  "tc_root": {
+   "v": 0.174,
+   "unit": "-",
+   "grade": "E",
+   "src": "https://m-selig.ae.illinois.edu/ads/coord/e1230.dat",
+   "note": "E: my max-t/c computation from unmodified Eppler 1230 coordinates (17.4% at 29.5% c); actual 'mod' root/tip sections unknown"
+  },
+  "tc_tip": null,
+  "winglets": "yes: upper winglets with rudders; the Long-EZ lower winglet was removed; ailerons enlarged in span and chord; trailing edge straightened (Wikipedia). Winglet dimensions not found"
+ },
+ "canard_or_htail": {
+  "kind": "canard",
+  "span": null,
+  "area": null,
+  "chord": null,
+  "airfoil": "Roncz R1145MS (Wikipedia: 'more tolerant of insect and rain contamination than the GU 25-5(11)8' of early Long-EZ)",
+  "tc": {
+   "v": 0.188,
+   "unit": "-",
+   "grade": "E",
+   "src": "https://m-selig.ae.illinois.edu/ads/coord/r1145ms.dat",
+   "note": "E: my computation from UIUC R1145MS coordinates"
+  }
+ },
+ "vtail": {
+  "count": 2,
+  "area_each": null,
+  "height": null,
+  "root_chord": null,
+  "tip_chord": null,
+  "note": "Winglet rudders on main-wing tips (Long-EZ layout); no fuselage fin"
+ },
+ "fuselage": {
+  "length": {
+   "v": 18.5,
+   "unit": "ft",
+   "grade": "F",
+   "src": "https://en.wikipedia.org/wiki/Berkut_360",
+   "note": "18 ft 6 in (Jane's 1993-94 via Wikipedia). Fuselage stretched vs Long-EZ; nose, canard, panel and pilot moved forward 1 ft for heavier engine"
+  },
+  "max_width": null,
+  "max_height": null,
+  "cabin_width": null,
+  "note": "Two-seat tandem; molded fuselage, strakes and spar; dual rear-hinged canopies. Overall height 7 ft 6 in (Jane's via Wikipedia) - to winglet tops. Kitplanes Jan 1992: 'wider and longer than a Long-EZ' (no numbers)"
+ },
+ "nacelles_or_booms": "none",
+ "gear": "Retractable main gear (system designed by Shirl Dickey for his E-Racer, later re-engineered in-house) and retractable nose gear (electro-mechanical jackscrew on most, hydraulic on some early); kneels nose-down when parked. Fixed-gear FG360 offered but built only as UAV (Wikipedia)",
+ "cooling": "Air-cooled Lycoming; inlet/cowl details not found",
+ "prop": {
+  "diameter": null,
+  "blades": 2,
+  "type": "constant speed",
+  "rpm_cruise": null
+ },
+ "engine": {
+  "model": "Lycoming IO-360 (205 hp prototype/early kits, Jane's); later adapted to Lycoming IO-540 260 hp (different mount, cowls, battery location), which most builders chose",
+  "hp": {
+   "v": 205,
+   "unit": "hp",
+   "grade": "F",
+   "src": "https://en.wikipedia.org/wiki/Berkut_360",
+   "note": "Jane's/Wikipedia standard config; Kitplanes Jan 1992 also 205 hp IO-360"
+  },
+  "turbo": false,
+  "dry_weight": null
+ },
+ "weights": {
+  "mtow": {
+   "v": 2000,
+   "unit": "lb",
+   "grade": "F",
+   "src": "https://en.wikipedia.org/wiki/Berkut_360",
+   "note": "Berkut 360 gross (Jane's 1993-94 via Wikipedia). Berkut 540: 2,100 lb loaded (Aeropedia)"
+  },
+  "empty": {
+   "v": 1035,
+   "unit": "lb",
+   "grade": "F",
+   "src": "https://en.wikipedia.org/wiki/Berkut_360",
+   "note": "Berkut 360 (Jane's via Wikipedia). Berkut 540: 1,150 lb (Aeropedia)"
+  },
+  "max_landing": null,
+  "zero_fuel_max": null
+ },
+ "fuel_usable": {
+  "v": 58.1,
+  "unit": "gal",
+  "grade": "E",
+  "src": "https://aeropedia.com.au/content/renaissance-composites-berkut/",
+  "note": "Unverified secondary: Aeropedia 220 L standard (=58.1 US gal) / 280 L optional (74 US gal), Berkut 540; usable vs total not stated"
+ },
+ "perf_points": [
+  {
+   "ktas": 191,
+   "alt_ft": null,
+   "power_pct_or_hp": "cruise, IO-360 205 hp (power % not stated)",
+   "gph": null,
+   "weight_lb": null,
+   "grade": "F",
+   "src": "https://en.wikipedia.org/wiki/Berkut_360",
+   "note": "Jane's 1993-94 via Wikipedia; max speed 215 kt, stall 61 kt, range 1,066 nm, ceiling 32,000 ft. Wikipedia climb '612 ft/min' is probably a units slip (Aeropedia: 610 m/min = 2,000 fpm)"
+  },
+  {
+   "ktas": 199.9,
+   "alt_ft": null,
+   "power_pct_or_hp": "cruise, IO-540 260 hp",
+   "gph": null,
+   "weight_lb": null,
+   "grade": "F",
+   "src": "https://aeropedia.com.au/content/renaissance-composites-berkut/",
+   "note": "Berkut 540, 230 mph cruise, 275 mph max, stall 65 mph, take-off run 1,100 ft, landing run 1,110 ft (secondary, unverified)"
+  },
+  {
+   "ktas": null,
+   "alt_ft": null,
+   "power_pct_or_hp": "IO-360 205 hp",
+   "gph": null,
+   "weight_lb": null,
+   "grade": "P",
+   "src": "https://www.kitplanes.com/?p=176107",
+   "note": "Kitplanes Jan 1992 archive: cruise 'over 200 mph'; no measured points found"
+  }
+ ],
+ "three_view_urls": [],
+ "safety": {
+  "ntsb_total": {
+   "v": 9,
+   "grade": "B",
+   "src": "https://data.ntsb.gov/carol-main-public/",
+   "note": "NTSB CAROL query 2026-10-24: Make or Model contains 'BERKUT' (7 events) plus registrations named in Wikipedia but filed under builder names: N827CM 'Schutte Ms. Ryan Special' CHI02FA140 and N5439N 'Bracken CB540 (Berkut 540 variant)' CHI04CA159. Range 1995-08-12 to 2025-01-20. Includes the GE T58 turbine 'Berkut Jet' N3255U and Berkut 540s. Lower bound."
+  },
+  "ntsb_fatal": {
+   "v": 2,
+   "grade": "B",
+   "src": "https://data.ntsb.gov/carol-main-public/",
+   "note": "2 fatal accidents, 2 deaths: LAX95LA289 (prototype N91DR, airshow accelerated stall) and CHI02FA140 (N827CM, canard attach bolts not installed, canard separated)"
+  },
+  "fleet_size_for_rate": {
+   "v": 31,
+   "grade": "B",
+   "src": "https://en.wikipedia.org/wiki/Berkut_360",
+   "note": "Wikipedia: ~75 kits sold, 20 completed (initially), 31 Berkuts registered across all variants. FAA registry download 2026-10-24: 26 current US registrations with 'Berkut' in make/model, 2 of them Mobius UAV derivatives -> 24 Berkut airframes. Crude record: 9 NTSB events on ~31 airframes (~30% of fleet)."
+  },
+  "pattern": "RECORD: 9 NTSB events on a ~31-aircraft fleet. Causes: accelerated stall in an airshow max-g turn (prototype, fatal); canard attach bolts left out by builder -> in-flight canard separation (fatal); main-gear failures (N538AJ: hydraulic pump failure and over-centre downlock springs never installed by previous builder; same aircraft had later gear accidents per Wikipedia); engine power loss on approach (N260DG, undetermined per NTSB; Wikipedia says mis-rebuilt fuel pump); dust devil on final flipped aircraft (N600SE); undetermined flight-control malfunction on final (N5439N); turbine fuel controller failure (jet conversion); ignition anomalies on test flight (N567JS); canopy not latched, departed in flight (N976DR, 2025). Builder/assembly errors and retractable-gear problems dominate; the manufacturer's own view (quoted on Wikipedia) is that early accidents were assembly errors, after which it moved to selling finished/assisted builds. CONFIGURATION: no NTSB finding of deep stall, rain-on-canard or pusher prop strike found. Canard-specific: the canard is a bolt-on surface whose omitted attachment was fatal. Pusher-specific: canopy loss behind which sits the prop (N976DR, no injuries). INFERENCE (mine): the record points to kit complexity (molded carbon, retract system adapted from E-Racer, big engine swap to IO-540 not in the original design) and a very small, high-performance fleet, rather than an aerodynamic flaw. The per-airframe event rate is the worst of the three types here.",
+  "notable": [
+   "1995-08-12 - Santa Paula CA - fatal (1) - accelerated stall in max-performance high-g turn at airshow, prototype N91DR - LAX95LA289 - https://data.ntsb.gov/carol-repgen/api/Aviation/ReportMain/GenerateNewestReport/29182/pdf",
+   "1996-06-18 - Jackson WY - none - gear collapse: hydraulic pump failure, main-gear over-centre downlock springs not installed by builder - SEA96LA126 - https://data.ntsb.gov/carol-repgen/api/Aviation/ReportMain/GenerateNewestReport/42397/pdf",
+   "1996-06-29 - Santa Paula CA - minor - engine power loss on final, undetermined; first Berkut 540 - LAX96LA254 - https://data.ntsb.gov/carol-repgen/api/Aviation/ReportMain/GenerateNewestReport/29490/pdf",
+   "2000-07-01 - Jackpot NV - serious - loss of control on landing after dust devil, factory demonstrator N600SE - LAX00LA248 - https://data.ntsb.gov/carol-repgen/api/Aviation/ReportMain/GenerateNewestReport/49585/pdf",
+   "2002-05-23 - Anderson IN - fatal (1) - canard attach bolts not installed, in-flight canard separation, N827CM - CHI02FA140 - https://data.ntsb.gov/carol-repgen/api/Aviation/ReportMain/GenerateNewestReport/54761/pdf",
+   "2004-06-19 - Lapeer MI - serious - loss of control on final from undetermined flight-control malfunction, Berkut 540 variant N5439N - CHI04CA159 - https://data.ntsb.gov/carol-repgen/api/Aviation/ReportMain/GenerateNewestReport/59595/pdf",
+   "2025-01-20 - Orlando FL - none - canopy latches not verified, canopy departed - ERA25LA102 - https://data.ntsb.gov/carol-repgen/api/Aviation/ReportMain/GenerateNewestReport/199590/pdf"
+  ]
+ },
+ "why_died_detail": "Business failure, not market rejection of the airframe alone: Ronneberg/Murphy partnership (Experimental Aviation, 1989-92) dissolved; lawsuits bankrupted both partners and the corporation; Renaissance Composites (Richard Riley) revived the kit in 1996; Berkut Engineering and Design withdrew it in 2002 and turned to UAVs (Mobius/Geneva Aerospace UAVs on FAA registry); a 2003 sale to Republic Aerospace fell through; owner (named Cruse on Wikipedia) died 22 Aug 2009. Only ~75 kits sold / ~31 built. Also relevant: expensive molded-carbon kit, high-performance 2-seat niche, retractable gear and a poor accident record on a tiny fleet. A revival would have to fix kit build quality/assembly-error exposure and settle unclear IP ownership.",
+ "rights_hints": "Chain per Wikipedia (citing court transcripts): Experimental Aviation partnership (Ronneberg/Murphy) -> Experimental Aviation Inc. (Ronneberg) -> bankruptcy -> Renaissance Composites (1996) -> Berkut Engineering and Design, Inc. (withdrawn 2002; owner Cruse until death 2009); 2003 Republic Aerospace deal not completed. Current holder of design/tooling rights not found. Derived from Rutan Long-EZ; any Rutan license status unknown.",
+ "gaps": [
+  "Wing area from a primary source (only unverified 110 ft2)",
+  "Root/tip chord, sweep, canard span/area, winglet size",
+  "Fuselage width/height",
+  "Prop diameter/make",
+  "Any measured performance (no CAFE or magazine flight-test numbers found)",
+  "Three-view drawing",
+  "Current IP/tooling owner",
+  "ASN list (403)",
+  "Jane's 1993-94 entry itself not read (only as cited by Wikipedia)"
+ ]
+}

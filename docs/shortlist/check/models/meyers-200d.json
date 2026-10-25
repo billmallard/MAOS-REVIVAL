@@ -1,0 +1,144 @@
+{
+ "id": "meyers-200d",
+ "name": "Meyers / Aero Commander 200D (IO-520-A 285 hp)",
+ "assumptions": [
+  "Wing span 30.5 ft, area 161.5 ft2 (F, Jane's 1967-68; Davisson 1975). Chords not published: taper 0.5 assumed, giving root 7.06 ft and tip 3.53 ft (E, ours). NACA 23015 root, 4412 tip (Lednicer): t/c 15% / 12%.",
+  "Fuselage length 24.33 ft (F); max width 3.8 ft and height 4.2 ft (E, ours; no cabin dimensions published). Davisson notes skin waviness over the tube cage, protruding screws and a belly air dump: Q 1.05 on the fuselage (E).",
+  "Horizontal tail 30 ft2 (10.5 ft x 2.85 ft) and fin 14 ft2: E, ours, by volume coefficient (Vh about 0.55, Vv 0.04, tail arm 13 ft). No tail dimensions are published.",
+  "Laminar run x_tr: wing 0.15 (NACA 230/44-series on a riveted metal wing, flush riveted on the 200D), tails 0.10, fuselage 0.05.",
+  "Retractable gear with doors: no fixed gear drag.",
+  "Air-cooled IO-520 with conventional nose inlets: cooling factor 1.0.",
+  "Original installed engine mass 480 lb = IO-520 dry about 415 lb x 1.15 (E, ours).",
+  "Published point: AOPA Pilot Dec 1991, N31CC, 178 KTAS at 8,500 ft, full throttle 21.5 in / 2,400 rpm, about 67% (191 hp), 14 gph, two aboard; weight not stated, 2,650 lb assumed (E: fleet-typical 2,100 lb empty + two aboard + most of the fuel)."
+ ],
+ "Sref": 161.5,
+ "fuselage": {
+  "length": 24.33,
+  "width": 3.8,
+  "height": 4.2,
+  "profile": "tractor"
+ },
+ "surfaces": [
+  {
+   "name": "Wing",
+   "span": 30.5,
+   "croot": 7.06,
+   "ctip": 3.53,
+   "tc_root": 0.15,
+   "tc_tip": 0.12,
+   "sweep": 3,
+   "x": 6.5,
+   "z": -1.3
+  },
+  {
+   "name": "HTail",
+   "span": 10.5,
+   "croot": 3.3,
+   "ctip": 2.4,
+   "tc_root": 0.1,
+   "x": 20.8,
+   "z": 0.3
+  },
+  {
+   "name": "Fin",
+   "span": 4.2,
+   "croot": 4.3,
+   "ctip": 2.4,
+   "tc_root": 0.1,
+   "vertical": true,
+   "sym": false,
+   "sweep": 30,
+   "x": 19.6,
+   "z": 0.4
+  }
+ ],
+ "components": [
+  {
+   "name": "Wing",
+   "kind": "surface",
+   "lref": 5.5,
+   "tc": 0.135,
+   "xc": 0.3,
+   "sweep_tc": 0,
+   "xtr": 0.15,
+   "Q": 1.0
+  },
+  {
+   "name": "HTail",
+   "kind": "surface",
+   "lref": 2.85,
+   "tc": 0.1,
+   "xc": 0.3,
+   "xtr": 0.1,
+   "Q": 1.05
+  },
+  {
+   "name": "Fin",
+   "kind": "surface",
+   "lref": 3.4,
+   "tc": 0.1,
+   "xc": 0.3,
+   "sweep_tc": 25,
+   "xtr": 0.1,
+   "Q": 1.05
+  },
+  {
+   "name": "Fuselage",
+   "kind": "body",
+   "lref": 24.33,
+   "dmax": 4.0,
+   "xtr": 0.05,
+   "Q": 1.05
+  }
+ ],
+ "fixed_Dq": [],
+ "cooling_factor": 1.0,
+ "excrescence_frac": 0.05,
+ "lifting": [
+  {
+   "S": 161.5,
+   "AR": 5.76,
+   "share": 1.0
+  }
+ ],
+ "prop": {
+  "diameter_ft": 6.67,
+  "install": 1.0
+ },
+ "engine": {
+  "hp": 285,
+  "bsfc": 0.45,
+  "crit_alt_ft": 0
+ },
+ "orig_installed_lb": 480,
+ "weights": {
+  "mtow": 3000,
+  "empty": 1940
+ },
+ "fuel_usable_gal": 74,
+ "fuel_density": 6.0,
+ "published": [
+  {
+   "ktas": 178,
+   "alt_ft": 8500,
+   "hp": 191,
+   "gph": 14,
+   "weight_lb": 2650,
+   "grade": "P",
+   "note": "AOPA Pilot Dec 1991 (N31CC, 200D): 21.5 in full throttle / 2,400 rpm, about 67%, two aboard; weight E"
+  },
+  {
+   "ktas": 182,
+   "alt_ft": null,
+   "hp": 214,
+   "gph": null,
+   "weight_lb": null,
+   "grade": "F",
+   "note": "Jane's 1967-68 max cruise 210 mph at 75%; altitude not stated (not usable for calibration)"
+  }
+ ],
+ "orig_cruise": {
+  "alt_ft": 8000,
+  "hp": 185
+ }
+}

@@ -1,0 +1,31 @@
+{"id":"mooney-301","name":"Mooney 301 (TIO-540 360 hp prototype)",
+ "assumptions":[
+  "Wing span 36.75 ft, area 150 ft2 (F, Air International 'Airdata File', January 1984, via Wikipedia); NLF(1)-0315. Taper 0.5 assumed (E): root 5.44 ft, tip 2.72 ft.",
+  "Fuselage 29.77 ft (F); width 4.4 ft and height 4.8 ft for a six-seat pressurized cabin: E, ours.",
+  "Tails by volume coefficient (E): horizontal Vh 0.65 -> 26 ft2, vertical Vv 0.045 -> 15.5 ft2.",
+  "Laminar run x_tr: wing 0.20 (NLF section on metal; not credited in full), tails 0.05, fuselage 0.",
+  "Retractable gear: no gear term. LoPresti low-drag cowl: cooling factor 1.0 (E).",
+  "Turbo TIO-540 360 hp flat-rated to 25,000 ft (E). Published-point weight unstated: 3,700 lb assumed (E)."],
+ "Sref":150.0,
+ "fuselage":{"length":29.77,"width":4.4,"height":4.8,"profile":"tractor"},
+ "surfaces":[
+  {"name":"Wing","span":36.75,"croot":5.44,"ctip":2.72,"tc_root":0.15,"tc_tip":0.15,"sweep":3,"x":9.0,"z":-1.5},
+  {"name":"HTail","span":11.0,"croot":2.9,"ctip":1.9,"tc_root":0.10,"x":26.0,"z":0.3},
+  {"name":"Fin","span":5.0,"croot":4.2,"ctip":2.0,"tc_root":0.10,"vertical":true,"sym":false,"sweep":35,"x":25.0,"z":0.6}],
+ "components":[
+  {"name":"Wing","kind":"surface","lref":4.3,"tc":0.15,"xc":0.40,"xtr":0.20,"Q":1.0},
+  {"name":"HTail","kind":"surface","lref":2.4,"tc":0.10,"xc":0.30,"xtr":0.05,"Q":1.05},
+  {"name":"Fin","kind":"surface","lref":3.1,"tc":0.10,"xc":0.30,"sweep_tc":30,"xtr":0.05,"Q":1.05},
+  {"name":"Fuselage","kind":"body","lref":29.77,"dmax":4.6,"xtr":0.0,"Q":1.0}],
+ "fixed_Dq":[],
+ "cooling_factor":1.0,"excrescence_frac":0.05,
+ "lifting":[{"S":150.0,"AR":9.0,"share":1.0}],
+ "prop":{"diameter_ft":6.5,"install":1.0},
+ "engine":{"hp":360,"bsfc":0.42,"crit_alt_ft":25000},
+ "orig_installed_lb":598,
+ "weights":{"mtow":4000,"empty":2548},
+ "fuel_usable_gal":100,"fuel_density":6.0,
+ "published":[
+  {"ktas":237.5,"alt_ft":17500,"hp":270,"gph":18,"weight_lb":3700,"grade":"P","note":"Bob Kromer, Mooney test pilot (Mooney Flyer Oct 2012): 235-240 KTAS at 75%, 15,000-20,000 ft"}],
+ "orig_cruise":{"alt_ft":20000,"hp":270}
+}

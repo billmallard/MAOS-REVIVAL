@@ -1,0 +1,3 @@
+{"k_global": 1.29,
+ "basis": "median of the matched drag factors of the three types with instrumented flight test or handbook data: Wheeler Express 1.16 (CAFE), Cessna P210N 1.29 (POH, 7 points), Cozy MKIV 1.36 (CAFE, 4 points). Range 1.16-1.36.",
+ "set": {"express-2000": 1.16, "cessna-p210n": 1.29, "cozy-mkiv": 1.36}}

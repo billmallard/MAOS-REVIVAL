@@ -1,0 +1,162 @@
+{
+ "id": "mooney-301",
+ "name": "Mooney 301 (TIO-540 360 hp prototype)",
+ "wet": {
+  "Fuselage": {
+   "theo_ft2": 301.847,
+   "wet_ft2": 292.505
+  },
+  "Wing": {
+   "theo_ft2": 309.748,
+   "wet_ft2": 276.102
+  },
+  "HTail": {
+   "theo_ft2": 54.0156,
+   "wet_ft2": 45.7709
+  },
+  "Fin": {
+   "theo_ft2": 33.0404,
+   "wet_ft2": 28.2169
+  }
+ },
+ "calibration": [
+  {
+   "pub": {
+    "ktas": 237.5,
+    "alt_ft": 17500,
+    "hp": 270,
+    "gph": 18,
+    "weight_lb": 3700,
+    "grade": "P",
+    "note": "Bob Kromer, Mooney test pilot (Mooney Flyer Oct 2012): 235-240 KTAS at 75%, 15,000-20,000 ft"
+   },
+   "W": 3700,
+   "our_ktas": 239.0504364541942,
+   "d_ktas_pct": 0.6528153491343947,
+   "eta": 0.8328058959142348,
+   "LD": 12.071036855478265,
+   "Dq_par": 2.4061043336942727,
+   "Dq_ind": 0.3279317806302471,
+   "our_hp_at_pub_ktas": 265.64004427368656,
+   "our_gph_at_pub_ktas": 18.59480309915806,
+   "k_match": 1.017488373471906
+  }
+ ],
+ "assumptions": [
+  "Wing span 36.75 ft, area 150 ft2 (F, Air International 'Airdata File', January 1984, via Wikipedia); NLF(1)-0315. Taper 0.5 assumed (E): root 5.44 ft, tip 2.72 ft.",
+  "Fuselage 29.77 ft (F); width 4.4 ft and height 4.8 ft for a six-seat pressurized cabin: E, ours.",
+  "Tails by volume coefficient (E): horizontal Vh 0.65 -> 26 ft2, vertical Vv 0.045 -> 15.5 ft2.",
+  "Laminar run x_tr: wing 0.20 (NLF section on metal; not credited in full), tails 0.05, fuselage 0.",
+  "Retractable gear: no gear term. LoPresti low-drag cowl: cooling factor 1.0 (E).",
+  "Turbo TIO-540 360 hp flat-rated to 25,000 ft (E). Published-point weight unstated: 3,700 lb assumed (E)."
+ ],
+ "k_own": 1.017488373471906,
+ "k_fleet": 1.29,
+ "k_alt": 1.017488373471906,
+ "k_basis": "fleet calibration (own points read cleaner than the fleet)",
+ "drag_factor": 1.29,
+ "breakdown": {
+  "cond": {
+   "alt_ft": 17500,
+   "hp": 270,
+   "W": 3700
+  },
+  "ktas": 217.1230721690118,
+  "items": [
+   [
+    "Wing",
+    1.0083630390315768,
+    "Swet 276.1 ft2, Re 6.4M, Cf 0.00258, FF 1.415, Q 1.00, x_tr 0.20"
+   ],
+   [
+    "HTail",
+    0.21699281547343072,
+    "Swet 45.8 ft2, Re 3.6M, Cf 0.00336, FF 1.342, Q 1.05, x_tr 0.05"
+   ],
+   [
+    "Fin",
+    0.1226915256663534,
+    "Swet 28.2 ft2, Re 4.6M, Cf 0.00321, FF 1.289, Q 1.05, x_tr 0.05"
+   ],
+   [
+    "Fuselage",
+    0.8431841645180288,
+    "Swet 292.5 ft2, Re 44.5M, Cf 0.00236, FF 1.220, Q 1.00, x_tr 0.00"
+   ],
+   [
+    "cooling",
+    0.12969209347048397,
+    "Raymer 12.39 x 1.00"
+   ],
+   [
+    "leakage+protuberance",
+    0.11604618190799368,
+    "5% of the rest"
+   ],
+   [
+    "calibration factor",
+    0.7067212478196816,
+    "x1.290 on the build-up (calibration; basis stated above)"
+   ]
+  ],
+  "Dq_par": 3.143691067887549,
+  "Dq_ind": 0.4818565529672033,
+  "CD0": 0.02095794045258366,
+  "eta": 0.8274894420933909,
+  "LD": 11.034237822651342
+ },
+ "orig": {
+  "alt_ft": 20000,
+  "hp": 270,
+  "ktas": 221.78058121889097,
+  "range_nm_noreserve_fullfuel_mtow": 1056.002253344164,
+  "hours": 4.761473017792843,
+  "climb_allowance_lb": 55.25252525252525,
+  "payload_1000_0": 884.9038189953687,
+  "fuel_1000_0_lb": 567.0961810046314,
+  "payload_1000_45": null,
+  "fuel_1000_45_lb": 650.477072995904
+ },
+ "am_model": "AM20T",
+ "am_dmass_lb": -206.75,
+ "am": {
+  "AM-low": {
+   "alt_ft": 8000.0,
+   "hp": 195.0,
+   "ktas": 176.1970392568702,
+   "empty": 2548.0,
+   "useful": 1452.0,
+   "useful_opt": 1658.75,
+   "range_nm_fullfuel": 1143.239789283191,
+   "gph": 14.625,
+   "payload_1000_0": 922.4778289921944,
+   "fuel_1000_0_lb": 529.5221710078055,
+   "payload_1000_45": 857.948136501001,
+   "fuel_1000_45_lb": 594.0518634989988,
+   "eco_payload_1000_0": 1014.786307366645,
+   "eco_payload_1000_45": 972.9071229072389,
+   "eco_ktas": 142.14558332800286,
+   "opt_ktas": 192.907208153848,
+   "opt_payload_1000_45": 1107.0054477157064
+  },
+  "AM-high": {
+   "alt_ft": 16000.0,
+   "hp": 195.0,
+   "ktas": 186.60694010610686,
+   "empty": 2548.0,
+   "useful": 1452.0,
+   "useful_opt": 1658.75,
+   "range_nm_fullfuel": 1169.374758576646,
+   "gph": 14.625,
+   "payload_1000_0": 930.871877083373,
+   "fuel_1000_0_lb": 521.1281229166269,
+   "payload_1000_45": 866.567833697068,
+   "fuel_1000_45_lb": 585.4321663029318,
+   "eco_payload_1000_0": 1005.573801613589,
+   "eco_payload_1000_45": 964.0243427144148,
+   "eco_ktas": 145.91203052097887,
+   "opt_ktas": 204.78265180298675,
+   "opt_payload_1000_45": 1114.0668686335464
+  }
+ }
+}

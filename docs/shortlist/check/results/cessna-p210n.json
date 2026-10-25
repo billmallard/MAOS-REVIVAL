@@ -1,0 +1,294 @@
+{
+ "id": "cessna-p210n",
+ "name": "Cessna P210N (TSIO-520-P, 1980 POH)",
+ "wet": {
+  "Fuselage": {
+   "theo_ft2": 274.153,
+   "wet_ft2": 261.395
+  },
+  "Wing": {
+   "theo_ft2": 340.901,
+   "wet_ft2": 320.041
+  },
+  "HTail": {
+   "theo_ft2": 73.7495,
+   "wet_ft2": 65.053
+  },
+  "Fin": {
+   "theo_ft2": 41.6603,
+   "wet_ft2": 38.3202
+  }
+ },
+ "calibration": [
+  {
+   "pub": {
+    "ktas": 170,
+    "alt_ft": 10000,
+    "hp": 222,
+    "gph": 18.0,
+    "weight_lb": 4000,
+    "grade": "P",
+    "note": "POH Fig 5-7, 78%"
+   },
+   "W": 4000,
+   "our_ktas": 188.6474911824278,
+   "d_ktas_pct": 10.969112460251651,
+   "eta": 0.8288656637362242,
+   "LD": 12.584465308367129,
+   "Dq_par": 2.990580092723622,
+   "Dq_ind": 0.5817990676287953,
+   "our_hp_at_pub_ktas": 176.39553371015802,
+   "our_gph_at_pub_ktas": 14.699627809179836,
+   "k_match": 1.3096040380894465
+  },
+  {
+   "pub": {
+    "ktas": 152,
+    "alt_ft": 10000,
+    "hp": 177,
+    "gph": 13.7,
+    "weight_lb": 4000,
+    "grade": "P",
+    "note": "POH, 62%"
+   },
+   "W": 4000,
+   "our_ktas": 170.28197774190636,
+   "d_ktas_pct": 12.027616935464703,
+   "eta": 0.8272242215593456,
+   "LD": 14.27555608159744,
+   "Dq_par": 2.988728765641758,
+   "Dq_ind": 0.8764000909103145,
+   "our_hp_at_pub_ktas": 142.9410791748685,
+   "our_gph_at_pub_ktas": 11.911756597905708,
+   "k_match": 1.323742181299849
+  },
+  {
+   "pub": {
+    "ktas": 187,
+    "alt_ft": 20000,
+    "hp": 228,
+    "gph": 19.2,
+    "weight_lb": 4000,
+    "grade": "P",
+    "note": "POH, 80%"
+   },
+   "W": 4000,
+   "our_ktas": 205.7640944066873,
+   "d_ktas_pct": 10.03427508379,
+   "eta": 0.8269747369278904,
+   "LD": 13.39563671419739,
+   "Dq_par": 3.120184042552101,
+   "Dq_ind": 0.7896412165320478,
+   "our_hp_at_pub_ktas": 187.7453692086489,
+   "our_gph_at_pub_ktas": 15.645447434054075,
+   "k_match": 1.2711111695869022
+  },
+  {
+   "pub": {
+    "ktas": 176,
+    "alt_ft": 20000,
+    "hp": 202,
+    "gph": 16.3,
+    "weight_lb": 4000,
+    "grade": "P",
+    "note": "POH, 71%"
+   },
+   "W": 4000,
+   "our_ktas": 194.18696913573055,
+   "d_ktas_pct": 10.333505190755998,
+   "eta": 0.8258306015967443,
+   "LD": 14.288893508314766,
+   "Dq_par": 3.120016757453309,
+   "Dq_ind": 0.9954692476649962,
+   "our_hp_at_pub_ktas": 168.6305495011442,
+   "our_gph_at_pub_ktas": 14.052545791762016,
+   "k_match": 1.2696602895418891
+  },
+  {
+   "pub": {
+    "ktas": 157,
+    "alt_ft": 20000,
+    "hp": 171,
+    "gph": 13.5,
+    "weight_lb": 4000,
+    "grade": "P",
+    "note": "POH, 60%"
+   },
+   "W": 4000,
+   "our_ktas": 177.47064959358173,
+   "d_ktas_pct": 13.038630314383258,
+   "eta": 0.8234296206103315,
+   "LD": 15.471228505722566,
+   "Dq_par": 3.1238120445413204,
+   "Dq_ind": 1.4269278874548976,
+   "our_hp_at_pub_ktas": 143.06968929076896,
+   "our_gph_at_pub_ktas": 11.92247410756408,
+   "k_match": 1.3153495652538822
+  },
+  {
+   "pub": {
+    "ktas": 193,
+    "alt_ft": 23000,
+    "hp": 231,
+    "gph": 19.2,
+    "weight_lb": 4000,
+    "grade": "P",
+    "note": "POH, 81%"
+   },
+   "W": 4000,
+   "our_ktas": 211.69850614641356,
+   "d_ktas_pct": 9.688345153582167,
+   "eta": 0.8263117732083878,
+   "LD": 13.6139054626479,
+   "Dq_par": 3.162857935209253,
+   "Dq_ind": 0.8659995346079306,
+   "our_hp_at_pub_ktas": 192.45331312255487,
+   "our_gph_at_pub_ktas": 16.03777609354624,
+   "k_match": 1.25769412635168
+  },
+  {
+   "pub": {
+    "ktas": 171,
+    "alt_ft": 23000,
+    "hp": 188,
+    "gph": 14.8,
+    "weight_lb": 4000,
+    "grade": "P",
+    "note": "POH, 66%"
+   },
+   "W": 4000,
+   "our_ktas": 190.5024978948208,
+   "d_ktas_pct": 11.404969529134966,
+   "eta": 0.8237855656805668,
+   "LD": 15.099045881914684,
+   "Dq_par": 3.1652525856313507,
+   "Dq_ind": 1.3206451294289503,
+   "our_hp_at_pub_ktas": 158.64782840129416,
+   "our_gph_at_pub_ktas": 13.220652366774514,
+   "k_match": 1.2809677875627585
+  }
+ ],
+ "assumptions": [
+  "Wing span 36.75 ft, area 175 ft2 (P, POH three-view); chords 64/44 in (Wikipedia, consistent with the area); NACA 64A215 / 64A412 (Lednicer).",
+  "Fuselage 28.17 ft (P); width 4.0 ft (44 in cabin + skin) and height 4.8 ft: E, ours.",
+  "Horizontal tail 13 ft span (P) x 2.77 ft mean chord = 36 ft2 (E, Vh ~0.65); fin 19.4 ft2 (E, Vv 0.045).",
+  "Riveted aluminium: laminar run x_tr wing 0.10, tails 0.05, fuselage 0.",
+  "Retractable gear without main gear doors (1979 on): open wells and legs D/q 0.30 ft2 (E). Wing strut-free.",
+  "Turbo TSIO-520-P: 285 hp max continuous (T, TCDS 3A21), flat-rated to 20,000 ft (E). Cooling factor 1.3 (E). BSFC 0.50 at the POH recommended lean (derived from the POH: 19.2 gph at 80% of 285 hp).",
+  "POH points at 4,000 lb, ISA."
+ ],
+ "k_own": 1.289732736812344,
+ "k_fleet": 1.29,
+ "k_alt": 1.289732736812344,
+ "k_basis": "fleet calibration (own points read cleaner than the fleet)",
+ "drag_factor": 1.29,
+ "breakdown": {
+  "cond": {
+   "alt_ft": 10000,
+   "hp": 222,
+   "W": 4000
+  },
+  "ktas": 171.00387554429045,
+  "items": [
+   [
+    "Wing",
+    1.2051976050656208,
+    "Swet 320.0 ft2, Re 6.9M, Cf 0.00285, FF 1.320, Q 1.00, x_tr 0.10"
+   ],
+   [
+    "HTail",
+    0.2892759297794262,
+    "Swet 65.1 ft2, Re 4.0M, Cf 0.00331, FF 1.279, Q 1.05, x_tr 0.05"
+   ],
+   [
+    "Fin",
+    0.1564826416047203,
+    "Swet 38.3 ft2, Re 5.2M, Cf 0.00317, FF 1.229, Q 1.05, x_tr 0.05"
+   ],
+   [
+    "Fuselage",
+    0.7709172019157534,
+    "Swet 261.4 ft2, Re 40.4M, Cf 0.00241, FF 1.225, Q 1.00, x_tr 0.00"
+   ],
+   [
+    "retractable gear, no main doors (open wells)",
+    0.3,
+    "fixed allowance"
+   ],
+   [
+    "cooling",
+    0.15478707132052344,
+    "Raymer 12.39 x 1.30"
+   ],
+   [
+    "leakage+protuberance",
+    0.14383302248430221,
+    "5% of the rest"
+   ],
+   [
+    "calibration factor",
+    0.8759431069294006,
+    "x1.290 on the build-up (calibration; basis stated above)"
+   ]
+  ],
+  "Dq_par": 3.896436579099747,
+  "Dq_ind": 0.8616945457756497,
+  "CD0": 0.02226535188056998,
+  "eta": 0.8222952200320127,
+  "LD": 11.498629229093007
+ },
+ "orig": {
+  "alt_ft": 20000,
+  "hp": 202,
+  "ktas": 178.81401663462088,
+  "range_nm_noreserve_fullfuel_mtow": 829.2294091743603,
+  "hours": 4.637384835825057,
+  "climb_allowance_lb": 63.872053872053876,
+  "payload_1000_0": null,
+  "fuel_1000_0_lb": 627.0240208193751,
+  "payload_1000_45": null,
+  "fuel_1000_45_lb": 699.8456406583739
+ },
+ "am_model": "AM20T",
+ "am_dmass_lb": -160.75,
+ "am": {
+  "AM-low": {
+   "alt_ft": 8000.0,
+   "hp": 195.0,
+   "ktas": 161.49208978087688,
+   "empty": 2342.0,
+   "useful": 1658.0,
+   "useful_opt": 1818.75,
+   "range_nm_fullfuel": 915.8500692820717,
+   "gph": 14.625,
+   "payload_1000_0": null,
+   "fuel_1000_0_lb": 573.9649406925114,
+   "payload_1000_45": null,
+   "fuel_1000_45_lb": 638.1415463328713,
+   "eco_payload_1000_0": 1183.0221650706887,
+   "eco_payload_1000_45": 1141.502334811552,
+   "eco_ktas": 129.7474381900245,
+   "opt_ktas": 161.50504295873446,
+   "opt_payload_1000_45": null
+  },
+  "AM-high": {
+   "alt_ft": 16000.0,
+   "hp": 195.0,
+   "ktas": 170.97334693397315,
+   "empty": 2342.0,
+   "useful": 1658.0,
+   "useful_opt": 1818.75,
+   "range_nm_fullfuel": 930.9969734052047,
+   "gph": 14.625,
+   "payload_1000_0": null,
+   "fuel_1000_0_lb": 563.1046999782083,
+   "payload_1000_45": null,
+   "fuel_1000_45_lb": 626.9961434845073,
+   "eco_payload_1000_0": 1172.809793220903,
+   "eco_payload_1000_45": 1131.7448926008178,
+   "eco_ktas": 132.4611071039422,
+   "opt_ktas": 170.98748902182896,
+   "opt_payload_1000_45": null
+  }
+ }
+}

@@ -1,0 +1,171 @@
+{
+ "id": "velocity-xl-rg-100gal",
+ "name": "Velocity XL-RG, optional 100 gal tanks",
+ "wet": {
+  "Fuselage": {
+   "theo_ft2": 190.843,
+   "wet_ft2": 181.387
+  },
+  "Wing": {
+   "theo_ft2": 220.813,
+   "wet_ft2": 129.557
+  },
+  "Strake": {
+   "theo_ft2": 147.135,
+   "wet_ft2": 102.422
+  },
+  "Canard": {
+   "theo_ft2": 47.7718,
+   "wet_ft2": 43.3472
+  },
+  "Winglets": {
+   "theo_ft2": 25.378,
+   "wet_ft2": 25.1224
+  }
+ },
+ "calibration": [
+  {
+   "pub": {
+    "ktas": 190,
+    "alt_ft": 3000,
+    "hp": 232,
+    "gph": 15,
+    "weight_lb": 2600,
+    "grade": "P",
+    "note": "GA News 2005 pilot report, factory demonstrator, 75% of 310 hp"
+   },
+   "W": 2600,
+   "our_ktas": 227.05347792841133,
+   "d_ktas_pct": 19.501830488637538,
+   "eta": 0.837668968329348,
+   "LD": 9.321846789429888,
+   "Dq_par": 1.6678477418851143,
+   "Dq_ind": 0.07841847135431586,
+   "our_hp_at_pub_ktas": 142.42325706752766,
+   "our_gph_at_pub_ktas": 10.681744280064576,
+   "k_match": 1.6334699160590844
+  }
+ ],
+ "assumptions": [
+  "Wing span 34 ft, area 132.5 ft2 incl. strakes (F, factory; Jane's 2013-14 gives 31 ft / 102 ft2, which matches the smaller SE: unresolved). Panels and strakes scaled from the CAFE-measured Cozy by span ratio 1.21 (E).",
+  "Canard 18.67 ft span, 22.8 ft2 (F). Winglets 2 x 12 ft2 (E).",
+  "Fuselage 20 ft (F); width 4.2 ft (47.5 in cabin), height 4.3 ft: E.",
+  "Laminar run as the Cozy. Retractable gear: no gear term. Canard carries 20% of the lift (E).",
+  "Prop 74 in 3-blade constant speed (E; diameter not found). Published-point weight unstated: 2,600 lb assumed (E).",
+  "Variant: optional tanks, 100 gal usable (stage 1, factory option); weights unchanged."
+ ],
+ "k_own": 1.6334699160590844,
+ "k_fleet": 1.29,
+ "k_alt": 1.29,
+ "k_basis": "own published points",
+ "drag_factor": 1.6334699160590844,
+ "breakdown": {
+  "cond": {
+   "alt_ft": 3000,
+   "hp": 232,
+   "W": 2600
+  },
+  "ktas": 189.99999999996678,
+  "items": [
+   [
+    "Wing",
+    0.3841941026992911,
+    "Swet 129.6 ft2, Re 6.3M, Cf 0.00218, FF 1.358, Q 1.00, x_tr 0.35"
+   ],
+   [
+    "Strake",
+    0.32057763061430045,
+    "Swet 102.4 ft2, Re 11.4M, Cf 0.00233, FF 1.279, Q 1.05, x_tr 0.20"
+   ],
+   [
+    "Canard",
+    0.1891636362085585,
+    "Swet 43.3 ft2, Re 2.3M, Cf 0.00271, FF 1.610, Q 1.00, x_tr 0.35"
+   ],
+   [
+    "Winglets",
+    0.08798975874336507,
+    "Swet 25.1 ft2, Re 4.4M, Cf 0.00264, FF 1.262, Q 1.05, x_tr 0.25"
+   ],
+   [
+    "Fuselage",
+    0.5455941872540047,
+    "Swet 181.4 ft2, Re 37.9M, Cf 0.00215, FF 1.402, Q 1.00, x_tr 0.10"
+   ],
+   [
+    "cooling",
+    0.09995604032772704,
+    "Raymer 12.39 x 1.00"
+   ],
+   [
+    "leakage+protuberance",
+    0.08137376779236234,
+    "5% of the rest"
+   ],
+   [
+    "calibration factor",
+    1.0825045109096232,
+    "x1.633 on the build-up (calibration; basis stated above)"
+   ]
+  ],
+  "Dq_par": 2.7913536345492322,
+  "Dq_ind": 0.15992508970684235,
+  "CD0": 0.02106681988339043,
+  "eta": 0.8295613882510248,
+  "LD": 7.876826880505501
+ },
+ "orig": {
+  "alt_ft": 8000,
+  "hp": 210,
+  "ktas": 190.9644561547623,
+  "range_nm_noreserve_fullfuel_mtow": 1156.7966179077985,
+  "hours": 6.057654084958626,
+  "climb_allowance_lb": 23.575757575757578,
+  "payload_1000_0": 482.72412919219,
+  "fuel_1000_0_lb": 517.2758708078101,
+  "payload_1000_45": 412.9738207411509,
+  "fuel_1000_45_lb": 587.0261792588492
+ },
+ "am_model": "AM20T",
+ "am_dmass_lb": -103.75,
+ "am": {
+  "AM-low": {
+   "alt_ft": 8000.0,
+   "hp": 195.0,
+   "ktas": 185.83807812808752,
+   "empty": 1800.0,
+   "useful": 1000.0,
+   "useful_opt": 1103.75,
+   "range_nm_fullfuel": 1212.889311157356,
+   "gph": 14.625,
+   "payload_1000_0": 505.1374263248522,
+   "fuel_1000_0_lb": 494.86257367514787,
+   "payload_1000_45": 440.3942569913586,
+   "fuel_1000_45_lb": 559.6057430086415,
+   "eco_payload_1000_0": 612.6196549905685,
+   "eco_payload_1000_45": 570.6113653238323,
+   "eco_ktas": 157.17319300368084,
+   "opt_ktas": 202.69799828853945,
+   "opt_payload_1000_45": 582.5642869241537
+  },
+  "AM-high": {
+   "alt_ft": 16000.0,
+   "hp": 195.0,
+   "ktas": 198.5331038571422,
+   "empty": 1800.0,
+   "useful": 1000.0,
+   "useful_opt": 1103.75,
+   "range_nm_fullfuel": 1275.1584824938216,
+   "gph": 14.625,
+   "payload_1000_0": 521.8414103712777,
+   "fuel_1000_0_lb": 478.15858962872244,
+   "payload_1000_45": 457.2495266893704,
+   "fuel_1000_45_lb": 542.7504733106298,
+   "eco_payload_1000_0": 620.0091544206286,
+   "eco_payload_1000_45": 578.1297782235325,
+   "eco_ktas": 166.7967826628779,
+   "opt_ktas": 216.74588063721944,
+   "opt_payload_1000_45": 597.1974359207563
+  }
+ }
+}

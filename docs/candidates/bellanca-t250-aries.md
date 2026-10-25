@@ -1,6 +1,6 @@
 # Bellanca (Anderson-Greenwood) T-250 Aries
 
-Stage 1 stub, generated from `docs/longlist/candidates.json` by `docs/longlist/make_stubs.py`. Published numbers only; nothing here is our own performance check yet.
+Stage 1 stub (extended in stage 3 below), generated from `docs/longlist/candidates.json` by `docs/longlist/make_stubs.py`. Published numbers only; nothing here is our own performance check yet.
 
 ## Identity
 
@@ -75,8 +75,119 @@ TCDS A11SW (Current, Rev 2 1980): holder Anderson, Greenwood and Company, Housto
 
 One NTSB record in about 50 years: FTW83LA173 (1983, N51AG prototype), a taxi brake failure with gear collapse and no injuries. AOPA test noted narrow gear track and weak yaw damping.
 
-## Not yet done
+<!-- stage3:start -->
 
-- Independent performance check (drag build-up, propeller, Breguet): stage 3, shortlist only.
-- Installed-weight and cooling comparison against the Aeromomentum engine.
-- What a modern rebuild changes (MANUFACTURING, stage 4).
+## Stage 3: shortlist rank 1 of 6 (AER-3783)
+
+Our own check, from published geometry and weights, calibrated against published flight data. Method, calibration and the Aeromomentum assumptions are in [docs/SHORTLIST.md](../SHORTLIST.md). Rights are research, not legal advice. Nobody has been contacted.
+
+### Bill's call
+
+Bill, 2026-10-24: not in the first long list; "add it, and shortlist it if the numbers support that." They do.
+
+### Verdict
+
+**Rank 1.** As published it passes all three floors: 1,300 lb useful, 1,017 nm at economy cruise with a 45-minute reserve, and 181 KTAS at 75% (altitude not stated); AOPA measured 181 KTAS at 6,500 ft on 73% in 1977. Our check agrees with the published speed (drag factor 1.26-1.34 on AOPA's two points, inside the fleet band), so the airframe is as clean as claimed. It reads the published range about 10% optimistic: 1,008 nm still air with no reserve at 65% and 8,000 ft on 76 gal. On an AM20T it is a direct fit (250 hp to 260 hp take-off, similar cruise power): 185-197 KTAS, 1,300 lb useful (factory; no fleet figure exists for four aircraft), 906-919 nm on full fuel at continuous power, and over 1,000 nm at economy power (154-161 KTAS, 859-861 lb with a reserve, as information). Its record is clean (one NTSB event in about 50 years, on four aircraft), it died with its producer rather than for any flaw, it was designed from flat and single-curve skins to be cheap to build, and its type certificate is still current. Its weaknesses: only four exist, so there is no fleet record to judge, and range at continuous power is about 90 nm short on standard fuel.
+
+### Idea ledger (what a new airplane should keep)
+
+- A laminar (NACA 6-series), constant-chord, flush-riveted metal wing on a fuselage built from flat and single-curve skins to cut production cost: speed from a design meant to be cheap to build (Plane & Pilot; AOPA 1977).
+- Mains that retract inward under the rear seat so the wing can stay thin; the price was a car-width track and sluggish ground steering (AOPA 1977).
+- A 250 hp, 1,300 lb useful airframe that is a direct AM20T-class fit, with a current type certificate (A11SW).
+- Lesson: it died with its producer (Bellanca's 1980 receivership), not on a technical or safety failure.
+
+### Published, measured and our check, side by side
+
+Read across a row only within one column's basis. The three targets are separate floors.
+
+| | As published | Measured or reported | Our check, original engine |
+|---|---|---|---|
+| Useful load | 1,300 lb (pass) | not found | 1,300 lb (the empty weight the model uses: 1,850 lb) |
+| Range | 1,017 nm (pass; published 1,170 statute miles at economy cruise with 45-min reserve (AOPA table labels the power 55%, its economy speed line says 65%); 990 sm (860 nm) at 75% with 45-min reserve; altitude not stated) | not found | 1,008 nm, still air, no reserve, full fuel from MTOW, at 162 hp and 8,000 ft |
+| Cruise | 181 KTAS at altitude not stated (pass+) | 181 KTAS at 6,500 ft (pass+) | 172 KTAS at 162 hp and 8,000 ft |
+| Screen | pass, speed unconditioned | partial: speed pass | see the verdict |
+
+### The deep-dive axes: storage, home-shop construction, safety, ride
+
+**Aspect ratio 5.8**: a moderate, constant-chord wing, on the conventional side of the planform study (AER-3807, `docs/studies/planform/`).
+
+- **Storage.** 31.3 ft span, 8 ft 7 in high (AOPA): fits a 40 ft T-hangar door with room to spare. No folding; not trailerable without removing the wings.
+- **Construction with home-shop tools.** This is its strongest axis. The wing is constant-chord, so every rib is the same: one set of CNC-routed form blocks makes them all. The skins are flat or single-curve aluminium, designed that way to cut production cost; blanks can be routed, but bending them needs a brake and the riveting is hand work. The largest part is a 15.7 ft half-wing; the root spar is about 7.8 in deep, a machined or built-up metal spar that may need a service. Fittings suit a small CNC mill.
+- **Safety.** Published stalls 63 kt clean and 56 kt in landing configuration (72 and 64 mph); AOPA measured 69 and 63 mph IAS. AOPA described no stall break, so stall character is unrecorded; it did note weak yaw damping after a rudder input. Best L/D about 15.7 at 114 KTAS. Spin behaviour: not on record. One NTSB event in about 50 years, on four aircraft, proves little.
+- **Ride comfort.** Gust dn 1.66: the roughest of the shortlist with the Meyers, because its 18.5 lb/ft2 wing loading is low. Cabin 45 in wide, 115 in long, 48.5 in high (AOPA): roomy for the class. Noise: not recorded.
+
+### Independent performance check
+
+Model: `docs/shortlist/check/models/bellanca-t250-aries.json`; result: `docs/shortlist/check/results/bellanca-t250-aries.json`. Method in [SHORTLIST.md](../SHORTLIST.md#method).
+
+**Wetted areas (OpenVSP CompGeom, parametric model from published dimensions):** Fuselage 235 ft2, Wing 321 ft2, HTail 57 ft2, Fin 25 ft2; total 638 ft2.
+
+**Model assumptions** (grade E unless a source is named):
+
+- Wing span 31.33 ft, area 170 ft2 (F, AOPA Pilot Mar 1977 spec table; Jane's 1980-81); constant chord 5.43 ft closes the area (E; Plane & Pilot describes a constant-chord wing). NACA 6-series laminar section, 12% t/c (B/F: '60-412' per Lednicer, '600412 modified' per Jane's).
+- Fuselage length 26.17 ft (F); max width 4.0 ft and height 4.4 ft from the 45 in cabin width and 48.5 in cabin height plus structure (E, ours). Slab-sided fuselage of flat and single-curve skins, flush riveted (Plane & Pilot): form factor not adjusted.
+- T-tail stabilator 28 ft2 (11 ft x 2.55 ft) and swept fin 15 ft2: E, ours, sized by volume coefficient (Vh about 0.5 for a stabilator, Vv 0.04, tail arm 14 ft). No tail dimensions are published.
+- Laminar run x_tr: wing 0.25 (flush-riveted metal laminar wing; less credit than a composite), tails 0.15, fuselage 0.05.
+- Retractable gear with sealed nose-gear doors and flush main doors: no fixed gear drag.
+- Air-cooled O-540 with a single inlet and no cowl flaps (AOPA 1977): cooling factor 1.0 (Raymer 12.39 as-is).
+- Original installed engine mass 455 lb = O-540 dry about 395 lb x 1.15 (E, ours; dry weight not taken from the research file, which did not look it up).
+- Published points: AOPA's 73% at 6,500 ft (full throttle 22.5 in / 2,300 rpm) and full throttle at 1,000 ft; weights not stated, so 0.9 x MTOW is used. hp: 73% of 250 by AOPA's calculation; 1,000 ft full throttle at Gagg-Ferrar lapse (E).
+
+**Published points against the raw build-up** (drag factor 1.00):
+
+| Published KTAS | Density alt, ft | hp | gph | Grade | Our KTAS (raw build-up) | Difference | Drag factor to match | Our hp for the published speed | Conditions |
+|---|---|---|---|---|---|---|---|---|---|
+| 181 | 6,500 | 182.5 | - | P | 197 | +9% | 1.26 | 148 | AOPA Pilot flight check Mar 1977, prototype N51AG: 208 mph TAS, 22.5 in full throttle / 2,300 rpm, 73% by AOPA's calculation; 'partially loaded', weight not stated |
+| 189 | 1,000 | 242 | - | P | 210 | +11% | 1.34 | 182 | AOPA: 217 mph TAS full throttle, 2,575 rpm, choppy air; hp E (Gagg-Ferrar at 1,000 ft) |
+
+**Drag factor used: 1.30** (own published points; fleet calibration 1.29, range 1.16-1.36). Optimistic bound: 1.29.
+
+**Drag build-up at 6,500 ft, 182.5 hp, 2,835 lb, with the factor applied:** 179 KTAS, CD0 0.0161 on S = 170.0 ft2, propeller efficiency 0.83, L/D 10.3.
+
+| Item | D/q, ft2 | Basis |
+|---|---|---|
+| Wing | 0.943 | Swet 320.9 ft2, Re 8.9M, Cf 0.00230, FF 1.276, Q 1.00, x_tr 0.25 |
+| HTail | 0.225 | Swet 56.9 ft2, Re 4.2M, Cf 0.00297, FF 1.233, Q 1.08, x_tr 0.15 |
+| Fin | 0.093 | Swet 25.4 ft2, Re 5.6M, Cf 0.00281, FF 1.236, Q 1.05, x_tr 0.15 |
+| Fuselage | 0.650 | Swet 234.8 ft2, Re 42.8M, Cf 0.00224, FF 1.237, Q 1.00, x_tr 0.05 |
+| cooling | 0.088 | Raymer 12.39 x 1.00 |
+| leakage+protuberance | 0.100 | 5% of the rest |
+| calibration factor | 0.631 | x1.300 on the build-up (calibration; basis stated above) |
+| induced | 0.376 | Oswald (Raymer 12.48), lift split stated above |
+
+**Original engine, our numbers:** 162.5 hp at 8,000 ft gives 172 KTAS; still-air range on full usable fuel from MTOW 1,008 nm (climb allowance 25 lb); payload at 1,000 nm 848 lb with no reserve, cannot lb with 45 min.
+
+**On the Aeromomentum line (AM20T), our numbers.** Installed-mass change -64 lb. The headline useful load takes no credit for a lighter engine (CG ballast assumed to eat it); the number in brackets takes the full saving and the optimistic drag factor.
+
+| Candidate | Engine | Cruise alt | KTAS at continuous power (optimistic) | Useful load, lb (optimistic) | Range, nm, full fuel, no reserve | Payload @ 1,000 nm, no reserve, lb | Payload @ 1,000 nm, 45 min, lb (optimistic) | Economy (65%) KTAS: payload no res / 45 min |
+|---|---|---|---|---|---|---|---|---|
+| AM-low (critical alt 8,000 ft, assumed) | AM20T | 8k | 185 (186) | 1,300 (1,364) | 906 | cannot | cannot (cannot) | 154: 901 / 859 |
+| AM-high (critical alt 16,000 ft, assumed) | AM20T | 16k | 197 (198) | 1,300 (1,364) | 919 | cannot | cannot (cannot) | 161: 903 / 861 |
+
+### Engine fit with the Aeromomentum line
+
+- **Power.** The AM20T (260 hp take-off, 195 hp assumed continuous) replaces a 250 hp O-540 that cruises at 163-188 hp (65-75%). The cruise power is about the same, so the Aries keeps its speed: 185 KTAS at 8,000 ft (low case) and 197 KTAS at 16,000 ft (high case).
+- **Mass and CG.** The installed mass falls by about 64 lb (E), in the nose. That needs ballast or a longer mount; the headline useful load takes no credit for the saving.
+- **Cooling.** The O-540 used a single inlet below the spinner and no cowl flaps. A radiator needs its own duct, not yet designed; Raymer's cooling drag is carried unchanged.
+- **Fuel.** At continuous power the 76 gal usable gives 906-919 nm still air. A modest tank increase, or economy cruise, closes the range floor.
+
+### Rights and provenance (stage 2)
+
+Open question, with a current type certificate (stage 2 file pending: Elon, AER-3805). TCDS A11SW (Rev 2, 1 July 1980) is Current; its holder is still Anderson, Greenwood and Company, Houston, with Bellanca listed as former holder, and production certificate 1GL (Bellanca, Alexandria MN) covered serials 3 and up (FAA DRS, P). Unverified secondary company histories say the Anderson Greenwood valve business passed through Keystone, Tyco and Pentair to Emerson, so the TC may sit dormant with a valve company. Four aircraft are registered (the prototype and serials 0003-0005). Who holds the TC and drawings today, and whether they would sell, needs research and then an attorney; any approach is Bill's call.
+
+### Safety record
+
+Record (NTSB CAROL, queried by make, model and every registration): one event in about 50 years, FTW83LA173 (1983, the prototype): a taxi brake failure and gear collapse, no injuries. No fatal accidents. Four aircraft is too few for a rate, so a clean record here is an absence of evidence, not evidence of safety. AOPA's 1977 flight check noted weak yaw damping after a rudder input and a narrow gear track.
+
+### Why it died, and whether a revival fixes it
+
+Anderson Greenwood, a Houston valve maker, designed and certified it (about $1.2 million in 1975-76) and took control of Bellanca to build it at Alexandria, Minnesota. The Bellanca plant was nearly idle by 1977 and production capital still had to be raised; Bellanca went into receivership in 1980, reportedly drained by the composite Skyrocket II programme. About four were completed. Nothing in the record is a technical or safety failure. A revival with modern manufacturing and its own financing fixes the cause directly.
+
+### Not yet done
+
+- Rights: who holds TC A11SW and the drawings now (Elon, AER-3805; contact is Bill's call).
+- Tail dimensions and a three-view: none are published; the tail here is sized by volume coefficient. Measuring one of the four aircraft would replace it.
+- A fuel flow at a known power, which no source publishes; it would replace our BSFC assumption in the range.
+- What a modern rebuild changes in mass, cost and build hours (MANUFACTURING, stage 4, AER-3784).
+
+<!-- stage3:end -->

@@ -1,0 +1,317 @@
+{
+ "id": "cessna-p210n",
+ "variant": "Cessna P210N Pressurized Centurion (1978-1983 model years, S/N P21000001-P21000834, 834 built). Geometry/perf from 1980-model POH and TCDS 3A21 Rev 47. NOTE: 1985-86 pressurized aircraft are the P210R (S/N 835-874, 40 built, TSIO-520-CE 325 hp, longer-span wing and stabilizer, 4100 lb) - not the P210N.",
+ "config": "tractor, high cantilever wing, conventional tail",
+ "wing": {
+  "span": {
+   "v": 36.75,
+   "unit": "ft",
+   "grade": "P",
+   "src": "http://www.marksetcetera.com/N731PJ-P210N-POH.pdf",
+   "note": "36 ft 9 in, POH Fig 1-1 three-view (PDF p.11); Jane's 1982-83 via Wikipedia agrees"
+  },
+  "area": {
+   "v": 175,
+   "unit": "ft2",
+   "grade": "P",
+   "src": "http://www.marksetcetera.com/N731PJ-P210N-POH.pdf",
+   "note": "POH Fig 1-1 note 5 'Wing area is 175 square feet'; POH wing loading 22.9 lb/ft2 at 4000 lb. Implied AR 7.7."
+  },
+  "root_chord": {
+   "v": 64,
+   "unit": "in",
+   "grade": "B",
+   "src": "https://en.wikipedia.org/wiki/Cessna_210_Centurion",
+   "note": "Wikipedia (uncited prose): constant 64 in chord from centerline to WS 100, straight taper to 44 in at WS 208. Consistent with POH: 2x(100x64+108x54)=170 ft2 to WS 208 plus tips ~ 175 ft2."
+  },
+  "tip_chord": {
+   "v": 44,
+   "unit": "in",
+   "grade": "B",
+   "src": "https://en.wikipedia.org/wiki/Cessna_210_Centurion",
+   "note": "At WS 208 (34.7 ft station span); remaining ~12.5 in per side is tip fairing to reach 36.75 ft."
+  },
+  "sweep_le_deg": null,
+  "airfoil": "NACA 64A215 root / NACA 64A412 tip (Cessna 210, 1967-later cantilever wing) per Lednicer/Selig 'Incomplete Guide to Airfoil Usage' https://m-selig.ae.illinois.edu/ads/aircraft.html. Not confirmed against a Cessna drawing. Semi-Fowler flaps, 30 deg max (TCDS).",
+  "tc_root": {
+   "v": 0.15,
+   "unit": "-",
+   "grade": "B",
+   "src": "https://m-selig.ae.illinois.edu/ads/aircraft.html",
+   "note": "from NACA 64A215 designation (secondary compilation)"
+  },
+  "tc_tip": {
+   "v": 0.12,
+   "unit": "-",
+   "grade": "B",
+   "src": "https://m-selig.ae.illinois.edu/ads/aircraft.html",
+   "note": "from NACA 64A412 designation (secondary compilation)"
+  },
+  "winglets": "no (Flint tip tanks, aftermarket, add ~33 gal and ~2 ft span per AvWeb)"
+ },
+ "canard_or_htail": {
+  "kind": "htail",
+  "span": {
+   "v": 13.0,
+   "unit": "ft",
+   "grade": "P",
+   "src": "http://www.marksetcetera.com/N731PJ-P210N-POH.pdf",
+   "note": "13 ft 0 in, POH Fig 1-1 three-view"
+  },
+  "area": null,
+  "chord": null,
+  "airfoil": "not found",
+  "tc": null
+ },
+ "vtail": {
+  "count": 1,
+  "area_each": null,
+  "height": null,
+  "root_chord": null,
+  "tip_chord": null,
+  "note": "Swept fin; overall aircraft height 9 ft 8 in max (POH). Fin dimensions not found."
+ },
+ "fuselage": {
+  "length": {
+   "v": 28.17,
+   "unit": "ft",
+   "grade": "P",
+   "src": "http://www.marksetcetera.com/N731PJ-P210N-POH.pdf",
+   "note": "28 ft 2 in, POH Fig 1-1"
+  },
+  "max_width": null,
+  "max_height": null,
+  "cabin_width": {
+   "v": 44,
+   "unit": "in",
+   "grade": "B",
+   "src": "https://www.globalair.com/aircraft-specifications/cessna/cessna-p210n-ii-specifications/157",
+   "note": "3 ft 8 in, GlobalAir spec page (secondary; not from Cessna doc)"
+  },
+  "note": "Overall height 9 ft 8 in max (POH). Pressurized 3.35 psi max differential (AOPA Pilot June 1978; AvWeb); four small windows per side; single left door; 200 lb baggage aft of rear pressure bulkhead. Pressurization from P337 system, based on T210M (NZ CAA TAR https://avsec.govt.nz/assets/aircraft/type-acceptance-reports/Cessna_210_Series.pdf)."
+ },
+ "nacelles_or_booms": "none",
+ "gear": "retractable tricycle, hydraulic, tubular-steel main legs; 1978 models had main gear doors, removed from 1979 (gear operating speed raised 140 to 165 KIAS; extended speed 200 KIAS) per TCDS 3A21 and AvWeb. Track 8 ft 8 in, wheelbase 72 in (POH Fig 1-1).",
+ "cooling": "air-cooled, cowl flaps (improved for 1982 to reduce overcooling on descent); bleed air from turbo induction for pressurization; aftermarket intercoolers (Riley etc.) common; chronic hot-running engine at altitude (AvWeb)",
+ "prop": {
+  "diameter": {
+   "v": 80,
+   "unit": "in",
+   "grade": "T",
+   "src": "https://web.archive.org/web/20110608055550/http://www.airweb.faa.gov/Regulatory_and_Guidance_Library/rgMakeModel.nsf/0/1c8849e2325c35988625756e006da735/$FILE/3A21%20Rev%2047.pdf",
+   "note": "McCauley D3A34C402/90DFA-10, diameter not over 80 in, not under 78.5 in (TCDS 3A21 Rev 47 sec XV). POH: 3-blade constant speed, 80 in. NOTE Wikipedia's 7 ft 6 in is wrong for the P210N."
+  },
+  "blades": 3,
+  "type": "constant speed",
+  "rpm_cruise": {
+   "v": 2500,
+   "unit": "rpm",
+   "grade": "P",
+   "src": "http://www.marksetcetera.com/N731PJ-P210N-POH.pdf",
+   "note": "typical POH cruise rows 2200-2600 rpm; max continuous 2600"
+  }
+ },
+ "engine": {
+  "model": "Continental TSIO-520-P (S/N P21000001-760); TSIO-520-AF (S/N 761 and up, 1982-83)",
+  "hp": {
+   "v": 285,
+   "unit": "hp",
+   "grade": "T",
+   "src": "https://web.archive.org/web/20110608055550/http://www.airweb.faa.gov/Regulatory_and_Guidance_Library/rgMakeModel.nsf/0/1c8849e2325c35988625756e006da735/$FILE/3A21%20Rev%2047.pdf",
+   "note": "Max continuous 285 hp at 2600 rpm; takeoff 310 hp at 2700 rpm, 5 min (TCDS 3A21; POH). -P: 36.5/33.5 in MP; -AF: 35.5/34.5 in MP."
+  },
+  "turbo": true,
+  "dry_weight": null
+ },
+ "weights": {
+  "mtow": {
+   "v": 4000,
+   "unit": "lb",
+   "grade": "T",
+   "src": "https://web.archive.org/web/20110608055550/http://www.airweb.faa.gov/Regulatory_and_Guidance_Library/rgMakeModel.nsf/0/1c8849e2325c35988625756e006da735/$FILE/3A21%20Rev%2047.pdf",
+   "note": "takeoff and flight; ramp 4016 lb (S/N 151 and up)"
+  },
+  "empty": {
+   "v": 2342,
+   "unit": "lb",
+   "grade": "P",
+   "src": "http://www.marksetcetera.com/N731PJ-P210N-POH.pdf",
+   "note": "standard empty weight, 1980 model POH Performance-Specifications; Pressurized Centurion II (avionics pkg) 2406 lb. Jane's 1982-83 via Wikipedia: 2303 lb."
+  },
+  "max_landing": {
+   "v": 3800,
+   "unit": "lb",
+   "grade": "T",
+   "src": "https://web.archive.org/web/20110608055550/http://www.airweb.faa.gov/Regulatory_and_Guidance_Library/rgMakeModel.nsf/0/1c8849e2325c35988625756e006da735/$FILE/3A21%20Rev%2047.pdf",
+   "note": ""
+  },
+  "zero_fuel_max": null
+ },
+ "fuel_usable": {
+  "v": 89,
+  "unit": "gal",
+  "grade": "T",
+  "src": "https://web.archive.org/web/20110608055550/http://www.airweb.faa.gov/Regulatory_and_Guidance_Library/rgMakeModel.nsf/0/1c8849e2325c35988625756e006da735/$FILE/3A21%20Rev%2047.pdf",
+  "note": "90 gal total, 89 usable S/N 1-760; 87 usable S/N 761+ (1982-83 fuel system with L/R/BOTH selector and vapor return). Owners report difficulty actually loading full 89 gal (AvWeb)."
+ },
+ "perf_points": [
+  {
+   "ktas": 170,
+   "alt_ft": 10000,
+   "power_pct_or_hp": "78% (2500 rpm / 29 in MP)",
+   "gph": 18.0,
+   "weight_lb": 4000,
+   "grade": "P",
+   "src": "http://www.marksetcetera.com/N731PJ-P210N-POH.pdf",
+   "note": "1980 Model P210N POH (D1188-13PH Rev 7, 26 Aug 1981) Fig 5-7, ISA, cowl flaps closed, recommended lean; table gives 108 lb/h, converted at 6 lb/gal. PDF p.117. "
+  },
+  {
+   "ktas": 152,
+   "alt_ft": 10000,
+   "power_pct_or_hp": "62% (2400 rpm / 25 in MP)",
+   "gph": 13.7,
+   "weight_lb": 4000,
+   "grade": "P",
+   "src": "http://www.marksetcetera.com/N731PJ-P210N-POH.pdf",
+   "note": "1980 Model P210N POH (D1188-13PH Rev 7, 26 Aug 1981) Fig 5-7, ISA, cowl flaps closed, recommended lean; table gives 82 lb/h, converted at 6 lb/gal. PDF p.117. "
+  },
+  {
+   "ktas": 187,
+   "alt_ft": 20000,
+   "power_pct_or_hp": "80% (2600 rpm / 29 in MP)",
+   "gph": 19.2,
+   "weight_lb": 4000,
+   "grade": "P",
+   "src": "http://www.marksetcetera.com/N731PJ-P210N-POH.pdf",
+   "note": "1980 Model P210N POH (D1188-13PH Rev 7, 26 Aug 1981) Fig 5-7, ISA, cowl flaps closed, recommended lean; table gives 115 lb/h, converted at 6 lb/gal. PDF p.122. POH spec page: 187 kt at 80%/20,000 ft, range 680 nm."
+  },
+  {
+   "ktas": 176,
+   "alt_ft": 20000,
+   "power_pct_or_hp": "71% (2500 rpm / 27 in MP)",
+   "gph": 16.3,
+   "weight_lb": 4000,
+   "grade": "P",
+   "src": "http://www.marksetcetera.com/N731PJ-P210N-POH.pdf",
+   "note": "1980 Model P210N POH (D1188-13PH Rev 7, 26 Aug 1981) Fig 5-7, ISA, cowl flaps closed, recommended lean; table gives 98 lb/h, converted at 6 lb/gal. PDF p.122. "
+  },
+  {
+   "ktas": 157,
+   "alt_ft": 20000,
+   "power_pct_or_hp": "60% (2500 rpm / 23 in MP)",
+   "gph": 13.5,
+   "weight_lb": 4000,
+   "grade": "P",
+   "src": "http://www.marksetcetera.com/N731PJ-P210N-POH.pdf",
+   "note": "1980 Model P210N POH (D1188-13PH Rev 7, 26 Aug 1981) Fig 5-7, ISA, cowl flaps closed, recommended lean; table gives 81 lb/h, converted at 6 lb/gal. PDF p.122. "
+  },
+  {
+   "ktas": 193,
+   "alt_ft": 23000,
+   "power_pct_or_hp": "81% (2600 rpm / 29.5 in MP)",
+   "gph": 19.2,
+   "weight_lb": 4000,
+   "grade": "P",
+   "src": "http://www.marksetcetera.com/N731PJ-P210N-POH.pdf",
+   "note": "1980 Model P210N POH (D1188-13PH Rev 7, 26 Aug 1981) Fig 5-7, ISA, cowl flaps closed, recommended lean; table gives 115 lb/h, converted at 6 lb/gal. PDF p.124. "
+  },
+  {
+   "ktas": 171,
+   "alt_ft": 23000,
+   "power_pct_or_hp": "66% (2500 rpm / 25 in MP)",
+   "gph": 14.8,
+   "weight_lb": 4000,
+   "grade": "P",
+   "src": "http://www.marksetcetera.com/N731PJ-P210N-POH.pdf",
+   "note": "1980 Model P210N POH (D1188-13PH Rev 7, 26 Aug 1981) Fig 5-7, ISA, cowl flaps closed, recommended lean; table gives 89 lb/h, converted at 6 lb/gal. PDF p.124. "
+  },
+  {
+   "ktas": 196,
+   "alt_ft": 17000,
+   "power_pct_or_hp": "maximum",
+   "gph": null,
+   "weight_lb": 4000,
+   "grade": "P",
+   "src": "http://www.marksetcetera.com/N731PJ-P210N-POH.pdf",
+   "note": "POH Performance-Specifications: max speed 196 kt at 17,000 ft."
+  },
+  {
+   "ktas": 198,
+   "alt_ft": 20000,
+   "power_pct_or_hp": "79% (2500 rpm / 33 in MP)",
+   "gph": 19.2,
+   "weight_lb": null,
+   "grade": "P",
+   "src": "https://aeroresourcesinc.com/uploads/197806-1978%20Cessna%20P210%20Centurion.pdf",
+   "note": "AOPA Pilot June 1978 flight check (Berl Brechner), early 1978 aircraft with gear doors, before 1980-81 detonation ADs/turbo retrofit; OAT -23C; 115 lb/h."
+  },
+  {
+   "ktas": 171,
+   "alt_ft": 20000,
+   "power_pct_or_hp": "55% (2300 rpm / 25 in MP)",
+   "gph": 12.5,
+   "weight_lb": null,
+   "grade": "P",
+   "src": "https://aeroresourcesinc.com/uploads/197806-1978%20Cessna%20P210%20Centurion.pdf",
+   "note": "same flight; 75 lb/h"
+  },
+  {
+   "ktas": 175,
+   "alt_ft": 16500,
+   "power_pct_or_hp": "owner-typical 65-75%",
+   "gph": 17.5,
+   "weight_lb": null,
+   "grade": "B",
+   "src": "https://avweb.com/features/cessna-p210-centurion/",
+   "note": "Aviation Consumer/AvWeb owner survey: real-world P210N 165-185 kt, 15-20 gph, cruising 14,000-19,000 ft; midpoints shown. Field aircraft with boots/pods are slower than book."
+  }
+ ],
+ "three_view_urls": [
+  "http://www.marksetcetera.com/N731PJ-P210N-POH.pdf (PDF page 11, Fig 1-1, dimensioned three-view)"
+ ],
+ "safety": {
+  "ntsb_total": {
+   "v": 291,
+   "unit": "-",
+   "grade": "B",
+   "src": "https://data.ntsb.gov/carol-main-public/",
+   "note": "NTSB CAROL API query 2026-10-24, Aircraft.AircraftModel contains 'P210' or 'P-210' (strings P210, P210N, P210R, P210N II, P210 - N, P-210N, P-210, plus one Robertson P210N; one mis-tagged '180' dropped): 296 records = 291 accidents + 5 incidents, 1978-10-14 to 2026-10-04, worldwide incl. 19 foreign/NTSB-assisted. P210N-labelled only: 223 accidents. P210R: 10. US only: 277 records. Includes turbine (Silver Eagle) conversions registered as P210N. Aircraft logged as plain '210N' cannot be separated."
+  },
+  "ntsb_fatal": {
+   "v": 78,
+   "unit": "-",
+   "grade": "B",
+   "src": "https://data.ntsb.gov/carol-main-public/",
+   "note": "78 fatal events, 162 deaths (cm_fatalInjuryCount summed over case records); US only 68 fatal events / 139 deaths. P210N-labelled 59 fatal accidents; P210R 4. Whole Cessna 210 family (model contains '210', make Cessna, excluding 205/210-5): 3,376 accidents, 718 fatal (US 3,209 / 622) - CAROL pre-1982 coverage may be incomplete and API flagged MaxResultCountReached, so treat as a floor."
+  },
+  "fleet_size_for_rate": {
+   "v": 834,
+   "unit": "-",
+   "grade": "T",
+   "src": "https://web.archive.org/web/20110608055550/http://www.airweb.faa.gov/Regulatory_and_Guidance_Library/rgMakeModel.nsf/0/1c8849e2325c35988625756e006da735/$FILE/3A21%20Rev%2047.pdf",
+   "note": "P210N S/N P21000001-834 (TCDS); plus 40 P210R. Fatal-event share 78/874 airframes ~ 9% over 48 years (my arithmetic, no exposure hours)."
+  },
+  "pattern": "RECORD (NTSB text, keyword screen of ProbableCause/analysis narrative for 296 cases, 243 with text): any engine power loss mentioned in 81 cases (13 fatal); fuel exhaustion/starvation/mismanagement 39 (6 fatal); landing-gear (gear-up, collapse, failure to extend) 53 (2 fatal); fire 7 (4 fatal); icing 11 (9 fatal); vacuum/gyro failure 5 (5 fatal). My hand-read of the 78 fatal causes: roughly 36 weather/IMC/night/icing/turbulence related (6 in-flight breakups from overstress, 4 following vacuum/gyro failure), ~11 piston engine mechanical failures dominated by oil-system/maintenance faults (oil lines, turbo oil line, oil pump bushings, con-rod oil passage, crankcase torque, one P210R detonation piston failure), 2 mixture mismanagement, 5 fuel exhaustion/starvation, 2 in-flight engine-compartment fires (oil leak; turbo wastegate), remainder stall/takeoff/incapacitation/impairment. HISTORY: 1980 pair of fatal crashes from detonation -> emergency ADs for rich mixture, 1981 Cessna-paid turbo retrofit AD; 50-hour exhaust-crack AD for non-Inconel exhausts; 1982 fuel system change (L/R/BOTH selector) to cut mismanagement (AvWeb https://avweb.com/features/cessna-p210-centurion/). 210-family cantilever carry-through spar fatigue/corrosion ADs (2012 emergency AD; AD 2020-03-16 after 2019 T210M wing separation, ATSB AO-2019-026). INFERENCE: configuration-linked risks are the hot-running bleed-pressurized TSIO-520 (detonation, cooling, exhaust cracks), complex gear (high count of gear-up/collapse, mostly non-fatal), and single vacuum system in IMC on older units; fatal record is dominated by pilot/weather like other high-performance IFR singles.",
+  "notable": [
+   "1986-02-17 - Dulce NM - 3 fatal - total power loss in climb, blocked oil passage to No.1 rod bearing, rod failure - DEN86FA077 - https://data.ntsb.gov/carol-main-public/",
+   "1990-07-12 - Ogden UT - 1 fatal (P210R) - No.1 piston failure from pre-ignition/detonation, then power-line strike - DEN90FA159 - https://data.ntsb.gov/carol-main-public/",
+   "1991-04-25 - Kansas City MO - 1 fatal - flight with known defects; fire after improper turbo wastegate maintenance - CHI91FA140 - https://data.ntsb.gov/carol-main-public/",
+   "1999-01-20 - Albuquerque NM - 3 fatal - vacuum failure, spatial disorientation, wing spar overstress - DEN99FA034 - https://data.ntsb.gov/carol-main-public/",
+   "2007-05-07 - Spanish Fork UT - 1 fatal - engine oil line leak, engine compartment fire in cruise - SEA07FA124 - https://data.ntsb.gov/carol-main-public/",
+   "2018-06-24 - Detroit MI - 2 fatal - fuel exhaustion plus gear extension malfunction - CEN18FA236 - https://data.ntsb.gov/carol-main-public/",
+   "2023-11-15 - San Diego CA - 1 fatal - fuel exhaustion, poor fuel planning, night IMC - WPR24FA037 - https://data.ntsb.gov/carol-main-public/"
+  ]
+ },
+ "why_died_detail": "Not a failed design: 834 P210N + 40 P210R built. Production ended with Cessna's 1986 shutdown of piston singles (product-liability era). Weaknesses: bleed-air pressurization from a TSIO-520 that ran hot; detonation crashes 1980 forced rich-mixture ADs and a 1981 turbo retrofit that cut altitude performance ('sick dog at altitude' - owner, AvWeb); only 3.35 psi (~10,000 ft cabin at FL200) vs Malibu 5.5 psi; realistic ceiling FL190; short range on 89 gal; single door. P210R (1985) fixed much of this (325 hp, longer wing, 115 gal option) but came too late. Aftermarket fixes: Vitatoe TN550 turbonormalized IO-550, Silver Eagle Allison 250 turboprop (114 conversions by 2023). Directly relevant to the revival question: the airframe works; engine/pressurization integration was the weak link.",
+ "rights_hints": "Type Certificate 3A21 held by Cessna Aircraft Co., now Textron Aviation (Wichita); TCDS 3A21 Rev 49 dated 29 July 2015 cited by NZ CAA TAR rev 5 (https://avsec.govt.nz/assets/aircraft/type-acceptance-reports/Cessna_210_Series.pdf), which notes the TC holder 'provided access to all technical publications'. STC holders: Griggs Aircraft Refinishing (Silver Eagle turboprop, formerly O&N), Vitatoe Aviation (TN550), Flint Aero (tip tanks), Riley (intercooler/Super P210).",
+ "gaps": [
+  "Horizontal tail area/chord, vertical tail area/height: not in POH or TCDS; Cessna service manual D2058-13 not found online",
+  "Fuselage max width and max height (structure): not found; only cabin width 44 in from a secondary site",
+  "Airfoils only from secondary compilation (Lednicer/Selig); no Cessna drawing seen",
+  "Root/tip chords from Wikipedia prose without citation (consistency-checked against POH area)",
+  "Engine dry weight not looked up (TCDS E8CE not retrieved)",
+  "ASN wikibase blocked (HTTP 403); AOPA ASI and Aviation Consumer safety articles paywalled/not readable",
+  "NTSB cause categories are a keyword screen plus my hand-read of fatal summaries, not NTSB-coded findings; 53 records (mostly pre-1983) have no narrative text",
+  "Weight for magazine/owner perf points unknown"
+ ]
+}

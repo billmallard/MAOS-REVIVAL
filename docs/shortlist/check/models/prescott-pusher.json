@@ -1,0 +1,150 @@
+{
+ "id": "prescott-pusher",
+ "name": "Prescott Pusher (prototype 2 standard, O-360 180 hp)",
+ "assumptions": [
+  "Wing span 29.33 ft, area 110.8 ft2 (F, Tom Prescott's 2007 spec, TP07); root 4.67 ft and tip 3.00 ft (F, RCM 1986 prototype table) scaled 2% to close 110.8 ft2: 4.58 / 2.94 ft. NLF(1)-0215F, 15%, root modified (P, Sport Aviation Mar 1986). Sweep about 10 deg (P).",
+  "Fuselage length 20.28 ft, width 3.67 ft (F, RCM table); height 4.3 ft (E, ours: 42.5 in cabin plus structure; overall height 8 ft 9 in includes the gear and T-tail). Engine in the tail cone, prop on a 12 in extension (P).",
+  "T-tail: horizontal tail 29.3 ft2, 11.0 ft span, root 3.33 ft, tip 2.17 ft (F, RCM prototype table). Fin about 16 ft2 (E, scaled from the 1/5-scale RCM plan).",
+  "Laminar run x_tr: wing 0.25 (NLF section on a flush-riveted metal wing with stretch-formed leading edges; less credit than a composite), tails 0.15, fuselage 0.05.",
+  "Retractable gear (prototype 2 and the retractable kit, P); the fixed-gear kit would add drag (not modelled).",
+  "Cooling factor 1.2 (E): an air-cooled engine buried in a tail cone, with a documented oil-overheat fix and a hot rear cylinder in the field (AOPA 1986; Sport Aviation 1991).",
+  "Prop 65 in (F, factory recommended), installation factor 0.95 for a pusher in the fuselage wake (E, as for the other pushers).",
+  "Original installed engine mass 330 lb = O-360 dry about 285 lb x 1.15 (E).",
+  "No published point states both altitude and power (Kitplanes May 1988: 151 KTAS at 73%, altitude not published; brochure: 165 KTAS at 7,500 ft, power not stated), so the fleet calibration is used and the two points are examined separately (see the dossier)."
+ ],
+ "Sref": 110.8,
+ "fuselage": {
+  "length": 20.28,
+  "width": 3.67,
+  "height": 4.3,
+  "profile": "pusher_tail"
+ },
+ "surfaces": [
+  {
+   "name": "Wing",
+   "span": 29.33,
+   "croot": 4.58,
+   "ctip": 2.94,
+   "tc_root": 0.15,
+   "tc_tip": 0.15,
+   "sweep": 10,
+   "x": 6.0,
+   "z": -1.3
+  },
+  {
+   "name": "HTail",
+   "span": 11.0,
+   "croot": 3.33,
+   "ctip": 2.17,
+   "tc_root": 0.12,
+   "x": 17.0,
+   "z": 4.0
+  },
+  {
+   "name": "Fin",
+   "span": 3.6,
+   "croot": 5.3,
+   "ctip": 3.6,
+   "tc_root": 0.1,
+   "vertical": true,
+   "sym": false,
+   "sweep": 35,
+   "x": 15.0,
+   "z": 0.6
+  }
+ ],
+ "components": [
+  {
+   "name": "Wing",
+   "kind": "surface",
+   "lref": 3.78,
+   "tc": 0.15,
+   "xc": 0.4,
+   "sweep_tc": 5,
+   "xtr": 0.25,
+   "Q": 1.0
+  },
+  {
+   "name": "HTail",
+   "kind": "surface",
+   "lref": 2.75,
+   "tc": 0.12,
+   "xc": 0.4,
+   "xtr": 0.15,
+   "Q": 1.08
+  },
+  {
+   "name": "Fin",
+   "kind": "surface",
+   "lref": 4.4,
+   "tc": 0.1,
+   "xc": 0.3,
+   "sweep_tc": 30,
+   "xtr": 0.15,
+   "Q": 1.05
+  },
+  {
+   "name": "Fuselage",
+   "kind": "body",
+   "lref": 20.28,
+   "dmax": 4.0,
+   "xtr": 0.05,
+   "Q": 1.0
+  }
+ ],
+ "fixed_Dq": [],
+ "cooling_factor": 1.2,
+ "excrescence_frac": 0.05,
+ "lifting": [
+  {
+   "S": 110.8,
+   "AR": 7.76,
+   "share": 1.0
+  }
+ ],
+ "prop": {
+  "diameter_ft": 5.42,
+  "install": 0.95
+ },
+ "engine": {
+  "hp": 180,
+  "bsfc": 0.45,
+  "crit_alt_ft": 0
+ },
+ "orig_installed_lb": 330,
+ "weights": {
+  "mtow": 2400,
+  "empty": 1550
+ },
+ "fuel_usable_gal": 56.5,
+ "fuel_density": 6.0,
+ "published": [
+  {
+   "ktas": 151,
+   "alt_ft": null,
+   "hp": 131,
+   "gph": null,
+   "weight_lb": null,
+   "grade": "P",
+   "note": "Kitplanes May 1988 (LeRoy Cook), N42PP: 174 mph true at 73%; altitude, weight, rpm not published"
+  },
+  {
+   "ktas": 165,
+   "alt_ft": 7500,
+   "hp": null,
+   "gph": null,
+   "weight_lb": 2400,
+   "grade": "F",
+   "note": "brochure 190 mph at 7,500 ft; power not stated; Prescott: data at 2,400 lb"
+  }
+ ],
+ "orig_cruise": {
+  "alt_ft": 7500,
+  "hp": 135
+ },
+ "ref_condition": {
+  "alt_ft": 7500,
+  "hp": 135,
+  "W": 2300
+ }
+}

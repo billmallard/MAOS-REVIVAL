@@ -1,0 +1,231 @@
+{
+ "id": "lancair-iv-p",
+ "variant": "Lancair IV-P (pressurized, TSIO-550, 350 hp). Base geometry = factory 30.2-ft-span wing (98 ft2); many IV-Ps fly with the optional winglet/tip extension (32.2 ft, 108 ft2 per AOPA 2005; P&P lists 32.6 ft; Wikipedia's 35 ft 6 in is unsupported).",
+ "config": "tractor, low wing, conventional tail",
+ "wing": {
+  "span": {
+   "v": 30.2,
+   "unit": "ft",
+   "grade": "F",
+   "src": "https://lancair.com/storage/2019/10/LA_LancairIV_web_f.pdf",
+   "note": "Lancair International 2007 spec sheet, no winglets. AOPA Pilot June 1994 IV-P report: 30 ft 2 in. With winglets: 32.2 ft (AOPA Pilot Apr 2005, N456PW) https://www.aopa.org/news-and-media/all-news/2005/april/pilot/get-up-and-go"
+  },
+  "area": {
+   "v": 98,
+   "unit": "ft2",
+   "grade": "F",
+   "src": "https://lancair.com/storage/2019/10/LA_LancairIV_web_f.pdf",
+   "note": "Factory sheet: 98 ft2, AR 9:1, wing loading 36.2 lb/ft2 at 3,550 lb. With winglets 108 ft2 (AOPA 2005, grade P); factory gives 32.2 lb/ft2 for 'IV-P w/winglets', i.e. ~110 ft2 implied"
+  },
+  "root_chord": null,
+  "tip_chord": null,
+  "sweep_le_deg": null,
+  "airfoil": "McWilliams RXM5-217 root, NACA 64-212 tip (Lednicer, Incomplete Guide to Airfoil Usage https://m-selig.ae.illinois.edu/ads/aircraft.html). RDD LX7 rework (2019) uses a new airfoil with leading-edge cuff and double-slotted flaps, same 98 ft2.",
+  "tc_root": {
+   "v": 0.17,
+   "unit": "-",
+   "grade": "E",
+   "src": "https://m-selig.ae.illinois.edu/ads/aircraft.html",
+   "note": "E: inferred from RXM5-217 designation (17% assumed from last two digits, unverified)"
+  },
+  "tc_tip": {
+   "v": 0.12,
+   "unit": "-",
+   "grade": "E",
+   "src": "https://m-selig.ae.illinois.edu/ads/aircraft.html",
+   "note": "E: implied by NACA 64-212 designation (12%)"
+  },
+  "winglets": "optional; IV-P 'w/winglets' factory option. AOPA 2005: span 32.2 ft / 108 ft2 with winglets, claimed stall reduction 8-10 kt. Heights not published."
+ },
+ "canard_or_htail": {
+  "kind": "htail",
+  "span": null,
+  "area": null,
+  "chord": null,
+  "airfoil": "",
+  "tc": null
+ },
+ "vtail": {
+  "count": 1,
+  "area_each": null,
+  "height": null,
+  "root_chord": null,
+  "tip_chord": null,
+  "note": "Swept fin; overall height 8 ft (AOPA 1994, P&P)"
+ },
+ "fuselage": {
+  "length": {
+   "v": 25,
+   "unit": "ft",
+   "grade": "F",
+   "src": "https://lancair.com/storage/2019/10/LA_LancairIV_web_f.pdf",
+   "note": "Factory sheet and AOPA 1994"
+  },
+  "max_width": null,
+  "max_height": null,
+  "cabin_width": {
+   "v": 46,
+   "unit": "in",
+   "grade": "F",
+   "src": "https://lancair.com/storage/2019/10/LA_LancairIV_web_f.pdf",
+   "note": "Interior front 46 in, rear 43 in, height 48 in (factory). AOPA 1994: cabin width 3 ft 10 in, height 3 ft 11 in, length 10 ft 4 in"
+  },
+  "note": "Prepreg carbon-fibre, oven-cured. Pressurized to ~5.0-5.5 psi differential. Trailering width 100 in (factory). Overall height 8 ft."
+ },
+ "nacelles_or_booms": "none",
+ "gear": "retractable tricycle",
+ "cooling": "air-cooled twin-turbo TSIO-550 with intercoolers; forward cowl inlets; high CHTs in climb noted (Kitplanes 2019 anecdote: 500 fpm cruise-climbs on warm days to manage CHT)",
+ "prop": {
+  "diameter": {
+   "v": 76,
+   "unit": "in",
+   "grade": "P",
+   "src": "https://www.aopa.org/news-and-media/all-news/1994/june/pilot/lancair-iv-p",
+   "note": "AOPA Pilot June 1994 test aircraft: MT 3-blade constant-speed 76 in. AOPA Apr 2005 N456PW: Hartzell 3-blade 78 in. Factory: '3-blade constant speed'"
+  },
+  "blades": 3,
+  "type": "constant speed",
+  "rpm_cruise": {
+   "v": 2500,
+   "unit": "-",
+   "grade": "P",
+   "src": "https://www.aopa.org/news-and-media/all-news/1994/june/pilot/lancair-iv-p",
+   "note": "31 in MP / 2,500 rpm at FL230 (AOPA 1994); 30.2 in / 2,410 rpm in AOPA 2005"
+  }
+ },
+ "engine": {
+  "model": "Continental TSIO-550-E (factory 2007 sheet) / TSIO-550-B (AOPA 1994); twin turbo, 350 hp @ 2,700 rpm",
+  "hp": {
+   "v": 350,
+   "unit": "hp",
+   "grade": "F",
+   "src": "https://lancair.com/storage/2019/10/LA_LancairIV_web_f.pdf",
+   "note": ""
+  },
+  "turbo": true,
+  "dry_weight": null
+ },
+ "weights": {
+  "mtow": {
+   "v": 3550,
+   "unit": "lb",
+   "grade": "F",
+   "src": "https://lancair.com/storage/2019/10/LA_LancairIV_web_f.pdf",
+   "note": "Factory 2007; early IV-P (1994) 3,200 lb"
+  },
+  "empty": {
+   "v": 2200,
+   "unit": "lb",
+   "grade": "F",
+   "src": "https://lancair.com/storage/2019/10/LA_LancairIV_web_f.pdf",
+   "note": "Factory IV-P estimate. As-built examples: AOPA 1994 test aircraft 2,140 lb (P); AOPA 2005 N456PW 2,200 lb (P). No builder fleet average found."
+  },
+  "max_landing": null,
+  "zero_fuel_max": null
+ },
+ "fuel_usable": {
+  "v": 88,
+  "unit": "gal",
+  "grade": "P",
+  "src": "https://www.aopa.org/news-and-media/all-news/1994/june/pilot/lancair-iv-p",
+  "note": "89 total/88 usable std (AOPA 1994). Factory: 90 gal std, 110 extended; N456PW 110 total/106.5 usable"
+ },
+ "perf_points": [
+  {
+   "ktas": 278,
+   "alt_ft": 23000,
+   "power_pct_or_hp": "75% (31 in MP, 2,500 rpm)",
+   "gph": 18,
+   "weight_lb": null,
+   "grade": "P",
+   "src": "https://www.aopa.org/news-and-media/all-news/1994/june/pilot/lancair-iv-p",
+   "note": "AOPA Pilot June 1994: 195 KIAS / 278 KTAS, 50 deg F lean of peak TIT; 30.2 ft span, empty 2,140 lb"
+  },
+  {
+   "ktas": 255,
+   "alt_ft": 16500,
+   "power_pct_or_hp": "75% (30.2 in MP, 2,410 rpm)",
+   "gph": 17.2,
+   "weight_lb": null,
+   "grade": "P",
+   "src": "https://www.aopa.org/news-and-media/all-news/2005/april/pilot/get-up-and-go",
+   "note": "AOPA Pilot Apr 2005, N456PW with winglets (32.2 ft/108 ft2); 190 KIAS; 90 gal aboard ('45 gallons a side'); weight not given"
+  },
+  {
+   "ktas": null,
+   "alt_ft": 24000,
+   "power_pct_or_hp": "65%",
+   "gph": 17,
+   "weight_lb": null,
+   "grade": "B",
+   "src": "https://www.aopa.org/news-and-media/all-news/2005/april/pilot/get-up-and-go",
+   "note": "Owner figure for N456PW: 306 kt groundspeed at 24,000 ft (wind unknown), avg 265 KTAS on cross-countries; 17.1 gph at 30 in, 10 deg LOP"
+  },
+  {
+   "ktas": 287,
+   "alt_ft": 24000,
+   "power_pct_or_hp": "75%",
+   "gph": null,
+   "weight_lb": null,
+   "grade": "F",
+   "src": "https://lancair.com/storage/2019/10/LA_LancairIV_web_f.pdf",
+   "note": "Factory 'Cruise (typ @ 24,000 ft) 330 mph' = 287 kt; fuel 15.5-22 gph typical. Wikipedia quotes 291 kt @75% FL240 / 17.5 gph (unsourced)"
+  },
+  {
+   "ktas": null,
+   "alt_ft": 0,
+   "power_pct_or_hp": "stall",
+   "gph": null,
+   "weight_lb": null,
+   "grade": "P",
+   "src": "https://www.kitplanes.com/still-searching-for-speed/",
+   "note": "CAFE Foundation flight test May 1999 confirmed 66 KIAS stall (Kitplanes, D. Forster, 2019; CAFE IV-P report in Sport Aviation Jan 2001 not retrieved). Factory Vso 73 mph (63 kt) w/winglets, 75 mph without. AOPA 2005: power-off <60 KIAS, power-on 88 KIAS with sharp right wing drop. Forster cites owners seeing 90 kt clean / 82 kt dirty."
+  }
+ ],
+ "three_view_urls": [],
+ "safety": {
+  "ntsb_total": {
+   "v": 88,
+   "grade": "R",
+   "src": "https://data.ntsb.gov/avdata/FileDirectory/DownloadFile?fileID=C%3A%5Cavdata%5Cavall.zip",
+   "note": "Own count from NTSB bulk databases avall.mdb (2008-) + Pre2008.mdb, downloaded 2026-10-24. Model strings matching IV / IV-P / IVP / 4P / LANCAIR 4 / IV-TP / IV-P TURBINE / PROPJET with Lancair or builder make (Kitfox IV, Avid IV, Bearhawk 4 etc. excluded by hand). 1995-05-25 to 2026-04-04: 88 accidents + 1 incident; includes 13 turbine conversions (Propjet/IV-TP) and 5 foreign events with NTSB 'WA' numbers. Piston-only: 75 accidents. Undercount likely: records with model 'LANCAIR' only (12) or builder-name makes with odd model strings were not included. Published comparisons: Kitplanes (Forster, Feb 2019) 66 accidents/35 fatal; Kitplanes (Wanttaja, 2010) 32 accidents 1998-2007."
+  },
+  "ntsb_fatal": {
+   "v": 43,
+   "grade": "R",
+   "src": "https://data.ntsb.gov/avdata/FileDirectory/DownloadFile?fileID=C%3A%5Cavdata%5Cavall.zip",
+   "note": "43 fatal accidents (49% of accidents), 79 fatalities; piston-only 35 fatal of 75; turbine 8 of 13. By period: 1995-2007 21/44; 2008-2016 19/29; 2017-2026 3/16 (sharp decline, consistent with LOBO training era and smaller active fleet). Published: Wanttaja/Kitplanes 2010 ~40% fatal vs ~25% homebuilt avg; Forster/Kitplanes 2019 53% (35/66), ~9% of registered fleet in fatal accidents; NTSB WPR12FA089 report: 26% of Lancair airplanes in accidents, 19% in fatal accidents (all Lancair models)."
+  },
+  "fleet_size_for_rate": {
+   "v": 360,
+   "grade": "B",
+   "src": "https://en.wikipedia.org/wiki/Lancair_IV",
+   "note": "~110 IV + 250 IV-P completed and flying by fall 2011 (Kitplanes Dec 2011 buyer's guide via Wikipedia); 353 Lancair IV in FAA registry c.2019 (Kitplanes, Forster); kit production ended 2012. Rate (inference): 43 fatal / ~360 airframes = ~12% of all IV-family airframes built have been in a fatal NTSB-recorded accident."
+  },
+  "pattern": "RECORD (NTSB probable causes, 43 fatal IV-family accidents, own read of narratives): (a) loss of airspeed/stall-spin is the cause or a finding in ~13, mostly at low altitude on takeoff/climb-out, go-around, maneuvering or forced landing (e.g. LAX08FA122 climb-out stall/spin, NYC06LA112 takeoff stall, ERA14FA144, ERA16FA097 over-gross aft-CG takeoff, WPR13FA076, WPR19FA216); (b) engine power loss/powerplant failure initiates ~13 (fuel starvation from builder fuel-vent omission LAX01FA212, wrong oil-adapter O-ring MIA08FA122, crankshaft after prior prop strike ERA10LA175, prop-bolt under-torque prop separation ERA14FA421, undetermined power loss x5), and in several of these the pilot then stalled (SEA03LA007, MIA08LA134, WPR12FA089 Appleton IV-TP, CEN12FA611 go-around); (c) weather - thunderstorm/icing/IMC disorientation ~7, with in-flight structural failure/design limits exceeded in thunderstorms (ATL03LA094, CHI08LA158); (d) in-flight fire 2 (ATL95FA099, CEN14FA389); (e) undetermined loss of control/breakup ~6 (incl. IV-TP WPR12FA180 spiral dive breakup); (f) ~6 with no US cause (foreign or pending, e.g. CEN25FA296). Kitplanes (Wanttaja 2010): stalls in 26% of IV pilot-miscontrol accidents vs 17% homebuilt avg; engine-related accidents above average; median pilot 2,390 h total but ~100 h in type. Kitplanes (Prizio 2016): IV-P turbine rate 'astronomical' 2011-15; nearly half of non-builder owners had an accident. LOBO (2022, lancairowners.com): >130 fatalities across all Lancairs 2009-2021, none among LOBO-trained pilots. AOPA 2021: Lancairs ~3% of E-AB fleet but >10% of E-AB fatal accidents, mostly VFR stall/spin LOC. INFERENCE: configuration drivers are the high wing loading (36 lb/ft2 at gross without winglets; Vso 63-66 kt published but owners report 80-90 kt), small 98 ft2 wing with sharp, often asymmetric stall (AOPA 2005: power-on stall 88 KIAS with marked right wing drop) and minimal margin between approach speed and stall, combined with a hot 350 hp turbo engine whose failure leaves a fast, heavy airplane needing a precise power-off glide. Builder-workmanship and transition-training gaps (low time in type, second owners) amplify this; the post-2017 decline suggests training mitigates much of it. A revival would need a larger/lower-stall-speed wing with benign stall (as RDD's LX7 did), a certified-quality powerplant installation and mandatory type training.",
+  "notable": [
+   "2012-02-03 - Boise ID - Lancair IV-TP (turbine conversion), 1 fatal (Micron CEO Steve Appleton) - loss/reduction of power on initial climb, failure to maintain airspeed returning to runway; NTSB WPR12FA089 (report notes 26% of Lancairs in accidents, 19% fatal) - https://en.wikipedia.org/wiki/Lancair_IV",
+   "2008-04-23 - Mesa AZ - IV-P, 3 fatal - failure to maintain airspeed during climb-out, stall/spin; NTSB LAX08FA122",
+   "2006-05-10 - Somerset PA - IV-P, 2 fatal - stall after takeoff; inadvertent high-pressure aux fuel pump activation caused power loss; NTSB NYC06LA112",
+   "2016-01-30 - Albany GA - IV-P, 3 fatal - loss of control on takeoff, over max gross with aft CG, low time in type; NTSB ERA16FA097",
+   "2014-09-03 - Ooltewah TN - IV-P, 1 fatal - under-torqued prop bolts, fatigue, in-flight propeller separation; NTSB ERA14FA421",
+   "2008-06-06 - Alhambra IL - 4P, 1 fatal - continued into known thunderstorms, in-flight structural failure; NTSB CHI08LA158",
+   "2001-06-16 - Flagstaff AZ - IV-P, 1 fatal - builder omitted right-wing fuel vent, fuel starvation; NTSB LAX01FA212",
+   "2005-08-09 - Sundre, Alberta - Lancair IV-P N750F (NTSB lists as 4P turbine, SEA05WA171), 2 fatal - loss of control; TSB Canada report https://publications.gc.ca/site/eng/403357/publication.html",
+   "2025-07-30 - Greenwood IN - IV-P, 1 fatal (Anh-Thu Nguyen, solo round-the-world attempt) - NTSB CEN25FA296, final cause not in database"
+  ]
+ },
+ "why_died_detail": "Kit production ended 2012 (~360 flying by 2011). The 2016-17 parent decision to focus on the Evolution (a clean-sheet successor with a larger 37-ft wing, 61-kt stall) and sell legacy lines reflects market saturation, kit-build cost/complexity (~2,500 h build) and the safety reputation. The safety record (above) is the type's defining problem; LOBO training and the post-2017 decline show part of it is operational. RDD Enterprises' LX7 (2019) re-engineers flying IV-Ps with a new-airfoil wing (same 98 ft2, cuffed LE, double-slotted flaps; listed stall 63 kt) to fix stall behaviour - evidence that the original wing is seen as the core configuration issue. https://www.avweb.com/aviation-news/lx7-a-thoroughly-reworked-lancair-iv-p/",
+ "rights_hints": "Ownership chain: Lance Neibauer (Neico Aviation, 1980s; IV introduced 1990) -> Feb 2003 kit company sold to Joseph C. Bartels (Lancair Company, Redmond OR) -> 2010 Wolstenholme family (Bob Wolstenholme CEO) -> July 2016 announced sale of legacy lines; company became Evolution Aircraft -> 6 Feb 2017 all assets, designs and support for out-of-production models incl. IV and IV-P sold to Lancair International LLC (Mark and Conrad Huffstutler), Garner Field, Uvalde TX. https://lancair.com/lancair-international-inc-announcing-sale-production-assets-lancair-brand-kit-components-support-assets-new-ownership-based-uvalde-texas/ ; https://en.wikipedia.org/wiki/Lancair . RDD Enterprises separately markets the LX7 conversion of existing IV-Ps. Certified Columbia/Cessna 350/400 line is a separate lineage (not the IV).",
+ "gaps": [
+  "Root/tip chord, taper, sweep, dihedral: not published; no dimensioned three-view found (mean chord 98/30.2 = 3.25 ft is only a derived average)",
+  "Horizontal and vertical tail span/area/chord",
+  "Fuselage exterior max width/height",
+  "RXM5-217 actual thickness/coordinates (McWilliams airfoil, unpublished)",
+  "Builder-average empty weight (only two as-built data points: 2,140 and 2,200 lb)",
+  "CAFE Foundation IV-P APR (Sport Aviation Jan 2001) full data not retrieved",
+  "Test weights for the AOPA 1994/2005 cruise points",
+  "Fleet-hours for a per-100,000-h rate; LOBO safety-review PDFs (lancairowners.com pages 404)",
+  "Winglet height/area; Wikipedia 35 ft 6 in span unreconciled with factory 30.2 / 32.2-32.6 ft"
+ ]
+}

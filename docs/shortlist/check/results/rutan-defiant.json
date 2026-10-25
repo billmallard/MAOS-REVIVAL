@@ -1,0 +1,232 @@
+{
+ "id": "rutan-defiant",
+ "name": "Rutan Defiant (Model 40, 2x O-320 160 hp)",
+ "wet": {
+  "Fuselage": {
+   "theo_ft2": 234.577,
+   "wet_ft2": 227.585
+  },
+  "Wing": {
+   "theo_ft2": 274.245,
+   "wet_ft2": 239.939
+  },
+  "Canard": {
+   "theo_ft2": 41.3281,
+   "wet_ft2": 31.0776
+  },
+  "Winglets": {
+   "theo_ft2": 16.9646,
+   "wet_ft2": 16.0461
+  }
+ },
+ "calibration": [
+  {
+   "pub": {
+    "ktas": 184,
+    "alt_ft": 8000,
+    "hp": 240,
+    "gph": 17.8,
+    "weight_lb": 2800,
+    "grade": "F",
+    "note": "RAF plans spec, CP38, 75%"
+   },
+   "W": 2800,
+   "our_ktas": 216.02007328090377,
+   "d_ktas_pct": 17.402213739621608,
+   "eta": 0.8150708603349592,
+   "LD": 9.48869305238985,
+   "Dq_par": 2.197552496344323,
+   "Dq_ind": 0.17876419506615696,
+   "our_hp_at_pub_ktas": 158.5808477581681,
+   "our_gph_at_pub_ktas": 11.893563581862608,
+   "k_match": 1.5531004034498892
+  },
+  {
+   "pub": {
+    "ktas": 168,
+    "alt_ft": 9000,
+    "hp": 176,
+    "gph": 13.9,
+    "weight_lb": 2800,
+    "grade": "F",
+    "note": "RAF brochure economy, 55%"
+   },
+   "W": 2800,
+   "our_ktas": 193.4581384091401,
+   "d_ktas_pct": 15.15365381496434,
+   "eta": 0.8145867109094633,
+   "LD": 11.594603810516649,
+   "Dq_par": 2.205566608342287,
+   "Dq_ind": 0.2957352943853808,
+   "our_hp_at_pub_ktas": 126.0546389991461,
+   "our_gph_at_pub_ktas": 9.454097924935958,
+   "k_match": 1.462137248856152
+  },
+  {
+   "pub": {
+    "ktas": 175,
+    "alt_ft": 8000,
+    "hp": 240,
+    "gph": 18,
+    "weight_lb": 2800,
+    "grade": "P",
+    "note": "pilot report in N78RA, full throttle (~75%), density alt ~8,000 ft"
+   },
+   "W": 2800,
+   "our_ktas": 216.02007328090377,
+   "d_ktas_pct": 23.440041874802155,
+   "eta": 0.8150708603349592,
+   "LD": 9.48869305238985,
+   "Dq_par": 2.197552496344323,
+   "Dq_ind": 0.17876419506615696,
+   "our_hp_at_pub_ktas": 140.66308910458093,
+   "our_gph_at_pub_ktas": 10.54973168284357,
+   "k_match": 1.7794783255719722
+  },
+  {
+   "pub": {
+    "ktas": 168,
+    "alt_ft": 6500,
+    "hp": 208,
+    "gph": 15,
+    "weight_lb": 2800,
+    "grade": "P",
+    "note": "same pilot report, 65%"
+   },
+   "W": 2800,
+   "our_ktas": 202.18350286312952,
+   "d_ktas_pct": 20.347323132815198,
+   "eta": 0.8149858326366686,
+   "LD": 10.248285599772688,
+   "Dq_par": 2.1858483467541503,
+   "Dq_ind": 0.2123972300840108,
+   "our_hp_at_pub_ktas": 131.37257654079576,
+   "our_gph_at_pub_ktas": 9.852943240559682,
+   "k_match": 1.657068922674398
+  }
+ ],
+ "assumptions": [
+  "Wing span 31.4 ft, area 133 ft2 (F, Canard Pusher #38, plans-built version); LE sweep 23 deg (E, inferred). Chords not published: root 6.0 ft, tip 2.5 ft (E) close the area. Eppler-type section, 13% t/c assumed (E).",
+  "Canard not published: 20 ft2 (15% of wing, Long-EZ-like ratio), span 13 ft (E). Winglets 2 x 8 ft2, 4.5 ft high (E).",
+  "Fuselage 22.8 ft (Wikipedia, uncited; E), width 4.1 ft (46 in cabin), height 4.3 ft (E). Cowls at both ends.",
+  "Laminar run x_tr: wing and canard 0.30 (moldless glass, Rutan finish), winglets 0.20, fuselage 0.03 (front prop slipstream).",
+  "Fixed mains with pants plus retracted nose: D/q 0.40 ft2 (E). Two updraft cooling installations at factor 1.0 each (Raymer formula is per hp, so it already scales).",
+  "Canard carries 18% of the lift (E, Long-EZ class trim). Two 69 in fixed-pitch props, rear one in the fuselage wake: installation 0.97 (E).",
+  "Published-point weight unstated: 2,800 lb assumed (E).",
+  "Original installed engine mass 616 lb = typical published dry weight x 1.15 for mount, baffles, exhaust and oil cooler (E; per-variant check owed by MANUFACTURING)."
+ ],
+ "k_own": 1.718273624123185,
+ "k_fleet": 1.29,
+ "k_alt": 1.29,
+ "k_basis": "own published points",
+ "drag_factor": 1.718273624123185,
+ "breakdown": {
+  "cond": {
+   "alt_ft": 8000,
+   "hp": 240,
+   "W": 2800
+  },
+  "ktas": 177.27739348591606,
+  "items": [
+   [
+    "Wing",
+    0.7357721461965264,
+    "Swet 239.9 ft2, Re 6.9M, Cf 0.00228, FF 1.346, Q 1.00, x_tr 0.30"
+   ],
+   [
+    "Canard",
+    0.12080212307580918,
+    "Swet 31.1 ft2, Re 2.4M, Cf 0.00284, FF 1.369, Q 1.00, x_tr 0.30"
+   ],
+   [
+    "Winglets",
+    0.06423204512715956,
+    "Swet 16.0 ft2, Re 2.8M, Cf 0.00305, FF 1.251, Q 1.05, x_tr 0.20"
+   ],
+   [
+    "Fuselage",
+    0.7027208390009417,
+    "Swet 227.6 ft2, Re 35.7M, Cf 0.00236, FF 1.309, Q 1.00, x_tr 0.03"
+   ],
+   [
+    "fixed mains, faired; nose retracted",
+    0.4,
+    "fixed allowance"
+   ],
+   [
+    "cooling",
+    0.12012707621387063,
+    "Raymer 12.39 x 1.00"
+   ],
+   [
+    "leakage+protuberance",
+    0.1071827114807154,
+    "5% of the rest"
+   ],
+   [
+    "calibration factor",
+    1.616716806990666,
+    "x1.718 on the build-up (calibration; basis stated above)"
+   ]
+  ],
+  "Dq_par": 3.867553748085689,
+  "Dq_ind": 0.3941336755109819,
+  "CD0": 0.029079351489366082,
+  "eta": 0.8078865670421231,
+  "LD": 7.856165546683814
+ },
+ "orig": {
+  "alt_ft": 9000,
+  "hp": 200,
+  "ktas": 167.05511182888893,
+  "range_nm_noreserve_fullfuel_mtow": 1237.189785061079,
+  "hours": 7.405878045374071,
+  "climb_allowance_lb": 26.09090909090909,
+  "payload_1000_0": 787.7201445718217,
+  "fuel_1000_0_lb": 562.2798554281784,
+  "payload_1000_45": 722.0810175301834,
+  "fuel_1000_45_lb": 627.9189824698167
+ },
+ "am_model": "2x AM15T",
+ "am_dmass_lb": -8.5,
+ "am": {
+  "AM-low": {
+   "alt_ft": 8000.0,
+   "hp": 240.0,
+   "ktas": 177.6788364397767,
+   "empty": 1600.0,
+   "useful": 1350.0,
+   "useful_opt": 1358.5,
+   "range_nm_fullfuel": 1093.8190538512656,
+   "gph": 18.0,
+   "payload_1000_0": 721.3201402047524,
+   "fuel_1000_0_lb": 628.6798597952474,
+   "payload_1000_45": null,
+   "fuel_1000_45_lb": 707.6535017695179,
+   "eco_payload_1000_0": 857.9301351610569,
+   "eco_payload_1000_45": 806.8704862209943,
+   "eco_ktas": 149.73185380700383,
+   "opt_ktas": 197.3276339525014,
+   "opt_payload_1000_45": 709.2579256630504
+  },
+  "AM-high": {
+   "alt_ft": 16000.0,
+   "hp": 240.0,
+   "ktas": 190.2342569501769,
+   "empty": 1600.0,
+   "useful": 1350.0,
+   "useful_opt": 1358.5,
+   "range_nm_fullfuel": 1156.065941314787,
+   "gph": 18.0,
+   "payload_1000_0": 747.3532871418244,
+   "fuel_1000_0_lb": 602.6467128581758,
+   "payload_1000_45": 668.6525498183911,
+   "fuel_1000_45_lb": 681.347450181609,
+   "eco_payload_1000_0": 871.350058688294,
+   "eco_payload_1000_45": 820.5414756011573,
+   "eco_ktas": 159.06144404091472,
+   "opt_ktas": 211.51614493600394,
+   "opt_payload_1000_45": 731.9751324005783
+  }
+ }
+}

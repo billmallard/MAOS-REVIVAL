@@ -1,0 +1,328 @@
+{
+ "id": "cozy-mkiv",
+ "variant": "Cozy Mark IV (Nat Puffer / Co-Z Development; plans now Aircraft Spruce), O/IO-360 180 hp, retractable nose gear only. Measured geometry from CAFE test of N494CZ; designer figures from Aircraft Spruce specs page",
+ "config": "canard pusher",
+ "wing": {
+  "span": {
+   "v": 28.1,
+   "unit": "ft",
+   "grade": "F",
+   "src": "https://www.aircraftspruce.com/cozy/specs.html",
+   "note": "Designer/plans spec; CAFE measured same 28.1 ft on N494CZ"
+  },
+  "area": {
+   "v": 88.3,
+   "unit": "ft2",
+   "grade": "F",
+   "src": "https://www.aircraftspruce.com/cozy/specs.html",
+   "note": "Designer figure. CAFE data block for N494CZ lists 101.4 ft2 and AR 7.26 (neither consistent with 28.1 ft span: 28.1^2/101.4=7.8); CAFE figure probably includes part of the strake/centre section. Treat reference area as unresolved 88-101 ft2"
+  },
+  "root_chord": {
+   "v": 41.5,
+   "unit": "in",
+   "grade": "R",
+   "src": "http://acversailles.free.fr/documentation/03~Documentation_Generale_M_Suire/Essais_en_vol/COZY_MARK-IV.pdf",
+   "note": "CAFE data block, N494CZ; outer-wing root at strake junction. Strake chords listed as 93.5 in (root) / 41.5 in (outboard)"
+  },
+  "tip_chord": {
+   "v": 21,
+   "unit": "in",
+   "grade": "R",
+   "src": "http://acversailles.free.fr/documentation/03~Documentation_Generale_M_Suire/Essais_en_vol/COZY_MARK-IV.pdf",
+   "note": "CAFE data block, N494CZ"
+  },
+  "sweep_le_deg": {
+   "v": 23,
+   "unit": "deg",
+   "grade": "R",
+   "src": "http://acversailles.free.fr/documentation/03~Documentation_Generale_M_Suire/Essais_en_vol/COZY_MARK-IV.pdf",
+   "note": "CAFE data block 'Wing sweep 23 deg' (reference line not stated; LE assumed). The neighbouring incidence/dihedral/taper/washout values (0 in, 0 deg, '+.75/-.25 = 1 deg total', 1.5 deg) are misaligned in the OCR copy and not assigned here"
+  },
+  "airfoil": "Main wing: modified Eppler 1230 (Long-EZ derived) per CAFE ('Modified Eppler from Long-Eze') and UIUC Incomplete Guide to Airfoil Usage (https://m-selig.ae.illinois.edu/ads/aircraft.html, lists Cozy IV: canard Roncz R1145MS, wing Eppler 1230 mod)",
+  "tc_root": {
+   "v": 0.15,
+   "unit": "-",
+   "grade": "R",
+   "src": "http://acversailles.free.fr/documentation/03~Documentation_Generale_M_Suire/Essais_en_vol/COZY_MARK-IV.pdf",
+   "note": "CAFE data block lists a single 'airfoil thickness to chord ratio 15%' without saying root/tip or wing/canard. For reference, unmodified Eppler 1230 coordinates (UIUC coord/e1230.dat) compute to 17.4% max t/c at 29.5% chord (my calc, E)"
+  },
+  "tc_tip": null,
+  "winglets": "yes: upper winglets with outward-only rudders, plus small lower winglets; leading-edge vortilons (CAFE: lower winglets and vortilons needed for stall resistance across CG range). CAFE: winglet span 57 in x 20 in avg chord each (area printed as '228 sq in', which is inconsistent with 57x20=1140 in2 ~7.9 ft2 - OCR/typo; unresolved)"
+ },
+ "canard_or_htail": {
+  "kind": "canard",
+  "span": {
+   "v": 12.6,
+   "unit": "ft",
+   "grade": "F",
+   "src": "https://www.aircraftspruce.com/cozy/specs.html",
+   "note": "Designer figure. CAFE measured/listed 12.1 ft on N494CZ"
+  },
+  "area": {
+   "v": 14.7,
+   "unit": "ft2",
+   "grade": "F",
+   "src": "https://www.aircraftspruce.com/cozy/specs.html",
+   "note": "Designer figure. CAFE listed 13.1 ft2, taper ratio 1.0, AR 11.2 for N494CZ"
+  },
+  "chord": {
+   "v": 13,
+   "unit": "in",
+   "grade": "R",
+   "src": "http://acversailles.free.fr/documentation/03~Documentation_Generale_M_Suire/Essais_en_vol/COZY_MARK-IV.pdf",
+   "note": "CAFE data block, constant chord; elevator total span 54 in, chord 4 in; canard incidence listed 0 deg"
+  },
+  "airfoil": "Roncz R1145MS (also written RM1145S / 1145MS); CAFE, UIUC guide, builder log https://www.deford.com/cozy/chap_10.html",
+  "tc": {
+   "v": 0.188,
+   "unit": "-",
+   "grade": "E",
+   "src": "https://m-selig.ae.illinois.edu/ads/coord/r1145ms.dat",
+   "note": "E: my computation of max t/c from UIUC R1145MS coordinates (18.8% at 35% chord); not a designer figure"
+  }
+ },
+ "vtail": {
+  "count": 2,
+  "area_each": null,
+  "height": {
+   "v": 57,
+   "unit": "in",
+   "grade": "R",
+   "src": "http://acversailles.free.fr/documentation/03~Documentation_Generale_M_Suire/Essais_en_vol/COZY_MARK-IV.pdf",
+   "note": "CAFE 'winglet span' each, incl. rudder"
+  },
+  "root_chord": null,
+  "tip_chord": null,
+  "note": "Winglet rudders on main-wing tips, outward-deflecting only, can be deployed together as drag. CAFE: winglet avg chord 20 in; rudder avg span 50 in, avg chord 6 in. No fuselage fin."
+ },
+ "fuselage": {
+  "length": {
+   "v": 16.9,
+   "unit": "ft",
+   "grade": "F",
+   "src": "https://www.aircraftspruce.com/cozy/specs.html",
+   "note": "Designer overall length; CAFE lists 17 ft"
+  },
+  "max_width": null,
+  "max_height": null,
+  "cabin_width": {
+   "v": 39,
+   "unit": "in",
+   "grade": "R",
+   "src": "http://acversailles.free.fr/documentation/03~Documentation_Generale_M_Suire/Essais_en_vol/COZY_MARK-IV.pdf",
+   "note": "CAFE: width at shoulders 39 in, at hips 36.5 in, seat-to-headliner 37 in. Designer page: cabin width/height 42/39 in"
+  },
+  "note": "Overall height 7.9 ft (designer and CAFE, static, full fuel) is to winglet tops, not fuselage height. Side-by-side front seats, two small rear seats; side-hinged bubble canopy. Main gear track 6.5 ft, wheelbase 7 ft (CAFE). No external fuselage width/height found."
+ },
+ "nacelles_or_booms": "none",
+ "gear": "Fixed main gear (Long-EZ style composite strut, wheel pants), electrically retractable nose gear; aircraft kneels on nose when parked. Tires 500x5 mains / 4.00x4 nose (CAFE). Hard-surface runways only per designer and CAFE.",
+ "cooling": "Air-cooled; belly NACA scoop, updraft cooling; inlet 50 in2, outlet 100 in2 fixed, no cowl flap (CAFE N494CZ). Peak CHT in full-power 90 kt climb 491 F. Belly landing brake sits ahead of the inlet: builder's manual warns deployment can disrupt airflow to the engine (see safety).",
+ "prop": {
+  "diameter": {
+   "v": 64,
+   "unit": "in",
+   "grade": "R",
+   "src": "http://acversailles.free.fr/documentation/03~Documentation_Generale_M_Suire/Essais_en_vol/COZY_MARK-IV.pdf",
+   "note": "N494CZ: Performance Propellers 3-blade wood fixed pitch, 64 in diameter (pitch figure illegible in OCR, reads '64/7?in'); 8 in prop extension; 13.5 in ground clearance at full fuel"
+  },
+  "blades": 3,
+  "type": "fixed",
+  "rpm_cruise": {
+   "v": 2600,
+   "unit": "rpm",
+   "grade": "R",
+   "src": "http://acversailles.free.fr/documentation/03~Documentation_Generale_M_Suire/Essais_en_vol/COZY_MARK-IV.pdf",
+   "note": "approx. at 8,000 ft WOT (2555-2607 rpm in sweep); max static 2350 rpm"
+  }
+ },
+ "engine": {
+  "model": "Lycoming O-360 / IO-360 (designer recommends O-320 to O-360); test aircraft IO-360 (exp.) with Bendix RSA-5 injection",
+  "hp": {
+   "v": 180,
+   "unit": "hp",
+   "grade": "F",
+   "src": "https://www.aircraftspruce.com/cozy/specs.html",
+   "note": "designer spec engine"
+  },
+  "turbo": false,
+  "dry_weight": null
+ },
+ "weights": {
+  "mtow": {
+   "v": 2050,
+   "unit": "lb",
+   "grade": "F",
+   "src": "https://www.aircraftspruce.com/cozy/specs.html",
+   "note": "designer gross; CAFE notes designer TO/landing 2050/1900 lb"
+  },
+  "empty": {
+   "v": 1050,
+   "unit": "lb",
+   "grade": "F",
+   "src": "https://www.aircraftspruce.com/cozy/specs.html",
+   "note": "designer 'normal empty'; CAFE weighed N494CZ at 1179.3 lb (R) with 1900 lb test gross"
+  },
+  "max_landing": {
+   "v": 1900,
+   "unit": "lb",
+   "grade": "F",
+   "src": "http://acversailles.free.fr/documentation/03~Documentation_Generale_M_Suire/Essais_en_vol/COZY_MARK-IV.pdf",
+   "note": "designer figure quoted in CAFE 'Designer's information'"
+  },
+  "zero_fuel_max": null
+ },
+ "fuel_usable": {
+  "v": 50.74,
+  "unit": "gal",
+  "grade": "R",
+  "src": "http://acversailles.free.fr/documentation/03~Documentation_Generale_M_Suire/Essais_en_vol/COZY_MARK-IV.pdf",
+  "note": "CAFE weighed capacity 51.74 gal (2 wing/strake tanks) minus 0.5 gal unusable each side"
+ },
+ "perf_points": [
+  {
+   "ktas": 182.3,
+   "alt_ft": 854,
+   "power_pct_or_hp": "29.2 inHg / 2691 rpm (IO-360 180 hp)",
+   "gph": 12.9,
+   "weight_lb": 1668.6,
+   "grade": "R",
+   "src": "http://acversailles.free.fr/documentation/03~Documentation_Generale_M_Suire/Essais_en_vol/COZY_MARK-IV.pdf",
+   "note": "density altitude; TAS 209.8 mph; with wing-cuff instrumentation (CAFE says ~3 kt drag penalty at Vmax). Vmax near sea level."
+  },
+  {
+   "ktas": 177.4,
+   "alt_ft": 5880,
+   "power_pct_or_hp": "25.1 inHg / 2615 rpm (IO-360 180 hp)",
+   "gph": 10.7,
+   "weight_lb": 1889.9,
+   "grade": "R",
+   "src": "http://acversailles.free.fr/documentation/03~Documentation_Generale_M_Suire/Essais_en_vol/COZY_MARK-IV.pdf",
+   "note": "density altitude; TAS 204.1 mph; with wing-cuff instrumentation (CAFE says ~3 kt drag penalty at Vmax). Vmax 6000 ft."
+  },
+  {
+   "ktas": 172.4,
+   "alt_ft": 8031,
+   "power_pct_or_hp": "23.5 inHg / 2600 rpm (IO-360 180 hp)",
+   "gph": 11.0,
+   "weight_lb": 1866.6,
+   "grade": "R",
+   "src": "http://acversailles.free.fr/documentation/03~Documentation_Generale_M_Suire/Essais_en_vol/COZY_MARK-IV.pdf",
+   "note": "density altitude; TAS 198.4 mph; with wing-cuff instrumentation (CAFE says ~3 kt drag penalty at Vmax). WOT 8000 ft, rich end of mixture sweep."
+  },
+  {
+   "ktas": 176.7,
+   "alt_ft": 8021,
+   "power_pct_or_hp": "23.5 inHg / 2607 rpm (IO-360 180 hp)",
+   "gph": 10.0,
+   "weight_lb": 1863.9,
+   "grade": "R",
+   "src": "http://acversailles.free.fr/documentation/03~Documentation_Generale_M_Suire/Essais_en_vol/COZY_MARK-IV.pdf",
+   "note": "density altitude; TAS 203.3 mph; with wing-cuff instrumentation (CAFE says ~3 kt drag penalty at Vmax). WOT 8000 ft best-power region (CAFE comment 'best power' on adjacent row)."
+  },
+  {
+   "ktas": 163.5,
+   "alt_ft": 8102,
+   "power_pct_or_hp": "23.5 inHg / 2500 rpm (IO-360 180 hp)",
+   "gph": 8.3,
+   "weight_lb": 1860.7,
+   "grade": "R",
+   "src": "http://acversailles.free.fr/documentation/03~Documentation_Generale_M_Suire/Essais_en_vol/COZY_MARK-IV.pdf",
+   "note": "density altitude; TAS 188.2 mph; with wing-cuff instrumentation (CAFE says ~3 kt drag penalty at Vmax). WOT 8000 ft lean of peak EGT."
+  },
+  {
+   "ktas": 169.5,
+   "alt_ft": 12032,
+   "power_pct_or_hp": "20.1 inHg / 2545 rpm (IO-360 180 hp)",
+   "gph": 8.2,
+   "weight_lb": 1873.5,
+   "grade": "R",
+   "src": "http://acversailles.free.fr/documentation/03~Documentation_Generale_M_Suire/Essais_en_vol/COZY_MARK-IV.pdf",
+   "note": "density altitude; TAS 195.0 mph; with wing-cuff instrumentation (CAFE says ~3 kt drag penalty at Vmax). WOT 12000 ft mid mixture sweep."
+  },
+  {
+   "ktas": 161.7,
+   "alt_ft": 11971,
+   "power_pct_or_hp": "20.0 inHg / 2405 rpm (IO-360 180 hp)",
+   "gph": 6.5,
+   "weight_lb": 1872.1,
+   "grade": "R",
+   "src": "http://acversailles.free.fr/documentation/03~Documentation_Generale_M_Suire/Essais_en_vol/COZY_MARK-IV.pdf",
+   "note": "density altitude; TAS 186.1 mph; with wing-cuff instrumentation (CAFE says ~3 kt drag penalty at Vmax). WOT 12000 ft leanest point, 28.6 mpg."
+  },
+  {
+   "ktas": 88.3,
+   "alt_ft": 7758,
+   "power_pct_or_hp": "13.5 inHg / 1530 rpm (IO-360 180 hp)",
+   "gph": 4.3,
+   "weight_lb": 1886.1,
+   "grade": "R",
+   "src": "http://acversailles.free.fr/documentation/03~Documentation_Generale_M_Suire/Essais_en_vol/COZY_MARK-IV.pdf",
+   "note": "density altitude; TAS 101.6 mph; with wing-cuff instrumentation (CAFE says ~3 kt drag penalty at Vmax). Max endurance."
+  },
+  {
+   "ktas": 191.2,
+   "alt_ft": 8000,
+   "power_pct_or_hp": "75% (180 hp)",
+   "gph": null,
+   "weight_lb": null,
+   "grade": "F",
+   "src": "https://www.aircraftspruce.com/cozy/specs.html",
+   "note": "designer claim 220 mph"
+  },
+  {
+   "ktas": 160.8,
+   "alt_ft": 12000,
+   "power_pct_or_hp": "40% (180 hp)",
+   "gph": null,
+   "weight_lb": null,
+   "grade": "F",
+   "src": "https://www.aircraftspruce.com/cozy/specs.html",
+   "note": "designer claim 185 mph"
+  }
+ ],
+ "three_view_urls": [],
+ "safety": {
+  "ntsb_total": {
+   "v": 22,
+   "grade": "B",
+   "src": "https://data.ntsb.gov/carol-main-public/",
+   "note": "NTSB CAROL query run 2026-10-24: Aircraft Make contains 'COZY' OR Aircraft Model contains 'COZY' (also 'MK IV'/'MARK IV'/'MKIV' model strings checked - no extra Cozies), filtered to Mark IV by model string/narrative. Events 1995-01-01 to 2025-10-28, includes 2 foreign events (Brazil 2019, UK 2025) and 0 incidents. Lower bound: builder-named registrations without 'Cozy' in make/model are missed. All Cozy-family (incl. Cozy III, unspecified 'Cozy', Long-EZ hybrids) = 42 events 1989-2025."
+  },
+  "ntsb_fatal": {
+   "v": 7,
+   "grade": "B",
+   "src": "https://data.ntsb.gov/carol-main-public/",
+   "note": "7 fatal accidents, 12 fatalities (Mark IV only, same query). Fatal: MIA95FA053, MIA08LA096, DFW08LA197, ERA12FA021, GAA19WA595 (Brazil), ERA23FA382, WPR24FA073 (4 killed)."
+  },
+  "fleet_size_for_rate": {
+   "v": 350,
+   "grade": "B",
+   "src": "https://en.wikipedia.org/wiki/Cozy_MK_IV",
+   "note": "'350 built (2015)' per Wikipedia citing World Directory of Light Aviation 2015-16. CAFE 1998 designer info: 744 plans sold, 35 completed. FAA registry (ReleasableAircraft.zip, downloaded 2026-10-24): 121 current US registrations whose make/model strings explicitly say Cozy Mk IV, plus 58 'Cozy' with no mark stated. Crude record rate: 22 NTSB events / ~350 built."
+  },
+  "pattern": "RECORD (NTSB probable causes, Mark IV): powerplant/fuel dominates the non-fatal list - fuel starvation/exhaustion or clogged filters (ERA12FA021 fatal starvation; WPR22LA138 filters clogged by deteriorating epoxide tank sealant; CEN11LA367 gascolator gasket), builder/maintenance engine faults (CEN24LA141, WPR21LA071, WPR17LA048 rotary), undetermined power loss (CEN17LA098). CONFIGURATION-SPECIFIC items on record: (a) belly landing brake deployed in flight blocked engine cooling/induction air -> total power loss, twice (CEN09LA051 serious, CEN21LA351 serious; builder's manual warns of this); (b) main-wing stall that would not recover ('locked-in'/deep stall) on two Mark IVs, both traced by NTSB to build deviations - wrong canard incidence, removed vortilons, wrong CG (FTW97LA009, designer called it an unauthorized conversion) and canard incidence/elevator not to plans (WPR10LA208) - matching the owner's-manual warning quoted by CAFE that aft of the aft CG limit the Mk IV 'could become locked in'; (c) pusher-specific foreign-object damage: canopy opened in cruise and debris struck the prop (CEN10LA245, Cozy family); propeller governor/engine-mount work on the rear engine preceded the fatal stall in ERA23FA382; (d) nose-gear-up landings (ERA26LA030; WPR22LA190 gear fuse). Fatal accidents are mostly pilot/ops (low flight near quarry wall, wires on final, night IMC over ocean WPR24FA073, unexplained CFIT into water). No NTSB finding found for rain/contamination on the canard (R1145MS is the rain-tolerant canard). INFERENCE (mine): the configuration's real hazards in the record are build-accuracy sensitivity of stall behaviour (incidence, vortilons, CG ballast for light front-seat pilots - CAFE notes a 150 lb pilot needs 40 lb nose ballast), the landing brake/inlet interaction, and long, hard-surface-only takeoff/landing (CAFE: 'not a short field or rough field aircraft'; touchdown at 78 kt lost only 28 kt in 3,000 ft of roll without braking). Fuel-management events are common to the type but are not clearly a canard trait.",
+  "notable": [
+   "1995-01-01 - Wauchula FL - fatal (2) - struck unmarked power line on short final, distance/altitude misjudged - MIA95FA053 - https://data.ntsb.gov/carol-repgen/api/Aviation/ReportMain/GenerateNewestReport/37639/pdf",
+   "1996-10-04 - Pueblo CO - serious - main wing stalled, could not break stall; canard incidence too low, 3 of 6 vortilons removed, CG 1.1 in aft of limit - FTW97LA009 - https://data.ntsb.gov/carol-repgen/api/Aviation/ReportMain/GenerateNewestReport/20085/pdf",
+   "2008-11-05 - Osceola MO - serious - inadvertent landing-brake deployment blocked engine airflow, overheat/power loss - CEN09LA051 - https://data.ntsb.gov/carol-repgen/api/Aviation/ReportMain/GenerateNewestReport/69406/pdf",
+   "2010-04-16 - North Las Vegas NV - minor - unrecoverable main-wing stall, level high-sink descent; builder did not meet design specs (canard incidence) - WPR10LA208 - https://data.ntsb.gov/carol-repgen/api/Aviation/ReportMain/GenerateNewestReport/75776/pdf",
+   "2011-10-23 - Lexington NC - fatal (1) - fuel starvation, inadequate fuel management - ERA12FA021 - https://data.ntsb.gov/carol-repgen/api/Aviation/ReportMain/GenerateNewestReport/82143/pdf",
+   "2021-08-02 - Rushville NE - serious - landing brake deployed in flight obstructed engine airflow, total power loss - CEN21LA351 - https://data.ntsb.gov/carol-repgen/api/Aviation/ReportMain/GenerateNewestReport/103626/pdf",
+   "2023-09-29 - Cullman AL - fatal (1) - low-altitude stall; contributing: improper engine-mount hardware after governor change on the rear engine (partial engine separation) - ERA23FA382 - https://data.ntsb.gov/carol-repgen/api/Aviation/ReportMain/GenerateNewestReport/193161/pdf",
+   "2024-01-14 - Half Moon Bay CA - fatal (4) - ocean impact after departure into night IMC, undetermined - WPR24FA073 - https://data.ntsb.gov/carol-repgen/api/Aviation/ReportMain/GenerateNewestReport/193662/pdf"
+  ]
+ },
+ "why_died_detail": "Not dead as a design: plans are still sold. Aircraft Spruce bought the Cozy III and Mark IV designs from Co-Z Development (Nat Puffer) and has had exclusive marketing rights since 1 Jan 2004; it also bought Brock Manufacturing's Cozy/Long-EZ metal-parts inventory, tooling and drawings after Brock closed 31 Dec 2005. What limits it: plans-built moldless foam/glass (CAFE: 2,300-2,500 h), ~35 flying of 744 plans sold by 1998, hard-surface-only, CG/ballast management, 180 hp/2050 lb limits. A revival would mainly need a kit (molded parts) rather than new aerodynamics.",
+ "rights_hints": "Design rights: Aircraft Spruce & Specialty (https://www.cozyaircraft.com/czmain.htm ; https://aircraftspruce.ca/catalog/kitspages/cozyprefab.php). The design rests on a Rutan license for Long-EZ technology (CAFE report: 'Rutan agreed to provide Nat's company, Co-Z Development of Mesa, with a license agreement'). Airfoil: Roncz R1145MS canard (John Roncz). Several derivative/clone designs exist (e.g. Aerocanard, which Puffer called 'unauthorized' in FTW97LA009).",
+ "gaps": [
+  "Official Cozy MkIV three-view with dimensions (none found online; nothing scaled)",
+  "External fuselage max width/height",
+  "Winglet area (CAFE value garbled), lower winglet size",
+  "Reconciliation of wing reference area 88.3 (designer) vs 101.4 ft2 (CAFE)",
+  "Prop pitch (OCR illegible) and typical builder props",
+  "Engine dry weight",
+  "Root vs tip t/c of the 'Eppler 1230 mod' section",
+  "Kitplanes accident analysis / ASN list (ASN returned 403)",
+  "Builder-forum weights/speeds (cozybuilders/canardzone not mined)"
+ ]
+}

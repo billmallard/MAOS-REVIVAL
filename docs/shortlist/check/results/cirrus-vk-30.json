@@ -1,0 +1,185 @@
+{
+ "id": "cirrus-vk-30",
+ "name": "Cirrus VK-30 (IO-540 290 hp prototype)",
+ "wet": {
+  "Fuselage": {
+   "theo_ft2": 244.415,
+   "wet_ft2": 239.317
+  },
+  "Wing": {
+   "theo_ft2": 246.838,
+   "wet_ft2": 215.055
+  },
+  "HTail": {
+   "theo_ft2": 37.7553,
+   "wet_ft2": 33.422
+  },
+  "Fin": {
+   "theo_ft2": 29.882,
+   "wet_ft2": 26.6474
+  }
+ },
+ "calibration": [
+  {
+   "pub": {
+    "ktas": 205,
+    "alt_ft": 4500,
+    "hp": 203,
+    "gph": 15.5,
+    "weight_lb": 3300,
+    "grade": "P",
+    "note": "AOPA Pilot Apr 1990, about 70% of 290 hp"
+   },
+   "W": 3300,
+   "our_ktas": 216.0476419280937,
+   "d_ktas_pct": 5.389093623460339,
+   "eta": 0.8369333075526592,
+   "LD": 12.877674596664262,
+   "Dq_par": 1.6790143996849662,
+   "Dq_ind": 0.17468734184274765,
+   "our_hp_at_pub_ktas": 177.30071435614767,
+   "our_gph_at_pub_ktas": 13.297553576711074,
+   "k_match": 1.1516357719317512
+  },
+  {
+   "pub": {
+    "ktas": 211,
+    "alt_ft": 5000,
+    "hp": 217,
+    "gph": 16.7,
+    "weight_lb": 3550,
+    "grade": "F",
+    "note": "spec block, 75%, manufacturer's calculation"
+   },
+   "W": 3550,
+   "our_ktas": 221.20502224535642,
+   "d_ktas_pct": 4.836503433818207,
+   "eta": 0.8367947698118346,
+   "LD": 13.271056902128793,
+   "Dq_par": 1.6843724556391237,
+   "Dq_ind": 0.18960324171537066,
+   "our_hp_at_pub_ktas": 192.32993566947584,
+   "our_gph_at_pub_ktas": 14.424745175210688,
+   "k_match": 1.1348127783769542
+  }
+ ],
+ "assumptions": [
+  "Wing span 38.66 ft, area 120 ft2 (P, AOPA Pilot Apr 1990); NLF(1)-0414F, 14% t/c. Taper 0.5 assumed (E): root 4.14 ft, tip 2.07 ft.",
+  "Fuselage 26 ft (P); max width 4.3 ft (4 ft cabin + walls) and height 4.5 ft: E, ours. Engine buried; prop at tail cone.",
+  "Tails sized by volume coefficient (E): horizontal Vh 0.60 -> 18.6 ft2, vertical (upper + ventral) Vv 0.04 -> 15.5 ft2, arm 12 ft.",
+  "Laminar run x_tr: wing 0.35 (NLF section, builder finish), tails 0.20, fuselage 0.05.",
+  "Retractable gear: no gear term.",
+  "Cooling factor 1.2: buried engine with side scoops and a fan (E). Pusher prop behind the body: no installation penalty or credit (E).",
+  "Published-point weight unstated: 3,300 lb assumed (E).",
+  "Original installed engine mass 512 lb = typical published dry weight x 1.15 for mount, baffles, exhaust and oil cooler (E; per-variant check owed by MANUFACTURING)."
+ ],
+ "k_own": 1.1516357719317512,
+ "k_fleet": 1.29,
+ "k_alt": 1.1516357719317512,
+ "k_basis": "fleet calibration (own points read cleaner than the fleet)",
+ "drag_factor": 1.29,
+ "breakdown": {
+  "cond": {
+   "alt_ft": 4500,
+   "hp": 203,
+   "W": 3300
+  },
+  "ktas": 196.48458765846146,
+  "items": [
+   [
+    "Wing",
+    0.6372409952309348,
+    "Swet 215.1 ft2, Re 6.1M, Cf 0.00220, FF 1.348, Q 1.00, x_tr 0.35"
+   ],
+   [
+    "HTail",
+    0.12718124606765208,
+    "Swet 33.4 ft2, Re 4.0M, Cf 0.00284, FF 1.276, Q 1.05, x_tr 0.20"
+   ],
+   [
+    "Fin",
+    0.09193305801486544,
+    "Swet 26.6 ft2, Re 6.1M, Cf 0.00262, FF 1.255, Q 1.05, x_tr 0.20"
+   ],
+   [
+    "Fuselage",
+    0.6617487124967583,
+    "Swet 239.3 ft2, Re 49.2M, Cf 0.00219, FF 1.263, Q 1.00, x_tr 0.05"
+   ],
+   [
+    "cooling",
+    0.10394299887074335,
+    "Raymer 12.39 x 1.20"
+   ],
+   [
+    "leakage+protuberance",
+    0.0811023505340477,
+    "5% of the rest"
+   ],
+   [
+    "calibration factor",
+    0.49391331475235056,
+    "x1.290 on the build-up (calibration; basis stated above)"
+   ]
+  ],
+  "Dq_par": 2.197062675967352,
+  "Dq_ind": 0.2553557251551296,
+  "CD0": 0.01830885563306127,
+  "eta": 0.8328800083245343,
+  "LD": 11.768600491992402
+ },
+ "orig": {
+  "alt_ft": 8000,
+  "hp": 200,
+  "ktas": 200.91880862899316,
+  "range_nm_noreserve_fullfuel_mtow": 1206.076936634252,
+  "hours": 6.002807526404036,
+  "climb_allowance_lb": 27.21212121212121,
+  "payload_1000_0": 873.6327186366773,
+  "fuel_1000_0_lb": 476.36728136332295,
+  "payload_1000_45": 807.0748838777952,
+  "fuel_1000_45_lb": 542.925116122205
+ },
+ "am_model": "AM20T",
+ "am_dmass_lb": -120.75,
+ "am": {
+  "AM-low": {
+   "alt_ft": 8000.0,
+   "hp": 195.0,
+   "ktas": 198.92570504320886,
+   "empty": 2200.0,
+   "useful": 1350.0,
+   "useful_opt": 1470.75,
+   "range_nm_fullfuel": 1224.7568059662567,
+   "gph": 14.625,
+   "payload_1000_0": 880.3197697778145,
+   "fuel_1000_0_lb": 469.6802302221857,
+   "payload_1000_45": 815.4258122430549,
+   "fuel_1000_45_lb": 534.5741877569453,
+   "eco_payload_1000_0": 973.4230940045964,
+   "eco_payload_1000_45": 931.196975889778,
+   "eco_ktas": 165.2420572055663,
+   "opt_ktas": 207.61027413364738,
+   "opt_payload_1000_45": 954.3321034741659
+  },
+  "AM-high": {
+   "alt_ft": 16000.0,
+   "hp": 195.0,
+   "ktas": 211.81527408800753,
+   "empty": 2200.0,
+   "useful": 1350.0,
+   "useful_opt": 1470.75,
+   "range_nm_fullfuel": 1256.8569483242857,
+   "gph": 14.625,
+   "payload_1000_0": 889.9241474602094,
+   "fuel_1000_0_lb": 460.07585253979056,
+   "payload_1000_45": 825.1723620707592,
+   "fuel_1000_45_lb": 524.8276379292407,
+   "eco_payload_1000_0": 972.5605007290037,
+   "eco_payload_1000_45": 930.4697336268575,
+   "eco_ktas": 173.5551045195909,
+   "opt_ktas": 221.2235695610059,
+   "opt_payload_1000_45": 963.202444789069
+  }
+ }
+}

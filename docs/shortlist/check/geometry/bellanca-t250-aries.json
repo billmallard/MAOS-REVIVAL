@@ -1,0 +1,279 @@
+{
+ "id": "bellanca-t250-aries",
+ "variant": "Anderson-Greenwood / Bellanca T-250 Aries = FAA Model 51 (TCDS A11SW, approved 28 Jul 1976; Lycoming O-540-A4D5 carbureted 250 hp). The Model 51A (IO-540-C4B5 fuel-injected, approved 16 Jun 1980) shares the TC; no separate 51A geometry or performance was found. Wikipedia also lists an 'AG-250' designation (Air Progress Nov 1978). The geometry is the published Jane's/AOPA brochure data for the production-standard airplane; the AOPA flight test was done on prototype N51AG (s/n 0001).",
+ "config": "tractor, low wing, T-tail with all-moving stabilator, retractable tricycle gear, single engine",
+ "wing": {
+  "span": {
+   "v": 31.33,
+   "unit": "ft",
+   "grade": "F",
+   "src": "https://aeroresourcesinc.com/uploads/197703-1977%20Bellanca%20Aries%20T-250.pdf",
+   "note": "31 ft 4 in, AOPA Pilot Mar 1977 spec table (manufacturer data); same in Jane's 1980-81 via Wikipedia. Aerofiles gives 31 ft 9 in (unexplained)."
+  },
+  "area": {
+   "v": 170,
+   "unit": "ft2",
+   "grade": "F",
+   "src": "https://aeroresourcesinc.com/uploads/197703-1977%20Bellanca%20Aries%20T-250.pdf",
+   "note": "AOPA spec table; Jane's 1980-81 via Wikipedia. Wing loading 18.5 lb/sq ft at 3150 lb. AR = 5.77 (computed by us)."
+  },
+  "root_chord": {
+   "v": 65.1,
+   "unit": "in",
+   "grade": "E",
+   "src": "https://planeandpilotmag.com/bellanca-t-250-aries/",
+   "note": "E (ours): area/span = 170/31.33 ft = 5.43 ft. Plane & Pilot describes the wings and T-tail as laminar-flow constant-chord, so we took root = tip = mean chord. This assumes the area includes the fuselage carry-through; no measured chord was found."
+  },
+  "tip_chord": {
+   "v": 65.1,
+   "unit": "in",
+   "grade": "E",
+   "src": "https://planeandpilotmag.com/bellanca-t-250-aries/",
+   "note": "E (ours): same as root (constant chord per Plane & Pilot)."
+  },
+  "sweep_le_deg": {
+   "v": 0,
+   "unit": "deg",
+   "grade": "E",
+   "src": "https://planeandpilotmag.com/bellanca-t-250-aries/",
+   "note": "E (ours): implied by the constant-chord rectangular planform; not published."
+  },
+  "airfoil": "NACA \"60-412\" per Lednicer's Incomplete Guide to Airfoil Usage (quotation marks are the guide's) [B, https://m-selig.ae.illinois.edu/ads/aircraft.html]; Wikipedia (citing Jane's 1980-81) gives 'NACA 600412 modified' [F]. Both describe a 6-series laminar section, 12% thick. AOPA 1977 and Plane & Pilot call it a laminar-flow wing. Exact designation unresolved.",
+  "tc_root": {
+   "v": 0.12,
+   "unit": "-",
+   "grade": "B",
+   "src": "https://m-selig.ae.illinois.edu/ads/aircraft.html",
+   "note": "from the '412' in the designation; not independently confirmed"
+  },
+  "tc_tip": {
+   "v": 0.12,
+   "unit": "-",
+   "grade": "B",
+   "src": "https://m-selig.ae.illinois.edu/ads/aircraft.html",
+   "note": "single section listed; assumed constant"
+  },
+  "winglets": "no"
+ },
+ "canard_or_htail": {
+  "kind": "htail",
+  "span": null,
+  "area": null,
+  "chord": null,
+  "airfoil": "laminar-flow constant-chord section per Plane & Pilot (designation not given). T-tail stabilator with tab; travel TE up 15 deg / down 2 deg; trim range up 7 deg / down 0.25 deg with tab faired (TCDS A11SW).",
+  "tc": null
+ },
+ "vtail": {
+  "count": 1,
+  "area_each": null,
+  "height": null,
+  "root_chord": null,
+  "tip_chord": null,
+  "note": "Single swept fin carrying the T-tail stabilator. Rudder travel 30 deg each way (TCDS). Overall height 8 ft 7 in (AOPA spec table). AOPA 1977 flight test: a rudder input in smooth air gave considerable back-and-forth rebounding of the tail before the yaw damped out (weak yaw damping)."
+ },
+ "fuselage": {
+  "length": {
+   "v": 26.17,
+   "unit": "ft",
+   "grade": "F",
+   "src": "https://aeroresourcesinc.com/uploads/197703-1977%20Bellanca%20Aries%20T-250.pdf",
+   "note": "26 ft 2 in overall (AOPA spec table; Jane's via Wikipedia). Aerofiles 26 ft 7 in."
+  },
+  "max_width": null,
+  "max_height": null,
+  "cabin_width": {
+   "v": 45,
+   "unit": "in",
+   "grade": "F",
+   "src": "https://aeroresourcesinc.com/uploads/197703-1977%20Bellanca%20Aries%20T-250.pdf",
+   "note": "AOPA spec table; cabin length 115 in, cabin height 48.5 in"
+  },
+  "note": "Slab-sided, nearly flat-bellied aluminum fuselage, deliberately built from flat skins and simple (not compound) curves to cut production cost (Plane & Pilot 2010; Wikipedia). Flush riveting, butt-jointed skins, flush vents/drains/breather, sealed nose-gear doors (Plane & Pilot). One car-style cabin door. Seats: 4, or 5 with the optional fifth seat at station +182 (TCDS Note 3). Baggage 250 lb at +174."
+ },
+ "nacelles_or_booms": "none (single engine)",
+ "gear": "retractable tricycle. Mains retract inward and stow under the rear seat behind flush gear doors, which allows a thinner wing but gives a narrow track (about car width) and sluggish ground steering (AOPA 1977). Nose wheel steerable 30 deg each way (TCDS). Max gear operating/extended speed 166 mph CAS / 144 kt (TCDS); AOPA quotes 168 mph. Emergency hand crank between the rear seats.",
+ "cooling": "air; single inlet below the spinner (Plane & Pilot 2024); no cowl flaps (AOPA 1977)",
+ "prop": {
+  "diameter": {
+   "v": 77,
+   "unit": "in",
+   "grade": "T",
+   "src": "https://drs.faa.gov/api/content/alf/5b718d89-7d42-46a1-b537-9a3fbe563124",
+   "note": "Hartzell HC-E2YR-1BF/F8465-7R or HC-E2YR-1S/8465-7R, 76-77 in; AOPA spec table 77 in"
+  },
+  "blades": 2,
+  "type": "constant speed",
+  "rpm_cruise": {
+   "v": 2300,
+   "unit": "rpm",
+   "grade": "P",
+   "src": "https://aeroresourcesinc.com/uploads/197703-1977%20Bellanca%20Aries%20T-250.pdf",
+   "note": "rpm at the AOPA 6,500 ft cruise point (22.5 inHg full throttle). TCDS placard: do not exceed 27 inHg below 2300 rpm."
+  }
+ },
+ "engine": {
+  "model": "Lycoming O-540-A4D5, carbureted, 2,000 h TBO (Model 51); Lycoming IO-540-C4B5 with Bendix RSA-5AD1 injector (Model 51A). Owner sites list IO-540-B4C5 for N77CT; the FAA registry engine code for N77CT/N250DJ/N250MG is the Lycoming O-540 series, and for s/n 0001 (N251AG) the IO-540 series.",
+  "hp": {
+   "v": 250,
+   "unit": "hp",
+   "grade": "T",
+   "src": "https://drs.faa.gov/api/content/alf/5b718d89-7d42-46a1-b537-9a3fbe563124",
+   "note": "2575 rpm, all operations"
+  },
+  "turbo": false,
+  "dry_weight": null
+ },
+ "weights": {
+  "mtow": {
+   "v": 3150,
+   "unit": "lb",
+   "grade": "T",
+   "src": "https://drs.faa.gov/api/content/alf/5b718d89-7d42-46a1-b537-9a3fbe563124",
+   "note": "maximum weight, take-off and landing"
+  },
+  "empty": {
+   "v": 1850,
+   "unit": "lb",
+   "grade": "F",
+   "src": "https://aeroresourcesinc.com/uploads/197703-1977%20Bellanca%20Aries%20T-250.pdf",
+   "note": "AOPA spec table 'Empty weight (dry)'; useful load 1,300 lb. Plane & Pilot 2010 gives 1,888 lb (useful 1,262)."
+  },
+  "max_landing": {
+   "v": 3150,
+   "unit": "lb",
+   "grade": "T",
+   "src": "https://drs.faa.gov/api/content/alf/5b718d89-7d42-46a1-b537-9a3fbe563124",
+   "note": "same as take-off"
+  },
+  "zero_fuel_max": null
+ },
+ "fuel_usable": {
+  "v": 76,
+  "unit": "gal",
+  "grade": "T",
+  "src": "https://drs.faa.gov/api/content/alf/5b718d89-7d42-46a1-b537-9a3fbe563124",
+  "note": "80 gal total in 2 wing tanks at +117; 76 usable"
+ },
+ "perf_points": [
+  {
+   "ktas": 180.7,
+   "alt_ft": 6500,
+   "power_pct_or_hp": "73% (calculated by AOPA): 22.5 inHg full throttle / 2300 rpm",
+   "gph": null,
+   "weight_lb": null,
+   "grade": "P",
+   "src": "https://aeroresourcesinc.com/uploads/197703-1977%20Bellanca%20Aries%20T-250.pdf",
+   "note": "AOPA Pilot flight check of prototype N51AG, Mar 1977: 185 mph IAS, 208 mph TAS at OAT 50 F; aircraft 'partially loaded' (weight not stated). Converted from mph by us."
+  },
+  {
+   "ktas": 188.6,
+   "alt_ft": 1000,
+   "power_pct_or_hp": "full throttle, prop full forward (2575 rpm, ~100%)",
+   "gph": null,
+   "weight_lb": null,
+   "grade": "P",
+   "src": "https://aeroresourcesinc.com/uploads/197703-1977%20Bellanca%20Aries%20T-250.pdf",
+   "note": "AOPA: 215 mph indicated, 217 mph true, choppy air. Converted from mph by us."
+  },
+  {
+   "ktas": 180.7,
+   "alt_ft": null,
+   "power_pct_or_hp": "75%",
+   "gph": null,
+   "weight_lb": null,
+   "grade": "F",
+   "src": "https://aeroresourcesinc.com/uploads/197703-1977%20Bellanca%20Aries%20T-250.pdf",
+   "note": "Manufacturer 'Normal cruise speed (75% power)' 208 mph, AOPA spec table; altitude not stated. Plane & Pilot 2010 also gives 208 mph."
+  },
+  {
+   "ktas": 173.8,
+   "alt_ft": null,
+   "power_pct_or_hp": "65%",
+   "gph": null,
+   "weight_lb": null,
+   "grade": "F",
+   "src": "https://aeroresourcesinc.com/uploads/197703-1977%20Bellanca%20Aries%20T-250.pdf",
+   "note": "Manufacturer 'Economy cruise speed (65% power)' 200 mph; altitude not stated. Jane's 1980-81 via Wikipedia: 200 mph at 65%."
+  },
+  {
+   "ktas": 186.8,
+   "alt_ft": 0,
+   "power_pct_or_hp": "max level speed (100%)",
+   "gph": null,
+   "weight_lb": null,
+   "grade": "F",
+   "src": "https://en.wikipedia.org/wiki/Bellanca_Aries",
+   "note": "Jane's 1980-81 via Wikipedia: 215 mph at sea level; AOPA spec table 215 mph (altitude not stated). Aerofiles: 216 mph top / 201 mph cruise."
+  },
+  {
+   "ktas": null,
+   "alt_ft": null,
+   "power_pct_or_hp": "stall",
+   "gph": null,
+   "weight_lb": null,
+   "grade": "F",
+   "src": "https://aeroresourcesinc.com/uploads/197703-1977%20Bellanca%20Aries%20T-250.pdf",
+   "note": "Published stall 72 mph clean / 64 mph gear and flaps down; AOPA measured 69 / 63 mph (IAS). Climb 1,240 fpm; ceiling 18,100 ft."
+  }
+ ],
+ "range_points": [
+  {
+   "nm": 860,
+   "miles_published": "990 statute miles",
+   "basis": "normal cruise 75%, 45-min reserve, 76 gal usable; altitude not stated",
+   "grade": "F",
+   "src": "https://aeroresourcesinc.com/uploads/197703-1977%20Bellanca%20Aries%20T-250.pdf"
+  },
+  {
+   "nm": 1017,
+   "miles_published": "1,170 statute miles",
+   "basis": "economy cruise with 45-min reserve. The AOPA table labels this '55% power' while its economy-speed line says 65%, so the power setting is ambiguous. Wikipedia/Jane's: 1,170 mi 'with four passengers'.",
+   "grade": "F",
+   "src": "https://aeroresourcesinc.com/uploads/197703-1977%20Bellanca%20Aries%20T-250.pdf"
+  }
+ ],
+ "three_view_urls": [
+  "https://outerzone.co.uk/plan_details.asp?ID=2379"
+ ],
+ "safety": {
+  "ntsb_total": {
+   "v": 1,
+   "unit": "-",
+   "grade": "R",
+   "src": "https://data.ntsb.gov/carol-main-public/basic-search",
+   "note": "NTSB CAROL API queried 2026-10-24. Aircraft.AircraftMake contains BELLANCA (2,266 cases): no model containing T-250/T250/ARIES/51. Make contains ANDERSON (36) or GREENWOOD (1): one hit, 'ANDERSON, GREENWOOD' model '51'. Aircraft.AircraftModel contains T-250 / T250 / ARIES: 0. Registration searches N77CT, N250DJ, N250MG, N251AG, N250BB, N250DD: 0 (positive control N3FC returned CEN15FA321). The single event is FTW83LA173 (1983)."
+  },
+  "ntsb_fatal": {
+   "v": 0,
+   "unit": "-",
+   "grade": "R",
+   "src": "https://data.ntsb.gov/carol-main-public/basic-search",
+   "note": "no fatal events; the only record had no injuries"
+  },
+  "fleet_size_for_rate": {
+   "v": 4,
+   "unit": "-",
+   "grade": "B",
+   "src": "https://registry.faa.gov/database/ReleasableAircraft.zip",
+   "note": "FAA registry (ReleasableAircraft.zip, downloaded 2026-10-24), all status V. Model code 1225051 (BELLANCA AIRCRAFT CORP. model 51): N250DJ s/n 0003-80 (CA), N77CT s/n 0004-80 (TX), N250MG s/n 0005-80 (TX), all standard normal. Model code 0740151 (ANDERSON GREENWOOD model 51): N251AG s/n 0001 (1976, TX, certification code 40 = experimental), i.e. the prototype ex-N51AG. DEREG: N250BB s/n 0007-80 and N250DD s/n 0006-80, cancelled 2010/2011; last action 1980-03-15, never with an owner name, so probably never completed (also suggested in the archived 2004 owner page). Note: ACFTREF code 0740102 'AND-51-A' covers 1950s serials 1-5 (N3900K etc.) that are AG-14s, not Aries; excluded. Number built: Wikipedia 5; Plane & Pilot 2024 four customer airplanes plus one structural-test airframe; TCDS eligibility s/n 0001, 0003 and up."
+  },
+  "pattern": "RECORD: one NTSB event in about 50 years: a ground loss of control while taxiing, with a main gear collapse and no injuries (1983). Fleet exposure is tiny (4-5 airframes), so no rate can be drawn. CONFIGURATION NOTES from the 1977 AOPA flight test (record, not accidents): narrow main-gear track from the inward-retracting gear, with sluggish ground steering that needs attention in crosswinds; weak yaw damping after rudder inputs; a T-tail stabilator that keeps flying below airplane flying speed, so a jerked pull on rollout pitches the nose up; and from a held deep stall the airplane breaks sharply down and to the right. Normal stalls were benign, with wings rolling level in accelerated stalls. INFERENCE: the 1983 accident (brakes failed during a turn, then excursion) loosely fits the narrow-track and steering comments, but the NTSB cited the brake seal and the pilot's decision, not the design.",
+  "notable": [
+   "1983-03-31 - Tomball TX (Hooks DWH) - N51AG, Anderson Greenwood 51 s/n 0001 (prototype; 1,520 h airframe time) - 0 injured, substantial damage - during taxi the nose-gear steering was insufficient for a left turn and the left brake had no fluid (deteriorated master-cylinder O-ring); the aircraft went onto soft ground and the left main gear collapsed when power was applied; cause: pilot planning/decision - NTSB FTW83LA173 - https://data.ntsb.gov/carol-repgen/api/Aviation/ReportMain/GenerateNewestReport/20852/pdf"
+  ]
+ },
+ "why_died_detail": "Record: the Aries was designed by Marvin Greenwood at Anderson, Greenwood & Co. (Houston valve maker): TC application Dec 1973, first flight 19 Jul 1973 per Wikipedia, TC 28 Jul 1976, about $1.2M spent on development and certification in FY1975-76 (AOPA 1977). Production was meant to go to Bellanca at Alexandria MN, which A-G was managing and taking a majority stake in. In winter 1976-77 the Viking plant was virtually shut down for lack of money, and A-G still had to raise capital before production could start (AOPA 1977). Target rate 12-14 per year; price expected $60-70k basic IFR (AOPA 1977). Bellanca went into receivership/bankruptcy in 1980 (Plane & Pilot 2010 and 2024). Plane & Pilot 2024 blames costs of the composite Skyrocket II program, estimated at $20-25M. Only s/n 0003-0005 (registered as 1980 builds) plus the prototype were completed; the injected Model 51A was approved in June 1980, too late. An ex-Bellanca president's recollection (archived 2004 owner page) says the 250 out-performed a 210, Bonanza and Viking in a fly-off, but he personally found it very ugly and the panel too high to see over. INFERENCE: it died of the parent company's finances, not a technical or safety failure. A revival would not inherit a safety problem but would face: carbureted 1960s O-540 power; 76 gal fuel giving ~860 nm at 75% (meeting 1,000 nm needs economy power); dated looks; narrow-track gear and yaw damping to improve.",
+ "rights_hints": "TCDS A11SW (FAA DRS, Rev 2, 1 Jul 1980, status Current): Type Certificate Holder 'Anderson, Greenwood and Company' of Houston, Texas; former holder listed as 'Bellanca'; Production Certificate 1GL (Bellanca Aircraft Corp., Alexandria MN) for s/n 3 and up. So the TC was never transferred out of Anderson Greenwood. Secondary company histories (not verified by us; e.g. https://orbitcodex.com/organizations/anderson-greenwood-crosby) say Anderson Greenwood went to Keystone International (1986), Tyco (1997), Pentair (2012) and Emerson (2016-17), where it remains a valve brand. If so, Emerson or a successor may hold TC A11SW as an unused asset. This has to be checked with the FAA (Chicago/Fort Worth ACO) by the owner; we made no contact. Two of the four registered airframes (N77CT and N251AG, the prototype) are registered to the same private owner in Beaumont TX (registry). Owner-run site: https://consumleg.wixsite.com/bellancaaries250 . DRS search note: the Aries is filed under model '51', not 'T-250'; Model/Keyword searches for T-250/Aries return nothing relevant.",
+ "gaps": [
+  "Horizontal and vertical tail dimensions (span, area, chord): none published; no usable dimensioned three-view found online (the Observer's Book 1978 three-view exists in print; the Outerzone peanut-scale plan derived from it could not be downloaded, only a 10 KB stub)",
+  "Measured wing chord, dihedral, incidence, twist, wetted areas",
+  "Fuel flow at any cruise point; altitude for the published 75%/65% cruise speeds",
+  "Weight at the AOPA flight-test points",
+  "POH / flight manual not found online",
+  "Exact airfoil designation ('60-412' vs '600412 modified')",
+  "Model 51A (IO-540) performance and any built 51A airframes",
+  "Engine dry weight (not looked up to avoid using unsourced figures)",
+  "Air Facts (Collins 2014) article blocked by a JavaScript gate; ASN blocked by Cloudflare",
+  "Current owner of Anderson Greenwood & Co.'s TC A11SW (corporate succession unverified)"
+ ]
+}
