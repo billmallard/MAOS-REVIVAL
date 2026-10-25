@@ -23,6 +23,8 @@ same Aeromomentum assumptions (run_check.AM20T). What this study adds:
      individual drag items, each as a change in range.
   6. A sensitivity table: every geometry and calibration input moved across
      its credible range, with the drag factor re-calibrated each time.
+  7. A range integrator that flies the final partial fuel step (stage 3's
+     drops it), so no-reserve and 45 min ranges are both exact.
 
 Run from the repo root:  python3 docs/studies/aries/aries_check.py
 Writes docs/studies/aries/results.json and docs/studies/aries/tables.md.
@@ -58,6 +60,33 @@ def parasite_post(m, wet, h_ft, V_fts, P_hp):
 
 
 perf.parasite_Dq = parasite_post
+
+
+# perf.cruise_range burns fuel in whole steps and drops the last partial one,
+# which understates range by up to one step (5 lb, about 14 nm at 160 KTAS).
+# This study's version flies the final fraction, as perf.fuel_for already
+# does. The shared stage 3 module is left unchanged.
+def cruise_range_frac(m, wet, W0, fuel_lb, h_ft, V_fts, bsfc, nprops=1,
+                      reserve_min=0.0, step=10.0):
+    W, burned, dist, t = W0, 0.0, 0.0, 0.0
+    while True:
+        P, _ = perf.power_required(m, wet, W, h_ft, V_fts, nprops)
+        ff = bsfc * P  # lb/h
+        avail = fuel_lb - burned - ff * reserve_min / 60.0
+        if avail <= 0:
+            break
+        s = min(step, avail)
+        dt = s / ff
+        dist += V_fts / FT_PER_KT * dt
+        t += dt
+        burned += s
+        W -= s
+        if s < step:
+            break
+    return dist, t
+
+
+perf.cruise_range = cruise_range_frac
 
 HTAIL_AREA = 12.5 * 2.55
 
