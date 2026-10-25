@@ -87,7 +87,7 @@ Bill, 2026-10-24: "Prescott Pusher should also be of high interest. This is poss
 
 ### Verdict
 
-**Rank 2, top tier.** As published it passes speed (165 KTAS at 7,500 ft) and misses useful load by 150 lb (850) and range by about 130 nm (869 nm, reserve not stated). As measured it is weaker: the one weighed builder aircraft had 739 lb useful, and Kitplanes measured 151 KTAS at 73% at an unpublished altitude, which our model can reproduce only with a drag factor of 1.46-1.67 against the brochure's 1.35. On an AM20T it is fast (194-207 KTAS) but the engine's weight in the tail costs about 143 lb of useful load with ballast; **it clears all three floors on both drag bases only as a re-derivation**: about 2,700 lb gross, a structure about 100 lb lighter than today's would be at that weight, 90 gal, and the AM20T (1,077 lb, 1,112-1,172 nm, 194-204 KTAS). Its two great assets are a short 12 in prop extension instead of a drive shaft, and the best-preserved engineering record in the survey (SDASM SC.10269: drawings, loads report, wind-tunnel evaluation, structural tests). Its weakness is balance: a far-aft CG that made rotation hard and pitch sensitive, which a heavier engine in the tail makes worse. It ranks behind the Aries, which clears the floors on a straight engine swap, and ahead of the Express, because its engineering survives and it has no long shaft or known tail flaw.
+**Rank 2, top tier.** As published it passes speed (165 KTAS at 7,500 ft) and misses useful load by 150 lb (850) and range by about 130 nm (869 nm, reserve not stated). As measured it is weaker: the one weighed builder aircraft had 739 lb useful, and Kitplanes measured 151 KTAS at 73% at an unpublished altitude, which our model can reproduce only with a drag factor of 1.46-1.67 against the brochure's 1.35. On an AM20T it is fast. **It clears all three floors on both drag bases only as a re-derivation** at about 2,700 lb gross with 90 gal, and only if the rebuild lands at the light end of MANUFACTURING's structure estimate: 1,228 lb useful, 1,044-1,151 nm, 179-201 KTAS (AER-3866). At the heavy end it misses useful load by 78 lb. The balance costs far less than stage 3 thought: on stations read off the designer's own plan, the AM20T needs 33-52 lb of nose ballast, not 82, and none at all if its radiator goes in the nose. Its two great assets are a short 12 in prop extension instead of a drive shaft, and the best-preserved engineering record in the survey (SDASM SC.10269: drawings, loads report, wind-tunnel evaluation, structural tests). Its weakness is handling, and it is now specific: main wheels 21-28 in behind the CG range on prototype 1 (a 30-38 deg tipback, against the usual 15), a tail volume of about 0.50, and a stick-free static margin of only about 6% at the aft limit (all our estimates). The AM20T makes rotation harder through its thrust on a high thrust line more than through its weight. It ranks behind the Aries, which clears the floors on a straight engine swap, and ahead of the Express, because its engineering survives and it has no long shaft or known tail flaw.
 
 ### Idea ledger (what a new airplane should keep)
 
@@ -146,6 +146,8 @@ So either Kitplanes flew low and the airplane is 10-25% draggier than its geomet
 
 ### Where it lands on an Aeromomentum engine, and what moves it
 
+*Stage 3 record (2026-10-24). Its structure placeholders and its balance arms (8 ft and 6 ft, so 1.33 lb of ballast per pound of engine) are superseded by [the re-derivation below](#the-re-derivation-with-the-structure-delta-and-the-balance-aer-3866); the fuel and power levers still stand.*
+
 Bill's question: on an Aeromomentum engine, turbo-normalised at altitude, what moves useful load (850 lb published, 150 short), range (869 nm published, about 130 short) and speed, and does it clear all three floors? Script and full tables: `docs/shortlist/check/prescott/levers.py`. Assumptions: 195 / 120 hp continuous and 8,000 / 16,000 ft critical altitudes are ours; the structure deltas are placeholders until MANUFACTURING (AER-3784) answers; the 75 and 90 gal tankage is our estimate (the 15% wing has about 280 gal of geometric volume).
 
 **The engine sits in the tail, so engine weight costs twice.** Every pound added behind the cabin needs about 1.3 lb of nose ballast to keep the CG where it was (our estimate of the arms), and the Prescott's CG was already its weak point. The AM20T is 61 lb heavier installed than the O-360, which costs about 82 lb of ballast; the AM15T is 26 lb lighter and saves about 35 lb.
@@ -163,6 +165,71 @@ Bill's question: on an Aeromomentum engine, turbo-normalised at altitude, what m
 **What each lever buys.** More power at altitude buys speed and nothing else: the AM20T lifts cruise to 194-207 KTAS and costs useful load through the tail-cone weight. More fuel buys range and nothing else: 90 gal clears 1,000 nm at continuous power on both bases. A lighter structure buys useful load pound for pound, but at 2,400 lb even 200 lb lighter leaves the AM20T version at 907 lb. **It clears all three floors on both bases only as a re-derivation**: a structure designed for about 2,700 lb gross, about 100 lb lighter than today's structure would be at that weight, 90 gal, and the AM20T. The AM15T alternative clears load and range at 2,400 lb with a 200 lb lighter structure, but its cruise speed falls to the floor (159-169 KTAS). With 90 gal aboard at 2,700 lb, the AM20T re-derivation carries about 540 lb of people and baggage: it is a four-seater with full fuel only for light occupants, as the original was.
 
 **The real constraint is balance, not power.** The AM20T makes the Prescott fast, but its weight in the tail cone makes the documented aft-CG problem worse. A re-derivation would move the wing aft or lengthen the forward fuselage to put the CG where the gear and the tail want it, and that, not the engine, is the design work.
+
+### The re-derivation, with the structure delta and the balance (AER-3866)
+
+Bill picked the Prescott on AER-3783. This section folds in MANUFACTURING's structure estimate (AER-3784) and works the balance on the AM20T. Script, inputs and full tables: `docs/shortlist/check/prescott/balance.py` and `balance_output.md`; how each station was read: that folder's README. The AM20T's 195 hp continuous rating and its critical altitudes are still **our assumptions** (the question to Aeromomentum waits on AER-3800). Every number here is our estimate (E) unless graded otherwise.
+
+**The geometry now comes from the designer.** Tom Prescott's 1/5-scale plan and article (*RCM*, July 1986) give one full-scale station in the text (main wheels at FS 244, nose tip FS 92, F) and a dimensioned side view. We measured the rest off it:
+
+| Quantity | Value | Basis |
+|---|---|---|
+| Designer's C.G. range | FS 216.2-222.9, 12.7-27.0% MAC | E, drawn on the model plan; full-scale status not stated |
+| Main wheels | FS 244, so 21-28 in behind the CG range; tipback 30-38 deg (usual: about 15) | F (station), E (angle) |
+| Tail volume | 0.50 (GA singles typically 0.6-0.8) | E, tail arm 7.5 ft |
+| Neutral point | 39% MAC stick fixed (36-43%), about 33% stick free | E, AVL wing + T-tail 48.7% (hand check 49.6%), less the fuselage (Raymer eq. 16.25) |
+| Static margin at the aft limit | about 12% stick fixed, about 6% stick free | E |
+| Engine and nose-bay arms from the aft limit | 73 in behind, 123 in ahead | E |
+| Ballast per pound of engine | 0.6 lb (stage 3 assumed 1.33) | E |
+
+**1. Useful load and range at the re-derived gross.** AM20T, 2,700 lb, 90 gal, wing and tail 12.5% larger to hold the stall speed (MANUFACTURING's weight assumes it), balance by option B below. Still air, no reserve, full fuel from gross, at continuous power. Critical altitude 8,000 / 16,000 ft.
+
+| Structure end (MANUFACTURING) | Empty, lb | Useful load | Payload with full fuel | Brochure basis (k 1.35): KTAS / nm | Measured basis (k 1.55): KTAS / nm | Floors |
+|---|---|---|---|---|---|---|
+| Light (rebuild 1,380 lb at 2,400 lb, +30 lb for 2,700) | 1,472 | **1,228** | 688 | 188-201 / 1,100-1,151 | 179-190 / 1,044-1,093 | **all three pass** on both bases |
+| Heavy (rebuild 1,630 lb, +85 lb) | 1,778 | **922** | 382 | 188-201 / 1,100-1,151 | 179-190 / 1,044-1,093 | useful load misses by 78 lb; range and speed pass |
+| At 2,400 lb, 56.5 gal (no re-derivation), light / heavy | 1,442 / 1,693 | 958 / 707 | 619 / 368 | 194-207 / 683-705 | 184-196 / 648-669 | load and range fail |
+
+The useful-load floor holds at 2,700 lb if the rebuilt empty weight with the AM20T is 1,700 lb or less. MANUFACTURING's range puts it at 1,472-1,778 lb, so the floor is met over about three quarters of that range. The heavy end starts from the one weighed builder aircraft (1,661 lb, which included ballast for CG), so it may double-count some ballast. Range clears 1,000 nm on both drag bases at both critical altitudes. At 16,000 ft the speed is 3-4 kt below stage 3's 2,700 lb figures (204 / 194 KTAS): the cost of the larger wing and tail, which stage 3 left out.
+
+**2. The balance options.** Each is sized alone so the most-aft standard loading (one pilot, 100 lb of bags, 45 min of fuel) sits on the designer's aft limit, at 2,700 lb with 90 gal. Without a fix, the AM20T with its radiator in the tail cone puts that loading 2.8-3.0 in aft of the limit.
+
+| Option | What it takes | Added weight, lb | Useful load, light / heavy | Side effects |
+|---|---|---|---|---|
+| A. Nose ballast | lead in the nose battery bay (FS 100) | 40-52 | 1,194 / 876 | none on drag; pure dead weight |
+| **B. Masses forward** | **radiator and coolant (35 lb) in the nose bay, where the prototype's oil cooler went; remote avionics boxes forward** | **6** (longer coolant lines) | **1,228 / 922** | a nose inlet and 30 ft of coolant line; the radiator inlet sees clean air |
+| C. Fuselage stretch | an 11-14 in plug between the front seats and the spar | 9-11 | 1,225 / 917 | about 1 kt and 5 nm; neutral point forward by about 1-2% MAC (not in the sizing); a new cage bay |
+| D. Wing moved aft | 4-5 in, with its wing-mounted mains and tanks | about 10 (cage rework) | 1,224 / 918 | the mains move aft too, so rotation gets harder; tail arm and tail volume shrink |
+
+The battery, hydraulic pack and oil cooler were already in the nose on the prototype (SA86, AOPA86, P), so "moving masses forward" has only the new items left to move. The radiator is the one big one. The stage 4 section below still prices the nose ballast the aft savings avoid at our old 1.3 ratio (20-55 lb); at 0.6 it is about 9-25 lb. That line is MANUFACTURING's to update.
+
+**Option B carries the targets with the least added weight: 6 lb and no ballast**, against 40-52 lb of lead, and it is the only option with no aerodynamic or structural side effect. It has two conditions. First, our empty-CG reference is the kindest reading: we put the original exactly on its aft limit with no ballast, and the record says builders needed ballast (N747P; "we narrowed the CG envelope"). Moving the radiator forward absorbs about 4 in of error in that reference; each further inch costs about 13 lb of ballast. Second, B holds the CG; it does nothing for rotation.
+
+**Rotation is the harder problem, and balance does not solve it.** A quasi-static moment balance about the main wheels (E: CLmax 1.6 with take-off flap, ground-roll CL 0.5, full-up tail CL -1.0, thrust line 55 in above the ground) gives the speed at which full up elevator can just start the rotation, as a multiple of the stall speed:
+
+| Case | Mains, FS | V_rot / Vs, aft to forward limit |
+|---|---|---|
+| Original, O-360, prototype 1 mains | 244 | 1.40-1.53 |
+| Original, O-360, prototype 2 (mains about 8 in forward, P) | 236 | 1.27 at the aft limit |
+| AM20T, 2,700 lb, prototype 2 mains | 236 | 1.35-1.50 |
+| The same with a 30% larger horizontal tail | 236 | 1.24-1.36 |
+
+A normal airplane rotates at about 1.1-1.2 Vs, and this one lifts off flat at about 1.8 Vs. The original's 1.4-1.5 is consistent with the record ("high takeoff (rotation) speeds", an airplane that "jumped off the ground unexpectedly"), which is the best check this estimate has. The AM20T makes it worse mostly through thrust, not weight: its extra take-off thrust on a thrust line about 19 in above the CG is worth moving the CG about 6 in forward. The mains cannot simply go further forward. At FS 236 the empty airplane's tipback is already down to 16 deg, and at FS 232 it is 10 deg, so the airplane would sit on its tail when someone climbs into the back; the propeller-strike pitch angle also falls to 14-15 deg. What is left is tail power (a 30% larger tail costs about 3 kt and about 10 lb) or a lower thrust line, and both change the airplane's character. That is design work and flight test, not a balance fix.
+
+**3. What desk analysis cannot clear about the handling.** This is the input to any SAFETY look, which is Bill's call:
+
+1. **The CG envelope itself.** Our limits are drawn on a model plan, and the fleet's real empty CG is unknown (N747P needed ballast; the amount is unpublished). SDASM's weight-and-balance schedule or a weighed survivor would settle it. Reading the SDASM file is museum contact.
+2. **Stick-free stability and stick-force gradient at the aft limit.** Our stick-free margin of about 6% is a handbook estimate. The elevator hinge moments, the trim tab and how far the T-tail elevator floats are unknown, and they are the likely root of "pitch is quite sensitive" (AOPA86).
+3. **Rotation and lift-off.** V_rot / Vs is a quasi-static estimate on assumed coefficients. Ground effect, elevator power at full deflection and the "jumps off" behaviour need flight test.
+4. **The ground-effect pitch-up** AOPA was briefed on. A vortex-lattice model with a ground image could bound it, but not clear it.
+5. **Pitch with power changes.** The thrust line sits about 19 in above the CG, so every power change is a trim change. Its sign and size with 260 hp are unproven, and one go-around ended in a pitch-up and stall (MIA92LA186).
+6. **Stall.** There was no aerodynamic warning (AOPA86), and full-stall landings end abruptly (KP88). Deep stall of a T-tail at an aft CG is not tested in the record. SDASM's wind-tunnel evaluation may hold post-stall pitching moments.
+7. **Spin.** The record shows it was never spin-tested.
+8. **Dynamic stability.** AOPA saw three to four pitch oscillations after a bump. AVL gives a modest pitch damping (Cmq about -11). We claim nothing on the short-period or phugoid modes.
+9. **Flutter.** A T-tail on a swept fin, now carrying a heavier, geared, liquid-cooled engine and a constant-speed propeller just behind it. There is no flutter clearance from any source.
+10. **Torsional vibration** of the AM20T's reduction gearbox, the 12 in extension and the propeller: an untested combination on an installation that has already lost one propeller (LAX05LA270, cause undetermined).
+11. **Structure.** The 2,700 lb gross, a stretch or a wing move, the gear relocation and a larger tail are all structural changes. STRUCTURES is not routed here.
+12. **Propeller clearance** with a larger constant-speed propeller, and tipback when the airplane is lightly loaded.
 
 ### Why it died, properly
 
@@ -238,7 +305,7 @@ Model: `docs/shortlist/check/models/prescott-pusher.json`; result: `docs/shortli
 
 ### Engine fit with the Aeromomentum line
 
-- **AM20T** (260 hp; 195 hp assumed continuous): 194-207 KTAS at its critical altitude, but 61 lb heavier installed than the O-360, in the tail, which needs about 82 lb of nose ballast (E). See the levers table.
+- **AM20T** (260 hp; 195 hp assumed continuous): 194-207 KTAS at its critical altitude at 2,400 lb (179-201 KTAS at 2,700 lb with the larger wing). It is 61 lb heavier installed than the O-360 (E). On the plan's stations that needs 33 lb of nose ballast at 2,400 lb (stage 3 said 82), and none if the radiator and coolant (35 lb) go in the nose bay where the oil cooler went. Its extra take-off thrust on the high thrust line makes rotation harder (see the re-derivation).
 - **AM15T** (160 hp; 120 hp assumed continuous): 26 lb lighter, keeps useful load, cruises at the 160 KTAS floor.
 - **Cooling:** liquid cooling would end the tail-cone air-cooling struggle, with a radiator inlet where the oil cooler went (the nose) or in the cone; not designed.
 - **Propeller:** the geared Aeromomentum output and a constant-speed prop should recover some of the efficiency the short fixed-pitch prop lost; clearance still limits diameter.
@@ -257,10 +324,11 @@ See "Why it died, properly" above: early handling and performance disappointment
 
 ### Not yet done
 
-- MANUFACTURING (AER-3784): the modern-structure empty-weight delta, which replaces our placeholders in the levers table.
+- MANUFACTURING's structure delta (AER-3784): folded in by AER-3866.
+- SAFETY and STRUCTURES: the handling list and the structural changes in the re-derivation (AER-3866). Neither is routed; Bill's call.
 - Kitplanes May 1988 in full (the 151 KTAS conditions), Flying (Oct 1985, Apr 1988) and Popular Mechanics (Aug 1986): not reachable online; a library or a purchased scan would settle the measured basis.
 - Reading SDASM SC.10269 (the loads report, the wind-tunnel evaluation, the weight-and-balance schedule): museum contact, Bill's call. It would replace most of our estimates.
-- A re-derivation sketch at about 2,700 lb with the CG, gear and propeller clearance laid out together (AERO, if it goes forward).
+- A drawn re-derivation layout at about 2,700 lb with the CG, gear and propeller clearance together. The balance, gear and rotation numbers are in AER-3866; the drawing is still to do (AERO, if it goes forward).
 - What a modern rebuild changes in mass, cost and build hours (MANUFACTURING, stage 4, AER-3784).
 
 <!-- stage3:end -->
