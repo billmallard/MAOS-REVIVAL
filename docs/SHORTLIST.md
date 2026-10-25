@@ -7,8 +7,8 @@ files (`docs/rights/`, PR #3). Bill decides which designs, if any, go further.
 
 **What changed since the first version.** The brief was amended (merged to
 `main`): the survey mines commercial failures for their ideas as well as their
-numbers; the three targets are separate floors; payload carried 1,000 nm is
-information, not pass or fail; and every candidate is screened like for like,
+numbers; the three targets are screened separately; payload carried 1,000 nm
+is not pass or fail; and every candidate is screened like for like,
 published figures against published figures and measured against measured.
 Bill dropped the Rutan Defiant, Cirrus VK-30, Velocity XL-RG and Berkut 360,
 kept the Lancair IV-P, Mooney 301 and Wheeler Express (the Express to be dug
@@ -34,6 +34,15 @@ its balance is worked on fuselage stations read off the designer's own plan
 instead of guessed arms. The Prescott row, point 5 below and its entry in "Why
 this order" are updated; the ranking is unchanged.
 
+**Revision 5 (2026-10-25, AER-3900).** Bill ruled that useful load (1,000 lb)
+and range (1,000 nm) are **targets, not pass/fail gates**: a design that misses
+one is reported with how close it gets and what it trades away, and there is no
+joint gate on the two. Cruise above 160 KTAS is still a floor (brief, PR #11).
+Every verdict below now states the size of a miss instead of pass or fail, and
+the [payload-range table](#payload-range-on-the-am20t) reports payload over
+600-1,200 nm, with and without a 45 min reserve, for each shortlisted design.
+The ranking is unchanged; [why](#did-the-ruling-move-the-ranking).
+
 ## Bill's pick (2026-10-25)
 
 **The Bellanca T-250 Aries and the Prescott Pusher go forward.** Bill accepted
@@ -50,37 +59,103 @@ is our drag build-up at the AM20T's assumed 195 hp continuous, in two
 critical-altitude cases (8,000 ft and 16,000 ft cruise); see
 [The Aeromomentum assumption](#the-aeromomentum-assumption).
 
-| Rank | Design | Seats | As published: useful load / range / cruise (floors) | Our check on the AM20T: KTAS / useful load / range on full fuel at continuous power (floors) | Rights (stage 2) | Safety record | Why it died; does a revival fix it? |
+| Rank | Design | Seats | As published: useful load / range / cruise, against the targets | Our check on the AM20T: KTAS / useful load / range on full fuel at continuous power, against the targets | Rights (stage 2) | Safety record | Why it died; does a revival fix it? |
 |---|---|---|---|---|---|---|---|
-| 1 | [Bellanca T-250 Aries](candidates/bellanca-t250-aries.md) | 4-5 | 1,300 lb / 1,017 nm with 45 min / 181 KTAS at 75%, altitude not stated (AOPA measured 181 at 6,500 ft): **all three pass** | 185-197 / 1,300 / 906-919 nm: speed and load pass; range misses by about 90 nm at continuous power, passes at economy (154-161 KTAS) | TC A11SW current, held by Anderson Greenwood (a valve maker); stage 2 file pending | 1 NTSB event in about 50 years, no fatal; only 4 aircraft, so no rate | Its producer, Bellanca, went into receivership in 1980. Yes: nothing technical killed it |
-| 2 | [Prescott Pusher](candidates/prescott-pusher.md) | 4 (2+2) | 850 lb / 869 nm, reserve not stated / 165 KTAS at 7,500 ft: speed passes, load and range miss. Measured: 739 lb weighed, 151 KTAS at 73% (altitude unpublished) | 184-207 / 707-958 / 648-705 nm on 56.5 gal at 2,400 lb: speed passes; load and range fail. **All three pass only as a re-derivation** at 2,700 lb with 90 gal, and only at the light end of MANUFACTURING's structure estimate: 179-201 / 1,228 / 1,044-1,151 nm (heavy end: 922 lb useful) | Open: no rights holder found; the engineering archive survives at SDASM (SC.10269) | 4 NTSB events, 1 fatal (a Ford V-6 conversion); a door into the prop; a prop separation; pitch sensitivity and hard rotation | Handling reputation, a financing change, slow parts. Business causes yes; the handling traces to main wheels far behind the CG and a small tail, which balance alone does not fix |
-| 3 | [Wheeler Express](candidates/express-2000.md) | 4 | 1,045 lb / 1,401 nm (CAFE-computed) / no maker's speed; measured 169 KTAS at 6,190 ft, 901 lb weighed | 179-191 / 890 / 1,062-1,115 nm: speed and range pass; useful load misses by 110 lb on the weighed aircraft | Orphaned: five owners, three bankruptcies; last holder (2007) untraced | 18 fatal, 30 killed, on about 100 registered; the NTSB named its poor yaw stability; stall in climbing right turns, including Grand Prairie (CEN21LA096) | Business execution (incomplete kits, churn) plus a public tail problem. Yes, with a re-derived tail at 2-4 kt cruise cost and complete kits |
-| 4 | [Lancair IV-P](candidates/lancair-iv-p.md) | 4 | 1,350 lb / 1,347 nm with 45 min / 287 KTAS at FL240: **all three pass** | 200-211 / 1,350 / 1,136-1,155 nm: **all three pass** on factory empty weight | Open: chain of title (2023 sale scope not public, molds unlocated) | 88 events, 43 fatal, about 360 built; low-altitude stall-spin and engine failure followed by stall | Kits retired for newer models. The safety pattern is the real problem; the RDD LX7 re-wing shows it can be engineered out, at about 25 kt and $800k+ |
-| 5 | [Meyers 200D](candidates/meyers-200d.md) | 4 | 1,060 lb / 782 nm with 45 min / 182 KTAS at 75%, altitude not stated: range fails; measured 178 KTAS at 8,500 ft, about 900 lb fleet useful | 178-189 / 1,060 / 831-863 nm: speed and load pass on factory weight; range misses by 140-170 nm | TC 3A18 current, small holder; TC, drawings and tooling offered for sale in 2019 | 26 accidents, 6 fatal; fuel starvation from the four-tank system is the pattern; no breakups | Hand-built at a loss. Yes, as a re-derivation designed for production, with more fuel |
-| 6 | [Mooney 301](candidates/mooney-301.md) | 6 | 1,452 lb (design) / 986 nm with 45 min / 235 KTAS at FL250 (design): range near miss | 176-187 / 1,452 / 1,143-1,169 nm: **all three pass** on design weight | Open: Mooney or Daher, unresolved; nothing usable survives | One prototype, no accidents; its pitch control "not certifiable" per its test pilot | A corporate sale; new owners wanted 300 kt. Partly: the market gap is real, but nothing survives to revive |
+| 1 | [Bellanca T-250 Aries](candidates/bellanca-t250-aries.md) | 4-5 | 1,300 lb / 1,017 nm with 45 min / 181 KTAS at 75%, altitude not stated (AOPA measured 181 at 6,500 ft): **meets all three** | 185-197 / 1,300 / 906-919 nm: useful load 30% over the target; range 8-9% short at continuous power; 1,000 nm only at economy power, 154-161 KTAS, on or under the speed floor | TC A11SW current, held by Anderson Greenwood (a valve maker); stage 2 file pending | 1 NTSB event in about 50 years, no fatal; only 4 aircraft, so no rate | Its producer, Bellanca, went into receivership in 1980. Yes: nothing technical killed it |
+| 2 | [Prescott Pusher](candidates/prescott-pusher.md) | 4 (2+2) | 850 lb / 869 nm, reserve not stated / 165 KTAS at 7,500 ft: useful load 15% short, range 13% short. Measured: 739 lb weighed (26% short), 151 KTAS at 73% (altitude unpublished) | 184-207 / 660-878 / 648-705 nm on 56.5 gal at 2,400 lb (radiator in the nose, residual ballast): useful load 12-34% short, range 30-35% short. **Meets both targets only as a re-derivation** at 2,700 lb with 90 gal, useful load only at the light end of MANUFACTURING's structure estimate: 179-201 / 1,142 / 1,044-1,151 nm (heavy end: 860 lb, 14% short; AER-3902) | Open: no rights holder found; the engineering archive survives at SDASM (SC.10269) | 4 NTSB events, 1 fatal (a Ford V-6 conversion); a door into the prop; a prop separation; pitch sensitivity and hard rotation | Handling reputation, a financing change, slow parts. Business causes yes; the handling traces to main wheels far behind the CG and a small tail, which balance alone does not fix |
+| 3 | [Wheeler Express](candidates/express-2000.md) | 4 | 1,045 lb / 1,401 nm (CAFE-computed) / no maker's speed; measured 169 KTAS at 6,190 ft, 901 lb weighed | 179-191 / 890 / 1,062-1,115 nm: range meets the target; useful load 110 lb (11%) short on the weighed aircraft | Orphaned: five owners, three bankruptcies; last holder (2007) untraced | 18 fatal, 30 killed, on about 100 registered; the NTSB named its poor yaw stability; stall in climbing right turns, including Grand Prairie (CEN21LA096) | Business execution (incomplete kits, churn) plus a public tail problem. Yes, with a re-derived tail at 2-4 kt cruise cost and complete kits |
+| 4 | [Lancair IV-P](candidates/lancair-iv-p.md) | 4 | 1,350 lb / 1,347 nm with 45 min / 287 KTAS at FL240: **meets all three** | 200-211 / 1,350 / 1,136-1,155 nm: **meets both targets** on factory empty weight | Open: chain of title (2023 sale scope not public, molds unlocated) | 88 events, 43 fatal, about 360 built; low-altitude stall-spin and engine failure followed by stall | Kits retired for newer models. The safety pattern is the real problem; the RDD LX7 re-wing shows it can be engineered out, at about 25 kt and $800k+ |
+| 5 | [Meyers 200D](candidates/meyers-200d.md) | 4 | 1,060 lb / 782 nm with 45 min / 182 KTAS at 75%, altitude not stated: range 22% short; measured 178 KTAS at 8,500 ft, about 900 lb fleet useful (10% short) | 178-189 / 1,060 / 831-863 nm: useful load meets the target on factory weight; range 14-17% short | TC 3A18 current, small holder; TC, drawings and tooling offered for sale in 2019 | 26 accidents, 6 fatal; fuel starvation from the four-tank system is the pattern; no breakups | Hand-built at a loss. Yes, as a re-derivation designed for production, with more fuel |
+| 6 | [Mooney 301](candidates/mooney-301.md) | 6 | 1,452 lb (design) / 986 nm with 45 min / 235 KTAS at FL250 (design): range 1% short | 176-187 / 1,452 / 1,143-1,169 nm: **meets both targets** on design weight | Open: Mooney or Daher, unresolved; nothing usable survives | One prototype, no accidents; its pitch control "not certifiable" per its test pilot | A corporate sale; new owners wanted 300 kt. Partly: the market gap is real, but nothing survives to revive |
 | cal. | [Cessna P210N](candidates/cessna-p210n.md) | 6 | Calibration case only (Bill: "not solving some of what I'm after in the innovation side") | 161-171 / 1,658 / 916-931 nm | Firmly held by Textron | 291 events, 78 fatal, 874 built | Not a revival candidate |
-| ref | [Cozy MKIV](candidates/cozy-mkiv.md) | 4 | 1,000 lb / 1,130 nm at 40% / 191 KTAS at 75%, 8,000 ft: **all three pass**. Measured (CAFE): 871 lb / 1,049 nm still air / 177 KTAS at 8,000 ft | 202-217 / 808 / 645-668 nm | Firmly held by Aircraft Spruce | 22 events, 7 fatal, about 350 built | Alive. The yardstick |
+| ref | [Cozy MKIV](candidates/cozy-mkiv.md) | 4 | 1,000 lb / 1,130 nm at 40% / 191 KTAS at 75%, 8,000 ft: **meets all three**. Measured (CAFE): 871 lb / 1,049 nm still air / 177 KTAS at 8,000 ft | 202-217 / 808 / 645-668 nm | Firmly held by Aircraft Spruce | 22 events, 7 fatal, about 350 built | Alive. The yardstick |
 
-**How the floors read.** Useful load is the factory empty weight's figure unless
+**How the targets read.** Useful load is the factory empty weight's figure unless
 marked; kit-built and equipped fleets run heavier (the Cozy by 129 lb, the
 Express by 144 lb, the Meyers by about 160 lb), so read every factory useful
 load as an upper bound until stage 4 replaces it. Range on the AM20T is still
 air with no reserve on standard usable fuel at the assumed continuous power;
-every design gains range at economy power. Payload carried 1,000 nm, the old
-combined test, is in the [results table](#results-on-the-aeromomentum-line) as
-information only.
+every design gains range at economy power, and loses speed. A miss on useful
+load or range is stated with its size and does not disqualify a design; there is
+no joint pass/fail on the two (Bill, 2026-10-25). The tradeoff between them is
+the [payload-range table](#payload-range-on-the-am20t) below. Cruise above
+160 KTAS is the one floor.
+
+## Payload-range on the AM20T
+
+What each shortlisted design carries, in lb of occupants and baggage, over
+600-1,200 nm: **no reserve / 45 min reserve** in each cell, still air, our
+numbers (E). Each cell spans the two engine cases (critical altitude 8,000 and
+16,000 ft, cruising there) and, for the Prescott, both drag bases (brochure
+k 1.35, measured k 1.55). The engine assumptions are unchanged from stage 3
+([below](#the-aeromomentum-assumption)): 195 hp continuous, BSFC 0.45,
+economy 65% of continuous, none published by Aeromomentum. "cannot" means not
+even an empty cabin reaches the distance on full tanks; past the full-tank
+point the airplane leaves below gross. No seat or baggage cap is applied, so a
+payload above what the cabin seats is weight available, not people. Empty
+weights are the headline ones (factory, design or weighed, as in the ranking
+table); the Prescott rows use MANUFACTURING's two structure ends with the
+radiator moved to the nose and the residual nose ballast AER-3902 found. Script: `docs/shortlist/check/payload_range.py`;
+per-case rows in `payload_range_output.md` beside it.
+
+| Design | Power | KTAS | 600 nm | 800 nm | 1,000 nm | 1,200 nm | Range on full tanks from gross, no reserve, nm |
+|---|---|---|---|---|---|---|---|
+| Bellanca T-250 Aries (3,150 lb, 1,850 lb empty, 76 gal, k 1.30) | continuous | 185-197 | 988-990 / 923-925 | 894-902 / 484-711 | cannot-269 / cannot | cannot / cannot | 906-919 |
+| Bellanca T-250 Aries (3,150 lb, 1,850 lb empty, 76 gal, k 1.30) | economy 65% | 154-161 (under the 160 floor at the low end) | 1,042-1,048 / 1,000-1,005 | 972-974 / 930-931 | 901-903 / 859-861 | 629-738 / 37-282 | 1,155-1,156 |
+| Wheeler Express (2,895 lb, 2,005 lb empty, 92 gal, k 1.29) | continuous | 179-191 | 569-574 / 504-509 | 472-483 / 407-419 | 376-393 / cannot-205 | cannot / cannot | 1,062-1,115 |
+| Wheeler Express (2,895 lb, 2,005 lb empty, 92 gal, k 1.29) | economy 65% | 149-157 (under the 160 floor) | 629-632 / 587-589 | 556-557 / 514-516 | 481-487 / 439-445 | 406-417 / 365-376 | 1,365-1,417 |
+| Lancair IV-P (3,550 lb, 2,200 lb empty, 88 gal, k 1.29) | continuous | 200-211 | 1,052-1,055 / 987-990 | 968-970 / 903-905 | 881-888 / 736-824 | 373-628 / cannot | 1,136-1,155 |
+| Lancair IV-P (3,550 lb, 2,200 lb empty, 88 gal, k 1.29) | economy 65% | 161-164 | 1,090-1,103 / 1,047-1,060 | 1,021-1,032 / 978-990 | 953-962 / 911-920 | 886-893 / 845-852 | 1,383-1,406 |
+| Meyers 200D (3,000 lb, 1,940 lb empty, 74 gal, k 1.41) | continuous | 178-189 | 738-741 / 673-676 | 640-650 / cannot-21 | cannot / cannot | cannot / cannot | 831-863 |
+| Meyers 200D (3,000 lb, 1,940 lb empty, 74 gal, k 1.41) | economy 65% | 148-155 (under the 160 floor) | 796-800 / 753-757 | 723-724 / 681 | 648-652 / 486-555 | 26-234 / cannot | 1,060-1,087 |
+| Mooney 301 (4,000 lb, 2,548 lb empty, 100 gal, k 1.29) | continuous | 176-187 | 1,117-1,120 / 1,051-1,054 | 1,021-1,023 / 955-958 | 922-931 / 858-867 | 380-676 / cannot | 1,143-1,169 |
+| Mooney 301 (4,000 lb, 2,548 lb empty, 100 gal, k 1.29) | economy 65% | 142-146 (under the 160 floor) | 1,160-1,174 / 1,117-1,131 | 1,082-1,094 / 1,040-1,051 | 1,006-1,015 / 964-973 | 930-937 / 889-895 | 1,407-1,418 |
+| Cozy MKIV (reference) (2,050 lb, 1,242 lb empty, 50.74 gal, k 1.36) | continuous | 202-217 | 527-535 / cannot | cannot / cannot | cannot / cannot | cannot / cannot | 645-668 |
+| Cozy MKIV (reference) (2,050 lb, 1,242 lb empty, 50.74 gal, k 1.36) | economy 65% | 172-184 | 588-591 / 546-548 | 523-530 / cannot-166 | cannot / cannot | cannot / cannot | 846-871 |
+| Prescott Pusher, 2,400 lb, 56.5 gal, light end (1,522 lb empty) | continuous | 184-207 | 569-589 / cannot-153 | cannot / cannot | cannot / cannot | cannot / cannot | 648-705 |
+| Prescott Pusher, 2,400 lb, 56.5 gal, light end (1,522 lb empty) | economy 65% | 155-173 (under the 160 floor at the low end) | 633-644 / 590-602 | 560-579 / 154-514 | cannot-163 / cannot | cannot / cannot | 838-907 |
+| Prescott Pusher, 2,400 lb, 56.5 gal, heavy end (1,740 lb empty) | continuous | 184-207 | 351-371 / cannot | cannot / cannot | cannot / cannot | cannot / cannot | 648-705 |
+| Prescott Pusher, 2,400 lb, 56.5 gal, heavy end (1,740 lb empty) | economy 65% | 155-173 (under the 160 floor at the low end) | 415-426 / 372-384 | 342-361 / cannot-296 | cannot / cannot | cannot / cannot | 838-907 |
+| Prescott Pusher, 2,700 lb, 90 gal, light end (1,558 lb empty) | continuous | 179-201 | 823-842 / 758-777 | 726-756 / 662-691 | 630-670 / cannot-606 | cannot-320 / cannot | 1,044-1,151 |
+| Prescott Pusher, 2,700 lb, 90 gal, light end (1,558 lb empty) | economy 65% | 150-167 (under the 160 floor at the low end) | 885-899 / 843-857 | 812-830 / 770-788 | 737-763 / 696-721 | 664-697 / 623-656 | 1,350-1,479 |
+| Prescott Pusher, 2,700 lb, 90 gal, heavy end (1,840 lb empty) | continuous | 179-201 | 542-561 / 476-495 | 445-474 / 380-410 | 349-389 / cannot-325 | cannot-38 / cannot | 1,044-1,151 |
+| Prescott Pusher, 2,700 lb, 90 gal, heavy end (1,840 lb empty) | economy 65% | 150-167 (under the 160 floor at the low end) | 604-618 / 561-575 | 530-548 / 488-506 | 456-481 / 414-440 | 382-415 / 341-374 | 1,350-1,479 |
+
+How to read it:
+- **At speed, the 45 min reserve is what separates them.** At 800 nm with a
+  reserve, every design here except the Meyers, the Prescott as built and the
+  Cozy carries 400 lb or more at continuous power. At 1,000 nm only the IV-P
+  (736-824 lb) and the 301 (858-867 lb) carry more than 700 lb in both engine
+  cases; the re-derived Prescott carries up to 606 lb in its best case and
+  nothing in its worst; the Express up to 205 lb; the Aries and the Meyers
+  nothing.
+- **Economy power buys range with speed the brief does not allow.** The Aries
+  carries 859-861 lb 1,000 nm with a reserve at economy power, but at
+  154-161 KTAS; the Meyers 486-555 lb at 148-155 KTAS. Both are on or under the
+  160 KTAS floor, so for them the real lever is more fuel, not less power.
+- **The drag basis matters as much as the structure for the Prescott.** At
+  1,000 nm with a reserve, the brochure and measured bases differ by about
+  300 lb, as much as MANUFACTURING's light and heavy structure ends do
+  (about 280 lb).
+- **Read the factory and design rows as upper bounds.** The Express row is
+  already the weighed aircraft; the Aries, IV-P, Meyers and 301 rows use factory
+  or design empty weights, and each pound a real airplane adds comes off every
+  cell.
 
 ## What the check says
 
-1. **On separate floors, two of the five clear all three on the AM20T on our
-   numbers**: the IV-P and the Mooney 301, both on factory or design empty
-   weights. The Aries clears speed and useful load and falls about 90 nm short
-   of the range floor at continuous power (it clears it at economy power). The
-   Express misses useful load on its weighed aircraft by 110 lb; the Meyers
-   misses range on its 74 gal.
-2. **The reference passes as published and misses on useful load as measured.**
-   The Cozy MKIV's published figures (1,000 lb, 1,130 nm, 191 KTAS) pass all
-   three floors. The CAFE Foundation weighed its test aircraft at 1,179 lb empty,
+1. **On our numbers on the AM20T, two of the six meet both targets at speed**:
+   the IV-P and the Mooney 301, both on factory or design empty weights, and
+   with a 45 min reserve they carry 736-867 lb 1,000 nm at 176-211 KTAS. The
+   Aries meets the useful-load target by 30% and reaches 906-919 nm, 8-9% short
+   of the range target, at continuous power; it reaches 1,000 nm only at
+   economy power, at 154-161 KTAS, on or under the speed floor. The Express
+   meets the range target and is 110 lb (11%) short of the useful-load target
+   on its weighed aircraft; the Meyers is 14-17% short of the range target on
+   its 74 gal. The Prescott as built is 30-35% short on range (point 5).
+2. **The reference meets the targets as published and is 13% short on useful
+   load as measured.** The Cozy MKIV's published figures (1,000 lb, 1,130 nm,
+   191 KTAS) meet all three. The CAFE Foundation weighed its test aircraft at 1,179 lb empty,
    so 871 lb useful; it measured 177 KTAS at 8,000 ft; and fuel and measured flow
    give 1,049 nm still air with no reserve. Both bases are kept and compared like
    for like. The first long list's 951 nm was a basis mismatch, not a units error.
@@ -91,11 +166,13 @@ information only.
 4. **Two headline speeds still read cleaner than any measured airplane:** the
    IV-P's 278 KTAS and the 301's 237.5 KTAS need factors of 1.03 and 1.02. We
    headline the fleet calibration for both, about 8% slower.
-5. **The Prescott clears all three floors only as a re-derivation**, and its
+5. **The Prescott meets the useful-load and range targets only as a
+   re-derivation**, and its
    brochure and its measured speed disagree. At 2,700 lb with 90 gal and the
    AM20T it carries 1,142 lb useful, 1,044-1,151 nm and 179-201 KTAS on both
    drag bases, if the rebuild lands at the light end of MANUFACTURING's
-   structure estimate; at the heavy end it misses useful load by 140 lb.
+   structure estimate; at the heavy end it is 140 lb (14%) short of the
+   useful-load target.
    Balance, once N747P's published 49 lb of ballast and the constant-speed
    propeller are counted (AER-3902, on SAFETY's review), costs 113-130 lb of
    nose ballast, or 51-69 lb with the radiator moved to the nose. The harder
@@ -118,24 +195,26 @@ information only.
 ## Why this order
 
 The ranking weighs, in order: whether there is something to revive (a design,
-data, a type certificate, airframes), what it does on the Aeromomentum line by
-our own numbers on separate floors, whether its safety record is tied to the
+data, a type certificate, airframes), how close it comes to the targets on the
+Aeromomentum line by our own numbers, read as a payload-range tradeoff, and
+whether it holds the speed floor, whether its safety record is tied to the
 configuration and fixable, whether a revival fixes what killed it, and what it
 contributes to the idea ledger.
 
-- **Bellanca T-250 Aries, first.** It is the only design that passes all three
-  floors as published, has a published speed our check agrees with, fits the
+- **Bellanca T-250 Aries, first.** It is the only design that meets all three
+  targets as published, has a published speed our check agrees with, fits the
   AM20T directly at the same cruise power, has a current type certificate, and
   died for a reason (its producer's receivership) that a revival removes. It was
   also designed to be cheap to build: flat and single-curve skins around a
   laminar wing. Its weaknesses are that only four exist, so its clean record
-  proves little, and that it is about 90 nm short of the range floor at
-  continuous power on standard fuel.
+  proves little, and that on standard fuel it is 8-9% short of the range
+  target at continuous power, so over 1,000 nm it must slow to the speed floor
+  or carry more fuel (AER-3867 is sizing the tanks).
 - **Prescott Pusher, second (top tier, Bill's top interest).** As published it
   passes speed and misses useful load by 150 lb and range by about 130 nm; as
   measured it is weaker (739 lb on the one weighed aircraft; Kitplanes' 151 KTAS
   needs a drag factor of 1.46-1.67 against the brochure's 1.35). On an AM20T it
-  is fast. It clears all three floors on both drag bases only as a
+  is fast. It meets both targets on both drag bases only as a
   re-derivation at about 2,700 lb gross with 90 gal, and only at the light end
   of MANUFACTURING's structure estimate (1,142 lb useful; 860 lb at the heavy
   end). Even with the radiator in the nose the AM20T needs 51-69 lb of nose
@@ -146,7 +225,8 @@ contributes to the idea ledger.
   behind the CG range, a tail volume of about 0.50 and a small stick-free
   margin, behind its rotation and pitch complaints; the AM20T's thrust on a high
   thrust line makes rotation harder. It
-  ranks behind the Aries, which clears the floors on a straight engine swap, and
+  ranks behind the Aries, which comes close to every target on a straight
+  engine swap (useful load met, range 8-9% short), and
   ahead of the Express, because its engineering survives and it has no long
   shaft or known tail flaw.
 - **Wheeler Express, third.** It is the best-measured design in the survey, and
@@ -169,6 +249,23 @@ contributes to the idea ledger.
   six-seater near the mission, but nothing of it survives, its rights are
   unresolved, and its tail was judged not certifiable. A revival is a new design
   using its layout.
+
+### Did the ruling move the ranking?
+
+No, and the reason is worth stating rather than assuming. The order never rested
+on a joint pass/fail: the Aries ranked first while missing range, and the
+Express ranked above the IV-P while missing useful load. What ranks first is
+whether there is something to revive. Read as a payload-range tradeoff, the
+IV-P and the 301 carry the most over 1,000 nm at speed and would lead on
+performance alone; they stay fourth and sixth for the reasons above (the IV-P's
+fatal record and open chain of title; nothing of the 301 survives). The Prescott
+as built carries less than the Express at every distance with a 45 min reserve,
+and
+stays above it because its engineering record survives and it has no known tail
+flaw. The one change in emphasis is the Aries: the table shows its range gap
+plainly, and its lead now depends on more tankage at an acceptable weight and
+cost. If AER-3867 finds that impractical, the Aries-Prescott order should be
+revisited.
 
 ## The deep-dive axes: storage, home-shop construction, safety, ride
 
@@ -225,9 +322,10 @@ meets much of what I'm after"). Not ranked. Both studies are in its dossier,
 available. Taken to four seats on an AM20T (2,900 lb, an estimated 1,060 lb
 useful, 105 gal), the pure low-aspect-ratio delta sits on the 160 KTAS floor at
 8,000 ft; with aspect ratio 3-4 it reaches 159-172 KTAS at 8,000 ft and
-167-183 KTAS at 16,000 ft, with 1,090-1,180 nm on 105 gal. That clears the
-floors on paper, about 15-20 kt below the Express and the Aries on the same
-engine. It stops working at:
+167-183 KTAS at 16,000 ft, with 1,090-1,180 nm on 105 gal. That meets the load
+and range targets on paper, and the speed floor except at the low end
+(159 KTAS at 8,000 ft), about 15-20 kt below the Express and the Aries on the
+same engine. It stops working at:
 - **landing speed**, as wing loading must about double from the 2-175's
   8.1 lb/ft2;
 - **balance**, with the engine behind two rows of seats on a tailless wing;
@@ -313,14 +411,20 @@ assumptions, which are **ours**:
 | Cooling drag | Raymer's piston formula, the same as air-cooled | A liquid-cooled radiator can do better (Meredith effect) or worse; not credited either way |
 
 This is an **open risk**, and it can only be closed by data from Aeromomentum or by
-a test. Asking Aeromomentum is contact with a manufacturer, which needs Bill's
-go-ahead. That question is raised on the issue, not assumed.
+a test. Bill decided on AER-3800 (2026-10-25) that the survey carries these
+assumptions as they stand, and that he will contact Aeromomentum himself for the
+continuous rating and critical altitude. Until his answer arrives, every AM20T
+number here, the payload-range table included, rests on this table.
 
 ## Results on the Aeromomentum line
 
 Our numbers, from `docs/shortlist/check/results/` (regenerate with
 `report.py`). Bracketed values are the optimistic bound: the other drag factor
-and full credit for a lighter engine. The payload columns are information only.
+and full credit for a lighter engine. The payload-at-1,000 nm columns follow the
+stage 3 rule: fuel loaded at gross, "cannot" where the tanks do not hold it. The
+[payload-range table](#payload-range-on-the-am20t) also solves a lighter take-off
+on full tanks, so a few "cannot" cells there become small payloads (the Aries at
+16,000 ft: 269 lb with no reserve).
 The four designs Bill dropped are kept at the bottom as record. The Prescott row uses the fleet calibration
 (k 1.29) and no CG ballast, like every row here; its dossier's levers table adds
 the nose ballast an engine in the tail cone needs, and both of its own drag bases
