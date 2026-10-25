@@ -1,13 +1,15 @@
 <!--
-Committed by AERO (AER-3902) from SAFETY's issue document `safety-review` on
-AER-3899, revision 1 (83b16d6e-6366-4649-95ba-09a5bfa7f0f8), 2026-10-25.
+Committed by AERO from SAFETY's issue document `safety-review` on AER-3899:
+revision 1 (83b16d6e-6366-4649-95ba-09a5bfa7f0f8), 2026-10-25, via AER-3902;
+revision 2 (57224195-5287-40c3-9d53-b43ea99eb809), 2026-10-25, via AER-3903,
+which appends the addendum at the end and leaves revision 1's text unchanged.
 SAFETY has no write grant on this repository. Everything below the line is
-SAFETY's text, unedited: the verdicts and constraints R1-R10 are verbatim.
-AERO's response to section 1 (the input corrections) is in balance.py,
-balance_output.md and the dossier, docs/candidates/prescott-pusher.md.
+SAFETY's text, unedited: the verdicts, constraints R1-R10 and the addendum are
+verbatim. AERO's response to section 1 (the input corrections) is in
+balance.py, balance_output.md and the dossier, docs/candidates/prescott-pusher.md.
 -->
 
-> **Provenance.** SAFETY's review, committed verbatim by AERO. Section 1's three corrections have been taken into `balance.py` (AER-3902); the review's numbers below are the ones SAFETY reviewed (PR #10), not the corrected ones. See [balance_output.md](balance_output.md), section 2, correction ledger.
+> **Provenance.** SAFETY's review, committed verbatim by AERO. Sections 1-6 judged the numbers in PR #10 as first opened. Section 1's three corrections were then taken into `balance.py` (AER-3902; see [balance_output.md](balance_output.md), section 2, correction ledger), and SAFETY re-reviewed the corrected numbers in the **addendum at the end (revision 2), which governs where it differs from sections 1-6**.
 
 ---
 
@@ -163,3 +165,24 @@ These are engineering best practice and duty of care for an airplane other peopl
 - The ground-effect pitch-up mechanism: AERO's analysis, then flight test.
 - The pilots Bill watched: written sources describe a fast, slightly nose-up approach. Whether the observed technique was slower and more nose-high is a question only Bill can answer, and it changes how heavily 3.2(a) weighs.
 - CEN09CA386 could not be re-fetched (403). Its quote is AERO's.
+
+## Addendum, revision 2 (2026-10-25): re-review of AERO's corrected numbers (AER-3902)
+
+AERO took section 1's three corrections into PR #10 (`balance.py` and `balance_output.md` at 6a4ce47, commit 84ea069). The corrections were N747P's 49 lb ballast as the datum, the constant-speed propeller mass, and the neutral-point loss of option C. I re-reviewed the result. Sections 1-6 above are unchanged and still describe PR #10 as I first reviewed it. **Where this addendum differs from them, the addendum governs.**
+
+**The new ugly number.** With the published ballast datum and a constant-speed propeller, the unfixed AM20T airplane sits **7.6-7.7 in aft of its aft limit**. That is more than the whole 6.7 in CG envelope. On the published 1,550 lb airplane, the plain engine-and-propeller swap at 2,400 lb needs 106-116 lb of nose lead (E, AERO). An engine in the tail cone, with a heavier propeller behind it, buys back its CG with dead weight, and the amount has roughly tripled since PR #10 opened.
+
+**Verdicts after the corrections:**
+
+| Option | Revision 1 | Revision 2 | Why |
+|---|---|---|---|
+| A. Nose ballast, now 113-130 lb | Acceptable with mitigation | **Acceptable with mitigation (unchanged)** | The mechanism is the same: a fixed mass, with no new failure modes. R7 applies in full. The attachment must hold 113-130 lb at emergency-landing inertia loads. The useful load falls to 1,087 / 805 lb, so the pressure to fly overweight is now a real risk at the heavy end. It is MANUFACTURING's and AERO's to design out, and I record it here so nobody files it as a performance issue only. |
+| B. Masses forward, now plus 51-69 lb of ballast | Acceptable with mitigation | **Acceptable with mitigation (unchanged)** | B now carries both the coolant-loop conditions (R8) and the ballast conditions (R7). Its only advantage over A is about 55-60 lb less lead, bought with a single point of failure on the only engine. That is a legitimate trade, and it is AERO's and Bill's call. Safety does not prefer B over A. |
+| C. Fuselage stretch, now 36-43 in | Acceptable only with a demonstrated margin | **Not acceptable as a sole fix** | Holding the margin takes a 3-4 ft stretch. That puts the most-forward loading 2.5-2.6 in ahead of the forward limit, and the forward limit is set by rotation (V_rot/Vs is already 1.50 there). C therefore trades the aft-CG hazard for the hop-off and no-rotation hazard at the other end, before directional stability is even checked. A short stretch used alongside A or B is still judged under revision 1's condition. |
+| D. Wing moved aft, now 11 in | Not acceptable | **Not acceptable (unchanged, and further from acceptable)** | An 11 in move shrinks the tail and fin arms by about 12%. |
+| Landing technique | Acceptable with mitigation (design changes) | **Unchanged** | Section 3's estimates depend on the margin at the aft limit, and A and B hold that limit. |
+| Overall | Not against revival; against original-plus-balance | **Unchanged** | The corrections make the balance more expensive. They do not change which hazards exist or how they are fixed. |
+
+**Added to R7 (ground tipback).** With B's residual ballast, the empty airplane's tipback on prototype 2's mains is **14 deg** (AERO E), below the usual 15. The baggage bay (FS 238) sits **behind** those mains (FS 236), so loading bags into an empty airplane moves it toward sitting on its tail. On a pusher, that puts the propeller arc and the tail cone into the ground or into people. R7 now adds: tipback of at least 15 deg in the most adverse ground-loading sequence (empty, bags first, a rear occupant boarding), or a mandatory tail stand or nose-down kneel procedure that the kit supplies and placards.
+
+**Still open, owned elsewhere:** Cn-beta with any stretch (AERO), the real empty CG (a weighed survivor or the SDASM W&B schedule, contact is Bill's call), and the governor's mass (AERO). None of them changes a verdict above.
