@@ -13,64 +13,64 @@
 
 ### B. The levers together: AM20T, 16,000 ft critical altitude (the optimistic engine case)
 
-Floors: useful load 1,000 lb; range 1,000 nm (still air, no reserve, full fuel, at continuous power, and at economy in brackets); cruise above 160 KTAS (180 preferred).
+Targets: useful load 1,000 lb; range 1,000 nm (still air, no reserve, full fuel, at continuous power, and at economy in brackets); cruise above 160 KTAS (180 preferred).
 
-| Gross, lb | Structure delta, lb | Fuel, gal | Basis | Useful load | KTAS | Range, nm (economy) | Floors: load / range / speed |
+| Gross, lb | Structure delta, lb | Fuel, gal | Basis | Useful load | KTAS | Range, nm (economy) | Load / range targets, speed floor |
 |---|---|---|---|---|---|---|---|
-| 2,400 | +0 | 56.5 | brochure basis | 707 | 207 | 705 (907) | fail / fail (eco fail) / pass+ |
-| 2,400 | +0 | 56.5 | measured basis | 707 | 196 | 669 (858) | fail / fail (eco fail) / pass+ |
-| 2,400 | +0 | 75 | brochure basis | 707 | 207 | 969 (1,252) | fail / fail (eco pass) / pass+ |
-| 2,400 | +0 | 75 | measured basis | 707 | 196 | 920 (1,186) | fail / fail (eco pass) / pass+ |
-| 2,400 | +0 | 90 | brochure basis | 707 | 207 | 1,187 (1,539) | fail / pass / pass+ |
-| 2,400 | +0 | 90 | measured basis | 707 | 196 | 1,127 (1,459) | fail / pass / pass+ |
-| 2,400 | -100 | 56.5 | brochure basis | 807 | 207 | 705 (907) | fail / fail (eco fail) / pass+ |
-| 2,400 | -100 | 56.5 | measured basis | 807 | 196 | 669 (858) | fail / fail (eco fail) / pass+ |
-| 2,400 | -100 | 75 | brochure basis | 807 | 207 | 969 (1,252) | fail / fail (eco pass) / pass+ |
-| 2,400 | -100 | 75 | measured basis | 807 | 196 | 920 (1,186) | fail / fail (eco pass) / pass+ |
-| 2,400 | -100 | 90 | brochure basis | 807 | 207 | 1,187 (1,539) | fail / pass / pass+ |
-| 2,400 | -100 | 90 | measured basis | 807 | 196 | 1,127 (1,459) | fail / pass / pass+ |
-| 2,400 | -200 | 56.5 | brochure basis | 907 | 207 | 705 (907) | fail / fail (eco fail) / pass+ |
-| 2,400 | -200 | 56.5 | measured basis | 907 | 196 | 669 (858) | fail / fail (eco fail) / pass+ |
-| 2,400 | -200 | 75 | brochure basis | 907 | 207 | 969 (1,252) | fail / fail (eco pass) / pass+ |
-| 2,400 | -200 | 75 | measured basis | 907 | 196 | 920 (1,186) | fail / fail (eco pass) / pass+ |
-| 2,400 | -200 | 90 | brochure basis | 907 | 207 | 1,187 (1,539) | fail / pass / pass+ |
-| 2,400 | -200 | 90 | measured basis | 907 | 196 | 1,127 (1,459) | fail / pass / pass+ |
-| 2,700 | +0 | 56.5 | brochure basis | 977 | 204 | 695 (878) | fail / fail (eco fail) / pass+ |
-| 2,700 | +0 | 56.5 | measured basis | 977 | 194 | 659 (829) | fail / fail (eco fail) / pass+ |
-| 2,700 | +0 | 75 | brochure basis | 977 | 204 | 956 (1,215) | fail / fail (eco pass) / pass+ |
-| 2,700 | +0 | 75 | measured basis | 977 | 194 | 907 (1,147) | fail / fail (eco pass) / pass+ |
-| 2,700 | +0 | 90 | brochure basis | 977 | 204 | 1,172 (1,496) | fail / pass / pass+ |
-| 2,700 | +0 | 90 | measured basis | 977 | 194 | 1,112 (1,413) | fail / pass / pass+ |
-| 2,700 | -100 | 56.5 | brochure basis | 1,077 | 204 | 695 (878) | pass / fail (eco fail) / pass+ |
-| 2,700 | -100 | 56.5 | measured basis | 1,077 | 194 | 659 (829) | pass / fail (eco fail) / pass+ |
-| 2,700 | -100 | 75 | brochure basis | 1,077 | 204 | 956 (1,215) | pass / fail (eco pass) / pass+ |
-| 2,700 | -100 | 75 | measured basis | 1,077 | 194 | 907 (1,147) | pass / fail (eco pass) / pass+ |
-| 2,700 | -100 | 90 | brochure basis | 1,077 | 204 | 1,172 (1,496) | pass / pass / pass+ |
-| 2,700 | -100 | 90 | measured basis | 1,077 | 194 | 1,112 (1,413) | pass / pass / pass+ |
-| 2,700 | -200 | 56.5 | brochure basis | 1,177 | 204 | 695 (878) | pass / fail (eco fail) / pass+ |
-| 2,700 | -200 | 56.5 | measured basis | 1,177 | 194 | 659 (829) | pass / fail (eco fail) / pass+ |
-| 2,700 | -200 | 75 | brochure basis | 1,177 | 204 | 956 (1,215) | pass / fail (eco pass) / pass+ |
-| 2,700 | -200 | 75 | measured basis | 1,177 | 194 | 907 (1,147) | pass / fail (eco pass) / pass+ |
-| 2,700 | -200 | 90 | brochure basis | 1,177 | 204 | 1,172 (1,496) | pass / pass / pass+ |
-| 2,700 | -200 | 90 | measured basis | 1,177 | 194 | 1,112 (1,413) | pass / pass / pass+ |
+| 2,400 | +0 | 56.5 | brochure basis | 707 | 207 | 705 (907) | short / short (eco short) / pass+ |
+| 2,400 | +0 | 56.5 | measured basis | 707 | 196 | 669 (858) | short / short (eco short) / pass+ |
+| 2,400 | +0 | 75 | brochure basis | 707 | 207 | 969 (1,252) | short / short (eco met) / pass+ |
+| 2,400 | +0 | 75 | measured basis | 707 | 196 | 920 (1,186) | short / short (eco met) / pass+ |
+| 2,400 | +0 | 90 | brochure basis | 707 | 207 | 1,187 (1,539) | short / met / pass+ |
+| 2,400 | +0 | 90 | measured basis | 707 | 196 | 1,127 (1,459) | short / met / pass+ |
+| 2,400 | -100 | 56.5 | brochure basis | 807 | 207 | 705 (907) | short / short (eco short) / pass+ |
+| 2,400 | -100 | 56.5 | measured basis | 807 | 196 | 669 (858) | short / short (eco short) / pass+ |
+| 2,400 | -100 | 75 | brochure basis | 807 | 207 | 969 (1,252) | short / short (eco met) / pass+ |
+| 2,400 | -100 | 75 | measured basis | 807 | 196 | 920 (1,186) | short / short (eco met) / pass+ |
+| 2,400 | -100 | 90 | brochure basis | 807 | 207 | 1,187 (1,539) | short / met / pass+ |
+| 2,400 | -100 | 90 | measured basis | 807 | 196 | 1,127 (1,459) | short / met / pass+ |
+| 2,400 | -200 | 56.5 | brochure basis | 907 | 207 | 705 (907) | short / short (eco short) / pass+ |
+| 2,400 | -200 | 56.5 | measured basis | 907 | 196 | 669 (858) | short / short (eco short) / pass+ |
+| 2,400 | -200 | 75 | brochure basis | 907 | 207 | 969 (1,252) | short / short (eco met) / pass+ |
+| 2,400 | -200 | 75 | measured basis | 907 | 196 | 920 (1,186) | short / short (eco met) / pass+ |
+| 2,400 | -200 | 90 | brochure basis | 907 | 207 | 1,187 (1,539) | short / met / pass+ |
+| 2,400 | -200 | 90 | measured basis | 907 | 196 | 1,127 (1,459) | short / met / pass+ |
+| 2,700 | +0 | 56.5 | brochure basis | 977 | 204 | 695 (878) | short / short (eco short) / pass+ |
+| 2,700 | +0 | 56.5 | measured basis | 977 | 194 | 659 (829) | short / short (eco short) / pass+ |
+| 2,700 | +0 | 75 | brochure basis | 977 | 204 | 956 (1,215) | short / short (eco met) / pass+ |
+| 2,700 | +0 | 75 | measured basis | 977 | 194 | 907 (1,147) | short / short (eco met) / pass+ |
+| 2,700 | +0 | 90 | brochure basis | 977 | 204 | 1,172 (1,496) | short / met / pass+ |
+| 2,700 | +0 | 90 | measured basis | 977 | 194 | 1,112 (1,413) | short / met / pass+ |
+| 2,700 | -100 | 56.5 | brochure basis | 1,077 | 204 | 695 (878) | met / short (eco short) / pass+ |
+| 2,700 | -100 | 56.5 | measured basis | 1,077 | 194 | 659 (829) | met / short (eco short) / pass+ |
+| 2,700 | -100 | 75 | brochure basis | 1,077 | 204 | 956 (1,215) | met / short (eco met) / pass+ |
+| 2,700 | -100 | 75 | measured basis | 1,077 | 194 | 907 (1,147) | met / short (eco met) / pass+ |
+| 2,700 | -100 | 90 | brochure basis | 1,077 | 204 | 1,172 (1,496) | met / met / pass+ |
+| 2,700 | -100 | 90 | measured basis | 1,077 | 194 | 1,112 (1,413) | met / met / pass+ |
+| 2,700 | -200 | 56.5 | brochure basis | 1,177 | 204 | 695 (878) | met / short (eco short) / pass+ |
+| 2,700 | -200 | 56.5 | measured basis | 1,177 | 194 | 659 (829) | met / short (eco short) / pass+ |
+| 2,700 | -200 | 75 | brochure basis | 1,177 | 204 | 956 (1,215) | met / short (eco met) / pass+ |
+| 2,700 | -200 | 75 | measured basis | 1,177 | 194 | 907 (1,147) | met / short (eco met) / pass+ |
+| 2,700 | -200 | 90 | brochure basis | 1,177 | 204 | 1,172 (1,496) | met / met / pass+ |
+| 2,700 | -200 | 90 | measured basis | 1,177 | 194 | 1,112 (1,413) | met / met / pass+ |
 
 ### C. Same, AM15T (lighter in the tail), 16,000 ft
 
-| Gross, lb | Structure delta, lb | Fuel, gal | Basis | Useful load | KTAS | Range, nm (economy) | Floors: load / range / speed |
+| Gross, lb | Structure delta, lb | Fuel, gal | Basis | Useful load | KTAS | Range, nm (economy) | Load / range targets, speed floor |
 |---|---|---|---|---|---|---|---|
-| 2,400 | +0 | 56.5 | brochure basis | 911 | 169 | 934 (1,113) | fail / fail (eco pass) / pass |
-| 2,400 | +0 | 56.5 | measured basis | 911 | 159 | 883 (1,034) | fail / fail (eco pass) / fail |
-| 2,400 | +0 | 90 | brochure basis | 911 | 169 | 1,587 (1,933) | fail / pass / pass |
-| 2,400 | +0 | 90 | measured basis | 911 | 159 | 1,503 (1,803) | fail / pass / fail |
-| 2,400 | -200 | 56.5 | brochure basis | 1,111 | 169 | 934 (1,113) | pass / fail (eco pass) / pass |
-| 2,400 | -200 | 56.5 | measured basis | 1,111 | 159 | 883 (1,034) | pass / fail (eco pass) / fail |
-| 2,400 | -200 | 90 | brochure basis | 1,111 | 169 | 1,587 (1,933) | pass / pass / pass |
-| 2,400 | -200 | 90 | measured basis | 1,111 | 159 | 1,503 (1,803) | pass / pass / fail |
-| 2,700 | +0 | 56.5 | brochure basis | 1,181 | 164 | 901 (no level-flight solution at 65%) | pass / fail / pass |
-| 2,700 | +0 | 56.5 | measured basis | 1,181 | 154 | 849 (no level-flight solution at 65%) | pass / fail / fail |
-| 2,700 | +0 | 90 | brochure basis | 1,181 | 164 | 1,537 (no level-flight solution at 65%) | pass / pass / pass |
-| 2,700 | +0 | 90 | measured basis | 1,181 | 154 | 1,451 (no level-flight solution at 65%) | pass / pass / fail |
-| 2,700 | -200 | 56.5 | brochure basis | 1,381 | 164 | 901 (no level-flight solution at 65%) | pass / fail / pass |
-| 2,700 | -200 | 56.5 | measured basis | 1,381 | 154 | 849 (no level-flight solution at 65%) | pass / fail / fail |
-| 2,700 | -200 | 90 | brochure basis | 1,381 | 164 | 1,537 (no level-flight solution at 65%) | pass / pass / pass |
-| 2,700 | -200 | 90 | measured basis | 1,381 | 154 | 1,451 (no level-flight solution at 65%) | pass / pass / fail |
+| 2,400 | +0 | 56.5 | brochure basis | 911 | 169 | 934 (1,113) | short / short (eco met) / pass |
+| 2,400 | +0 | 56.5 | measured basis | 911 | 159 | 883 (1,034) | short / short (eco met) / fail |
+| 2,400 | +0 | 90 | brochure basis | 911 | 169 | 1,587 (1,933) | short / met / pass |
+| 2,400 | +0 | 90 | measured basis | 911 | 159 | 1,503 (1,803) | short / met / fail |
+| 2,400 | -200 | 56.5 | brochure basis | 1,111 | 169 | 934 (1,113) | met / short (eco met) / pass |
+| 2,400 | -200 | 56.5 | measured basis | 1,111 | 159 | 883 (1,034) | met / short (eco met) / fail |
+| 2,400 | -200 | 90 | brochure basis | 1,111 | 169 | 1,587 (1,933) | met / met / pass |
+| 2,400 | -200 | 90 | measured basis | 1,111 | 159 | 1,503 (1,803) | met / met / fail |
+| 2,700 | +0 | 56.5 | brochure basis | 1,181 | 164 | 901 (no level-flight solution at 65%) | met / short / pass |
+| 2,700 | +0 | 56.5 | measured basis | 1,181 | 154 | 849 (no level-flight solution at 65%) | met / short / fail |
+| 2,700 | +0 | 90 | brochure basis | 1,181 | 164 | 1,537 (no level-flight solution at 65%) | met / met / pass |
+| 2,700 | +0 | 90 | measured basis | 1,181 | 154 | 1,451 (no level-flight solution at 65%) | met / met / fail |
+| 2,700 | -200 | 56.5 | brochure basis | 1,381 | 164 | 901 (no level-flight solution at 65%) | met / short / pass |
+| 2,700 | -200 | 56.5 | measured basis | 1,381 | 154 | 849 (no level-flight solution at 65%) | met / short / fail |
+| 2,700 | -200 | 90 | brochure basis | 1,381 | 164 | 1,537 (no level-flight solution at 65%) | met / met / pass |
+| 2,700 | -200 | 90 | measured basis | 1,381 | 154 | 1,451 (no level-flight solution at 65%) | met / met / fail |

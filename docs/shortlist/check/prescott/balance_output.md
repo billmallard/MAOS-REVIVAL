@@ -68,24 +68,24 @@ Ballast at 2,400 lb on the AM20T, the stage 3 engine-swap case (radiator in the 
 
 AM20T at the assumed 195 hp continuous; still air, no reserve, full fuel from gross, at continuous power. Payload with full fuel = useful load - fuel. At 2,700 lb the wing and tail are 12.5% larger (MANUFACTURING's weight assumes it). Option B is the balance fix in every row except the 'no fix' and 'ballast' rows.
 
-| Gross, fuel | Option | Structure end | Useful load | Payload with full fuel | Basis | KTAS, crit. alt 8k / 16k | Range, nm, 8k / 16k | Payload 1,000 nm + 45 min, 16k (info) | Floors at 16k: load / range / speed |
+| Gross, fuel | Option | Structure end | Useful load | Payload with full fuel | Basis | KTAS, crit. alt 8k / 16k | Range, nm, 8k / 16k | Payload 1,000 nm + 45 min, 16k | At 16k: useful load / range against the targets, speed against the floor |
 |---|---|---|---|---|---|---|---|---|---|
-| 2,400 lb, 56.5 gal | A. ballast | light | 822 | 483 | brochure basis | 194 / 207 | 683 / 705 | cannot | fail / fail / pass+ |
-| 2,400 lb, 56.5 gal | A. ballast | light | 822 | 483 | measured basis | 184 / 196 | 648 / 669 | cannot | fail / fail / pass+ |
-| 2,400 lb, 56.5 gal | A. ballast | heavy | 604 | 265 | brochure basis | 194 / 207 | 683 / 705 | cannot | fail / fail / pass+ |
-| 2,400 lb, 56.5 gal | A. ballast | heavy | 604 | 265 | measured basis | 184 / 196 | 648 / 669 | cannot | fail / fail / pass+ |
-| 2,400 lb, 56.5 gal | B. masses forward | light | 878 | 539 | brochure basis | 194 / 207 | 683 / 705 | cannot | fail / fail / pass+ |
-| 2,400 lb, 56.5 gal | B. masses forward | light | 878 | 539 | measured basis | 184 / 196 | 648 / 669 | cannot | fail / fail / pass+ |
-| 2,400 lb, 56.5 gal | B. masses forward | heavy | 660 | 321 | brochure basis | 194 / 207 | 683 / 705 | cannot | fail / fail / pass+ |
-| 2,400 lb, 56.5 gal | B. masses forward | heavy | 660 | 321 | measured basis | 184 / 196 | 648 / 669 | cannot | fail / fail / pass+ |
-| 2,700 lb, 90 gal | A. ballast | light | 1,087 | 547 | brochure basis | 188 / 201 | 1,100 / 1,151 | 551 | pass / pass / pass+ |
-| 2,700 lb, 90 gal | A. ballast | light | 1,087 | 547 | measured basis | 179 / 190 | 1,044 / 1,093 | cannot | pass / pass / pass+ |
-| 2,700 lb, 90 gal | A. ballast | heavy | 805 | 265 | brochure basis | 188 / 201 | 1,100 / 1,151 | 269 | fail / pass / pass+ |
-| 2,700 lb, 90 gal | A. ballast | heavy | 805 | 265 | measured basis | 179 / 190 | 1,044 / 1,093 | cannot | fail / pass / pass+ |
-| 2,700 lb, 90 gal | B. masses forward | light | 1,142 | 602 | brochure basis | 188 / 201 | 1,100 / 1,151 | 606 | pass / pass / pass+ |
-| 2,700 lb, 90 gal | B. masses forward | light | 1,142 | 602 | measured basis | 179 / 190 | 1,044 / 1,093 | cannot | pass / pass / pass+ |
-| 2,700 lb, 90 gal | B. masses forward | heavy | 860 | 320 | brochure basis | 188 / 201 | 1,100 / 1,151 | 325 | fail / pass / pass+ |
-| 2,700 lb, 90 gal | B. masses forward | heavy | 860 | 320 | measured basis | 179 / 190 | 1,044 / 1,093 | cannot | fail / pass / pass+ |
+| 2,400 lb, 56.5 gal | A. ballast | light | 822 | 483 | brochure basis | 194 / 207 | 683 / 705 | cannot | 18% short / 29% short / pass+ |
+| 2,400 lb, 56.5 gal | A. ballast | light | 822 | 483 | measured basis | 184 / 196 | 648 / 669 | cannot | 18% short / 33% short / pass+ |
+| 2,400 lb, 56.5 gal | A. ballast | heavy | 604 | 265 | brochure basis | 194 / 207 | 683 / 705 | cannot | 40% short / 29% short / pass+ |
+| 2,400 lb, 56.5 gal | A. ballast | heavy | 604 | 265 | measured basis | 184 / 196 | 648 / 669 | cannot | 40% short / 33% short / pass+ |
+| 2,400 lb, 56.5 gal | B. masses forward | light | 878 | 539 | brochure basis | 194 / 207 | 683 / 705 | cannot | 12% short / 29% short / pass+ |
+| 2,400 lb, 56.5 gal | B. masses forward | light | 878 | 539 | measured basis | 184 / 196 | 648 / 669 | cannot | 12% short / 33% short / pass+ |
+| 2,400 lb, 56.5 gal | B. masses forward | heavy | 660 | 321 | brochure basis | 194 / 207 | 683 / 705 | cannot | 34% short / 29% short / pass+ |
+| 2,400 lb, 56.5 gal | B. masses forward | heavy | 660 | 321 | measured basis | 184 / 196 | 648 / 669 | cannot | 34% short / 33% short / pass+ |
+| 2,700 lb, 90 gal | A. ballast | light | 1,087 | 547 | brochure basis | 188 / 201 | 1,100 / 1,151 | 551 | met / met / pass+ |
+| 2,700 lb, 90 gal | A. ballast | light | 1,087 | 547 | measured basis | 179 / 190 | 1,044 / 1,093 | cannot | met / met / pass+ |
+| 2,700 lb, 90 gal | A. ballast | heavy | 805 | 265 | brochure basis | 188 / 201 | 1,100 / 1,151 | 269 | 20% short / met / pass+ |
+| 2,700 lb, 90 gal | A. ballast | heavy | 805 | 265 | measured basis | 179 / 190 | 1,044 / 1,093 | cannot | 20% short / met / pass+ |
+| 2,700 lb, 90 gal | B. masses forward | light | 1,142 | 602 | brochure basis | 188 / 201 | 1,100 / 1,151 | 606 | met / met / pass+ |
+| 2,700 lb, 90 gal | B. masses forward | light | 1,142 | 602 | measured basis | 179 / 190 | 1,044 / 1,093 | cannot | met / met / pass+ |
+| 2,700 lb, 90 gal | B. masses forward | heavy | 860 | 320 | brochure basis | 188 / 201 | 1,100 / 1,151 | 325 | 14% short / met / pass+ |
+| 2,700 lb, 90 gal | B. masses forward | heavy | 860 | 320 | measured basis | 179 / 190 | 1,044 / 1,093 | cannot | 14% short / met / pass+ |
 
 Drag cost of a 12 in stretch (option C), 2,700 lb, 16k: 0.9 / 0.9 kt and 5 / 5 nm (brochure / measured basis).
 
