@@ -82,7 +82,7 @@ None: amateur-built. Read from FAA DRS, 2026-10-24.
 
 | When | Event | Source and quality |
 |---|---|---|
-| February 2017 | Lancair International Inc. (Redmond, Oregon; Lancair was based there from 1992, per Bill's note, not checked here) sold the older designs (200, 320/360, IV, IV-P, IVPT, ES, ESP, Legacy) with "all assets, intellectual designs, and ongoing support business" to Mark and Conrad Huffstutler. They ran them as Lancair International, LLC in Uvalde, Texas, hoping to revive kit production. | Lancair release, P/S; Wikipedia "Lancair", L |
+| February 2017 | Lancair International Inc. (Redmond, Oregon, where the company moved in 1992, per the lancair.com/about timeline, P/S; Bill's note agrees) sold the older designs (the release lists "320/360, IV, IV-P, ES and Legacy"; Wikipedia adds 200, IVPT and ESP, L) with "all assets, intellectual designs, and ongoing support business" to Mark and Conrad Huffstutler. They ran them as Lancair International, LLC in Uvalde, Texas, hoping to revive kit production. | Lancair release, P/S, for the release's list; Wikipedia "Lancair", L, for the added models |
 | October 2023 | JetEXE Aviation (Sacramento; Capt. Augustine Joseph) bought the business from the Huffstutlers, who "were concentrating on fleet support in recent years". Fleet support first, then new designs. | AvWeb; Kitplanes; Airframer; S |
 | Today | lancair.com/about names "Lancair Aerospace KSAC Sacramento Executive Airport 6273 Freeport Blvd, Sacramento, CA 95822", CEO Capt. Augustine Joseph. Some lancair.com pages still reflect the Uvalde era (for example, a pop-up headed "Remembering Robb School victims and families" that links to Uvalde relief), so the site is not uniformly current. | lancair.com, P/S |
 

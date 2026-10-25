@@ -52,7 +52,7 @@ None: amateur-built. Read from FAA DRS, 2026-10-24.
 
 | When | Event | Source and quality |
 |---|---|---|
-| February 2017 | Lancair International Inc. (Redmond, Oregon; Lancair was based there from 1992, per Bill's note, not checked here) sold the older designs (including the IV, IV-P, ES and ESP; the release names "ES", not "Super ES") with "all assets, intellectual designs, and ongoing support business" to Mark and Conrad Huffstutler. They ran them as Lancair International, LLC in Uvalde, Texas, hoping to revive kit production. | Lancair release, P/S; Wikipedia "Lancair", L |
+| February 2017 | Lancair International Inc. (Redmond, Oregon, where the company moved in 1992, per the lancair.com/about timeline, P/S; Bill's note agrees) sold the older designs (the release lists "320/360, IV, IV-P, ES and Legacy"; it names "ES", not "Super ES"; Wikipedia adds 200, IVPT and ESP, L) with "all assets, intellectual designs, and ongoing support business" to Mark and Conrad Huffstutler. They ran them as Lancair International, LLC in Uvalde, Texas, hoping to revive kit production. | Lancair release, P/S, for the release's list; Wikipedia "Lancair", L, for the added models |
 | October 2023 | JetEXE Aviation (Sacramento; Capt. Augustine Joseph) bought the business from the Huffstutlers, who "were concentrating on fleet support in recent years". Fleet support first, then new designs. | AvWeb; Kitplanes; Airframer; S |
 | Today | lancair.com/about names "Lancair Aerospace KSAC Sacramento Executive Airport 6273 Freeport Blvd, Sacramento, CA 95822", CEO Capt. Augustine Joseph. Some lancair.com pages still reflect the Uvalde era (for example, a pop-up headed "Remembering Robb School victims and families" that links to Uvalde relief), so the site is not uniformly current. | lancair.com, P/S |
 
@@ -151,20 +151,19 @@ company decision.
 
 ## Sources
 
-- AvWeb, "JetEXE Buys Lancair, Plans Sustainable Designs", October 2023 (S).
-  https://www.avweb.com/aviation-news/jetexe-buys-lancair-plans-sustainable-designs/
 - Kitplanes, "JetEXE Buys Lancair" (S). https://www.kitplanes.com/jetexe-buys-lancair/
-- Lancair Aerospace, About page, re-read 2026-10-25 (P/S). https://lancair.com/about/
+- Airframer, "JetEXE builds GA presence with Lancair acquisition", 11 October
+  2023 (S). https://www.airframer.com/news/story/jetexe-builds-ga-presence-with-lancair-acquisition
 - Wikipedia, "Lancair", read 2026-10-25 (L; out of date on the 2023 sale).
   https://en.wikipedia.org/wiki/Lancair
-
 - FAA DRS, TCDS searches ES, M22 (A6SW), LC40-550FG (A00003SE Rev 27), read
   2026-10-24. https://drs.faa.gov/browse/TCDSMODEL
 - FAA Aircraft Registry, ReleasableAircraft.zip, downloaded 2026-10-24.
   https://registry.faa.gov/database/ReleasableAircraft.zip
 - Lancair International Inc., sale announcement, February 2017 (P/S).
   https://lancair.com/lancair-international-inc-announcing-sale-production-assets-lancair-brand-kit-components-support-assets-new-ownership-based-uvalde-texas/
-- Lancair Aerospace home and About pages, read 2026-10-24 (P/S).
+- Lancair Aerospace home and About pages, read 2026-10-24, About re-read
+  2026-10-25 (P/S).
   https://lancair.com/ https://lancair.com/about/
 - AvWeb, "JetEXE Buys Lancair, Plans Sustainable Designs", October 2023 (S).
   https://www.avweb.com/aviation-news/jetexe-buys-lancair-plans-sustainable-designs/
