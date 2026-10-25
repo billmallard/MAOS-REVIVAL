@@ -4,7 +4,9 @@
 delegated, judgement mine). **Board issue:** AER-3787. **Date:** 2026-10-24.
 **Status:** first pass, desk research from public sources only. Nobody has been
 contacted. From AERO's stage 1 long list (near miss: speed unconditioned, useful
-load 100 lb short).
+load 100 lb short). **Updated 2026-10-24** for Bill's review (AER-3805): a
+re-derivation section. Bill can't afford the rights and isn't sure they are
+needed.
 
 This is research, not legal advice. It reports what public records show and
 where they run out. It does not say the design may be copied.
@@ -51,7 +53,7 @@ Read directly from FAA DRS, 2026-10-24.
 | 200D | Approved 25 November 1964; Continental IO-520-A; serials 290, 292 and up | Same. P. |
 | Basis and dates | CAR 3 (1956, through Amendment 3-1); TC issued 6 March 1958; applied for 30 April 1957 | Same. P. |
 | Production basis | None. Each aircraft needs FAA conformity inspection | Same. P. |
-| Drawings cited | Meyers drawings A60B005, B60B010; Interceptor drawings D69B031, C63R160; Interceptor Report 60M018 | Same. P. |
+| Drawings cited | Meyers drawings A60B005, B60B010, C60B010; Interceptor drawings D69B031, C63R160; Interceptor Report 60M018 | Same. P. |
 
 ## Holder or seller today
 
@@ -131,7 +133,77 @@ turboprop 400, which was certified in 1971 but never financed for production (L)
 | **Buy the TC** | Establish who owns Interceptor Aviation, or the TC, after VSE's 2021 purchase of GlobalParts. Then buy TC 3A18 with its drawings and tooling. | The strongest buy case in this batch. The holder already offered exactly this package in 2019. Requires contact; not done. |
 | **License** | A licence from the same owner. | Possible, but a holder that wanted to sell outright may prefer a sale. |
 | **Modify existing airframes** | STC an engine change onto existing 200Ds. | Possible, but a 58-aircraft fleet gives a small market. |
-| **Re-derive from an airframe** | Measure a 200D and build a new design. | Physically easy (steel tube, metal skins). Pointless if the TC and tooling can be bought. **Attorney needed** if pursued. |
+| **Re-derive from an airframe** | Measure a 200D and build a new design. | Physically easy (steel tube, metal skins), and the TCDS gives the whole weight, balance and speed envelope. The path Bill asked to sharpen (AER-3805): see "Re-derivation" below. **Attorney needed** before measuring or copying anything. |
+
+## Re-derivation: a new design inspired by the 200D
+
+*Added 2026-10-24 for Bill's review (AER-3805).* Bill can't afford the rights
+and is "not sure it's necessary". So the question is: what does the public
+record give a new design inspired by the 200D, and where does it stop? This is
+the path that needs no purchase. The FOIA card on AER-3787 stays Bill's to
+answer; nothing here depends on it.
+
+### What the public record gives
+
+| Source | What it yields | What it does not | Grade |
+|---|---|---|---|
+| **TCDS 3A18 Rev 19** (read in full, 8 pages) | Maximum weight 3,000 lb. CG envelope (+31.5 to +33.8 in at 3,000 lb, +23.6 to +33.8 in at 2,207 lb) from a stated datum, the front face of the firewall. Seat stations (+30, +70), baggage 200 lb at +100, fuel 80 gal (two 20 gal mains at +22, two 20 gal auxiliaries at +41). Control throws (flaps 40 deg; aileron +22/-9.5 deg; elevator +32/-20 deg; rudder +/-21 deg). Vne 205 kt, Vno 182 kt, Va 115 kt, Vfe 109 kt. Engine IO-520-A, 285 hp at 2,700 rpm. Propeller diameters 78-84 in. Certification basis CAR 3. The AFM date (25 November 1964) and the numbers of five Meyers and Interceptor drawings (A60B005, B60B010, C60B010, C63R160, D69B031) and one report (60M018) | No geometry: no span, area, chord, incidence, tail size or structure. The drawings are cited by number, not published | P |
+| **Interceptor 400 on the same TCDS** (model 400, approved 20 August 1971) | The growth path, measured by the FAA: TPE331 turboprop at 400 shp; 4,005 lb takeoff, 4,030 lb ramp, 3,200 lb zero fuel; fuel 155.4 gal; pressurised cabin structure with a 2,000-hour life limit; maximum operating altitude 24,000 ft; CG +27.0 to +33.0 in. Special conditions in FAA Docket 9972, 12 November 1969 | The same airframe family took a 33% weight increase and pressurisation on one TC. That is evidence the 200's structure has margin, not a measurement of it | P |
+| **Jane's All the World's Aircraft 1967-68**, as transcribed by Wikipedia | Span 30 ft 6 in; length 24 ft 4 in; height 7 ft 4 in; wing area 161.5 sq ft; empty 1,940 lb; maximum cruise 210 mph (180 kt); stall 47 kt, wheels and flaps down | Not read in the original. Treat as a lead to the Jane's page | L (S once Jane's is read) |
+| **Airfoils** (UIUC "Incomplete Guide to Airfoil Usage") | Root NACA 23015, tip NACA 4412, for the Meyers 200, the Aero Commander 200 and the Interceptor 400 | A compiled list, not a drawing. The sections themselves are public NACA data | S |
+| **Published three-views** | None obtained. Jane's 1967-68 is the likely place to look | — | — |
+| **Structure** (Wikipedia; Plane & Pilot 2024) | 4130 chrome-moly steel tube truss with aluminium skins. Little tooling | No member sizes | L/S |
+| **The fleet** | 58 200Ds registered, plus other 200-series models. A privately owned airframe can be measured | — | P |
+| **Patents** | 1950s-60s patents expired long ago | — | — |
+| **Name** | "MEYERS" for aircraft is abandoned at USPTO. A new design should still use its own name | — | P |
+
+Taken together: the TCDS gives the weight, balance, loading and speed envelope
+outright. Jane's and the airfoil list give the planform and sections. A measured
+airframe gives everything else. The structure has to be re-engineered either
+way. It is a 1950s steel truss, and a new design would not copy it.
+
+### Where an attorney is needed
+
+These are questions to counsel, not conclusions. Two statutes frame them, and
+how they apply here is the attorney's call:
+
+- Trade secrets. Federal law says "improper means" "includes theft,
+  bribery, misrepresentation, breach or inducement of a breach of a duty to
+  maintain secrecy, or espionage through electronic or other means", and that it "does not include reverse engineering, independent derivation, or any
+  other lawful means of acquisition" (18 USC 1839(6), P).
+- Copyright. "the design of a useful article, as defined in this section,
+  shall be considered a pictorial, graphic, or sculptural work only if, and
+  only to the extent that, such design incorporates pictorial, graphic, or
+  sculptural features that can be identified separately from, and are capable
+  of existing independently of, the utilitarian aspects of the article"
+  (17 USC 101, P). Drawings, manuals and the AFM are written works in their own
+  right.
+
+Questions:
+
+1. **Measuring an airframe.** Is measuring a lawfully owned or borrowed 200D,
+   and producing new drawings from it, safe against any trade-secret or
+   contract claim by the TC 3A18 holder? Does it matter who owns the airframe,
+   or what its bill of sale says?
+2. **Using the public record.** May a new design use the TCDS data, the Jane's
+   figures and the NACA sections freely? We assume yes, but it should be
+   confirmed.
+3. **Copying documents.** The AFM, maintenance manuals and any factory drawing
+   that turns up in an owner's records are separate works. What may a new design
+   take from them, if anything?
+4. **How close is too close.** How far may a new design resemble the 200D in
+   outline before trade dress or passing off is a risk, given the "Meyers" mark
+   is abandoned?
+5. **Certification route.** None of this touches TC 3A18. A new design is its
+   own certification problem: experimental amateur-built, or a new TC. That is
+   for the FAA, not counsel, and it does not need the holder's data.
+
+**Reading.** On the public record, a new design inspired by the 200D looks
+feasible without buying anything. The TCDS is unusually informative, and
+physical airframes exist. The real cost is engineering a new structure, which
+would be needed anyway. An attorney is needed for questions 1, 3 and 4 before
+anyone measures an aircraft or copies a document. Question 2 is a quick
+confirmation.
 
 ## Where an aviation IP attorney is needed
 
@@ -141,6 +213,7 @@ turboprop 400, which was certified in 1971 but never financed for production (L)
 2. **The terms of any purchase**, including the TC, the drawings and tooling, and
    the Interceptor 400 data, if Bill authorises an approach.
 3. **Names**: whether "Meyers" or "Interceptor" can be used for a revival.
+4. **Re-derivation**: the five questions in "Re-derivation" above.
 
 ## Open items
 
@@ -177,6 +250,12 @@ turboprop 400, which was certified in 1971 but never financed for production (L)
   https://planeandpilotmag.com/this-incredible-plane-meyers-aero-commander-200/
 - Aviation Consumer, "Micco SP20". https://www.aviationconsumer.com/uncategorized/miccos-sp20/
 - USPTO trademark search: MEYERS (SN 75211677), INTERCEPTOR. https://tmsearch.uspto.gov/
-- Wikipedia, "Meyers 200"; "Interceptor 400" (L).
+- UIUC Applied Aerodynamics Group, "The Incomplete Guide to Airfoil Usage"
+  (Lednicer), read 2026-10-24 (S). https://m-selig.ae.illinois.edu/ads/aircraft.html
+- 18 USC 1839(6) and 17 USC 101, read 2026-10-24 (P).
+  https://www.law.cornell.edu/uscode/text/18/1839
+  https://www.law.cornell.edu/uscode/text/17/101
+- Wikipedia, "Meyers 200" (specifications from Jane's 1967-68); "Interceptor
+  400" (L).
   https://en.wikipedia.org/wiki/Meyers_200
   https://en.wikipedia.org/wiki/Interceptor_400
