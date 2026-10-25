@@ -239,7 +239,7 @@ A normal airplane rotates at about 1.1-1.2 Vs, and this one lifts off flat at ab
 
 ### Safety review (AER-3899)
 
-SAFETY reviewed the balance options, the approach and landing technique and the accident record, on Bill's approval (2026-10-25). The full review, verbatim, is [`docs/shortlist/check/prescott/SAFETY.md`](../shortlist/check/prescott/SAFETY.md); it judged PR #10's numbers, before the corrections above. Its verdicts, quoted:
+SAFETY reviewed the balance options, the approach and landing technique and the accident record, on Bill's approval (2026-10-25). The full review, verbatim, is [`docs/shortlist/check/prescott/SAFETY.md`](../shortlist/check/prescott/SAFETY.md); its sections 1-6 judged PR #10's numbers, before the corrections above. Those first verdicts, quoted (revision 1; see the addendum below for C):
 
 | Item | SAFETY's verdict |
 |---|---|
@@ -251,7 +251,7 @@ SAFETY reviewed the balance options, the approach and landing technique and the 
 
 In its words: "None of the four balance options makes this airplane safe on its own, because balance only fixes where the CG sits." And: "**I am not recommending against revival.** I am recommending against reviving it as the original configuration plus a balance fix. A re-derivation can be acceptable if it meets the outcome requirements in section 5." Those requirements, R1-R10 (stick-free margin, pitch change with power, an angle-of-attack stall warning, propeller and tail strike, rotation, spin and deep stall, ballast as built, the option B coolant loop, torsional vibration and flutter, transition training), are in the review's section 5 and are carried here as design constraints on any re-derivation.
 
-What the corrections do to its verdicts, in our reading (SAFETY has not re-reviewed them): A now carries 113-130 lb of fixed lead, so its useful-load pressure is larger than SAFETY saw; B carries both its coolant-loop conditions (R8) and A's ballast conditions (R7); C, sized to hold its margin as SAFETY asked, grows to a 3-4 ft stretch that breaks the forward limit, so it fails as a sole fix before the directional check is reached; D is unchanged. The 49 lb datum was carried with the light wooden propeller, so the constant-speed propeller adds to it rather than being inside it.
+SAFETY then re-reviewed the corrected numbers. Its ruling is the [addendum (revision 2)](../shortlist/check/prescott/SAFETY.md#addendum-revision-2-2026-10-25-re-review-of-aeros-corrected-numbers-aer-3902) at the end of the review, which governs where it differs from the table above. It changes one verdict, C, to "**Not acceptable as a sole fix**", and adds a ground-tipback condition to R7; read the addendum for the reasons and the rest of its verdicts.
 
 ### Why it died, properly
 
