@@ -10,7 +10,12 @@ price is from a public page or article, dated; every weight and hour figure
 names its source and grade, or is marked as our estimate (E). No vendor, kit
 seller, rights holder or museum has been contacted.
 
-**Scope after Bill's review.** AERO's revised ranking is the priority order
+**Bill's pick (2026-10-25, via AERO on this issue): the Bellanca T-250 Aries
+and the Prescott Pusher go forward.** Stage 4 now concentrates on those two. The
+Express, IV-P, Meyers and 301 sections stay as record and are not being
+developed further.
+
+**Scope after Bill's review (the record of how we got here).** AERO's revised ranking is the priority order
 until Bill picks:
 
 1. Bellanca T-250 Aries (new)
@@ -29,15 +34,16 @@ and the Cozy MKIV as the reference.
 
 ## What this stage finds
 
-1. **Prescott Pusher: rebuild empty weight 1,380-1,630 lb, useful load 770-1,020 lb
-   at the published 2,400 lb gross.** Modern structure takes out 35-175 lb:
+1. **Prescott Pusher (Bill's pick): rebuild empty weight 1,380-1,630 lb, useful load
+   770-1,020 lb at the published 2,400 lb gross; 1,410-1,720 lb and 980-1,290 lb
+   re-derived at about 2,700 lb gross, before engine and ballast.** Modern structure takes out 35-175 lb:
    carbon sandwich shells in place of 3-8-ply fibreglass ones over the kept
    steel cage, plus a carbon wing and tail in place of riveted aluminium. Only
    the light end reaches 1,000 lb, and the AM20T is 54-71 lb heavier than the
    O-360, in the tail cone, where AERO puts the ballast at 1.3 lb per lb. Saving
    weight aft avoids 20-55 lb of that ballast. Gross weight, a STRUCTURES question,
    and balance are still the levers that decide it.
-2. **Aries: rebuild empty weight 1,780-2,000 lb.** Useful load is 1,150-1,370 lb
+2. **Aries (Bill's pick): rebuild empty weight 1,780-2,000 lb.** Useful load is 1,150-1,370 lb
    against the factory 1,300; with our engine credit, empty is 1,690-1,940 lb.
    Modern manufacturing doesn't make it much lighter. What it changes is cost:
    the Aries was designed around flat and single-curve skins, so a matched-hole
@@ -242,6 +248,18 @@ gross (table above; all E).
   - in the AM20T case, the aft savings avoid about 20-55 lb of AERO's 82 lb of
     nose ballast (1.3 lb per lb, AERO)
 
+**At AERO's re-derivation, about 2,700 lb gross with 90 gal.** The structure grows by
++30 to +85 lb (E). Raymer's GA weight equations at a gross ratio of 1.125 give
++19 to +26 lb at fixed area: wing (Nz W)^0.49, tail about 0.4, fuselage 0.18,
+main gear 0.77. Growing the wing and tail area to hold the stall speed adds
+about +17 to +24 lb, the 90 gal leading-edge tankage +10-20, and heavier attach
+fittings up to +15. AERO's levers use +30 (10% of the added gross), which is at
+my low end. On that basis the re-derived empty weight is 1,410-1,720 lb and the
+useful load 980-1,290 lb, before the engine and ballast, which AERO carries.
+Expressed against AERO's 1,550 lb basis, the 2,400 lb rebuild delta is -170 lb
+at the light end and +80 lb at the heavy end. The heavy end is above zero
+because it starts from the weighed 1,661 lb aircraft, not the published 1,550.
+
 **What moves it over the floor.** Structure alone reaches 1,000 lb only at the
 light end. The AM20T installs 54-71 lb heavier than the O-360, in the tail cone.
 That's O-360-A1A 258 lb per TCDS E-286 plus starter and alternator, on the x1.15
@@ -284,6 +302,16 @@ museum is Bill's call; Elon has asked him.
 | Engine | O-540, 250 hp | AM20T, $27,995-29,700 (F) | same |
 | All-in to fly | | $85-160k (E) | $155-240k (E: kit, engine, firewall-forward $5-10k, prop $5-12k, panel $15-40k) |
 | Skill floor | | Medium-high: final-drilling and fitting without matched holes | Medium: Van's-level riveting. The critical skill is flush riveting and dimpling to laminar-wing quality, since waviness costs the laminar run AERO credited (x_tr 0.25) |
+
+**The constant-chord wing is the Aries's biggest manufacturing asset.** Every
+rib is the same shape, so one form block (or one rib jig) makes every wing rib.
+The skins wrap a constant section, so they are single-curve and can be cut flat
+and rolled. Unique-part count is what drives both kit tooling and builder
+hours, and here the whole wing collapses to a handful of unique parts repeated
+along the span. On a tapered wing every rib is unique. This is why the tooling
+estimate above is the lowest on the list. The same property makes the extra
+fuel cheap: a longer integral bay is more identical ribs and more sealant, with
+no new tooling.
 
 **First, what to delete.** The carburettor, magnetos, carb heat and mixture
 control (EFI). The single air-cooled inlet and its baffles (one radiator in a

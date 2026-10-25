@@ -277,6 +277,8 @@ Full study (rank 2). Method, prices and sources are in [docs/MANUFACTURING.md](.
 
 **Empty weight:** rebuild **1,380-1,630 lb**, useful load **770-1,020 lb** at 2,400 lb gross (published 850; the weighed builder aircraft had 739). Only the light end reaches 1,000 lb. The AM20T installs +54 to +71 lb over the O-360, in the tail cone, where each pound needs about 1.3 lb of nose ballast (AERO). The aft weight savings avoid about 20-55 lb of that ballast. Gross weight (STRUCTURES) and balance are the levers that decide it.
 
+**Re-derived at about 2,700 lb gross with 90 gal (AERO's case):** the structure grows +30 to +85 lb (E; Raymer GA weight scaling plus area for the same stall speed, tankage and fittings). AERO's levers use +30. Rebuild empty 1,410-1,720 lb, useful load 980-1,290 lb, before the engine and ballast.
+
 **Weight build-up:**
 
 | Item | Light, lb | Heavy, lb | Basis | Grade |
@@ -291,6 +293,7 @@ Full study (rank 2). Method, prices and sources are in [docs/MANUFACTURING.md](.
 | **Rebuild empty weight, no engine credit** | **1,380** | **1,630** | sum, rounded to 10 lb | E |
 | Option, not in the total: Replace the 4130 cage too: structural carbon monocoque fuselage | -70 | -30 | Cage about 90-140 lb for a four-seat tube fuselage (E); a load-carrying shell adds most of it back; loses the cage's crash protection; needs STRUCTURES | E |
 | Option, not in the total: Nose ballast avoided by the aft savings (tail and the aft part of the shell), AM20T case only | -55 | -20 | AERO: each pound behind the cabin needs about 1.3 lb of nose ballast. Aft savings of about 15-43 lb (tail, plus about 40% of the shell) avoid about 20-55 lb of the 82 lb AERO carries for the AM20T | E |
+| Option, not in the total: Re-derived for about 2,700 lb gross with 90 gal (AERO's re-derivation case) | +30 | +85 | Raymer GA weight equations at a gross ratio of 1.125: wing (Nz W)^0.49, tail 0.38-0.41, fuselage 0.18, main gear 0.77 give +19 to +26 lb at fixed area. Wing and tail area grown to hold the stall speed add about +17 to +24 lb; 90 gal of leading-edge tankage +10-20; heavier attach fittings up to +15 | E |
 
 **Cost, hours, home shop:**
 - **Original kit:** $29,500 fixed-gear or $36,500 retractable, with a 1,500 h factory estimate (P, AOPA Pilot 1986).

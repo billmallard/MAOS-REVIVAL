@@ -204,6 +204,8 @@ Full study (rank 1). Method, prices and sources are in [docs/MANUFACTURING.md](.
 
 **First, what to delete:** carburettor, magnetos, carb heat and mixture control (EFI); the single air-cooled inlet and its baffles (radiator in a duct); 1977 avionics and vacuum system (EFIS).
 
+**Constant chord, one rib:** every wing rib is the same shape, so one form block makes them all, and the single-curve skins are cut flat and rolled. That collapses the wing's unique-part count, which drives both kit tooling and builder hours. It is why the Aries's tooling is the lowest on the list, and why extra fuel bays need no new tooling.
+
 **Empty weight:** rebuild **1,780-2,000 lb**, useful load **1,150-1,370 lb** (factory: 1,300). With our engine credit (-81 to -63 lb; O-540-A4D5 375 lb per TCDS E-295, without starter and alternator): 1,690-1,940 lb. About 20 gal more fuel in integral wing bays closes the 90 nm range shortfall at continuous power, for 10-20 lb empty (option, below).
 
 **Cost, hours, tooling, skill floor** (detail and sources in [MANUFACTURING.md](../MANUFACTURING.md#bellanca-t-250-aries-metal-matched-hole)):
