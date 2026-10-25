@@ -46,6 +46,28 @@ None: amateur-built. Read from FAA DRS, 2026-10-24.
 | Related certified type | A00003SE (LC40/41/42-550FG, T240). Holder Textron Aviation Inc.; Current; Rev 27, 22 June 2016. Holder chain: Pacific Aviation Composites USA, The Lancair Company, Columbia Aircraft Manufacturing, Cessna, Textron | Same. P. |
 | Relevance | LC40 was based on the ES concept; "no common parts" | Aviation Consumer, S. |
 
+## Chain of title
+
+*Added 2026-10-25 at Bill's request (AER-3805).*
+
+| When | Event | Source and quality |
+|---|---|---|
+| February 2017 | Lancair International Inc. (Redmond, Oregon, where Lancair had been since 1992) sold the older designs (including the IV, IV-P, ES and ESP; the release names "ES", not "Super ES") with "all assets, intellectual designs, and ongoing support business" to Mark and Conrad Huffstutler. They ran them as Lancair International, LLC in Uvalde, Texas, hoping to revive kit production. | Lancair release, P/S; Wikipedia "Lancair", L |
+| October 2023 | JetEXE Aviation (Sacramento; Capt. Augustine Joseph) bought the business from the Huffstutlers, who "were concentrating on fleet support in recent years". Fleet support first, then new designs. | AvWeb; Kitplanes; Airframer; S |
+| Today | lancair.com/about names "Lancair Aerospace KSAC Sacramento Executive Airport 6273 Freeport Blvd, Sacramento, CA 95822", CEO Capt. Augustine Joseph. Some lancair.com pages still reflect the Uvalde era (for example, a pop-up about the 2022 Uvalde school shooting), so the site is not uniformly current. | lancair.com, P/S |
+
+Note on Wikipedia: the live "Lancair" article (read 2026-10-25) supports the
+2017 sale but **does not mention JetEXE**, and its infobox still gives Uvalde
+and Mark Huffstutler as CEO. It is out of date, and it is not a source for the
+2023 purchase; AvWeb and Kitplanes are.
+
+**Still open:**
+- What the 2023 purchase covered: type designs, drawings, molds and tooling,
+  trademarks. No public source lists it. The only asset evidence is the
+  "LANCAIR" mark registered to JetEXE and Akyna Medical Management in 2025.
+- Where the molds are: last firm location Uvalde, 2017.
+- Whether the Huffstutlers' Texas LLC, still listed active, kept anything.
+
 ## Holder or seller today
 
 Same as the IV-P (see lancair-iv-p.md):
@@ -128,6 +150,13 @@ company decision.
 - California SOS status of the JetEXE entities.
 
 ## Sources
+
+- AvWeb, "JetEXE Buys Lancair, Plans Sustainable Designs", October 2023 (S).
+  https://www.avweb.com/aviation-news/jetexe-buys-lancair-plans-sustainable-designs/
+- Kitplanes, "JetEXE Buys Lancair" (S). https://www.kitplanes.com/jetexe-buys-lancair/
+- Lancair Aerospace, About page, re-read 2026-10-25 (P/S). https://lancair.com/about/
+- Wikipedia, "Lancair", read 2026-10-25 (L; out of date on the 2023 sale).
+  https://en.wikipedia.org/wiki/Lancair
 
 - FAA DRS, TCDS searches ES, M22 (A6SW), LC40-550FG (A00003SE Rev 27), read
   2026-10-24. https://drs.faa.gov/browse/TCDSMODEL
