@@ -76,6 +76,28 @@ None: amateur-built. Read from FAA DRS, 2026-10-24.
 | Relevance | A00003SE is the Columbia/Cessna line, derived from the ES concept, not the IV-P. It does not cover the IV-P | Same; AvWeb, S. |
 | Registry type | IV-P records are overwhelmingly experimental amateur-built | FAA registry. P. |
 
+## Chain of title
+
+*Added 2026-10-25 at Bill's request (AER-3805).*
+
+| When | Event | Source and quality |
+|---|---|---|
+| February 2017 | Lancair International Inc. (Redmond, Oregon, where the company moved in 1992, per the lancair.com/about timeline, P/S; Bill's note agrees) sold the older designs (the release lists "320/360, IV, IV-P, ES and Legacy"; Wikipedia adds 200, IVPT and ESP, L) with "all assets, intellectual designs, and ongoing support business" to Mark and Conrad Huffstutler. They ran them as Lancair International, LLC in Uvalde, Texas, hoping to revive kit production. | Lancair release, P/S, for the release's list; Wikipedia "Lancair", L, for the added models |
+| October 2023 | JetEXE Aviation (Sacramento; Capt. Augustine Joseph) bought the business from the Huffstutlers, who "were concentrating on fleet support in recent years". Fleet support first, then new designs. | AvWeb; Kitplanes; Airframer; S |
+| Today | lancair.com/about names "Lancair Aerospace KSAC Sacramento Executive Airport 6273 Freeport Blvd, Sacramento, CA 95822", CEO Capt. Augustine Joseph. Some lancair.com pages still reflect the Uvalde era (for example, a pop-up headed "Remembering Robb School victims and families" that links to Uvalde relief), so the site is not uniformly current. | lancair.com, P/S |
+
+Note on Wikipedia: the live "Lancair" article (read 2026-10-25) supports the
+2017 sale but **does not mention JetEXE**, and its infobox still gives Uvalde
+and Mark Huffstutler as CEO. It is out of date, and it is not a source for the
+2023 purchase; AvWeb and Kitplanes are.
+
+**Still open:**
+- What the 2023 purchase covered: type designs, drawings, molds and tooling,
+  trademarks. No public source lists it. The only asset evidence is the
+  "LANCAIR" mark registered to JetEXE and Akyna Medical Management in 2025.
+- Where the molds are: last firm location Uvalde, 2017.
+- Whether the Huffstutlers' Texas LLC, still listed active, kept anything.
+
 ## Holder or seller today
 
 - **Lancair International Inc.** (Oregon corporation, registry 13271291,

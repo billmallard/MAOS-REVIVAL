@@ -82,10 +82,38 @@ AG-14). Positive control: "Model" = M22 returns A6SW (P).
   (Funding Universe company history, L). Keystone was "acquired by Tyco Flow
   Control in 1997, with Anderson Greenwood being maintained as a subsidiary"
   (Wikipedia, "Anderson Greenwood Crosby", L). Emerson now lists Anderson
-  Greenwood among its valve brands (emerson.com, P). How it got from Tyco to
-  Emerson was not verified here.
-- **Reading.** If the TC followed the valve business, today's holder is inside
-  Emerson. That is a large company with no aircraft line, which may regard A11SW
+  Greenwood among its valve brands (emerson.com, P).
+- **The chain in SEC filings (added 2026-10-25, after Bill picked the Aries).**
+  - Tyco's subsidiary lists (10-K Exhibit 21) name **"Anderson, Greenwood &
+    Co."** in every annual filing from 2001 to 2008 (the 2008 list gives its
+    state as Delaware) (SEC EDGAR, P).
+    So the holder of record named on TCDS A11SW was still a Tyco subsidiary
+    as of 26 September 2008, the as-of date of the last list naming it.
+  - Tyco's 2009 list (as of 25 September 2009) no longer names it, and neither
+    does the 2010 list (as of 24 September 2010). The 2009 list is complete
+    enough to include Tyco Valves & Controls LP (DE), Tyco Valves & Controls, Inc. (TX)
+    and Crosby Valve, LLC (NV), so the omission is real (P). An SEC full-text
+    search returns no filing naming "Anderson, Greenwood & Co" after 2008 (P,
+    as far as EDGAR full-text reaches, which is 2001 onward).
+  - **Reading (inference):** the entity was merged, renamed or dissolved inside
+    Tyco between 26 September 2008 and 25 September 2009. If it was merged, its assets,
+    including any rights in A11SW, passed to the surviving entity by operation of
+    law. The likely candidate is a Tyco Valves & Controls entity, but that is
+    not shown. A possible lead, also inference: Crosby Valve, Inc. (NV) on
+    the 2008 list appears as Crosby Valve, LLC on the 2009 list, and two Crosby
+    holding companies no longer appear, which suggests a restructuring of the valve
+    entities that year (AERO's observation).
+  - By 2016 the business was Pentair's. Emerson's 8-K of 18 August 2016
+    describes "the Pentair Valves & Controls business" with "product brands like
+    Anderson-Greenwood, Crosby, Vanessa, Keystone and Biffi". Emerson's 8-K of 28
+    April 2017 announces it "has completed the purchase" (SEC EDGAR, P).
+  - **Open:** which entity the 2008-2009 change folded Anderson, Greenwood & Co.
+    into, and whether that entity's assets went to Pentair and then Emerson.
+    Delaware's entity records (status, merger history) would show the first
+    step. They were not searched; the state's search sits behind a captcha.
+- **Reading.** The holder of record was a live Tyco subsidiary until 2008. If the
+  TC followed the valve business through the 2009 change, today's holder is
+  inside Emerson. That is a large company with no aircraft line, which may regard A11SW
   as worthless, as the bankruptcy court did the licence. If it did not follow,
   the TC may be orphaned. Either way, the first step is the same: find out who
   actually holds A11SW.
@@ -173,6 +201,14 @@ bankruptcy opinion has the full account of why; it was not read.
 - USPTO search on "ARIES" in class 12.
 
 ## Sources
+
+- SEC EDGAR: Tyco International 10-K Exhibit 21 subsidiary lists, 2001-2010
+  (for example 0001047469-08-012419, ex-21, as of 26 September 2008;
+  0001047469-09-010234, ex-21, as of 25 September 2009; and
+  0001047469-10-009627, ex-21, as of 24 September 2010);
+  Emerson Electric 8-K Ex. 99.1, 18 August 2016 (0000950138-16-001272) and
+  28 April 2017 (0000950138-17-000361); EDGAR full-text search for "Anderson,
+  Greenwood & Co", 2026-10-25 (P). https://efts.sec.gov/LATEST/search-index
 
 - FAA DRS, TCDS A11SW Rev 2 (1 July 1980) and version history; holder search
   "Anderson Greenwood & Company"; positive control M22 (A6SW); Bellanca TCs 1A3
