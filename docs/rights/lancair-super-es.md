@@ -52,9 +52,9 @@ None: amateur-built. Read from FAA DRS, 2026-10-24.
 
 | When | Event | Source and quality |
 |---|---|---|
-| February 2017 | Lancair International Inc. (Redmond, Oregon, where Lancair had been since 1992) sold the older designs (including the IV, IV-P, ES and ESP; the release names "ES", not "Super ES") with "all assets, intellectual designs, and ongoing support business" to Mark and Conrad Huffstutler. They ran them as Lancair International, LLC in Uvalde, Texas, hoping to revive kit production. | Lancair release, P/S; Wikipedia "Lancair", L |
+| February 2017 | Lancair International Inc. (Redmond, Oregon; Lancair was based there from 1992, per Bill's note, not checked here) sold the older designs (including the IV, IV-P, ES and ESP; the release names "ES", not "Super ES") with "all assets, intellectual designs, and ongoing support business" to Mark and Conrad Huffstutler. They ran them as Lancair International, LLC in Uvalde, Texas, hoping to revive kit production. | Lancair release, P/S; Wikipedia "Lancair", L |
 | October 2023 | JetEXE Aviation (Sacramento; Capt. Augustine Joseph) bought the business from the Huffstutlers, who "were concentrating on fleet support in recent years". Fleet support first, then new designs. | AvWeb; Kitplanes; Airframer; S |
-| Today | lancair.com/about names "Lancair Aerospace KSAC Sacramento Executive Airport 6273 Freeport Blvd, Sacramento, CA 95822", CEO Capt. Augustine Joseph. Some lancair.com pages still reflect the Uvalde era (for example, a pop-up about the 2022 Uvalde school shooting), so the site is not uniformly current. | lancair.com, P/S |
+| Today | lancair.com/about names "Lancair Aerospace KSAC Sacramento Executive Airport 6273 Freeport Blvd, Sacramento, CA 95822", CEO Capt. Augustine Joseph. Some lancair.com pages still reflect the Uvalde era (for example, a pop-up headed "Remembering Robb School victims and families" that links to Uvalde relief), so the site is not uniformly current. | lancair.com, P/S |
 
 Note on Wikipedia: the live "Lancair" article (read 2026-10-25) supports the
 2017 sale but **does not mention JetEXE**, and its infobox still gives Uvalde
