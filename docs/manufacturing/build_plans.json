@@ -1,0 +1,1148 @@
+{
+ "designs": {
+  "Bellanca T-250 Aries": {
+   "route": "matched-hole aluminium kit; flat and single-curve skins kept; AM20T; 90 gal",
+   "split": {
+    "cut": [
+     368,
+     507
+    ],
+    "form": [
+     323,
+     446
+    ],
+    "tube": [
+     0,
+     0
+    ],
+    "mach": [
+     72,
+     117
+    ],
+    "mold": [
+     15,
+     27
+    ],
+    "buy": [
+     122,
+     186
+    ]
+   },
+   "total": [
+    900,
+    1283
+   ],
+   "unique": [
+    460,
+    689
+   ],
+   "assemblies": [
+    {
+     "name": "Wing structure, both halves (spars, ribs, skins, stringers, tank bay, gear bay)",
+     "split": {
+      "cut": [
+       130,
+       170
+      ],
+      "form": [
+       110,
+       140
+      ],
+      "mach": [
+       12,
+       20
+      ],
+      "buy": [
+       6,
+       10
+      ]
+     },
+     "unique": [
+      55,
+      80
+     ],
+     "note": "16 rib stations x 3 rib pieces x 2 wings = 96 ribs from 3 standard shapes plus 10-15 specials (root, tank ends, gear bay, hinge ribs). Skins are left and right handed"
+    },
+    {
+     "name": "Flaps and ailerons (4 surfaces)",
+     "split": {
+      "cut": [
+       25,
+       35
+      ],
+      "form": [
+       40,
+       50
+      ],
+      "mach": [
+       4,
+       8
+      ],
+      "buy": [
+       1,
+       2
+      ]
+     },
+     "unique": [
+      25,
+      35
+     ],
+     "note": "constant chord: ribs repeat along each surface"
+    },
+    {
+     "name": "T-tail: stabilator, fin, rudder, anti-servo tab",
+     "split": {
+      "cut": [
+       40,
+       55
+      ],
+      "form": [
+       40,
+       60
+      ],
+      "mach": [
+       8,
+       12
+      ],
+      "buy": [
+       2,
+       3
+      ]
+     },
+     "unique": [
+      60,
+      90
+     ],
+     "note": "tail surfaces assumed tapered, so most ribs are unique (no tail drawing found)"
+    },
+    {
+     "name": "Fuselage (frames, longerons, stringers, skins, floor, carry-through, doors)",
+     "split": {
+      "cut": [
+       120,
+       165
+      ],
+      "form": [
+       100,
+       140
+      ],
+      "mach": [
+       15,
+       25
+      ],
+      "buy": [
+       15,
+       20
+      ]
+     },
+     "unique": [
+      150,
+      220
+     ],
+     "note": "slab-sided, flat and single-curve skins (Plane & Pilot); nearly every part unique"
+    },
+    {
+     "name": "Landing gear and doors (retractable tricycle)",
+     "split": {
+      "cut": [
+       12,
+       18
+      ],
+      "form": [
+       10,
+       15
+      ],
+      "mach": [
+       8,
+       12
+      ],
+      "buy": [
+       10,
+       15
+      ]
+     },
+     "unique": [
+      25,
+      35
+     ],
+     "note": "legs, actuators, wheels and brakes bought or service-made"
+    },
+    {
+     "name": "Flight controls (yoke, pushrods, bellcranks, cables, trim)",
+     "split": {
+      "cut": [
+       15,
+       20
+      ],
+      "form": [
+       10,
+       15
+      ],
+      "mach": [
+       20,
+       30
+      ],
+      "buy": [
+       15,
+       25
+      ]
+     },
+     "unique": [
+      40,
+      60
+     ],
+     "note": ""
+    },
+    {
+     "name": "Fuel system, 90 gal integral",
+     "split": {
+      "cut": [
+       8,
+       12
+      ],
+      "form": [
+       4,
+       8
+      ],
+      "mach": [
+       2,
+       4
+      ],
+      "buy": [
+       11,
+       16
+      ]
+     },
+     "unique": [
+      15,
+      25
+     ],
+     "note": "pumps, selector, senders, filters bought; tank sealing is builder work"
+    },
+    {
+     "name": "Firewall forward, AM20T (mount, radiator, duct, exhaust, ECU backup)",
+     "split": {
+      "cut": [
+       8,
+       12
+      ],
+      "form": [
+       4,
+       8
+      ],
+      "mach": [
+       3,
+       6
+      ],
+      "mold": [
+       3,
+       5
+      ],
+      "buy": [
+       12,
+       19
+      ]
+     },
+     "unique": [
+      25,
+      40
+     ],
+     "note": "welded mount bought or from a shop"
+    },
+    {
+     "name": "Composite fairings (cowl, tips, fin cap, fillets, gear-door fairings)",
+     "split": {
+      "mold": [
+       12,
+       18
+      ]
+     },
+     "unique": [
+      10,
+      14
+     ],
+     "note": ""
+    },
+    {
+     "name": "Cabin, windows, panel, seats, interior",
+     "split": {
+      "cut": [
+       10,
+       20
+      ],
+      "form": [
+       5,
+       10
+      ],
+      "mold": [
+       0,
+       4
+      ],
+      "buy": [
+       25,
+       36
+      ]
+     },
+     "unique": [
+      30,
+      50
+     ],
+     "note": "windows and windshield are bought formed acrylic"
+    },
+    {
+     "name": "Electrical and avionics",
+     "split": {
+      "buy": [
+       25,
+       40
+      ]
+     },
+     "unique": [
+      25,
+      40
+     ],
+     "note": "counted as bought boxes"
+    }
+   ]
+  },
+  "Prescott Pusher, route A": {
+   "route": "welded cage, molded shells, metal wing and tail (as built, re-sized)",
+   "split": {
+    "cut": [
+     334,
+     507
+    ],
+    "form": [
+     221,
+     328
+    ],
+    "tube": [
+     90,
+     140
+    ],
+    "mach": [
+     87,
+     134
+    ],
+    "mold": [
+     16,
+     27
+    ],
+    "buy": [
+     112,
+     175
+    ]
+   },
+   "total": [
+    860,
+    1311
+   ],
+   "unique": [
+    489,
+    752
+   ],
+   "assemblies": [
+    {
+     "name": "Fuselage cage, 4130 square tube (tubes, gussets, tabs, fittings)",
+     "split": {
+      "tube": [
+       90,
+       140
+      ],
+      "cut": [
+       60,
+       100
+      ],
+      "mach": [
+       15,
+       25
+      ]
+     },
+     "unique": [
+      90,
+      150
+     ],
+     "note": "SA86: 3/4 x .035 to 1-1/4 x .065 square tube, CAD-cut to length and angle, TIG-welded in a jig"
+    },
+    {
+     "name": "Shells and doors, non-structural (shell halves, nose cone, belly pan, scoops, closeouts, access and cabin doors, gear doors)",
+     "split": {
+      "mold": [
+       14,
+       20
+      ],
+      "buy": [
+       2,
+       4
+      ]
+     },
+     "unique": [
+      14,
+      22
+     ],
+     "note": "SDASM drawings 11005-11106 and 11400-11407 list these parts"
+    },
+    {
+     "name": "Shell bulkheads and attach clips",
+     "split": {
+      "cut": [
+       50,
+       85
+      ],
+      "form": [
+       18,
+       27
+      ]
+     },
+     "unique": [
+      20,
+      35
+     ],
+     "note": "SDASM drawing 11108: attach clips, frame, shell"
+    },
+    {
+     "name": "Landing gear (retractable; fibreglass mains, bought nose gear)",
+     "split": {
+      "cut": [
+       10,
+       15
+      ],
+      "form": [
+       5,
+       10
+      ],
+      "mach": [
+       20,
+       30
+      ],
+      "buy": [
+       15,
+       25
+      ]
+     },
+     "unique": [
+      35,
+      50
+     ],
+     "note": "about 35 gear drawings in SDASM SC.10269; Airite nose gear was bought (SA86)"
+    },
+    {
+     "name": "Flight controls (column, cables, pulleys, bellcranks, bob weight)",
+     "split": {
+      "cut": [
+       25,
+       35
+      ],
+      "form": [
+       10,
+       15
+      ],
+      "mach": [
+       20,
+       30
+      ],
+      "buy": [
+       15,
+       20
+      ]
+     },
+     "unique": [
+      50,
+      70
+     ],
+     "note": "about 45 control-system drawings in SC.10269"
+    },
+    {
+     "name": "Fuel system, 90 gal",
+     "split": {
+      "cut": [
+       6,
+       10
+      ],
+      "form": [
+       4,
+       8
+      ],
+      "mach": [
+       2,
+       4
+      ],
+      "buy": [
+       13,
+       18
+      ]
+     },
+     "unique": [
+      15,
+      25
+     ],
+     "note": ""
+    },
+    {
+     "name": "Engine bay, AM20T in the tail cone (mount, 12 in prop extension, exhaust; radiator and coolant in the nose bay, option B)",
+     "split": {
+      "cut": [
+       8,
+       12
+      ],
+      "form": [
+       4,
+       8
+      ],
+      "mach": [
+       4,
+       6
+      ],
+      "tube": [
+       0,
+       0
+      ],
+      "mold": [
+       2,
+       3
+      ],
+      "buy": [
+       17,
+       26
+      ]
+     },
+     "unique": [
+      30,
+      45
+     ],
+     "note": "prop extension and bushing are machined fatigue parts: a service, never home"
+    },
+    {
+     "name": "Cabin, windows, panel, seats, interior, baggage",
+     "split": {
+      "cut": [
+       15,
+       25
+      ],
+      "form": [
+       5,
+       10
+      ],
+      "mach": [
+       2,
+       4
+      ],
+      "buy": [
+       18,
+       31
+      ]
+     },
+     "unique": [
+      35,
+      55
+     ],
+     "note": ""
+    },
+    {
+     "name": "Electrical and avionics",
+     "split": {
+      "buy": [
+       25,
+       40
+      ]
+     },
+     "unique": [
+      25,
+      40
+     ],
+     "note": "counted as bought boxes"
+    },
+    {
+     "name": "Wing, metal, re-sized +12.5% (spars, ribs, skins, leading-edge tanks)",
+     "split": {
+      "cut": [
+       80,
+       115
+      ],
+      "form": [
+       85,
+       125
+      ],
+      "mach": [
+       10,
+       14
+      ],
+      "mold": [
+       0,
+       4
+      ],
+      "buy": [
+       5,
+       8
+      ]
+     },
+     "unique": [
+      70,
+      110
+     ],
+     "note": "tapered: about 12 rib stations per side, 2-3 pieces each, every station unique; C-spar with nested caps (SA86)"
+    },
+    {
+     "name": "Flaps and ailerons, metal",
+     "split": {
+      "cut": [
+       30,
+       40
+      ],
+      "form": [
+       35,
+       45
+      ],
+      "mach": [
+       4,
+       6
+      ]
+     },
+     "unique": [
+      35,
+      50
+     ],
+     "note": "tapered: ribs unique"
+    },
+    {
+     "name": "T-tail, metal (stabiliser, elevator, tab, fin, rudder)",
+     "split": {
+      "cut": [
+       50,
+       70
+      ],
+      "form": [
+       55,
+       80
+      ],
+      "mach": [
+       10,
+       15
+      ],
+      "buy": [
+       2,
+       3
+      ]
+     },
+     "unique": [
+      70,
+      100
+     ],
+     "note": ""
+    }
+   ]
+  },
+  "Prescott Pusher, route B": {
+   "route": "welded cage, molded shells, carbon wing and tail",
+   "split": {
+    "cut": [
+     190,
+     310
+    ],
+    "form": [
+     46,
+     78
+    ],
+    "tube": [
+     90,
+     140
+    ],
+    "mach": [
+     91,
+     141
+    ],
+    "mold": [
+     62,
+     91
+    ],
+    "buy": [
+     111,
+     173
+    ]
+   },
+   "total": [
+    590,
+    933
+   ],
+   "unique": [
+    376,
+    585
+   ],
+   "assemblies": [
+    {
+     "name": "Fuselage cage, 4130 square tube (tubes, gussets, tabs, fittings)",
+     "split": {
+      "tube": [
+       90,
+       140
+      ],
+      "cut": [
+       60,
+       100
+      ],
+      "mach": [
+       15,
+       25
+      ]
+     },
+     "unique": [
+      90,
+      150
+     ],
+     "note": "SA86: 3/4 x .035 to 1-1/4 x .065 square tube, CAD-cut to length and angle, TIG-welded in a jig"
+    },
+    {
+     "name": "Shells and doors, non-structural (shell halves, nose cone, belly pan, scoops, closeouts, access and cabin doors, gear doors)",
+     "split": {
+      "mold": [
+       14,
+       20
+      ],
+      "buy": [
+       2,
+       4
+      ]
+     },
+     "unique": [
+      14,
+      22
+     ],
+     "note": "SDASM drawings 11005-11106 and 11400-11407 list these parts"
+    },
+    {
+     "name": "Shell bulkheads and attach clips",
+     "split": {
+      "cut": [
+       50,
+       85
+      ],
+      "form": [
+       18,
+       27
+      ]
+     },
+     "unique": [
+      20,
+      35
+     ],
+     "note": "SDASM drawing 11108: attach clips, frame, shell"
+    },
+    {
+     "name": "Landing gear (retractable; fibreglass mains, bought nose gear)",
+     "split": {
+      "cut": [
+       10,
+       15
+      ],
+      "form": [
+       5,
+       10
+      ],
+      "mach": [
+       20,
+       30
+      ],
+      "buy": [
+       15,
+       25
+      ]
+     },
+     "unique": [
+      35,
+      50
+     ],
+     "note": "about 35 gear drawings in SDASM SC.10269; Airite nose gear was bought (SA86)"
+    },
+    {
+     "name": "Flight controls (column, cables, pulleys, bellcranks, bob weight)",
+     "split": {
+      "cut": [
+       25,
+       35
+      ],
+      "form": [
+       10,
+       15
+      ],
+      "mach": [
+       20,
+       30
+      ],
+      "buy": [
+       15,
+       20
+      ]
+     },
+     "unique": [
+      50,
+      70
+     ],
+     "note": "about 45 control-system drawings in SC.10269"
+    },
+    {
+     "name": "Fuel system, 90 gal",
+     "split": {
+      "cut": [
+       6,
+       10
+      ],
+      "form": [
+       4,
+       8
+      ],
+      "mach": [
+       2,
+       4
+      ],
+      "buy": [
+       13,
+       18
+      ]
+     },
+     "unique": [
+      15,
+      25
+     ],
+     "note": ""
+    },
+    {
+     "name": "Engine bay, AM20T in the tail cone (mount, 12 in prop extension, exhaust; radiator and coolant in the nose bay, option B)",
+     "split": {
+      "cut": [
+       8,
+       12
+      ],
+      "form": [
+       4,
+       8
+      ],
+      "mach": [
+       4,
+       6
+      ],
+      "tube": [
+       0,
+       0
+      ],
+      "mold": [
+       2,
+       3
+      ],
+      "buy": [
+       17,
+       26
+      ]
+     },
+     "unique": [
+      30,
+      45
+     ],
+     "note": "prop extension and bushing are machined fatigue parts: a service, never home"
+    },
+    {
+     "name": "Cabin, windows, panel, seats, interior, baggage",
+     "split": {
+      "cut": [
+       15,
+       25
+      ],
+      "form": [
+       5,
+       10
+      ],
+      "mach": [
+       2,
+       4
+      ],
+      "buy": [
+       18,
+       31
+      ]
+     },
+     "unique": [
+      35,
+      55
+     ],
+     "note": ""
+    },
+    {
+     "name": "Electrical and avionics",
+     "split": {
+      "buy": [
+       25,
+       40
+      ]
+     },
+     "unique": [
+      25,
+      40
+     ],
+     "note": "counted as bought boxes"
+    },
+    {
+     "name": "Wing, carbon, re-sized +12.5% (molded skins, spar, webs, ribs, tank bulkheads)",
+     "split": {
+      "mold": [
+       24,
+       36
+      ],
+      "cut": [
+       16,
+       28
+      ],
+      "mach": [
+       8,
+       12
+      ],
+      "buy": [
+       4,
+       6
+      ]
+     },
+     "unique": [
+      30,
+      45
+     ],
+     "note": "upper and lower skin per side, spar with pultruded caps, ribs cut from sandwich panel; root fittings machined"
+    },
+    {
+     "name": "Flaps and ailerons, carbon",
+     "split": {
+      "mold": [
+       8,
+       12
+      ],
+      "mach": [
+       8,
+       12
+      ]
+     },
+     "unique": [
+      12,
+      18
+     ],
+     "note": ""
+    },
+    {
+     "name": "T-tail, carbon",
+     "split": {
+      "mold": [
+       14,
+       20
+      ],
+      "mach": [
+       12,
+       18
+      ],
+      "buy": [
+       2,
+       3
+      ]
+     },
+     "unique": [
+      20,
+      30
+     ],
+     "note": ""
+    }
+   ]
+  }
+ },
+ "tooling": {
+  "Aries, matched-hole kit": {
+   "lines": [
+    [
+     "CAD and CNC programs (cut files, form-block files)",
+     [
+      10000,
+      30000
+     ]
+    ],
+    [
+     "Form blocks / dies, 150-250 unique formed parts at $150-400",
+     [
+      22500,
+      100000
+     ]
+    ],
+    [
+     "Assembly jigs (wing, fuselage, tail)",
+     [
+      10000,
+      30000
+     ]
+    ],
+    [
+     "Molds: cowl, radiator duct, tips, fairings, 65-70 ft2",
+     [
+      8000,
+      25000
+     ]
+    ]
+   ],
+   "total": [
+    50500,
+    185000
+   ],
+   "kit_price": [
+    100000,
+    150000
+   ],
+   "crossover_10pct": [
+    4,
+    19
+   ]
+  },
+  "Aries option: carbon wing skins for the laminar lever": {
+   "lines": [
+    [
+     "Upper and lower constant-section skin molds, 231 ft2, both wings if untwisted",
+     [
+      27662.244479999994,
+      82986.73343999998
+     ]
+    ]
+   ],
+   "total": [
+    27662.244479999994,
+    82986.73343999998
+   ],
+   "kit_price": null,
+   "crossover_10pct": null
+  },
+  "Prescott, route A (metal wing and tail)": {
+   "lines": [
+    [
+     "CAD and CNC programs",
+     [
+      10000,
+      30000
+     ]
+    ],
+    [
+     "Shell plugs and molds, 217 ft2",
+     [
+      26040,
+      78120
+     ]
+    ],
+    [
+     "Cage welding jig (tube-laser cut, slotted-plate fixture)",
+     [
+      15000,
+      40000
+     ]
+    ],
+    [
+     "Form blocks, 30-50 unique wing and 30-50 unique tail formed parts",
+     [
+      9000,
+      40000
+     ]
+    ],
+    [
+     "Leading-edge skin molds (in place of the lost stretch dies), 81 ft2",
+     [
+      9699.10936010477,
+      29097.328080314313
+     ]
+    ],
+    [
+     "Wing and tail assembly jigs",
+     [
+      8000,
+      20000
+     ]
+    ]
+   ],
+   "total": [
+    77739.10936010478,
+    237217.32808031433
+   ],
+   "kit_price": [
+    90000,
+    140000
+   ],
+   "crossover_10pct": [
+    6,
+    27
+   ]
+  },
+  "Prescott, route B (carbon wing and tail)": {
+   "lines": [
+    [
+     "CAD and CNC programs",
+     [
+      10000,
+      30000
+     ]
+    ],
+    [
+     "Shell plugs and molds, 217 ft2",
+     [
+      26040,
+      78120
+     ]
+    ],
+    [
+     "Cage welding jig",
+     [
+      15000,
+      40000
+     ]
+    ],
+    [
+     "Wing skin and spar molds, 339 ft2",
+     [
+      40654.575,
+      121963.72499999999
+     ]
+    ],
+    [
+     "Tail molds, 136 ft2",
+     [
+      16297.807499999997,
+      48893.42249999999
+     ]
+    ],
+    [
+     "Bonding and assembly jigs",
+     [
+      8000,
+      20000
+     ]
+    ]
+   ],
+   "total": [
+    115992.38249999999,
+    338977.14749999996
+   ],
+   "kit_price": [
+    100000,
+    160000
+   ],
+   "crossover_10pct": [
+    8,
+    34
+   ]
+  }
+ },
+ "geometry": {
+  "prescott": {
+   "shell_mold_ft2": 217,
+   "wing_ref_ft2": 127.125,
+   "htail_ft2": 32.9625,
+   "fin_ft2": 18.0,
+   "wetted_per_ref": 2.05,
+   "le_part_ft2": 62.17377794938956,
+   "wing_mold_ft2": 338.788125,
+   "tail_mold_ft2": 135.81506249999998,
+   "le_mold_ft2": 80.82591133420642
+  },
+  "aries": {
+   "chord_ft": 5.43,
+   "panel_ft": 15.7,
+   "skin_mold_ft2": 230.51870399999996
+  }
+ }
+}
