@@ -1,0 +1,3513 @@
+[
+ {
+  "id": "cozy-mkiv",
+  "name": "Cozy MKIV (reference)",
+  "seats": 4,
+  "origin": [
+   "a"
+  ],
+  "designer": "Nat Puffer, Co-Z Development (Rutan Long-EZ lineage)",
+  "years": "1991 on; plans still sold",
+  "built": "~1,450 plans sets sold by 2009; ~225 flying then (Co-Z FAQ); 350 built by 2015 (Wikipedia)",
+  "flying": "FAA count not obtained",
+  "config": "Canard pusher, 4 seats (2+2 side by side), fixed mains, retractable nose gear",
+  "construction": "Moldless foam/fiberglass composite",
+  "engine": "Lycoming O-360, 180 hp (160-200 hp suitable)",
+  "hp": 180,
+  "turbo": false,
+  "mtow": [
+   2050,
+   "F",
+   "https://www.aircraftspruce.com/cozy/specs.html",
+   ""
+  ],
+  "empty": [
+   1050,
+   "F",
+   "https://www.aircraftspruce.com/cozy/specs.html",
+   "designer's estimated empty weight (AOPA Pilot 1994)"
+  ],
+  "useful": [
+   1000,
+   "F",
+   "https://www.aircraftspruce.com/cozy/specs.html",
+   "derived 2,050 - 1,050"
+  ],
+  "fuel_gal": [
+   52,
+   "F",
+   "https://www.aircraftspruce.com/catalog/pnpages/01-00257.php",
+   "capacity; usable not stated"
+  ],
+  "cruise": [
+   {
+    "ktas": 174,
+    "alt_ft": 8500,
+    "power_pct": null,
+    "gph": null,
+    "grade": "P",
+    "src": "https://www.kitplanes.com/archive-august-1991/",
+    "note": "factory demonstrator measured, 2,700 rpm, fixed-pitch prop",
+    "screen": true
+   },
+   {
+    "ktas": 191,
+    "alt_ft": 8000,
+    "power_pct": 75,
+    "gph": null,
+    "grade": "F",
+    "src": "https://www.aircraftspruce.com/cozy/specs.html",
+    "note": "220 mph converted"
+   },
+   {
+    "ktas": 192,
+    "alt_ft": null,
+    "power_pct": null,
+    "gph": 10.5,
+    "grade": "F",
+    "src": "https://www.aopa.org/news-and-media/all-news/1994/december/pilot/ez-does-it",
+    "note": "claimed max cruise, quoted by AOPA Pilot Dec 1994"
+   },
+   {
+    "ktas": 161,
+    "alt_ft": 12000,
+    "power_pct": 40,
+    "gph": null,
+    "grade": "F",
+    "src": "https://www.aircraftspruce.com/cozy/specs.html",
+    "note": "185 mph converted, 40% power"
+   },
+   {
+    "ktas": 176.7,
+    "alt_ft": 8021,
+    "power_pct": null,
+    "gph": 10.0,
+    "grade": "P",
+    "basis": "meas",
+    "src": "http://acversailles.free.fr/documentation/03~Documentation_Generale_M_Suire/Essais_en_vol/COZY_MARK-IV.pdf",
+    "note": "CAFE flight test, N494CZ, IO-360 180 hp, WOT 23.5 in / 2,607 rpm, best-power region, density altitude, 1,864 lb"
+   },
+   {
+    "ktas": 169.5,
+    "alt_ft": 12032,
+    "power_pct": null,
+    "gph": 8.2,
+    "grade": "P",
+    "basis": "meas",
+    "src": "http://acversailles.free.fr/documentation/03~Documentation_Generale_M_Suire/Essais_en_vol/COZY_MARK-IV.pdf",
+    "note": "CAFE flight test, N494CZ, WOT 20.1 in / 2,545 rpm, mid mixture sweep, density altitude, 1,874 lb"
+   },
+   {
+    "ktas": 163.5,
+    "alt_ft": 8102,
+    "power_pct": null,
+    "gph": 8.3,
+    "grade": "P",
+    "basis": "meas",
+    "src": "http://acversailles.free.fr/documentation/03~Documentation_Generale_M_Suire/Essais_en_vol/COZY_MARK-IV.pdf",
+    "note": "CAFE flight test, N494CZ, WOT 23.5 in / 2,500 rpm, lean of peak, density altitude"
+   }
+  ],
+  "range": {
+   "nm": 1129,
+   "basis": "40% power, 12,000 ft, reserve not stated (1,300 mi converted)",
+   "grade": "F",
+   "src": "https://www.aircraftspruce.com/cozy/specs.html"
+  },
+  "why_died_short": "Alive: plans and parts from Aircraft Spruce",
+  "why_died": "Not dead. Aircraft Spruce has held exclusive rights since 1 Jan 2004 and sells plans and components (http://www.cozyaircraft.com/czmain.htm).",
+  "rights": "Aircraft Spruce (exclusive marketing rights from Co-Z Development, 2004); also bought Brock metal-parts tooling 2005.",
+  "safety": "Co-Z FAQ cites two fatal accidents (to ~2009); a four-aboard MKIV was lost off California 15 Jan 2024 (NBC LA).",
+  "flags": [
+   "the only published speed/flow pair (192 kt, 10.5 gph) is a claim, and the 40%-power range has no published flow",
+   "as published (1,000 lb, 1,129 nm, 191 KTAS at 8,000 ft) it passes all three floors; the 951 nm in the first version of this list was 52 gal / 10.5 gph x 192 kt, the AOPA-quoted max-cruise claim, set against a range published at 40% power: a basis mismatch, not a units error (1,300 statute mi = 1,129 nm is right)"
+  ],
+  "useful_fleet": [
+   871,
+   "P",
+   "http://acversailles.free.fr/documentation/03~Documentation_Generale_M_Suire/Essais_en_vol/COZY_MARK-IV.pdf",
+   "one builder aircraft weighed by the CAFE Foundation (N494CZ, 1,179.3 lb empty) against the 2,050 lb design gross; not a fleet average"
+  ],
+  "fuel_gal_meas": [
+   50.74,
+   "P",
+   "http://acversailles.free.fr/documentation/03~Documentation_Generale_M_Suire/Essais_en_vol/COZY_MARK-IV.pdf",
+   "CAFE-measured usable fuel, N494CZ"
+  ],
+  "ideas": [
+   "Side-by-side front seats in a canard pusher: the Long-EZ layout widened to four seats without losing its cruise efficiency on 180 hp.",
+   "Moldless foam-and-glass construction that a plans builder can do without tooling; the cost is build hours and builder-to-builder weight scatter (871 lb useful on the CAFE aircraft against 1,000 lb designed)."
+  ]
+ },
+ {
+  "id": "rutan-long-ez",
+  "name": "Rutan Long-EZ",
+  "seats": 2,
+  "origin": [
+   "a"
+  ],
+  "designer": "Burt Rutan, Rutan Aircraft Factory (Model 61)",
+  "years": "1979 first flight; plans 1980-85",
+  "built": "~833 US-registered (2021, second-hand registry figure)",
+  "flying": ">700 registered (Kitplanes 2020)",
+  "config": "Canard pusher, tandem 2 seats, fixed mains, retractable nose",
+  "construction": "Moldless foam/fiberglass",
+  "engine": "Lycoming O-235, 108-118 hp",
+  "hp": 115,
+  "turbo": false,
+  "mtow": [
+   1325,
+   "F",
+   "https://en.wikipedia.org/wiki/Rutan_Long-EZ",
+   "1,425 lb allowed under conditions"
+  ],
+  "empty": [
+   710,
+   "F",
+   "https://en.wikipedia.org/wiki/Rutan_Long-EZ",
+   ""
+  ],
+  "useful": [
+   615,
+   "F",
+   "https://en.wikipedia.org/wiki/Rutan_Long-EZ",
+   "derived"
+  ],
+  "useful_fleet": [
+   475,
+   "B",
+   "https://www.kitplanes.com/buying-used-long-ez/",
+   "1,325 - ~850 lb typical O-235 empty weight (anecdotal, not averaged)"
+  ],
+  "fuel_gal": [
+   52,
+   "F",
+   "https://en.wikipedia.org/wiki/Rutan_Long-EZ",
+   ""
+  ],
+  "cruise": [
+   {
+    "ktas": 159,
+    "alt_ft": 8000,
+    "power_pct": null,
+    "gph": null,
+    "grade": "F",
+    "src": "https://aeropedia.com.au/content/rutan-long-ez/",
+    "note": "max cruising, 183 mph converted",
+    "screen": true
+   },
+   {
+    "ktas": 125,
+    "alt_ft": 12000,
+    "power_pct": 40,
+    "gph": null,
+    "grade": "F",
+    "src": "https://aeropedia.com.au/content/rutan-long-ez/",
+    "note": "144 mph converted"
+   }
+  ],
+  "range": {
+   "nm": 1243,
+   "basis": "40% power, 40 min reserve",
+   "grade": "F",
+   "src": "https://aeropedia.com.au/content/rutan-long-ez/"
+  },
+  "why_died_short": "Plans withdrawn 1985 over liability exposure",
+  "why_died": "RAF stopped selling all plans in June 1985 over product-liability exposure after a lawsuit (Wikipedia, Rutan VariEze).",
+  "rights": "Rutan Aircraft Factory retains rights; plans not sold.",
+  "safety": "Wikipedia (Feb 2023): 114 airframes lost, 44 fatalities.",
+  "ideas": [
+   "The efficiency benchmark of the class: two seats and over 1,000 nm on about 115 hp, from low wetted area, a pusher prop in clean air and a canard that will not stall the main wing first.",
+   "Lesson: plans were withdrawn for liability, not performance; a revival's builder-support and liability model matters as much as the airframe."
+  ]
+ },
+ {
+  "id": "berkut-360",
+  "name": "Berkut 360",
+  "seats": 2,
+  "origin": [
+   "a"
+  ],
+  "designer": "Dave Ronneberg, Experimental Aviation Inc.",
+  "years": "~1991; kits ~1992-2002",
+  "built": "~75 kits, ~20 completed",
+  "flying": "31 registered incl. variants (airport-data via Wikipedia)",
+  "config": "Canard pusher, tandem 2 seats, retractable gear",
+  "construction": "Molded carbon/glass composite",
+  "engine": "Lycoming IO-360, 200-205 hp",
+  "hp": 205,
+  "turbo": false,
+  "mtow": [
+   2000,
+   "F",
+   "https://planeandpilotmag.com/experimental-aviation-berkut/",
+   ""
+  ],
+  "empty": [
+   1035,
+   "F",
+   "https://planeandpilotmag.com/experimental-aviation-berkut/",
+   ""
+  ],
+  "useful": [
+   965,
+   "F",
+   "https://planeandpilotmag.com/experimental-aviation-berkut/",
+   "derived"
+  ],
+  "fuel_gal": [
+   55,
+   "F",
+   "https://planeandpilotmag.com/experimental-aviation-berkut/",
+   ""
+  ],
+  "cruise": [
+   {
+    "ktas": 180,
+    "alt_ft": null,
+    "power_pct": null,
+    "gph": null,
+    "grade": "P",
+    "src": "http://www.airbum.com/pireps/PirepBerkut.html",
+    "note": "measured, 2,600 rpm, 19.5 in MP (Sport Aviation Feb 1995)",
+    "screen": true
+   },
+   {
+    "ktas": 208,
+    "alt_ft": 8000,
+    "power_pct": 75,
+    "gph": 10.3,
+    "grade": "F",
+    "src": "http://www.airbum.com/pireps/PirepBerkut.html",
+    "note": "factory test with an earlier 'hot-rodded' engine"
+   },
+   {
+    "ktas": 187,
+    "alt_ft": null,
+    "power_pct": null,
+    "gph": 7.7,
+    "grade": "F",
+    "src": "http://www.airbum.com/pireps/PirepBerkut.html",
+    "note": "factory economy cruise"
+   }
+  ],
+  "range": {
+   "nm": 1315,
+   "basis": "economy cruise, 30 min reserve",
+   "grade": "F",
+   "src": "http://www.airbum.com/pireps/PirepBerkut.html"
+  },
+  "why_died_short": "Founder-partner lawsuits bankrupted the company; kit withdrawn 2002",
+  "why_died": "Lawsuits between Ronneberg and Murphy bankrupted both; later owners did not last and a 2003 sale fell through (Wikipedia).",
+  "rights": "Ronneberg -> Renaissance Composites (Riley, 1996) -> Berkut Engineering and Design. Current holder not public.",
+  "safety": "2002 in-flight canard separation (N827CM); 1995 and 1996 crashes (NTSB via Wikipedia).",
+  "ideas": [
+   "Molded carbon and glass parts that turned the Long-EZ shape into a retractable 200 kt two-seater.",
+   "Lesson: over 100 molded parts meant expensive tooling and kits (Bill: 'expensive to build'); molds are an asset only while someone keeps them."
+  ]
+ },
+ {
+  "id": "velocity-xl-rg",
+  "name": "Velocity XL-RG",
+  "seats": 4,
+  "origin": [
+   "a"
+  ],
+  "designer": "Danny Maher, Velocity Inc.",
+  "years": "XL from late 1990s; alive",
+  "built": "229 XLs flown by Dec 2011 (150 XL-RG)",
+  "flying": "not counted",
+  "config": "Canard pusher, 4-5 seats, gull-wing doors, retractable gear",
+  "construction": "Composite",
+  "engine": "Lycoming IO-540 260 hp, or Continental IO-550 310 hp; TSIO-550 on XL-5",
+  "hp": 260,
+  "turbo": false,
+  "mtow": [
+   2800,
+   "F",
+   "https://www.velocityaircraft.com/xl",
+   "2,750-2,800 by engine"
+  ],
+  "empty": [
+   1700,
+   "F",
+   "https://www.aircraftspruce.com/catalog/kitspages/velocity2.php",
+   ""
+  ],
+  "useful": [
+   1100,
+   "F",
+   "https://www.aircraftspruce.com/catalog/kitspages/velocity2.php",
+   "derived"
+  ],
+  "fuel_gal": [
+   70,
+   "F",
+   "https://www.velocityaircraft.com/xl",
+   ""
+  ],
+  "fuel_opt_gal": [
+   100,
+   "F",
+   "https://www.aircraftspruce.com/catalog/kitspages/velocity2.php",
+   ""
+  ],
+  "cruise": [
+   {
+    "ktas": 190,
+    "alt_ft": 3000,
+    "power_pct": 75,
+    "gph": 15,
+    "grade": "P",
+    "src": "https://generalaviationnews.com/2005/03/25/velocity-xl-5/",
+    "note": "XL-5 RG, IO-550 310 hp, 24 in/2,400 rpm",
+    "screen": true
+   },
+   {
+    "ktas": 205,
+    "alt_ft": null,
+    "power_pct": 75,
+    "gph": null,
+    "grade": "F",
+    "src": "https://www.velocityaircraft.com/xl",
+    "note": "upper end of 190-205 kt by engine"
+   },
+   {
+    "ktas": 170,
+    "alt_ft": null,
+    "power_pct": null,
+    "gph": 11,
+    "grade": "F",
+    "src": "https://www.velocityaircraft.com/xl",
+    "note": "'over 170 kts at 11 GPH', XL-FG"
+   }
+  ],
+  "range": {
+   "nm": 1150,
+   "basis": "65% power, reserve not stated (1,100-1,200)",
+   "grade": "F",
+   "src": "https://www.velocityaircraft.com/xl"
+  },
+  "engine_fit": "Yes for the IO-540 260 hp build (AM20T 260 hp); short for IO-550 310 hp builds (-6% speed est.)",
+  "why_died_short": "Alive: Velocity Inc. still sells kits",
+  "why_died": "Not dead. Kits and a factory transition course are still offered (Kitplanes).",
+  "rights": "Maher -> Scott and Duane Swing (1992) -> Rocket Racing (2008) -> Swing family again (2010).",
+  "safety": "Late-1980s deep-stall accidents in the original Velocity, addressed with leading-edge cuffs; residual 'pitch buck' needs training (Kitplanes 2020).",
+  "ideas": [
+   "A canard pusher with a real cabin: four or five seats, gull-wing doors and retractable gear, sold as a kit continuously since the 1980s.",
+   "Raptor note (successor attempt, see the Raptor section when added): what it tried and why it failed belongs here as a lesson."
+  ]
+ },
+ {
+  "id": "rutan-defiant",
+  "name": "Rutan Defiant",
+  "seats": 4,
+  "origin": [
+   "a"
+  ],
+  "designer": "Burt Rutan, RAF (Model 40)",
+  "years": "1978 first flight; plans 1984-85",
+  "built": "176 plans sets; ~30 completed",
+  "flying": "~20 (Twin & Turbine 2026)",
+  "config": "Canard, centerline-thrust twin (push-pull), fixed-pitch props, no flaps",
+  "construction": "Moldless composite",
+  "engine": "2x Lycoming O-320 160 hp (prototype); builders often 2x O-360 180 hp",
+  "hp": 180,
+  "engines": 2,
+  "turbo": false,
+  "mtow": [
+   2900,
+   "F",
+   "https://planeandpilotmag.com/rutan-defiant",
+   "Wikipedia gives 2,997"
+  ],
+  "empty": [
+   1610,
+   "F",
+   "https://planeandpilotmag.com/rutan-defiant",
+   "Wikipedia gives 1,701"
+  ],
+  "useful": [
+   1290,
+   "F",
+   "https://planeandpilotmag.com/rutan-defiant",
+   "derived from P&P"
+  ],
+  "fuel_gal": [
+   108,
+   "P",
+   "https://www.twinandturbine.com/?p=15364",
+   "N171D, the aircraft whose cruise is quoted; 90-120 gal across sources"
+  ],
+  "cruise": [
+   {
+    "ktas": 184,
+    "alt_ft": 8000,
+    "power_pct": 75,
+    "gph": 17.8,
+    "grade": "F",
+    "src": "http://www.cozybuilders.org/Canard_Pusher/1983-10_cp-38.pdf",
+    "note": "RAF plans spec, Canard Pusher 38 (Oct 1983); its text says 75% power, its spec table 70%; altitude 8,000 ft from the Skymaster spec block (https://337skymaster.com/defiant.htm), not stated in CP38"
+   },
+   {
+    "ktas": 162,
+    "alt_ft": 10000,
+    "power_pct": null,
+    "gph": 16,
+    "grade": "P",
+    "src": "https://www.twinandturbine.com/?p=15364",
+    "note": "N171D, 160-165 KTAS at 15-17 gph 'in the teens'; 10,000 ft used as the lower bound",
+    "screen": true
+   },
+   {
+    "ktas": 152,
+    "alt_ft": null,
+    "power_pct": null,
+    "gph": 19,
+    "grade": "P",
+    "src": "https://www.twinandturbine.com/?p=15364",
+    "note": "low altitude, 150-155 KTAS at 18-20 gph"
+   }
+  ],
+  "range": {
+   "nm": 1128,
+   "basis": "not stated",
+   "grade": "F",
+   "src": "https://planeandpilotmag.com/rutan-defiant"
+  },
+  "engine_fit": "Yes: 2x AM15T (160 hp) matches the prototype's 2x 160 hp; 180 hp builds need 2x AM20T (heavier)",
+  "why_died_short": "Certification funding lost 1979; plans withdrawn 1985 (liability)",
+  "why_died": "The 1979 certification effort lost its financing; plans ended with RAF's 1985 liability stop (Wikipedia; P&P).",
+  "rights": "Rutan Aircraft Factory; not marketed.",
+  "safety": "No configuration-specific pattern found. Single-engine climb 150-400 fpm depending on which engine is out (T&T).",
+  "ideas": [
+   "Centerline-thrust twin: engine-out without asymmetric thrust or a Vmc problem, which matters when both engines are uncertified conversions.",
+   "Moldless construction, no flaps, canard stall protection; record shows no engine-out accident on about 30 aircraft."
+  ]
+ },
+ {
+  "id": "cirrus-vk-30",
+  "name": "Cirrus VK-30",
+  "seats": 5,
+  "origin": [
+   "a"
+  ],
+  "designer": "Alan and Dale Klapmeier, Jeff Viken, Cirrus Design",
+  "years": "1988 first flight; kits 1988-93",
+  "built": "~40 kits delivered; ~13 completed",
+  "flying": "4 FAA-registered (2018, peak 12)",
+  "config": "Mid-engine pusher with extension shaft, 4-5 seats, retractable gear, laminar wing",
+  "construction": "Composite",
+  "engine": "Continental IO-550 300 hp or Lycoming IO-540 290 hp",
+  "hp": 290,
+  "turbo": false,
+  "mtow": [
+   3550,
+   "F",
+   "https://aeroresourcesinc.com/uploads/199004-1990%20Cirrus%20VK30%20Homebuilt.pdf",
+   "AOPA Pilot spec box; EAA museum gives 3,600"
+  ],
+  "empty": [
+   2200,
+   "F",
+   "https://aeroresourcesinc.com/uploads/199004-1990%20Cirrus%20VK30%20Homebuilt.pdf",
+   "prototype; EAA museum gives 2,400"
+  ],
+  "useful": [
+   1350,
+   "F",
+   "https://aeroresourcesinc.com/uploads/199004-1990%20Cirrus%20VK30%20Homebuilt.pdf",
+   ""
+  ],
+  "fuel_gal": [
+   95,
+   "F",
+   "https://aeroresourcesinc.com/uploads/199004-1990%20Cirrus%20VK30%20Homebuilt.pdf",
+   ""
+  ],
+  "cruise": [
+   {
+    "ktas": 205,
+    "alt_ft": 4500,
+    "power_pct": 70,
+    "gph": 15.5,
+    "grade": "P",
+    "src": "https://aeroresourcesinc.com/uploads/199004-1990%20Cirrus%20VK30%20Homebuilt.pdf",
+    "note": "prototype measured, AOPA Pilot Apr 1990",
+    "screen": true
+   },
+   {
+    "ktas": 211,
+    "alt_ft": 5000,
+    "power_pct": 75,
+    "gph": 16.7,
+    "grade": "F",
+    "src": "https://aeroresourcesinc.com/uploads/199004-1990%20Cirrus%20VK30%20Homebuilt.pdf",
+    "note": "manufacturer's calculation"
+   }
+  ],
+  "range": {
+   "nm": 1130,
+   "basis": "not stated (1,300 mi converted)",
+   "grade": "F",
+   "src": "https://www.eaa.org/eaa-museum/museum-collection/aircraft-collection-folder/1991-cirrus-vk-30---n33vk"
+  },
+  "why_died_short": "Cirrus dropped it in 1993 to build the certified SR20",
+  "why_died": "Discontinued 1993 as Cirrus moved to certified aircraft; replacement wing announced 1996 for ~28 kits (Wikipedia).",
+  "rights": "Cirrus Design, now Cirrus Aircraft. No support program found.",
+  "safety": "7 US crashes, 10 fatalities 1990-2020 (NTSB via Wikipedia), incl. a 1996 stall-test crash in a turbine conversion; prop-governor oil line chafe forced landing on the prototype.",
+  "ideas": [
+   "A laminar-flow composite wing and a clean pusher fuselage that reached about 200 KTAS on 290-300 hp, the design the Cirrus team learned on before the SR20.",
+   "Lesson: its long shaft drive, cruise-flap flutter and aft-CG spin recovery are what a pusher with a buried engine must design out."
+  ]
+ },
+ {
+  "id": "prescott-pusher",
+  "name": "Prescott Pusher",
+  "seats": 4,
+  "origin": [
+   "a"
+  ],
+  "designer": "Tom Prescott, Prescott Aeronautical",
+  "years": "1985 first flight; kits to ~1989",
+  "built": "68 kits (Wings Over Kansas); 19 airframes ever on the US register (FAA registry 2026-10-24), plus at least 2 abroad",
+  "flying": "4 current US registrations (N41PP museum, N10JS, N200SX, N40LE); 2 likely airworthy",
+  "config": "Pusher, 4 seats (2+2), engine in the tail cone on a 12 in prop extension (no drive shaft), T-tail, retractable or fixed tricycle gear",
+  "construction": "TIG-welded 4130 square-tube cage with non-structural fibreglass shells; riveted aluminium wing, NLF(1)-0215F; CAD/CAM-designed to Part 23",
+  "engine": "Lycoming O-360, 180 hp",
+  "hp": 180,
+  "turbo": false,
+  "mtow": [
+   2400,
+   "F",
+   "https://1000aircraftphotos.com/Contributions/6802.htm",
+   ""
+  ],
+  "empty": [
+   1550,
+   "F",
+   "https://1000aircraftphotos.com/Contributions/6802.htm",
+   ""
+  ],
+  "useful": [
+   850,
+   "F",
+   "https://1000aircraftphotos.com/Contributions/6802.htm",
+   ""
+  ],
+  "fuel_gal": [
+   56.5,
+   "F",
+   "https://1000aircraftphotos.com/Contributions/6802.htm",
+   "second prototype"
+  ],
+  "cruise": [
+   {
+    "ktas": 151,
+    "alt_ft": null,
+    "power_pct": 73,
+    "gph": null,
+    "grade": "P",
+    "src": "https://www.kitplanes.com/archive-may-1988/",
+    "note": "measured, Kitplanes May 1988 (LeRoy Cook), second prototype N42PP; altitude, weight and rpm not published",
+    "screen": true
+   },
+   {
+    "ktas": 165,
+    "alt_ft": 7500,
+    "power_pct": null,
+    "gph": null,
+    "grade": "F",
+    "src": "https://1000aircraftphotos.com/Contributions/6802.htm",
+    "note": "brochure, 190 mph converted"
+   }
+  ],
+  "range": {
+   "nm": 869,
+   "basis": "not stated (1,000 mi)",
+   "grade": "F",
+   "src": "https://1000aircraftphotos.com/Contributions/6802.htm"
+  },
+  "why_died_short": "Aft-CG handling reputation, financing change, slow parts; folded 1989-91",
+  "why_died": "Early handling and performance disappointment tied to a far-aft CG (pitch sensitivity, hard rotation), a financing change from pay-as-you-build to pay-up-front (Tom Prescott, 2007), slow parts, and a 1988 sale abroad; folded 1989-1991 with builders mid-kit (Kitplanes; SDASM; Sport Aviation).",
+  "rights": "No TC. Engineering record survives at SDASM (SC.10269); rights holder unknown (docs/rights/prescott-pusher.md, PR #6).",
+  "safety": "4 confirmed US NTSB events, 1 fatal (Ford V-6 conversion, LAX90DUM02), plus a probable fifth (fatal, Ford V-6). Pusher-specific: a door into the prop (CEN09CA386) and a prop separation (LAX05LA270). Pitch-up stall in a go-around (MIA92LA186).",
+  "ideas": [
+   "A pusher without a drive shaft: engine in the tail cone, prop on a 12 in extension; no drive failure on record.",
+   "A welded tube cage with all systems installed before non-structural shells go on; CAD/CAM-designed from the start; the engineering archive survives at SDASM.",
+   "Lesson: an engine in the tail sets the CG, gear position and prop clearance together; the Prescott's handling complaints trace to that."
+  ],
+  "useful_fleet": [
+   739,
+   "P",
+   "http://web.archive.org/web/20241217134717/https://p.pdfhall.com/russ-and-marcia-taylors-prescott-pusher_5b6d873e097c4748748b4604.html",
+   "one builder aircraft weighed (N747P: 1,555 lb in the shop, 1,661 lb finished with ballast for CG; Jack Cox, Sport Aviation, September 1991); not a fleet average"
+  ],
+  "flags": [
+   "Bill's top-interest design (AER-3783, 2026-10-24): full deep dive in the stage 3 dossier"
+  ]
+ },
+ {
+  "id": "questair-venture",
+  "name": "Questair Venture",
+  "seats": 2,
+  "origin": [
+   "a"
+  ],
+  "designer": "Questair Inc. (Ed MacDonough; Jim Griswold engineering)",
+  "years": "1987 first flight",
+  "built": "~100 kits; ~30 completed",
+  "flying": "~30 Ventures and 3 Spirits (Questair LLC)",
+  "config": "Low wing, 2 seats side by side, retractable gear",
+  "construction": "All-metal, compound-curve skins",
+  "engine": "Continental IO-550-G, 280 hp",
+  "hp": 280,
+  "turbo": false,
+  "mtow": [
+   2000,
+   "F",
+   "https://en.wikipedia.org/wiki/Questair_Venture",
+   ""
+  ],
+  "empty": [
+   1240,
+   "F",
+   "https://aeropedia.com.au/content/questair-venture/",
+   "Wikipedia 1,200"
+  ],
+  "useful": [
+   760,
+   "P",
+   "http://www.airbum.com/pireps/PirepQuestairVenture.html",
+   ""
+  ],
+  "fuel_gal": [
+   56,
+   "P",
+   "http://www.airbum.com/pireps/PirepQuestairVenture.html",
+   "85 gal optional"
+  ],
+  "cruise": [
+   {
+    "ktas": 235,
+    "alt_ft": null,
+    "power_pct": 75,
+    "gph": null,
+    "grade": "P",
+    "src": "http://www.airbum.com/pireps/PirepQuestairVenture.html",
+    "note": "'235 knots at 75% or less' (Davisson, Dec 1990)",
+    "screen": true
+   }
+  ],
+  "range": {
+   "nm": 1000,
+   "basis": "at 240 kt max cruise, 56 gal, reserve not stated",
+   "grade": "P",
+   "src": "http://www.airbum.com/pireps/PirepQuestairVenture.html"
+  },
+  "why_died_short": "Bankruptcy around 1991; parts and support only today",
+  "why_died": "Questair was struggling to come out of bankruptcy in 1991 (Kitplanes); the fixed-gear Spirit did not save it.",
+  "rights": "Questair Venture LLC (Dan Myers, Jim Cook) since 2013: parts, support, a few original kits.",
+  "safety": "Braking/steering mod kit sold, pointing to a ground-handling weakness (EAA 2017).",
+  "ideas": [
+   "Compound-curve metal skins and a very small, very clean two-seat airframe that cruised near 235 kt on 280 hp.",
+   "Proof that wetted area, not material, sets cruise efficiency; a modern composite or stretch-formed version keeps the shape."
+  ]
+ },
+ {
+  "id": "lancair-iv-p",
+  "name": "Lancair IV-P",
+  "seats": 4,
+  "origin": [
+   "a"
+  ],
+  "designer": "Lance Neibauer, Lancair",
+  "years": "IV 1991; IV-P 1994; kits ended 2012",
+  "built": "110 IV + 250 IV-P flying by 2011 (Kitplanes)",
+  "flying": "~208 IV-P registered (184 with airworthiness date)",
+  "config": "Low wing, 4 seats, retractable gear, pressurized",
+  "construction": "Composite",
+  "engine": "Continental TSIO-550, 350 hp, twin turbo",
+  "hp": 350,
+  "turbo": true,
+  "mtow": [
+   3550,
+   "F",
+   "https://lancair.com/storage/2019/10/LA_LancairIV_web_f.pdf",
+   ""
+  ],
+  "empty": [
+   2200,
+   "F",
+   "https://lancair.com/storage/2019/10/LA_LancairIV_web_f.pdf",
+   ""
+  ],
+  "useful": [
+   1350,
+   "F",
+   "https://lancair.com/storage/2019/10/LA_LancairIV_web_f.pdf",
+   ""
+  ],
+  "fuel_gal": [
+   106.5,
+   "P",
+   "https://www.aopa.org/news-and-media/all-news/2005/april/pilot/get-up-and-go",
+   "usable, extended tanks as tested; 82-90 gal standard across sources"
+  ],
+  "cruise": [
+   {
+    "ktas": 255,
+    "alt_ft": 16500,
+    "power_pct": 75,
+    "gph": 17.2,
+    "grade": "P",
+    "src": "https://www.aopa.org/news-and-media/all-news/2005/april/pilot/get-up-and-go",
+    "note": "best power",
+    "screen": true
+   },
+   {
+    "ktas": 284,
+    "alt_ft": 24000,
+    "power_pct": 65,
+    "gph": 17,
+    "grade": "P",
+    "src": "https://www.aopa.org/news-and-media/all-news/2005/april/pilot/get-up-and-go",
+    "note": "best economy"
+   },
+   {
+    "ktas": 278,
+    "alt_ft": 23000,
+    "power_pct": 75,
+    "gph": 18,
+    "grade": "P",
+    "src": "https://www.aopa.org/news-and-media/all-news/1994/june/pilot/lancair-iv-p",
+    "note": "50 F lean of peak; below the factory claim"
+   }
+  ],
+  "range": {
+   "nm": 1347,
+   "basis": "65%, 24,000 ft, 45 min reserve (1,550 sm)",
+   "grade": "P",
+   "src": "https://www.aopa.org/news-and-media/all-news/2005/april/pilot/get-up-and-go"
+  },
+  "why_died_short": "Kit production ended 2012; maker now parts and support only",
+  "why_died": "Kits ended 2012; in 2016 the company sold older lines to concentrate on the Evolution (Wikipedia).",
+  "rights": "Neibauer -> Bartels (2003) -> Huffstutlers, Lancair International (2017) -> JetEXE / Lancair Aerospace (2023).",
+  "safety": "NTSB narrative WPR12FA180: 26% of Lancairs in accidents, 19% fatal (model and period not stated); Wanttaja 1998-2007: 32 IV accidents, ~40% fatal.",
+  "ideas": [
+   "Pressurisation and FL240 cruise in a kit, the fastest piston four-seater of its era (published 287 KTAS at 24,000 ft).",
+   "Re-wing data point to follow (Oregon remanufacturer, Bill): a new wing on the same airframe as the fix for the stall-spin record."
+  ]
+ },
+ {
+  "id": "lancair-legacy",
+  "name": "Lancair Legacy",
+  "seats": 2,
+  "origin": [
+   "a"
+  ],
+  "designer": "Lancair",
+  "years": "1999-2016",
+  "built": "~300 kits delivered",
+  "flying": "164 registered (154 with airworthiness date)",
+  "config": "Low wing, 2 seats, retractable gear",
+  "construction": "Composite",
+  "engine": "Continental IO-550-N, 310 hp",
+  "hp": 310,
+  "turbo": false,
+  "mtow": [
+   2200,
+   "F",
+   "https://lancair.com/storage/2019/10/LA_Legacy_web_f.pdf",
+   ""
+  ],
+  "empty": [
+   1500,
+   "F",
+   "https://lancair.com/storage/2019/10/LA_Legacy_web_f.pdf",
+   ""
+  ],
+  "useful": [
+   700,
+   "F",
+   "https://lancair.com/storage/2019/10/LA_Legacy_web_f.pdf",
+   ""
+  ],
+  "fuel_gal": [
+   65,
+   "F",
+   "https://lancair.com/storage/2019/10/LA_Legacy_web_f.pdf",
+   ""
+  ],
+  "cruise": [
+   {
+    "ktas": 230,
+    "alt_ft": 5000,
+    "power_pct": null,
+    "gph": 14,
+    "grade": "P",
+    "src": "https://www.kitplanes.com/legacy-act/",
+    "note": "measured, 2,300 rpm, 24.4 in",
+    "screen": true
+   },
+   {
+    "ktas": 228,
+    "alt_ft": 11500,
+    "power_pct": null,
+    "gph": 11.6,
+    "grade": "P",
+    "src": "https://www.kitplanes.com/legacy-act/",
+    "note": "owner, lean of peak"
+   }
+  ],
+  "range": {
+   "nm": 999,
+   "basis": "with reserve (1,150 sm)",
+   "grade": "F",
+   "src": "https://lancair.com/storage/2019/10/LA_Legacy_web_f.pdf"
+  },
+  "why_died_short": "Last kit 2016; more investment needed to continue",
+  "why_died": "Last kit announced May 2016; continuing 'will require a significant investment' (Lancair).",
+  "rights": "Same Lancair chain as the IV-P.",
+  "safety": "7 accidents 1998-2007; two-seat Lancairs ~30% stall-related (Wanttaja, Kitplanes).",
+  "ideas": [
+   "A two-seat composite cruiser at 230 kt on 310 hp with a modern cockpit and fast build kit."
+  ]
+ },
+ {
+  "id": "glasair-iii",
+  "name": "Glasair III",
+  "seats": 2,
+  "origin": [
+   "a"
+  ],
+  "designer": "Stoddard-Hamilton",
+  "years": "1986 on",
+  "built": "~402 (Sport Aviation 2014)",
+  "flying": "168 registered (145 with airworthiness date)",
+  "config": "Low wing, 2 seats side by side, retractable gear",
+  "construction": "Fiberglass composite",
+  "engine": "Lycoming IO-540-K, 300 hp (TIO-540 on the Turbo)",
+  "hp": 300,
+  "turbo": false,
+  "mtow": [
+   2400,
+   "F",
+   "https://web.archive.org/web/2006/http://www.glasairaviation.com/glasairIIIspecs.html",
+   "2,500 with extended wing"
+  ],
+  "empty": [
+   1625,
+   "F",
+   "https://web.archive.org/web/2006/http://www.glasairaviation.com/glasairIIIspecs.html",
+   ""
+  ],
+  "useful": [
+   775,
+   "F",
+   "https://web.archive.org/web/2006/http://www.glasairaviation.com/glasairIIIspecs.html",
+   "derived"
+  ],
+  "fuel_gal": [
+   73,
+   "F",
+   "https://web.archive.org/web/2006/http://www.glasairaviation.com/glasairIIIspecs.html",
+   "65 main + 8 header"
+  ],
+  "cruise": [
+   {
+    "ktas": 224,
+    "alt_ft": 8000,
+    "power_pct": 75,
+    "gph": null,
+    "grade": "F",
+    "src": "https://web.archive.org/web/2006/http://www.glasairaviation.com/glasairIIIspecs.html",
+    "note": "",
+    "screen": true
+   },
+   {
+    "ktas": 216,
+    "alt_ft": 8000,
+    "power_pct": 65,
+    "gph": null,
+    "grade": "F",
+    "src": "https://web.archive.org/web/2006/http://www.glasairaviation.com/glasairIIIspecs.html",
+    "note": ""
+   }
+  ],
+  "range": {
+   "nm": 1060,
+   "basis": "standard fuel, VFR reserve",
+   "grade": "F",
+   "src": "https://web.archive.org/web/2006/http://www.glasairaviation.com/glasairIIIspecs.html"
+  },
+  "why_died_short": "Stoddard-Hamilton bankrupt 2001; revived as a carbon kit (AAC)",
+  "why_died": "Stoddard-Hamilton went bankrupt in 2001; Advanced Aero Components now offers the G3 Heritage.",
+  "rights": "Wathen / Glasair Aviation (2001) -> Jilin Hanxing (2012) -> Advanced Aero Components (II/III assets, 2017).",
+  "safety": "Not found.",
+  "ideas": [
+   "A two-seat fibreglass kit at about 224 KTAS on 300 hp; revived as a carbon kit, so the design outlived its company."
+  ]
+ },
+ {
+  "id": "express-2000",
+  "name": "Express (Wheeler / Series 90 / 2000 FT)",
+  "seats": 4,
+  "origin": [
+   "a"
+  ],
+  "designer": "Ken Wheeler, Wheeler Technology",
+  "years": "1987 first flight; kits through several owners to ~2011",
+  "built": "~300 kits, ~30 completed by 1997",
+  "flying": "~61 registered across variants",
+  "config": "Low wing, 4 seats, fixed or retractable gear",
+  "construction": "Vinylester/E-glass/foam composite",
+  "engine": "Continental IO-360-ES 210 hp (CAFE test aircraft); IO-540/550 on later builds",
+  "hp": 210,
+  "turbo": false,
+  "mtow": [
+   2895,
+   "F",
+   "https://www.kitplanes.com/wp-content/uploads/2025/04/Wheeler-Express-APR-CAFE-Foundation.pdf",
+   "kit-maker design gross; 3,200-3,600 for later variants"
+  ],
+  "empty": [
+   1850,
+   "F",
+   "https://www.kitplanes.com/wp-content/uploads/2025/04/Wheeler-Express-APR-CAFE-Foundation.pdf",
+   "kit-maker 'normal'"
+  ],
+  "useful": [
+   1045,
+   "F",
+   "https://www.kitplanes.com/wp-content/uploads/2025/04/Wheeler-Express-APR-CAFE-Foundation.pdf",
+   "derived"
+  ],
+  "useful_fleet": [
+   901,
+   "P",
+   "https://www.kitplanes.com/wp-content/uploads/2025/04/Wheeler-Express-APR-CAFE-Foundation.pdf",
+   "one builder aircraft weighed by CAFE (N360EZ, 1,994 lb empty), not a fleet average"
+  ],
+  "fuel_gal": [
+   92,
+   "P",
+   "https://www.kitplanes.com/wp-content/uploads/2025/04/Wheeler-Express-APR-CAFE-Foundation.pdf",
+   ""
+  ],
+  "cruise": [
+   {
+    "ktas": 169,
+    "alt_ft": 6190,
+    "power_pct": null,
+    "gph": 11.1,
+    "grade": "P",
+    "src": "https://www.kitplanes.com/wp-content/uploads/2025/04/Wheeler-Express-APR-CAFE-Foundation.pdf",
+    "note": "CAFE measured, 25.4 in / 2,780 rpm, density altitude",
+    "screen": true
+   },
+   {
+    "ktas": 162,
+    "alt_ft": 7750,
+    "power_pct": null,
+    "gph": 9.5,
+    "grade": "P",
+    "src": "https://www.kitplanes.com/wp-content/uploads/2025/04/Wheeler-Express-APR-CAFE-Foundation.pdf",
+    "note": "CAFE measured, leaned"
+   },
+   {
+    "ktas": 153,
+    "alt_ft": 9813,
+    "power_pct": null,
+    "gph": 9.7,
+    "grade": "P",
+    "src": "https://www.kitplanes.com/wp-content/uploads/2025/04/Wheeler-Express-APR-CAFE-Foundation.pdf",
+    "note": "CAFE measured"
+   },
+   {
+    "ktas": 110,
+    "alt_ft": null,
+    "power_pct": null,
+    "gph": 5.8,
+    "grade": "P",
+    "src": "https://www.kitplanes.com/wp-content/uploads/2025/04/Wheeler-Express-APR-CAFE-Foundation.pdf",
+    "note": "CAFE best mpg"
+   }
+  ],
+  "range": {
+   "nm": 1401,
+   "basis": "CAFE-computed VFR range at 9.7 gph",
+   "grade": "P",
+   "src": "https://www.kitplanes.com/wp-content/uploads/2025/04/Wheeler-Express-APR-CAFE-Foundation.pdf"
+  },
+  "why_died_short": "1990 fatal crash collapsed sales; successive owners failed",
+  "why_died": "A fatal four-occupant crash before Oshkosh 1990 contracted sales and bankrupted Wheeler; EDI (1996) and Express Aircraft Co. also failed (CAFE report).",
+  "rights": "Wheeler -> Express Design Inc. (1992) -> Express Aircraft Co. (1996/97) -> Composite Aircraft Technology (2007). Current holder not found.",
+  "safety": "1990 crash killed 4 (pilot error); demonstrator engine failure, no injuries (CAFE).",
+  "flags": [
+   "CAFE measured cruise on 210 hp is the best-evidenced speed/flow data in this list; a 300 hp build would be faster but heavier"
+  ],
+  "ideas": [
+   "Four real seats and a 1,000 lb design useful load on 210 hp, with the best-measured performance in the survey (CAFE 1997).",
+   "An NLF(1)-0215F laminar wing on a kit; a cruciform tail on the FT variant. Stall and yaw behaviour is the open issue (stage 3)."
+  ]
+ },
+ {
+  "id": "swearingen-sx-300",
+  "name": "Swearingen SX-300",
+  "seats": 2,
+  "origin": [
+   "a"
+  ],
+  "designer": "Ed Swearingen",
+  "years": "1984 first flight; kits 1986-89",
+  "built": "80-90 kits; ~45 completed",
+  "flying": "~29-30 (Kitplanes 2023); 28 registered",
+  "config": "Low wing, 2 seats, retractable gear",
+  "construction": "All-aluminum",
+  "engine": "Lycoming IO-540-L1C5, 300 hp",
+  "hp": 300,
+  "turbo": false,
+  "mtow": [
+   2400,
+   "P",
+   "https://www.kitplanes.com/sx-appeal/",
+   "Wikipedia 2,200"
+  ],
+  "empty": [
+   1600,
+   "P",
+   "https://www.kitplanes.com/sx-appeal/",
+   "typical"
+  ],
+  "useful": [
+   800,
+   "P",
+   "https://www.kitplanes.com/sx-appeal/",
+   "typical"
+  ],
+  "fuel_gal": [
+   66,
+   "P",
+   "https://www.kitplanes.com/sx-appeal/",
+   ""
+  ],
+  "cruise": [
+   {
+    "ktas": 240,
+    "alt_ft": null,
+    "power_pct": 75,
+    "gph": 20,
+    "grade": "P",
+    "src": "https://www.kitplanes.com/sx-appeal/",
+    "note": "ram air holds 75% to ~9,500 ft",
+    "screen": true
+   },
+   {
+    "ktas": 217,
+    "alt_ft": null,
+    "power_pct": null,
+    "gph": 14.5,
+    "grade": "P",
+    "src": "https://www.kitplanes.com/sx-appeal/",
+    "note": "economy"
+   }
+  ],
+  "range": {
+   "nm": 650,
+   "basis": "700-800 mi at 20 gph",
+   "grade": "P",
+   "src": "https://www.kitplanes.com/sx-appeal/"
+  },
+  "why_died_short": "Kits ended 1989; lost military interest after a prototype crash",
+  "why_died": "Company cited lack of certification progress; Kitplanes suggests the fatal turboprop-prototype crash cost it military interest.",
+  "rights": "Airight LLC (Jim Ryan, 1994); parts inventory now with the SX300 Group. Formal rights holder not found.",
+  "safety": "At least 7 fatal accidents (some fuel unporting at low fuel) and 5 hull losses from main-gear trunnion failures (Kitplanes).",
+  "ideas": [
+   "Ed Swearingen's all-metal, 240 kt two-seat kit: proof that a small, clean metal airframe can match composites on speed."
+  ]
+ },
+ {
+  "id": "vans-rv-10",
+  "name": "Van's RV-10",
+  "seats": 4,
+  "origin": [
+   "a"
+  ],
+  "designer": "Van's Aircraft",
+  "years": "2003 first flight; alive",
+  "built": "1,075 flown (Van's counter, Oct 2026)",
+  "flying": "816 US-registered (734 with airworthiness date)",
+  "config": "Low wing, 4 seats, fixed gear",
+  "construction": "Aluminum",
+  "engine": "Lycoming IO-540, 235-260 hp",
+  "hp": 260,
+  "turbo": false,
+  "mtow": [
+   2700,
+   "F",
+   "https://www.vansaircraft.com/rv-10/",
+   ""
+  ],
+  "empty": [
+   1575,
+   "F",
+   "https://www.vansaircraft.com/rv-10/",
+   "midpoint of 1,520-1,630"
+  ],
+  "useful": [
+   1125,
+   "F",
+   "https://www.vansaircraft.com/rv-10/",
+   "derived from midpoint"
+  ],
+  "useful_fleet": [
+   1050,
+   "P",
+   "https://www.kitplanes.com/flight-review-seven-into-ten/",
+   "1,600-1,700 lb typical builder empty, midpoint"
+  ],
+  "fuel_gal": [
+   60,
+   "F",
+   "https://www.vansaircraft.com/rv-10/",
+   ""
+  ],
+  "cruise": [
+   {
+    "ktas": 171,
+    "alt_ft": 8000,
+    "power_pct": 75,
+    "gph": null,
+    "grade": "F",
+    "src": "https://www.vansaircraft.com/rv-10/",
+    "note": "at gross, 197 mph converted",
+    "screen": true
+   },
+   {
+    "ktas": 153,
+    "alt_ft": 8000,
+    "power_pct": 55,
+    "gph": null,
+    "grade": "F",
+    "src": "https://www.vansaircraft.com/rv-10/",
+    "note": "176 mph converted"
+   },
+   {
+    "ktas": 167,
+    "alt_ft": null,
+    "power_pct": null,
+    "gph": 12,
+    "grade": "P",
+    "src": "https://www.kitplanes.com/flight-review-seven-into-ten/",
+    "note": "'realistic' 165-170 kt, ~12 gph lean of peak"
+   }
+  ],
+  "range": {
+   "nm": 869,
+   "basis": "55%, 8,000 ft, reserve not stated (1,000 sm)",
+   "grade": "F",
+   "src": "https://www.vansaircraft.com/rv-10/"
+  },
+  "why_died_short": "Alive: in production at Van's",
+  "why_died": "Not dead. Still produced and supported.",
+  "rights": "Van's Aircraft.",
+  "safety": "Not found; BRS kit available since 2019.",
+  "ideas": [
+   "The commercial success the others are measured against: a fast-build metal kit with matched-hole parts that thousands of builders can finish, and a large, predictable fleet."
+  ]
+ },
+ {
+  "id": "lancair-super-es",
+  "name": "Lancair Super ES",
+  "seats": 4,
+  "origin": [
+   "a"
+  ],
+  "designer": "Lancair",
+  "years": "~1993-2012",
+  "built": "90 ES-family completed by 2011",
+  "flying": "104 registered (ES, Super ES, ES-P)",
+  "config": "Low wing, 4 seats, fixed gear",
+  "construction": "Composite",
+  "engine": "Continental IO-550, 310 hp (some TSIO-550)",
+  "hp": 310,
+  "turbo": false,
+  "mtow": [
+   3200,
+   "P",
+   "https://planeandpilotmag.com/lancair-essuper-es-es-p/",
+   "site now gives 3,550"
+  ],
+  "empty": [
+   1900,
+   "P",
+   "https://planeandpilotmag.com/lancair-essuper-es-es-p/",
+   ""
+  ],
+  "useful": [
+   1300,
+   "P",
+   "https://planeandpilotmag.com/lancair-essuper-es-es-p/",
+   "derived"
+  ],
+  "fuel_gal": [
+   98,
+   "P",
+   "https://planeandpilotmag.com/lancair-essuper-es-es-p/",
+   ""
+  ],
+  "cruise": [
+   {
+    "ktas": 196,
+    "alt_ft": null,
+    "power_pct": null,
+    "gph": null,
+    "grade": "F",
+    "src": "https://lancair.com/es-esp/",
+    "note": "225 mph converted, no conditions",
+    "screen": true
+   },
+   {
+    "ktas": 200,
+    "alt_ft": 10500,
+    "power_pct": 75,
+    "gph": null,
+    "grade": "F",
+    "src": "https://lancair.com/wp-content/uploads/2020/01/Lancair-ES_N789KM_web-0120.pdf",
+    "note": "turbocharged example, 'original factory'"
+   }
+  ],
+  "range": {
+   "nm": 1217,
+   "basis": "not stated",
+   "grade": "F",
+   "src": "https://lancair.com/es-esp/"
+  },
+  "why_died_short": "Kit production ended 2012",
+  "why_died": "Out of production since 2012; no reason given (lancair.com).",
+  "rights": "Same Lancair chain as the IV-P.",
+  "safety": "Fleet-wide Lancair statistics apply (see IV-P).",
+  "ideas": [
+   "A four-seat composite kit with fixed gear that cruises fast enough to need no retract; its concept became the certified Columbia/Cessna 350/400 line."
+  ]
+ },
+ {
+  "id": "epic-lt",
+  "name": "Epic LT",
+  "seats": 6,
+  "origin": [
+   "a"
+  ],
+  "designer": "Rick Schrameck, Epic Air",
+  "years": "2004 first flight; kits 2006-2013",
+  "built": "54 kits",
+  "flying": "45 registered",
+  "config": "Low wing, 6 seats, pressurized, turboprop",
+  "construction": "Carbon composite",
+  "engine": "P&WC PT6A-67A, 1,200 shp",
+  "hp": 1200,
+  "turbo": true,
+  "fuel_type": "jet-a",
+  "mtow": [
+   7500,
+   "P",
+   "https://www.aopa.org/News-and-Video/All-News/2013/October/Pilot/Epic-LT-Seeing-is-believing",
+   ""
+  ],
+  "empty": [
+   4400,
+   "P",
+   "https://www.aopa.org/News-and-Video/All-News/2013/October/Pilot/Epic-LT-Seeing-is-believing",
+   ""
+  ],
+  "useful": [
+   3100,
+   "P",
+   "https://www.aopa.org/News-and-Video/All-News/2013/October/Pilot/Epic-LT-Seeing-is-believing",
+   ""
+  ],
+  "fuel_gal": [
+   288,
+   "P",
+   "https://www.aopa.org/News-and-Video/All-News/2013/October/Pilot/Epic-LT-Seeing-is-believing",
+   ""
+  ],
+  "cruise": [
+   {
+    "ktas": 317,
+    "alt_ft": 27000,
+    "power_pct": null,
+    "gph": 52.5,
+    "grade": "P",
+    "src": "https://www.aopa.org/News-and-Video/All-News/2013/October/Pilot/Epic-LT-Seeing-is-believing",
+    "note": "measured",
+    "screen": true
+   },
+   {
+    "ktas": 270,
+    "alt_ft": 28000,
+    "power_pct": null,
+    "gph": 44,
+    "grade": "P",
+    "src": "https://www.aopa.org/News-and-Video/All-News/2013/October/Pilot/Epic-LT-Seeing-is-believing",
+    "note": "best economy"
+   }
+  ],
+  "range": {
+   "nm": 1874,
+   "basis": "long-range tanks",
+   "grade": "F",
+   "src": "https://en.wikipedia.org/wiki/Epic_LT"
+  },
+  "why_died_short": "Epic bankrupt 2009; LT kits dropped 2013 for the certified E1000",
+  "why_died": "Bankrupt Aug 2009; stopped LT kit orders in 2013 to focus on the E1000 (Wikipedia).",
+  "rights": "Builders group + CAIGA (2010) -> Filev (2012) -> Eves majority (2024, unverified).",
+  "safety": "Fatal crash at Egelsbach, 31 Mar 2019 (3 killed).",
+  "flags": [
+   "included only to represent the 6-seat kit class; a turbine airframe is outside the Aeromomentum mission"
+  ],
+  "ideas": [
+   "A carbon-composite six-seat pressurised kit turboprop that grew into a certified type (E1000)."
+  ]
+ },
+ {
+  "id": "alpi-pioneer-400",
+  "name": "Alpi Pioneer 400",
+  "seats": 4,
+  "origin": [
+   "a",
+   "d"
+  ],
+  "designer": "Alpi Aviation, Pordenone, Italy",
+  "years": "2009 first flight; alive",
+  "built": "54 (Oct 2024)",
+  "flying": "not counted",
+  "config": "Low wing, 4 seats, retractable gear",
+  "construction": "Wood structure, carbon skin",
+  "engine": "Rotax 914, 115 hp turbo (400T); 915iS/916iS options",
+  "hp": 115,
+  "turbo": true,
+  "mtow": [
+   1764,
+   "P",
+   "https://www.kitplanes.com/alpi-pioneer-400t/",
+   ""
+  ],
+  "empty": [
+   992,
+   "P",
+   "https://www.kitplanes.com/alpi-pioneer-400t/",
+   "test aircraft"
+  ],
+  "useful": [
+   772,
+   "P",
+   "https://www.kitplanes.com/alpi-pioneer-400t/",
+   ""
+  ],
+  "fuel_gal": [
+   21,
+   "P",
+   "https://www.kitplanes.com/alpi-pioneer-400t/",
+   ""
+  ],
+  "cruise": [
+   {
+    "ktas": 135,
+    "alt_ft": null,
+    "power_pct": null,
+    "gph": 6.9,
+    "grade": "P",
+    "src": "https://www.kitplanes.com/alpi-pioneer-400t/",
+    "note": "max cruise",
+    "screen": true
+   }
+  ],
+  "range": {
+   "nm": 455,
+   "basis": "3.5 h with reserves",
+   "grade": "P",
+   "src": "https://www.kitplanes.com/alpi-pioneer-400t/"
+  },
+  "why_died_short": "Alive: kit/permit only, no type certificate",
+  "why_died": "Not dead; permit/experimental category only.",
+  "rights": "Alpi Aviation.",
+  "safety": "Not found.",
+  "flags": [
+   "a light-sport-scale four-seater; listed as the foreign kit benchmark, far below the targets"
+  ],
+  "ideas": [
+   "A four-seat retractable on a 115 hp Rotax: shows how far a light, clean airframe goes on little power, and what that costs in useful load."
+  ]
+ },
+ {
+  "id": "cessna-p210n",
+  "name": "Cessna P210N Pressurized Centurion",
+  "seats": 6,
+  "origin": [
+   "b"
+  ],
+  "designer": "Cessna Aircraft Co.",
+  "years": "1978-83 (P210R 1985-86)",
+  "built": "834 P210N (TCDS serials)",
+  "flying": "418 registered",
+  "config": "High wing, 6 seats, retractable gear, pressurized 3.35 psi",
+  "construction": "All-metal",
+  "engine": "Continental TSIO-520-P/-AF, 310 hp takeoff / 285 hp continuous, turbo",
+  "hp": 285,
+  "turbo": true,
+  "mtow": [
+   4000,
+   "T",
+   "FAA DRS, TCDS 3A21 Rev 50, 18 Nov 2021, read 2026-10-24 (archived: docs/longlist/sources/tcds-3A21-rev50-2021-11-18.pdf); value unchanged from Rev 49",
+   ""
+  ],
+  "empty": [
+   2426,
+   "F",
+   "https://www.aopa.org/go-fly/aircraft-and-ownership/aircraft-fact-sheets/cessna-p210",
+   "1982 standard empty"
+  ],
+  "useful": [
+   1574,
+   "F",
+   "https://www.aopa.org/go-fly/aircraft-and-ownership/aircraft-fact-sheets/cessna-p210",
+   ""
+  ],
+  "useful_fleet": [
+   1480,
+   "B",
+   "https://www.aviationconsumer.com/aircraftreviews/cessna-p210-centurion/",
+   "owners report 900-1,000 lb payload with full fuel; midpoint + 87 gal"
+  ],
+  "fuel_gal": [
+   87,
+   "T",
+   "FAA DRS, TCDS 3A21 Rev 50, 18 Nov 2021, read 2026-10-24 (archived: docs/longlist/sources/tcds-3A21-rev50-2021-11-18.pdf); value unchanged from Rev 49",
+   "S/N 761 on; 89 earlier"
+  ],
+  "cruise": [
+   {
+    "ktas": 199,
+    "alt_ft": 20000,
+    "power_pct": null,
+    "gph": null,
+    "grade": "P",
+    "src": "https://australianaviation.com.au/1978/06/p210cessnas-high-flying-single/",
+    "note": "flight test, 33 in / 2,500 rpm",
+    "screen": true
+   },
+   {
+    "ktas": 183,
+    "alt_ft": 20000,
+    "power_pct": 75,
+    "gph": 15.5,
+    "grade": "F",
+    "src": "https://australianaviation.com.au/1978/06/p210cessnas-high-flying-single/",
+    "note": "11.8 nm/gal"
+   },
+   {
+    "ktas": 196,
+    "alt_ft": 20000,
+    "power_pct": 80,
+    "gph": 18.8,
+    "grade": "F",
+    "src": "https://australianaviation.com.au/1978/06/p210cessnas-high-flying-single/",
+    "note": "10.4 nm/gal"
+   }
+  ],
+  "range": {
+   "nm": 925,
+   "basis": "standard fuel, power and reserve not stated",
+   "grade": "F",
+   "src": "https://australianaviation.com.au/1978/06/p210cessnas-high-flying-single/"
+  },
+  "why_died_short": "Cessna ended all piston production in 1986 (liability era)",
+  "why_died": "The Pressurized Centurion ended with Cessna's 1986 piston shutdown; the P210R sold only ~40 against the Malibu (P&P 2005).",
+  "rights": "TCDS 3A21 holder: Textron Aviation Inc. (from Cessna, 2015).",
+  "safety": "Early detonation engine failures led to a turbo retrofit AD; 210 family accidents 20% fuel, 14% gear-up (Aviation Consumer).",
+  "flags": [
+   "owners add tip tanks to reach 1,000 nm with reserve; on factory fuel it is marginal",
+   "kit builders are attempting 210-class airplanes (Bill); what exists is fixed-gear 5-6 seat high-wing kits, none a retractable 210 copy: see '210-class kits' in LONGLIST.md"
+  ],
+  "ideas": [
+   "Six seats, pressurisation and a large, well-documented fleet: the calibration case for the method. Kit builders now attempt 210 analogs (see the long list)."
+  ]
+ },
+ {
+  "id": "piper-pa46-310p",
+  "name": "Piper PA-46-310P Malibu",
+  "seats": 6,
+  "origin": [
+   "b"
+  ],
+  "designer": "Piper Aircraft",
+  "years": "1984-88",
+  "built": "403 (TCDS serials)",
+  "flying": "212 registered",
+  "config": "Low wing, 6 seats, retractable gear, pressurized 5.5 psi",
+  "construction": "All-metal",
+  "engine": "Continental TSIO-520-BE, 310 hp, twin turbo, intercooled",
+  "hp": 310,
+  "turbo": true,
+  "mtow": [
+   4100,
+   "T",
+   "FAA DRS, TCDS A25SO Rev 42, 16 Feb 2026, read 2026-10-24 (archived: docs/longlist/sources/tcds-A25SO-rev42-2026-02-16.pdf); value unchanged from Rev 26",
+   ""
+  ],
+  "empty": [
+   2645,
+   "F",
+   "https://www.aopa.org/go-fly/aircraft-and-ownership/aircraft-fact-sheets/piper-malibu-mirage",
+   ""
+  ],
+  "useful": [
+   1455,
+   "F",
+   "https://www.aopa.org/go-fly/aircraft-and-ownership/aircraft-fact-sheets/piper-malibu-mirage",
+   ""
+  ],
+  "useful_fleet": [
+   1400,
+   "B",
+   "https://www.flyingmag.com/used-aircraft-guide-piper-malibu-and-mirage-cheap-for-what-they-do/",
+   "'typical useful loads'"
+  ],
+  "fuel_gal": [
+   120,
+   "T",
+   "FAA DRS, TCDS A25SO Rev 42, 16 Feb 2026, read 2026-10-24 (archived: docs/longlist/sources/tcds-A25SO-rev42-2026-02-16.pdf); value unchanged from Rev 26",
+   "122 total, 12 lb unusable"
+  ],
+  "cruise": [
+   {
+    "ktas": 205,
+    "alt_ft": 22000,
+    "power_pct": 65,
+    "gph": 15,
+    "grade": "P",
+    "src": "https://australianaviation.com.au/1985/06/airtest-piper-malibu/",
+    "note": "flight test",
+    "screen": true
+   },
+   {
+    "ktas": 180,
+    "alt_ft": 20000,
+    "power_pct": 55,
+    "gph": 12,
+    "grade": "P",
+    "src": "https://australianaviation.com.au/1985/06/airtest-piper-malibu/",
+    "note": "overweight ferry flight"
+   },
+   {
+    "ktas": 210,
+    "alt_ft": 25000,
+    "power_pct": 75,
+    "gph": null,
+    "grade": "B",
+    "src": "https://www.flyingmag.com/used-aircraft-guide-piper-malibu-and-mirage-cheap-for-what-they-do/",
+    "note": "owner-reported"
+   }
+  ],
+  "range": {
+   "nm": 1300,
+   "basis": "120 gal, power and reserve not stated",
+   "grade": "P",
+   "src": "https://australianaviation.com.au/1985/06/airtest-piper-malibu/"
+  },
+  "why_died_short": "Continental engine troubles; replaced by the Lycoming Mirage (1989)",
+  "why_died": "Engine problems led to a 1987 voluntary grounding request; replaced by the PA-46-350P Mirage. The type lives on as the M350 (Flying).",
+  "rights": "TCDS A25SO holder: Piper Aircraft, Inc. (owned by the Government of Brunei).",
+  "safety": "PA-46 family: ~21% of accidents engine-related (Aviation Consumer).",
+  "flags": [
+   "a live type family (M350 in production), so not orphaned"
+  ],
+  "ideas": [
+   "Cabin-class pressurised six-seat single; its engine troubles show how much an airframe's reputation rides on its powerplant."
+  ]
+ },
+ {
+  "id": "mooney-m20tn-acclaim",
+  "name": "Mooney M20TN Acclaim Type S",
+  "seats": 4,
+  "origin": [
+   "b"
+  ],
+  "designer": "Mooney",
+  "years": "2006-~2017 (Acclaim Ultra after)",
+  "built": "143 M20TN incl. ~54 Type S",
+  "flying": "119 M20TN registered",
+  "config": "Low wing, 4 seats, retractable gear",
+  "construction": "Steel-tube cabin, aluminum skin",
+  "engine": "Continental TSIO-550-G, 280 hp, twin turbo",
+  "hp": 280,
+  "turbo": true,
+  "mtow": [
+   3368,
+   "T",
+   "https://cdn.sprinkle.com/library/pdfs/c7dc66c7-defb-4504-823b-9d9d84b67da7.pdf",
+   ""
+  ],
+  "empty": [
+   2370,
+   "P",
+   "https://www.planeandpilotmag.com/article/mooney-m20tn-acclaim-type-s/",
+   "factory-supplied standard"
+  ],
+  "useful": [
+   1004,
+   "F",
+   "https://web.archive.org/web/20071213010048/http://www.mooney.com:80/acclaim-type-s/specifications-performance-3.html",
+   ""
+  ],
+  "fuel_gal": [
+   89,
+   "T",
+   "https://cdn.sprinkle.com/library/pdfs/c7dc66c7-defb-4504-823b-9d9d84b67da7.pdf",
+   "TCDS Rev 52; factory gives 102 standard / 130 optional for the Type S"
+  ],
+  "fuel_opt_gal": [
+   128,
+   "P",
+   "https://planeandpilotmag.com/mooney-acclaim-type-s-still-the-fastest/",
+   ""
+  ],
+  "cruise": [
+   {
+    "ktas": 237,
+    "alt_ft": 25000,
+    "power_pct": 75,
+    "gph": 22,
+    "grade": "P",
+    "src": "https://www.planeandpilotmag.com/article/mooney-m20tn-acclaim-type-s/",
+    "note": "spec box; measured 239 KTAS near gross",
+    "screen": true
+   },
+   {
+    "ktas": 200,
+    "alt_ft": 25000,
+    "power_pct": null,
+    "gph": 13,
+    "grade": "P",
+    "src": "https://www.planeandpilotmag.com/article/mooney-m20tn-acclaim-type-s/",
+    "note": "economy, 'just under 13 gph'"
+   }
+  ],
+  "range": {
+   "nm": 1445,
+   "basis": "standard fuel, 'with res.', power not stated",
+   "grade": "F",
+   "src": "https://web.archive.org/web/20071213010048/http://www.mooney.com:80/acclaim-type-s/specifications-performance-3.html"
+  },
+  "why_died_short": "Mooney halted production in Nov 2019",
+  "why_died": "Mooney furloughed its staff in Nov 2019 after 8 deliveries in three quarters (AvWeb).",
+  "rights": "TC 2A3: Mooney International Corp (US owner group took 80% in 2020).",
+  "safety": "Not found.",
+  "ideas": [
+   "Mooney's steel-tube cage and low-drag airframe: 237 KTAS on 280 hp with four seats, from careful drag cleanup over decades."
+  ]
+ },
+ {
+  "id": "cessna-ttx",
+  "name": "Cessna TTx / Columbia 400",
+  "seats": 4,
+  "origin": [
+   "b"
+  ],
+  "designer": "Lancair -> Columbia -> Cessna",
+  "years": "2004-2018",
+  "built": "~704 (unverified)",
+  "flying": "609 registered",
+  "config": "Low wing, 4 seats, fixed gear, side-stick",
+  "construction": "All-composite (honeycomb sandwich)",
+  "engine": "Continental TSIO-550-C, 310 hp, twin turbo",
+  "hp": 310,
+  "turbo": true,
+  "mtow": [
+   3600,
+   "T",
+   "https://www.easa.europa.eu/sites/default/files/dfu/EASA.IM_.A.516_Issue%205_20180621.pdf",
+   ""
+  ],
+  "empty": [
+   2535,
+   "F",
+   "http://web.archive.org/web/20171228025049/http://cessna.txtav.com:80/en/piston/cessna-ttx",
+   ""
+  ],
+  "useful": [
+   1065,
+   "F",
+   "http://web.archive.org/web/20171228025049/http://cessna.txtav.com:80/en/piston/cessna-ttx",
+   ""
+  ],
+  "useful_fleet": [
+   1027,
+   "P",
+   "https://aopa.org/news-and-media/all-news/2007/october/01/columbia-400",
+   "one test aircraft, not a fleet average"
+  ],
+  "fuel_gal": [
+   102,
+   "T",
+   "https://www.easa.europa.eu/sites/default/files/dfu/EASA.IM_.A.516_Issue%205_20180621.pdf",
+   ""
+  ],
+  "cruise": [
+   {
+    "ktas": 219,
+    "alt_ft": 22000,
+    "power_pct": 75,
+    "gph": 16,
+    "grade": "P",
+    "src": "https://planeandpilotmag.com/cessna-ttx/",
+    "note": "spec box",
+    "screen": true
+   },
+   {
+    "ktas": 180,
+    "alt_ft": 12000,
+    "power_pct": null,
+    "gph": 15.5,
+    "grade": "P",
+    "src": "https://www.aopa.org/news-and-media/all-news/2013/july/01/cessna-delivers-ttx",
+    "note": "lean of peak"
+   }
+  ],
+  "range": {
+   "nm": 1270,
+   "basis": "not stated",
+   "grade": "F",
+   "src": "http://web.archive.org/web/20171228025049/http://cessna.txtav.com:80/en/piston/cessna-ttx"
+  },
+  "why_died_short": "Textron ended it in 2018 on slow sales against Cirrus",
+  "why_died": "44 sold in 2015, 23 in 2017, against 355 Cirrus singles; production stopped 2018 (AOPA).",
+  "rights": "TC A00003SE: Textron Aviation. Chain: Pacific Aviation Composites -> Lancair -> Columbia (bankrupt 2007) -> Cessna.",
+  "safety": "Not found.",
+  "ideas": [
+   "Certified all-composite four-seater with side-stick and 219 KTAS at FL220; lost on market share, not on performance."
+  ]
+ },
+ {
+  "id": "meyers-200d",
+  "name": "Meyers 200D / Aero Commander 200D",
+  "seats": 4,
+  "origin": [
+   "b"
+  ],
+  "designer": "Al Meyers; Aero Commander (Rockwell-Standard)",
+  "years": "1965-67/68",
+  "built": "~95-127 (sources conflict)",
+  "flying": "58 200D registered (84 all 200 series)",
+  "config": "Low wing, 4 seats, retractable gear",
+  "construction": "Steel-tube cabin cage, metal semimonocoque",
+  "engine": "Continental IO-520-A, 285 hp",
+  "hp": 285,
+  "turbo": false,
+  "mtow": [
+   3000,
+   "T",
+   "http://rgl.faa.gov/Regulatory_and_Guidance_Library/rgMakeModel.nsf/0/ab97f6c31ea6d73786257d2a0052b9e6/$FILE/3A18_Rev_19.pdf",
+   ""
+  ],
+  "empty": [
+   1940,
+   "F",
+   "https://avweb.com/?p=124801",
+   ""
+  ],
+  "useful": [
+   1060,
+   "F",
+   "https://avweb.com/?p=124801",
+   "derived"
+  ],
+  "useful_fleet": [
+   900,
+   "B",
+   "https://avweb.com/?p=124801",
+   "~2,100 lb real-world equipped empty"
+  ],
+  "fuel_gal": [
+   74,
+   "T",
+   "http://rgl.faa.gov/Regulatory_and_Guidance_Library/rgMakeModel.nsf/0/ab97f6c31ea6d73786257d2a0052b9e6/$FILE/3A18_Rev_19.pdf",
+   "incl. auxiliaries"
+  ],
+  "cruise": [
+   {
+    "ktas": 182,
+    "alt_ft": null,
+    "power_pct": null,
+    "gph": null,
+    "grade": "F",
+    "src": "https://en.wikipedia.org/wiki/Meyers_200",
+    "note": "max cruise (Jane's), 210 mph converted",
+    "screen": true
+   },
+   {
+    "ktas": 187,
+    "alt_ft": null,
+    "power_pct": null,
+    "gph": 12,
+    "grade": "P",
+    "src": "https://planeandpilotmag.com/aero-commander-200/",
+    "note": "weak source; misnames the engine"
+   },
+   {
+    "ktas": 152,
+    "alt_ft": null,
+    "power_pct": null,
+    "gph": 15.5,
+    "grade": "P",
+    "src": "https://avweb.com/?p=124801",
+    "note": "owner, 23 in / 2,300 rpm, rich of peak"
+   }
+  ],
+  "range": {
+   "nm": 782,
+   "basis": "normal fuel, 45 min reserve",
+   "grade": "F",
+   "src": "https://en.wikipedia.org/wiki/Meyers_200"
+  },
+  "why_died_short": "Hand-built at a loss: $4M to make $3M of airplanes",
+  "why_died": "Hand-built with minimal tooling; after 75 Aero Commander 200Ds, 'it took $4 million to produce $3 million worth' (Plane & Pilot, Jan/Feb 2024, https://planeandpilotmag.com/this-incredible-plane-meyers-aero-commander-200/; the first version of this row cited the 2009 directory page, which does not contain it).",
+  "rights": "TCDS 3A18 holder: Interceptor Aviation Inc., Bethany OK (2014; GlobalParts affiliate).",
+  "safety": "20 accidents in 35 years; 5 tank-run-dry, 9 maintenance; no in-flight breakups (AvWeb).",
+  "flags": [
+   "the 187 kt / 12 gph pair comes from a weak source; at the owner's 15.5 gph the still-air range is ~730 nm"
+  ],
+  "ideas": [
+   "Steel-tube cabin cage inside a metal semimonocoque: crash protection and a reputation for strength and fine handling.",
+   "Lesson: hand-built at a loss ($4M to make $3M of airplanes); a re-derivation must design for cheap production from the start."
+  ]
+ },
+ {
+  "id": "bellanca-super-viking",
+  "name": "Bellanca 17-30A Super Viking",
+  "seats": 4,
+  "origin": [
+   "b"
+  ],
+  "designer": "Bellanca Aircraft Corp.",
+  "years": "1969-~2001 (low rate)",
+  "built": "~1,356 Vikings all models",
+  "flying": "389 17-30A valid registrations; 71 17-31ATC",
+  "config": "Low wing, 4 seats, retractable gear",
+  "construction": "Steel-tube fuselage, fabric; wooden wing",
+  "engine": "Continental IO-520-K, 300 hp takeoff / 285 hp continuous",
+  "hp": 285,
+  "turbo": false,
+  "mtow": [
+   3325,
+   "T",
+   "http://rgl.faa.gov/Regulatory_and_Guidance_Library/rgMakeModel.nsf/0/5af52329a2061d4a86256c24005133db/$FILE/A18ce.pdf",
+   "with placards and matching AFM; 3,200 otherwise"
+  ],
+  "empty": [
+   2217,
+   "F",
+   "https://en.wikipedia.org/wiki/Bellanca_Viking",
+   "1976 (Jane's)"
+  ],
+  "useful": [
+   1108,
+   "F",
+   "https://en.wikipedia.org/wiki/Bellanca_Viking",
+   "derived"
+  ],
+  "useful_fleet": [
+   1000,
+   "B",
+   "https://avweb.com/features/bellanca-viking/",
+   "'typically 1000 pounds or so'"
+  ],
+  "fuel_gal": [
+   69,
+   "T",
+   "http://rgl.faa.gov/Regulatory_and_Guidance_Library/rgMakeModel.nsf/0/5af52329a2061d4a86256c24005133db/$FILE/A18ce.pdf",
+   "late serials; 60-64 earlier"
+  ],
+  "fuel_opt_gal": [
+   84,
+   "T",
+   "http://rgl.faa.gov/Regulatory_and_Guidance_Library/rgMakeModel.nsf/0/5af52329a2061d4a86256c24005133db/$FILE/A18ce.pdf",
+   ""
+  ],
+  "cruise": [
+   {
+    "ktas": 165,
+    "alt_ft": 7500,
+    "power_pct": 62,
+    "gph": null,
+    "grade": "P",
+    "src": "https://planeandpilotmag.com/bellanca-viking-wood-fabric-and-genius/",
+    "note": "owner in pilot report: 165+ kt at 60-65%, flown at 7,500-8,500 ft",
+    "screen": true
+   },
+   {
+    "ktas": 163,
+    "alt_ft": null,
+    "power_pct": 75,
+    "gph": null,
+    "grade": "F",
+    "src": "https://en.wikipedia.org/wiki/Bellanca_Viking",
+    "note": "Jane's, 188 mph converted"
+   }
+  ],
+  "range": {
+   "nm": 802,
+   "basis": "max fuel, reserve not stated",
+   "grade": "F",
+   "src": "https://en.wikipedia.org/wiki/Bellanca_Viking"
+  },
+  "why_died_short": "Bellanca bankrupt 1980 and again 2001; wood wing, low-rate production",
+  "why_died": "Bankrupt in 1980; custom-order production from 1984, bankrupt again in 2001 (AvWeb).",
+  "rights": "TCDS A18CE holder (2002): Alexandria Aircraft LLC; reported move to Sulphur OK as Bellanca Aircraft Inc. (2022) unverified.",
+  "safety": "Wood deterioration AD 76-08-04; fuel-mismanagement accidents fell after the 1974 tank simplification (AvWeb).",
+  "flags": [
+   "turbo 17-31ATC reported at 190 kt at FL200 (AvWeb, fleet-grade)"
+  ],
+  "ideas": [
+   "A wooden wing and steel-tube fuselage on a fast four-seater: unusual materials can work, but low-rate production of them did not pay."
+  ]
+ },
+ {
+  "id": "windecker-eagle",
+  "name": "Windecker AC-7 Eagle",
+  "seats": 4,
+  "origin": [
+   "b"
+  ],
+  "designer": "Dr. Leo Windecker, Windecker Industries",
+  "years": "1969-early 1970s",
+  "built": "8-9 incl. prototypes",
+  "flying": "2 registered, both Experimental",
+  "config": "Low wing, 4 seats, retractable gear",
+  "construction": "All-composite 'Fibaloy' glass fibre (with Dow)",
+  "engine": "Continental IO-520-C, 285 hp",
+  "hp": 285,
+  "turbo": false,
+  "mtow": [
+   3400,
+   "F",
+   "https://en.wikipedia.org/wiki/Windecker_Eagle",
+   ""
+  ],
+  "empty": [
+   2150,
+   "F",
+   "https://en.wikipedia.org/wiki/Windecker_Eagle",
+   ""
+  ],
+  "useful": [
+   1250,
+   "F",
+   "https://en.wikipedia.org/wiki/Windecker_Eagle",
+   "derived"
+  ],
+  "fuel_gal": [
+   86,
+   "F",
+   "https://en.wikipedia.org/wiki/Windecker_Eagle",
+   "capacity"
+  ],
+  "cruise": [
+   {
+    "ktas": 177,
+    "alt_ft": null,
+    "power_pct": 75,
+    "gph": null,
+    "grade": "F",
+    "src": "https://www.aero-news.net/index.cfm?do=main.textpost&id=32a052d2-52f9-4d73-8fde-2a6233ec3c62",
+    "note": "204 mph converted",
+    "screen": true
+   }
+  ],
+  "range": {
+   "nm": 1070,
+   "basis": "not stated",
+   "grade": "F",
+   "src": "https://en.wikipedia.org/wiki/Windecker_Eagle"
+  },
+  "why_died_short": "Ran out of money after a $20M+ certification; 1979 revival failed on price",
+  "why_died": "Out of money after spending more than $20M on certification in the 1970 recession; a 1979 revival priced above a Bonanza (Smithsonian).",
+  "rights": "TC A7SW: Windecker -> Composite Aircraft Corp (1979) -> EAGLEAERO -> Wei Hang (~2015, with 2 airframes). Current holder unconfirmed.",
+  "safety": "Second prototype lost in spin testing, 1969 (pilot ejected).",
+  "flags": [
+   "the first FAA-certified all-composite airplane; its TC is a rare composite certification precedent"
+  ],
+  "ideas": [
+   "The first FAA-certified all-composite airplane (with Dow): proof, in 1969, that composites could be certified.",
+   "Lesson: a $20M+ certification bill with no production volume behind it."
+  ]
+ },
+ {
+  "id": "wing-derringer",
+  "name": "Wing D-1 Derringer",
+  "seats": 2,
+  "origin": [
+   "b"
+  ],
+  "designer": "John Thorp (T-17); George Wing, Hi-Shear Corp.",
+  "years": "1962 first flight; TC 1966; to 1982",
+  "built": "~12",
+  "flying": "6 type-certificated registered",
+  "config": "Low wing light twin, 2 seats, retractable gear",
+  "construction": "Flush-riveted chem-milled aluminum",
+  "engine": "2x Lycoming IO-320-B1C, 160 hp",
+  "hp": 160,
+  "engines": 2,
+  "turbo": false,
+  "mtow": [
+   3050,
+   "F",
+   "https://en.wikipedia.org/wiki/Wing_Derringer",
+   ""
+  ],
+  "empty": [
+   2070,
+   "F",
+   "https://en.wikipedia.org/wiki/Wing_Derringer",
+   ""
+  ],
+  "useful": [
+   980,
+   "F",
+   "https://en.wikipedia.org/wiki/Wing_Derringer",
+   "derived"
+  ],
+  "fuel_gal": [
+   88,
+   "F",
+   "https://en.wikipedia.org/wiki/Wing_Derringer",
+   "capacity"
+  ],
+  "cruise": [
+   {
+    "ktas": 184,
+    "alt_ft": 13000,
+    "power_pct": 65,
+    "gph": null,
+    "grade": "F",
+    "src": "https://en.wikipedia.org/wiki/Wing_Derringer",
+    "note": "Jane's 1980-81",
+    "screen": true
+   }
+  ],
+  "range": {
+   "nm": 1007,
+   "basis": "economy cruise, 10,000 ft, reserve not stated",
+   "grade": "F",
+   "src": "https://en.wikipedia.org/wiki/Wing_Derringer"
+  },
+  "why_died_short": "Hi-Shear internal problems, then Wing Aircraft bankrupt 1982",
+  "why_died": "Hi-Shear internal problems ended the first effort; Wing Aircraft Co. went bankrupt in July 1982 (Jane's; 1000aircraftphotos).",
+  "rights": "TC A9WE: Hi-Shear -> Wing Aircraft Co.; Emerald Enterprises (San Diego) as of 1998 per Wikipedia, unsourced.",
+  "safety": "Second prototype broke up in 1964 when the horizontal stabilizer failed.",
+  "ideas": [
+   "A two-seat, flush-riveted, chem-milled light twin: twin redundancy in a small, fast airframe.",
+   "Rotax-powered analogs shown at AERO Friedrichshafen 2026 (Bill) suggest the idea is alive; see the analog rows when added."
+  ]
+ },
+ {
+  "id": "mooney-m22",
+  "name": "Mooney M22 Mustang",
+  "seats": 5,
+  "origin": [
+   "b"
+  ],
+  "designer": "Mooney Aircraft",
+  "years": "1965-70",
+  "built": "~30-36",
+  "flying": "14 registered; 3-4 actively flying (P&P)",
+  "config": "Low wing, 5 seats, retractable gear, pressurized",
+  "construction": "Metal",
+  "engine": "Lycoming TIO-541-A1A, 310 hp, turbo",
+  "hp": 310,
+  "turbo": true,
+  "mtow": [
+   3680,
+   "F",
+   "https://en.wikipedia.org/wiki/Mooney_M22_Mustang",
+   "Jane's 1969-70"
+  ],
+  "empty": [
+   2440,
+   "F",
+   "https://en.wikipedia.org/wiki/Mooney_M22_Mustang",
+   ""
+  ],
+  "useful": [
+   1240,
+   "F",
+   "https://en.wikipedia.org/wiki/Mooney_M22_Mustang",
+   "derived"
+  ],
+  "fuel_gal": [
+   92,
+   "F",
+   "https://en.wikipedia.org/wiki/Mooney_M22_Mustang",
+   "capacity"
+  ],
+  "cruise": [
+   {
+    "ktas": 186,
+    "alt_ft": null,
+    "power_pct": 65,
+    "gph": null,
+    "grade": "F",
+    "src": "https://en.wikipedia.org/wiki/Mooney_M22_Mustang",
+    "note": "normal cruise, 214 mph converted",
+    "screen": true
+   }
+  ],
+  "range": {
+   "nm": 1297,
+   "basis": "45 min reserve",
+   "grade": "F",
+   "src": "https://en.wikipedia.org/wiki/Mooney_M22_Mustang"
+  },
+  "why_died_short": "Sold at a loss; helped bankrupt Mooney in 1969",
+  "why_died": "Produced and sold at a loss, contributing to Mooney's 1969 bankruptcy; dropped by Butler/Aerostar (Wikipedia; P&P).",
+  "rights": "TCDS A6SW Rev 6 (1 Dec 1973), status Current, holder line still \"Mooney Aircraft Corporation\" with no transfer recorded (FAA DRS, read 2026-10-24); the M20 TC 2A3 records every transfer to Mooney International. Who holds A6SW today is open. Mooney chain to Mooney International (US Financial LLC, 2020).",
+  "safety": "1975 fatal in-flight fire from a loose fuel-line nut (ASN).",
+  "ideas": [
+   "An early pressurised single for five, in the 1960s; the cost and the company's finances, not the concept, sank it."
+  ]
+ },
+ {
+  "id": "piper-comanche-400",
+  "name": "Piper PA-24-400 Comanche 400",
+  "seats": 4,
+  "origin": [
+   "b"
+  ],
+  "designer": "Piper Aircraft",
+  "years": "1964-66",
+  "built": "148",
+  "flying": "75 registered; ~25 flying (P&P)",
+  "config": "Low wing, 4 seats, retractable gear",
+  "construction": "All-metal",
+  "engine": "Lycoming IO-720, 400 hp (8 cyl)",
+  "hp": 400,
+  "turbo": false,
+  "mtow": [
+   3600,
+   "T",
+   "https://docs.northeastcomanche.org/tcds/1a15-rev_34.pdf",
+   ""
+  ],
+  "empty": [
+   2110,
+   "F",
+   "https://planeandpilotmag.com/1964-piper-comanche-400/",
+   ""
+  ],
+  "useful": [
+   1490,
+   "F",
+   "https://planeandpilotmag.com/1964-piper-comanche-400/",
+   ""
+  ],
+  "useful_fleet": [
+   1331,
+   "P",
+   "https://planeandpilotmag.com/1964-piper-comanche-400/",
+   "one test aircraft, 2,269 lb empty"
+  ],
+  "fuel_gal": [
+   124,
+   "T",
+   "https://docs.northeastcomanche.org/tcds/1a15-rev_34.pdf",
+   ""
+  ],
+  "cruise": [
+   {
+    "ktas": 185,
+    "alt_ft": null,
+    "power_pct": 75,
+    "gph": 22,
+    "grade": "F",
+    "src": "https://planeandpilotmag.com/1964-piper-comanche-400/",
+    "note": "Jane's via P&P",
+    "screen": true
+   },
+   {
+    "ktas": 180,
+    "alt_ft": null,
+    "power_pct": 65,
+    "gph": 19,
+    "grade": "F",
+    "src": "https://planeandpilotmag.com/1964-piper-comanche-400/",
+    "note": ""
+   },
+   {
+    "ktas": 171,
+    "alt_ft": null,
+    "power_pct": 55,
+    "gph": 16,
+    "grade": "F",
+    "src": "https://planeandpilotmag.com/1964-piper-comanche-400/",
+    "note": ""
+   }
+  ],
+  "range": {
+   "nm": 860,
+   "basis": "55%, 'w/reserve' unspecified, estimated",
+   "grade": "F",
+   "src": "https://planeandpilotmag.com/1964-piper-comanche-400/"
+  },
+  "why_died_short": "Heavy and thirsty; the 1972 flood destroyed the Comanche tooling",
+  "why_died": "Less payload than the Comanche B and a 400 hp burn; the whole line ended when the 1972 Agnes flood destroyed Lock Haven tooling (AvWeb).",
+  "rights": "TCDS 1A15 holder: Piper Aircraft, Inc.",
+  "safety": "Rear-cylinder cooling problems reported.",
+  "ideas": [
+   "A fast, strong four-seater with an eight-cylinder engine; heavy and thirsty, and its tooling was lost in the 1972 flood."
+  ]
+ },
+ {
+  "id": "rohr-2-175",
+  "name": "Rohr 2-175 (71X)",
+  "seats": 2,
+  "origin": [
+   "c"
+  ],
+  "designer": "Walt Mooney (designer), Rohr Industries",
+  "years": "1974 first flight; cancelled ~1975",
+  "built": "3 airframes (2 flying, 1 static)",
+  "flying": "none survive (scrapped)",
+  "config": "Low-wing delta, 2 seats, buried engine driving a shrouded pusher fan, folding wings and fin",
+  "construction": "Foam-cored stressed-skin fiberglass, no spar",
+  "engine": "Special high-rpm Lycoming, 150 hp",
+  "hp": 150,
+  "turbo": false,
+  "mtow": [
+   1450,
+   "F",
+   "http://www.aerofiles.com/_ro.html",
+   ""
+  ],
+  "cruise": [
+   {
+    "ktas": 152,
+    "alt_ft": null,
+    "power_pct": null,
+    "gph": null,
+    "grade": "E",
+    "src": "http://www.letletlet-warplanes.com/forum/miscellaneous-subjects/rohr-2-175/",
+    "note": "175 mph implied by the name (forum explanation)",
+    "screen": true
+   }
+  ],
+  "overall_override": "fail (1,450 lb gross weight)",
+  "why_died_short": "Cut in Rohr's 1975 retrenchment; airframes and drawings destroyed",
+  "why_died": "Cut in corporate belt-tightening after losses elsewhere; reasons 'nothing to do with the merits of the airplane' (de Piolenc 1987).",
+  "rights": "Rohr Inc., now a unit of Collins Aerospace (RTX). Patent US 3,931,943 expired 1993. See docs/rights (Elon, AER-3787).",
+  "safety": "Driveshaft coupling failure after takeoff; landed undamaged.",
+  "flags": [
+   "1,450 lb gross weight: a 1,000 lb useful load is physically out of reach; a revival would be a new design inspired by it"
+  ],
+  "ideas": [
+   "Low delta wing, engine buried in the fuselage driving a shrouded pusher fan, folding wing and fin so it fits a garage: the planform and layout Bill wants studied.",
+   "Sparless foam-cored fibreglass stressed skin, with the wing and underbody as the main structure. Scale-up and reconstructability studies: see the dossier."
+  ]
+ },
+ {
+  "id": "bellanca-skyrocket-ii",
+  "name": "Bellanca 19-25 Skyrocket II",
+  "seats": 6,
+  "origin": [
+   "c"
+  ],
+  "designer": "August T. Bellanca, Bellanca Aircraft Engineering",
+  "years": "1975 first flight; never certified",
+  "built": "1",
+  "flying": "0 flying; museum (Bellanca Airfield Museum, DE)",
+  "config": "Low wing, 6 seats, retractable gear, laminar airfoil (NACA 63-215)",
+  "construction": "Fiberglass over aluminum honeycomb, molded fuselage halves",
+  "engine": "Continental GTSIO-520-F, 435 hp, turbo, geared",
+  "hp": 435,
+  "turbo": true,
+  "mtow": [
+   4100,
+   "F",
+   "https://en.wikipedia.org/wiki/Bellanca_Skyrocket_II",
+   "Jane's 1976-77"
+  ],
+  "empty": [
+   2300,
+   "F",
+   "https://en.wikipedia.org/wiki/Bellanca_Skyrocket_II",
+   "prototype heavier than intended"
+  ],
+  "useful": [
+   1800,
+   "F",
+   "https://en.wikipedia.org/wiki/Bellanca_Skyrocket_II",
+   "derived"
+  ],
+  "cruise": [
+   {
+    "ktas": 222,
+    "alt_ft": 15000,
+    "power_pct": 65,
+    "gph": null,
+    "grade": "F",
+    "src": "https://en.wikipedia.org/wiki/Bellanca_Skyrocket_II",
+    "note": "Jane's, 255 mph converted",
+    "screen": true
+   }
+  ],
+  "range": {
+   "nm": 1273,
+   "basis": "not stated",
+   "grade": "F",
+   "src": "https://en.wikipedia.org/wiki/Bellanca_Skyrocket_II"
+  },
+  "why_died_short": "Money ran out amid founder-investor disputes before certification",
+  "why_died": "Funding ran out and Bellanca and the West Virginia investors disagreed on production; $20-25M to certify (Flying, Jan 1983).",
+  "rights": "Bellanca family / AviaBellanca (1996-97 SkyRocket III kit attempt); fate of molds after 1997 not found; airframe donated 2020.",
+  "safety": "No accidents found.",
+  "flags": [
+   "FAI C-1c/C-1d speed records 1975, 246-284 kt (measured, grade R)",
+   "NASA/Ohio State flight test measured CD0 = 0.016 (NTRS 19770054238)",
+   "no fuel capacity found, so the range cannot be built up"
+  ],
+  "ideas": [
+   "A laminar NACA 63-series wing and molded composite fuselage halves over honeycomb in the 1970s: about 230 kt with six seats."
+  ]
+ },
+ {
+  "id": "mooney-301",
+  "name": "Mooney 301",
+  "seats": 6,
+  "origin": [
+   "c"
+  ],
+  "designer": "Roy LoPresti, Mooney Aircraft",
+  "years": "1983 first flight; ~70 test hours",
+  "built": "1",
+  "flying": "none (wings cut off; fate unknown)",
+  "config": "Low wing, 6 seats, retractable gear, pressurized 5.0 psi, NLF wing",
+  "construction": "Metal",
+  "engine": "Lycoming TSIO-540, 360 hp, turbo",
+  "hp": 360,
+  "turbo": true,
+  "mtow": [
+   4000,
+   "F",
+   "https://mooneyevents.com/Mooney301.html",
+   ""
+  ],
+  "empty": [
+   2548,
+   "F",
+   "https://en.wikipedia.org/wiki/Mooney_301",
+   "Air International Jan 1984"
+  ],
+  "useful": [
+   1452,
+   "F",
+   "https://en.wikipedia.org/wiki/Mooney_301",
+   "design figure: 4,000 gross less 2,548 empty (Air International Airdata File, Jan 1984), not stated as weighed; Mooney's spec sheet claims 1,600"
+  ],
+  "fuel_gal": [
+   100,
+   "F",
+   "https://mooneyevents.com/Mooney301.html",
+   "capacity"
+  ],
+  "cruise": [
+   {
+    "ktas": 235,
+    "alt_ft": 25000,
+    "power_pct": 75,
+    "gph": 19.7,
+    "grade": "F",
+    "src": "https://mooneyevents.com/Mooney301.html",
+    "note": "design/marketing figure at 'max altitude', 75% (Mooney spec sheet), not a flight-test result. The prototype was 'slower than desired' with aero work unfinished; no as-flown cruise is published (Mooney Events; docs/rights/mooney-301.md)",
+    "screen": true,
+    "design": true
+   },
+   {
+    "ktas": 225,
+    "alt_ft": null,
+    "power_pct": null,
+    "gph": null,
+    "grade": "F",
+    "src": "https://en.wikipedia.org/wiki/Mooney_301",
+    "note": "259 mph cruise, Jane's 1983-84 pp. 444-445 (via Wikipedia); conditions not stated; also a design-era figure"
+   }
+  ],
+  "range": {
+   "nm": 986,
+   "basis": "cruise, 45 min reserve",
+   "grade": "F",
+   "src": "https://mooneyevents.com/Mooney301.html"
+  },
+  "why_died_short": "LTV takeover forced Mooney's sale; new owners wanted 300 kt; became the TBM 700",
+  "why_died": "Republic Steel's takeover by LTV forced the sale of Mooney. The prototype was about 200 lb over its projected weight and, with aero work unfinished, slower than desired; the new French-led owners wanted close to 300 kt, which needed a turbine, and moved the effort into the Socata joint venture that became the TBM 700 (Mooney Events; Plane & Pilot; docs/rights/mooney-301.md).",
+  "rights": "No TC; one prototype, scrapped. M30 data went to Socata in 1987; whether Mooney International or Daher holds it is not shown (docs/rights/mooney-301.md).",
+  "safety": "No accidents found.",
+  "useful_asflown": [
+   1252,
+   "E",
+   "https://mooneyevents.com/Mooney301.html",
+   "AERO lower-bound estimate: 1,452 less the prototype's ~200 lb weight overrun (Mooney Events; Wikipedia; docs/rights/mooney-301.md). If 2,548 lb already includes the overrun, ~1,400 (1,600 less 200). Never weighed in public record"
+  ],
+  "flags": [
+   "useful load and cruise are design figures; the only prototype was ~200 lb over projected weight and 'slower than desired', and no as-flown speed or weight is published (Mooney Events; docs/rights/mooney-301.md)",
+   "the published 986 nm range is a 45 min reserve figure; fuel and flow give 1,016 nm on that basis, consistent within 3%",
+   "1,000 nm plus 45 min at 235 kt and 19.7 gph needs 98.6 of 100 gal with no climb allowance; below 231 KTAS at the same flow (about 4 kt under the design figure) it cannot carry the reserve (at Jane's 225 kt it needs 102 gal)",
+   "235 KTAS at 270 hp, 25,000 ft, 4,000 lb implies CD0 ~0.019 (AR 9.0, e 0.80, prop eta 0.80; AERO, grade E), optimistic for a 1983 pressurized single; at CD0 +20% the same power gives ~220 KTAS, still a pass on speed",
+   "Bill recalls a few active flying examples. The FAA registry shows one M30 ever registered (N301MX, s/n 0000, cancelled 26 July 1989), none current, and no replica or amateur-built copy (registry download 2026-10-24, with an M22 positive control of 14). Likeliest explanation, an inference: the Mooney M22 Mustang (14 registered) or the 301's descendant, the TBM 700 family"
+  ],
+  "ideas": [
+   "A laminar wing, pressurisation and six seats on 360 hp, the concept behind the TBM 700.",
+   "Lesson: the prototype flew about 200 lb heavy and slower than planned; weight control was the failure, not the layout."
+  ]
+ },
+ {
+  "id": "pipistrel-panthera",
+  "name": "Pipistrel Panthera",
+  "seats": 4,
+  "origin": [
+   "c",
+   "d"
+  ],
+  "designer": "Pipistrel (Slovenia)",
+  "years": "2013 first flight; not certified (2026 status unverified)",
+  "built": "not found",
+  "flying": "sold as Experimental in the US",
+  "config": "Low wing, 4 seats, retractable trailing-link gear, gull-wing doors, airframe parachute",
+  "construction": "Carbon/glass/Kevlar composite",
+  "engine": "Lycoming IO-540-V4A5, 260 hp",
+  "hp": 260,
+  "turbo": false,
+  "mtow": [
+   2899,
+   "F",
+   "https://web.archive.org/web/20200726071257/https://www.pipistrel-aircraft.com/aircraft/cruising/panthera/",
+   ""
+  ],
+  "empty": [
+   1797,
+   "F",
+   "https://web.archive.org/web/20200726071257/https://www.pipistrel-aircraft.com/aircraft/cruising/panthera/",
+   ""
+  ],
+  "useful": [
+   1023,
+   "F",
+   "https://www.pipistrel-aircraft.com/products/panthera/",
+   "Flying 2021 gives 1,100"
+  ],
+  "fuel_gal": [
+   55.5,
+   "F",
+   "https://web.archive.org/web/20200726071257/https://www.pipistrel-aircraft.com/aircraft/cruising/panthera/",
+   "210 L; usable not stated"
+  ],
+  "cruise": [
+   {
+    "ktas": 194,
+    "alt_ft": 8000,
+    "power_pct": 75,
+    "gph": 14.8,
+    "grade": "F",
+    "src": "https://web.archive.org/web/20200726071257/https://www.pipistrel-aircraft.com/aircraft/cruising/panthera/",
+    "note": "",
+    "screen": true
+   }
+  ],
+  "range": {
+   "nm": 1460,
+   "basis": "not stated",
+   "grade": "F",
+   "src": "https://www.pipistrel-aircraft.com/products/panthera/"
+  },
+  "why_died_short": "Certification slipped for a decade; Textron bought Pipistrel in 2022",
+  "why_died": "Repeated certification slips, including an engine change when Lycoming would not certify the IO-390 for mogas (Wikipedia/AvWeb).",
+  "rights": "Textron eAviation (Pipistrel acquired 2022).",
+  "safety": "Not checked.",
+  "flags": [
+   "the 1,460 nm claim is reproduced exactly by 420 L (2 x 210 L) at the published flow, while the published 770 lb full-fuel payload implies ~42-55 gal; both cannot be true, and the fuel quantity needs a primary source"
+  ],
+  "ideas": [
+   "Retractable trailing-link gear, gull-wing doors, an airframe parachute and a low-drag carbon shape on 260 hp; the certification time it took is the lesson."
+  ]
+ },
+ {
+  "id": "grob-gf-200",
+  "name": "Grob GF 200",
+  "seats": 5,
+  "origin": [
+   "c",
+   "d"
+  ],
+  "designer": "Burkhart Grob, Grob (Germany)",
+  "years": "1991 first flight; one built",
+  "built": "1 (D-EFKH)",
+  "flying": "fate not found",
+  "config": "Low wing, T-tail, mid-mounted engine with shaft to a pusher prop, 5 seats",
+  "construction": "Composite, laminar wing",
+  "engine": "Lycoming TIO-540-AF1A, 270 hp, turbo",
+  "hp": 270,
+  "turbo": true,
+  "mtow": [
+   3197,
+   "F",
+   "https://en.wikipedia.org/wiki/Grob_GF_200",
+   "Jane's 1992-93"
+  ],
+  "fuel_gal": [
+   92.5,
+   "F",
+   "https://en.wikipedia.org/wiki/Grob_GF_200",
+   "350 L capacity"
+  ],
+  "cruise": [
+   {
+    "ktas": 240,
+    "alt_ft": null,
+    "power_pct": null,
+    "gph": null,
+    "grade": "F",
+    "src": "https://en.wikipedia.org/wiki/Grob_GF_200",
+    "note": "max cruise, 445 km/h converted, no conditions",
+    "screen": true
+   }
+  ],
+  "range": {
+   "nm": 1431,
+   "basis": "not stated",
+   "grade": "F",
+   "src": "https://en.wikipedia.org/wiki/Grob_GF_200"
+  },
+  "why_died_short": "Grob found no partner to fund production",
+  "why_died": "No production partner found; Grob moved to GF 250/300 concepts, also unfunded (Flight).",
+  "rights": "Grob Aerospace insolvent 2008 -> H3 Aerospace (Grob Aircraft, 2009) -> Helsing (2025). Whether GF 200 data transferred is not found.",
+  "safety": "Early engine cooling and noise problems; prop not visible from the cockpit.",
+  "flags": [
+   "empty weight not found, so useful load cannot be screened"
+  ],
+  "ideas": [
+   "A mid-mounted engine with a shaft to a pusher prop behind a T-tail and a laminar composite wing: the VK-30's idea done by a sailplane maker."
+  ]
+ },
+ {
+  "id": "evektor-supercobra",
+  "name": "Evektor VUT100-131i SuperCobra",
+  "seats": 4,
+  "origin": [
+   "c",
+   "d"
+  ],
+  "designer": "Evektor-Aerotechnik with Brno University of Technology (Czech)",
+  "years": "2004-07; never certified",
+  "built": "2 prototypes",
+  "flying": "not found",
+  "config": "Low wing, 4-5 seats, retractable gear",
+  "construction": "Metal/composite (sources conflict)",
+  "engine": "Lycoming IO-580-B1A, 315 hp",
+  "hp": 315,
+  "turbo": false,
+  "mtow": [
+   3197,
+   "F",
+   "https://www.evektor.com/cz/vut100-cobra",
+   "1,450 kg"
+  ],
+  "empty": [
+   1940,
+   "F",
+   "https://en.wikipedia.org/wiki/Evektor_VUT100_Cobra",
+   "880 kg"
+  ],
+  "useful": [
+   1213,
+   "F",
+   "https://www.evektor.com/cz/vut100-cobra",
+   "550 kg"
+  ],
+  "fuel_gal": [
+   90,
+   "F",
+   "https://www.evektor.com/cz/vut100-cobra",
+   ""
+  ],
+  "cruise": [
+   {
+    "ktas": 175,
+    "alt_ft": null,
+    "power_pct": null,
+    "gph": null,
+    "grade": "F",
+    "src": "https://www.evektor.com/cz/vut100-cobra",
+    "note": "max cruise, no conditions",
+    "screen": true
+   }
+  ],
+  "range": {
+   "nm": 1000,
+   "basis": "standard range, reserve not stated",
+   "grade": "F",
+   "src": "https://www.evektor.com/cz/vut100-cobra"
+  },
+  "why_died_short": "Funding ran out in 2007 before certification",
+  "why_died": "Development slowed for lack of funding in June 2007; certification targets missed (Flight; AvWeb).",
+  "rights": "Evektor-Aerotechnik / Brno University of Technology. No TC exists.",
+  "safety": "Not found.",
+  "ideas": [
+   "A four-to-five-seat retractable from a European light-aircraft maker, stopped by funding before certification."
+  ]
+ },
+ {
+  "id": "extra-ea-400",
+  "name": "Extra EA-400",
+  "seats": 6,
+  "origin": [
+   "d"
+  ],
+  "designer": "Walter Extra, Extra Flugzeugbau (Germany)",
+  "years": "1996-~2014",
+  "built": "27-28",
+  "flying": "26 flying (2017 owner); 9 on the US registry",
+  "config": "High wing, T-tail, 6 seats, retractable gear, pressurized",
+  "construction": "Fibre composite",
+  "engine": "Continental TSIOL-550-C, 350 hp takeoff / 325 hp continuous, turbo, liquid-cooled",
+  "hp": 325,
+  "turbo": true,
+  "mtow": [
+   4407,
+   "T",
+   "https://www.easa.europa.eu/en/downloads/7504/en",
+   ""
+  ],
+  "empty": [
+   2974,
+   "P",
+   "https://www.planeandpilotmag.com/?p=14773",
+   ""
+  ],
+  "useful": [
+   1347,
+   "P",
+   "https://planeandpilotmag.com/extra-400/",
+   ""
+  ],
+  "useful_fleet": [
+   1102,
+   "B",
+   "https://euroga.org/forums/extra-400/7297",
+   "owner: 'typically less than 500 kg'"
+  ],
+  "fuel_gal": [
+   106.7,
+   "T",
+   "https://www.easa.europa.eu/en/downloads/7504/en",
+   "404 L usable"
+  ],
+  "cruise": [
+   {
+    "ktas": 205,
+    "alt_ft": 18000,
+    "power_pct": 75,
+    "gph": 24,
+    "grade": "B",
+    "src": "https://www.euroga.org/forums/extra-400/7297?page=2",
+    "note": "owner report",
+    "screen": true
+   },
+   {
+    "ktas": 203,
+    "alt_ft": 18000,
+    "power_pct": 75,
+    "gph": null,
+    "grade": "F",
+    "src": "https://en.wikipedia.org/wiki/Extra_EA-400",
+    "note": ""
+   }
+  ],
+  "range": {
+   "nm": 1300,
+   "basis": "'over 1,300 nm', no reserve stated",
+   "grade": "P",
+   "src": "https://planeandpilotmag.com/the-extra-ea-400-an-underappreciated-pressurized-composite-transportation-plane-from-aerobatic-masters/"
+  },
+  "why_died_short": "Too costly to build (~16,000 labour hours); holders insolvent",
+  "why_died": "About 16,000 labour hours and a ~$1M price; the company ran into financial trouble (P&P 2022).",
+  "rights": "EASA TC holder: Aerospace Composites GmbH, Laupheim (Oct 2025). Earlier SST Flugtechnik (insolvent 2025); design rights to Jiangsu A-Star, China (2014).",
+  "safety": "Fatal accidents 1998 (first delivery), 2018 Oklahoma (5 killed), 2025 Switzerland (3 killed).",
+  "flags": [
+   "the only liquid-cooled certified piston here, so a natural precedent for a liquid-cooled Aeromomentum install"
+  ],
+  "ideas": [
+   "A high-wing, pressurised, six-seat composite single with a T-tail.",
+   "Lesson: about 16,000 labour hours per airplane made it unaffordable; the build method is the failure."
+  ]
+ },
+ {
+  "id": "socata-tb21",
+  "name": "Socata TB-21 Trinidad TC",
+  "seats": 4,
+  "origin": [
+   "d"
+  ],
+  "designer": "Socata (Aerospatiale), France",
+  "years": "1985-2012",
+  "built": "TB family 2,150; TB-21 count not found",
+  "flying": "not counted",
+  "config": "Low wing, 4-5 seats, retractable gear",
+  "construction": "All-metal",
+  "engine": "Lycoming TIO-540-AB1AD, 250 hp, turbo",
+  "hp": 250,
+  "turbo": true,
+  "mtow": [
+   3086,
+   "T",
+   "https://easa.europa.eu/cs/downloads/7156/en",
+   ""
+  ],
+  "empty": [
+   1915,
+   "P",
+   "https://peter2000.co.uk/aviation/tb20-experience/1991-03%20AOPA%20PILOT%20-%20TB21%20Cause%20Celebre.pdf",
+   "standard"
+  ],
+  "useful": [
+   1182,
+   "P",
+   "https://peter2000.co.uk/aviation/tb20-experience/1991-03%20AOPA%20PILOT%20-%20TB21%20Cause%20Celebre.pdf",
+   "standard"
+  ],
+  "useful_fleet": [
+   980,
+   "P",
+   "https://peter2000.co.uk/aviation/tb20-experience/1991-03%20AOPA%20PILOT%20-%20TB21%20Cause%20Celebre.pdf",
+   "heavily equipped test aircraft, 2,117 lb empty"
+  ],
+  "fuel_gal": [
+   86.2,
+   "T",
+   "https://easa.europa.eu/cs/downloads/7156/en",
+   ""
+  ],
+  "cruise": [
+   {
+    "ktas": 187,
+    "alt_ft": 25000,
+    "power_pct": 75,
+    "gph": 16.4,
+    "grade": "P",
+    "src": "https://peter2000.co.uk/aviation/tb20-experience/1991-03%20AOPA%20PILOT%20-%20TB21%20Cause%20Celebre.pdf",
+    "note": "factory-calculated, AOPA matched flow",
+    "screen": true
+   },
+   {
+    "ktas": 169,
+    "alt_ft": 25000,
+    "power_pct": 65,
+    "gph": 12.4,
+    "grade": "P",
+    "src": "https://peter2000.co.uk/aviation/tb20-experience/1991-03%20AOPA%20PILOT%20-%20TB21%20Cause%20Celebre.pdf",
+    "note": ""
+   },
+   {
+    "ktas": 141,
+    "alt_ft": 17000,
+    "power_pct": 55,
+    "gph": 11.1,
+    "grade": "P",
+    "src": "https://peter2000.co.uk/aviation/tb20-experience/1991-03%20AOPA%20PILOT%20-%20TB21%20Cause%20Celebre.pdf",
+    "note": ""
+   }
+  ],
+  "range": {
+   "nm": 1030,
+   "basis": "65%, with reserve",
+   "grade": "P",
+   "src": "https://planeandpilotmag.com/article/socata-1999-trinidad-tc/"
+  },
+  "why_died_short": "Sales never recovered after 9/11; ended by 2012",
+  "why_died": "Build-to-order after 9/11; all marketing and production ended by 2012 (Wikipedia citing Flight).",
+  "rights": "EASA TC holder: Daher Aircraft SAS. FAA TCDS A51EU.",
+  "safety": "Not researched.",
+  "ideas": [
+   "A turbocharged four-seater with a roomy cabin from a large European maker; ended by the post-2001 market, not the design."
+  ]
+ },
+ {
+  "id": "robin-hr100-285",
+  "name": "Robin HR100/285 Tiara",
+  "seats": 4,
+  "origin": [
+   "d"
+  ],
+  "designer": "Avions Pierre Robin, France",
+  "years": "~1972-76",
+  "built": "37 Tiaras",
+  "flying": "registry count not found",
+  "config": "Low wing, 4 seats, retractable gear",
+  "construction": "All-metal",
+  "engine": "Continental Tiara 6-285, 285 hp, geared",
+  "hp": 285,
+  "turbo": false,
+  "mtow": [
+   3086,
+   "T",
+   "https://www.easa.europa.eu/nl/downloads/7168/en",
+   ""
+  ],
+  "empty": [
+   1852,
+   "F",
+   "https://en.wikipedia.org/wiki/Robin_HR100",
+   "Jane's 1976-77"
+  ],
+  "useful": [
+   1234,
+   "F",
+   "https://en.wikipedia.org/wiki/Robin_HR100",
+   "derived"
+  ],
+  "fuel_gal": [
+   58.1,
+   "T",
+   "https://www.easa.europa.eu/nl/downloads/7168/en",
+   "main tanks, 220 L"
+  ],
+  "fuel_opt_gal": [
+   111.5,
+   "T",
+   "https://www.easa.europa.eu/nl/downloads/7168/en",
+   ""
+  ],
+  "cruise": [
+   {
+    "ktas": 158,
+    "alt_ft": null,
+    "power_pct": 65,
+    "gph": 15,
+    "grade": "F",
+    "src": "https://en.wikipedia.org/wiki/Robin_HR100",
+    "note": "Jane's speed; 15 gph from an aggregator (planephd), grade E",
+    "screen": true
+   }
+  ],
+  "range": {
+   "nm": 1266,
+   "basis": "economy cruise, reserve not stated",
+   "grade": "F",
+   "src": "https://en.wikipedia.org/wiki/Robin_HR100"
+  },
+  "why_died_short": "Its geared Continental Tiara engine failed in the market",
+  "why_died": "The Tiara engine family was a commercial failure (fuel burn in the 1973 oil crisis); no source states Robin's own reason.",
+  "rights": "EASA TC holder: CEAPR, Darois (from Apex, 2013).",
+  "safety": "Not found.",
+  "ideas": [
+   "An all-metal French four-seat retractable whose geared Tiara engine failed in service; the airframe was never the problem."
+  ]
+ },
+ {
+  "id": "ruschmeyer-r90",
+  "name": "Ruschmeyer R90-230RG",
+  "seats": 4,
+  "origin": [
+   "d"
+  ],
+  "designer": "Ruschmeyer Luftfahrttechnik, Germany",
+  "years": "1988-96",
+  "built": "26-30",
+  "flying": "not counted",
+  "config": "Low wing, 4 seats, retractable gear",
+  "construction": "Composite",
+  "engine": "Lycoming IO-540-C4D5, 230 hp (derated)",
+  "hp": 230,
+  "turbo": false,
+  "mtow": [
+   2977,
+   "T",
+   "https://www.easa.europa.eu/bg/downloads/17339/en",
+   ""
+  ],
+  "empty": [
+   1980,
+   "F",
+   "https://en.wikipedia.org/wiki/Ruschmeyer_R_90",
+   "Jane's 1993-94"
+  ],
+  "useful": [
+   997,
+   "F",
+   "https://en.wikipedia.org/wiki/Ruschmeyer_R_90",
+   "derived"
+  ],
+  "useful_fleet": [
+   875,
+   "P",
+   "https://www.aopa.org/news-and-media/all-news/2001/november/pilot/solaris-sigma-230",
+   "as tested"
+  ],
+  "fuel_gal": [
+   62.3,
+   "T",
+   "https://www.easa.europa.eu/bg/downloads/17339/en",
+   ""
+  ],
+  "cruise": [
+   {
+    "ktas": 165,
+    "alt_ft": 7000,
+    "power_pct": 75,
+    "gph": 14.5,
+    "grade": "P",
+    "src": "https://www.aopa.org/news-and-media/all-news/1994/november/pilot/ruschmeyer-r90-230-rg",
+    "note": "",
+    "screen": true
+   }
+  ],
+  "range": {
+   "nm": 600,
+   "basis": "IFR",
+   "grade": "P",
+   "src": "https://www.aopa.org/news-and-media/all-news/1994/november/pilot/ruschmeyer-r90-230-rg"
+  },
+  "why_died_short": "Ruschmeyer bankrupt 1996; Solaris revival never delivered",
+  "why_died": "Bankrupt June 1996; Solaris bought the assets in 1999 but no deliveries were found (Flying).",
+  "rights": "EASA TC holder: Bernd Hager, Hannover (2022).",
+  "safety": "Abrupt wing drop at the stall (AOPA).",
+  "ideas": [
+   "A certified German composite four-seater with a derated 230 hp engine; ended by its maker's bankruptcy, not by the design."
+  ]
+ },
+ {
+  "id": "siai-sf260",
+  "name": "SIAI-Marchetti SF.260",
+  "seats": 3,
+  "origin": [
+   "d"
+  ],
+  "designer": "Stelio Frati; Aviamilano / SIAI-Marchetti, Italy",
+  "years": "1964-2017",
+  "built": "976 (~180 civil)",
+  "flying": "<100 in US (2000)",
+  "config": "Low wing, 3 seats, retractable gear, aerobatic",
+  "construction": "All-metal",
+  "engine": "Lycoming O/IO-540, 260 hp",
+  "hp": 260,
+  "turbo": false,
+  "mtow": [
+   2645,
+   "T",
+   "https://www.easa.europa.eu/et/downloads/7060/en",
+   "F260E/F"
+  ],
+  "empty": [
+   1750,
+   "P",
+   "https://www.aopa.org/news-and-media/all-news/2000/july/pilot/siai-marchetti-aermacchi-sf-260",
+   ""
+  ],
+  "useful": [
+   895,
+   "P",
+   "https://www.aopa.org/news-and-media/all-news/2000/july/pilot/siai-marchetti-aermacchi-sf-260",
+   ""
+  ],
+  "fuel_gal": [
+   62,
+   "T",
+   "https://www.easa.europa.eu/et/downloads/7060/en",
+   ""
+  ],
+  "cruise": [
+   {
+    "ktas": 175,
+    "alt_ft": 6000,
+    "power_pct": 75,
+    "gph": 14,
+    "grade": "P",
+    "src": "https://www.aopa.org/news-and-media/all-news/2000/july/pilot/siai-marchetti-aermacchi-sf-260",
+    "note": "SF.260D flight manual",
+    "screen": true
+   },
+   {
+    "ktas": 165,
+    "alt_ft": 15000,
+    "power_pct": 59,
+    "gph": 12.7,
+    "grade": "P",
+    "src": "https://www.aopa.org/news-and-media/all-news/2000/july/pilot/siai-marchetti-aermacchi-sf-260",
+    "note": ""
+   }
+  ],
+  "range": {
+   "nm": 1040,
+   "basis": "55%, reserve not stated",
+   "grade": "P",
+   "src": "https://planeandpilotmag.com/siai-marchetti-sf260/"
+  },
+  "why_died_short": "Military trainer; civil sales a sideline; ended 2017",
+  "why_died": "No reason found; production ended in 2017.",
+  "rights": "EASA TC holder: Leonardo S.p.A. FAA TCDS A10EU.",
+  "safety": "Not researched.",
+  "ideas": [
+   "Aerobatic, fast and strong: 175 KTAS at 6,000 ft on 260 hp with three seats (flight manual), from a small, clean wing."
+  ]
+ },
+ {
+  "id": "bellanca-t250-aries",
+  "name": "Bellanca (Anderson-Greenwood) T-250 Aries",
+  "seats": 4,
+  "origin": [
+   "b"
+  ],
+  "designer": "Marvin Greenwood, Anderson, Greenwood & Co. (Houston)",
+  "years": "first flight 1973; TC A11SW 28 Jul 1976 (Model 51), Model 51A Jun 1980; production stopped with Bellanca receivership 1980",
+  "built": "4 flying airframes (prototype s/n 0001 + s/n 0003-0005) plus 1 static-test airframe",
+  "flying": "4 registered, all valid (FAA registry 2026-10-24); 3 standard + prototype as experimental",
+  "config": "Low wing single, 4-5 seats, T-tail stabilator, retractable tricycle gear",
+  "construction": "All-aluminum, flat skins and single curves, flush riveted; laminar constant-chord wing",
+  "engine": "Lycoming O-540-A4D5, 250 hp, carbureted (51A: IO-540-C4B5)",
+  "hp": 250,
+  "engines": 1,
+  "turbo": false,
+  "mtow": [
+   3150,
+   "T",
+   "https://drs.faa.gov/api/content/alf/5b718d89-7d42-46a1-b537-9a3fbe563124",
+   ""
+  ],
+  "empty": [
+   1850,
+   "F",
+   "https://aeroresourcesinc.com/uploads/197703-1977%20Bellanca%20Aries%20T-250.pdf",
+   "dry; Plane & Pilot 2010 lists 1,888"
+  ],
+  "useful": [
+   1300,
+   "F",
+   "https://aeroresourcesinc.com/uploads/197703-1977%20Bellanca%20Aries%20T-250.pdf",
+   "AOPA spec table; 1,262 using P&P empty"
+  ],
+  "fuel_gal": [
+   76,
+   "T",
+   "https://drs.faa.gov/api/content/alf/5b718d89-7d42-46a1-b537-9a3fbe563124",
+   "usable (80 total)"
+  ],
+  "cruise": [
+   {
+    "ktas": 180.7,
+    "alt_ft": 6500,
+    "power_pct": 73,
+    "gph": null,
+    "grade": "P",
+    "src": "https://aeroresourcesinc.com/uploads/197703-1977%20Bellanca%20Aries%20T-250.pdf",
+    "note": "AOPA Pilot flight check Mar 1977, prototype N51AG, 208 mph TAS, 22.5 inHg full throttle / 2300 rpm, partially loaded (weight not stated)",
+    "screen": true
+   },
+   {
+    "ktas": 180.7,
+    "alt_ft": null,
+    "power_pct": 75,
+    "gph": null,
+    "grade": "F",
+    "src": "https://aeroresourcesinc.com/uploads/197703-1977%20Bellanca%20Aries%20T-250.pdf",
+    "note": "manufacturer normal cruise 208 mph; altitude not stated"
+   },
+   {
+    "ktas": 173.8,
+    "alt_ft": null,
+    "power_pct": 65,
+    "gph": null,
+    "grade": "F",
+    "src": "https://aeroresourcesinc.com/uploads/197703-1977%20Bellanca%20Aries%20T-250.pdf",
+    "note": "manufacturer economy cruise 200 mph; altitude not stated"
+   }
+  ],
+  "range": {
+   "nm": 1017,
+   "basis": "published 1,170 statute miles at economy cruise with 45-min reserve (AOPA table labels the power 55%, its economy speed line says 65%); 990 sm (860 nm) at 75% with 45-min reserve; altitude not stated",
+   "grade": "F",
+   "src": "https://aeroresourcesinc.com/uploads/197703-1977%20Bellanca%20Aries%20T-250.pdf"
+  },
+  "why_died_short": "Bellanca, the intended producer, went into receivership in 1980 before production got going",
+  "why_died": "Anderson Greenwood took control of a struggling Bellanca to build the Aries at Alexandria MN. The Viking plant was nearly idle in 1977 and A-G still had to raise production capital (AOPA 1977). Bellanca went into receivership in 1980 (Plane & Pilot), reportedly drained by the Skyrocket II program. Only about 4 flying airframes were completed. No safety or technical failure is recorded.",
+  "rights": "TCDS A11SW (Current, Rev 2 1980): holder Anderson, Greenwood and Company, Houston, former holder Bellanca. The A-G valve business later passed via Keystone/Tyco/Pentair to Emerson (secondary sources, unverified), so the TC may sit dormant with a valve company.",
+  "safety": "One NTSB record in about 50 years: FTW83LA173 (1983, N51AG prototype), a taxi brake failure with gear collapse and no injuries. AOPA test noted narrow gear track and weak yaw damping.",
+  "ideas": [
+   "A laminar, constant-chord, flush-riveted metal wing on a fuselage built from flat and single-curve skins to cut production cost: speed (181 KTAS at 6,500 ft on 73% of 250 hp, AOPA 1977) from a design meant to be cheap to build.",
+   "A 250 hp, 1,300 lb useful, four-to-five-seat airframe that is a direct AM20T-class fit; its type certificate (A11SW) is still current and apparently dormant.",
+   "Lesson: it died with its producer (Bellanca's 1980 receivership), not on a technical or safety failure; one NTSB record in about 50 years, on four aircraft."
+  ]
+ },
+ {
+  "id": "alpi-pioneer-800-twin",
+  "name": "Alpi Aviation Pioneer 800 Twin",
+  "seats": 4,
+  "origin": [
+   "c",
+   "d"
+  ],
+  "designer": "Alpi Aviation srl, San Quirino, Italy (founder Corrado Rusalen per aerokurier 2022)",
+  "years": "Unpowered airframe shown AERO 2022; demonstrator with 2x Rotax 916iS shown AERO 2026; flight testing to start after AERO 2026",
+  "built": "1 demonstrator",
+  "flying": "Not confirmed; fliegermagazin (24 Apr 2026) says flight testing starts after AERO 2026",
+  "config": "Low wing light twin, 4 seats, retractable gear, ballistic parachute",
+  "construction": "Wood primary structure; fuselage with carbon shell, wings GRP-laminated (fliegermagazin)",
+  "engine": "2x Rotax 916iS, 160 hp takeoff",
+  "hp": 160,
+  "engines": 2,
+  "turbo": true,
+  "mtow": [
+   2976,
+   "F",
+   "https://www.fliegermagazin.de/news/aero-2026-alpi-aviation-stellt-pioneer-800-twin-aus/",
+   "derived: empty 735 kg + useful 615 kg = 1350 kg, converted; MTOW not stated directly"
+  ],
+  "empty": [
+   1620,
+   "F",
+   "https://www.fliegermagazin.de/news/aero-2026-alpi-aviation-stellt-pioneer-800-twin-aus/",
+   "'rund 735 Kilogramm', converted; manufacturer figure via fliegermagazin"
+  ],
+  "useful": [
+   1356,
+   "F",
+   "https://www.fliegermagazin.de/news/aero-2026-alpi-aviation-stellt-pioneer-800-twin-aus/",
+   "615 kg, converted; manufacturer figure via fliegermagazin"
+  ],
+  "fuel_gal": null,
+  "cruise": [
+   {
+    "ktas": 162,
+    "alt_ft": 0,
+    "power_pct": 75,
+    "gph": null,
+    "grade": "F",
+    "src": "https://www.fliegermagazin.de/news/aero-2026-alpi-aviation-stellt-pioneer-800-twin-aus/",
+    "note": "Manufacturer claim via fliegermagazin: 162 kt at MSL, 75% power; weight not stated; knots assumed TAS; unflown prototype claim",
+    "screen": false
+   },
+   {
+    "ktas": 200,
+    "alt_ft": 15000,
+    "power_pct": 75,
+    "gph": null,
+    "grade": "F",
+    "src": "https://www.fliegermagazin.de/news/aero-2026-alpi-aviation-stellt-pioneer-800-twin-aus/",
+    "note": "Manufacturer claim via fliegermagazin: 200 kt at FL150, 75% power; weight not stated; unflown prototype claim. Aviation et Pilote video (YouTube, 4 May 2026) instead says up to 200 kt at FL100: conflict",
+    "screen": false
+   }
+  ],
+  "why_died_short": "Prototype/kit in development; not dead",
+  "why_died": "Shown on Alpi stand B3-207 at AERO 2026. Planned as an Experimental kit in Europe, aiming for FAA MOSAIC (light-sport) approval in the US. Factory-built from EUR 600,000 net; kit price not published (fliegermagazin). Earlier plan (2022): 2x Rotax 912ULS/915iS, about EUR 350,000, first deliveries 2024 (aerokurier 2022). That timeline slipped.",
+  "rights": "Current OEM design (Alpi Aviation)",
+  "safety": "No service history; not flight-tested as of AERO 2026 per fliegermagazin",
+  "analog_of": "wing-derringer",
+  "ideas": [
+   "The closest current analog of the Derringer idea (a small, fast, retractable light twin), on two Rotax 916iS: shown at AERO 2026, unflown at the show."
+  ]
+ },
+ {
+  "id": "tecnam-p2006t-ng",
+  "name": "Tecnam P2006T NG",
+  "seats": 4,
+  "origin": [
+   "d"
+  ],
+  "designer": "Costruzioni Aeronautiche Tecnam SpA, Italy",
+  "years": "NG launched AERO 2024; EASA TC (Section B, P2006T NG) 19 Feb 2025; FAA certification expected Q4 2026",
+  "built": null,
+  "flying": "In delivery in multiple markets (Tecnam, Flying Jan 2026)",
+  "config": "High wing light twin, 4 seats, retractable gear",
+  "construction": "Metal (aluminium) airframe",
+  "engine": "2x Rotax 912 iSc3 Sport, 100 hp",
+  "hp": 100,
+  "engines": 2,
+  "turbo": false,
+  "mtow": [
+   2844,
+   "T",
+   "https://www.easa.europa.eu/en/downloads/7264/en",
+   "1290 kg, EASA TCDS A.185 Issue 19 (20 Apr 2026), Section B P2006T NG; converted"
+  ],
+  "empty": [
+   1940,
+   "F",
+   "https://www.tecnam.com/aircraft/p2006t-ng/",
+   "880 kg standard empty weight, converted. Tecnam site blocks scripted fetch (HTTP 520); read via WebFetch"
+  ],
+  "useful": [
+   904,
+   "F",
+   "https://www.tecnam.com/aircraft/p2006t-ng/",
+   "410 kg, factory figure, converted"
+  ],
+  "fuel_gal": [
+   52.8,
+   "T",
+   "https://www.easa.europa.eu/en/downloads/7264/en",
+   "capacity 200 L (194 L usable per TCDS), converted"
+  ],
+  "cruise": [
+   {
+    "ktas": 148,
+    "alt_ft": null,
+    "power_pct": null,
+    "gph": 7.4,
+    "grade": "F",
+    "src": "https://www.tecnam.com/aircraft/p2006t-ng/",
+    "note": "Factory max cruise speed 148 kt / 274 km/h; altitude, power and weight not stated; assumed TAS. gph = 2 x 3.7 USG/h factory fuel consumption (power not stated)",
+    "screen": false
+   }
+  ],
+  "range": {
+   "nm": 930,
+   "basis": "Factory range 930 nm (1722 km); reserve, altitude, power not stated; nautical miles",
+   "grade": "F",
+   "src": "https://www.tecnam.com/aircraft/p2006t-ng/"
+  },
+  "why_died_short": "In production; not dead",
+  "why_died": "Shown at AERO 2025 by German dealer GM Aviation (stand A4-319; fliegermagazin 9 Apr 2025) and at AERO 2026 on Tecnam's stand (aerokurier 28 Apr 2026). Orders for 4 P2006T NG were announced at AERO 2026 (afm.aero). US/Canada launch Jan 2026; FAA certification expected Q4 2026. Price not published.",
+  "rights": "Current OEM type (Tecnam), EASA TC A.185",
+  "safety": "Not checked here",
+  "analog_of": "wing-derringer",
+  "ideas": [
+   "Proof that a certified light twin on two 100 hp Rotax engines sells, as a trainer; far below the survey's speed floor."
+  ]
+ },
+ {
+  "id": "diamond-da42-vi",
+  "name": "Diamond DA42-VI (similar-engine comparison)",
+  "seats": 4,
+  "origin": [
+   "d"
+  ],
+  "designer": "Diamond Aircraft Industries, Wiener Neustadt, Austria",
+  "years": "Current production; new DA42-VI demonstrator debuted publicly at AERO 2026",
+  "built": null,
+  "flying": "In production",
+  "config": "Low wing light twin, 4 seats, retractable gear",
+  "construction": "Composite",
+  "engine": "2x Austro Engine AE 300 turbocharged 2.0 L diesel, 168 hp",
+  "hp": 168,
+  "engines": 2,
+  "turbo": true,
+  "mtow": [
+   4407,
+   "F",
+   "https://www.diamondaircraft.com/en/private-owners/aircraft/da42/tech-specs/",
+   "1,999 kg, factory"
+  ],
+  "empty": [
+   3131,
+   "F",
+   "https://www.diamondaircraft.com/en/private-owners/aircraft/da42/tech-specs/",
+   "1,420 kg 'without options', factory"
+  ],
+  "useful": [
+   1276,
+   "F",
+   "https://www.diamondaircraft.com/en/private-owners/aircraft/da42/tech-specs/",
+   "579 kg 'Max. useful load', factory"
+  ],
+  "fuel_gal": [
+   76.4,
+   "F",
+   "https://www.diamondaircraft.com/en/private-owners/aircraft/da42/tech-specs/",
+   "capacity 289 L incl. 100 L auxiliary tank (main 189 L = 50.0 gal); factory conversion"
+  ],
+  "cruise": [
+   {
+    "ktas": 175,
+    "alt_ft": 16000,
+    "power_pct": 75,
+    "gph": null,
+    "grade": "F",
+    "src": "https://www.diamondaircraft.com/en/private-owners/aircraft/da42/tech-specs/",
+    "note": "Cruise at 75%, 16,000 ft, MTOM, ISA (324 km/h TAS)",
+    "screen": true
+   },
+   {
+    "ktas": 190,
+    "alt_ft": 16000,
+    "power_pct": null,
+    "gph": null,
+    "grade": "F",
+    "src": "https://www.diamondaircraft.com/en/private-owners/aircraft/da42/tech-specs/",
+    "note": "Max cruising speed at MCP, 16,000 ft, MTOM, ISA (352 km/h TAS)",
+    "screen": false
+   }
+  ],
+  "range": {
+   "nm": 1100,
+   "basis": "60% power, 12,000 ft, incl. auxiliary tank, incl. climb, no reserves; nautical. Max range 1,225 nm at FL180, 50% power, no reserves. Fuel burn at 60% = 10.4 US gal/h total",
+   "grade": "F",
+   "src": "https://www.diamondaircraft.com/en/private-owners/aircraft/da42/tech-specs/"
+  },
+  "why_died_short": "In production; not dead",
+  "why_died": "Similar-engine comparator, not Rotax. The DA42-VI demonstrator debuted at AERO 2026 (Diamond release 7 May 2026). At AERO 2025 Diamond showed only a DA50 and a DA62; no DA42 was named (Diamond Diary 29 Apr 2025; fliegermagazin 9 Apr 2025). Price not published.",
+  "rights": "Current OEM type (Diamond)",
+  "safety": "Not checked here",
+  "analog_of": "wing-derringer",
+  "ideas": [
+   "A light twin on two automotive-derived 2.0 L turbodiesels: the nearest certified precedent for twin automotive-derived engines, and a benchmark for an Aeromomentum twin."
+  ]
+ },
+ {
+  "id": "atp-at6-twin-pse",
+  "name": "AT-P Aviation AT-6 Twin PSE",
+  "seats": 4,
+  "origin": [
+   "c",
+   "d"
+  ],
+  "designer": "Tomasz Antoniewski / AT-P Aviation, Mielec, Poland",
+  "years": "Work began 2012, restarted 2022 (PARP grant); first flight March 2026; flight test to Nov 2026",
+  "built": "1 prototype",
+  "flying": "Prototype in flight test (2026)",
+  "config": "Three-surface (canard + conventional tail) light twin, 4 seats, ballistic parachute; gear type not confirmed in sources fetched",
+  "construction": "All-metal (aluminium)",
+  "engine": "2x Rotax 915 iS, 141 hp (planned upgrade to 916 iS, 160 hp)",
+  "hp": 141,
+  "engines": 2,
+  "turbo": true,
+  "mtow": null,
+  "empty": null,
+  "useful": null,
+  "fuel_gal": null,
+  "cruise": [
+   {
+    "ktas": 160,
+    "alt_ft": null,
+    "power_pct": null,
+    "gph": null,
+    "grade": "F",
+    "src": "https://generalaviationnews.com/2026/03/24/flight-tests-begin-on-new-twin-trainer/",
+    "note": "'Initial technical specifications' (designer target); altitude, power and weight not stated; unclear whether TAS",
+    "screen": false
+   }
+  ],
+  "range": {
+   "nm": 935,
+   "basis": "Initial specification; reserve, altitude, power not stated; nautical (nm)",
+   "grade": "F",
+   "src": "https://generalaviationnews.com/2026/03/24/flight-tests-begin-on-new-twin-trainer/"
+  },
+  "why_died_short": "Prototype in flight test; not dead",
+  "why_died": "Targets FAA MOSAIC light-sport category; US debut aimed at SUN 'n FUN / Oshkosh 2027 (GAN 24 Mar 2026). Not found at AERO 2025 or AERO 2026.",
+  "rights": "Current developer design (AT-P Aviation)",
+  "safety": "No service history",
+  "analog_of": "wing-derringer",
+  "ideas": [
+   "A four-seat Rotax 915 light-twin prototype in flight test (2026)."
+  ]
+ },
+ {
+  "id": "jabiru-j432",
+  "name": "Jabiru J432 Twin",
+  "seats": 4,
+  "origin": [
+   "a",
+   "d"
+  ],
+  "designer": "Jabiru Aircraft, Bundaberg, Australia",
+  "years": "First flew 2013; US debut EAA AirVenture July 2026",
+  "built": "~3 known (one each in Australia, South Africa, USA per AOPA)",
+  "flying": "Yes (AOPA 23 Jul 2026)",
+  "config": "Light twin, 4 seats, two engine pods on the nose, fixed-pitch props; derived from J230/J430 airframe",
+  "construction": "Composite (Jabiru family); not re-verified here",
+  "engine": "2x Jabiru 2200 GEN4, 80 hp (AOPA says 85 hp)",
+  "hp": 80,
+  "engines": 2,
+  "turbo": false,
+  "mtow": [
+   1676,
+   "F",
+   "https://jabiru.aero/j432-twin-ultimate/",
+   "760 kg (Experimental), converted"
+  ],
+  "empty": [
+   1058,
+   "F",
+   "https://jabiru.aero/j432-twin-ultimate/",
+   "480 kg, converted"
+  ],
+  "useful": [
+   617,
+   "F",
+   "https://jabiru.aero/j432-twin-ultimate/",
+   "280 kg 'Usable weight' (Experimental), converted"
+  ],
+  "fuel_gal": [
+   35.7,
+   "F",
+   "https://jabiru.aero/j432-twin-ultimate/",
+   "capacity 135 L, converted"
+  ],
+  "cruise": [
+   {
+    "ktas": 125,
+    "alt_ft": null,
+    "power_pct": null,
+    "gph": null,
+    "grade": "F",
+    "src": "https://jabiru.aero/j432-twin-ultimate/",
+    "note": "'125 knots TAS'; altitude, power and weight not stated; fuel burn 30-32 L/h total (7.9-8.5 US gal/h, converted)",
+    "screen": false
+   }
+  ],
+  "range": {
+   "nm": 550,
+   "basis": "Factory range 550 nm, endurance 4.5 h; reserve not stated; nautical",
+   "grade": "F",
+   "src": "https://jabiru.aero/j432-twin-ultimate/"
+  },
+  "why_died_short": "Low-volume kit/factory; not dead",
+  "why_died": "Similar-small-engine comparator (Jabiru, not Rotax). Sold as factory-built, kit or builder-assist; US importer seeking light-sport category certification under Part 22 (AOPA). Not found at AERO 2025 or AERO 2026. Price not published.",
+  "rights": "Current OEM design (Jabiru)",
+  "safety": "Not checked here",
+  "analog_of": "wing-derringer",
+  "ideas": [
+   "A low-cost kit twin on two small Jabiru engines; below the speed floor."
+  ]
+ },
+ {
+  "id": "sling-twin",
+  "name": "Sling Twin (MOSAIC light twin, working name)",
+  "seats": 4,
+  "origin": [
+   "c",
+   "d"
+  ],
+  "designer": "Sling Aircraft, South Africa",
+  "years": "Announced July 2026; aims to show at EAA AirVenture 2027",
+  "built": "0",
+  "flying": "No",
+  "config": "Low wing light twin, 4 seats as LSA / 6 seats as Experimental Amateur-Built, retractable tricycle gear, whole-airplane parachute (renderings)",
+  "construction": null,
+  "engine": "2x Rotax 916 iS, 160 hp takeoff / 137 hp continuous",
+  "hp": 160,
+  "engines": 2,
+  "turbo": true,
+  "mtow": null,
+  "empty": null,
+  "useful": null,
+  "fuel_gal": null,
+  "cruise": [],
+  "why_died_short": "Concept; not dead",
+  "why_died": "Concept announced 25-31 Jul 2026 (AvBrief, AeroTime), after AERO 2026. Not shown at AERO. Sling has not disclosed performance, dimensions, price or first-flight timing.",
+  "rights": "Current OEM concept (Sling)",
+  "safety": "None",
+  "analog_of": "wing-derringer",
+  "ideas": [
+   "A MOSAIC-era light twin concept on two Rotax 916iS; nothing flown or published to screen."
+  ]
+ }
+]
