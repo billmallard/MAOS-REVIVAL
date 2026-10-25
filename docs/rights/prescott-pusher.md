@@ -182,7 +182,22 @@ AERO owns the full "why it died" question.
 2. **What SDASM's custody means.** The finding guide says "Copyright: SDASM"
    in its cataloguing block, and "Some materials may be subject to copyright
    restrictions" (P). Did the 2021 donor have the rights to transfer, and did
-   they? What use does SDASM permit of copies?
+   they? SDASM's own published terms (added 2026-10-25) set the frame:
+   - "SDASM can not grant permission for the use of images/film known not to
+     belong to SDASM". "The ultimate responsibility for confirming the copyright
+     holder ... lies with the potential user".
+   - It "does not necessarily hold the full copyrights to all items in its
+     collection". It "reserves the right to require permission and/or a fee for
+     use of images/film it holds regardless of copyright status".
+   - Non-commercial academic use is free with credit. Publication needs SDASM's
+     approval, with fees; non-profit rates are available on proof of status
+     (SDASM "Usage & Reproduction" page, P).
+   - The collection policy adds: "Conditions related to copyrights and
+     royalties will be observed for reproductions" (SDASM Collection Management
+     Policy, P).
+   - So SDASM can supply copies and charge for them, but it cannot license the
+     Prescott design. That still needs the copyright owner, which is why the
+     "Bill of Sale" folder matters.
 3. **Using the data for a new design.** If the copyright owner cannot be found,
    what may a new design take from the loads reports and structural test results
    (facts and data) as opposed to the drawings themselves (expression)? Can the
@@ -191,7 +206,10 @@ AERO owns the full "why it died" question.
 
 ## Open items
 
-- Kansas Secretary of State history for Prescott Aeronautical Corporation and
+- Kansas Secretary of State history (not reachable by script: the state's search
+  and OpenCorporates both sit behind bot checks, and driving a browser
+  against a government site is out of bounds here) for Prescott Aeronautical
+  Corporation and
   for Pusher Aircraft Inc (Wichita).
 - The October 1988 Australian buyer: its name, and whether the sale closed.
 - Federal bankruptcy record, D. Kan., 1989-1991. CourtListener returns no
@@ -221,6 +239,10 @@ AERO owns the full "why it died" question.
   https://outerzone.co.uk/plan_details.asp?ID=14320
 - FAA Aircraft Registry, ReleasableAircraft.zip, downloaded 2026-10-24 (P).
   https://registry.faa.gov/database/ReleasableAircraft.zip
+- San Diego Air & Space Museum, "Usage & Reproduction" page and Collection
+  Management Policy, read 2026-10-25 (P).
+  https://sandiegoairandspace.org/research/usage-reproduction
+  https://sandiegoairandspace.org/pdf/collection_management_policy.pdf
 - Kitplanes, "25th Anniversary: Engines of Change", Marc Cook, 17 March 2009,
   quoting its October 1988 issue (S).
   https://www.kitplanes.com/25th-anniversary-engines-of-change/

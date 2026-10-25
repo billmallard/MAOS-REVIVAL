@@ -85,7 +85,8 @@ AG-14). Positive control: "Model" = M22 returns A6SW (P).
   Greenwood among its valve brands (emerson.com, P).
 - **The chain in SEC filings (added 2026-10-25, after Bill picked the Aries).**
   - Tyco's subsidiary lists (10-K Exhibit 21) name **"Anderson, Greenwood &
-    Co."**, Delaware, in every annual filing from 2001 to 2008 (SEC EDGAR, P).
+    Co."** in every annual filing from 2001 to 2008 (the 2008 list gives its
+    state as Delaware) (SEC EDGAR, P).
     So the holder of record named on TCDS A11SW still existed as a Tyco
     subsidiary until at least November 2008.
   - Tyco's 2009 list no longer names it. That list is complete enough to
