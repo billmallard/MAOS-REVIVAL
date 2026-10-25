@@ -42,7 +42,7 @@ and the Cozy MKIV as the reference.
    the light end reaches 1,000 lb, and the AM20T is 54-71 lb heavier than the
    O-360, in the tail cone, where AERO puts the ballast at 1.3 lb per lb. Saving
    weight aft avoids 20-55 lb of that ballast. Gross weight, a STRUCTURES question,
-   and balance are still the levers that decide it.
+   and balance are still the levers that decide how close it gets.
 2. **Aries (Bill's pick): rebuild empty weight 1,780-2,000 lb.** Useful load is 1,150-1,370 lb
    against the factory 1,300; with our engine credit, empty is 1,690-1,940 lb.
    Modern manufacturing doesn't make it much lighter. What it changes is cost:
