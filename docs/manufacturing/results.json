@@ -1,0 +1,146 @@
+{
+ "prescott-pusher": {
+  "name": "Prescott Pusher",
+  "mtow": 2400,
+  "stage3_empty": 1550,
+  "stage3_useful": 850,
+  "airframe_delta_light": -175,
+  "airframe_delta_heavy": -35,
+  "empty_light": 1380,
+  "empty_heavy": 1630,
+  "useful_light": 770,
+  "useful_heavy": 1020,
+  "engine_delta_lb": [
+   54,
+   71
+  ],
+  "empty_light_eng": 1430,
+  "empty_heavy_eng": 1700
+ },
+ "bellanca-t250-aries": {
+  "name": "Bellanca T-250 Aries",
+  "mtow": 3150,
+  "stage3_empty": 1850,
+  "stage3_useful": 1300,
+  "airframe_delta_light": -75,
+  "airframe_delta_heavy": 50,
+  "empty_light": 1780,
+  "empty_heavy": 2000,
+  "useful_light": 1150,
+  "useful_heavy": 1370,
+  "engine_delta_lb": [
+   -81,
+   -63
+  ],
+  "empty_light_eng": 1690,
+  "empty_heavy_eng": 1940
+ },
+ "express-2000": {
+  "name": "Wheeler Express",
+  "mtow": 2895,
+  "stage3_empty": 1994,
+  "stage3_useful": 901,
+  "airframe_delta_light": -225,
+  "airframe_delta_heavy": -20,
+  "empty_light": 1770,
+  "empty_heavy": 2030,
+  "useful_light": 865,
+  "useful_heavy": 1125,
+  "engine_delta_lb": [
+   -6,
+   23
+  ],
+  "empty_light_eng": 1760,
+  "empty_heavy_eng": 2050
+ },
+ "lancair-iv-p": {
+  "name": "Lancair IV-P",
+  "mtow": 3550,
+  "stage3_empty": 2200,
+  "stage3_useful": 1350,
+  "airframe_delta_light": -55,
+  "airframe_delta_heavy": 25,
+  "empty_light": 2140,
+  "empty_heavy": 2360,
+  "useful_light": 1190,
+  "useful_heavy": 1410,
+  "engine_delta_lb": [
+   -242,
+   -150
+  ],
+  "empty_light_eng": 1900,
+  "empty_heavy_eng": 2220
+ },
+ "meyers-200d": {
+  "name": "Meyers 200D (re-derivation)",
+  "mtow": 3000,
+  "stage3_empty": 1940,
+  "stage3_useful": 1060,
+  "airframe_delta_light": -95,
+  "airframe_delta_heavy": 60,
+  "empty_light": 1840,
+  "empty_heavy": 2160,
+  "useful_light": 840,
+  "useful_heavy": 1160,
+  "engine_delta_lb": [
+   -133,
+   -105
+  ],
+  "empty_light_eng": 1710,
+  "empty_heavy_eng": 2060
+ },
+ "mooney-301": {
+  "name": "Mooney 301",
+  "mtow": 4000,
+  "stage3_empty": 2548,
+  "stage3_useful": 1452,
+  "airframe_delta_light": -65,
+  "airframe_delta_heavy": 50,
+  "empty_light": 2480,
+  "empty_heavy": 2700,
+  "useful_light": 1300,
+  "useful_heavy": 1520,
+  "engine_delta_lb": [
+   -293,
+   -205
+  ],
+  "empty_light_eng": 2190,
+  "empty_heavy_eng": 2500
+ },
+ "cessna-p210n": {
+  "name": "Cessna P210N",
+  "mtow": 4000,
+  "stage3_empty": 2342,
+  "stage3_useful": 1658,
+  "airframe_delta_light": 0,
+  "airframe_delta_heavy": 0,
+  "empty_light": 2340,
+  "empty_heavy": 2430,
+  "useful_light": 1570,
+  "useful_heavy": 1660,
+  "engine_delta_lb": [
+   -178,
+   -150
+  ],
+  "empty_light_eng": 2160,
+  "empty_heavy_eng": 2280
+ },
+ "cozy-mkiv": {
+  "name": "Cozy MKIV (reference)",
+  "mtow": 2050,
+  "stage3_empty": 1179,
+  "stage3_useful": 871,
+  "airframe_delta_light": -150,
+  "airframe_delta_heavy": -65,
+  "empty_light": 1030,
+  "empty_heavy": 1110,
+  "useful_light": 940,
+  "useful_heavy": 1020,
+  "engine_delta_lb": [
+   18,
+   57
+  ],
+  "empty_light_eng": 1050,
+  "empty_heavy_eng": 1170
+ }
+}

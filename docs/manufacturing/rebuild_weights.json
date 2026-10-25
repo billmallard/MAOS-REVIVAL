@@ -1,0 +1,436 @@
+{
+ "note": "Stage 4 rebuild empty-weight inputs (AER-3784, MANUFACTURING, 2026-10-24; revised to the stage 3 revision 2 shortlist). Signed deltas in lb: light = lightest credible outcome, heavy = heaviest. Grades as in the long list: F factory, T TCDS, P pilot report or flight test, B builder or registry data, R measured record, E our estimate. The engine swap is not among the items; engine_delta_lb is [most saving, least saving] from our per-variant engine check (docs/MANUFACTURING.md#engine-check), on AERO's Aeromomentum rule (dry x 1.25 + 35 lb). Laminate arithmetic behind the composite items is in docs/MANUFACTURING.md#how-the-composite-deltas-are-built.",
+ "designs": {
+  "prescott-pusher": {
+   "name": "Prescott Pusher",
+   "mtow": 2400,
+   "stage3_empty": 1550,
+   "base": {
+    "low": 1550,
+    "high": 1661,
+    "stage3_grade": "F",
+    "basis": "1,550 published spec (F, Prescott 2007); 1,661 for the one weighed builder aircraft, from its 739 lb useful at 2,400 lb gross (B, AERO's stage 3 dossier). The 1986 design target was 1,220 lb (P, AOPA Pilot Mar 1986)",
+    "grade": "F/B"
+   },
+   "engine_delta_lb": [
+    54,
+    71
+   ],
+   "items": [
+    {
+     "item": "Fuselage shells: non-structural fibreglass, 3-8 plies, riveted to bulkheads over the 4130 cage -> infused carbon sandwich shells (cage kept)",
+     "light": -70,
+     "heavy": -25,
+     "grade": "E",
+     "basis": "167 ft2 fuselage wetted (AERO OpenVSP). Glass at 3-8 plies is 0.35-0.92 lb/ft2 (58-154 lb); a non-structural carbon sandwich is 0.20-0.30 lb/ft2 (33-50 lb)"
+    },
+    {
+     "item": "Wing: 2024 press-brake C-spar with extrusion caps, ribs, stretch-formed leading edges and flush-riveted skins (110.8 ft2) -> molded carbon wing",
+     "light": -60,
+     "heavy": -20,
+     "grade": "E",
+     "basis": "Metal GA wing about 2.0-2.5 lb/ft2 of exposed planform (Raymer, approximate weight build-up), about 190-240 lb; a molded carbon wing saves 10-25% (E)"
+    },
+    {
+     "item": "T-tail: aluminium -> carbon",
+     "light": -15,
+     "heavy": -5,
+     "grade": "E",
+     "basis": "Tail areas not published; about 40-60 lb of tail (E)"
+    },
+    {
+     "item": "Panel: 1980s avionics -> EFIS",
+     "light": -30,
+     "heavy": -10,
+     "grade": "E",
+     "basis": "1980s panel"
+    },
+    {
+     "item": "EFI engine: backup battery and bus",
+     "light": 5,
+     "heavy": 10,
+     "grade": "E",
+     "basis": "One ECU"
+    },
+    {
+     "item": "Pusher radiator duct and cowl for a liquid-cooled engine aft of the cabin",
+     "light": -5,
+     "heavy": 15,
+     "grade": "E",
+     "basis": "Duct may add; the air-cooled baffles come out"
+    },
+    {
+     "item": "Replace the 4130 cage too: structural carbon monocoque fuselage",
+     "light": -70,
+     "heavy": -30,
+     "grade": "E",
+     "option": true,
+     "basis": "Cage about 90-140 lb for a four-seat tube fuselage (E); a load-carrying shell adds most of it back; loses the cage's crash protection; needs STRUCTURES"
+    },
+    {
+     "item": "Nose ballast avoided by the aft savings (tail and the aft part of the shell), AM20T case only",
+     "light": -55,
+     "heavy": -20,
+     "grade": "E",
+     "option": true,
+     "basis": "AERO: each pound behind the cabin needs about 1.3 lb of nose ballast. Aft savings of about 15-43 lb (tail, plus about 40% of the shell) avoid about 20-55 lb of the 82 lb AERO carries for the AM20T"
+    },
+    {
+     "item": "Re-derived for about 2,700 lb gross with 90 gal (AERO's re-derivation case)",
+     "light": 30,
+     "heavy": 85,
+     "grade": "E",
+     "option": true,
+     "basis": "Raymer GA weight equations at a gross ratio of 1.125: wing (Nz W)^0.49, tail 0.38-0.41, fuselage 0.18, main gear 0.77 give +19 to +26 lb at fixed area. Wing and tail area grown to hold the stall speed add about +17 to +24 lb; 90 gal of leading-edge tankage +10-20; heavier attach fittings up to +15"
+    }
+   ]
+  },
+  "bellanca-t250-aries": {
+   "name": "Bellanca T-250 Aries",
+   "mtow": 3150,
+   "stage3_empty": 1850,
+   "base": {
+    "low": 1850,
+    "high": 1950,
+    "stage3_grade": "F",
+    "basis": "1,850 dry (F, AOPA Pilot Mar 1977 spec table); 1,888 (F, Plane & Pilot 2010). Four aircraft exist, so no fleet figure; heavy end +100 lb for an equipped airplane against a 1977 spec-table empty weight (E)",
+    "grade": "F/E"
+   },
+   "engine_delta_lb": [
+    -81,
+    -63
+   ],
+   "items": [
+    {
+     "item": "Re-derived as a matched-hole CNC aluminium kit: flat and single-curve skins kept, flush riveting kept on the laminar wing",
+     "light": -30,
+     "heavy": 40,
+     "grade": "E",
+     "basis": "CAD-optimised gauges against kit allowances for builder-proof gauges, edge distance and splices where skins exceed the cut sheet"
+    },
+    {
+     "item": "Panel: 1977 avionics -> EFIS",
+     "light": -40,
+     "heavy": -15,
+     "grade": "E",
+     "basis": "1977 IFR panel"
+    },
+    {
+     "item": "EFI engine: backup battery and bus",
+     "light": 5,
+     "heavy": 10,
+     "grade": "E",
+     "basis": "One ECU"
+    },
+    {
+     "item": "New nose: cowl and radiator duct (the O-540 had one inlet and no cowl flaps)",
+     "light": -10,
+     "heavy": 15,
+     "grade": "E",
+     "basis": "Cowl similar; duct may add"
+    },
+    {
+     "item": "About 20 gal more fuel in integral wing bays (closes the 90 nm range shortfall at continuous power)",
+     "light": 10,
+     "heavy": 20,
+     "grade": "E",
+     "option": true,
+     "basis": "Constant-chord wing holds about 11 gal per foot of span between spars (E); ribs, sealant and access panels"
+    }
+   ]
+  },
+  "express-2000": {
+   "name": "Wheeler Express",
+   "mtow": 2895,
+   "stage3_empty": 1994,
+   "base": {
+    "low": 1994,
+    "high": 2050,
+    "stage3_grade": "R",
+    "basis": "CAFE weighed N360EZ 1,994.1 lb with oil (R, CAFE APR, flights Sep 1997); designer 1,850 (F). Heavy end ours (E)",
+    "grade": "R/E"
+   },
+   "engine_delta_lb": [
+    -6,
+    23
+   ],
+   "items": [
+    {
+     "item": "Vinylester/E-glass/foam molded parts -> infused carbon/epoxy sandwich in new molds",
+     "light": -120,
+     "heavy": -50,
+     "grade": "E",
+     "basis": "519 ft2 wetted; vinylester glass skins are the heaviest laminate on the list"
+    },
+    {
+     "item": "Re-derived tail (fin 20-24 ft2, or the S-90 low tail with dorsal and ventral fins) with surfaces in infused carbon",
+     "light": -30,
+     "heavy": 20,
+     "grade": "E",
+     "basis": "Larger tail adds about 8-12 lb aft (AERO tail study); S-90 surfaces weighed 81 lb by one owner, who saved about 33 lb with aluminium ones (B). Light end: carbon surfaces more than offset the growth"
+    },
+    {
+     "item": "Nose ballast no longer needed",
+     "light": -60,
+     "heavy": 0,
+     "grade": "B/E",
+     "basis": "S-90 owners carry 56-62 lb (B). The CAFE-weighed cruciform N360EZ shows no ballast in its weight table, so against that baseline the credit may be zero"
+    },
+    {
+     "item": "Panel: EFIS",
+     "light": -20,
+     "heavy": 0,
+     "grade": "E",
+     "basis": "1995 panel"
+    },
+    {
+     "item": "EFI engine: backup battery and bus",
+     "light": 5,
+     "heavy": 10,
+     "grade": "E",
+     "basis": "One ECU"
+    }
+   ]
+  },
+  "lancair-iv-p": {
+   "name": "Lancair IV-P",
+   "mtow": 3550,
+   "stage3_empty": 2200,
+   "base": {
+    "low": 2200,
+    "high": 2340,
+    "stage3_grade": "F",
+    "basis": "2,200 owner's manual (F); CAFE weighed N114L at 2,212.5-2,215.5 with a 360 hp Regan TIO-540 (R, CAFE APR c.2000); a 2000 IV-P listed at 1,058 kg (2,332 lb, our conversion) with TSIO-550-E, 4-blade MT, glass panel (B, planesales.com.au, read 2026-10-24)",
+    "grade": "F/R/B"
+   },
+   "engine_delta_lb": [
+    -242,
+    -150
+   ],
+   "items": [
+    {
+     "item": "Airframe re-derived into new molds (the originals have no known location) in out-of-autoclave prepreg or infusion",
+     "light": -30,
+     "heavy": 0,
+     "grade": "E",
+     "basis": "Already a factory-molded kit (CAFE: 0.6% over brochure). Little structural weight left to take out"
+    },
+    {
+     "item": "Panel: current EFIS and harness",
+     "light": -20,
+     "heavy": 0,
+     "grade": "E",
+     "basis": "Later IV-Ps already fly glass panels"
+    },
+    {
+     "item": "EFI engine: backup battery and bus",
+     "light": 5,
+     "heavy": 10,
+     "grade": "E",
+     "basis": "One ECU"
+    },
+    {
+     "item": "New nose: cowl, radiator duct and mount for a liquid-cooled engine",
+     "light": -10,
+     "heavy": 15,
+     "grade": "E",
+     "basis": "Cowl similar; duct and longer mount may add"
+    },
+    {
+     "item": "Delete pressurisation (build it as an unpressurised IV)",
+     "light": -200,
+     "heavy": -100,
+     "grade": "F/P",
+     "option": true,
+     "basis": "IV and IV-P differ 'only in the ply schedule ... and the door latch' (CAFE APR); brochure IV 2,000 vs IV-P 2,200 (F). P210 vs T210 about 100 lb at 3.35 psi (P, Aviation Consumer 2001)"
+    },
+    {
+     "item": "LX7-style one-piece carbon wing with 180 gal (RDD re-wing, a data point)",
+     "light": 150,
+     "heavy": 150,
+     "grade": "F",
+     "option": true,
+     "basis": "RDD: empty 2,350 against stock 2,200 lb, MTOW 3,750; $821,000 complete (AvWeb 2019)"
+    }
+   ]
+  },
+  "meyers-200d": {
+   "name": "Meyers 200D (re-derivation)",
+   "mtow": 3000,
+   "stage3_empty": 1940,
+   "base": {
+    "low": 1940,
+    "high": 2100,
+    "stage3_grade": "F",
+    "basis": "1,940 (F, AvWeb); about 2,100 equipped real-world empty (B, AvWeb owner data)",
+    "grade": "F/B"
+   },
+   "engine_delta_lb": [
+    -133,
+    -105
+   ],
+   "items": [
+    {
+     "item": "Structure re-derived for production: laser-cut tube cage and gussets, jig-welded; matched-hole skins over it",
+     "light": -50,
+     "heavy": 30,
+     "grade": "E",
+     "basis": "Hand-built 1960s structure with skin waviness and protruding screws (Davisson); CAD sizing against production allowances"
+    },
+    {
+     "item": "Fuel: four tanks and one gauge -> two integral wing tanks of about 100 gal total",
+     "light": 10,
+     "heavy": 25,
+     "grade": "E",
+     "basis": "Larger tanks, ribs and sealant; the old tanks and selector come out"
+    },
+    {
+     "item": "Panel: 1960s avionics -> EFIS",
+     "light": -50,
+     "heavy": -20,
+     "grade": "E",
+     "basis": "1960s IFR panel"
+    },
+    {
+     "item": "EFI engine: backup battery and bus",
+     "light": 5,
+     "heavy": 10,
+     "grade": "E",
+     "basis": "One ECU"
+    },
+    {
+     "item": "New nose: cowl and radiator duct",
+     "light": -10,
+     "heavy": 15,
+     "grade": "E",
+     "basis": "Conventional nose inlets today"
+    }
+   ]
+  },
+  "mooney-301": {
+   "name": "Mooney 301",
+   "mtow": 4000,
+   "stage3_empty": 2548,
+   "base": {
+    "low": 2548,
+    "high": 2650,
+    "stage3_grade": "F",
+    "basis": "2,548 prototype (F, Air International Jan 1984 via Wikipedia); heavy end +100 lb for production equipment (E). The new owners judged it 200 lb over target",
+    "grade": "F/E"
+   },
+   "engine_delta_lb": [
+    -293,
+    -205
+   ],
+   "items": [
+    {
+     "item": "Re-derived as a matched-hole CNC aluminium kit, still pressurised",
+     "light": -20,
+     "heavy": 40,
+     "grade": "E",
+     "basis": "CAD-optimised gauges against kit allowances for builder-proof gauges and edge distances"
+    },
+    {
+     "item": "Panel: 1983 avionics -> EFIS",
+     "light": -40,
+     "heavy": -15,
+     "grade": "E",
+     "basis": "1983 IFR panel"
+    },
+    {
+     "item": "EFI engine: backup battery and bus",
+     "light": 5,
+     "heavy": 10,
+     "grade": "E",
+     "basis": "One ECU"
+    },
+    {
+     "item": "New nose: cowl and radiator duct",
+     "light": -10,
+     "heavy": 15,
+     "grade": "E",
+     "basis": "The LoPresti inlet was tiny; the radiator needs its own duct"
+    },
+    {
+     "item": "Delete pressurisation (5.0 psi)",
+     "light": -200,
+     "heavy": -100,
+     "grade": "F/P",
+     "option": true,
+     "basis": "Same basis as the IV-P line; no published figure for the 301 itself"
+    }
+   ]
+  },
+  "cessna-p210n": {
+   "name": "Cessna P210N",
+   "mtow": 4000,
+   "stage3_empty": 2342,
+   "base": {
+    "low": 2342,
+    "high": 2426,
+    "stage3_grade": "T",
+    "basis": "2,342 TCDS standard empty (T, used in stage 3); 2,426 1982 standard empty (F, AOPA)",
+    "grade": "T/F"
+   },
+   "engine_delta_lb": [
+    -178,
+    -150
+   ],
+   "items": [
+    {
+     "item": "No airframe rebuild assessed: a live certified type held by Textron; the path is modifying existing airframes",
+     "light": 0,
+     "heavy": 0,
+     "grade": "-",
+     "basis": "Calibration case only"
+    }
+   ]
+  },
+  "cozy-mkiv": {
+   "name": "Cozy MKIV (reference)",
+   "mtow": 2050,
+   "stage3_empty": 1179,
+   "base": {
+    "low": 1179,
+    "high": 1179,
+    "stage3_grade": "R",
+    "basis": "CAFE weighed N494CZ 1,179.3 lb, VFR panel (R, CAFE APR, Oct 1998); designer 1,050 (F)",
+    "grade": "R"
+   },
+   "engine_delta_lb": [
+    18,
+    57
+   ],
+   "items": [
+    {
+     "item": "Wing, canard, winglets: full-depth foam cores -> molded carbon sandwich",
+     "light": -55,
+     "heavy": -20,
+     "grade": "E",
+     "basis": "Defiant arithmetic scaled to 136 ft2"
+    },
+    {
+     "item": "Fuselage and strakes: infused carbon sandwich",
+     "light": -50,
+     "heavy": -25,
+     "grade": "E",
+     "basis": "200 ft2"
+    },
+    {
+     "item": "Bulkheads and consoles from carbon panel",
+     "light": -10,
+     "heavy": -5,
+     "grade": "E",
+     "basis": "Scaled"
+    },
+    {
+     "item": "Finish: in-mold surface instead of micro fill",
+     "light": -35,
+     "heavy": -15,
+     "grade": "E",
+     "basis": "336 ft2"
+    }
+   ]
+  }
+ }
+}
