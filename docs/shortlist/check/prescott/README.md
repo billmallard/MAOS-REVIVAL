@@ -14,6 +14,13 @@ the evidence and the arithmetic.
   options, and a rotation moment check. It supersedes `levers.py`'s structure
   placeholders and its guessed balance arms. Runs from the repo:
   `python3 balance.py > balance_output.md`.
+  AER-3902 folded in SAFETY's three input corrections (N747P's 49 lb ballast
+  datum, the constant-speed propeller, option C's neutral-point loss); the
+  output's correction ledger walks from PR #10's first numbers to the
+  corrected ones.
+- `SAFETY.md` (AER-3899): SAFETY's review of the balance options, the
+  approach and landing technique and the accident record, committed verbatim
+  by AERO. Its constraints R1-R10 bind any re-derivation.
 - `avl/prescott_np.avl` / `avl/prescott_np_st.txt`: the wing + T-tail
   vortex-lattice model behind the neutral point (`maos avl`, OPER `a a 2`, `x`,
   `st`).
@@ -64,9 +71,12 @@ What the plan settles, and what it does not:
   ballast, not the 1.33 lb that stage 3 assumed.
 - The main wheels sat 21-28 in behind the CG range on prototype 1: a tipback
   of 30-38 deg, against the usual 15. That is the hard rotation in the record.
-- The empty-weight CG and its scatter are not on the plan. SDASM's
-  weight-and-balance schedule (SC.10269) would settle it; reading it is museum
-  contact, Bill's call.
+- The empty-weight CG and its scatter are not on the plan. One builder
+  aircraft bounds it: N747P needed "49 pounds of ballast necessary to get the
+  weight and balance within its prescribed limits" (SA91, p. 49; found by
+  SAFETY, AER-3899), at an unpublished station. `balance.py` carries that as
+  its headline datum (AER-3902). SDASM's weight-and-balance schedule
+  (SC.10269) would settle it; reading it is museum contact, Bill's call.
 
 ## Desk research: Prescott Pusher: configuration, performance, fleet, safety, demise
 

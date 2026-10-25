@@ -93,14 +93,16 @@ information only.
    headline the fleet calibration for both, about 8% slower.
 5. **The Prescott clears all three floors only as a re-derivation**, and its
    brochure and its measured speed disagree. At 2,700 lb with 90 gal and the
-   AM20T it carries 1,228 lb useful, 1,044-1,151 nm and 179-201 KTAS on both
+   AM20T it carries 1,142 lb useful, 1,044-1,151 nm and 179-201 KTAS on both
    drag bases, if the rebuild lands at the light end of MANUFACTURING's
-   structure estimate; at the heavy end it misses useful load by 78 lb. Balance
-   is cheaper than we thought: on the designer's own plan stations the AM20T
-   needs 33-52 lb of nose ballast, not 82, and none if its radiator goes in the
-   nose (6 lb of extra coolant line). The harder problem is rotation: main
-   wheels far behind the CG, a small tail and a high thrust line, which balance
-   does not fix (AER-3866). Its measured speed needs a drag factor of 1.46-1.67,
+   structure estimate; at the heavy end it misses useful load by 140 lb.
+   Balance, once N747P's published 49 lb of ballast and the constant-speed
+   propeller are counted (AER-3902, on SAFETY's review), costs 113-130 lb of
+   nose ballast, or 51-69 lb with the radiator moved to the nose. The harder
+   problem is rotation: main wheels far behind the CG, a small tail and a high
+   thrust line, which balance does not fix (AER-3866). SAFETY does not
+   recommend against revival, but against the original configuration plus a
+   balance fix (AER-3899; review in `docs/shortlist/check/prescott/SAFETY.md`). Its measured speed needs a drag factor of 1.46-1.67,
    and every pusher in the survey with measured points reads draggy (Defiant
    1.72, Velocity 1.63): a question for the planform study.
 6. **The Express's accident record has an engineering explanation and a priced
@@ -135,8 +137,9 @@ contributes to the idea ledger.
   needs a drag factor of 1.46-1.67 against the brochure's 1.35). On an AM20T it
   is fast. It clears all three floors on both drag bases only as a
   re-derivation at about 2,700 lb gross with 90 gal, and only at the light end
-  of MANUFACTURING's structure estimate (1,228 lb useful; 922 lb at the heavy
-  end). Moving the radiator to the nose balances the AM20T without ballast. Its
+  of MANUFACTURING's structure estimate (1,142 lb useful; 860 lb at the heavy
+  end). Even with the radiator in the nose the AM20T needs 51-69 lb of nose
+  ballast (AER-3902). Its
   assets are rare: a 12 in prop extension instead of a drive shaft, and the
   best-preserved engineering record in the survey (drawings, loads, wind-tunnel
   and structural tests at SDASM). Its weakness is handling: main wheels 21-28 in
