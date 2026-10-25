@@ -87,18 +87,22 @@ AG-14). Positive control: "Model" = M22 returns A6SW (P).
   - Tyco's subsidiary lists (10-K Exhibit 21) name **"Anderson, Greenwood &
     Co."** in every annual filing from 2001 to 2008 (the 2008 list gives its
     state as Delaware) (SEC EDGAR, P).
-    So the holder of record named on TCDS A11SW still existed as a Tyco
-    subsidiary until at least November 2008.
-  - Tyco's 2009 list no longer names it. That list is complete enough to
+    So the holder of record named on TCDS A11SW was still a Tyco subsidiary
+    as of 26 September 2008, the as-of date of the last list naming it.
+  - Tyco's 2009 list (as of 25 September 2009) no longer names it, and neither
+    does the 2010 list. That list is complete enough to
     include Tyco Valves & Controls LP (DE), Tyco Valves & Controls, Inc. (TX)
     and Crosby Valve, LLC (NV), so the omission is real (P). An SEC full-text
     search returns no filing naming "Anderson, Greenwood & Co" after 2008 (P,
     as far as EDGAR full-text reaches, which is 2001 onward).
   - **Reading (inference):** the entity was merged, renamed or dissolved inside
-    Tyco between November 2008 and November 2009. If it was merged, its assets,
+    Tyco between 26 September 2008 and 25 September 2009. If it was merged, its assets,
     including any rights in A11SW, passed to the surviving entity by operation of
     law. The likely candidate is a Tyco Valves & Controls entity, but that is
-    not shown.
+    not shown. A possible lead, also inference: the same 2009 list shows
+    Crosby Valve, Inc. (NV) as Crosby Valve, LLC, and two Crosby holding
+    companies no longer appear, which suggests a restructuring of the valve
+    entities that year (AERO's observation).
   - By 2016 the business was Pentair's. Emerson's 8-K of 18 August 2016
     describes "the Pentair Valves & Controls business" with "product brands like
     Anderson-Greenwood, Crosby, Vanessa, Keystone and Biffi". Emerson's 8-K of 28
@@ -199,7 +203,9 @@ bankruptcy opinion has the full account of why; it was not read.
 ## Sources
 
 - SEC EDGAR: Tyco International 10-K Exhibit 21 subsidiary lists, 2001-2009
-  (for example 0001047469-08-012419, ex-21, and 0001047469-09-010234, ex-21);
+  (for example 0001047469-08-012419, ex-21, as of 26 September 2008;
+  0001047469-09-010234, ex-21, as of 25 September 2009; and
+  0001047469-10-009627, ex-21);
   Emerson Electric 8-K Ex. 99.1, 18 August 2016 (0000950138-16-001272) and
   28 April 2017 (0000950138-17-000361); EDGAR full-text search for "Anderson,
   Greenwood & Co", 2026-10-25 (P). https://efts.sec.gov/LATEST/search-index

@@ -188,16 +188,23 @@ AERO owns the full "why it died" question.
      holder ... lies with the potential user".
    - It "does not necessarily hold the full copyrights to all items in its
      collection". It "reserves the right to require permission and/or a fee for
-     use of images/film it holds regardless of copyright status".
+     use of images/film it holds regardless of copyright status". But also: "If
+     there is no known images/film credit, assume that SDASM holds the
+     copyright".
    - Non-commercial academic use is free with credit. Publication needs SDASM's
      approval, with fees; non-profit rates are available on proof of status
      (SDASM "Usage & Reproduction" page, P).
    - The collection policy adds: "Conditions related to copyrights and
      royalties will be observed for reproductions" (SDASM Collection Management
      Policy, P).
-   - So SDASM can supply copies and charge for them, but it cannot license the
-     Prescott design. That still needs the copyright owner, which is why the
-     "Bill of Sale" folder matters.
+   - **Reading.** SDASM's terms are written for images and film. They bar it
+     from granting permission for material known not to be its own, and they
+     leave confirming the copyright holder to the user. Its catalogue entry for
+     SC.10269 says "Copyright: SDASM". Whether that is right depends on what the
+     2021 donor held and transferred, which the "Bill of Sale" folder and the
+     deed of gift would show. Until then, SDASM can supply copies for a fee, but
+     its permission alone is not shown to clear use of the drawings. And
+     copyright in drawings is not the same as rights in the design.
 3. **Using the data for a new design.** If the copyright owner cannot be found,
    what may a new design take from the loads reports and structural test results
    (facts and data) as opposed to the drawings themselves (expression)? Can the
