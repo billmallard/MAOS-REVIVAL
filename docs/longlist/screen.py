@@ -29,8 +29,8 @@ DATA = HERE / "candidates.json"
 LONGLIST = HERE / "LONGLIST.md"
 
 # Targets from docs/BRIEF.md.
-UL_FLOOR = 1000.0      # lb
-RANGE_FLOOR = 1000.0   # nm
+UL_TARGET = 1000.0      # lb
+RANGE_TARGET = 1000.0   # nm
 SPEED_FLOOR = 160.0    # KTAS, at altitude
 SPEED_PREF = 180.0     # KTAS
 # Near-miss bands: within 10% on load and range, 10 kt on speed.
@@ -141,10 +141,10 @@ def best_leg(c, b=None):
     return max(L, key=key)
 
 
-def band(x, floor, near):
+def band(x, threshold, near):
     if x is None:
         return "?"
-    if x >= floor:
+    if x >= threshold:
         return "pass"
     if x >= near:
         return "near"
@@ -220,13 +220,13 @@ def screen_col(c, b):
     s = best_speed(c, b)
     spd, alt = s.get("ktas"), s.get("alt_ft")
     alt_ok = alt is not None and alt >= ALT_MIN
-    st = [band(ul, UL_FLOOR, UL_NEAR), band(rng, RANGE_FLOOR, RANGE_NEAR), band(spd, SPEED_FLOOR, SPEED_NEAR)]
+    st = [band(ul, UL_TARGET, UL_NEAR), band(rng, RANGE_TARGET, RANGE_NEAR), band(spd, SPEED_FLOOR, SPEED_NEAR)]
     spd_s = st[2] + ("+" if st[2] == "pass" and spd >= SPEED_PREF else "")
     misses = []
     if st[0] in ("near", "fail"):
-        misses.append(f"UL -{UL_FLOOR - ul:.0f} lb")
+        misses.append(f"UL -{UL_TARGET - ul:.0f} lb")
     if st[1] in ("near", "fail"):
-        misses.append(f"range -{RANGE_FLOOR - rng:.0f} nm")
+        misses.append(f"range -{RANGE_TARGET - rng:.0f} nm")
     if st[2] in ("near", "fail"):
         misses.append(f"speed -{SPEED_FLOOR - spd:.0f} kt")
     overall = verdict(st)
@@ -331,7 +331,7 @@ def cell(col):
 def table(cands):
     hdr = ("| # | Candidate | Seats | Origin | As published: UL lb; range nm; KTAS @ alt | Screen, as published "
            "| Measured or reported: UL lb; range nm; KTAS @ alt | Screen, measured "
-           "| Payload @ 1,000 nm, lb (no res / 45 min), information only | Aeromomentum fit | Why it died |")
+           "| Payload @ 1,000 nm, lb (no res / 45 min) | Aeromomentum fit | Why it died |")
     rows = [hdr, "|" + "---|" * 11]
     for i, c in enumerate(cands):
         P, M = screen_col(c, "pub"), screen_col(c, "meas")

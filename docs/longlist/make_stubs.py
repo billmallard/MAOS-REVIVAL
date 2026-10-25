@@ -102,7 +102,7 @@ def stub(c):
         "## Screen (published numbers; like for like)",
         "",
         "Two screens, never mixed: the maker's figures as published, and measured or reported data. "
-        "The three targets are separate floors; payload at 1,000 nm is information only.",
+        "Useful load and range are targets: a miss is reported with its size, and payload against range is the tradeoff to read. Cruise above 160 KTAS is a floor.",
         "",
     ]
     for lab, bb in (("As published", "pub"), ("Measured or reported", "meas")):
@@ -117,7 +117,7 @@ def stub(c):
             f"  - Useful load: {S.fmt(col['ul'])} lb ({col['ul_s']}) against 1,000 lb.",
             f"  - Range: {S.fmt(col['rng'])} nm ({col['rng_s']}; {col['rng_note'] or 'none found'}) against 1,000 nm.",
             f"  - Cruise: {spd} against >160 KTAS (>180 preferred).",
-            f"  - Payload at 1,000 nm (information): {S.payload(c, bb) or 'cannot be computed on this basis'}.",
+            f"  - Payload at 1,000 nm, lb, no reserve / 45 min: {S.payload(c, bb) or 'cannot be computed on this basis'}.",
         ]
     L += [
         f"- Aeromomentum fit (first cut): {S.engine_fit(c)}.",

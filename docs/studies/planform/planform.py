@@ -48,7 +48,7 @@ RHO0 = 0.0023769
 CONT = "/workspace/analysis/AER-3807"
 
 # ---- the fixed mission and airframe -------------------------------------
-USEFUL = 1000.0          # lb, Bill's floor
+USEFUL = 1000.0          # lb, Bill's useful-load target
 FUEL_GAL = 75.0          # US gal usable, all points (E: 1,000 nm + 45 min at ~10 gph)
 FUEL_LB = FUEL_GAL * 6.0
 CRUISE_ALT = 12000.0     # ft; 180 KTAS here is 150 KEAS

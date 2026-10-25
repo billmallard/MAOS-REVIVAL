@@ -120,7 +120,7 @@
   "safety": "Co-Z FAQ cites two fatal accidents (to ~2009); a four-aboard MKIV was lost off California 15 Jan 2024 (NBC LA).",
   "flags": [
    "the only published speed/flow pair (192 kt, 10.5 gph) is a claim, and the 40%-power range has no published flow",
-   "as published (1,000 lb, 1,129 nm, 191 KTAS at 8,000 ft) it passes all three floors; the 951 nm in the first version of this list was 52 gal / 10.5 gph x 192 kt, the AOPA-quoted max-cruise claim, set against a range published at 40% power: a basis mismatch, not a units error (1,300 statute mi = 1,129 nm is right)"
+   "as published (1,000 lb, 1,129 nm, 191 KTAS at 8,000 ft) it meets all three targets; the 951 nm in the first version of this list was 52 gal / 10.5 gph x 192 kt, the AOPA-quoted max-cruise claim, set against a range published at 40% power: a basis mismatch, not a units error (1,300 statute mi = 1,129 nm is right)"
   ],
   "useful_fleet": [
    871,

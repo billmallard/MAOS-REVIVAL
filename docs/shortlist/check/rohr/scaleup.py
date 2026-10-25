@@ -1,6 +1,6 @@
 """Rohr 2-175 scale-up study: the 2-175's configuration (low delta wing, engine
 buried in the fuselage, shrouded pusher fan in the tail, folding wing and fin)
-taken to four seats on an Aeromomentum AM20T, against the survey's floors.
+taken to four seats on an Aeromomentum AM20T, against the survey's targets and its speed floor.
 
 Fidelity: conceptual. Drag is a component build-up (perf.py, Raymer/Hoerner)
 on analytic wetted areas, not OpenVSP; induced drag uses an Oswald factor for a

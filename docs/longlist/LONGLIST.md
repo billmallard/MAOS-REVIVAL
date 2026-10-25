@@ -2,7 +2,7 @@
 
 **Status:** stage 1 of the legacy survey (AER-3786), compiled 2026-10-24 by AERO.
 **Revised 2026-10-24 after Bill's review** (AER-3783): screened like for like in two
-columns, the three targets as separate floors, an idea ledger in every stub, and
+columns, each target screened on its own, an idea ledger in every stub, and
 seven rows added: the Bellanca T-250 Aries and six current light twins that
 answer Bill's note on Rotax-powered Derringer analogs at AERO Friedrichshafen
 2026. The 210-class kits Bill mentioned are noted below, not screened.
@@ -30,9 +30,13 @@ record, read on one consistent basis, meets the targets", not "it performs".
   figure). Compare rows published-to-published and measured-to-measured. Grade
   P is split by what it is: a handbook or spec-box figure is published, a timed
   flight test is measured. A setting can also say so explicitly.
-- **The three targets are separate floors.** Useful load, range and cruise
-  speed are each screened on their own. Payload carried 1,000 nm is shown for
-  information only; it is not one of the targets.
+- **Useful load and range are targets; cruise speed is a floor** (Bill,
+  2026-10-25; brief PR #11). Each is screened on its own and a miss is stated
+  with its size; missing the useful-load or range target does not disqualify a
+  design. The pass / near miss / fail word in each row is shorthand for the
+  three, not a joint gate. Payload carried 1,000 nm is the tradeoff between the
+  two targets; the shortlist works it out over 600-1,200 nm for each
+  shortlisted design (`docs/SHORTLIST.md`).
 - **Useful load.** As published: the factory figure. Measured: a fleet or
   weighed-aircraft figure, or, for a one-off prototype known to have flown
   heavier than its design weight, our as-flown estimate (grade E).
@@ -46,7 +50,7 @@ record, read on one consistent basis, meets the targets", not "it performs".
   test behind it.
 - **Measured data is usually partial** on a long list. "partial" names what was
   measured and how it screened; "no measured data" means none was found.
-- **Payload at 1,000 nm** (information only) is useful load minus the fuel to
+- **Payload at 1,000 nm** is useful load minus the fuel to
   fly 1,000 nm at the setting that leaves the most payload, with no reserve and
   with 45 min at the same flow, on each basis separately. "cannot" means the
   usable fuel does not hold it.
@@ -58,7 +62,7 @@ record, read on one consistent basis, meets the targets", not "it performs".
 | Targets | Useful load >= 1,000 lb; range >= 1,000 nm; cruise > 160 KTAS (> 180 preferred) at altitude | `docs/BRIEF.md` |
 | Near miss | Useful load >= 900 lb; range >= 900 nm; cruise >= 150 KTAS. The miss is stated in the verdict | Brief: a near miss stays on the list, with the miss stated |
 | Like for like | Published and measured figures are screened in separate columns and never combined in one verdict | Brief, amended 2026-10-24 |
-| Leg fuel (information only) | gal = (1,000 nm / KTAS + reserve h) x gph; 6.0 lb/gal avgas, 6.7 lb/gal Jet-A | Breguet in its constant-speed, constant-flow form; adequate for a screen |
+| Leg fuel | gal = (1,000 nm / KTAS + reserve h) x gph; 6.0 lb/gal avgas, 6.7 lb/gal Jet-A | Breguet in its constant-speed, constant-flow form; adequate for a screen |
 | Allowances | None for taxi, climb, descent or wind | Keeps rows comparable. It flatters every row by roughly 3-5 gal on a 1,000 nm leg, about 20-30 lb of payload |
 | Estimated flow | Only where a type publishes no fuel flow at any setting: gph = 0.45 lb/hp/h x rated hp x stated power / 6.0, graded E and marked "est. flow" | 0.45 is mid-range for air-cooled GA pistons (Gudmundsson, *General Aviation Aircraft Design*, ch. 7). It never displaces a published flow |
 | Cross-check | A published range more than 15% from the one computed from fuel and flow is flagged, not substituted | Brief: "does the fuel support the claimed range at the claimed flow?" |
@@ -112,7 +116,7 @@ real gap in the market, not only in this list.
 ## The screen
 
 <!-- screen-table:start -->
-| # | Candidate | Seats | Origin | As published: UL lb; range nm; KTAS @ alt | Screen, as published | Measured or reported: UL lb; range nm; KTAS @ alt | Screen, measured | Payload @ 1,000 nm, lb (no res / 45 min), information only | Aeromomentum fit | Why it died |
+| # | Candidate | Seats | Origin | As published: UL lb; range nm; KTAS @ alt | Screen, as published | Measured or reported: UL lb; range nm; KTAS @ alt | Screen, measured | Payload @ 1,000 nm, lb (no res / 45 min) | Aeromomentum fit | Why it died |
 |---|---|---|---|---|---|---|---|---|---|---|
 | 0 | [Cozy MKIV (reference)](../candidates/cozy-mkiv.md) | 4 | a | 1,000 pass; 1,129 pass; 191 @ 8,000 ft pass+ | pass | 871 fail; 1,049 pass; 177 @ 8,021 ft pass | fail (UL -129 lb) | pub: cannot (951 nm max); meas: 581 / cannot @ 170 kt, 8.2 gph | Yes: AM20T (260 hp) for 180 hp | Alive: plans and parts from Aircraft Spruce |
 | 1 | [Rutan Long-EZ](../candidates/rutan-long-ez.md) | 2 | a | 615 fail; 1,243 pass; 159 @ 8,000 ft near | fail (UL -385 lb, speed -1 kt) | 475 fail; - ?; - | partial: UL fail (UL -525 lb) | pub: 449 / 434 @ 125 kt, 3.4 gph (est. flow) | Yes: AM15 (120 hp) for 115 hp | Plans withdrawn 1985 over liability exposure |
@@ -175,7 +179,7 @@ Where the published numbers do not build up, or a number needs a caveat. These
 are findings, not footnotes.
 
 <!-- flags:start -->
-- **Cozy MKIV (reference)**: fleet useful load 129 lb below factory; the only published speed/flow pair (192 kt, 10.5 gph) is a claim, and the 40%-power range has no published flow; as published (1,000 lb, 1,129 nm, 191 KTAS at 8,000 ft) it passes all three floors; the 951 nm in the first version of this list was 52 gal / 10.5 gph x 192 kt, the AOPA-quoted max-cruise claim, set against a range published at 40% power: a basis mismatch, not a units error (1,300 statute mi = 1,129 nm is right).
+- **Cozy MKIV (reference)**: fleet useful load 129 lb below factory; the only published speed/flow pair (192 kt, 10.5 gph) is a claim, and the 40%-power range has no published flow; as published (1,000 lb, 1,129 nm, 191 KTAS at 8,000 ft) it meets all three targets; the 951 nm in the first version of this list was 52 gal / 10.5 gph x 192 kt, the AOPA-quoted max-cruise claim, set against a range published at 40% power: a basis mismatch, not a units error (1,300 statute mi = 1,129 nm is right).
 - **Rutan Long-EZ**: published range 1,243 nm vs 1,884 nm from fuel and flow; fleet useful load 140 lb below factory.
 - **Velocity XL-RG**: screen speed has no altitude, or is below 6,000 ft; with optional tanks (100 gal) still-air range is 1,545 nm.
 - **Cirrus VK-30**: screen speed has no altitude, or is below 6,000 ft.
@@ -250,7 +254,7 @@ the makers' pages and Wikipedia (L); registry counts from the FAA download of
 ## What the screen says so far (no ranking)
 
 1. **The reference passes as published, and misses on useful load as
-   measured.** As published, the Cozy MKIV clears all three floors: 1,000 lb
+   measured.** As published, the Cozy MKIV meets all three targets: 1,000 lb
    useful, 1,129 nm (1,300 statute mi at 40% power, reserve not stated) and
    191 KTAS at 75% and 8,000 ft (cozyaircraft.com specs). Measured on the
    CAFE Foundation's test aircraft, it gives 871 lb useful (1,179 lb empty
@@ -269,8 +273,9 @@ the makers' pages and Wikipedia (L); registry counts from the FAA download of
    3-16% of cruise speed on an Aeromomentum engine. The Mooney 301's margin
    rests on design figures: its only prototype flew about 200 lb heavy and
    slower than planned, by an amount never published.
-3. **Payload at 1,000 nm with a 45-minute reserve (information only).** It
-   is not one of the targets, but it shows which tank sizes are tight. Five
+3. **Payload at 1,000 nm with a 45-minute reserve.** It is the tradeoff
+   between the useful-load and range targets, and it shows which tank sizes
+   are tight. Five
    published passes (P210N, Velocity XL-RG, Rutan Defiant, Lancair Super ES,
    Mooney M22) cannot carry fuel for 1,000 nm plus 45 min in their standard
    tanks. The full table is in the screen above.
