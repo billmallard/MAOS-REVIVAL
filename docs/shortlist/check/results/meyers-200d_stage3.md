@@ -34,7 +34,7 @@ Model: `docs/shortlist/check/models/meyers-200d.json`; result: `docs/shortlist/c
 | calibration factor | 0.898 | x1.409 on the build-up (calibration; basis stated above) |
 | induced | 0.398 | Oswald (Raymer 12.48), lift split stated above |
 
-**Original engine, our numbers:** 185 hp at 8,000 ft gives 174 KTAS; still-air range on full usable fuel from MTOW 857 nm (climb allowance 25 lb); payload at 1,000 nm cannot lb with no reserve, cannot lb with 45 min.
+**Original engine, our numbers:** 185 hp at 8,000 ft gives 174 KTAS; still-air range on full usable fuel from MTOW 857 nm (climb allowance 25 lb); no payload at 1,000 nm from gross weight, with or without a 45 min reserve (the tanks do not hold the fuel).
 
 **On the Aeromomentum line (AM20T), our numbers.** Installed-mass change -89 lb. The headline useful load takes no credit for a lighter engine (CG ballast assumed to eat it); the number in brackets takes the full saving and the optimistic drag factor.
 

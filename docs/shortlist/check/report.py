@@ -21,6 +21,17 @@ def load(i):
     return json.load(open(os.path.join(HERE, "results", i + ".json")))
 
 
+def orig_payload(o):
+    p0, p45 = o["payload_1000_0"], o["payload_1000_45"]
+    if p0 is None:
+        return ("no payload at 1,000 nm from gross weight, with or without a 45 min "
+                "reserve (the tanks do not hold the fuel).")
+    if p45 is None:
+        return (f"payload at 1,000 nm {f0(p0)} lb with no reserve, none with 45 min from "
+                "gross weight (the tanks do not hold the fuel).")
+    return f"payload at 1,000 nm {f0(p0)} lb with no reserve, {f0(p45)} lb with 45 min."
+
+
 def calib_rows(r):
     out = []
     for c in r["calibration"]:
@@ -86,9 +97,7 @@ def stage3(i, r):
     L.append(f"**Original engine, our numbers:** {o['hp']} hp at {o['alt_ft']:,} ft gives "
              f"{o['ktas']:.0f} KTAS; still-air range on full usable fuel from MTOW "
              f"{o['range_nm_noreserve_fullfuel_mtow']:,.0f} nm (climb allowance "
-             f"{o['climb_allowance_lb']:.0f} lb); payload at 1,000 nm "
-             f"{f0(o['payload_1000_0'])} lb with no reserve, {f0(o['payload_1000_45'])} lb "
-             f"with 45 min.\n")
+             f"{o['climb_allowance_lb']:.0f} lb); {orig_payload(o)}\n")
     L.append(f"**On the Aeromomentum line ({r['am_model']}), our numbers.** Installed-mass change "
              f"{r['am_dmass_lb']:+.0f} lb. The headline useful load takes no credit for a "
              f"lighter engine (CG ballast assumed to eat it); the number in brackets takes "

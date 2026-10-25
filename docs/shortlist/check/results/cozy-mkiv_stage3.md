@@ -37,7 +37,7 @@ Model: `docs/shortlist/check/models/cozy-mkiv.json`; result: `docs/shortlist/che
 | calibration factor | 0.550 | x1.360 on the build-up (calibration; basis stated above) |
 | induced | 0.098 | Oswald (Raymer 12.48), lift split stated above |
 
-**Original engine, our numbers:** 131 hp at 8,000 ft gives 175 KTAS; still-air range on full usable fuel from MTOW 829 nm (climb allowance 20 lb); payload at 1,000 nm cannot lb with no reserve, cannot lb with 45 min.
+**Original engine, our numbers:** 131 hp at 8,000 ft gives 175 KTAS; still-air range on full usable fuel from MTOW 829 nm (climb allowance 20 lb); no payload at 1,000 nm from gross weight, with or without a 45 min reserve (the tanks do not hold the fuel).
 
 **On the Aeromomentum line (AM20T), our numbers.** Installed-mass change +63 lb. The headline useful load takes no credit for a lighter engine (CG ballast assumed to eat it); the number in brackets takes the full saving and the optimistic drag factor.
 
