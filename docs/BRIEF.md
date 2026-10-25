@@ -25,20 +25,25 @@ dossier must say plainly what power it needs instead.
 
 ## The mission targets
 
-| Target | Floor | Preferred |
+| Target | Value | Preferred |
 |---|---|---|
-| Useful load | 1,000 lb | more |
-| Range | 1,000 nm | more |
-| Cruise speed, at altitude | above 160 KTAS | above 180 KTAS |
+| Useful load | 1,000 lb, a target | more |
+| Range | 1,000 nm, a target | more |
+| Cruise speed, at altitude | above 160 KTAS, a floor | above 180 KTAS |
 | Seats | 2, 4 or 6 — survey all three classes | |
 
 - **Turbocharging is expected.** State the cruise altitude and power setting
   behind every speed. A sea-level brochure speed is not a cruise number.
-- **The three targets are separate floors** (amended 2026-10-24): useful load,
-  range and cruise speed are each screened on their own, as Bill stated them.
-  Payload carried 1,000 nm with a reserve is still reported, as **information**,
-  not as pass or fail. It was never one of Bill's targets, and treating it as
-  one failed nearly every design.
+- **Useful load and range are targets, not floors** (amended 2026-10-25).
+  Highly efficient designs show both numbers are achievable, but there are
+  tradeoffs, and some planforms suit travel and comfort better than others. A
+  design that misses one is not disqualified: report how close it gets and what
+  it trades away for it. There is no joint pass/fail gate on the two together;
+  report the payload-range tradeoff instead, of which payload carried 1,000 nm
+  with a reserve is one point. Cruise speed was not part of this amendment and
+  is still a floor.
+- **Each target is read on its own** (amended 2026-10-24): useful load, range
+  and cruise speed are each reported separately, as Bill stated them.
 - **Screen like for like.** Every candidate gets two columns: the published
   figures (screened as published), and our own check or measured data. Compare
   candidates published-to-published and measured-to-measured, never one against
