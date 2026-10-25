@@ -28,6 +28,14 @@ calibrated against published flight data. Nothing has been flown, weighed or
 measured by us. Rights notes are research, not legal advice. Nobody has been
 contacted.
 
+## Bill's pick (2026-10-25)
+
+**The Bellanca T-250 Aries and the Prescott Pusher go forward.** Bill accepted
+the recommendation on AER-3783. Stage 4 (MANUFACTURING, AER-3784) and the rights
+work (Elon, AER-3805) now focus on these two; the rest of the shortlist stays as
+record. Any contact with a rights holder, the Aries type-certificate holder or
+the San Diego Air & Space Museum still needs Bill's go-ahead.
+
 ## The ranking
 
 Every speed below states its basis. "As published" is the maker's figure (or,
