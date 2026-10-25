@@ -28,6 +28,12 @@ calibrated against published flight data. Nothing has been flown, weighed or
 measured by us. Rights notes are research, not legal advice. Nobody has been
 contacted.
 
+**Revision 4 (2026-10-25, AER-3866).** The Prescott re-derivation now uses
+MANUFACTURING's structure estimate (AER-3784) instead of our placeholders, and
+its balance is worked on fuselage stations read off the designer's own plan
+instead of guessed arms. The Prescott row, point 5 below and its entry in "Why
+this order" are updated; the ranking is unchanged.
+
 ## Bill's pick (2026-10-25)
 
 **The Bellanca T-250 Aries and the Prescott Pusher go forward.** Bill accepted
@@ -47,7 +53,7 @@ critical-altitude cases (8,000 ft and 16,000 ft cruise); see
 | Rank | Design | Seats | As published: useful load / range / cruise (floors) | Our check on the AM20T: KTAS / useful load / range on full fuel at continuous power (floors) | Rights (stage 2) | Safety record | Why it died; does a revival fix it? |
 |---|---|---|---|---|---|---|---|
 | 1 | [Bellanca T-250 Aries](candidates/bellanca-t250-aries.md) | 4-5 | 1,300 lb / 1,017 nm with 45 min / 181 KTAS at 75%, altitude not stated (AOPA measured 181 at 6,500 ft): **all three pass** | 185-197 / 1,300 / 906-919 nm: speed and load pass; range misses by about 90 nm at continuous power, passes at economy (154-161 KTAS) | TC A11SW current, held by Anderson Greenwood (a valve maker); stage 2 file pending | 1 NTSB event in about 50 years, no fatal; only 4 aircraft, so no rate | Its producer, Bellanca, went into receivership in 1980. Yes: nothing technical killed it |
-| 2 | [Prescott Pusher](candidates/prescott-pusher.md) | 4 (2+2) | 850 lb / 869 nm, reserve not stated / 165 KTAS at 7,500 ft: speed passes, load and range miss. Measured: 739 lb weighed, 151 KTAS at 73% (altitude unpublished) | 194-207 / 707 / 669-705 nm on 56.5 gal: speed passes; load fails (engine weight in the tail plus ballast); range fails. **All three pass only as a re-derivation:** 2,700 lb gross, 90 gal, a lighter structure (1,077 lb, 1,112-1,172 nm, 194-204 KTAS) | Open: no rights holder found; the engineering archive survives at SDASM (SC.10269) | 4 NTSB events, 1 fatal (a Ford V-6 conversion); a door into the prop; a prop separation; pitch sensitivity and hard rotation from an aft CG | Aft-CG handling reputation, a financing change, slow parts. Business causes yes; handling only by redesigning the balance |
+| 2 | [Prescott Pusher](candidates/prescott-pusher.md) | 4 (2+2) | 850 lb / 869 nm, reserve not stated / 165 KTAS at 7,500 ft: speed passes, load and range miss. Measured: 739 lb weighed, 151 KTAS at 73% (altitude unpublished) | 184-207 / 707-958 / 648-705 nm on 56.5 gal at 2,400 lb: speed passes; load and range fail. **All three pass only as a re-derivation** at 2,700 lb with 90 gal, and only at the light end of MANUFACTURING's structure estimate: 179-201 / 1,228 / 1,044-1,151 nm (heavy end: 922 lb useful) | Open: no rights holder found; the engineering archive survives at SDASM (SC.10269) | 4 NTSB events, 1 fatal (a Ford V-6 conversion); a door into the prop; a prop separation; pitch sensitivity and hard rotation | Handling reputation, a financing change, slow parts. Business causes yes; the handling traces to main wheels far behind the CG and a small tail, which balance alone does not fix |
 | 3 | [Wheeler Express](candidates/express-2000.md) | 4 | 1,045 lb / 1,401 nm (CAFE-computed) / no maker's speed; measured 169 KTAS at 6,190 ft, 901 lb weighed | 179-191 / 890 / 1,062-1,115 nm: speed and range pass; useful load misses by 110 lb on the weighed aircraft | Orphaned: five owners, three bankruptcies; last holder (2007) untraced | 18 fatal, 30 killed, on about 100 registered; the NTSB named its poor yaw stability; stall in climbing right turns, including Grand Prairie (CEN21LA096) | Business execution (incomplete kits, churn) plus a public tail problem. Yes, with a re-derived tail at 2-4 kt cruise cost and complete kits |
 | 4 | [Lancair IV-P](candidates/lancair-iv-p.md) | 4 | 1,350 lb / 1,347 nm with 45 min / 287 KTAS at FL240: **all three pass** | 200-211 / 1,350 / 1,136-1,155 nm: **all three pass** on factory empty weight | Open: chain of title (2023 sale scope not public, molds unlocated) | 88 events, 43 fatal, about 360 built; low-altitude stall-spin and engine failure followed by stall | Kits retired for newer models. The safety pattern is the real problem; the RDD LX7 re-wing shows it can be engineered out, at about 25 kt and $800k+ |
 | 5 | [Meyers 200D](candidates/meyers-200d.md) | 4 | 1,060 lb / 782 nm with 45 min / 182 KTAS at 75%, altitude not stated: range fails; measured 178 KTAS at 8,500 ft, about 900 lb fleet useful | 178-189 / 1,060 / 831-863 nm: speed and load pass on factory weight; range misses by 140-170 nm | TC 3A18 current, small holder; TC, drawings and tooling offered for sale in 2019 | 26 accidents, 6 fatal; fuel starvation from the four-tank system is the pattern; no breakups | Hand-built at a loss. Yes, as a re-derivation designed for production, with more fuel |
@@ -86,13 +92,17 @@ information only.
    IV-P's 278 KTAS and the 301's 237.5 KTAS need factors of 1.03 and 1.02. We
    headline the fleet calibration for both, about 8% slower.
 5. **The Prescott clears all three floors only as a re-derivation**, and its
-   brochure and its measured speed disagree. On an AM20T it cruises at 194-207 KTAS,
-   but the engine's weight in the tail cone, with the nose ballast to balance it,
-   costs about 143 lb of useful load; 90 gal fixes range; a 2,700 lb structure
-   about 100 lb lighter than today's would be fixes load. Its measured speed
-   needs a drag factor of 1.46-1.67, and every pusher in the survey with measured
-   points reads draggy (Defiant 1.72, Velocity 1.63): a question for the
-   planform study.
+   brochure and its measured speed disagree. At 2,700 lb with 90 gal and the
+   AM20T it carries 1,228 lb useful, 1,044-1,151 nm and 179-201 KTAS on both
+   drag bases, if the rebuild lands at the light end of MANUFACTURING's
+   structure estimate; at the heavy end it misses useful load by 78 lb. Balance
+   is cheaper than we thought: on the designer's own plan stations the AM20T
+   needs 33-52 lb of nose ballast, not 82, and none if its radiator goes in the
+   nose (6 lb of extra coolant line). The harder problem is rotation: main
+   wheels far behind the CG, a small tail and a high thrust line, which balance
+   does not fix (AER-3866). Its measured speed needs a drag factor of 1.46-1.67,
+   and every pusher in the survey with measured points reads draggy (Defiant
+   1.72, Velocity 1.63): a question for the planform study.
 6. **The Express's accident record has an engineering explanation and a priced
    fix**, set out in its dossier: weak directional stability from a fin too small
    for its fuselage (on our estimate, near neutral below about 15 ft2 of fin),
@@ -123,14 +133,16 @@ contributes to the idea ledger.
   passes speed and misses useful load by 150 lb and range by about 130 nm; as
   measured it is weaker (739 lb on the one weighed aircraft; Kitplanes' 151 KTAS
   needs a drag factor of 1.46-1.67 against the brochure's 1.35). On an AM20T it
-  is fast, but the engine's weight in the tail cone, and the nose ballast that
-  balances it, cost about 143 lb of useful load. It clears all three floors on
-  both drag bases only as a re-derivation (about 2,700 lb gross, 90 gal, a
-  structure about 100 lb lighter than today's would be at that weight). Its
+  is fast. It clears all three floors on both drag bases only as a
+  re-derivation at about 2,700 lb gross with 90 gal, and only at the light end
+  of MANUFACTURING's structure estimate (1,228 lb useful; 922 lb at the heavy
+  end). Moving the radiator to the nose balances the AM20T without ballast. Its
   assets are rare: a 12 in prop extension instead of a drive shaft, and the
   best-preserved engineering record in the survey (drawings, loads, wind-tunnel
-  and structural tests at SDASM). Its weakness is balance: the far-aft CG behind
-  its rotation and pitch complaints, which a heavier engine makes worse. It
+  and structural tests at SDASM). Its weakness is handling: main wheels 21-28 in
+  behind the CG range, a tail volume of about 0.50 and a small stick-free
+  margin, behind its rotation and pitch complaints; the AM20T's thrust on a high
+  thrust line makes rotation harder. It
   ranks behind the Aries, which clears the floors on a straight engine swap, and
   ahead of the Express, because its engineering survives and it has no long
   shaft or known tail flaw.
@@ -428,9 +440,10 @@ is published.
 ## Hand-offs
 
 - **To Bill:** one card on AER-3783 asks which designs to take further.
-- **To MANUFACTURING (AER-3784, stage 4):** the revised shortlist, and the
-  modern-structure empty-weight delta for the Prescott, which replaces our
-  placeholders in its levers table. Five of six designs are new to stage 4 or changed:
+- **To MANUFACTURING (AER-3784, stage 4):** the revised shortlist. The
+  Prescott structure delta is folded in (AER-3866); its "nose ballast avoided"
+  line used our old 1.3 lb-per-lb ratio, and is about 9-25 lb at the plan's
+  0.6. Five of six designs are new to stage 4 or changed:
   the Prescott (a tube cage with shells; a re-derivation at about 2,700 lb), the Aries (an all-metal design built
   for low production cost), the Meyers (a re-derivation: steel-tube cage, new
   wing with more fuel), the Express (with a re-derived tail), and the 301 (a new
@@ -440,9 +453,11 @@ is published.
   (Wichita; held the second prototype until 2018); rights files for the Aries
   (TC A11SW) and the Derringer analogs; the Meyers re-derivation question; the Lancair holders and
   Bill's Austin company; the Rohr book and the SDASM catalogue.
-- **SAFETY is not part of this stage.** Two patterns would need SAFETY before any
-  development decision: the Express's stall in climbing turns and the IV-P's
-  low-altitude stall-spin record. Per the epic, that is asked on AER-3785 first.
+- **SAFETY is not part of this stage.** Three patterns would need SAFETY before any
+  development decision: the Express's stall in climbing turns, the IV-P's
+  low-altitude stall-spin record, and the Prescott's rotation and pitch handling
+  (the list of what desk analysis cannot clear is in its dossier, AER-3866). Per
+  the epic, that is asked on AER-3785 first.
 
 ## Reproduce
 
