@@ -40,18 +40,18 @@ Cruise settings (P = screened as published, M = screened as measured; the basis 
 
 ## Screen (published numbers; like for like)
 
-Two screens, never mixed: the maker's figures as published, and measured or reported data. The three targets are separate floors; payload at 1,000 nm is information only.
+Two screens, never mixed: the maker's figures as published, and measured or reported data. Useful load and range are targets: a miss is reported with its size, and payload against range is the tradeoff to read. Cruise above 160 KTAS is a floor.
 
 - **As published: incomplete: no speed**
   - Useful load: 1,045 lb (pass) against 1,000 lb.
   - Range: 1,401 nm (pass; CAFE-computed VFR range at 9.7 gph) against 1,000 nm.
   - Cruise: not found against >160 KTAS (>180 preferred).
-  - Payload at 1,000 nm (information): cannot be computed on this basis.
+  - Payload at 1,000 nm, lb, no reserve / 45 min: cannot be computed on this basis.
 - **Measured or reported: near miss** - UL -99 lb
   - Useful load: 901 lb (near) against 1,000 lb.
   - Range: 1,745 nm (pass; still air, no reserve, from fuel and measured flow at 110 KTAS) against 1,000 nm.
   - Cruise: 169 KTAS at 6,190 ft (pass) against >160 KTAS (>180 preferred).
-  - Payload at 1,000 nm (information): 585 / 559 @ 110 kt, 5.8 gph.
+  - Payload at 1,000 nm, lb, no reserve / 45 min: 585 / 559 @ 110 kt, 5.8 gph.
 - Aeromomentum fit (first cut): Yes: AM20T (260 hp) for 210 hp.
 
 Sanity flags:
@@ -100,7 +100,7 @@ Bill, 2026-10-24: "Very interesting... I never understood why this didn't do bet
 
 ### Published, measured and our check, side by side
 
-Read across a row only within one column's basis. The three targets are separate floors.
+Read across a row only within one column's basis. Useful load and range are targets; cruise above 160 KTAS is a floor.
 
 | | As published | Measured or reported | Our check, original engine |
 |---|---|---|---|
@@ -218,6 +218,19 @@ Model: `docs/shortlist/check/models/express-2000.json`; result: `docs/shortlist/
 - **Mass and CG.** About +11 lb installed (E). The headline useful load is the CAFE-weighed aircraft's 901 lb less that, 890 lb.
 - **Cooling.** CAFE found the stock installation overheated at the published climb speed, and had to climb at 95-98 kt indicated. A liquid-cooled installation could fix that, but it is not computed.
 
+### Payload-range on the AM20T (AER-3900)
+
+Bill's ruling (2026-10-25): useful load and range are targets to report against, with no joint pass/fail; this is the tradeoff between them. Payload is occupants and baggage, in lb, with **no reserve / 45 min reserve**, still air, on the AM20T at the stage 3 assumptions (195 hp continuous, critical altitude 8,000 or 16,000 ft and cruise there, BSFC 0.45, economy 65% of continuous; none published by Aeromomentum). "cannot" means not even an empty cabin reaches it on full tanks. Past the full-tank point the airplane leaves below gross. No seat or baggage cap is applied. Our estimate (E); script `docs/shortlist/check/payload_range.py`, all designs in `payload_range_output.md` beside it.
+
+| Design | Power, cruise alt | KTAS | 600 nm | 800 nm | 1,000 nm | 1,200 nm | Full tanks from gross: payload, lb: range, nm |
+|---|---|---|---|---|---|---|---|
+| Wheeler Express (2,895 lb, 2,005 lb empty, 92 gal, k 1.29) | continuous, 8k | 179 | 569 / 504 | 472 / 407 | 376 / cannot | cannot / cannot | 338: 1,062 / 958 |
+| Wheeler Express (2,895 lb, 2,005 lb empty, 92 gal, k 1.29) | continuous, 16k | 191 | 574 / 509 | 483 / 419 | 393 / 205 | cannot / cannot | 338: 1,115 / 981 |
+| Wheeler Express (2,895 lb, 2,005 lb empty, 92 gal, k 1.29) | economy 65%, 8k | 149 (under the 160 floor) | 632 / 589 | 556 / 514 | 481 / 439 | 406 / 365 | 338: 1,365 / 1,283 |
+| Wheeler Express (2,895 lb, 2,005 lb empty, 92 gal, k 1.29) | economy 65%, 16k | 157 (under the 160 floor) | 629 / 587 | 557 / 516 | 487 / 445 | 417 / 376 | 338: 1,417 / 1,330 |
+
+**Reading.** Range meets the target at continuous power (1,062-1,115 nm); useful load is the miss, 890 lb on the weighed aircraft, 11% short. With a 45 min reserve it carries 504-509 lb 600 nm, 407-419 lb 800 nm and at most 205 lb 1,000 nm (nothing at 8,000 ft): two adults and bags to 800 nm. Economy power carries 439-445 lb 1,000 nm with the reserve, but at 149-157 KTAS, under the speed floor.
+
 ### Rights and provenance (stage 2)
 
 Open question (Elon, `docs/rights/express-2000.md`, PR #3). It was always a kit. The design passed through at least five owners, three of them through bankruptcy: Wheeler Technology, Express Design Inc., Express Aircraft Co. LLC, Exosphere Aircraft Co., and Composite Aircraft Technology LLC, which bought the assets out of bankruptcy court in September 2007. There is no public trace of CAT after about 2010, and its domain now serves an unrelated site. The old EXPRESS mark was cancelled in 2001. This is the most orphaned design on the shortlist.
@@ -251,7 +264,7 @@ Full study (rank 2). Method, prices and sources are in [docs/MANUFACTURING.md](.
 
 **First, what to delete:** the vinylester laminate; the cruciform tail; the nose ballast; the IO-360's baffles, injection controls and magnetos; and the incomplete kit, meaning every part old builders had to make or document themselves.
 
-**Empty weight:** rebuild **1,770-2,030 lb**, useful load **865-1,125 lb** against the weighed 901. At the light end it clears the 1,000 lb floor. The light end counts the 56-62 lb of nose ballast S-90 owners carry; the heavy end does not, because the CAFE-weighed cruciform aircraft shows no ballast. Engine change -6 to +23 lb (IO-360-ES 320 lb, TCDS E1CE).
+**Empty weight:** rebuild **1,770-2,030 lb**, useful load **865-1,125 lb** against the weighed 901. At the light end it meets the 1,000 lb target; at the heavy end it is 135 lb (14%) short. The light end counts the 56-62 lb of nose ballast S-90 owners carry; the heavy end does not, because the CAFE-weighed cruciform aircraft shows no ballast. Engine change -6 to +23 lb (IO-360-ES 320 lb, TCDS E1CE).
 
 **Cost, hours, tooling, skill floor** (detail and sources in [MANUFACTURING.md](../MANUFACTURING.md#wheeler-express-composite-complete-kit)):
 

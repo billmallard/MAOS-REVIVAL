@@ -39,18 +39,18 @@ Cruise settings (P = screened as published, M = screened as measured; the basis 
 
 ## Screen (published numbers; like for like)
 
-Two screens, never mixed: the maker's figures as published, and measured or reported data. The three targets are separate floors; payload at 1,000 nm is information only.
+Two screens, never mixed: the maker's figures as published, and measured or reported data. Useful load and range are targets: a miss is reported with its size, and payload against range is the tradeoff to read. Cruise above 160 KTAS is a floor.
 
 - **As published: near miss** - UL -35 lb
   - Useful load: 965 lb (near) against 1,000 lb.
   - Range: 1,315 nm (pass; economy cruise, 30 min reserve) against 1,000 nm.
   - Cruise: 208 KTAS at 8,000 ft (pass+) against >160 KTAS (>180 preferred).
-  - Payload at 1,000 nm (information): 718 / 683 @ 187 kt, 7.7 gph.
+  - Payload at 1,000 nm, lb, no reserve / 45 min: 718 / 683 @ 187 kt, 7.7 gph.
 - **Measured or reported: partial: speed pass, speed unconditioned**
   - Useful load: - lb (?) against 1,000 lb.
   - Range: - nm (?; none found) against 1,000 nm.
   - Cruise: 180 KTAS at an unstated altitude (pass+) against >160 KTAS (>180 preferred).
-  - Payload at 1,000 nm (information): cannot be computed on this basis.
+  - Payload at 1,000 nm, lb, no reserve / 45 min: cannot be computed on this basis.
 - Aeromomentum fit (first cut): Yes: AM20T (260 hp) for 205 hp.
 
 Sanity flags:
@@ -95,7 +95,7 @@ Bill, 2026-10-24: "not likely. These were expensive to build." Dropped from the 
 
 ### Published, measured and our check, side by side
 
-Read across a row only within one column's basis. The three targets are separate floors.
+Read across a row only within one column's basis. Useful load and range are targets; cruise above 160 KTAS is a floor.
 
 | | As published | Measured or reported | Our check, original engine |
 |---|---|---|---|
@@ -133,7 +133,7 @@ Model: `docs/shortlist/check/models/berkut-360.json`; result: `docs/shortlist/ch
 | calibration factor | 0.312 | x1.290 on the build-up (calibration; basis stated above) |
 | induced | 0.102 | Oswald (Raymer 12.48), lift split stated above |
 
-**Original engine, our numbers:** 150 hp at 8,000 ft gives 218 KTAS; still-air range on full usable fuel from MTOW 1,034 nm (climb allowance 20 lb); payload at 1,000 nm 636 lb with no reserve, cannot lb with 45 min.
+**Original engine, our numbers:** 150 hp at 8,000 ft gives 218 KTAS; still-air range on full usable fuel from MTOW 1,034 nm (climb allowance 20 lb); payload at 1,000 nm 636 lb with no reserve, none with 45 min from gross weight (the tanks do not hold the fuel).
 
 **On the Aeromomentum line (AM20T), our numbers.** Installed-mass change +16 lb. The headline useful load takes no credit for a lighter engine (CG ballast assumed to eat it); the number in brackets takes the full saving and the optimistic drag factor.
 

@@ -38,18 +38,18 @@ Cruise settings (P = screened as published, M = screened as measured; the basis 
 
 ## Screen (published numbers; like for like)
 
-Two screens, never mixed: the maker's figures as published, and measured or reported data. The three targets are separate floors; payload at 1,000 nm is information only.
+Two screens, never mixed: the maker's figures as published, and measured or reported data. Useful load and range are targets: a miss is reported with its size, and payload against range is the tradeoff to read. Cruise above 160 KTAS is a floor.
 
 - **As published: fail** - UL -150 lb, range -131 nm
   - Useful load: 850 lb (fail) against 1,000 lb.
   - Range: 869 nm (fail; not stated (1,000 mi)) against 1,000 nm.
   - Cruise: 165 KTAS at 7,500 ft (pass) against >160 KTAS (>180 preferred).
-  - Payload at 1,000 nm (information): cannot (866 nm max).
+  - Payload at 1,000 nm, lb, no reserve / 45 min: cannot (866 nm max).
 - **Measured or reported: partial: UL fail, speed near, speed unconditioned** - UL -261 lb, speed -9 kt
   - Useful load: 739 lb (fail) against 1,000 lb.
   - Range: - nm (?; none found) against 1,000 nm.
   - Cruise: 151 KTAS at an unstated altitude (near) against >160 KTAS (>180 preferred).
-  - Payload at 1,000 nm (information): cannot (866 nm max).
+  - Payload at 1,000 nm, lb, no reserve / 45 min: cannot (866 nm max).
 - Aeromomentum fit (first cut): Yes: AM20T (260 hp) for 180 hp.
 
 Sanity flags:
@@ -87,7 +87,7 @@ Bill, 2026-10-24: "Prescott Pusher should also be of high interest. This is poss
 
 ### Verdict
 
-**Rank 2, top tier.** As published it passes speed (165 KTAS at 7,500 ft) and misses useful load by 150 lb (850) and range by about 130 nm (869 nm, reserve not stated). As measured it is weaker: the one weighed builder aircraft had 739 lb useful, and Kitplanes measured 151 KTAS at 73% at an unpublished altitude, which our model can reproduce only with a drag factor of 1.46-1.67 against the brochure's 1.35. On an AM20T it is fast. **It clears all three floors on both drag bases only as a re-derivation** at about 2,700 lb gross with 90 gal, and only if the rebuild lands at the light end of MANUFACTURING's structure estimate: 1,142 lb useful, 1,044-1,151 nm, 179-201 KTAS (AER-3866, corrected by AER-3902). At the heavy end it misses useful load by 140 lb. The balance is worse than our first plan-station pass said: once N747P's published 49 lb of ballast and the constant-speed propeller are counted, the AM20T needs 113-130 lb of nose ballast at 2,700 lb, or 51-69 lb even with its radiator in the nose. SAFETY reviewed the balance options and the landing technique (AER-3899): it does not recommend against revival, but against reviving the original configuration plus a balance fix. Its two great assets are a short 12 in prop extension instead of a drive shaft, and the best-preserved engineering record in the survey (SDASM SC.10269: drawings, loads report, wind-tunnel evaluation, structural tests). Its weakness is handling, and it is now specific (SAFETY's verdicts are in [the safety review](#safety-review-aer-3899)): main wheels 21-28 in behind the CG range on prototype 1 (a 30-38 deg tipback, against the usual 15), a tail volume of about 0.50, and a stick-free static margin of only about 6% at the aft limit (all our estimates). The AM20T makes rotation harder through its thrust on a high thrust line more than through its weight. It ranks behind the Aries, which clears the floors on a straight engine swap, and ahead of the Express, because its engineering survives and it has no long shaft or known tail flaw.
+**Rank 2, top tier.** As published it passes speed (165 KTAS at 7,500 ft) and misses useful load by 150 lb (850) and range by about 130 nm (869 nm, reserve not stated). As measured it is weaker: the one weighed builder aircraft had 739 lb useful, and Kitplanes measured 151 KTAS at 73% at an unpublished altitude, which our model can reproduce only with a drag factor of 1.46-1.67 against the brochure's 1.35. On an AM20T it is fast. As built on 56.5 gal it reaches 648-705 nm, 30-35% short of the range target, with 660-878 lb useful. **It meets both targets on both drag bases only as a re-derivation** at about 2,700 lb gross with 90 gal, and the useful-load target only if the rebuild lands at the light end of MANUFACTURING's structure estimate: 1,142 lb useful, 1,044-1,151 nm, 179-201 KTAS (AER-3866, corrected by AER-3902). At the heavy end useful load is 860 lb, 14% short. Over 1,000 nm with a 45 min reserve at continuous power the re-derivation carries up to 606 lb (light end, brochure basis, 16,000 ft) and nothing on the measured basis at 8,000 ft; at 800 nm it carries 380-691 lb across both ends and bases ([payload-range table](#payload-range-on-the-am20t-aer-3900)). The balance is worse than our first plan-station pass said: once N747P's published 49 lb of ballast and the constant-speed propeller are counted, the AM20T needs 113-130 lb of nose ballast at 2,700 lb, or 51-69 lb even with its radiator in the nose. SAFETY reviewed the balance options and the landing technique (AER-3899): it does not recommend against revival, but against reviving the original configuration plus a balance fix. Its two great assets are a short 12 in prop extension instead of a drive shaft, and the best-preserved engineering record in the survey (SDASM SC.10269: drawings, loads report, wind-tunnel evaluation, structural tests). Its weakness is handling, and it is now specific (SAFETY's verdicts are in [the safety review](#safety-review-aer-3899)): main wheels 21-28 in behind the CG range on prototype 1 (a 30-38 deg tipback, against the usual 15), a tail volume of about 0.50, and a stick-free static margin of only about 6% at the aft limit (all our estimates). The AM20T makes rotation harder through its thrust on a high thrust line more than through its weight. It ranks behind the Aries, which comes close to every target on a straight engine swap (useful load met, range 8-9% short at continuous power), and ahead of the Express, because its engineering survives and it has no long shaft or known tail flaw.
 
 ### Idea ledger (what a new airplane should keep)
 
@@ -101,7 +101,7 @@ Bill, 2026-10-24: "Prescott Pusher should also be of high interest. This is poss
 
 ### Published, measured and our check, side by side
 
-Read across a row only within one column's basis. The three targets are separate floors.
+Read across a row only within one column's basis. Useful load and range are targets; cruise above 160 KTAS is a floor.
 
 | | As published | Measured or reported | Our check, original engine |
 |---|---|---|---|
@@ -148,7 +148,7 @@ So either Kitplanes flew low and the airplane is 10-25% draggier than its geomet
 
 *Stage 3 record (2026-10-24). Its structure placeholders and its balance arms (8 ft and 6 ft, so 1.33 lb of ballast per pound of engine) are superseded by [the re-derivation below](#the-re-derivation-with-the-structure-delta-and-the-balance-aer-3866); the fuel and power levers still stand.*
 
-Bill's question: on an Aeromomentum engine, turbo-normalised at altitude, what moves useful load (850 lb published, 150 short), range (869 nm published, about 130 short) and speed, and does it clear all three floors? Script and full tables: `docs/shortlist/check/prescott/levers.py`. Assumptions: 195 / 120 hp continuous and 8,000 / 16,000 ft critical altitudes are ours; the structure deltas are placeholders until MANUFACTURING (AER-3784) answers; the 75 and 90 gal tankage is our estimate (the 15% wing has about 280 gal of geometric volume).
+Bill's question: on an Aeromomentum engine, turbo-normalised at altitude, what moves useful load (850 lb published, 150 short), range (869 nm published, about 130 short) and speed, and how close does it come to the targets? Script and full tables: `docs/shortlist/check/prescott/levers.py`. Assumptions: 195 / 120 hp continuous and 8,000 / 16,000 ft critical altitudes are ours; the structure deltas are placeholders until MANUFACTURING (AER-3784) answers; the 75 and 90 gal tankage is our estimate (the 15% wing has about 280 gal of geometric volume).
 
 **The engine sits in the tail, so engine weight costs twice.** Every pound added behind the cabin needs about 1.3 lb of nose ballast to keep the CG where it was (our estimate of the arms), and the Prescott's CG was already its weak point. The AM20T is 61 lb heavier installed than the O-360, which costs about 82 lb of ballast; the AM15T is 26 lb lighter and saves about 35 lb.
 
@@ -162,13 +162,13 @@ Bill's question: on an Aeromomentum engine, turbo-normalised at altitude, what m
 | **AM20T + 90 gal + a 2,700 lb gross structure no more than 100 lb heavier per pound of gross than today's (net -100 lb)** | **1,077** | **204 / 194** | **1,172 / 1,112** |
 | AM15T + 90 gal + 200 lb lighter, at 2,400 lb | 1,111 | 169 / **159** | 1,587 / 1,503 |
 
-**What each lever buys.** More power at altitude buys speed and nothing else: the AM20T lifts cruise to 194-207 KTAS and costs useful load through the tail-cone weight. More fuel buys range and nothing else: 90 gal clears 1,000 nm at continuous power on both bases. A lighter structure buys useful load pound for pound, but at 2,400 lb even 200 lb lighter leaves the AM20T version at 907 lb. **It clears all three floors on both bases only as a re-derivation**: a structure designed for about 2,700 lb gross, about 100 lb lighter than today's structure would be at that weight, 90 gal, and the AM20T. The AM15T alternative clears load and range at 2,400 lb with a 200 lb lighter structure, but its cruise speed falls to the floor (159-169 KTAS). With 90 gal aboard at 2,700 lb, the AM20T re-derivation carries about 540 lb of people and baggage: it is a four-seater with full fuel only for light occupants, as the original was.
+**What each lever buys.** More power at altitude buys speed and nothing else: the AM20T lifts cruise to 194-207 KTAS and costs useful load through the tail-cone weight. More fuel buys range and nothing else: 90 gal reaches 1,000 nm at continuous power on both bases. A lighter structure buys useful load pound for pound, but at 2,400 lb even 200 lb lighter leaves the AM20T version at 907 lb. **It meets all three on both bases only as a re-derivation**: a structure designed for about 2,700 lb gross, about 100 lb lighter than today's structure would be at that weight, 90 gal, and the AM20T. The AM15T alternative meets the load and range targets at 2,400 lb with a 200 lb lighter structure, but its cruise speed falls to the 160 KTAS floor (159-169 KTAS). With 90 gal aboard at 2,700 lb, the AM20T re-derivation carries about 540 lb of people and baggage: it is a four-seater with full fuel only for light occupants, as the original was.
 
 **The real constraint is balance, not power.** The AM20T makes the Prescott fast, but its weight in the tail cone makes the documented aft-CG problem worse. A re-derivation would move the wing aft or lengthen the forward fuselage to put the CG where the gear and the tail want it, and that, not the engine, is the design work.
 
 ### The re-derivation, with the structure delta and the balance (AER-3866)
 
-Bill picked the Prescott on AER-3783. This section folds in MANUFACTURING's structure estimate (AER-3784) and works the balance on the AM20T. Script, inputs and full tables: `docs/shortlist/check/prescott/balance.py` and `balance_output.md`; how each station was read: that folder's README. The AM20T's 195 hp continuous rating and its critical altitudes are still **our assumptions** (the question to Aeromomentum waits on AER-3800). Every number here is our estimate (E) unless graded otherwise.
+Bill picked the Prescott on AER-3783. This section folds in MANUFACTURING's structure estimate (AER-3784) and works the balance on the AM20T. Script, inputs and full tables: `docs/shortlist/check/prescott/balance.py` and `balance_output.md`; how each station was read: that folder's README. The AM20T's 195 hp continuous rating and its critical altitudes are still **our assumptions** (Bill will ask Aeromomentum himself, AER-3800; the survey carries the assumptions until then). Every number here is our estimate (E) unless graded otherwise.
 
 *Corrected 2026-10-25 (AER-3902), on SAFETY's review (AER-3899, section 1): N747P's 49 lb of ballast is published, so the empty-CG reference is now the airplane that needed it; the AM20T's constant-speed propeller is now in the weight and balance; option C now pays for its own neutral-point loss. The numbers below are the corrected ones. The output's correction ledger walks from PR #10's first numbers to these, one correction at a time.*
 
@@ -190,13 +190,13 @@ Bill picked the Prescott on AER-3783. This section folds in MANUFACTURING's stru
 
 **1. Useful load and range at the re-derived gross.** AM20T, 2,700 lb, 90 gal, wing and tail 12.5% larger to hold the stall speed (MANUFACTURING's weight assumes it), balance by option B below. Still air, no reserve, full fuel from gross, at continuous power. Critical altitude 8,000 / 16,000 ft.
 
-| Structure end (MANUFACTURING) | Empty, lb | Useful load | Payload with full fuel | Brochure basis (k 1.35): KTAS / nm | Measured basis (k 1.55): KTAS / nm | Floors |
+| Structure end (MANUFACTURING) | Empty, lb | Useful load | Payload with full fuel | Brochure basis (k 1.35): KTAS / nm | Measured basis (k 1.55): KTAS / nm | Against the targets (speed is a floor) |
 |---|---|---|---|---|---|---|
-| Light (rebuild 1,380 lb at 2,400 lb, +30 lb for 2,700) | 1,558 | **1,142** | 602 | 188-201 / 1,100-1,151 | 179-190 / 1,044-1,093 | **all three pass** on both bases |
-| Heavy (rebuild 1,630 lb, +85 lb) | 1,840 | **860** | 320 | 188-201 / 1,100-1,151 | 179-190 / 1,044-1,093 | useful load misses by 140 lb; range and speed pass |
-| At 2,400 lb, 56.5 gal (no re-derivation), light / heavy | 1,522 / 1,740 | 878 / 660 | 539 / 321 | 194-207 / 683-705 | 184-196 / 648-669 | load and range fail |
+| Light (rebuild 1,380 lb at 2,400 lb, +30 lb for 2,700) | 1,558 | **1,142** | 602 | 188-201 / 1,100-1,151 | 179-190 / 1,044-1,093 | **all three met** on both bases |
+| Heavy (rebuild 1,630 lb, +85 lb) | 1,840 | **860** | 320 | 188-201 / 1,100-1,151 | 179-190 / 1,044-1,093 | useful load 140 lb (14%) short; range and speed met |
+| At 2,400 lb, 56.5 gal (no re-derivation), light / heavy | 1,522 / 1,740 | 878 / 660 | 539 / 321 | 194-207 / 683-705 | 184-196 / 648-669 | useful load 12-34% short; range 30-35% short |
 
-The useful-load floor holds at 2,700 lb if the rebuilt empty weight with the AM20T is 1,700 lb or less. MANUFACTURING's range, with the corrected balance, puts it at 1,558-1,840 lb, so the floor is met over about half of that range. The heavy end starts from the one weighed builder aircraft, N747P: 1,661 lb, of which 49 lb was ballast (SA91, P). That ballast is now taken out and re-solved, so the heavy end no longer double-counts it. Range clears 1,000 nm on both drag bases at both critical altitudes. At 16,000 ft the speed is 3-4 kt below stage 3's 2,700 lb figures (204 / 194 KTAS): the cost of the larger wing and tail, which stage 3 left out.
+The useful-load target is met at 2,700 lb if the rebuilt empty weight with the AM20T is 1,700 lb or less. MANUFACTURING's range, with the corrected balance, puts it at 1,558-1,840 lb, so the target is met over about half of that range, and the heavy end is at most 14% short. The heavy end starts from the one weighed builder aircraft, N747P: 1,661 lb, of which 49 lb was ballast (SA91, P). That ballast is now taken out and re-solved, so the heavy end no longer double-counts it. Range exceeds 1,000 nm on both drag bases at both critical altitudes. At 16,000 ft the speed is 3-4 kt below stage 3's 2,700 lb figures (204 / 194 KTAS): the cost of the larger wing and tail, which stage 3 left out.
 
 **2. The balance options.** Each is sized alone so the most-aft standard loading (one pilot, 100 lb of bags, 45 min of fuel) sits on the designer's aft limit, at 2,700 lb with 90 gal. Without a fix, the AM20T with its radiator in the tail cone puts that loading 7.6-7.7 in aft of the limit (headline datum: N747P's ballast at FS 100).
 
@@ -316,7 +316,7 @@ Model: `docs/shortlist/check/models/prescott-pusher.json`; result: `docs/shortli
 | calibration factor | 0.505 | x1.290 on the build-up (calibration; basis stated above) |
 | induced | 0.402 | Oswald (Raymer 12.48), lift split stated above |
 
-**Original engine, our numbers:** 135 hp at 7,500 ft gives 170 KTAS; still-air range on full usable fuel from MTOW 865 nm (climb allowance 21 lb); payload at 1,000 nm cannot lb with no reserve, cannot lb with 45 min.
+**Original engine, our numbers:** 135 hp at 7,500 ft gives 170 KTAS; still-air range on full usable fuel from MTOW 865 nm (climb allowance 21 lb); no payload at 1,000 nm from gross weight, with or without a 45 min reserve (the tanks do not hold the fuel).
 
 **On the Aeromomentum line (AM20T), our numbers.** Installed-mass change +61 lb. The headline useful load takes no credit for a lighter engine (CG ballast assumed to eat it); the number in brackets takes the full saving and the optimistic drag factor.
 
@@ -331,6 +331,23 @@ Model: `docs/shortlist/check/models/prescott-pusher.json`; result: `docs/shortli
 - **AM15T** (160 hp; 120 hp assumed continuous): 26 lb lighter, keeps useful load, cruises at the 160 KTAS floor.
 - **Cooling:** liquid cooling would end the tail-cone air-cooling struggle, with a radiator inlet where the oil cooler went (the nose) or in the cone; not designed.
 - **Propeller:** the geared Aeromomentum output and a constant-speed prop should recover some of the efficiency the short fixed-pitch prop lost; clearance still limits diameter.
+
+### Payload-range on the AM20T (AER-3900)
+
+Bill's ruling (2026-10-25): useful load and range are targets to report against, with no joint pass/fail; this is the tradeoff between them. Payload is occupants and baggage, in lb, with **no reserve / 45 min reserve**, still air, on the AM20T at the stage 3 assumptions (195 hp continuous, critical altitude 8,000 or 16,000 ft and cruise there, BSFC 0.45, economy 65% of continuous; none published by Aeromomentum). "cannot" means not even an empty cabin reaches it on full tanks. Past the full-tank point the airplane leaves below gross. No seat or baggage cap is applied. Each cell spans both critical altitudes and both drag bases (brochure k 1.35, measured k 1.55), with balance option B and its residual nose ballast (AER-3902). Our estimate (E); script `docs/shortlist/check/payload_range.py`, per-case rows in `payload_range_output.md` beside it.
+
+| Design | Power | KTAS | 600 nm | 800 nm | 1,000 nm | 1,200 nm | Range on full tanks from gross, no reserve, nm |
+|---|---|---|---|---|---|---|---|
+| 2,400 lb, 56.5 gal, light end (1,522 lb empty) | continuous | 184-207 | 569-589 / cannot-153 | cannot / cannot | cannot / cannot | cannot / cannot | 648-705 |
+| 2,400 lb, 56.5 gal, light end (1,522 lb empty) | economy 65% | 155-173 (under the 160 floor at the low end) | 633-644 / 590-602 | 560-579 / 154-514 | cannot-163 / cannot | cannot / cannot | 838-907 |
+| 2,400 lb, 56.5 gal, heavy end (1,740 lb empty) | continuous | 184-207 | 351-371 / cannot | cannot / cannot | cannot / cannot | cannot / cannot | 648-705 |
+| 2,400 lb, 56.5 gal, heavy end (1,740 lb empty) | economy 65% | 155-173 (under the 160 floor at the low end) | 415-426 / 372-384 | 342-361 / cannot-296 | cannot / cannot | cannot / cannot | 838-907 |
+| 2,700 lb, 90 gal, light end (1,558 lb empty) | continuous | 179-201 | 823-842 / 758-777 | 726-756 / 662-691 | 630-670 / cannot-606 | cannot-320 / cannot | 1,044-1,151 |
+| 2,700 lb, 90 gal, light end (1,558 lb empty) | economy 65% | 150-167 (under the 160 floor at the low end) | 885-899 / 843-857 | 812-830 / 770-788 | 737-763 / 696-721 | 664-697 / 623-656 | 1,350-1,479 |
+| 2,700 lb, 90 gal, heavy end (1,840 lb empty) | continuous | 179-201 | 542-561 / 476-495 | 445-474 / 380-410 | 349-389 / cannot-325 | cannot-38 / cannot | 1,044-1,151 |
+| 2,700 lb, 90 gal, heavy end (1,840 lb empty) | economy 65% | 150-167 (under the 160 floor at the low end) | 604-618 / 561-575 | 530-548 / 488-506 | 456-481 / 414-440 | 382-415 / 341-374 | 1,350-1,479 |
+
+**Reading.** As built (56.5 gal) it is a 600 nm airplane at speed: 648-705 nm on full tanks at continuous power, 30-35% short of the range target, and with a 45 min reserve it carries at most 153 lb 600 nm. The re-derivation (2,700 lb, 90 gal) meets the range target, and with a 45 min reserve carries 476-777 lb 600 nm and 380-691 lb 800 nm across both structure ends and both drag bases. Over 1,000 nm at continuous power the reserve takes most of the margin: up to 606 lb at the light end on the brochure basis at 16,000 ft, 325 lb at the heavy end, and nothing on the measured basis at 8,000 ft. Economy power carries 414-721 lb 1,000 nm with the reserve, at 150-167 KTAS, partly under the speed floor. Which drag basis is real moves the 1,000 nm payload with reserve by about 300 lb, about as much as the structure end does; only a flight test of a rebuilt airplane settles it.
 
 ### Rights and provenance (stage 2)
 

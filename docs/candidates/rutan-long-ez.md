@@ -38,18 +38,18 @@ Cruise settings (P = screened as published, M = screened as measured; the basis 
 
 ## Screen (published numbers; like for like)
 
-Two screens, never mixed: the maker's figures as published, and measured or reported data. The three targets are separate floors; payload at 1,000 nm is information only.
+Two screens, never mixed: the maker's figures as published, and measured or reported data. Useful load and range are targets: a miss is reported with its size, and payload against range is the tradeoff to read. Cruise above 160 KTAS is a floor.
 
 - **As published: fail** - UL -385 lb, speed -1 kt
   - Useful load: 615 lb (fail) against 1,000 lb.
   - Range: 1,243 nm (pass; 40% power, 40 min reserve) against 1,000 nm.
   - Cruise: 159 KTAS at 8,000 ft (near) against >160 KTAS (>180 preferred).
-  - Payload at 1,000 nm (information): 449 / 434 @ 125 kt, 3.4 gph (est. flow).
+  - Payload at 1,000 nm, lb, no reserve / 45 min: 449 / 434 @ 125 kt, 3.4 gph (est. flow).
 - **Measured or reported: partial: UL fail** - UL -525 lb
   - Useful load: 475 lb (fail) against 1,000 lb.
   - Range: - nm (?; none found) against 1,000 nm.
   - Cruise: not found against >160 KTAS (>180 preferred).
-  - Payload at 1,000 nm (information): cannot be computed on this basis.
+  - Payload at 1,000 nm, lb, no reserve / 45 min: cannot be computed on this basis.
 - Aeromomentum fit (first cut): Yes: AM15 (120 hp) for 115 hp.
 
 Sanity flags:

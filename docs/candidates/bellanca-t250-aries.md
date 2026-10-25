@@ -39,18 +39,18 @@ Cruise settings (P = screened as published, M = screened as measured; the basis 
 
 ## Screen (published numbers; like for like)
 
-Two screens, never mixed: the maker's figures as published, and measured or reported data. The three targets are separate floors; payload at 1,000 nm is information only.
+Two screens, never mixed: the maker's figures as published, and measured or reported data. Useful load and range are targets: a miss is reported with its size, and payload against range is the tradeoff to read. Cruise above 160 KTAS is a floor.
 
 - **As published: pass, speed unconditioned**
   - Useful load: 1,300 lb (pass) against 1,000 lb.
   - Range: 1,017 nm (pass; published 1,170 statute miles at economy cruise with 45-min reserve (AOPA table labels the power 55%, its economy speed line says 65%); 990 sm (860 nm) at 75% with 45-min reserve; altitude not stated) against 1,000 nm.
   - Cruise: 181 KTAS at an unstated altitude (pass+) against >160 KTAS (>180 preferred).
-  - Payload at 1,000 nm (information): 879 / cannot @ 174 kt, 12.2 gph (est. flow).
+  - Payload at 1,000 nm, lb, no reserve / 45 min: 879 / cannot @ 174 kt, 12.2 gph (est. flow).
 - **Measured or reported: partial: speed pass**
   - Useful load: - lb (?) against 1,000 lb.
   - Range: - nm (?; none found) against 1,000 nm.
   - Cruise: 181 KTAS at 6,500 ft (pass+) against >160 KTAS (>180 preferred).
-  - Payload at 1,000 nm (information): cannot be computed on this basis.
+  - Payload at 1,000 nm, lb, no reserve / 45 min: cannot be computed on this basis.
 - Aeromomentum fit (first cut): Yes: AM20T (260 hp) for 250 hp.
 
 Sanity flags:
@@ -87,7 +87,7 @@ Bill, 2026-10-24: not in the first long list; "add it, and shortlist it if the n
 
 ### Verdict
 
-**Rank 1.** As published it passes all three floors: 1,300 lb useful, 1,017 nm at economy cruise with a 45-minute reserve, and 181 KTAS at 75% (altitude not stated); AOPA measured 181 KTAS at 6,500 ft on 73% in 1977. Our check agrees with the published speed (drag factor 1.26-1.34 on AOPA's two points, inside the fleet band), so the airframe is as clean as claimed. It reads the published range about 10% optimistic: 1,008 nm still air with no reserve at 65% and 8,000 ft on 76 gal. On an AM20T it is a direct fit (250 hp to 260 hp take-off, similar cruise power): 185-197 KTAS, 1,300 lb useful (factory; no fleet figure exists for four aircraft), 906-919 nm on full fuel at continuous power, and over 1,000 nm at economy power (154-161 KTAS, 859-861 lb with a reserve, as information). Its record is clean (one NTSB event in about 50 years, on four aircraft), it died with its producer rather than for any flaw, it was designed from flat and single-curve skins to be cheap to build, and its type certificate is still current. Its weaknesses: only four exist, so there is no fleet record to judge, and range at continuous power is about 90 nm short on standard fuel.
+**Rank 1.** As published it meets all three targets: 1,300 lb useful, 1,017 nm at economy cruise with a 45-minute reserve, and 181 KTAS at 75% (altitude not stated); AOPA measured 181 KTAS at 6,500 ft on 73% in 1977. Our check agrees with the published speed (drag factor 1.26-1.34 on AOPA's two points, inside the fleet band), so the airframe is as clean as claimed. It reads the published range about 10% optimistic: 1,008 nm still air with no reserve at 65% and 8,000 ft on 76 gal. On an AM20T it is a direct fit (250 hp to 260 hp take-off, similar cruise power): 185-197 KTAS, 1,300 lb useful (factory; no fleet figure exists for four aircraft), 906-919 nm on full fuel at continuous power, and over 1,000 nm at economy power (859-861 lb with a 45 min reserve), but only at 154-161 KTAS, on or under the 160 KTAS floor. At continuous power it carries 923-925 lb 600 nm and 484-711 lb 800 nm with a 45 min reserve, and nothing 1,000 nm with one (payload-range table below). Its record is clean (one NTSB event in about 50 years, on four aircraft), it died with its producer rather than for any flaw, it was designed from flat and single-curve skins to be cheap to build, and its type certificate is still current. Its weaknesses: only four exist, so there is no fleet record to judge, and range at continuous power is 906-919 nm on standard fuel, 8-9% short of the 1,000 nm target.
 
 ### Idea ledger (what a new airplane should keep)
 
@@ -98,7 +98,7 @@ Bill, 2026-10-24: not in the first long list; "add it, and shortlist it if the n
 
 ### Published, measured and our check, side by side
 
-Read across a row only within one column's basis. The three targets are separate floors.
+Read across a row only within one column's basis. Useful load and range are targets; cruise above 160 KTAS is a floor.
 
 | | As published | Measured or reported | Our check, original engine |
 |---|---|---|---|
@@ -155,7 +155,7 @@ Model: `docs/shortlist/check/models/bellanca-t250-aries.json`; result: `docs/sho
 | calibration factor | 0.631 | x1.300 on the build-up (calibration; basis stated above) |
 | induced | 0.376 | Oswald (Raymer 12.48), lift split stated above |
 
-**Original engine, our numbers:** 162.5 hp at 8,000 ft gives 172 KTAS; still-air range on full usable fuel from MTOW 1,008 nm (climb allowance 25 lb); payload at 1,000 nm 848 lb with no reserve, cannot lb with 45 min.
+**Original engine, our numbers:** 162.5 hp at 8,000 ft gives 172 KTAS; still-air range on full usable fuel from MTOW 1,008 nm (climb allowance 25 lb); payload at 1,000 nm 848 lb with no reserve, none with 45 min from gross weight (the tanks do not hold the fuel).
 
 **On the Aeromomentum line (AM20T), our numbers.** Installed-mass change -64 lb. The headline useful load takes no credit for a lighter engine (CG ballast assumed to eat it); the number in brackets takes the full saving and the optimistic drag factor.
 
@@ -169,7 +169,20 @@ Model: `docs/shortlist/check/models/bellanca-t250-aries.json`; result: `docs/sho
 - **Power.** The AM20T (260 hp take-off, 195 hp assumed continuous) replaces a 250 hp O-540 that cruises at 163-188 hp (65-75%). The cruise power is about the same, so the Aries keeps its speed: 185 KTAS at 8,000 ft (low case) and 197 KTAS at 16,000 ft (high case).
 - **Mass and CG.** The installed mass falls by about 64 lb (E), in the nose. That needs ballast or a longer mount; the headline useful load takes no credit for the saving.
 - **Cooling.** The O-540 used a single inlet below the spinner and no cowl flaps. A radiator needs its own duct, not yet designed; Raymer's cooling drag is carried unchanged.
-- **Fuel.** At continuous power the 76 gal usable gives 906-919 nm still air. A modest tank increase, or economy cruise, closes the range floor.
+- **Fuel.** At continuous power the 76 gal usable gives 906-919 nm still air. That is 8-9% short of the 1,000 nm target. Economy cruise reaches it, but at 154-161 KTAS, on or under the speed floor; a modest tank increase reaches it at speed (AER-3867 sizes it).
+
+### Payload-range on the AM20T (AER-3900)
+
+Bill's ruling (2026-10-25): useful load and range are targets to report against, with no joint pass/fail; this is the tradeoff between them. Payload is occupants and baggage, in lb, with **no reserve / 45 min reserve**, still air, on the AM20T at the stage 3 assumptions (195 hp continuous, critical altitude 8,000 or 16,000 ft and cruise there, BSFC 0.45, economy 65% of continuous; none published by Aeromomentum). "cannot" means not even an empty cabin reaches it on full tanks. Past the full-tank point the airplane leaves below gross. No seat or baggage cap is applied. Our estimate (E); script `docs/shortlist/check/payload_range.py`, all designs in `payload_range_output.md` beside it.
+
+| Design | Power, cruise alt | KTAS | 600 nm | 800 nm | 1,000 nm | 1,200 nm | Full tanks from gross: payload, lb: range, nm |
+|---|---|---|---|---|---|---|---|
+| Bellanca T-250 Aries (3,150 lb, 1,850 lb empty, 76 gal, k 1.30) | continuous, 8k | 185 | 988 / 923 | 894 / 484 | cannot / cannot | cannot / cannot | 844: 906 / 777 |
+| Bellanca T-250 Aries (3,150 lb, 1,850 lb empty, 76 gal, k 1.30) | continuous, 16k | 197 | 990 / 925 | 902 / 711 | 269 / cannot | cannot / cannot | 844: 919 / 805 |
+| Bellanca T-250 Aries (3,150 lb, 1,850 lb empty, 76 gal, k 1.30) | economy 65%, 8k | 154 (under the 160 floor) | 1,048 / 1,005 | 974 / 931 | 901 / 859 | 629 / 37 | 844: 1,155 / 1,044 |
+| Bellanca T-250 Aries (3,150 lb, 1,850 lb empty, 76 gal, k 1.30) | economy 65%, 16k | 161 | 1,042 / 1,000 | 972 / 930 | 903 / 861 | 738 / 282 | 844: 1,156 / 1,068 |
+
+**Reading.** Useful load meets the target by 30%. Range is the miss: at continuous power the 76 gal reach 906-919 nm, 8-9% short, and with a 45 min reserve it carries 923-925 lb 600 nm but 484-711 lb 800 nm and nothing 1,000 nm. Economy power carries 859-861 lb 1,000 nm with the reserve, but at 154-161 KTAS, on or under the 160 KTAS floor. So on standard fuel it trades speed for range; more tankage is what lets it keep both (AER-3867 sizes it).
 
 ### Rights and provenance (stage 2)
 

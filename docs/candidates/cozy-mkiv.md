@@ -43,25 +43,25 @@ Cruise settings (P = screened as published, M = screened as measured; the basis 
 
 ## Screen (published numbers; like for like)
 
-Two screens, never mixed: the maker's figures as published, and measured or reported data. The three targets are separate floors; payload at 1,000 nm is information only.
+Two screens, never mixed: the maker's figures as published, and measured or reported data. Useful load and range are targets: a miss is reported with its size, and payload against range is the tradeoff to read. Cruise above 160 KTAS is a floor.
 
 - **As published: pass**
   - Useful load: 1,000 lb (pass) against 1,000 lb.
   - Range: 1,129 nm (pass; 40% power, 12,000 ft, reserve not stated (1,300 mi converted)) against 1,000 nm.
   - Cruise: 191 KTAS at 8,000 ft (pass+) against >160 KTAS (>180 preferred).
-  - Payload at 1,000 nm (information): cannot (951 nm max).
+  - Payload at 1,000 nm, lb, no reserve / 45 min: cannot (951 nm max).
 - **Measured or reported: fail** - UL -129 lb
   - Useful load: 871 lb (fail) against 1,000 lb.
   - Range: 1,049 nm (pass; still air, no reserve, from fuel and measured flow at 170 KTAS) against 1,000 nm.
   - Cruise: 177 KTAS at 8,021 ft (pass) against >160 KTAS (>180 preferred).
-  - Payload at 1,000 nm (information): 581 / cannot @ 170 kt, 8.2 gph.
+  - Payload at 1,000 nm, lb, no reserve / 45 min: 581 / cannot @ 170 kt, 8.2 gph.
 - Aeromomentum fit (first cut): Yes: AM20T (260 hp) for 180 hp.
 
 Sanity flags:
 
 - fleet useful load 129 lb below factory
 - the only published speed/flow pair (192 kt, 10.5 gph) is a claim, and the 40%-power range has no published flow
-- as published (1,000 lb, 1,129 nm, 191 KTAS at 8,000 ft) it passes all three floors; the 951 nm in the first version of this list was 52 gal / 10.5 gph x 192 kt, the AOPA-quoted max-cruise claim, set against a range published at 40% power: a basis mismatch, not a units error (1,300 statute mi = 1,129 nm is right)
+- as published (1,000 lb, 1,129 nm, 191 KTAS at 8,000 ft) it meets all three targets; the 951 nm in the first version of this list was 52 gal / 10.5 gph x 192 kt, the AOPA-quoted max-cruise claim, set against a range published at 40% power: a basis mismatch, not a units error (1,300 statute mi = 1,129 nm is right)
 
 ## Why it died
 
@@ -88,7 +88,7 @@ Our own check, from published geometry and weights, calibrated against published
 
 ### Verdict
 
-**Reference, on two bases that are kept apart.** As published (cozyaircraft.com specs), the Cozy MKIV passes all three floors: 1,000 lb useful, 191 KTAS at 75% and 8,000 ft, and 1,130 nm (1,300 statute miles) at 40% power. As measured on the CAFE Foundation's test aircraft it gives 871 lb useful (1,179 lb empty against the 2,050 lb design gross), 177 KTAS at 8,000 ft at full throttle, and 1,049 nm still air with no reserve at 12,000 ft lean. The gap is empty weight: the designer's 1,050 lb against one equipped builder aircraft at 1,179 lb. Our drag check matches CAFE's measured speeds with a factor of 1.36. Candidates are compared with the Cozy published-to-published and measured-to-measured. The first version of the long list called it a near miss on 951 nm; that was a basis mismatch (a max-cruise claim against a 40% power range), not a units error.
+**Reference, on two bases that are kept apart.** As published (cozyaircraft.com specs), the Cozy MKIV meets all three targets: 1,000 lb useful, 191 KTAS at 75% and 8,000 ft, and 1,130 nm (1,300 statute miles) at 40% power. As measured on the CAFE Foundation's test aircraft it gives 871 lb useful (1,179 lb empty against the 2,050 lb design gross), 177 KTAS at 8,000 ft at full throttle, and 1,049 nm still air with no reserve at 12,000 ft lean. The gap is empty weight: the designer's 1,050 lb against one equipped builder aircraft at 1,179 lb. Our drag check matches CAFE's measured speeds with a factor of 1.36. Candidates are compared with the Cozy published-to-published and measured-to-measured. The first version of the long list called it a near miss on 951 nm; that was a basis mismatch (a max-cruise claim against a 40% power range), not a units error.
 
 ### Idea ledger (what a new airplane should keep)
 
@@ -97,7 +97,7 @@ Our own check, from published geometry and weights, calibrated against published
 
 ### Published, measured and our check, side by side
 
-Read across a row only within one column's basis. The three targets are separate floors.
+Read across a row only within one column's basis. Useful load and range are targets; cruise above 160 KTAS is a floor.
 
 | | As published | Measured or reported | Our check, original engine |
 |---|---|---|---|
@@ -156,7 +156,7 @@ Model: `docs/shortlist/check/models/cozy-mkiv.json`; result: `docs/shortlist/che
 | calibration factor | 0.550 | x1.360 on the build-up (calibration; basis stated above) |
 | induced | 0.098 | Oswald (Raymer 12.48), lift split stated above |
 
-**Original engine, our numbers:** 131 hp at 8,000 ft gives 175 KTAS; still-air range on full usable fuel from MTOW 829 nm (climb allowance 20 lb); payload at 1,000 nm cannot lb with no reserve, cannot lb with 45 min.
+**Original engine, our numbers:** 131 hp at 8,000 ft gives 175 KTAS; still-air range on full usable fuel from MTOW 829 nm (climb allowance 20 lb); no payload at 1,000 nm from gross weight, with or without a 45 min reserve (the tanks do not hold the fuel).
 
 **On the Aeromomentum line (AM20T), our numbers.** Installed-mass change +63 lb. The headline useful load takes no credit for a lighter engine (CG ballast assumed to eat it); the number in brackets takes the full saving and the optimistic drag factor.
 
@@ -170,6 +170,19 @@ Model: `docs/shortlist/check/models/cozy-mkiv.json`; result: `docs/shortlist/che
 - **Power.** The AM20T at 195 hp assumed continuous replaces a 180 hp IO-360, so it gains power. Our check gives 202-217 KTAS.
 - **Mass and CG.** The installed mass rises about 63 lb (E), in the tail of a canard. Useful load falls from 871 lb (CAFE-weighed) to 808 lb, and the aft CG moves the wrong way for a type whose owner's manual warns it "could become locked in" aft of the limit.
 - **Fuel.** At 195 hp the 50.7 gal usable gives only 645-668 nm. The Cozy cannot fly 1,000 nm on this engine at any setting we computed.
+
+### Payload-range on the AM20T (AER-3900)
+
+Bill's ruling (2026-10-25): useful load and range are targets to report against, with no joint pass/fail; this is the tradeoff between them. Payload is occupants and baggage, in lb, with **no reserve / 45 min reserve**, still air, on the AM20T at the stage 3 assumptions (195 hp continuous, critical altitude 8,000 or 16,000 ft and cruise there, BSFC 0.45, economy 65% of continuous; none published by Aeromomentum). "cannot" means not even an empty cabin reaches it on full tanks. Past the full-tank point the airplane leaves below gross. No seat or baggage cap is applied. Our estimate (E); script `docs/shortlist/check/payload_range.py`, all designs in `payload_range_output.md` beside it.
+
+| Design | Power, cruise alt | KTAS | 600 nm | 800 nm | 1,000 nm | 1,200 nm | Full tanks from gross: payload, lb: range, nm |
+|---|---|---|---|---|---|---|---|
+| Cozy MKIV (reference) (2,050 lb, 1,242 lb empty, 50.74 gal, k 1.36) | continuous, 8k | 202 | 527 / cannot | cannot / cannot | cannot / cannot | cannot / cannot | 503: 645 / 506 |
+| Cozy MKIV (reference) (2,050 lb, 1,242 lb empty, 50.74 gal, k 1.36) | continuous, 16k | 217 | 535 / cannot | cannot / cannot | cannot / cannot | cannot / cannot | 503: 668 / 518 |
+| Cozy MKIV (reference) (2,050 lb, 1,242 lb empty, 50.74 gal, k 1.36) | economy 65%, 8k | 172 | 588 / 546 | 523 / cannot | cannot / cannot | cannot / cannot | 503: 846 / 754 |
+| Cozy MKIV (reference) (2,050 lb, 1,242 lb empty, 50.74 gal, k 1.36) | economy 65%, 16k | 184 | 591 / 548 | 530 / 166 | cannot / cannot | cannot / cannot | 503: 871 / 773 |
+
+**Reading.** On CAFE's weighed aircraft (808 lb useful with the AM20T) and 50.7 gal it reaches 645-668 nm at continuous power, 33-36% short of the range target, and carries 527-535 lb 600 nm with no reserve, nothing with 45 min. The reference is a fast two-to-three-person airplane, not a 1,000 nm four-seater.
 
 ### Rights and provenance (stage 2)
 
@@ -200,7 +213,7 @@ Short note (reference). Method, prices and sources are in [docs/MANUFACTURING.md
 
 **Modern route:** the molded-carbon arithmetic of the Defiant worked example in [MANUFACTURING.md](../MANUFACTURING.md#how-the-composite-deltas-are-built), scaled to the Cozy's 336 ft2 wetted area.
 
-**Empty weight:** a molded rebuild would weigh **1,030-1,110 lb** against CAFE's weighed 1,179, so useful load **940-1,020 lb** (stage 3: 871). That brings even the reference near the 1,000 lb floor, which is the clearest single illustration of what moldless construction costs. Engine change +18 to +57 lb.
+**Empty weight:** a molded rebuild would weigh **1,030-1,110 lb** against CAFE's weighed 1,179, so useful load **940-1,020 lb** (stage 3: 871). That brings even the reference to within 6% of the 1,000 lb target, or just over it, which is the clearest single illustration of what moldless construction costs. Engine change +18 to +57 lb.
 
 **Weight build-up:**
 

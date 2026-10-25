@@ -39,18 +39,18 @@ Cruise settings (P = screened as published, M = screened as measured; the basis 
 
 ## Screen (published numbers; like for like)
 
-Two screens, never mixed: the maker's figures as published, and measured or reported data. The three targets are separate floors; payload at 1,000 nm is information only.
+Two screens, never mixed: the maker's figures as published, and measured or reported data. Useful load and range are targets: a miss is reported with its size, and payload against range is the tradeoff to read. Cruise above 160 KTAS is a floor.
 
 - **As published: pass**
   - Useful load: 1,290 lb (pass) against 1,000 lb.
   - Range: 1,128 nm (pass; not stated) against 1,000 nm.
   - Cruise: 184 KTAS at 8,000 ft (pass+) against >160 KTAS (>180 preferred).
-  - Payload at 1,000 nm (information): 710 / cannot @ 184 kt, 17.8 gph.
+  - Payload at 1,000 nm, lb, no reserve / 45 min: 710 / cannot @ 184 kt, 17.8 gph.
 - **Measured or reported: partial: range pass, speed pass**
   - Useful load: - lb (?) against 1,000 lb.
   - Range: 1,094 nm (pass; still air, no reserve, from fuel and measured flow at 162 KTAS) against 1,000 nm.
   - Cruise: 162 KTAS at 10,000 ft (pass) against >160 KTAS (>180 preferred).
-  - Payload at 1,000 nm (information): cannot be computed on this basis.
+  - Payload at 1,000 nm, lb, no reserve / 45 min: cannot be computed on this basis.
 - Aeromomentum fit (first cut): Yes: 2x AM15T (160 hp) matches the prototype's 2x 160 hp; 180 hp builds need 2x AM20T (heavier).
 
 Sanity flags:
@@ -86,7 +86,7 @@ Bill, 2026-10-24: "no chance. Rutan has it and it's not what I'm after." Dropped
 
 ### Verdict (stage 3, before Bill's review)
 
-**Rank 1.** It is the only direct Aeromomentum fit, gives twin redundancy for uncertified engines with no Vmc problem, has a clean record, and died for reasons a revival removes. Its weakness is drag. The published numbers say it is 1.7 times draggier than its geometry, so its payload at 1,000 nm with a 45 min reserve is cannot to 669 lb at 178-190 KTAS, and 807-821 lb at 150-159 KTAS. Its geometry is also the thinnest-sourced of the top four: the canard, chords and fuselage section are all estimates.
+**Rank 1.** It is the only direct Aeromomentum fit, gives twin redundancy for uncertified engines with no Vmc problem, has a clean record, and died for reasons a revival removes. Its weakness is drag. The published numbers say it is 1.7 times draggier than its geometry, so its payload at 1,000 nm with a 45 min reserve is none to 669 lb at 178-190 KTAS, and 807-821 lb at 150-159 KTAS. Its geometry is also the thinnest-sourced of the top four: the canard, chords and fuselage section are all estimates.
 
 ### Idea ledger (what a new airplane should keep)
 
@@ -95,7 +95,7 @@ Bill, 2026-10-24: "no chance. Rutan has it and it's not what I'm after." Dropped
 
 ### Published, measured and our check, side by side
 
-Read across a row only within one column's basis. The three targets are separate floors.
+Read across a row only within one column's basis. Useful load and range are targets; cruise above 160 KTAS is a floor.
 
 | | As published | Measured or reported | Our check, original engine |
 |---|---|---|---|

@@ -39,18 +39,18 @@ Cruise settings (P = screened as published, M = screened as measured; the basis 
 
 ## Screen (published numbers; like for like)
 
-Two screens, never mixed: the maker's figures as published, and measured or reported data. The three targets are separate floors; payload at 1,000 nm is information only.
+Two screens, never mixed: the maker's figures as published, and measured or reported data. Useful load and range are targets: a miss is reported with its size, and payload against range is the tradeoff to read. Cruise above 160 KTAS is a floor.
 
 - **As published: near miss** - range -14 nm
   - Useful load: 1,452 lb (pass) against 1,000 lb.
   - Range: 986 nm (near; cruise, 45 min reserve) against 1,000 nm.
   - Cruise: 235 KTAS at 25,000 ft (pass+) against >160 KTAS (>180 preferred).
-  - Payload at 1,000 nm (information): 949 / 860 @ 235 kt, 19.7 gph.
+  - Payload at 1,000 nm, lb, no reserve / 45 min: 949 / 860 @ 235 kt, 19.7 gph.
 - **Measured or reported: partial: UL pass**
   - Useful load: 1,252 lb (pass) against 1,000 lb.
   - Range: - nm (?; none found) against 1,000 nm.
   - Cruise: not found against >160 KTAS (>180 preferred).
-  - Payload at 1,000 nm (information): cannot be computed on this basis.
+  - Payload at 1,000 nm, lb, no reserve / 45 min: cannot be computed on this basis.
 - Aeromomentum fit (first cut): Short: AM20T 260 hp vs 360 hp (-10% speed, est. 211 KTAS).
 
 Sanity flags:
@@ -101,7 +101,7 @@ Bill, 2026-10-24: "Interesting. There are a few active flying examples." Kept. O
 
 ### Published, measured and our check, side by side
 
-Read across a row only within one column's basis. The three targets are separate floors.
+Read across a row only within one column's basis. Useful load and range are targets; cruise above 160 KTAS is a floor.
 
 | | As published | Measured or reported | Our check, original engine |
 |---|---|---|---|
@@ -163,7 +163,7 @@ Model: `docs/shortlist/check/models/mooney-301.json`; result: `docs/shortlist/ch
 | calibration factor | 0.707 | x1.290 on the build-up (calibration; basis stated above) |
 | induced | 0.482 | Oswald (Raymer 12.48), lift split stated above |
 
-**Original engine, our numbers:** 270 hp at 20,000 ft gives 222 KTAS; still-air range on full usable fuel from MTOW 1,056 nm (climb allowance 55 lb); payload at 1,000 nm 885 lb with no reserve, cannot lb with 45 min.
+**Original engine, our numbers:** 270 hp at 20,000 ft gives 222 KTAS; still-air range on full usable fuel from MTOW 1,056 nm (climb allowance 55 lb); payload at 1,000 nm 885 lb with no reserve, none with 45 min from gross weight (the tanks do not hold the fuel).
 
 **On the Aeromomentum line (AM20T), our numbers.** Installed-mass change -207 lb. The headline useful load takes no credit for a lighter engine (CG ballast assumed to eat it); the number in brackets takes the full saving and the optimistic drag factor.
 
@@ -178,6 +178,19 @@ Model: `docs/shortlist/check/models/mooney-301.json`; result: `docs/shortlist/ch
 - **Mass and CG.** The installed mass falls by about 207 lb (E), in the nose of a tractor. The headline useful load takes no credit for it.
 - **Cooling.** The 301 used a deliberately tiny LoPresti-style low-drag inlet. A radiator needs its own duct, so the cooling-drag allowance here is a placeholder.
 - **Altitude.** The 301 was a pressurised design aimed at FL250. Without a critical altitude for the AM20T, pressurisation buys nothing in our check, and its weight is carried for no speed. A revival on this engine might be unpressurised, which changes the structure (stage 4).
+
+### Payload-range on the AM20T (AER-3900)
+
+Bill's ruling (2026-10-25): useful load and range are targets to report against, with no joint pass/fail; this is the tradeoff between them. Payload is occupants and baggage, in lb, with **no reserve / 45 min reserve**, still air, on the AM20T at the stage 3 assumptions (195 hp continuous, critical altitude 8,000 or 16,000 ft and cruise there, BSFC 0.45, economy 65% of continuous; none published by Aeromomentum). "cannot" means not even an empty cabin reaches it on full tanks. Past the full-tank point the airplane leaves below gross. No seat or baggage cap is applied. Our estimate (E); script `docs/shortlist/check/payload_range.py`, all designs in `payload_range_output.md` beside it.
+
+| Design | Power, cruise alt | KTAS | 600 nm | 800 nm | 1,000 nm | 1,200 nm | Full tanks from gross: payload, lb: range, nm |
+|---|---|---|---|---|---|---|---|
+| Mooney 301 (4,000 lb, 2,548 lb empty, 100 gal, k 1.29) | continuous, 8k | 176 | 1,120 / 1,054 | 1,021 / 955 | 922 / 858 | 380 / cannot | 852: 1,143 / 1,020 |
+| Mooney 301 (4,000 lb, 2,548 lb empty, 100 gal, k 1.29) | continuous, 16k | 187 | 1,117 / 1,051 | 1,023 / 958 | 931 / 867 | 676 / cannot | 852: 1,169 / 1,038 |
+| Mooney 301 (4,000 lb, 2,548 lb empty, 100 gal, k 1.29) | economy 65%, 8k | 142 (under the 160 floor) | 1,174 / 1,131 | 1,094 / 1,051 | 1,015 / 973 | 937 / 895 | 852: 1,418 / 1,314 |
+| Mooney 301 (4,000 lb, 2,548 lb empty, 100 gal, k 1.29) | economy 65%, 16k | 146 (under the 160 floor) | 1,160 / 1,117 | 1,082 / 1,040 | 1,006 / 964 | 930 / 889 | 852: 1,407 / 1,326 |
+
+**Reading.** Both targets met on design weight. With a 45 min reserve it carries 1,051-1,054 lb 600 nm, 955-958 lb 800 nm and 858-867 lb 1,000 nm at 176-187 KTAS: the most payload over 1,000 nm in the survey, on a design weight never proven by a production airplane.
 
 ### Rights and provenance (stage 2)
 

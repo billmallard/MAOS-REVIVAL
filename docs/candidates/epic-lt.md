@@ -38,18 +38,18 @@ Cruise settings (P = screened as published, M = screened as measured; the basis 
 
 ## Screen (published numbers; like for like)
 
-Two screens, never mixed: the maker's figures as published, and measured or reported data. The three targets are separate floors; payload at 1,000 nm is information only.
+Two screens, never mixed: the maker's figures as published, and measured or reported data. Useful load and range are targets: a miss is reported with its size, and payload against range is the tradeoff to read. Cruise above 160 KTAS is a floor.
 
 - **As published: incomplete: no speed**
   - Useful load: 3,100 lb (pass) against 1,000 lb.
   - Range: 1,874 nm (pass; long-range tanks) against 1,000 nm.
   - Cruise: not found against >160 KTAS (>180 preferred).
-  - Payload at 1,000 nm (information): cannot be computed on this basis.
+  - Payload at 1,000 nm, lb, no reserve / 45 min: cannot be computed on this basis.
 - **Measured or reported: partial: range pass, speed pass**
   - Useful load: - lb (?) against 1,000 lb.
   - Range: 1,767 nm (pass; still air, no reserve, from fuel and measured flow at 270 KTAS) against 1,000 nm.
   - Cruise: 317 KTAS at 27,000 ft (pass+) against >160 KTAS (>180 preferred).
-  - Payload at 1,000 nm (information): cannot be computed on this basis.
+  - Payload at 1,000 nm, lb, no reserve / 45 min: cannot be computed on this basis.
 - Aeromomentum fit (first cut): No: turbine; no Aeromomentum equivalent.
 
 Sanity flags:

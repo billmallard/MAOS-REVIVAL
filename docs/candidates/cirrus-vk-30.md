@@ -38,18 +38,18 @@ Cruise settings (P = screened as published, M = screened as measured; the basis 
 
 ## Screen (published numbers; like for like)
 
-Two screens, never mixed: the maker's figures as published, and measured or reported data. The three targets are separate floors; payload at 1,000 nm is information only.
+Two screens, never mixed: the maker's figures as published, and measured or reported data. Useful load and range are targets: a miss is reported with its size, and payload against range is the tradeoff to read. Cruise above 160 KTAS is a floor.
 
 - **As published: pass, speed unconditioned**
   - Useful load: 1,350 lb (pass) against 1,000 lb.
   - Range: 1,130 nm (pass; not stated (1,300 mi converted)) against 1,000 nm.
   - Cruise: 211 KTAS at 5,000 ft (pass+) against >160 KTAS (>180 preferred).
-  - Payload at 1,000 nm (information): 875 / 800 @ 211 kt, 16.7 gph.
+  - Payload at 1,000 nm, lb, no reserve / 45 min: 875 / 800 @ 211 kt, 16.7 gph.
 - **Measured or reported: partial: range pass, speed pass, speed unconditioned**
   - Useful load: - lb (?) against 1,000 lb.
   - Range: 1,256 nm (pass; still air, no reserve, from fuel and measured flow at 205 KTAS) against 1,000 nm.
   - Cruise: 205 KTAS at 4,500 ft (pass+) against >160 KTAS (>180 preferred).
-  - Payload at 1,000 nm (information): cannot be computed on this basis.
+  - Payload at 1,000 nm, lb, no reserve / 45 min: cannot be computed on this basis.
 - Aeromomentum fit (first cut): Short: AM20T 260 hp vs 290 hp (-4% speed, est. 198 KTAS).
 
 Sanity flags:
@@ -94,7 +94,7 @@ Bill, 2026-10-24: "no thanks". Dropped from the shortlist; the long-list row sta
 
 ### Published, measured and our check, side by side
 
-Read across a row only within one column's basis. The three targets are separate floors.
+Read across a row only within one column's basis. Useful load and range are targets; cruise above 160 KTAS is a floor.
 
 | | As published | Measured or reported | Our check, original engine |
 |---|---|---|---|
