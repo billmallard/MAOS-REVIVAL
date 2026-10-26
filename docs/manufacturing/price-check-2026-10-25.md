@@ -20,12 +20,15 @@ is extra unless stated.
    read prices per part through an upload. Printed tooling stays uncredited in
    the bands, as in stage 4.
 3. **Stage 4 was wrong about 2024-T3.** It said a home router or a full-service
-   shop was the only route to 0.032-0.040 in 2024-T3. OSH Cut lists 2024-T3
-   sheet for laser cutting at 0.04, 0.05, 0.08, 0.09, 0.1 and 0.19 in. So the
-   Prescott's 0.050 spar web and 0.040 leading edges can be cut from files by a
-   service, and so can the heavier Aries skins. Two limits remain. Neither
-   service lists 0.032 in 2024-T3, the Prescott's rib gauge. And neither lists
-   bending for 2024-T3.
+   shop was the only route to 0.032-0.040 in 2024-T3. OSH Cut's 2024-T3
+   material page lists sheet for laser cutting at 0.032, 0.04, 0.05, 0.063,
+   0.08, 0.09, 0.1, 0.125 and 0.19 in, with a maximum part of 119 x 47 in. So
+   the Prescott's 0.032 ribs, 0.040 leading edges and 0.050 spar web can all be
+   cut from files by a service, and so can the Aries skins, spliced to 119 in.
+   One limit remains: neither service lists bending for 2024-T3. (Revised
+   2026-10-26: the first version read OSH Cut's summary list at `/materials`,
+   which showed fewer gauges, and said no service listed 0.032 in. AERO's
+   review caught it.)
 4. **Tube cutting for a welded 4130 cage is not orderable off the shelf
    today.** SendCutSend's tube service is on a waitlist. OSH Cut cuts 4130 tube,
    but lists only round profiles. The Prescott cage is square 4130.
@@ -63,7 +66,7 @@ radiator duct in one piece.
 |---|---|---|
 | SendCutSend ([2024-T3](https://sendcutsend.com/materials/laser-cut-2024-aluminum/)) | 2024-T3 sheet | "SendCutSend offers 2024 T3 Aluminum in one thickness option: .025″". Instant pricing to 30 x 44 in; 30 x 56 in by custom quote; +/-0.005 in; 2-4 days production |
 | SendCutSend ([tube](https://sendcutsend.com/services/tube-cutting/)) | Laser tube cutting | "Our tube cutting capacity is currently limited, and we are not accepting new orders at this time." Starting from $39 per order; +/-0.005 in |
-| OSH Cut ([materials](https://www.oshcut.com/materials)) | 2024-T3 sheet | Laser cutting at 0.04, 0.05, 0.08, 0.09, 0.1, 0.19 in; no bending listed for 2024-T3. Maximum sheet size not found on the pages read |
+| OSH Cut ([2024-T3 material page](https://www.oshcut.com/materialdetails/aluminum-2024-t3), read 2026-10-26) | 2024-T3 sheet | Laser cutting at 0.032, 0.04, 0.05, 0.063, 0.08, 0.09, 0.1, 0.125, 0.19 in; maximum part 119 x 47 in; no bending listed for 2024-T3. The summary list at `/materials` showed fewer gauges on 2026-10-25; cite the detail page |
 | OSH Cut ([materials](https://www.oshcut.com/materials)) | 4130 | Annealed 4130 sheet from 0.04 in; cold-drawn 4130 tube, round only in the list read, 0.625-2 in OD (for example 0.75 x 0.035, 1.25 x 0.065) |
 
 ## Regenerating

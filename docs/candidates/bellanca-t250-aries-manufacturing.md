@@ -81,9 +81,9 @@ builder cannot check.
 
 | Work | Route | Service named (public page, 2026-10-25) | Limit found |
 |---|---|---|---|
-| Skins, ribs, frames, doublers in 2024-T3, 0.040 in and up | laser-cut from files, pilot-holed | OSH Cut lists 2024-T3 at 0.04, 0.05, 0.08, 0.09, 0.1, 0.19 in | no 0.025-0.032 in, no 2024-T3 bending, maximum sheet size not found. The 6 ft wing-skin wrap needs a chordwise splice at most sheet sizes |
+| Skins, ribs, frames, doublers in 2024-T3, 0.032 in and up | laser-cut from files, pilot-holed | OSH Cut lists 2024-T3 at 0.032, 0.04, 0.05, 0.063, 0.08, 0.09, 0.1, 0.125, 0.19 in ([material page](https://www.oshcut.com/materialdetails/aluminum-2024-t3), read 2026-10-26) | maximum part 119 x 47 in; no 2024-T3 bending. The 6 ft chord wrap fits within 119 in, but a 15.7 ft half-span skin needs at least one spanwise splice |
 | Thin 2024-T3 (0.025 in) | laser-cut | SendCutSend, 0.025 in only, instant pricing to 30 x 44 in | small parts only |
-| Thin 2024-T3 (0.032 in) and long skins | home router (Avid PRO4896, stage 4) or a full-service shop (not contacted) | | 4 x 8 ft bed |
+| Parts over 119 x 47 in | home router (Avid PRO4896, stage 4) or a full-service shop (not contacted) | | 4 x 8 ft bed; or splice to fit |
 | Rib, frame and stringer flanges | hand or press forming on routed form blocks; long bends at a brake service | form blocks routed from HDU or MDF; brake service not priced | 2024-T3 needs larger bend radii than the 5052 and mild steel that brake services are set up for |
 | Fittings, bellcranks, hinge brackets | CNC-machined | Xometry, Protolabs (instant quote by upload; not run) | heat-treated fittings to a service with certs |
 | Cowl, radiator duct, tips, fin cap, fillets, gear-door fairings | room-temperature infusion in glass/epoxy molds from HDU plugs | plug board: Precision Board PBLT-15, $62.63 for 0.5 x 20 x 60 in (Interstate) | 65-70 ft2 of mold surface |
@@ -119,8 +119,8 @@ $5-19k to each; tooling falls under 10% of the kit price after 4-19 airframes.
 
 ## 4. The 90 gallons
 
-AERO's closers need 84-94 gal usable for 1,000 nm plus 45 minutes at 65-100%
-of continuous power (AER-3867), against 76 gal standard. We plan 90 gal.
+AERO's closers need 84.7-86.4 gal usable for 1,000 nm plus 45 minutes at 65%
+of take-off power, and 91.8-94.1 gal at full continuous (AER-3867), against 76 gal standard. We plan 90 gal.
 
 - **Volume per foot of bay.** Stage 4 put it at 11 gal per foot of span
   between the spars. A spar box from 15-20% to 55-60% chord, at an average 11%
