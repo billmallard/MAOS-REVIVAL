@@ -2,10 +2,11 @@
 
 **AER-3868, 2026-10-25, MANUFACTURING.** This plan turns the stage 4 notes
 (`docs/MANUFACTURING.md`, PR #5) into a build plan, now that Bill has picked the
-Prescott (AER-3783). It sits on AERO's re-derivation (AER-3866, PR #10 at
-`6a4ce47`): 2,700 lb gross, 90 gal, wing and tail 12.5% larger to hold the stall
-speed, and the AM20T in the tail cone with its radiator and coolant moved to the
-nose bay (AERO's balance option B).
+Prescott (AER-3783). It sits on AERO's re-derivation (AER-3866, corrected by AER-3902; PR #10 at
+`2bae926`): 2,700 lb gross, 90 gal, wing and tail 12.5% larger to hold the
+stall speed, and the AM20T in the tail cone with its radiator and coolant moved
+to the nose bay (AERO's balance option B, which still needs 51-69 lb of nose
+lead). Revised 2026-10-26 after AERO's review of PR #14.
 
 Everything here is our estimate (E) unless a source is named. Prices are from
 public pages read on 2026-10-25 ([price check](../manufacturing/price-check-2026-10-25.md)).
@@ -53,24 +54,26 @@ choice between them is a trade of weight for money.
 | Builder hours, kit | 1,800-2,800 (E) | 1,500-2,500 (E) |
 | Builder hours, one-off (home-molded shells; welded cage bought from a shop) | 3,000-4,500 (E) | 3,500-5,500 (E; adds the home-molded wing and tail) |
 | All-in to fly, kit (kit, AM20T $28-30k, firewall-forward $5-10k, prop $5-12k, panel $15-40k) | $143-232k (E) | $153-252k (E) |
-| Empty with AM20T at 2,700 lb, option B | 1,547-1,803 lb | 1,472-1,778 lb (AER-3866) |
-| Useful load at 2,700 lb (target 1,000) | 1,153 / 897 lb | 1,228 / 922 lb |
+| Empty with AM20T at 2,700 lb, option B, including its nose lead | 1,647-1,869 lb (65-74 lb lead) | 1,558-1,840 lb (51-69 lb lead) (AER-3866/3902) |
+| Useful load at 2,700 lb, light / heavy end (target 1,000) | 1,053 / 831 lb: 53 lb over / 169 lb short | 1,142 / 860 lb: 142 lb over / 140 lb short |
 | Skill floor | Medium: blind flush rivets on countersunk skins; bonding shells; tank sealing | Medium: bonding cured molded parts with structural adhesive |
 
 **The weight difference is the carbon wing and tail.** Stage 4's light end
 already took -20 to -60 lb for a carbon wing and -5 to -15 lb for a carbon tail.
-Route A gives those back: +75 lb at the light end, +25 lb at the heavy end. On
-AERO's numbers that is 75 lb of useful load at the light end, and it is the
-difference between 1,228 lb and 1,153 lb. Both are over the 1,000 lb target.
-The heavy end misses either way.
+Route A gives those back: +75 lb of structure at the light end and +25 lb at the
+heavy end. The metal tail sits aft, so option B also needs 14 / 5 lb more nose
+lead (0.6 lb per lb). Route A therefore costs 89 lb of useful load at the light
+end and 29 lb at the heavy end.
 
-**One basis note for AERO.** Our heavy end starts from the one weighed builder
-airplane, 1,661 lb. Sport Aviation, September 1991 (re-fetched 2026-10-25) says
-that figure includes "49 pounds of ballast necessary to get the weight and
-balance within its prescribed" limits. AERO's option B balance needs no
-ballast. If that holds, the heavy end falls by up to 49 lb on both routes. That
-is AERO's balance to rule on (AER-3902 is folding the 49 lb in); we have not
-moved our weights.
+Both routes' numbers come from AERO's balance script at PR #10 head `2bae926`
+(the AER-3902 correction). It takes N747P's 49 lb of ballast out of the
+weighed-airplane basis, adds the constant-speed propeller and re-solves option
+B, which now needs 51-69 lb of nose lead. Route A is that script with the carbon
+wing and tail deltas removed (AERO's review of this PR; reproduced by us on
+2026-10-26). Against the 1,000 lb target, a target and not a floor since
+Bill's 2026-10-25 brief change: the light end clears it by 53 lb on route A and
+142 lb on route B; the heavy end is 169 lb short on route A and 140 lb short on
+route B.
 
 **Why the hours fall from A to B.** About 270-380 fewer parts, nearly all of them
 ribs, skins and stiffeners in the flying surfaces. Bonding a molded wing is
@@ -116,7 +119,7 @@ not in conflict, but neither one checks the other.
 | Cage tubes, cut and notched | tube laser from files, then TIG-welded in a jig | **None orderable off the shelf.** SendCutSend's tube service is not taking new orders; OSH Cut cuts 4130 tube but lists round profiles only. The cage is square 4130, 3/4 x .035 to 1-1/4 x .065 (SA86) | a job-shop tube laser by quote (not contacted), or stock bought and cut on a notching fixture. Changing to round tube is a structural change |
 | Cage welding | TIG, in a jig cut from files | a qualified welder or a shop | primary structure: never an unqualified builder |
 | Shells, doors, scoops, closeouts (non-structural) | room-temperature infusion in glass/epoxy molds from routed HDU plugs | plug board: Precision Board PBLT-15, $62.63 for 0.5 x 20 x 60 in (Interstate) | about 217 ft2 of mold surface; the shell molds were "almost swimming pool sized" (SA86), longer than any print bed |
-| Wing and tail skins, ribs, spar webs in 2024-T3 (route A) | laser-cut from files, pilot-holed | OSH Cut: 2024-T3 at 0.04 and 0.05 in, so the 0.040 leading edges and the 0.050 spar web (SA86) | the 0.032 in ribs are on neither service's list: home router or a full-service shop. No 2024-T3 bending listed, so the press-brake C-spar is a brake service (not priced) |
+| Wing and tail skins, ribs, spar webs in 2024-T3 (route A) | laser-cut from files, pilot-holed | OSH Cut lists 2024-T3 at 0.032-0.19 in, so the 0.032 ribs, 0.040 leading edges and 0.050 spar web (SA86) can all be cut from files | maximum part 119 x 47 in. No 2024-T3 bending listed, so the press-brake C-spar is a brake service (not priced) |
 | Leading edges (route A) | molded in place of stretch-formed (see below) | as the shells | |
 | Wing, tail and control surfaces (route B) | infused carbon in molds from HDU plugs | as the shells; about 340 ft2 of wing mold and 140 ft2 of tail mold | load-bearing: needs STRUCTURES |
 | Fittings, bellcranks, gear trunnions, the prop extension and its bushing | CNC-machined | Xometry, Protolabs (instant quote by upload; not run) | the prop extension is a fatigue part on a drive that has already lost one propeller (NTSB LAX05LA270): a certified shop with material certs, never home |

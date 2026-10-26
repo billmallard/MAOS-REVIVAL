@@ -49,8 +49,8 @@ and the Cozy MKIV as the reference.
    steel cage, plus a carbon wing and tail in place of riveted aluminium. Only
    the light end reaches 1,000 lb, and the AM20T is 54-71 lb heavier than the
    O-360, in the tail cone. AERO's AER-3866 balance, on the designer's plan
-   stations, puts the ballast at 0.6 lb per lb, not 1.3, and at none with the
-   radiator in the nose (corrected by AER-3868; this line said 20-55 lb of
+   stations, puts the ballast at 0.6 lb per lb, not 1.3. With the radiator in the
+   nose (option B) it still needs 51-69 lb of lead after AER-3902 (corrected by AER-3868; this line said 20-55 lb of
    ballast avoided). Gross weight, a STRUCTURES question,
    and balance are still the levers that decide it.
 2. **Aries (Bill's pick): rebuild empty weight 1,780-2,000 lb.** Useful load is 1,150-1,370 lb
@@ -255,9 +255,10 @@ gross (table above; all E).
 - **Options, not in the totals:**
   - a structural carbon monocoque in place of the cage saves a further 30-70 lb,
     gives up crash protection, and needs STRUCTURES
-  - in the AM20T case, the aft savings avoid about 9-25 lb of nose ballast at
-    AERO's re-derived 0.6 lb per lb, and nothing with the radiator in the nose
-    (AER-3866; corrected by AER-3868 from 20-55 lb at 1.3)
+- **Ballast:** AERO's balance (AER-3866/3902) places the aft savings at their
+  stations; what they avoid is already inside its 1,558-1,840 lb, and option B
+  still needs 51-69 lb of lead. (Corrected by AER-3868; this line said the aft
+  savings avoid 20-55 lb of ballast at 1.3 lb per lb.)
 
 **At AERO's re-derivation, about 2,700 lb gross with 90 gal.** The structure grows by
 +30 to +85 lb (E). Raymer's GA weight equations at a gross ratio of 1.125 give
@@ -289,7 +290,7 @@ rule; AERO's figure is +61. The levers are:
   or a carbon wing.
 - **Press-brake spars:** a 2024 C-spar of this size needs a press brake, so a
   service. SendCutSend cuts 2024-T3 at 0.025 in only; OSH Cut cuts it at
-  0.040 in and up, but lists no bending (corrected by AER-3868).
+  0.032 in and up, to 119 x 47 in, but lists no bending (corrected by AER-3868).
 - **The cage** stays welded 4130, so a qualified welder or a shop.
 - **Shells:** home-molded, about 217 ft2 of mold surface, 430-870 h and $3-9k of
   materials (E).
@@ -308,7 +309,7 @@ museum is Bill's call; Elon has asked him.
 |---|---|---|---|
 | Builder hours | factory-built; about four completed | 3,500-5,000 (E): parts from files, holes final-drilled by hand | 2,500-3,500 (E). Anchors: RV-10 2,000 (F, Van's, via forum); builders report 2,600-3,600 standard (anecdotal). The Aries adds retractable gear and flush riveting on a laminar wing |
 | Airframe change | baseline | -30 to +40 lb (structure) | same |
-| Airframe parts | | aluminium, rivets and hardware $25-40k (E); SendCutSend offers 2024-T3 only at 0.025 in; OSH Cut cuts 0.040 in and up (corrected by AER-3868), so only 0.032 in parts go to a home router or a full-service shop (not contacted) | $100-150k kit (E). Anchors: RV-10 $89,600 standard and $116,300 quick-build (F, vansaircraft.com, read 2026-10-24) |
+| Airframe parts | | aluminium, rivets and hardware $25-40k (E); SendCutSend offers 2024-T3 only at 0.025 in; OSH Cut cuts 0.032 in and up to 119 x 47 in (corrected by AER-3868), so only parts larger than that go to a home router or a full-service shop (not contacted) | $100-150k kit (E). Anchors: RV-10 $89,600 standard and $116,300 quick-build (F, vansaircraft.com, read 2026-10-24) |
 | Tooling | | none beyond the builder's | $50-185k (E; corrected by AER-3868 from $40-120k, whose lines did not add up): CAD and CNC programs $10-30k; 150-250 unique formed parts at $150-400 per form block or press die; $10-30k of assembly jigs; $8-25k of composite molds for the cowl, tips and fairings. No compound or stretch-formed skins, because the design avoided them |
 | Crossover | | | tooling under 10% of the kit price after about 4-19 airframes |
 | Engine | O-540, 250 hp | AM20T, $27,995-29,700 (F) | same |
@@ -452,9 +453,10 @@ Resale value is real but not credited.
 Service lead times, for the parts that still go out (vendor pages, read
 2026-10-24): SendCutSend ships standard orders in 2-4 business days (a);
 Xometry CNC takes 3-7 business days (a); Protolabs says "as fast as 1 day" (a).
-SendCutSend offers 2024-T3 only at 0.025 in. OSH Cut cuts 2024-T3 at 0.04,
-0.05, 0.08, 0.09, 0.1 and 0.19 in (read 2026-10-25, corrected by AER-3868), so
-only 0.032 in parts need a home router or a full-service shop.
+SendCutSend offers 2024-T3 only at 0.025 in. OSH Cut cuts 2024-T3 at 0.032,
+0.04, 0.05, 0.063, 0.08, 0.09, 0.1, 0.125 and 0.19 in, to 119 x 47 in (its
+material page, read 2026-10-26; corrected by AER-3868), so only parts larger
+than that need a home router or a full-service shop.
 
 ### What the home shop changes, design by design
 
