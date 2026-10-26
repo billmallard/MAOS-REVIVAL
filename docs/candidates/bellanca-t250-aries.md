@@ -214,11 +214,11 @@ Full study (rank 1). Method, prices and sources are in [docs/MANUFACTURING.md](.
 |---|---|---|
 | Builder hours | 3,500-5,000 (E) | 2,500-3,500 (E; RV-10 2,000 F) |
 | Airframe parts or kit | $25-40k of material (E) | $100-150k (E; RV-10 $89,600 / $116,300 QB, F) |
-| Tooling | none | $40-120k (E): the cheapest on the shortlist, under 10% of kit price at about 3-12 airframes |
+| Tooling | none | $50-185k (E): the cheapest on the shortlist, under 10% of kit price after about 4-19 airframes (MANUFACTURING, AER-3868; stage 4's $40-120k and 3-12 did not add up) |
 | All-in to fly | $85-160k (E) | $155-240k (E) |
 | Skill floor | Medium-high | Medium: Van's-level riveting, with flush riveting to laminar-wing quality |
 
-**Home-shop route:** the router cuts 2024-T3 at 0.032-0.040 in, which SendCutSend does not offer. The 6 ft wing-skin wrap needs a chordwise splice on a 4 ft bed. Home-cut costs +600-1,200 h over a service-cut kit, and saves about $40-90k against one, once someone publishes the CAD files.
+**Home-shop route:** SendCutSend offers 2024-T3 at 0.025 in only. OSH Cut lists it at 0.032-0.19 in for laser cutting, parts up to 119 x 47 in, and no bending ([material page](https://www.oshcut.com/materialdetails/aluminum-2024-t3), read 2026-10-26, [archived](https://web.archive.org/web/20261026040951/https://www.oshcut.com/materialdetails/aluminum-2024-t3)). Stage 4 said no service cut 0.032-0.040 in, and AER-3868 found nothing at 0.032 in; the material page corrects both. So the home router is a choice, not the only route. On its 4 ft bed the 6 ft wing-skin wrap needs a chordwise splice. OSH Cut's 119 in takes the wrap whole, but a 15.7 ft half-span skin needs a spanwise splice either way. Home-cut costs +600-1,200 h over a service-cut kit, and saves about $40-90k against one, once someone publishes the CAD files.
 
 **Weight build-up:**
 
@@ -230,6 +230,6 @@ Full study (rank 1). Method, prices and sources are in [docs/MANUFACTURING.md](.
 | EFI engine: backup battery and bus | +5 | +10 | One ECU | E |
 | New nose: cowl and radiator duct (the O-540 had one inlet and no cowl flaps) | -10 | +15 | Cowl similar; duct may add | E |
 | **Rebuild empty weight, no engine credit** | **1,780** | **2,000** | sum, rounded to 10 lb | E |
-| Option, not in the total: About 20 gal more fuel in integral wing bays (closes the 90 nm range shortfall at continuous power) | +10 | +20 | Constant-chord wing holds about 11 gal per foot of span between spars (E); ribs, sealant and access panels | E |
+| Option, not in the total: About 20 gal more fuel in integral wing bays (closes the 90 nm range shortfall at continuous power) | +10 | +20 | Constant-chord wing holds about 7.6-9.8 gal per foot of span between spars (E, MANUFACTURING AER-3868; AERO's AER-3867 has 8-9; stage 4 had 11), so about 1.0-1.3 ft more bay per side; ribs, sealant and access panels | E |
 
 <!-- stage4:end -->
