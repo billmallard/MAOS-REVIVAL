@@ -52,7 +52,7 @@ and the Cozy MKIV as the reference.
    stations, puts the ballast at 0.6 lb per lb, not 1.3. With the radiator in the
    nose (option B) it still needs 51-69 lb of lead after AER-3902 (corrected by AER-3868; this line said 20-55 lb of
    ballast avoided). Gross weight, a STRUCTURES question,
-   and balance are still the levers that decide it.
+   and balance are still the levers that decide how close it gets.
 2. **Aries (Bill's pick): rebuild empty weight 1,780-2,000 lb.** Useful load is 1,150-1,370 lb
    against the factory 1,300; with our engine credit, empty is 1,690-1,940 lb.
    Modern manufacturing doesn't make it much lighter. What it changes is cost:
@@ -62,7 +62,8 @@ and the Cozy MKIV as the reference.
    4-19 airframes (corrected by AER-3868: the earlier $40-120k did not add up). Its range shortfall at continuous power is a fuel question:
    about 20 more gallons in integral wing bays costs 10-20 lb empty.
 3. **Express: rebuild empty weight 1,770-2,030 lb.** Useful load is 865-1,125 lb
-   against the weighed 901, so at the light end it clears the 1,000 lb floor.
+   against the weighed 901: 135 lb short of the 1,000 lb target at the heavy end,
+   125 lb over it at the light end.
    Three things do it: replacing the vinylester E-glass (the heaviest laminate on
    the shortlist) with infused carbon/epoxy, lighter tail surfaces, and losing the
    56-62 lb of nose ballast S-90 owners carry. The heavy end assumes none of that
@@ -129,7 +130,8 @@ Notes on reading it:
   weight) can come out *worse* than stage 3. That is the fleet-heavier-than-
   brochure pattern the brief warns about, and we did not round it away.
 - For AERO's ranking: the Express is the design manufacturing moves most (its
-  useful-load range spans the 1,000 lb floor). The Aries, IV-P and 301 move less
+  useful-load range runs from 135 lb short of the 1,000 lb target to 125 lb
+  over it). The Aries, IV-P and 301 move less
   than their engine credits do. The Meyers moves by its engine credit and by
   whatever gross weight a re-derivation is designed to.
 
@@ -272,13 +274,16 @@ Expressed against AERO's 1,550 lb basis, the 2,400 lb rebuild delta is -170 lb
 at the light end and +80 lb at the heavy end. The heavy end is above zero
 because it starts from the weighed 1,661 lb aircraft, not the published 1,550.
 
-**What moves it over the floor.** Structure alone reaches 1,000 lb only at the
-light end. The AM20T installs 54-71 lb heavier than the O-360, in the tail cone.
-That's O-360-A1A 258 lb per TCDS E-286 plus starter and alternator, on the x1.15
-rule; AERO's figure is +61. The levers are:
+**What closes the distance to the target.** At the published 2,400 lb gross,
+structure alone leaves the useful load 230 lb short of the 1,000 lb target at the
+heavy end and 20 lb over it at the light end; at 2,700 lb it runs from 20 lb
+short to 290 lb over, before the engine and ballast. The AM20T installs 54-71 lb
+heavier than the O-360, in the tail cone. That's O-360-A1A 258 lb per TCDS
+E-286 plus starter and alternator, on the x1.15 rule; AERO's figure is +61. The levers are:
 
 - **Gross weight.** Prescott tested at 2,400 lb and 3.8 g, so a higher gross is a
-  STRUCTURES re-substantiation. AERO's 2,700 lb case is the one that clears.
+  STRUCTURES re-substantiation. AERO's 2,700 lb case is the one that puts most
+  of the range over the target, before the engine.
 - **Balance.** Wing position, gear and the forward fuselage. That is design work
   AERO has named, and manufacturing doesn't decide it.
 - **The engine.** The AM15T installs 16-33 lb lighter than the O-360, at less power.
