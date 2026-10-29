@@ -20,6 +20,10 @@
 | Cessna P210N (TSIO-520-P, 1980 POH) [AM-high] | AM20T | 16k | 171 (171) | 1,658 (1,819) | 931 | cannot | cannot (cannot) | 132: 1,173 / 1,132 |
 | Cozy MKIV (CAFE N494CZ, IO-360 180 hp) [AM-low] | AM20T | 8k | 202 (206) | 808 (808) | 645 | cannot | cannot (cannot) | 172: cannot / cannot |
 | Cozy MKIV (CAFE N494CZ, IO-360 180 hp) [AM-high] | AM20T | 16k | 217 (221) | 808 (808) | 668 | cannot | cannot (cannot) | 184: cannot / cannot |
+| Bede BD-4C (factory 180 hp figures, 51 gal) [AM-low] | AM20T | 8k | 180 (187) | 1,087 (1,087) | 572 | cannot | cannot (cannot) | 150: cannot / cannot |
+| Bede BD-4C (factory 180 hp figures, 51 gal) [AM-high] | AM20T | 16k | 192 (200) | 1,087 (1,087) | 590 | cannot | cannot (cannot) | 159: cannot / cannot |
+| Bede BD-4C, 80 gal option (factory 180 hp figures) [AM-low] | AM20T | 8k | 180 (187) | 1,087 (1,087) | 927 | cannot | cannot (cannot) | 150: 686 / 645 |
+| Bede BD-4C, 80 gal option (factory 180 hp figures) [AM-high] | AM20T | 16k | 192 (200) | 1,087 (1,087) | 971 | cannot | cannot (cannot) | 159: 696 / 655 |
 | Rutan Defiant (Model 40, 2x O-320 160 hp) [AM-low] | 2x AM15T | 8k | 178 (197) | 1,350 (1,358) | 1,094 | 721 | cannot (709) | 150: 858 / 807 |
 | Rutan Defiant (Model 40, 2x O-320 160 hp) [AM-high] | 2x AM15T | 16k | 190 (212) | 1,350 (1,358) | 1,156 | 747 | 669 (732) | 159: 871 / 821 |
 | Cirrus VK-30 (IO-540 290 hp prototype) [AM-low] | AM20T | 8k | 199 (208) | 1,350 (1,471) | 1,225 | 880 | 815 (954) | 165: 973 / 931 |
@@ -43,6 +47,8 @@
 | Mooney 301 (TIO-540 360 hp prototype) | 1.02 | 1.29 | fleet calibration (own points read cleaner than the fleet) |
 | Cessna P210N (TSIO-520-P, 1980 POH) | 1.29 | 1.29 | fleet calibration (own points read cleaner than the fleet) |
 | Cozy MKIV (CAFE N494CZ, IO-360 180 hp) | 1.36 | 1.36 | own published points |
+| Bede BD-4C (factory 180 hp figures, 51 gal) | - | 1.29 | fleet calibration (no published point with known power) |
+| Bede BD-4C, 80 gal option (factory 180 hp figures) | - | 1.29 | fleet calibration (no published point with known power) |
 | Rutan Defiant (Model 40, 2x O-320 160 hp) | 1.72 | 1.72 | own published points |
 | Cirrus VK-30 (IO-540 290 hp prototype) | 1.15 | 1.29 | fleet calibration (own points read cleaner than the fleet) |
 | Velocity XL-RG, optional 100 gal tanks | 1.63 | 1.63 | own published points |

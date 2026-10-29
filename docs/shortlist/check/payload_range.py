@@ -18,6 +18,10 @@ Basis: nothing new is assumed. Every input is the stage 3 check's, unchanged:
 - Prescott re-derivation: 2,700 lb, 90 gal, MANUFACTURING's light and heavy
   structure ends, balance option B (radiator to the nose, residual nose
   ballast), both drag bases, taken from prescott/balance.py unchanged.
+- Bede BD-4C (AER-4145, reference): factory weights, 51 gal and the 80 gal
+  option, fleet drag factor (Bede publishes no altitude or power with its
+  speeds). The BD-19 publishes no geometry of its own and shares the BD-4C's
+  wing, gear, weights and performance table, so the BD-4C rows stand in for it.
 
 Method (perf.py): constant-altitude, constant-speed cruise integrated in fuel
 steps, taxi and climb allowance as in run_check.py, no descent credit, the
@@ -43,7 +47,11 @@ RESERVES = (0.0, 45.0)
 CASES = (("AM-low", 8000.0), ("AM-high", 16000.0))
 SHORTLIST = {"bellanca-t250-aries": "Bellanca T-250 Aries", "express-2000": "Wheeler Express",
              "lancair-iv-p": "Lancair IV-P", "meyers-200d": "Meyers 200D",
-             "mooney-301": "Mooney 301", "cozy-mkiv": "Cozy MKIV (reference)"}
+             "mooney-301": "Mooney 301", "cozy-mkiv": "Cozy MKIV (reference)",
+             # reference designs added on AER-4145; the BD-19 has no geometry of its own
+             # published, so the BD-4C model stands in for it (see its dossier)
+             "bede-bd-4c": "Bede BD-4C (reference; BD-19 proxy)",
+             "bede-bd-4c-80gal": "Bede BD-4C, 80 gal option (reference)"}
 SPEED_FLOOR = 160.0   # KTAS: the one floor left in the brief (Bill, 2026-10-25)
 
 

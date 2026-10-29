@@ -38,7 +38,8 @@ import perf  # noqa: E402
 KT = 1.68781
 DESIGNS = [("bellanca-t250-aries", "Bellanca T-250 Aries"), ("prescott-pusher", "Prescott Pusher"), ("express-2000", "Wheeler Express"),
            ("lancair-iv-p", "Lancair IV-P"), ("meyers-200d", "Meyers 200D"),
-           ("mooney-301", "Mooney 301"), ("cozy-mkiv", "Cozy MKIV (reference)")]
+           ("mooney-301", "Mooney 301"), ("cozy-mkiv", "Cozy MKIV (reference)"),
+           ("bede-bd-4c", "Bede BD-4C (reference; the BD-19 uses its wing)")]
 EXTRA = []  # (id, name) added when a model exists, e.g. the Prescott
 
 

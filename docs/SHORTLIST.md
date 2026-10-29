@@ -43,6 +43,14 @@ the [payload-range table](#payload-range-on-the-am20t) reports payload over
 600-1,200 nm, with and without a 45 min reserve, for each shortlisted design.
 The ranking is unchanged; [why](#did-the-ruling-move-the-ranking).
 
+**Revision 6 (2026-10-29, AER-4145).** Bill added the **Bede BD-4C** and the
+new **BD-19** as reference designs beside the Cozy MKIV: "they belong in the
+review much like the Cozy aircraft." Both are kits on sale today, so they are
+comparators, not candidates, and are not ranked. Each has a `ref` row wherever
+the Cozy has one, and a dossier. The BD-19 has not flown and publishes no
+geometry, and its performance table is the BD-4C's, cell for cell, so the
+BD-4C model stands in for it. The shortlist ranking is unchanged.
+
 ## Bill's pick (2026-10-25)
 
 **The Bellanca T-250 Aries and the Prescott Pusher go forward.** Bill accepted
@@ -69,10 +77,13 @@ critical-altitude cases (8,000 ft and 16,000 ft cruise); see
 | 6 | [Mooney 301](candidates/mooney-301.md) | 6 | 1,452 lb (design) / 986 nm with 45 min / 235 KTAS at FL250 (design): range 1% short | 176-187 / 1,452 / 1,143-1,169 nm: **meets both targets** on design weight | Open: Mooney or Daher, unresolved; nothing usable survives | One prototype, no accidents; its pitch control "not certifiable" per its test pilot | A corporate sale; new owners wanted 300 kt. Partly: the market gap is real, but nothing survives to revive |
 | cal. | [Cessna P210N](candidates/cessna-p210n.md) | 6 | Calibration case only (Bill: "not solving some of what I'm after in the innovation side") | 161-171 / 1,658 / 916-931 nm | Firmly held by Textron | 291 events, 78 fatal, 874 built | Not a revival candidate |
 | ref | [Cozy MKIV](candidates/cozy-mkiv.md) | 4 | 1,000 lb / 1,130 nm at 40% / 191 KTAS at 75%, 8,000 ft: **meets all three**. Measured (CAFE): 871 lb / 1,049 nm still air / 177 KTAS at 8,000 ft | 202-217 / 808 / 645-668 nm | Firmly held by Aircraft Spruce | 22 events, 7 fatal, about 350 built | Alive. The yardstick |
+| ref | [Bede BD-4C](candidates/bede-bd-4c.md) | 4 | 1,150 lb / 782-892 nm, power and reserve not stated / 159-167 KTAS at 75% on 180-200 hp, altitude not stated: useful load 15% over, range 11-22% short, speed on the floor at 180 hp. Measured (one builder, N2468Z): 1,119 lb / 684-717 nm on 48 gal / 133.5 KTAS at 75% and 4,500 ft before fairings | 180-192 / 1,087 / 572-590 nm on 51 gal, 927-971 nm on the 80 gal option (factory empty weight, fleet drag factor; 152-163 KTAS on the drag the unfinished airplane measured) | Sold by Bede Aero LLC; licensed or sold (sources differ) to Gratia Aero in 2024, which sells it as Bede Aviation and SureWings | The BD-4's (no BD-4C event): 62 events, 17 fatal, 27 killed, on about 308 ever registered; stall-spin and fuel starvation recur | Alive: the BD-4 since 1969, the BD-4C since 2009 |
+| ref | [Bede BD-19](candidates/bede-bd-19.md) | 4 | Projected and copied from the BD-4C sheet: 1,150 lb / 782-892 nm / 159-167 KTAS. Not flown | No BD-19 geometry is published; the BD-4C model stands in, so as the BD-4C | Bede Aero LLC | None: not flown | Not yet born: first kit packages ship 2026-11-01 |
 
 **How the targets read.** Useful load is the factory empty weight's figure unless
 marked; kit-built and equipped fleets run heavier (the Cozy by 129 lb, the
-Express by 144 lb, the Meyers by about 160 lb), so read every factory useful
+Express by 144 lb, the Meyers by about 160 lb; the one BD-4C weight on record
+by 31 lb, and older BD-4s by 50-90 lb), so read every factory useful
 load as an upper bound until stage 4 replaces it. Range on the AM20T is still
 air with no reserve on standard usable fuel at the assumed continuous power;
 every design gains range at economy power, and loses speed. A miss on useful
@@ -112,6 +123,10 @@ per-case rows in `payload_range_output.md` beside it.
 | Mooney 301 (4,000 lb, 2,548 lb empty, 100 gal, k 1.29) | economy 65% | 142-146 (under the 160 floor) | 1,160-1,174 / 1,117-1,131 | 1,082-1,094 / 1,040-1,051 | 1,006-1,015 / 964-973 | 930-937 / 889-895 | 1,407-1,418 |
 | Cozy MKIV (reference) (2,050 lb, 1,242 lb empty, 50.74 gal, k 1.36) | continuous | 202-217 | 527-535 / cannot | cannot / cannot | cannot / cannot | cannot / cannot | 645-668 |
 | Cozy MKIV (reference) (2,050 lb, 1,242 lb empty, 50.74 gal, k 1.36) | economy 65% | 172-184 | 588-591 / 546-548 | 523-530 / cannot-166 | cannot / cannot | cannot / cannot | 846-871 |
+| Bede BD-4C (reference; also stands in for the BD-19) (2,400 lb, 1,313 lb empty, 51 gal, k 1.29) | continuous | 180-192 | 501-740 / cannot | cannot / cannot | cannot / cannot | cannot / cannot | 572-590 |
+| Bede BD-4C (reference; also stands in for the BD-19) (2,400 lb, 1,313 lb empty, 51 gal, k 1.29) | economy 65% | 150-159 (under the 160 floor) | 835 / 792-793 | 413-560 / cannot | cannot / cannot | cannot / cannot | 732-747 |
+| Bede BD-4C, 80 gal option (reference) (2,400 lb, 1,313 lb empty, 80 gal, k 1.29) | continuous | 180-192 | 772-779 / 707-714 | 676-690 / 611-625 | 34-512 / cannot | cannot / cannot | 927-971 |
+| Bede BD-4C, 80 gal option (reference) (2,400 lb, 1,313 lb empty, 80 gal, k 1.29) | economy 65% | 150-159 (under the 160 floor) | 835 / 792-793 | 760-765 / 718-724 | 686-696 / 645-655 | 614-628 / 203-423 | 1,196-1,242 |
 | Prescott Pusher, 2,400 lb, 56.5 gal, light end (1,522 lb empty) | continuous | 184-207 | 569-589 / cannot-153 | cannot / cannot | cannot / cannot | cannot / cannot | 648-705 |
 | Prescott Pusher, 2,400 lb, 56.5 gal, light end (1,522 lb empty) | economy 65% | 155-173 (under the 160 floor at the low end) | 633-644 / 590-602 | 560-579 / 154-514 | cannot-163 / cannot | cannot / cannot | 838-907 |
 | Prescott Pusher, 2,400 lb, 56.5 gal, heavy end (1,740 lb empty) | continuous | 184-207 | 351-371 / cannot | cannot / cannot | cannot / cannot | cannot / cannot | 648-705 |
@@ -137,6 +152,12 @@ How to read it:
   1,000 nm with a reserve, the brochure and measured bases differ by about
   300 lb, as much as MANUFACTURING's light and heavy structure ends do
   (about 280 lb).
+- **The BD-4C is the heavy-hauler of the two references, not the fast one.**
+  On 80 gal it carries 611-625 lb 800 nm at continuous power with a reserve,
+  where the Cozy cannot reach 800 nm with one. It is 20-40 kt slower. On
+  51 gal it cannot reach 800 nm either. Its rows use the fleet drag factor
+  because Bede states no altitude; on the drag the one measured, unfinished
+  BD-4C showed, its AM20T speed drops to 152-163 KTAS.
 - **Read the factory and design rows as upper bounds.** The Express row is
   already the weighed aircraft; the Aries, IV-P, Meyers and 301 rows use factory
   or design empty weights, and each pound a real airplane adds comes off every
@@ -191,6 +212,13 @@ How to read it:
 7. **The engine is still the largest single unknown.** Aeromomentum publishes no
    continuous rating, critical altitude or fuel consumption for the AM20T. Our
    two critical-altitude cases move speed by 9-15 kt.
+8. **The Bede references bracket the Cozy from the other side.** The BD-4C
+   carries more and goes slower. As published it has 1,150 lb useful against
+   the Cozy's 1,000, and 782-892 nm against 1,129. On the AM20T it gives
+   180-192 KTAS against 202-217. One built BD-4C weighs only 31 lb over the
+   factory figure. Its speeds are unproven: Bede gives no altitude, and the
+   only measured BD-4C was unfinished. The BD-19 is the BD-4C's numbers on an
+   unflown low-wing airframe. Both are in their dossiers.
 
 ## Why this order
 
@@ -283,19 +311,25 @@ study's (AER-3807, `docs/studies/planform/`), not re-argued here.
 | Meyers 200D | 5.8 | 30.5 | yes | 18.6 | 4.72 | 1.66 | 14.5 at 109 | 15.2 / 7.1 | 12.7 |
 | Mooney 301 | 9.0 | 36.7 | yes | 26.7 | 5.31 | 1.40 | 16.7 at 119 | 18.4 / 5.4 | 9.8 |
 | Cozy MKIV (reference) | 9.1 | 28.1 | yes | 23.6 | 4.96 | 1.51 | 16.3 at 102 | 14.0 / 3.5 | 5.8 |
+| Bede BD-4C (reference; the BD-19 uses the same wing) | 6.6 | 26.2; wings come off, folded width 7 ft (F) | yes | 23.1 | 4.92 | 1.49 | 12.3 at 107 | 13.1 / 4.0 | 7.1 |
 | Rohr 2-175 as built (for comparison) | 2.2 | 20.0, folds to garage width | yes | 8.1 | 2.66 | 1.78 | - | - | about 21 (sparless) |
 | Rohr scaled to four seats, AR 2.2 | 2.2 | 21.5 | yes | 13.8 | 2.65 | 1.17 | about 9-10 | - | - |
 
 How to read it:
 - **Storage.** Every design fits a 40 ft T-hangar door (our assumption of the
-  door; the owner's hangar governs). Only the Rohr folds.
+  door; the owner's hangar governs). Only the Rohr folds as built. The Bede
+  BD-4C's wings bolt onto a centre-section spar and come off. Bede lists a
+  folding option at 7 ft wide, but says it rarely sells.
 - **Construction.** Half-wing length and root spar depth set mold, jig and
   spar sizes. Per design: the Aries's constant-chord wing (one rib jig for all
   ribs), the Prescott's and Meyers's welded tube cages, and the Rohr's foam
   cores suit a home CNC router and welder. The molded composites (Express,
   IV-P) and the pressurised metal 301 need tooling at a scale that is a
-  service's or a kit maker's. MANUFACTURING (AER-3784) owns the home-tools
-  envelope.
+  service's or a kit maker's. The Bede BD-4C (reference) is the shortest
+  build in the survey at about 700 h (F). It is a bolted aluminium-angle truss
+  with no welding and no jig, and a bonded wet wing on factory-made honeycomb
+  ribs. It scores 4 of 5 on the dossier's home-shop scale. MANUFACTURING
+  (AER-3784) owns the home-tools envelope.
 - **Safety.** Best L/D excludes propeller drag, so real engine-out glide is
   worse. The Rohr's low-aspect-ratio glide (about 9-10) is the outlier; the
   conventional wings sit at 14-17.
@@ -449,6 +483,10 @@ there are lower.
 | Cessna P210N (TSIO-520-P, 1980 POH) [AM-high] | AM20T | 16k | 171 (171) | 1,658 (1,819) | 931 | cannot | cannot (cannot) | 132: 1,173 / 1,132 |
 | Cozy MKIV (CAFE N494CZ, IO-360 180 hp) [AM-low] | AM20T | 8k | 202 (206) | 808 (808) | 645 | cannot | cannot (cannot) | 172: cannot / cannot |
 | Cozy MKIV (CAFE N494CZ, IO-360 180 hp) [AM-high] | AM20T | 16k | 217 (221) | 808 (808) | 668 | cannot | cannot (cannot) | 184: cannot / cannot |
+| Bede BD-4C (factory 180 hp figures, 51 gal; also stands in for the BD-19) [AM-low] | AM20T | 8k | 180 (187) | 1,087 (1,087) | 572 | cannot | cannot (cannot) | 150: cannot / cannot |
+| Bede BD-4C (factory 180 hp figures, 51 gal; also stands in for the BD-19) [AM-high] | AM20T | 16k | 192 (200) | 1,087 (1,087) | 590 | cannot | cannot (cannot) | 159: cannot / cannot |
+| Bede BD-4C, 80 gal option (factory 180 hp figures) [AM-low] | AM20T | 8k | 180 (187) | 1,087 (1,087) | 927 | cannot | cannot (cannot) | 150: 686 / 645 |
+| Bede BD-4C, 80 gal option (factory 180 hp figures) [AM-high] | AM20T | 16k | 192 (200) | 1,087 (1,087) | 971 | cannot | cannot (cannot) | 159: 696 / 655 |
 | Rutan Defiant (Model 40, 2x O-320 160 hp) [AM-low] | 2x AM15T | 8k | 178 (197) | 1,350 (1,358) | 1,094 | 721 | cannot (709) | 150: 858 / 807 |
 | Rutan Defiant (Model 40, 2x O-320 160 hp) [AM-high] | 2x AM15T | 16k | 190 (212) | 1,350 (1,358) | 1,156 | 747 | 669 (732) | 159: 871 / 821 |
 | Cirrus VK-30 (IO-540 290 hp prototype) [AM-low] | AM20T | 8k | 199 (208) | 1,350 (1,471) | 1,225 | 880 | 815 (954) | 165: 973 / 931 |
@@ -472,6 +510,8 @@ there are lower.
 | Wheeler Express | 169 KTAS at 6,190 ft DA, ~169 hp (P, CAFE) | 164 KTAS | -3% | Agrees: this is a calibration case |
 | Cessna P210N | 152-193 KTAS at 10,000-23,000 ft (POH) | matched with 1.26-1.32 across seven points | - | Calibration case; the spread is tight |
 | Cozy MKIV | 169-182 KTAS at 850-12,000 ft DA (R, CAFE) | matched with 1.32-1.39 across four points | - | Calibration case |
+| Bede BD-4C (reference) | 151-167 KTAS at 65-75% of 180-200 hp, altitude not stated (F); 133.5 KTAS at 75% of 200 hp, 4,500 ft, unfinished airframe (B, builder) | the brochure needs 1.15-1.20 at 8,000 ft (more at any lower altitude); the unfinished airplane 1.76-1.78 | - | The brochure sits at the clean end of the fleet band, plausible only at altitude. No finished airplane has been measured, so the fleet factor is used and it is not a calibration case (`check/bede/`) |
+| Bede BD-19 (reference) | the BD-4C sheet, copied (F, projected) | - | - | Nothing to check: not flown, no geometry |
 
 Do the published power and fuel flow agree with each other? For every
 published point with both, the implied BSFC (gph x 6 / hp) is 0.39-0.51 lb/hp/h:
@@ -556,6 +596,10 @@ is published.
   wing with more fuel), the Express (with a re-derived tail), and the 301 (a new
   design from its layout). The useful load of each moves pound for pound with the
   empty weight a modern rebuild achieves.
+- **To MANUFACTURING (note, not assigned; AER-4145):** the Bede BD-4C's
+  bonded-sheet-on-bolted-truss construction is a third route beside the
+  riveted-metal and molded-composite ones the home-shop table costs. The
+  note is on AER-3784.
 - **To Elon (stage 2, AER-3805):** the Prescott lead "Pusher Aircraft Inc"
   (Wichita; held the second prototype until 2018); rights files for the Aries
   (TC A11SW) and the Derringer analogs; the Meyers re-derivation question; the Lancair holders and
@@ -577,6 +621,8 @@ python3 report.py                                            # writes results/ta
 python3 express/tail_study.py > express/tail_study_output.md # the Express tail study
 python3 prescott/levers.py > prescott/levers_output.md       # the Prescott engine and levers study
 python3 axes/axes.py > axes/axes_output.md                   # the deep-dive axes
+python3 payload_range.py > payload_range_output.md           # payload-range, all designs
+python3 bede/bede_check.py > bede/bede_check_output.md       # the Bede BD-4C / BD-19 reference check (AER-4145)
 ```
 
 `vspgen.py` expects the folder at `/maos-work/aero/analysis/AER-3783`, which the
