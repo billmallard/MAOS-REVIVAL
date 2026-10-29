@@ -9,6 +9,8 @@ import os
 HERE = os.path.dirname(os.path.abspath(__file__))
 ORDER = ["bellanca-t250-aries", "prescott-pusher", "express-2000", "lancair-iv-p", "meyers-200d", "mooney-301",
          "cessna-p210n", "cozy-mkiv",
+         # reference designs added on AER-4145 (the BD-4C model also stands in for the BD-19)
+         "bede-bd-4c", "bede-bd-4c-80gal",
          # checked in stage 3, then dropped by Bill (2026-10-24); kept as record
          "rutan-defiant", "cirrus-vk-30", "velocity-xl-rg-100gal", "velocity-xl-rg", "berkut-360"]
 
