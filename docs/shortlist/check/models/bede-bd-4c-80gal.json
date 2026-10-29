@@ -1,0 +1,172 @@
+{
+ "id": "bede-bd-4c-80gal",
+ "name": "Bede BD-4C, 80 gal option (factory 180 hp figures)",
+ "assumptions": [
+  "Wing span 26.2 ft (F, jimbede.com/bd-4c, read 2026-10-29); area 103.9 ft2 from Bede's published wing loading, 23.10 lb/ft2 at 2,400 lb (F, Bede spec sheet specs-bd-4c.png); constant chord 3.97 ft closes the area (E; the BD-4 wing is a constant-chord panel on a tubular spar). NACA 64-415 modified (F), so t/c 0.15.",
+  "Fuselage length 22.6 ft (F); width 4.2 ft from the 46 in cabin plus structure, height 4.5 ft (E, ours; the 7.23 ft overall height includes gear and fin). The real fuselage is slab-sided (flat sheet on a bolted angle truss); the elliptic-section model understates its wetted area, a sensitivity is run in bede/bede_check.py.",
+  "All-flying stabilator 7.5 ft span x 3.0 ft chord, NACA 63-009 (F, Bede page). Fin 9 ft2 (E, ours: vertical-tail volume 0.04 at a 13 ft arm; no fin dimension is published).",
+  "Laminar run x_tr: wing 0.25 (bonded, rivet-free metal skin on a 6-series section; same credit as the flush-riveted Aries, behind a tractor prop), tails 0.15, fuselage 0.05.",
+  "Fixed tricycle gear with S-ply spring mains and fibreglass spats: D/q 0.60 ft2, the same allowance as the Wheeler Express (E, Gudmundsson ch. 15 faired-wheel range).",
+  "72 in two-blade propeller (F, Bede's recommendation); installation factor 1.0 (tractor). Air-cooled Lycoming O-360, 180 hp (F, one of Bede's two published columns); original installed mass 328 lb, the same O-360 figure the Cozy model uses (E).",
+  "Bede publishes no cruise altitude, weight or fuel flow, so no published point is usable for calibration: the fleet drag factor is used. Published speeds are compared in bede/bede_check.py at stated altitudes instead.",
+  "Usable fuel 80 gal: the top of Bede's '51 to 80 gallons' capacity, usable not stated (F, an upper bound on usable). Same airframe and weights as the 51 gal model."
+ ],
+ "Sref": 103.9,
+ "fuselage": {
+  "length": 22.6,
+  "width": 4.2,
+  "height": 4.5,
+  "profile": "tractor"
+ },
+ "surfaces": [
+  {
+   "name": "Wing",
+   "span": 26.2,
+   "croot": 3.966,
+   "ctip": 3.966,
+   "tc_root": 0.15,
+   "tc_tip": 0.15,
+   "sweep": 0,
+   "x": 5.8,
+   "z": 1.9
+  },
+  {
+   "name": "HTail",
+   "span": 7.5,
+   "croot": 3.0,
+   "ctip": 3.0,
+   "tc_root": 0.09,
+   "x": 19.4,
+   "z": 0.6
+  },
+  {
+   "name": "Fin",
+   "span": 3.6,
+   "croot": 3.4,
+   "ctip": 1.6,
+   "tc_root": 0.09,
+   "vertical": true,
+   "sym": false,
+   "sweep": 30,
+   "x": 18.6,
+   "z": 0.8
+  }
+ ],
+ "components": [
+  {
+   "name": "Wing",
+   "kind": "surface",
+   "lref": 3.966,
+   "tc": 0.15,
+   "xc": 0.4,
+   "sweep_tc": 0,
+   "xtr": 0.25,
+   "Q": 1.0
+  },
+  {
+   "name": "HTail",
+   "kind": "surface",
+   "lref": 3.0,
+   "tc": 0.09,
+   "xc": 0.4,
+   "xtr": 0.15,
+   "Q": 1.08
+  },
+  {
+   "name": "Fin",
+   "kind": "surface",
+   "lref": 2.5,
+   "tc": 0.09,
+   "xc": 0.3,
+   "sweep_tc": 25,
+   "xtr": 0.15,
+   "Q": 1.05
+  },
+  {
+   "name": "Fuselage",
+   "kind": "body",
+   "lref": 22.6,
+   "dmax": 4.35,
+   "xtr": 0.05,
+   "Q": 1.0
+  }
+ ],
+ "fixed_Dq": [
+  [
+   "fixed tricycle gear, spring mains, spats",
+   0.6
+  ]
+ ],
+ "cooling_factor": 1.0,
+ "excrescence_frac": 0.05,
+ "lifting": [
+  {
+   "S": 103.9,
+   "AR": 6.61,
+   "share": 1.0
+  }
+ ],
+ "prop": {
+  "diameter_ft": 6.0,
+  "install": 1.0
+ },
+ "engine": {
+  "hp": 180,
+  "bsfc": 0.45,
+  "crit_alt_ft": 0
+ },
+ "orig_installed_lb": 328,
+ "weights": {
+  "mtow": 2400,
+  "empty": 1250
+ },
+ "fuel_usable_gal": 80,
+ "fuel_density": 6.0,
+ "published": [
+  {
+   "ktas": 159.0,
+   "alt_ft": null,
+   "hp": 135,
+   "gph": null,
+   "weight_lb": null,
+   "grade": "F",
+   "note": "Bede spec sheet, 180 hp: 183 mph at 75%, altitude and weight not stated"
+  },
+  {
+   "ktas": 151.2,
+   "alt_ft": null,
+   "hp": 117,
+   "gph": null,
+   "weight_lb": null,
+   "grade": "F",
+   "note": "Bede spec sheet, 180 hp: 174 mph at 65%, altitude and weight not stated"
+  },
+  {
+   "ktas": 166.8,
+   "alt_ft": null,
+   "hp": 150,
+   "gph": null,
+   "weight_lb": null,
+   "grade": "F",
+   "note": "Bede spec sheet, 200 hp: 192 mph at 75%, altitude not stated"
+  },
+  {
+   "ktas": 166.0,
+   "alt_ft": null,
+   "hp": null,
+   "gph": null,
+   "weight_lb": null,
+   "grade": "F",
+   "note": "Bede BD-4C page text: 191 mph, power and altitude not stated"
+  }
+ ],
+ "orig_cruise": {
+  "alt_ft": 8000,
+  "hp": 117
+ },
+ "ref_condition": {
+  "alt_ft": 8000,
+  "hp": 135,
+  "W": 2208
+ }
+}

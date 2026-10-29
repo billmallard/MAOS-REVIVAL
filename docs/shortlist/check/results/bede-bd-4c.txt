@@ -1,0 +1,6 @@
+## Bede BD-4C (factory 180 hp figures, 51 gal)  (results at drag factor 1.29, fleet calibration (no published point with known power))
+Reference condition {'alt_ft': 8000, 'hp': 135, 'W': 2208}: 155 KTAS, CD0 0.0292, D/q par 3.03 ft2, ind 0.66 ft2, eta 0.823, L/D 9.4
+Orig engine 117 hp @ 8000 ft: 145 KTAS, range 763 nm, payload@1000 cannot/cannot
+AM20T swap delta installed mass +63 lb
+  AM-low: 195 hp @ 8000 ft -> 180 KTAS, UL 1087, range 572 nm, payload@1000 cannot/cannot; [opt k 1.16: 187 KTAS, cannot] eco 150 KTAS payload cannot/cannot
+  AM-high: 195 hp @ 16000 ft -> 192 KTAS, UL 1087, range 590 nm, payload@1000 cannot/cannot; [opt k 1.16: 200 KTAS, cannot] eco 159 KTAS payload cannot/cannot

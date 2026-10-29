@@ -1,0 +1,147 @@
+{
+ "id": "bede-bd-4c-80gal",
+ "name": "Bede BD-4C, 80 gal option (factory 180 hp figures)",
+ "wet": {
+  "Fuselage": {
+   "theo_ft2": 216.822,
+   "wet_ft2": 207.101
+  },
+  "Wing": {
+   "theo_ft2": 216.775,
+   "wet_ft2": 203.809
+  },
+  "HTail": {
+   "theo_ft2": 46.6016,
+   "wet_ft2": 41.0692
+  },
+  "Fin": {
+   "theo_ft2": 19.1135,
+   "wet_ft2": 17.3801
+  }
+ },
+ "calibration": [],
+ "assumptions": [
+  "Wing span 26.2 ft (F, jimbede.com/bd-4c, read 2026-10-29); area 103.9 ft2 from Bede's published wing loading, 23.10 lb/ft2 at 2,400 lb (F, Bede spec sheet specs-bd-4c.png); constant chord 3.97 ft closes the area (E; the BD-4 wing is a constant-chord panel on a tubular spar). NACA 64-415 modified (F), so t/c 0.15.",
+  "Fuselage length 22.6 ft (F); width 4.2 ft from the 46 in cabin plus structure, height 4.5 ft (E, ours; the 7.23 ft overall height includes gear and fin). The real fuselage is slab-sided (flat sheet on a bolted angle truss); the elliptic-section model understates its wetted area, a sensitivity is run in bede/bede_check.py.",
+  "All-flying stabilator 7.5 ft span x 3.0 ft chord, NACA 63-009 (F, Bede page). Fin 9 ft2 (E, ours: vertical-tail volume 0.04 at a 13 ft arm; no fin dimension is published).",
+  "Laminar run x_tr: wing 0.25 (bonded, rivet-free metal skin on a 6-series section; same credit as the flush-riveted Aries, behind a tractor prop), tails 0.15, fuselage 0.05.",
+  "Fixed tricycle gear with S-ply spring mains and fibreglass spats: D/q 0.60 ft2, the same allowance as the Wheeler Express (E, Gudmundsson ch. 15 faired-wheel range).",
+  "72 in two-blade propeller (F, Bede's recommendation); installation factor 1.0 (tractor). Air-cooled Lycoming O-360, 180 hp (F, one of Bede's two published columns); original installed mass 328 lb, the same O-360 figure the Cozy model uses (E).",
+  "Bede publishes no cruise altitude, weight or fuel flow, so no published point is usable for calibration: the fleet drag factor is used. Published speeds are compared in bede/bede_check.py at stated altitudes instead.",
+  "Usable fuel 80 gal: the top of Bede's '51 to 80 gallons' capacity, usable not stated (F, an upper bound on usable). Same airframe and weights as the 51 gal model."
+ ],
+ "k_own": null,
+ "k_fleet": 1.29,
+ "k_alt": 1.16,
+ "k_basis": "fleet calibration (no published point with known power)",
+ "drag_factor": 1.29,
+ "breakdown": {
+  "cond": {
+   "alt_ft": 8000,
+   "hp": 135,
+   "W": 2208
+  },
+  "ktas": 154.53156346530957,
+  "items": [
+   [
+    "Wing",
+    0.6838197498767833,
+    "Swet 203.8 ft2, Re 5.4M, Cf 0.00254, FF 1.322, Q 1.00, x_tr 0.25"
+   ],
+   [
+    "HTail",
+    0.1566340718389282,
+    "Swet 41.1 ft2, Re 4.1M, Cf 0.00298, FF 1.183, Q 1.08, x_tr 0.15"
+   ],
+   [
+    "Fin",
+    0.06750384286511983,
+    "Swet 17.4 ft2, Re 3.4M, Cf 0.00309, FF 1.197, Q 1.05, x_tr 0.15"
+   ],
+   [
+    "Fuselage",
+    0.6521550001876998,
+    "Swet 207.1 ft2, Re 30.8M, Cf 0.00236, FF 1.335, Q 1.00, x_tr 0.05"
+   ],
+   [
+    "fixed tricycle gear, spring mains, spats",
+    0.6,
+    "fixed allowance"
+   ],
+   [
+    "cooling",
+    0.07751747051158929,
+    "Raymer 12.39 x 1.00"
+   ],
+   [
+    "leakage+protuberance",
+    0.11188150676400602,
+    "5% of the rest"
+   ],
+   [
+    "calibration factor",
+    0.6813583761927967,
+    "x1.290 on the build-up (calibration; basis stated above)"
+   ]
+  ],
+  "Dq_par": 3.0308700182369233,
+  "Dq_ind": 0.6577714283625409,
+  "CD0": 0.02917103001190494,
+  "eta": 0.8233874285532162,
+  "LD": 9.419744721245333
+ },
+ "orig": {
+  "alt_ft": 8000,
+  "hp": 117,
+  "ktas": 144.643056662388,
+  "range_nm_noreserve_fullfuel_mtow": 1249.083259557504,
+  "hours": 8.635625438094788,
+  "climb_allowance_lb": 21.636363636363637,
+  "payload_1000_0": 765.0211873299281,
+  "fuel_1000_0_lb": 384.97881267007205,
+  "payload_1000_45": 727.07133909536,
+  "fuel_1000_45_lb": 422.9286609046401
+ },
+ "am_model": "AM20T",
+ "am_dmass_lb": 63.25,
+ "am": {
+  "AM-low": {
+   "alt_ft": 8000.0,
+   "hp": 195.0,
+   "ktas": 179.8565363513354,
+   "empty": 1313.25,
+   "useful": 1086.75,
+   "useful_opt": 1086.75,
+   "range_nm_fullfuel": 926.7975038154708,
+   "gph": 14.625,
+   "payload_1000_0": null,
+   "fuel_1000_0_lb": 506.2344629125937,
+   "payload_1000_45": null,
+   "fuel_1000_45_lb": 570.0779141568796,
+   "eco_payload_1000_0": 686.486538636741,
+   "eco_payload_1000_45": 645.3010637537329,
+   "eco_ktas": 150.19479609134478,
+   "opt_ktas": 187.08167115790246,
+   "opt_payload_1000_45": null
+  },
+  "AM-high": {
+   "alt_ft": 16000.0,
+   "hp": 195.0,
+   "ktas": 192.41102746535188,
+   "empty": 1313.25,
+   "useful": 1086.75,
+   "useful_opt": 1086.75,
+   "range_nm_fullfuel": 971.2813210954195,
+   "gph": 14.625,
+   "payload_1000_0": null,
+   "fuel_1000_0_lb": 485.8061297210563,
+   "payload_1000_45": null,
+   "fuel_1000_45_lb": 549.3787466038787,
+   "eco_payload_1000_0": 695.9764843996281,
+   "eco_payload_1000_45": 655.0657704549374,
+   "eco_ktas": 158.90605938013928,
+   "opt_ktas": 200.2561112480054,
+   "opt_payload_1000_45": null
+  }
+ }
+}
