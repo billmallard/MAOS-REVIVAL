@@ -1,0 +1,119 @@
+ Vortex Lattice Output -- Total Forces
+
+ Configuration: Prescott Pusher wing + T-tail, stations from the RCM 1986 1/
+     # Surfaces =   4
+     # Strips   =  88
+     # Vortices =1000
+
+  Sref =  113.00       Cref =  3.8930       Bref =  30.000    
+  Xref =  1.8000       Yref =  0.0000       Zref =  0.0000    
+
+ Standard axis orientation,  X fwd, Z down         
+
+ Run case:  -unnamed-                              
+
+  Alpha =   2.00000     pb/2V =  -0.00000     p'b/2V =  -0.00000
+  Beta  =   0.00000     qc/2V =   0.00000
+  Mach  =     0.000     rb/2V =  -0.00000     r'b/2V =  -0.00000
+
+  CXtot =   0.00570     Cltot =   0.00000     Cl'tot =   0.00000
+  CYtot =   0.00000     Cmtot =   0.04679
+  CZtot =  -0.25040     Cntot =  -0.00000     Cn'tot =  -0.00000
+
+  CLtot =   0.25044
+  CDtot =   0.00304
+  CDvis =   0.00000     CDind = 0.0030414
+  CLff  =   0.25038     CDff  = 0.0030888    | Trefftz
+  CYff  =   0.00000         e =    0.8112    | Plane  
+
+
+ ---------------------------------------------------------------
+
+ Operation of run case 1/1:   -unnamed-                              
+ ==========================================================
+
+  variable          constraint              
+  ------------      ------------------------
+  A lpha        ->  alpha       =   2.000         
+  B eta         ->  beta        =   0.000         
+  R oll  rate   ->  pb/2V       =   0.000         
+  P itch rate   ->  qc/2V       =   0.000         
+  Y aw   rate   ->  rb/2V       =   0.000         
+  ------------      ------------------------
+
+  C1  set level or banked  horizontal flight constraints
+  C2  set steady pitch rate (looping) flight constraints
+  M odify parameters                                    
+
+ "#" select  run case          L ist defined run cases   
+  +  add new run case          S ave run cases to file   
+  -  delete  run case          F etch run cases from file
+  N ame current run case       W rite forces to file     
+
+ eX ecute run case             I nitialize variables     
+
+  G eometry plot               T refftz Plane plot       
+
+  ST  stability derivatives    FT  total   forces        
+  SB  body-axis derivatives    FN  surface forces        
+  RE  reference quantities     FS  strip   forces        
+  DE  design changes           FE  element forces        
+  O ptions                     FB  body forces           
+                               HM  hinge moments         
+                               VM  strip shear,moment    
+  MRF  machine-readable format CPOM OML surface pressures
+
+ .OPER (case 1/1)   c>  
+Enter filename, or <return> for screen output   s>   ---------------------------------------------------------------
+ Vortex Lattice Output -- Total Forces
+
+ Configuration: Prescott Pusher wing + T-tail, stations from the RCM 1986 1/
+     # Surfaces =   4
+     # Strips   =  88
+     # Vortices =1000
+
+  Sref =  113.00       Cref =  3.8930       Bref =  30.000    
+  Xref =  1.8000       Yref =  0.0000       Zref =  0.0000    
+
+ Standard axis orientation,  X fwd, Z down         
+
+ Run case:  -unnamed-                              
+
+  Alpha =   2.00000     pb/2V =  -0.00000     p'b/2V =  -0.00000
+  Beta  =   0.00000     qc/2V =   0.00000
+  Mach  =     0.000     rb/2V =  -0.00000     r'b/2V =  -0.00000
+
+  CXtot =   0.00570     Cltot =   0.00000     Cl'tot =   0.00000
+  CYtot =   0.00000     Cmtot =   0.04679
+  CZtot =  -0.25040     Cntot =  -0.00000     Cn'tot =  -0.00000
+
+  CLtot =   0.25044
+  CDtot =   0.00304
+  CDvis =   0.00000     CDind = 0.0030414
+  CLff  =   0.25038     CDff  = 0.0030888    | Trefftz
+  CYff  =   0.00000         e =    0.8112    | Plane  
+
+
+ ---------------------------------------------------------------
+
+ Stability-axis derivatives...
+
+                             alpha                beta
+                  ----------------    ----------------
+ z' force CL |    CLa =   5.459384    CLb =  -0.000000
+ y  force CY |    CYa =   0.000000    CYb =  -0.009734
+ x' mom.  Cl'|    Cla =   0.000000    Clb =  -0.074693
+ y  mom.  Cm |    Cma =  -1.905705    Cmb =   0.000000
+ z' mom.  Cn'|    Cna =  -0.000000    Cnb =  -0.000548
+
+                     roll rate  p'      pitch rate  q'        yaw rate  r'
+                  ----------------    ----------------    ----------------
+ z' force CL |    CLp =  -0.000000    CLq =  10.512351    CLr =   0.000000
+ y  force CY |    CYp =  -0.026630    CYq =  -0.000000    CYr =   0.010664
+ x' mom.  Cl'|    Clp =  -0.509680    Clq =   0.000000    Clr =   0.071328
+ y  mom.  Cm |    Cmp =   0.000000    Cmq = -10.992753    Cmr =  -0.000000
+ z' mom.  Cn'|    Cnp =  -0.019829    Cnq =   0.000000    Cnr =  -0.001265
+
+ Neutral point  Xnp =   3.158928
+
+ Clb Cnr / Clr Cnb  =  -2.415831    (  > 1 if spirally stable )

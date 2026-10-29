@@ -8,9 +8,75 @@ the evidence and the arithmetic.
   altitude, with the fuel, structure and gross-weight levers, on two drag bases
   (brochure-consistent k 1.35, measured-consistent k 1.55). Run it from the
   analysis workspace, where it finds `perf.py` and the model.
+- `balance.py` / `balance_output.md` (AER-3866): the re-derivation with
+  MANUFACTURING's structure delta, the weight-and-balance of the AM20T
+  installation on stations read off the designer's plan, the four balance
+  options, and a rotation moment check. It supersedes `levers.py`'s structure
+  placeholders and its guessed balance arms. Runs from the repo:
+  `python3 balance.py > balance_output.md`.
+  AER-3902 folded in SAFETY's three input corrections (N747P's 49 lb ballast
+  datum, the constant-speed propeller, option C's neutral-point loss); the
+  output's correction ledger walks from PR #10's first numbers to the
+  corrected ones.
+- `SAFETY.md` (AER-3899): SAFETY's review of the balance options, the
+  approach and landing technique and the accident record, committed verbatim
+  by AERO. Its constraints R1-R10 bind any re-derivation.
+- `avl/prescott_np.avl` / `avl/prescott_np_st.txt`: the wing + T-tail
+  vortex-lattice model behind the neutral point (`maos avl`, OPER `a a 2`, `x`,
+  `st`).
 - The desk research below was done by a delegated research agent and reviewed
   by AERO; quoted strings were re-fetched and matched against their sources
   before commit. Public sources only; nobody was contacted.
+
+## Balance study (AER-3866): how the stations were read
+
+Source: Tom Prescott, "Prescott Pusher", *RCM*, July 1986, plan 971 (three
+sheets, "Designed & drawn by Tom Prescott") and its article, on Outerzone
+oz14320 (Wayback copies in `balance.py`'s header). The plan is a 1/5-scale
+model of prototype 1 (N41PP); the article's table gives the full-scale
+"Prototype" dimensions, and the text gives the one full-scale station we have:
+
+> "The real aircraft has the main wheel located at fuselage station 244
+> extended, and retracts to fuselage station 257.4. (The fuselage nose tip is
+> station 92.)" (*RCM* July 1986, p. 51; read from the scan, F)
+
+Everything else was measured by AERO on sheet 1's fuselage side view, rendered
+at 200 dpi with PyMuPDF. Scale: nose tip to spinner tip is set to the table's
+20.28 ft (the plan's printed scale reads 0.7% short), which makes one pixel of
+a 5.011x-reduced working image 0.126 in full scale. Readings (working-image x,
+then full-scale FS):
+
+| Feature | Image x, px | FS | Note |
+|---|---|---|---|
+| Nose tip | 33.9 | 92.0 | datum, by the article |
+| Wing root leading edge | 851 | 195.1 | inner (root-template) outline, not the fillet |
+| "C.G. RANGE" marks, forward / aft | 1,019 / 1,071 | 216.2 / 222.9 | symbol centres; 12.7-27.0% MAC |
+| Model nose-wheel axle | 433 | 142.4 | the model's gear |
+| Model main axle | 1,087 | 224.9 | the model's, not scale (the article puts the scale position at FS 244) |
+| Bulkhead F-5 ("firewall" in the article) | about 1,515 | about 279 | the engine's accessory end |
+| Fuselage tail, F-6 aft face | 1,844 | 320 | prop plane taken at FS 322 |
+| Horizontal tail root leading edge | about 1,623 | 292.5 | the fin-top section |
+| Heights above the ground line: CG mark, thrust line | - | about 31 in, 58 in | at the model's gear height; we use 36 and 55 in |
+
+Reading accuracy is about 1 in full scale. The model is "stand-off sport
+scale", so every station is graded E. The "C.G. RANGE" is drawn on the model
+plan; the article does not say it is the full-scale range, though the model
+was scaled from the full-scale design and flown for data. We read it as the
+designer's range and say so wherever it is used. The plan images are not
+committed (RCM reserves its rights); the Wayback links regenerate them.
+
+What the plan settles, and what it does not:
+- The engine sits about 73 in behind the aft CG limit and the nose bay about
+  123 in ahead of it, so one pound of engine needs about 0.6 lb of nose
+  ballast, not the 1.33 lb that stage 3 assumed.
+- The main wheels sat 21-28 in behind the CG range on prototype 1: a tipback
+  of 30-38 deg, against the usual 15. That is the hard rotation in the record.
+- The empty-weight CG and its scatter are not on the plan. One builder
+  aircraft bounds it: N747P needed "49 pounds of ballast necessary to get the
+  weight and balance within its prescribed limits" (SA91, p. 49; found by
+  SAFETY, AER-3899), at an unpublished station. `balance.py` carries that as
+  its headline datum (AER-3902). SDASM's weight-and-balance schedule
+  (SC.10269) would settle it; reading it is museum contact, Bill's call.
 
 ## Desk research: Prescott Pusher: configuration, performance, fleet, safety, demise
 
