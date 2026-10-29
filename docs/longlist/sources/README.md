@@ -6,6 +6,7 @@ Government works.
 |---|---|
 | `tcds-3A21-rev50-2021-11-18.pdf` | FAA TCDS 3A21 (Cessna 210 family), Rev 50, 18 November 2021. Holder Textron Aviation Inc. |
 | `tcds-A25SO-rev42-2026-02-16.pdf` | FAA TCDS A25SO (Piper PA-46 family), Rev 42, 16 February 2026. Holder Piper Aircraft Inc. |
+| `tcds-A11SW-rev2-1980-07-01.pdf` | FAA TCDS A11SW (Anderson Greenwood / Bellanca Model 51 and 51A, the T-250 Aries), Rev 2, 1 July 1980, reformatted 2/94. Holder Anderson, Greenwood and Company. Fetched 2026-10-25 for AER-3867 |
 
 Fetched 2026-10-24 from FAA DRS with the guest-session method in
 `docs/rights/README.md`, step 4 (`GET /api/content/alf/{id}`):
@@ -14,6 +15,7 @@ Fetched 2026-10-24 from FAA DRS with the guest-session method in
 |---|---|---|
 | `tcds-3A21-rev50-2021-11-18.pdf` | `b486ccc5-da80-4aa3-90b8-a87835c06640` | `599d896e2ba92f656fe30b855a275972dbc5013cc471345683b2e7be0ff9da57` |
 | `tcds-A25SO-rev42-2026-02-16.pdf` | `d8fcb5f0-56e9-4170-b78b-166cc770402b` | `6926513acc77573423dfef9150b26b8da6a0becd8735ab0c299ce7d342c7f489` |
+| `tcds-A11SW-rev2-1980-07-01.pdf` (fetched 2026-10-25) | `5b718d89-7d42-46a1-b537-9a3fbe563124` | `5da141192231680bff822dc4f1a93dfecf945af94efa30a1ee946df934960d70` |
 
 Values read from them, unchanged from the earlier revisions first cited:
 P210N maximum weight 4,000 lb, fuel 90 gal (87 usable) from S/N P21000761 (89

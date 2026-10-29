@@ -1,0 +1,41 @@
+{
+ "k": 1.29,
+ "AM-low": {
+  "hp_at_160kt": 139.1446564733593,
+  "gal_1000_45_at_160kt": 77.39118718311529,
+  "ktas_65pct": 174.17028089106188,
+  "gal_1000_45_at_65pct": 86.3760690122211,
+  "tow_1000lb_payload_160kt_45": {
+   "dW": 180,
+   "gal": 79.39899978721495
+  },
+  "tow_1000lb_payload_65pct_45": {
+   "dW": 240,
+   "gal": 88.70383614398672
+  },
+  "vmax_cont": 185,
+  "vmax_cont_drag_items": 196,
+  "fastest_1000_45_90gal": 179,
+  "drag_items_fastest_1000_45_76gal": 174,
+  "drag_items_fastest_1000_45_90gal": 196
+ },
+ "AM-high": {
+  "hp_at_160kt": 125.86039641852837,
+  "gal_1000_45_at_160kt": 73.05810615516202,
+  "ktas_65pct": 184.7696803728611,
+  "gal_1000_45_at_65pct": 84.69774419224213,
+  "tow_1000lb_payload_160kt_45": {
+   "dW": 160,
+   "gal": 75.42906893885264
+  },
+  "tow_1000lb_payload_65pct_45": {
+   "dW": 230,
+   "gal": 87.41218375165924
+  },
+  "vmax_cont": 196,
+  "vmax_cont_drag_items": 209,
+  "fastest_1000_45_90gal": 193,
+  "drag_items_fastest_1000_45_76gal": 186,
+  "drag_items_fastest_1000_45_90gal": 209
+ }
+}
