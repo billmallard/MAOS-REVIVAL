@@ -38,13 +38,13 @@ Cruise settings (P = screened as published, M = screened as measured; the basis 
 
 ## Screen (published numbers; like for like)
 
-Two screens, never mixed: the maker's figures as published, and measured or reported data. The three targets are separate floors; payload at 1,000 nm is information only.
+Two screens, never mixed: the maker's figures as published, and measured or reported data. Useful load and range are targets: a miss is reported with its size, and payload against range is the tradeoff to read. Cruise above 160 KTAS is a floor.
 
 - **As published: pass**
   - Useful load: 1,276 lb (pass) against 1,000 lb.
   - Range: 1,100 nm (pass; 60% power, 12,000 ft, incl. auxiliary tank, incl. climb, no reserves; nautical. Max range 1,225 nm at FL180, 50% power, no reserves. Fuel burn at 60% = 10.4 US gal/h total) against 1,000 nm.
   - Cruise: 190 KTAS at 16,000 ft (pass+) against >160 KTAS (>180 preferred).
-  - Payload at 1,000 nm (information): cannot (707 nm max).
+  - Payload at 1,000 nm, lb, no reserve / 45 min: cannot (707 nm max).
 - **Measured or reported: no data found.**
 - Aeromomentum fit (first cut): Yes: 2x AM20T (260 hp) for 168 hp.
 

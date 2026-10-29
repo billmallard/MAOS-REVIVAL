@@ -573,7 +573,7 @@ def main():
     p("AM20T at the assumed 195 hp continuous; still air, no reserve, full fuel from gross, at continuous power. "
       "Payload with full fuel = useful load - fuel. At 2,700 lb the wing and tail are 12.5% larger (MANUFACTURING's weight assumes it). "
       "Option B is the balance fix in every row except the 'no fix' and 'ballast' rows.\n")
-    p("| Gross, fuel | Option | Structure end | Useful load | Payload with full fuel | Basis | KTAS, crit. alt 8k / 16k | Range, nm, 8k / 16k | Payload 1,000 nm + 45 min, 16k (info) | Floors at 16k: load / range / speed |")
+    p("| Gross, fuel | Option | Structure end | Useful load | Payload with full fuel | Basis | KTAS, crit. alt 8k / 16k | Range, nm, 8k / 16k | Payload 1,000 nm + 45 min, 16k | At 16k: useful load / range against the targets, speed against the floor |")
     p("|---|---|---|---|---|---|---|---|---|---|")
     for gross in GROSS:
         fg = FUEL_GAL[gross]
@@ -592,10 +592,11 @@ def main():
                     r8 = perf_case(gross, empty, fg, k, 8000.0)
                     r16 = perf_case(gross, empty, fg, k, 16000.0)
                     ok = lambda c: "pass" if c else "fail"  # noqa: E731
+                    tgt = lambda x: "met" if x >= 1000 else f"{(1 - x / 1000) * 100:.0f}% short"  # noqa: E731
                     pl = "cannot" if r16["pl1000_45"] is None else fmt(r16["pl1000_45"])
                     p(f"| {gross:,.0f} lb, {fg:g} gal | {label} | {end} | {fmt(r16['useful'])} | {fmt(r16['full_fuel_payload'])} | {bn.split(' (')[0]} | "
                       f"{r8['ktas']:.0f} / {r16['ktas']:.0f} | {fmt(r8['range'])} / {fmt(r16['range'])} | {pl} | "
-                      f"{ok(r16['useful'] >= 1000)} / {ok(r16['range'] >= 1000)} / {ok(r16['ktas'] > 160)}{'+' if r16['ktas'] >= 180 else ''} |")
+                      f"{tgt(r16['useful'])} / {tgt(r16['range'])} / {ok(r16['ktas'] > 160)}{'+' if r16['ktas'] >= 180 else ''} |")
     p("")
     # stretch drag cost
     end = "light"

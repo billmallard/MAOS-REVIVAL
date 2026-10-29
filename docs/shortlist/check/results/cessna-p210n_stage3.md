@@ -40,7 +40,7 @@ Model: `docs/shortlist/check/models/cessna-p210n.json`; result: `docs/shortlist/
 | calibration factor | 0.876 | x1.290 on the build-up (calibration; basis stated above) |
 | induced | 0.862 | Oswald (Raymer 12.48), lift split stated above |
 
-**Original engine, our numbers:** 202 hp at 20,000 ft gives 179 KTAS; still-air range on full usable fuel from MTOW 829 nm (climb allowance 64 lb); payload at 1,000 nm cannot lb with no reserve, cannot lb with 45 min.
+**Original engine, our numbers:** 202 hp at 20,000 ft gives 179 KTAS; still-air range on full usable fuel from MTOW 829 nm (climb allowance 64 lb); no payload at 1,000 nm from gross weight, with or without a 45 min reserve (the tanks do not hold the fuel).
 
 **On the Aeromomentum line (AM20T), our numbers.** Installed-mass change -161 lb. The headline useful load takes no credit for a lighter engine (CG ballast assumed to eat it); the number in brackets takes the full saving and the optimistic drag factor.
 

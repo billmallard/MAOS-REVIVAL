@@ -29,7 +29,7 @@ Model: `docs/shortlist/check/models/prescott-pusher.json`; result: `docs/shortli
 | calibration factor | 0.505 | x1.290 on the build-up (calibration; basis stated above) |
 | induced | 0.402 | Oswald (Raymer 12.48), lift split stated above |
 
-**Original engine, our numbers:** 135 hp at 7,500 ft gives 170 KTAS; still-air range on full usable fuel from MTOW 865 nm (climb allowance 21 lb); payload at 1,000 nm cannot lb with no reserve, cannot lb with 45 min.
+**Original engine, our numbers:** 135 hp at 7,500 ft gives 170 KTAS; still-air range on full usable fuel from MTOW 865 nm (climb allowance 21 lb); no payload at 1,000 nm from gross weight, with or without a 45 min reserve (the tanks do not hold the fuel).
 
 **On the Aeromomentum line (AM20T), our numbers.** Installed-mass change +61 lb. The headline useful load takes no credit for a lighter engine (CG ballast assumed to eat it); the number in brackets takes the full saving and the optimistic drag factor.
 

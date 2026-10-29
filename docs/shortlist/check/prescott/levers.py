@@ -1,5 +1,5 @@
 """Prescott Pusher on an Aeromomentum engine, turbo-normalised at altitude:
-what moves useful load, range and cruise speed over the floors.
+what moves useful load, range and cruise speed against the targets.
 
   python3 levers.py > levers_output.md
 
@@ -76,6 +76,11 @@ def mark(ok):
     return "pass" if ok else "fail"
 
 
+def tmark(ok):
+    """Useful load and range are targets (Bill, 2026-10-25): met or short."""
+    return "met" if ok else "short"
+
+
 def main():
     out = []
     out.append("### A. Engine swap alone (published 1,550 lb empty, 2,400 lb gross, 56.5 gal)\n")
@@ -90,8 +95,8 @@ def main():
                            f"{r['ktas']:.0f} | {r['range']:,.0f} | {r['eco_ktas']:.0f} / {r['range_eco']:,.0f} |")
     out.append("")
     out.append("### B. The levers together: AM20T, 16,000 ft critical altitude (the optimistic engine case)\n")
-    out.append("Floors: useful load 1,000 lb; range 1,000 nm (still air, no reserve, full fuel, at continuous power, and at economy in brackets); cruise above 160 KTAS (180 preferred).\n")
-    out.append("| Gross, lb | Structure delta, lb | Fuel, gal | Basis | Useful load | KTAS | Range, nm (economy) | Floors: load / range / speed |")
+    out.append("Targets: useful load 1,000 lb; range 1,000 nm (still air, no reserve, full fuel, at continuous power, and at economy in brackets); cruise above 160 KTAS (180 preferred).\n")
+    out.append("| Gross, lb | Structure delta, lb | Fuel, gal | Basis | Useful load | KTAS | Range, nm (economy) | Load / range targets, speed floor |")
     out.append("|---|---|---|---|---|---|---|---|")
     for gross in (2400.0, 2700.0):
         for sd in (0.0, -100.0, -200.0):
@@ -103,14 +108,14 @@ def main():
                     continue
                 for bn, k in BASES.items():
                     r = case("AM20T", 16000.0, k, gross, emp, fuel)
-                    fl = (f"{mark(r['useful'] >= 1000)} / {mark(r['range'] >= 1000)}"
-                          f"{' (eco ' + mark(r['range_eco'] >= 1000) + ')' if r['range'] < 1000 and r['range_eco'] == r['range_eco'] else ''} / "
+                    fl = (f"{tmark(r['useful'] >= 1000)} / {tmark(r['range'] >= 1000)}"
+                          f"{' (eco ' + tmark(r['range_eco'] >= 1000) + ')' if r['range'] < 1000 and r['range_eco'] == r['range_eco'] else ''} / "
                           f"{mark(r['ktas'] > 160)}{'+' if r['ktas'] >= 180 else ''}")
                     out.append(f"| {gross:,.0f} | {sd:+.0f} | {fuel:g} | {bn.split(' (')[0]} | {r['useful']:,.0f} | {r['ktas']:.0f} | "
                                f"{r['range']:,.0f} ({'no level-flight solution at 65%' if r['range_eco'] != r['range_eco'] else format(r['range_eco'], ',.0f')}) | {fl} |")
     out.append("")
     out.append("### C. Same, AM15T (lighter in the tail), 16,000 ft\n")
-    out.append("| Gross, lb | Structure delta, lb | Fuel, gal | Basis | Useful load | KTAS | Range, nm (economy) | Floors: load / range / speed |")
+    out.append("| Gross, lb | Structure delta, lb | Fuel, gal | Basis | Useful load | KTAS | Range, nm (economy) | Load / range targets, speed floor |")
     out.append("|---|---|---|---|---|---|---|---|")
     for gross in (2400.0, 2700.0):
         for sd in (0.0, -200.0):
@@ -120,8 +125,8 @@ def main():
                     emp += 0.10 * (gross - 2400)
                 for bn, k in BASES.items():
                     r = case("AM15T", 16000.0, k, gross, emp, fuel)
-                    fl = (f"{mark(r['useful'] >= 1000)} / {mark(r['range'] >= 1000)}"
-                          f"{' (eco ' + mark(r['range_eco'] >= 1000) + ')' if r['range'] < 1000 and r['range_eco'] == r['range_eco'] else ''} / "
+                    fl = (f"{tmark(r['useful'] >= 1000)} / {tmark(r['range'] >= 1000)}"
+                          f"{' (eco ' + tmark(r['range_eco'] >= 1000) + ')' if r['range'] < 1000 and r['range_eco'] == r['range_eco'] else ''} / "
                           f"{mark(r['ktas'] > 160)}{'+' if r['ktas'] >= 180 else ''}")
                     out.append(f"| {gross:,.0f} | {sd:+.0f} | {fuel:g} | {bn.split(' (')[0]} | {r['useful']:,.0f} | {r['ktas']:.0f} | "
                                f"{r['range']:,.0f} ({'no level-flight solution at 65%' if r['range_eco'] != r['range_eco'] else format(r['range_eco'], ',.0f')}) | {fl} |")

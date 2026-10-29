@@ -39,18 +39,18 @@ Cruise settings (P = screened as published, M = screened as measured; the basis 
 
 ## Screen (published numbers; like for like)
 
-Two screens, never mixed: the maker's figures as published, and measured or reported data. The three targets are separate floors; payload at 1,000 nm is information only.
+Two screens, never mixed: the maker's figures as published, and measured or reported data. Useful load and range are targets: a miss is reported with its size, and payload against range is the tradeoff to read. Cruise above 160 KTAS is a floor.
 
 - **As published: near miss** - range -75 nm
   - Useful load: 1,574 lb (pass) against 1,000 lb.
   - Range: 925 nm (near; standard fuel, power and reserve not stated) against 1,000 nm.
   - Cruise: 196 KTAS at 20,000 ft (pass+) against >160 KTAS (>180 preferred).
-  - Payload at 1,000 nm (information): 1,066 / cannot @ 183 kt, 15.5 gph.
+  - Payload at 1,000 nm, lb, no reserve / 45 min: 1,066 / cannot @ 183 kt, 15.5 gph.
 - **Measured or reported: partial: UL pass, speed pass**
   - Useful load: 1,480 lb (pass) against 1,000 lb.
   - Range: - nm (?; none found) against 1,000 nm.
   - Cruise: 199 KTAS at 20,000 ft (pass+) against >160 KTAS (>180 preferred).
-  - Payload at 1,000 nm (information): cannot be computed on this basis.
+  - Payload at 1,000 nm, lb, no reserve / 45 min: cannot be computed on this basis.
 - Aeromomentum fit (first cut): Short: AM20T 260 hp vs 285 hp (-3% speed, est. 193 KTAS).
 
 Sanity flags:
@@ -96,7 +96,7 @@ Bill, 2026-10-24: probably worthwhile, and kit builders are attempting 210 analo
 
 ### Published, measured and our check, side by side
 
-Read across a row only within one column's basis. The three targets are separate floors.
+Read across a row only within one column's basis. Useful load and range are targets; cruise above 160 KTAS is a floor.
 
 | | As published | Measured or reported | Our check, original engine |
 |---|---|---|---|
@@ -149,7 +149,7 @@ Model: `docs/shortlist/check/models/cessna-p210n.json`; result: `docs/shortlist/
 | calibration factor | 0.876 | x1.290 on the build-up (calibration; basis stated above) |
 | induced | 0.862 | Oswald (Raymer 12.48), lift split stated above |
 
-**Original engine, our numbers:** 202 hp at 20,000 ft gives 179 KTAS; still-air range on full usable fuel from MTOW 829 nm (climb allowance 64 lb); payload at 1,000 nm cannot lb with no reserve, cannot lb with 45 min.
+**Original engine, our numbers:** 202 hp at 20,000 ft gives 179 KTAS; still-air range on full usable fuel from MTOW 829 nm (climb allowance 64 lb); no payload at 1,000 nm from gross weight, with or without a 45 min reserve (the tanks do not hold the fuel).
 
 **On the Aeromomentum line (AM20T), our numbers.** Installed-mass change -161 lb. The headline useful load takes no credit for a lighter engine (CG ballast assumed to eat it); the number in brackets takes the full saving and the optimistic drag factor.
 
@@ -160,9 +160,9 @@ Model: `docs/shortlist/check/models/cessna-p210n.json`; result: `docs/shortlist/
 
 ### Engine fit with the Aeromomentum line
 
-- **Power.** The AM20T at 195 hp assumed continuous replaces a TSIO-520-P at 285 hp maximum continuous (TCDS 3A21). That gives 161-171 KTAS: just above the floor.
+- **Power.** The AM20T at 195 hp assumed continuous replaces a TSIO-520-P at 285 hp maximum continuous (TCDS 3A21). That gives 161-171 KTAS: just above the 160 KTAS floor.
 - **Mass and CG.** The installed mass falls by about 161 lb (E), in the nose; no credit is taken.
-- **Fuel.** At continuous power it cannot fly 1,000 nm on 89 gal, even with no reserve. At economy power it carries 1,132-1,142 lb with reserve, but at 130-132 KTAS, below the speed floor.
+- **Fuel.** At continuous power 89 gal gives 916-931 nm with no reserve, 7-8% short of the 1,000 nm target. At economy power it carries 1,132-1,142 lb with reserve, but at 130-132 KTAS, below the speed floor.
 - **Path.** A re-engine would be an STC on a certified type, not a revival. The engine is uncertified, which is a certification question outside this survey.
 
 ### Rights and provenance (stage 2)

@@ -39,18 +39,18 @@ Cruise settings (P = screened as published, M = screened as measured; the basis 
 
 ## Screen (published numbers; like for like)
 
-Two screens, never mixed: the maker's figures as published, and measured or reported data. The three targets are separate floors; payload at 1,000 nm is information only.
+Two screens, never mixed: the maker's figures as published, and measured or reported data. Useful load and range are targets: a miss is reported with its size, and payload against range is the tradeoff to read. Cruise above 160 KTAS is a floor.
 
 - **As published: fail** - range -218 nm
   - Useful load: 1,060 lb (pass) against 1,000 lb.
   - Range: 782 nm (fail; normal fuel, 45 min reserve) against 1,000 nm.
   - Cruise: 182 KTAS at an unstated altitude (pass+) against >160 KTAS (>180 preferred).
-  - Payload at 1,000 nm (information): cannot be computed on this basis.
+  - Payload at 1,000 nm, lb, no reserve / 45 min: cannot be computed on this basis.
 - **Measured or reported: near miss, speed unconditioned** - UL -100 lb
   - Useful load: 900 lb (near) against 1,000 lb.
   - Range: 1,153 nm (pass; still air, no reserve, from fuel and measured flow at 187 KTAS) against 1,000 nm.
   - Cruise: 187 KTAS at an unstated altitude (pass+) against >160 KTAS (>180 preferred).
-  - Payload at 1,000 nm (information): 515 / 461 @ 187 kt, 12.0 gph.
+  - Payload at 1,000 nm, lb, no reserve / 45 min: 515 / 461 @ 187 kt, 12.0 gph.
 - Aeromomentum fit (first cut): Short: AM20T 260 hp vs 285 hp (-3% speed, est. 177 KTAS).
 
 Sanity flags:
@@ -101,7 +101,7 @@ Bill, 2026-10-24: "Interesting to me." He can't afford the rights and is "not su
 
 ### Published, measured and our check, side by side
 
-Read across a row only within one column's basis. The three targets are separate floors.
+Read across a row only within one column's basis. Useful load and range are targets; cruise above 160 KTAS is a floor.
 
 | | As published | Measured or reported | Our check, original engine |
 |---|---|---|---|
@@ -157,7 +157,7 @@ Model: `docs/shortlist/check/models/meyers-200d.json`; result: `docs/shortlist/c
 | calibration factor | 0.898 | x1.409 on the build-up (calibration; basis stated above) |
 | induced | 0.398 | Oswald (Raymer 12.48), lift split stated above |
 
-**Original engine, our numbers:** 185 hp at 8,000 ft gives 174 KTAS; still-air range on full usable fuel from MTOW 857 nm (climb allowance 25 lb); payload at 1,000 nm cannot lb with no reserve, cannot lb with 45 min.
+**Original engine, our numbers:** 185 hp at 8,000 ft gives 174 KTAS; still-air range on full usable fuel from MTOW 857 nm (climb allowance 25 lb); no payload at 1,000 nm from gross weight, with or without a 45 min reserve (the tanks do not hold the fuel).
 
 **On the Aeromomentum line (AM20T), our numbers.** Installed-mass change -89 lb. The headline useful load takes no credit for a lighter engine (CG ballast assumed to eat it); the number in brackets takes the full saving and the optimistic drag factor.
 
@@ -171,7 +171,20 @@ Model: `docs/shortlist/check/models/meyers-200d.json`; result: `docs/shortlist/c
 - **Power.** The AM20T at 195 hp assumed continuous replaces a 285 hp IO-520 cruising at 185-214 hp. That gives 178 KTAS at 8,000 ft and 189 KTAS at 16,000 ft.
 - **Mass and CG.** The installed mass falls by about 89 lb (E), in the nose of a short tractor; ballast or a longer mount takes it back. The headline useful load takes no credit for the saving.
 - **Cooling.** A radiator in place of conventional nose inlets: not designed.
-- **Fuel.** 74 gal usable is the constraint: 831-863 nm at continuous power. A re-derived wing with about 100 gal closes the floor (E).
+- **Fuel.** 74 gal usable is the constraint: 831-863 nm at continuous power, 14-17% short of the 1,000 nm target. A re-derived wing with about 100 gal reaches it (E).
+
+### Payload-range on the AM20T (AER-3900)
+
+Bill's ruling (2026-10-25): useful load and range are targets to report against, with no joint pass/fail; this is the tradeoff between them. Payload is occupants and baggage, in lb, with **no reserve / 45 min reserve**, still air, on the AM20T at the stage 3 assumptions (195 hp continuous, critical altitude 8,000 or 16,000 ft and cruise there, BSFC 0.45, economy 65% of continuous; none published by Aeromomentum). "cannot" means not even an empty cabin reaches it on full tanks. Past the full-tank point the airplane leaves below gross. No seat or baggage cap is applied. Our estimate (E); script `docs/shortlist/check/payload_range.py`, all designs in `payload_range_output.md` beside it.
+
+| Design | Power, cruise alt | KTAS | 600 nm | 800 nm | 1,000 nm | 1,200 nm | Full tanks from gross: payload, lb: range, nm |
+|---|---|---|---|---|---|---|---|
+| Meyers 200D (3,000 lb, 1,940 lb empty, 74 gal, k 1.41) | continuous, 8k | 178 | 738 / 673 | 640 / cannot | cannot / cannot | cannot / cannot | 616: 831 / 728 |
+| Meyers 200D (3,000 lb, 1,940 lb empty, 74 gal, k 1.41) | continuous, 16k | 189 | 741 / 676 | 650 / 21 | cannot / cannot | cannot / cannot | 616: 863 / 753 |
+| Meyers 200D (3,000 lb, 1,940 lb empty, 74 gal, k 1.41) | economy 65%, 8k | 148 (under the 160 floor) | 800 / 757 | 724 / 681 | 648 / 486 | 26 / cannot | 616: 1,060 / 980 |
+| Meyers 200D (3,000 lb, 1,940 lb empty, 74 gal, k 1.41) | economy 65%, 16k | 155 (under the 160 floor) | 796 / 753 | 723 / 681 | 652 / 555 | 234 / cannot | 616: 1,087 / 1,002 |
+
+**Reading.** Useful load meets the target on factory weight (1,060 lb; the fleet runs about 160 lb heavier). Range is the miss: 831-863 nm at continuous power, 14-17% short. With a 45 min reserve it carries 673-676 lb 600 nm, at most 21 lb 800 nm and nothing 1,000 nm at speed; economy power carries 486-555 lb 1,000 nm, but at 148-155 KTAS, under the speed floor. The re-derived wing with about 100 gal is what moves it.
 
 ### Rights and provenance (stage 2)
 

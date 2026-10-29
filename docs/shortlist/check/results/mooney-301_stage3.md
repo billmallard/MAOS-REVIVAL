@@ -4,7 +4,7 @@ Model: `docs/shortlist/check/models/mooney-301.json`; result: `docs/shortlist/ch
 
 **Model assumptions** (grade E unless a source is named):
 
-- Wing span 36.75 ft, area 150 ft2 (F, Jane's 1983-84 via Wikipedia); NLF(1)-0315. Taper 0.5 assumed (E): root 5.44 ft, tip 2.72 ft.
+- Wing span 36.75 ft, area 150 ft2 (F, Air International 'Airdata File', January 1984, via Wikipedia); NLF(1)-0315. Taper 0.5 assumed (E): root 5.44 ft, tip 2.72 ft.
 - Fuselage 29.77 ft (F); width 4.4 ft and height 4.8 ft for a six-seat pressurized cabin: E, ours.
 - Tails by volume coefficient (E): horizontal Vh 0.65 -> 26 ft2, vertical Vv 0.045 -> 15.5 ft2.
 - Laminar run x_tr: wing 0.20 (NLF section on metal; not credited in full), tails 0.05, fuselage 0.
@@ -32,7 +32,7 @@ Model: `docs/shortlist/check/models/mooney-301.json`; result: `docs/shortlist/ch
 | calibration factor | 0.707 | x1.290 on the build-up (calibration; basis stated above) |
 | induced | 0.482 | Oswald (Raymer 12.48), lift split stated above |
 
-**Original engine, our numbers:** 270 hp at 20,000 ft gives 222 KTAS; still-air range on full usable fuel from MTOW 1,056 nm (climb allowance 55 lb); payload at 1,000 nm 885 lb with no reserve, cannot lb with 45 min.
+**Original engine, our numbers:** 270 hp at 20,000 ft gives 222 KTAS; still-air range on full usable fuel from MTOW 1,056 nm (climb allowance 55 lb); payload at 1,000 nm 885 lb with no reserve, none with 45 min from gross weight (the tanks do not hold the fuel).
 
 **On the Aeromomentum line (AM20T), our numbers.** Installed-mass change -207 lb. The headline useful load takes no credit for a lighter engine (CG ballast assumed to eat it); the number in brackets takes the full saving and the optimistic drag factor.
 

@@ -38,18 +38,18 @@ Cruise settings (P = screened as published, M = screened as measured; the basis 
 
 ## Screen (published numbers; like for like)
 
-Two screens, never mixed: the maker's figures as published, and measured or reported data. The three targets are separate floors; payload at 1,000 nm is information only.
+Two screens, never mixed: the maker's figures as published, and measured or reported data. Useful load and range are targets: a miss is reported with its size, and payload against range is the tradeoff to read. Cruise above 160 KTAS is a floor.
 
 - **As published: fail** - UL -105 lb
   - Useful load: 895 lb (fail) against 1,000 lb.
   - Range: 1,040 nm (pass; 55%, reserve not stated) against 1,000 nm.
   - Cruise: 175 KTAS at 6,000 ft (pass) against >160 KTAS (>180 preferred).
-  - Payload at 1,000 nm (information): cannot (775 nm max).
+  - Payload at 1,000 nm, lb, no reserve / 45 min: cannot (775 nm max).
 - **Measured or reported: partial: range fail, speed pass** - range -194 nm
   - Useful load: - lb (?) against 1,000 lb.
   - Range: 806 nm (fail; still air, no reserve, from fuel and measured flow at 165 KTAS) against 1,000 nm.
   - Cruise: 165 KTAS at 15,000 ft (pass) against >160 KTAS (>180 preferred).
-  - Payload at 1,000 nm (information): cannot be computed on this basis.
+  - Payload at 1,000 nm, lb, no reserve / 45 min: cannot be computed on this basis.
 - Aeromomentum fit (first cut): Yes: AM20T (260 hp) for 260 hp.
 
 Sanity flags:
