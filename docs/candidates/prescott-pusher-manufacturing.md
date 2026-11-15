@@ -6,7 +6,10 @@ Prescott (AER-3783). It sits on AERO's re-derivation (AER-3866, corrected by AER
 `2bae926`): 2,700 lb gross, 90 gal, wing and tail 12.5% larger to hold the
 stall speed, and the AM20T in the tail cone with its radiator and coolant moved
 to the nose bay (AERO's balance option B, which still needs 51-69 lb of nose
-lead). Revised 2026-10-26 after AERO's review of PR #14.
+lead). Revised 2026-10-26 after AERO's review of PR #14. Revised 2026-11-15
+(AER-5718): the hours now say what work they cover and what builder they assume,
+and the kit-run crossover now counts mold life and the kit maker's learning
+curve.
 
 Everything here is our estimate (E) unless a source is named. Prices are from
 public pages read on 2026-10-25 ([price check](../manufacturing/price-check-2026-10-25.md)).
@@ -50,9 +53,11 @@ choice between them is a trade of weight for money.
 | Parts (excluding standard hardware) | 860-1,310, of which 490-750 unique | 590-930, of which 380-590 unique |
 | Made from files or molds / bought | 750-1,140 / 110-175 | 480-760 / 110-175 |
 | Kit-run tooling | $78-237k (E) | $116-339k (E) |
-| Kit-run crossover (tooling under 10% of kit price) | 6-27 airframes, at a $90-140k kit | 8-34 airframes, at a $100-160k kit |
-| Builder hours, kit | 1,800-2,800 (E) | 1,500-2,500 (E) |
-| Builder hours, one-off (home-molded shells; welded cage bought from a shop) | 3,000-4,500 (E) | 3,500-5,500 (E; adds the home-molded wing and tail) |
+| Kit-run crossover (tooling under 10% of kit price; section 3) | 6-41 airframes at 80% learning, 6-38 at 90%, at a $90-140k kit | 7 to more than 200 airframes at 80% learning, 8-125 at 90%, at a $100-160k kit |
+| Builder hours, kit, at the pace of a maker's figure | 1,800-2,800 (E) | 1,500-2,500 (E) |
+| Builder hours, kit, first-time builder | 2,700-8,400 (E) | 2,250-7,500 (E) |
+| Builder hours, one-off (home-molded shells; welded cage bought from a shop), at the pace of a maker's figure | 3,000-4,500 (E) | 3,500-5,500 (E; adds the home-molded wing and tail) |
+| Builder hours, one-off, first-time builder | 4,500-13,500 (E) | 5,250-16,500 (E) |
 | All-in to fly, kit (kit, AM20T $28-30k, firewall-forward $5-10k, prop $5-12k, panel $15-40k) | $143-232k (E) | $153-252k (E) |
 | Empty with AM20T at 2,700 lb, option B, including its nose lead | 1,647-1,869 lb (65-74 lb lead) | 1,558-1,840 lb (51-69 lb lead) (AER-3866/3902) |
 | Useful load at 2,700 lb, light / heavy end (target 1,000) | 1,053 / 831 lb: 53 lb over / 169 lb short | 1,142 / 860 lb: 142 lb over / 140 lb short |
@@ -79,7 +84,24 @@ route B.
 ribs, skins and stiffeners in the flying surfaces. Bonding a molded wing is
 slower per joint than riveting, so the fall is smaller than the part count
 suggests. The 1986 projection was 1,500 h (AOPA Pilot), and the museum's guide
-says "about five years" per plane. Our kit bands sit between those two.
+says "about five years" per plane.
+
+**What the hours cover, and for whom.** They are the builder's own hours, from
+opening the kit (or, one-off, starting the shell plugs) to first flight. They
+cover the airframe, the shells and their bonding, flight controls, gear, the 90
+gal tanks, installing the AM20T and its nose-bay radiator from a bought
+firewall-forward package, and wiring a simple bought panel. They leave out paint,
+a custom interior and elaborate avionics, which Van's names as large time adders
+([time to build](https://www.vansaircraft.com/time-to-build/), read
+2026-11-15). Welding the cage is a shop's work in both columns, not the
+builder's. The first hours row for each column is the pace of a maker's own
+figure. It sits 1.0-1.9 times Prescott's 1,500 h projection, because the wing and
+tail are re-sized and the leading edges are now molded. The second row is a
+first-time builder. Builders commonly report 1.5-3 times a maker's figure
+(Kitplanes, "Aircraft Build Times", 2018: "double or triple the hours for
+many"), so that row runs from the first row's low end x 1.5 to its high end x 3.
+Five years at 10-20 hours a week (our assumption) is 2,600-5,200 h, inside the
+first-time kit band.
 
 ## 1. Part count and the make/buy split
 
@@ -164,6 +186,49 @@ at home: 430-870 h and $3-9k of materials (stage 4). They buy the cage cut and
 welded from a shop, at a price not checked. In route B they also mold the wing
 and tail: about 480 ft2 more, 960-1,900 h. In a kit run the tooling adds
 $8-24k (A) or $12-34k (B) to each of 10 kits.
+
+**The crossover, with mold life and learning (AER-5718).** Two corrections to
+spreading tooling as tooling / N:
+
+- **Molds wear out.** A room-temperature glass/epoxy production mold gives
+  about 25-45 pulls before repair becomes a burden. That figure is a
+  practitioner's, and the source is weak. A longer run pulls a new mold off the
+  kept plug, at about 72% of the mold line, because the plug is $35-100 of the
+  $120-360 per ft2. The molds are $36-107k of route A's bill and $83-249k of
+  route B's. The cage jig, form blocks, other jigs and CAD are taken to last a
+  50-kit run (E, not sourced).
+- **The kit maker learns; the builder does not.** The maker's labour per kit
+  falls along a Wright curve. 80% fits hand-labour-heavy work such as layup and
+  90% fits punched and formed sheet (Stewart, *Cost Estimator's Reference
+  Manual*), so route B's molded wing sits nearer 80%. We take the maker's labour
+  as 30-45% of the kit price on route A and 35-50% on route B (E; no published
+  kit cost breakdown was found), and we read the kit bands as the price in a
+  10-kit run. Every amateur builds unit 1, so the builder's hours above do not
+  change.
+
+| Run | Route A tooling per kit, before / after | Route B tooling per kit, before / after | Kit price against a 10-kit run, 80% / 90% learning (A; B) |
+|---|---|---|---|
+| 10 kits | $7.8-23.7k / same | $11.6-33.9k / same | x1.00 |
+| 25 kits | $3.1-9.5k / same | $4.6-13.6k / same | A x0.90-0.93 / x0.95-0.97; B x0.89-0.92 / x0.94-0.96 |
+| 50 kits | $1.6-4.7k / $2.1-6.3k | $2.3-6.8k / $3.5-10.4k | A x0.84-0.89 / x0.91-0.94; B x0.82-0.87 / x0.90-0.93 |
+
+"Before" is tooling / N; "after" adds the mold re-pulls. A run of 25 kits or
+fewer is unchanged, because it never wears out a mold.
+
+The crossover moves out:
+
+- **Route A:** from 6-27 airframes to **6-41 at 80% learning and 6-38 at
+  90%.** Mold life alone takes the high end to 35, and learning alone to 28-30.
+- **Route B:** from 8-34 airframes to **7 to more than 200 at 80% learning and
+  8-125 at 90%.** Mold life alone takes the high end to 70, and learning alone to
+  37-41. At the pessimistic end, re-pulling $249k of glass molds every 25 kits
+  costs about $7.2k a kit however long the run goes. A kit price falling on an 80%
+  curve drops 10% of it below that floor, so the tooling never falls under 10%.
+  Carbon/BMI tools, at about 500 cycles, would remove the re-pulls but cost
+  more up front. We have not priced them.
+
+So mold life, not learning, is what decides route B's economics past 25 kits.
+Route A's metal wing has no wing molds, and that is where it beats route B.
 
 ## 4. Is the laminate schedule load-bearing?
 
