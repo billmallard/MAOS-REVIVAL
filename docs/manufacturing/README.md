@@ -17,7 +17,10 @@ laminate arithmetic behind the composite items are in `docs/MANUFACTURING.md`.
 `build_plans.py` holds the part-count build-up per assembly (with the make/buy
 split), the tooling lines and the kit-run crossover for the Aries and both
 Prescott routes. `build_plans.json` is its `--json` output. The tables in
-`docs/candidates/*-manufacturing.md` come from it.
+`docs/candidates/*-manufacturing.md` come from it. Since AER-5718 the crossover
+also re-pulls each glass mold every 25-45 kits and puts the kit maker's labour
+on an 80% and a 90% learning curve; the original tooling / N figures are kept
+alongside for comparison.
 
     python3 build_plans.py          # print the tables
     python3 build_plans.py --json   # rewrite build_plans.json

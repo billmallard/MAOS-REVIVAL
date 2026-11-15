@@ -5,7 +5,9 @@
 Aries (AER-3783). It sits on AERO's independent check (AER-3867, PR #13 at
 `866543e`, `docs/studies/aries/`). That check keeps the standard airframe
 (MTOW 3,150 lb, factory empty 1,850 lb, 76 gal usable) and shows range closing
-on 84-94 gal. This plan builds in 90 gal.
+on 84-94 gal. This plan builds in 90 gal. Revised 2026-11-15 (AER-5718): the
+hours now say what work they cover and what builder they assume, and the kit-run
+crossover now counts mold life and the kit maker's learning curve.
 
 Everything here is our estimate (E) unless a source is named. No drawing of
 the Aries has been found: the TCDS (A11SW) gives no dimensions, and Jane's
@@ -23,15 +25,37 @@ shop, holder or museum has been contacted. Script:
 | Parts (excluding standard hardware) | 900-1,280, of which 460-690 unique | same |
 | Made from files or molds / bought | 780-1,100 / 120-190 | same |
 | Tooling | $50-185k (E) | builder's own tools, $20-34k (stage 4 home shop) |
-| Kit-run crossover | tooling under 10% of a $100-150k kit after 4-19 airframes | not applicable |
-| Builder hours | 2,500-3,500 (E, stage 4) | 3,500-5,000 (E, stage 4) |
+| Kit-run crossover | tooling under 10% of a $100-150k kit after 3-20 airframes at 80% learning, 4-20 at 90% (section 3) | not applicable |
+| Builder hours, at the pace of a maker's figure | 2,500-3,500 (E, stage 4) | 3,500-5,000 (E, stage 4) |
+| Builder hours, first-time builder | 3,750-10,500 (E) | 5,250-15,000 (E) |
 | Empty weight | 1,780-2,000 lb before engine credit; 1,690-1,940 lb with it (stage 4), plus 7-14 lb for 90 gal | same |
 | Skill floor | Medium: Van's-level riveting, countersinking or dimpling to laminar-wing quality, tank sealing | Medium-high: fitting and final-drilling without matched holes |
+
+**What the hours cover, and for whom.** They are the builder's own hours, from
+opening the kit (or, one-off, ordering the first cut parts) to first flight. They
+cover the airframe, flight controls, gear, the 90 gal tanks, installing the AM20T
+from a bought firewall-forward package, and wiring a simple bought panel. They
+leave out paint and elaborate avionics, which Van's names as large time adders,
+and a custom interior (our exclusion, E). The first hours row is the pace of a maker's own figure. Its
+anchor is Van's 2,000-2,200 h for an RV-10 from the Standard kit, which Van's
+says is "based on builder reports" and will "complete" the airplane
+([time to build](https://www.vansaircraft.com/time-to-build/), read
+2026-11-15). The Aries band sits 14-75% above that anchor, for retractable gear
+and countersunk flush riveting on a laminar wing. The second row is a first-time
+builder. Kitplanes' editors say builder speed and experience vary "widely
+enough as to double or triple the hours for many" ([Letters, 2018-10-19](https://www.kitplanes.com/?p=12448)).
+That sources 2-3 times; we take 1.5 times as the low end (E). So that row runs
+from the first row's low end x 1.5 to its high end x 3. The one-off
+column adds the cutting, deburring and final-drilling that matched holes save.
+Van's puts its matched-hole RV-14 at 1,000-1,300 h, against 2,000-2,200 for the
+RV-10. A fully matched-hole Aries kit might therefore come in under the band. We
+have not taken that credit, because it needs an hours build-up by part.
 
 **A correction to stage 4.** Stage 4 put the Aries tooling at $40-120k and its
 crossover at 3-12 airframes. Its own lines did not add up: they sum to about
 $41-155k, and that left out the CAD and CNC programs. Priced as separate lines
-here, the total is $50-185k and the crossover 4-19 airframes. The Aries is still
+here, the total is $50-185k and the crossover 4-19 airframes (revised in
+section 3 for mold life and learning, AER-5718). The Aries is still
 the cheapest design on the shortlist to tool, and the reason is unchanged: no
 compound curves and no stretch-forming.
 
@@ -115,7 +139,38 @@ They pay for their own tools (stage 4's home shop, $20-34k) and 600-1,200 more
 hours of cutting, deburring and drilling. That works only once someone has
 published the CAD files, and whether that is lawful is a rights question for
 Elon. A kit run spreads $50-185k across the airframes. At 10 kits it adds
-$5-19k to each; tooling falls under 10% of the kit price after 4-19 airframes.
+$5-19k to each.
+
+**The crossover, with mold life and learning (AER-5718).** Two corrections to
+spreading tooling as tooling / N:
+
+- **Molds wear out.** A room-temperature glass/epoxy production mold gives
+  about 25-45 pulls before repair becomes a burden. That figure is a
+  practitioner's, and the source is weak. A longer run pulls a new mold off the
+  kept plug, at about 72% of the mold line, because the plug is $35-100 of the
+  $120-360 per ft2. The form blocks, jigs and CAD are taken to last a 50-kit
+  run (E, not sourced).
+- **The kit maker learns; the builder does not.** The maker's labour per kit
+  falls along a Wright curve. 80% fits hand-labour-heavy work and 90% fits
+  punched and formed sheet (Stewart, *Cost Estimator's Reference Manual*). This
+  kit is mostly sheet, so 90% is the likelier rate. We take the maker's labour as
+  25-40% of the kit price (E; no published kit cost breakdown was found), and we
+  read the $100-150k band as the price in a 10-kit run. Every amateur builds
+  unit 1, so the builder's hours above do not change.
+
+| Run | Tooling per kit, before (tooling / N) | Tooling per kit, after (with mold re-pulls) | Kit price against a 10-kit run, 80% / 90% learning |
+|---|---|---|---|
+| 10 kits | $5.0-18.5k | $5.0-18.5k | x1.00 / x1.00 |
+| 25 kits | $2.0-7.4k | $2.0-7.4k | x0.91-0.94 / x0.95-0.97 |
+| 50 kits | $1.0-3.7k | $1.1-4.1k | x0.85-0.91 / x0.92-0.95 |
+
+Tooling falls under 10% of the kit price after **3-20 airframes at 80%
+learning and 4-20 at 90%**, against 4-19 before. Learning makes the change, not
+mold life. The Aries molds are only $8-25k of the bill. A second set first
+appears past 25-45 kits and adds $0.1-0.4k a kit at 50. A caution on the kit price: the $100-150k
+band is anchored on Van's RV-10 price, which comes from a run of thousands. A
+10-kit run would not get that labour rate, so the band is optimistic for a small
+run.
 
 ## 4. The 90 gallons
 

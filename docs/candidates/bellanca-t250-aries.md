@@ -227,7 +227,7 @@ Full study (rank 1). Method, prices and sources are in [docs/MANUFACTURING.md](.
 |---|---|---|
 | Builder hours | 3,500-5,000 (E) | 2,500-3,500 (E; RV-10 2,000 F) |
 | Airframe parts or kit | $25-40k of material (E) | $100-150k (E; RV-10 $89,600 / $116,300 QB, F) |
-| Tooling | none | $50-185k (E): the cheapest on the shortlist, under 10% of kit price after about 4-19 airframes (MANUFACTURING, AER-3868; stage 4's $40-120k and 3-12 did not add up) |
+| Tooling | none | $50-185k (E): the cheapest on the shortlist, under 10% of kit price after about 3-20 airframes at 80% learning and 4-20 at 90% (MANUFACTURING, AER-3868, revised by AER-5718 for mold life and learning; stage 4's $40-120k and 3-12 did not add up) |
 | All-in to fly | $85-160k (E) | $155-240k (E) |
 | Skill floor | Medium-high | Medium: Van's-level riveting, with flush riveting to laminar-wing quality |
 

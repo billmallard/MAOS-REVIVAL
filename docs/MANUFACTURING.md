@@ -59,7 +59,7 @@ and the Cozy MKIV as the reference.
    the Aries was designed around flat and single-curve skins, so a matched-hole
    kit needs no compound molds or stretch-forming. Tooling is the cheapest of any
    design here, about $50-185k (E), and falls below 10% of kit price after about
-   4-19 airframes (corrected by AER-3868: the earlier $40-120k did not add up). Its range shortfall at continuous power is a fuel question:
+   3-20 airframes at 80% learning and 4-20 at 90% (corrected by AER-3868: the earlier $40-120k did not add up; mold life and learning added by AER-5718). Its range shortfall at continuous power is a fuel question:
    about 20 more gallons in integral wing bays costs 10-20 lb empty.
 3. **Express: rebuild empty weight 1,770-2,030 lb.** Useful load is 865-1,125 lb
    against the weighed 901: 135 lb short of the 1,000 lb target at the heavy end,
@@ -316,7 +316,7 @@ museum is Bill's call; Elon has asked him.
 | Airframe change | baseline | -30 to +40 lb (structure) | same |
 | Airframe parts | | aluminium, rivets and hardware $25-40k (E); SendCutSend offers 2024-T3 only at 0.025 in; OSH Cut cuts 0.032 in and up to 119 x 47 in (corrected by AER-3868), so only parts larger than that go to a home router or a full-service shop (not contacted) | $100-150k kit (E). Anchors: RV-10 $89,600 standard and $116,300 quick-build (F, vansaircraft.com, read 2026-10-24) |
 | Tooling | | none beyond the builder's | $50-185k (E; corrected by AER-3868 from $40-120k, whose lines did not add up): CAD and CNC programs $10-30k; 150-250 unique formed parts at $150-400 per form block or press die; $10-30k of assembly jigs; $8-25k of composite molds for the cowl, tips and fairings. No compound or stretch-formed skins, because the design avoided them |
-| Crossover | | | tooling under 10% of the kit price after about 4-19 airframes |
+| Crossover | | | tooling under 10% of the kit price after about 3-20 airframes at 80% learning and 4-20 at 90% (AER-5718, which adds mold life and the kit maker's learning curve) |
 | Engine | O-540, 250 hp | AM20T, $27,995-29,700 (F) | same |
 | All-in to fly | | $85-160k (E) | $155-240k (E: kit, engine, firewall-forward $5-10k, prop $5-12k, panel $15-40k) |
 | Skill floor | | Medium-high: final-drilling and fitting without matched holes | Medium: Van's-level riveting. The critical skill is flush riveting and dimpling to laminar-wing quality, since waviness costs the laminar run AERO credited (x_tr 0.25) |
