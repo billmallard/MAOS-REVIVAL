@@ -135,7 +135,7 @@ real gap in the market, not only in this list.
 | 8 | [Lancair IV-P](../candidates/lancair-iv-p.md) | 4 | a | 1,350 (unknown) pass; 1,347 pass; 278 @ 23,000 ft pass+ | pass | - ?; 1,779 pass; 284 @ 24,000 ft pass+ | partial: range pass, speed pass | pub: 962 / 881 @ 278 kt, 18.0 gph | Short: AM20T 260 hp vs 350 hp (-9% speed, est. 231 KTAS) | Kit production ended 2012; maker now parts and support only |
 | 9 | [Lancair Legacy](../candidates/lancair-legacy.md) | 2 | a | 700 (unknown) fail; 999 near; - | incomplete: no speed, fails on the rest (UL -300 lb, range -1 nm) | - ?; 1,278 pass; 228 @ 11,500 ft pass+ | partial: range pass, speed pass | no fuel flow published | Short: AM20T 260 hp vs 310 hp (-6% speed, est. 217 KTAS) | Last kit 2016; more investment needed to continue |
 | 10 | [Glasair III](../candidates/glasair-iii.md) | 2 | a | 775 (unknown) fail; 1,060 pass; 224 @ 8,000 ft pass+ | fail (UL -225 lb) | - | no measured data | pub: 369 / cannot @ 216 kt, 14.6 gph (est. flow) | Short: AM20T 260 hp vs 300 hp (-5% speed, est. 214 KTAS) | Stoddard-Hamilton bankrupt 2001; revived as a carbon kit (AAC) |
-| 11 | [Express (Wheeler / Series 90 / 2000 FT)](../candidates/express-2000.md) | 4 | a | 1,045 (equipped) pass; 1,401 pass; - | incomplete: no speed | 901 (weighed x1) near; 1,745 pass; 169 @ 6,190 ft pass | near miss (UL -99 lb) | meas: 585 / 559 @ 110 kt, 5.8 gph | Yes: AM20T (260 hp) for 210 hp | 1990 fatal crash collapsed sales; successive owners failed |
+| 11 | [Express (Wheeler / Series 90 / 2000 FT)](../candidates/express-2000.md) | 4 | a | 1,045 (design) pass; 1,401 pass; - | incomplete: no speed | 901 (weighed x1) near; 1,745 pass; 169 @ 6,190 ft pass | near miss (UL -99 lb) | meas: 585 / 559 @ 110 kt, 5.8 gph | Yes: AM20T (260 hp) for 210 hp | 1990 fatal crash collapsed sales; successive owners failed |
 | 12 | [Swearingen SX-300](../candidates/swearingen-sx-300.md) | 2 | a | 800 (reported) fail; 650 fail; - | incomplete: no speed, fails on the rest (UL -200 lb, range -350 nm) | - ?; 988 near; 240 @ alt n/s * pass+ | partial: range near, speed pass, speed unconditioned (range -12 nm) | no fuel flow published | Short: AM20T 260 hp vs 300 hp (-5% speed, est. 229 KTAS) | Kits ended 1989; lost military interest after a prototype crash |
 | 13 | [Van's RV-10](../candidates/vans-rv-10.md) | 4 | a | 1,125 (equipped) pass; 869 fail; 171 @ 8,000 ft pass | fail (range -131 nm) | 1,050 (reported) pass; 835 fail; 167 @ alt n/s * pass | fail (range -165 nm) | meas: cannot (835 nm max) | Yes: AM20T (260 hp) for 260 hp | Alive: in production at Van's |
 | 14 | [Lancair Super ES](../candidates/lancair-super-es.md) | 4 | a | 1,300 (unknown) pass; 1,217 pass; 200 @ 10,500 ft pass+ | pass | - | no measured data | pub: 777 / cannot @ 200 kt, 17.4 gph (est. flow) | Short: AM20T 260 hp vs 310 hp (-6% speed, est. 185 KTAS) | Kit production ended 2012 |
@@ -194,8 +194,8 @@ that have a figure in that column (the reference included).
 | Basis | Meaning | As published | Measured or reported |
 |---|---|---|---|
 | bare | bare prototype, or a factory standard empty weight without options | 9 | 0 |
-| design | designer's projected or estimated empty weight, never weighed | 3 | 0 |
-| equipped | vendor's equipped-typical empty weight | 2 | 0 |
+| design | designer's projected or estimated empty weight, never weighed | 4 | 0 |
+| equipped | vendor's equipped-typical empty weight | 1 | 0 |
 | weighed x1 | one aircraft, weighed (a flight-test or weighed builder aircraft); not a fleet average | 1 | 7 |
 | reported | fleet 'typical' from owners or the press, not weighed | 1 | 7 |
 | est. | our estimate | 0 | 1 |

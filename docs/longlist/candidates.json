@@ -1046,9 +1046,9 @@
   ],
   "weight_basis": {
    "mtow": "designer",
-   "useful": "equipped",
+   "useful": "design",
    "useful_fleet": "weighed x1",
-   "note": "Kit maker's 'normal' empty weight; the measured figure is CAFE's weighing of N360EZ. The 3,200-3,600 lb grosses of later variants are not used."
+   "note": "The kit maker's 'normal' empty weight, in the CAFE report's 'Designer's information' block (from Express Aircraft Co.), so a design figure; CAFE weighed N360EZ at 1,994 lb with oil, 144 lb over it. The 3,200-3,600 lb grosses of later variants are not used."
   },
   "fuel_gal": [
    92,
@@ -3290,7 +3290,7 @@
   "weight_basis": {
    "mtow": "TCDS",
    "useful": "bare",
-   "note": "AOPA 1977 spec table for the prototype era, empty weight 'dry', so it excludes unusable fuel and oil; Plane & Pilot's 1,888 lb gives 1,262 lb useful, still over the target."
+   "note": "AOPA 1977 spec table for the prototype N51AG, empty weight 'dry', so it excludes unusable fuel and oil. Adding back 4 gal unusable (24 lb) and 12 qt of oil (about 22 lb) gives about 1,896 lb on the standard basis, and Plane & Pilot's 1,888 lb reads as that same basis; `bare` therefore spans a dry and a standard figure about 46 lb apart. On 1,888 lb the useful load is 1,262 lb, still over the target."
   },
   "fuel_gal": [
    76,

@@ -480,7 +480,7 @@ published speeds, so (b) is the honest reading and (a) a bound.
 | Prescott as built, 2,400 lb, 56.5 gal, both drag bases | formula (0.79) | 184-207 | 648-705 | cannot / cannot | 648-705 |
 | Prescott as built | 0.75 | 181-203 | 637-692 | cannot / cannot | 648-706 |
 | Prescott as built | 0.85 | 190-213 | 670-729 | cannot / cannot | 646-704 |
-| Prescott re-derived, 2,700 lb, 90 gal, light end, both drag bases | formula (0.79) | 179-201 | 1,044-1,151 | 630-670 / cannot-606 | 1,044-1,151 |
+| Prescott re-derived, 2,700 lb, 90 gal, light end (route B: carbon wing and tail), both drag bases | formula (0.79) | 179-201 | 1,044-1,151 | 630-670 / cannot-606 | 1,044-1,151 |
 | Prescott re-derived, light end | 0.75 | 176-197 | 1,028-1,131 | 623-663 / cannot-548 | 1,046-1,153 |
 | Prescott re-derived, light end | 0.85 | 185-208 | 1,080-1,190 | 646-684 / 117-620 | 1,041-1,150 |
 | Prescott re-derived, heavy end | 0.75 | 176-197 | 1,028-1,131 | 341-381 / cannot-266 | 1,046-1,153 |
@@ -491,7 +491,11 @@ What it says:
   1,028 nm on full tanks: 28 nm (3%) of margin, before any reserve. With a
   45 min reserve the best case at 1,000 nm falls from 606 to 548 lb; the
   worst case could not carry a reserve 1,000 nm before, and still cannot. As
-  built, on 56.5 gal, it was 30-35% short and stays so.
+  built, on 56.5 gal, it was 30-35% short and stays so. The light end is
+  MANUFACTURING's route B (carbon wing and tail). Route A (metal wing and
+  tail) is 89 lb heavier at the light end and 29 lb at the heavy end
+  (`candidates/prescott-pusher-manufacturing.md`): every payload cell drops by
+  that much, and the ranges do not change.
 - **The Aries's range gap at continuous power grows from 8-9% to 12-13%** on
   reading (a), and does not move on reading (b), because its drag factor
   comes from AOPA's two measured points. Its economy-power speed at 0.75,
