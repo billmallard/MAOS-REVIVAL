@@ -51,6 +51,20 @@ the Cozy has one, and a dossier. The BD-19 has not flown and publishes no
 geometry, and its performance table is the BD-4C's, cell for cell, so the
 BD-4C model stands in for it. The shortlist ranking is unchanged.
 
+**Revision 7 (2026-11-15, AER-5717).** Two checks, and **no verdict or
+ranking changes**. First, every useful load on the long list now names its
+empty-weight basis and is screened at the designer's, maker's or TCDS gross
+(`longlist/LONGLIST.md`, "Useful-load basis"). The Aries's 1,850 lb turns out
+to be a dry empty weight; with Plane & Pilot's 1,888 lb it carries 1,262 lb,
+still 26% over the target. Second, the Aries and Prescott range checks were
+rerun with propeller efficiency held at 0.75 and at 0.85. **The re-derived
+Prescott does not drop out at the low end:** at 0.75 its worst case is
+1,028 nm, 3% over the range target. The Aries's range shortfall at continuous
+power grows from 8-9% to 12-13%. Of the pusher brochure ranges, the Velocity
+XL-RG's and the Rutan Defiant's need more than 0.85 on their own measured drag,
+so both are marked optimistic. Details are in
+[Propeller-efficiency band](#propeller-efficiency-band-aer-5717).
+
 ## Bill's pick (2026-10-25)
 
 **The Bellanca T-250 Aries and the Prescott Pusher go forward.** Bill accepted
@@ -84,7 +98,9 @@ critical-altitude cases (8,000 ft and 16,000 ft cruise); see
 marked; kit-built and equipped fleets run heavier (the Cozy by 129 lb, the
 Express by 144 lb, the Meyers by about 160 lb; the one BD-4C weight on record
 by 31 lb, and older BD-4s by 50-90 lb), so read every factory useful
-load as an upper bound until stage 4 replaces it. Range on the AM20T is still
+load as an upper bound until stage 4 replaces it. The long list now labels
+what each empty weight is (AER-5717); the Aries's 1,850 lb is dry, and its
+useful load on Plane & Pilot's 1,888 lb is 1,262 lb. Range on the AM20T is still
 air with no reserve on standard usable fuel at the assumed continuous power;
 every design gains range at economy power, and loses speed. A miss on useful
 load or range is stated with its size and does not disqualify a design; there is
@@ -427,6 +443,93 @@ figures are as published and graded in the research note
 | Seawind 300C | 1982-2021, about 80 kits | A composite amphibian that still carried 1,100 lb (F) | Certification and funding |
 | Lear Fan 2100 | 1981-85, 3 | Buried engines driving one pusher prop through shafts, in a pressurised composite fuselage: the Rohr's propulsion idea at a larger scale | Certification cost and money |
 
+## Propeller-efficiency band (AER-5717)
+
+Range is linear in installed propeller efficiency (Breguet: range ~ eta x L/D
+/ BSFC). The stage 3 check carries one eta per design from a formula:
+McCormick's actuator-disk ideal, times 0.85 for profile and swirl, times an
+installation factor (0.95 for the Prescott's pusher prop in the fuselage
+wake). That gives 0.79 for the Prescott and 0.83 for the Aries at cruise.
+Here eta is held at 0.75 and at 0.85, with everything else unchanged. Script:
+`shortlist/check/eta_band.py`; full tables in `eta_band_output.md` beside it.
+All numbers are ours (E), on the AM20T assumptions above.
+
+**Where 0.75 comes from, and what it is not.** NASA TP-2382 (Yip, 1985,
+[NTRS 19850011615](https://ntrs.nasa.gov/citations/19850011615), PDF p. 9,
+fig. 23) measured a maximum propeller efficiency of 0.75 on a full-scale
+canard pusher in the Langley 30 x 60 ft tunnel. The report says the propeller
+was of low pitch for climb and "not properly matched for cruise conditions",
+and that the low value "may also be associated to some degree with the
+pusher arrangement". It tested no tractor. So 0.75 is the low end of the band
+as a measured value for a mismatched prop on a pusher; it is **not** a
+measured pusher penalty. The 0.85 is the high end for a well-matched
+constant-speed prop, installed.
+
+**Two readings, because a published speed pins eta / k, not either alone.**
+(a) *Drag held:* only eta moves. That is the band asked for, and the worst
+case. (b) *Drag re-matched:* if eta really is 0.75, the same published speed
+means less drag, and k is re-solved so each basis keeps its reference speed.
+Both the Aries's factor and the Prescott's two factors are matched to
+published speeds, so (b) is the honest reading and (a) a bound.
+
+| Design, on the AM20T at continuous power | eta | (a) KTAS | (a) range on full tanks, nm | (a) payload 1,000 nm, no res / 45 min | (b) range, nm |
+|---|---|---|---|---|---|
+| Aries, 3,150 lb, 76 gal | formula (0.83) | 185-197 | 906-919 | cannot-269 / cannot | 906-919 |
+| Aries | 0.75 | 177-189 | 868-880 | cannot / cannot | 905-918 |
+| Aries | 0.85 | 187-199 | 915-930 | cannot-338 / cannot | 906-921 |
+| Prescott as built, 2,400 lb, 56.5 gal, both drag bases | formula (0.79) | 184-207 | 648-705 | cannot / cannot | 648-705 |
+| Prescott as built | 0.75 | 181-203 | 637-692 | cannot / cannot | 648-706 |
+| Prescott as built | 0.85 | 190-213 | 670-729 | cannot / cannot | 646-704 |
+| Prescott re-derived, 2,700 lb, 90 gal, light end, both drag bases | formula (0.79) | 179-201 | 1,044-1,151 | 630-670 / cannot-606 | 1,044-1,151 |
+| Prescott re-derived, light end | 0.75 | 176-197 | 1,028-1,131 | 623-663 / cannot-548 | 1,046-1,153 |
+| Prescott re-derived, light end | 0.85 | 185-208 | 1,080-1,190 | 646-684 / 117-620 | 1,041-1,150 |
+| Prescott re-derived, heavy end | 0.75 | 176-197 | 1,028-1,131 | 341-381 / cannot-266 | 1,046-1,153 |
+
+What it says:
+- **The Prescott re-derivation keeps the range target across the band.** Its
+  worst case, measured drag at eta 0.75 and the 8,000 ft engine case, is
+  1,028 nm on full tanks: 28 nm (3%) of margin, before any reserve. With a
+  45 min reserve the best case at 1,000 nm falls from 606 to 548 lb; the
+  worst case could not carry a reserve 1,000 nm before, and still cannot. As
+  built, on 56.5 gal, it was 30-35% short and stays so.
+- **The Aries's range gap at continuous power grows from 8-9% to 12-13%** on
+  reading (a), and does not move on reading (b), because its drag factor
+  comes from AOPA's two measured points. Its economy-power speed at 0.75,
+  146-153 KTAS, sits under the 160 KTAS floor in both engine cases.
+- **eta matters to range only where the drag is known independently of the
+  prop.** Where a type is calibrated on its own measured speeds, a wrong eta
+  is mostly absorbed into k. It counts where a type borrows the fleet factor,
+  as the Prescott as built does in the results table.
+
+**The eta each pusher brochure range needs.** For each pusher with a stage 3
+model, the eta at which our model, on the original engine and standard fuel,
+flies the published range. This is generous to the brochure: from gross, no
+taxi, climb or descent allowance, the brochure's own reserve, and the most
+favourable altitude. Where no power or speed is stated, the airplane flies at
+the slowest cruise speed, the speed our model gives at 55% power. Without
+that floor almost any range is reachable by flying slowly enough. Any range
+needing more than 0.85 at the design's own drag factor is marked optimistic.
+
+<!-- eta-brochure:start -->
+| Design | Published range, as stated | Stage 3 k | eta needed at stage 3 k | eta needed at k 1.16 | Open conditions, any speed, stage 3 k | Reading |
+|---|---|---|---|---|---|---|
+| cozy-mkiv | 1,129 nm: 1,300 mi at 40% power, 12,000 ft, reserve not stated | 1.36 | 0.63 | 0.58 | - | within the band |
+| berkut-360 | 1,315 nm: economy cruise (187 kt at 7.7 gph), 30 min reserve | 1.29 | 0.75 | 0.69 | - | within the band |
+| velocity-xl-rg | 1,150 nm: 65% power, reserve not stated | 1.63 | over 1.30 | 1.14 | - | **optimistic** even on the cleanest fleet drag |
+| cirrus-vk-30 | 1,130 nm: 1,300 mi, conditions not stated | 1.29 | 0.62 | 0.59 | 0.47 | within the band |
+| rutan-defiant | 1,128 nm: conditions not stated (push-pull twin) | 1.72 | 0.97 | 0.85 | 0.44 | **optimistic** at its own drag; within the band only on the cleanest fleet drag |
+| prescott-pusher | 869 nm: 1,000 mi, conditions not stated | 1.29 | 0.60 | 0.57 | 0.52 | within the band |
+| bellanca-t250-aries | 1,017 nm: 1,170 mi at economy cruise with 45 min reserve (tractor: control) | 1.30 | 0.88 | 0.80 | - | **optimistic** at its own drag; within the band only on the cleanest fleet drag (tractor control) |
+<!-- eta-brochure:end -->
+
+The Velocity XL-RG's 1,150 nm at 65% power is out of reach of any propeller
+on its measured drag, and the Rutan Defiant's needs 0.97 on its own. Both are
+dropped designs and are kept as record. The Prescott's 869 nm needs about
+0.60, so it is modest, not optimistic. The Aries, a tractor run as a control,
+needs 0.88. That matches the independent reading below, that its published
+range is about 10% optimistic, which is some evidence that this test reads
+correctly.
+
 ## The Aeromomentum assumption
 
 Aeromomentum publishes, for the AM20T: 260 hp at 5,800 rpm, 300 hp for 5 min,
@@ -558,7 +661,9 @@ One pipeline for every type, in `docs/shortlist/check/`:
 5. **Propeller.** McCormick's actuator-disk ideal efficiency at the cruise thrust
    and disk area, times 0.85 for profile and swirl losses, times a stated
    installation factor (0.95-0.97 for fixed-pitch or wake-immersed props). The
-   cruise efficiencies come out at 0.79-0.84.
+   cruise efficiencies come out at 0.79-0.84. For the Aries and the Prescott,
+   range is also run at a fixed 0.75 and 0.85
+   ([Propeller-efficiency band](#propeller-efficiency-band-aer-5717)).
 6. **Power.** Normally aspirated engines lapse by Gagg-Ferrar. Turbocharged
    engines are flat-rated to a critical altitude, then lapse by Gagg-Ferrar.
    Where a flight test gives manifold pressure and rpm but not power (the CAFE
@@ -623,6 +728,7 @@ python3 prescott/levers.py > prescott/levers_output.md       # the Prescott engi
 python3 axes/axes.py > axes/axes_output.md                   # the deep-dive axes
 python3 payload_range.py > payload_range_output.md           # payload-range, all designs
 python3 bede/bede_check.py > bede/bede_check_output.md       # the Bede BD-4C / BD-19 reference check (AER-4145)
+python3 eta_band.py > eta_band_output.md                     # prop-efficiency band, Aries and Prescott; eta behind pusher brochure ranges (AER-5717)
 ```
 
 `vspgen.py` expects the folder at `/maos-work/aero/analysis/AER-3783`, which the
