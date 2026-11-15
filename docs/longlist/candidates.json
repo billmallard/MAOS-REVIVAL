@@ -128,6 +128,12 @@
    "http://acversailles.free.fr/documentation/03~Documentation_Generale_M_Suire/Essais_en_vol/COZY_MARK-IV.pdf",
    "one builder aircraft weighed by the CAFE Foundation (N494CZ, 1,179.3 lb empty) against the 2,050 lb design gross; not a fleet average"
   ],
+  "weight_basis": {
+   "mtow": "designer",
+   "useful": "design",
+   "useful_fleet": "weighed x1",
+   "note": "Published empty weight is the designer's estimate (AOPA Pilot 1994); the measured figure is CAFE's weighing of N494CZ."
+  },
   "fuel_gal_meas": [
    50.74,
    "P",
@@ -179,6 +185,12 @@
    "https://www.kitplanes.com/buying-used-long-ez/",
    "1,325 - ~850 lb typical O-235 empty weight (anecdotal, not averaged)"
   ],
+  "weight_basis": {
+   "mtow": "designer",
+   "useful": "unknown",
+   "useful_fleet": "reported",
+   "note": "Gross is the designer's 1,325 lb; the 1,425 lb Rutan allowed under conditions is not used. Fleet figure is Kitplanes' anecdotal typical O-235 empty weight."
+  },
   "fuel_gal": [
    52,
    "F",
@@ -255,6 +267,10 @@
    "https://planeandpilotmag.com/experimental-aviation-berkut/",
    "derived"
   ],
+  "weight_basis": {
+   "mtow": "maker",
+   "useful": "unknown"
+  },
   "fuel_gal": [
    55,
    "F",
@@ -340,6 +356,11 @@
    "https://www.aircraftspruce.com/catalog/kitspages/velocity2.php",
    "derived"
   ],
+  "weight_basis": {
+   "mtow": "maker",
+   "useful": "unknown",
+   "note": "Maker gross 2,750-2,800 lb by engine; the higher is used."
+  },
   "fuel_gal": [
    70,
    "F",
@@ -433,6 +454,11 @@
    "https://planeandpilotmag.com/rutan-defiant",
    "derived from P&P"
   ],
+  "weight_basis": {
+   "mtow": "maker",
+   "useful": "unknown",
+   "note": "Plane & Pilot does not say what airplane the 1,610 lb is; the stage 3 dossier takes it as the plans prototype. Wikipedia gives 2,997 / 1,701 lb."
+  },
   "fuel_gal": [
    108,
    "P",
@@ -519,6 +545,11 @@
    "https://aeroresourcesinc.com/uploads/199004-1990%20Cirrus%20VK30%20Homebuilt.pdf",
    ""
   ],
+  "weight_basis": {
+   "mtow": "maker",
+   "useful": "bare",
+   "note": "Prototype empty weight (AOPA Pilot spec box); EAA museum gives 2,400 lb."
+  },
   "fuel_gal": [
    95,
    "F",
@@ -643,6 +674,12 @@
    "http://web.archive.org/web/20241217134717/https://p.pdfhall.com/russ-and-marcia-taylors-prescott-pusher_5b6d873e097c4748748b4604.html",
    "one builder aircraft weighed (N747P: 1,555 lb in the shop, 1,661 lb finished with ballast for CG; Jack Cox, Sport Aviation, September 1991); not a fleet average"
   ],
+  "weight_basis": {
+   "mtow": "designer",
+   "useful": "bare",
+   "useful_fleet": "weighed x1",
+   "note": "Factory empty of prototype 2. Gross 2,400 lb is the designer's own figure: designed for 2,250 lb, loads report and tests redone at 2,400 (dossier). N747P weighed 1,555 lb in the shop and 1,661 lb finished with ballast."
+  },
   "flags": [
    "Bill's top-interest design (AER-3783, 2026-10-24): full deep dive in the stage 3 dossier"
   ]
@@ -681,6 +718,10 @@
    "http://www.airbum.com/pireps/PirepQuestairVenture.html",
    ""
   ],
+  "weight_basis": {
+   "mtow": "maker",
+   "useful": "unknown"
+  },
   "fuel_gal": [
    56,
    "P",
@@ -748,6 +789,11 @@
    "https://lancair.com/storage/2019/10/LA_LancairIV_web_f.pdf",
    ""
   ],
+  "weight_basis": {
+   "mtow": "maker",
+   "useful": "unknown",
+   "note": "Brochure empty weight; not stated as standard or equipped. The 3,750 lb RDD LX7 gross is not used."
+  },
   "fuel_gal": [
    106.5,
    "P",
@@ -833,6 +879,10 @@
    "https://lancair.com/storage/2019/10/LA_Legacy_web_f.pdf",
    ""
   ],
+  "weight_basis": {
+   "mtow": "maker",
+   "useful": "unknown"
+  },
   "fuel_gal": [
    65,
    "F",
@@ -908,6 +958,11 @@
    "https://web.archive.org/web/2006/http://www.glasairaviation.com/glasairIIIspecs.html",
    "derived"
   ],
+  "weight_basis": {
+   "mtow": "maker",
+   "useful": "unknown",
+   "note": "Standard-wing 2,400 lb gross; the 2,500 lb extended-wing option is not used."
+  },
   "fuel_gal": [
    73,
    "F",
@@ -989,6 +1044,12 @@
    "https://www.kitplanes.com/wp-content/uploads/2025/04/Wheeler-Express-APR-CAFE-Foundation.pdf",
    "one builder aircraft weighed by CAFE (N360EZ, 1,994 lb empty), not a fleet average"
   ],
+  "weight_basis": {
+   "mtow": "designer",
+   "useful": "equipped",
+   "useful_fleet": "weighed x1",
+   "note": "Kit maker's 'normal' empty weight; the measured figure is CAFE's weighing of N360EZ. The 3,200-3,600 lb grosses of later variants are not used."
+  },
   "fuel_gal": [
    92,
    "P",
@@ -1086,6 +1147,11 @@
    "https://www.kitplanes.com/sx-appeal/",
    "typical"
   ],
+  "weight_basis": {
+   "mtow": "unknown",
+   "useful": "reported",
+   "note": "Kitplanes spec box gives 2,400 lb gross and 'typical' empty and useful; Wikipedia gives 2,200 lb gross, which leaves 600 lb useful. Fails on useful load either way."
+  },
   "fuel_gal": [
    66,
    "P",
@@ -1167,6 +1233,12 @@
    "https://www.kitplanes.com/flight-review-seven-into-ten/",
    "1,600-1,700 lb typical builder empty, midpoint"
   ],
+  "weight_basis": {
+   "mtow": "maker",
+   "useful": "equipped",
+   "useful_fleet": "reported",
+   "note": "Van's publishes a 1,520-1,630 lb empty range (midpoint used); Kitplanes gives 1,600-1,700 lb typical builder empty."
+  },
   "fuel_gal": [
    60,
    "F",
@@ -1251,6 +1323,11 @@
    "https://planeandpilotmag.com/lancair-essuper-es-es-p/",
    "derived"
   ],
+  "weight_basis": {
+   "mtow": "magazine",
+   "useful": "unknown",
+   "note": "Plane & Pilot's 3,200 lb is screened; the maker now publishes 3,550 lb, a maker revision, not an owner raise, and the lower figure is the conservative one."
+  },
   "fuel_gal": [
    98,
    "P",
@@ -1327,6 +1404,10 @@
    "https://www.aopa.org/News-and-Video/All-News/2013/October/Pilot/Epic-LT-Seeing-is-believing",
    ""
   ],
+  "weight_basis": {
+   "mtow": "magazine",
+   "useful": "unknown"
+  },
   "fuel_gal": [
    288,
    "P",
@@ -1406,6 +1487,11 @@
    "https://www.kitplanes.com/alpi-pioneer-400t/",
    ""
   ],
+  "weight_basis": {
+   "mtow": "magazine",
+   "useful": "weighed x1",
+   "note": "Kitplanes' test aircraft; how it was weighed is not stated."
+  },
   "fuel_gal": [
    21,
    "P",
@@ -1481,6 +1567,12 @@
    "https://www.aviationconsumer.com/aircraftreviews/cessna-p210-centurion/",
    "owners report 900-1,000 lb payload with full fuel; midpoint + 87 gal"
   ],
+  "weight_basis": {
+   "mtow": "TCDS",
+   "useful": "bare",
+   "useful_fleet": "reported",
+   "note": "Cessna 1982 standard empty (no options). Fleet figure from owners' 900-1,000 lb full-fuel payload plus fuel."
+  },
   "fuel_gal": [
    87,
    "T",
@@ -1575,6 +1667,12 @@
    "https://www.flyingmag.com/used-aircraft-guide-piper-malibu-and-mirage-cheap-for-what-they-do/",
    "'typical useful loads'"
   ],
+  "weight_basis": {
+   "mtow": "TCDS",
+   "useful": "unknown",
+   "useful_fleet": "reported",
+   "note": "AOPA fact sheet empty, basis not stated; Flying's 'typical useful loads'."
+  },
   "fuel_gal": [
    120,
    "T",
@@ -1662,6 +1760,11 @@
    "https://web.archive.org/web/20071213010048/http://www.mooney.com:80/acclaim-type-s/specifications-performance-3.html",
    ""
   ],
+  "weight_basis": {
+   "mtow": "TCDS",
+   "useful": "bare",
+   "note": "Factory-supplied standard empty (Plane & Pilot)."
+  },
   "fuel_gal": [
    89,
    "T",
@@ -1749,6 +1852,12 @@
    "https://aopa.org/news-and-media/all-news/2007/october/01/columbia-400",
    "one test aircraft, not a fleet average"
   ],
+  "weight_basis": {
+   "mtow": "TCDS",
+   "useful": "unknown",
+   "useful_fleet": "weighed x1",
+   "note": "Cessna site empty, basis not stated; AOPA's test aircraft."
+  },
   "fuel_gal": [
    102,
    "T",
@@ -1830,6 +1939,12 @@
    "https://avweb.com/?p=124801",
    "~2,100 lb real-world equipped empty"
   ],
+  "weight_basis": {
+   "mtow": "TCDS",
+   "useful": "unknown",
+   "useful_fleet": "reported",
+   "note": "AvWeb's ~2,100 lb real-world equipped empty."
+  },
   "fuel_gal": [
    74,
    "T",
@@ -1924,6 +2039,12 @@
    "https://avweb.com/features/bellanca-viking/",
    "'typically 1000 pounds or so'"
   ],
+  "weight_basis": {
+   "mtow": "TCDS",
+   "useful": "unknown",
+   "useful_fleet": "reported",
+   "note": "TCDS gross 3,325 lb applies with its placards and matching flight manual, 3,200 lb otherwise; at 3,200 lb the published useful load is 983 lb, a near miss. Jane's 1976 empty; AvWeb owners' 'typically 1000 pounds or so'."
+  },
   "fuel_gal": [
    69,
    "T",
@@ -1968,7 +2089,8 @@
   "rights": "TCDS A18CE holder (2002): Alexandria Aircraft LLC; reported move to Sulphur OK as Bellanca Aircraft Inc. (2022) unverified.",
   "safety": "Wood deterioration AD 76-08-04; fuel-mismanagement accidents fell after the 1974 tank simplification (AvWeb).",
   "flags": [
-   "turbo 17-31ATC reported at 190 kt at FL200 (AvWeb, fleet-grade)"
+   "turbo 17-31ATC reported at 190 kt at FL200 (AvWeb, fleet-grade)",
+   "the 3,325 lb gross is a TCDS gross only with Bellanca's placards and the matching flight manual (TCDS A18CE Rev 12, 2024-03-03, Note 4, read on FAA DRS 2026-11-15); at the 3,200 lb gross otherwise, the published useful load is 983 lb, a near miss"
   ],
   "ideas": [
    "A wooden wing and steel-tube fuselage on a fast four-seater: unusual materials can work, but low-rate production of them did not pay."
@@ -2008,6 +2130,10 @@
    "https://en.wikipedia.org/wiki/Windecker_Eagle",
    "derived"
   ],
+  "weight_basis": {
+   "mtow": "maker",
+   "useful": "unknown"
+  },
   "fuel_gal": [
    86,
    "F",
@@ -2079,6 +2205,10 @@
    "https://en.wikipedia.org/wiki/Wing_Derringer",
    "derived"
   ],
+  "weight_basis": {
+   "mtow": "maker",
+   "useful": "unknown"
+  },
   "fuel_gal": [
    88,
    "F",
@@ -2146,6 +2276,11 @@
    "https://en.wikipedia.org/wiki/Mooney_M22_Mustang",
    "derived"
   ],
+  "weight_basis": {
+   "mtow": "maker",
+   "useful": "unknown",
+   "note": "Jane's 1969-70."
+  },
   "fuel_gal": [
    92,
    "F",
@@ -2218,6 +2353,12 @@
    "https://planeandpilotmag.com/1964-piper-comanche-400/",
    "one test aircraft, 2,269 lb empty"
   ],
+  "weight_basis": {
+   "mtow": "TCDS",
+   "useful": "unknown",
+   "useful_fleet": "weighed x1",
+   "note": "Plane & Pilot's test aircraft at 2,269 lb empty."
+  },
   "fuel_gal": [
    124,
    "T",
@@ -2313,7 +2454,10 @@
   "ideas": [
    "Low delta wing, engine buried in the fuselage driving a shrouded pusher fan, folding wing and fin so it fits a garage: the planform and layout Bill wants studied.",
    "Sparless foam-cored fibreglass stressed skin, with the wing and underbody as the main structure. Scale-up and reconstructability studies: see the dossier."
-  ]
+  ],
+  "weight_basis": {
+   "mtow": "maker"
+  }
  },
  {
   "id": "bellanca-skyrocket-ii",
@@ -2349,6 +2493,11 @@
    "https://en.wikipedia.org/wiki/Bellanca_Skyrocket_II",
    "derived"
   ],
+  "weight_basis": {
+   "mtow": "maker",
+   "useful": "bare",
+   "note": "Prototype empty weight, heavier than intended (Jane's 1976-77)."
+  },
   "cruise": [
    {
     "ktas": 222,
@@ -2458,6 +2607,12 @@
    "https://mooneyevents.com/Mooney301.html",
    "AERO lower-bound estimate: 1,452 less the prototype's ~200 lb weight overrun (Mooney Events; Wikipedia; docs/rights/mooney-301.md). If 2,548 lb already includes the overrun, ~1,400 (1,600 less 200). Never weighed in public record"
   ],
+  "weight_basis": {
+   "mtow": "maker",
+   "useful": "design",
+   "useful_asflown": "est.",
+   "note": "Design figure, never weighed in the public record; the as-flown figure is our estimate."
+  },
   "flags": [
    "useful load and cruise are design figures; the only prototype was ~200 lb over projected weight and 'slower than desired', and no as-flown speed or weight is published (Mooney Events; docs/rights/mooney-301.md)",
    "the published 986 nm range is a 45 min reserve figure; fuel and flow give 1,016 nm on that basis, consistent within 3%",
@@ -2505,6 +2660,10 @@
    "https://www.pipistrel-aircraft.com/products/panthera/",
    "Flying 2021 gives 1,100"
   ],
+  "weight_basis": {
+   "mtow": "maker",
+   "useful": "unknown"
+  },
   "fuel_gal": [
    55.5,
    "F",
@@ -2596,7 +2755,10 @@
   ],
   "ideas": [
    "A mid-mounted engine with a shaft to a pusher prop behind a T-tail and a laminar composite wing: the VK-30's idea done by a sailplane maker."
-  ]
+  ],
+  "weight_basis": {
+   "mtow": "maker"
+  }
  },
  {
   "id": "evektor-supercobra",
@@ -2633,6 +2795,10 @@
    "https://www.evektor.com/cz/vut100-cobra",
    "550 kg"
   ],
+  "weight_basis": {
+   "mtow": "maker",
+   "useful": "unknown"
+  },
   "fuel_gal": [
    90,
    "F",
@@ -2705,6 +2871,12 @@
    "https://euroga.org/forums/extra-400/7297",
    "owner: 'typically less than 500 kg'"
   ],
+  "weight_basis": {
+   "mtow": "TCDS",
+   "useful": "unknown",
+   "useful_fleet": "reported",
+   "note": "EuroGA owner: 'typically less than 500 kg'."
+  },
   "fuel_gal": [
    106.7,
    "T",
@@ -2790,6 +2962,12 @@
    "https://peter2000.co.uk/aviation/tb20-experience/1991-03%20AOPA%20PILOT%20-%20TB21%20Cause%20Celebre.pdf",
    "heavily equipped test aircraft, 2,117 lb empty"
   ],
+  "weight_basis": {
+   "mtow": "TCDS",
+   "useful": "bare",
+   "useful_fleet": "weighed x1",
+   "note": "AOPA's standard empty; the measured figure is AOPA's heavily equipped test aircraft at 2,117 lb."
+  },
   "fuel_gal": [
    86.2,
    "T",
@@ -2874,6 +3052,11 @@
    "https://en.wikipedia.org/wiki/Robin_HR100",
    "derived"
   ],
+  "weight_basis": {
+   "mtow": "TCDS",
+   "useful": "unknown",
+   "note": "Jane's 1976-77."
+  },
   "fuel_gal": [
    58.1,
    "T",
@@ -2952,6 +3135,12 @@
    "https://www.aopa.org/news-and-media/all-news/2001/november/pilot/solaris-sigma-230",
    "as tested"
   ],
+  "weight_basis": {
+   "mtow": "TCDS",
+   "useful": "unknown",
+   "useful_fleet": "weighed x1",
+   "note": "AOPA's aircraft as tested."
+  },
   "fuel_gal": [
    62.3,
    "T",
@@ -3018,6 +3207,10 @@
    "https://www.aopa.org/news-and-media/all-news/2000/july/pilot/siai-marchetti-aermacchi-sf-260",
    ""
   ],
+  "weight_basis": {
+   "mtow": "TCDS",
+   "useful": "unknown"
+  },
   "fuel_gal": [
    62,
    "T",
@@ -3094,6 +3287,11 @@
    "https://aeroresourcesinc.com/uploads/197703-1977%20Bellanca%20Aries%20T-250.pdf",
    "AOPA spec table; 1,262 using P&P empty"
   ],
+  "weight_basis": {
+   "mtow": "TCDS",
+   "useful": "bare",
+   "note": "AOPA 1977 spec table for the prototype era, empty weight 'dry', so it excludes unusable fuel and oil; Plane & Pilot's 1,888 lb gives 1,262 lb useful, still over the target."
+  },
   "fuel_gal": [
    76,
    "T",
@@ -3182,6 +3380,11 @@
    "https://www.fliegermagazin.de/news/aero-2026-alpi-aviation-stellt-pioneer-800-twin-aus/",
    "615 kg, converted; manufacturer figure via fliegermagazin"
   ],
+  "weight_basis": {
+   "mtow": "derived",
+   "useful": "design",
+   "note": "Maker's figure for an airplane unflown at the time; gross derived as empty plus useful."
+  },
   "fuel_gal": null,
   "cruise": [
    {
@@ -3249,6 +3452,11 @@
    "https://www.tecnam.com/aircraft/p2006t-ng/",
    "410 kg, factory figure, converted"
   ],
+  "weight_basis": {
+   "mtow": "TCDS",
+   "useful": "bare",
+   "note": "Tecnam standard empty."
+  },
   "fuel_gal": [
    52.8,
    "T",
@@ -3317,6 +3525,11 @@
    "https://www.diamondaircraft.com/en/private-owners/aircraft/da42/tech-specs/",
    "579 kg 'Max. useful load', factory"
   ],
+  "weight_basis": {
+   "mtow": "maker",
+   "useful": "bare",
+   "note": "Diamond empty 'without options'."
+  },
   "fuel_gal": [
    76.4,
    "F",
@@ -3445,6 +3658,10 @@
    "https://jabiru.aero/j432-twin-ultimate/",
    "280 kg 'Usable weight' (Experimental), converted"
   ],
+  "weight_basis": {
+   "mtow": "maker",
+   "useful": "unknown"
+  },
   "fuel_gal": [
    35.7,
    "F",
