@@ -35,16 +35,17 @@ shop, holder or museum has been contacted. Script:
 opening the kit (or, one-off, ordering the first cut parts) to first flight. They
 cover the airframe, flight controls, gear, the 90 gal tanks, installing the AM20T
 from a bought firewall-forward package, and wiring a simple bought panel. They
-leave out paint, a custom interior and elaborate avionics, which Van's names as
-large time adders. The first hours row is the pace of a maker's own figure. Its
+leave out paint and elaborate avionics, which Van's names as large time adders,
+and a custom interior (our exclusion, E). The first hours row is the pace of a maker's own figure. Its
 anchor is Van's 2,000-2,200 h for an RV-10 from the Standard kit, which Van's
 says is "based on builder reports" and will "complete" the airplane
 ([time to build](https://www.vansaircraft.com/time-to-build/), read
 2026-11-15). The Aries band sits 14-75% above that anchor, for retractable gear
 and countersunk flush riveting on a laminar wing. The second row is a first-time
-builder. Builders commonly report 1.5-3 times a maker's figure (Kitplanes,
-"Aircraft Build Times", 2018: "double or triple the hours for many"), so that
-row runs from the first row's low end x 1.5 to its high end x 3. The one-off
+builder. Kitplanes' editors say builder speed and experience vary "widely
+enough as to double or triple the hours for many" ([Letters, 2018-10-19](https://www.kitplanes.com/?p=12448)).
+That sources 2-3 times; we take 1.5 times as the low end (E). So that row runs
+from the first row's low end x 1.5 to its high end x 3. The one-off
 column adds the cutting, deburring and final-drilling that matched holes save.
 Van's puts its matched-hole RV-14 at 1,000-1,300 h, against 2,000-2,200 for the
 RV-10. A fully matched-hole Aries kit might therefore come in under the band. We

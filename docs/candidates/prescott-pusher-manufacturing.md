@@ -90,18 +90,20 @@ says "about five years" per plane.
 opening the kit (or, one-off, starting the shell plugs) to first flight. They
 cover the airframe, the shells and their bonding, flight controls, gear, the 90
 gal tanks, installing the AM20T and its nose-bay radiator from a bought
-firewall-forward package, and wiring a simple bought panel. They leave out paint,
-a custom interior and elaborate avionics, which Van's names as large time adders
+firewall-forward package, and wiring a simple bought panel. They leave out paint
+and elaborate avionics, which Van's names as large time adders
 ([time to build](https://www.vansaircraft.com/time-to-build/), read
-2026-11-15). Welding the cage is a shop's work in both columns, not the
+2026-11-15), and a custom interior (our exclusion, E). Welding the cage is a shop's work in both columns, not the
 builder's. The first hours row for each column is the pace of a maker's own
 figure. It sits 1.0-1.9 times Prescott's 1,500 h projection, because the wing and
 tail are re-sized and the leading edges are now molded. The second row is a
-first-time builder. Builders commonly report 1.5-3 times a maker's figure
-(Kitplanes, "Aircraft Build Times", 2018: "double or triple the hours for
-many"), so that row runs from the first row's low end x 1.5 to its high end x 3.
-Five years at 10-20 hours a week (our assumption) is 2,600-5,200 h, inside the
-first-time kit band.
+first-time builder. Kitplanes' editors say builder speed and experience vary
+"widely enough as to double or triple the hours for many"
+([Letters, 2018-10-19](https://www.kitplanes.com/?p=12448)). That sources 2-3
+times; we take 1.5 times as the low end (E). So that row runs from the first
+row's low end x 1.5 to its high end x 3. Five years at 10-20 hours a week (our
+assumption) is 2,600-5,200 h, at or inside the first-time kit bands (route A's
+starts at 2,700).
 
 ## 1. Part count and the make/buy split
 
@@ -221,14 +223,21 @@ The crossover moves out:
   90%.** Mold life alone takes the high end to 35, and learning alone to 28-30.
 - **Route B:** from 8-34 airframes to **7 to more than 200 at 80% learning and
   8-125 at 90%.** Mold life alone takes the high end to 70, and learning alone to
-  37-41. At the pessimistic end, re-pulling $249k of glass molds every 25 kits
-  costs about $7.2k a kit however long the run goes. A kit price falling on an 80%
-  curve drops 10% of it below that floor, so the tooling never falls under 10%.
-  Carbon/BMI tools, at about 500 cycles, would remove the re-pulls but cost
-  more up front. We have not priced them.
+  36-41. At the pessimistic end, re-pulling $249k of glass molds every 25 kits
+  costs about $7.19k a kit however long the run goes. At 200 kits, 10% of the
+  80%-learned kit price is $7.09k, so the floor stays above it by about 1.5%.
+  **That "more than 200" is a knife edge, not a hard result.** It stacks every
+  pessimistic input: the top mold rate, a 25-pull life, the low kit price, a 50%
+  labour share and the 80% curve. It also assumes the maker passes all of the
+  learning into a lower price; if the maker holds the price, the same corner
+  crosses at 70. Longer-life tooling, such as carbon or metal molds, would cut
+  the re-pulls but costs more up front (E; their pull life and price are not
+  sourced or priced here).
 
-So mold life, not learning, is what decides route B's economics past 25 kits.
-Route A's metal wing has no wing molds, and that is where it beats route B.
+So route B's high end is set by mold life and learning together. Mold life alone
+gives 70 and learning alone 36-41; only together, at the pessimistic corner, do
+they never cross. Route A's metal wing has no wing molds, and that is where it
+beats route B.
 
 ## 4. Is the laminate schedule load-bearing?
 

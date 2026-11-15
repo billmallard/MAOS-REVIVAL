@@ -199,6 +199,8 @@ def tooling():
         ("Molds: cowl, radiator duct, tips, fairings, 65-70 ft2", (8_000, 25_000), MOLD),
     ]
     sm = ARIES_GEOM["skin_mold_ft2"]
+    # One skin mold pair makes both wings, so each kit takes two pulls: if this
+    # option is ever priced into a crossover, its mold life in kits is MOLD_LIFE / 2.
     t["Aries option: carbon wing skins for the laminar lever"] = [
         (f"Upper and lower constant-section skin molds, {sm:.0f} ft2, both wings if untwisted",
          mold_cost(sm), MOLD),
