@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Build plans for the two picks: Bellanca T-250 Aries and Prescott Pusher (AER-3868).
 
-Part counts, the make/buy split, the tooling bill and the kit-run crossover.
+Part counts, the make/buy split, the tooling bill and the kit-run crossover
+(with mold life and the kit maker's learning curve since AER-5718).
 Every number here is our estimate (E) unless a source is named in SOURCES.
 Counts exclude standard hardware (rivets, bolts, nuts, washers, clamps): a
 bought assembly (a gear leg, a fuel pump, the engine) counts as one part.
@@ -144,6 +145,19 @@ FLANGE = 1.3
 GROWTH = 1.125                # Prescott re-derivation: wing and tail area +12.5% (AER-3866)
 
 
+# Molds wear out; nothing else in the tooling bill does within a 50-kit run.
+# A room-temperature glass/epoxy production mold gives about 25-45 pulls before
+# repair becomes a burden (practitioner figure, AER-5129; weak source). A run
+# longer than that pulls a new mold off the kept plug. The plug is $35-100 of the
+# $120-360 per ft2 (plug board $15-40 plus machining $20-60, stage 4), so a
+# re-pull costs the remaining 71-72% of the mold line. Form blocks, jigs and the
+# CAD are taken to last the run (E, not sourced).
+MOLD, DURABLE = "mold", "durable"
+MOLD_LIFE = (25, 45)          # pulls per glass/epoxy mold, low and high
+PLUG_RATE = (35, 100)         # $/ft2 of mold surface: plug board plus machining (stage 4)
+REPULL = 1 - PLUG_RATE[1] / MOLD_RATE[1]   # 0.72 of the mold line; 0.71 at the low rate
+
+
 def mold_cost(ft2):
     return (ft2 * MOLD_RATE[0], ft2 * MOLD_RATE[1])
 
@@ -182,52 +196,104 @@ def tooling():
          f"${FORM_BLOCK[0]}-{FORM_BLOCK[1]}",
          (formed_unique[0] * FORM_BLOCK[0], formed_unique[1] * FORM_BLOCK[1])),
         ("Assembly jigs (wing, fuselage, tail)", (10_000, 30_000)),
-        ("Molds: cowl, radiator duct, tips, fairings, 65-70 ft2", (8_000, 25_000)),
+        ("Molds: cowl, radiator duct, tips, fairings, 65-70 ft2", (8_000, 25_000), MOLD),
     ]
     sm = ARIES_GEOM["skin_mold_ft2"]
     t["Aries option: carbon wing skins for the laminar lever"] = [
         (f"Upper and lower constant-section skin molds, {sm:.0f} ft2, both wings if untwisted",
-         mold_cost(sm)),
+         mold_cost(sm), MOLD),
     ]
     t["Prescott, route A (metal wing and tail)"] = [
         ("CAD and CNC programs", (10_000, 30_000)),
-        (f"Shell plugs and molds, {pg['shell_mold_ft2']} ft2", mold_cost(pg["shell_mold_ft2"])),
+        (f"Shell plugs and molds, {pg['shell_mold_ft2']} ft2", mold_cost(pg["shell_mold_ft2"]), MOLD),
         ("Cage welding jig (tube-laser cut, slotted-plate fixture)", (15_000, 40_000)),
         ("Form blocks, 30-50 unique wing and 30-50 unique tail formed parts",
          (60 * FORM_BLOCK[0], 100 * FORM_BLOCK[1])),
         (f"Leading-edge skin molds (in place of the lost stretch dies), {pg['le_mold_ft2']:.0f} ft2",
-         mold_cost(pg["le_mold_ft2"])),
+         mold_cost(pg["le_mold_ft2"]), MOLD),
         ("Wing and tail assembly jigs", (8_000, 20_000)),
     ]
     t["Prescott, route B (carbon wing and tail)"] = [
         ("CAD and CNC programs", (10_000, 30_000)),
-        (f"Shell plugs and molds, {pg['shell_mold_ft2']} ft2", mold_cost(pg["shell_mold_ft2"])),
+        (f"Shell plugs and molds, {pg['shell_mold_ft2']} ft2", mold_cost(pg["shell_mold_ft2"]), MOLD),
         ("Cage welding jig", (15_000, 40_000)),
-        (f"Wing skin and spar molds, {pg['wing_mold_ft2']:.0f} ft2", mold_cost(pg["wing_mold_ft2"])),
-        (f"Tail molds, {pg['tail_mold_ft2']:.0f} ft2", mold_cost(pg["tail_mold_ft2"])),
+        (f"Wing skin and spar molds, {pg['wing_mold_ft2']:.0f} ft2", mold_cost(pg["wing_mold_ft2"]), MOLD),
+        (f"Tail molds, {pg['tail_mold_ft2']:.0f} ft2", mold_cost(pg["tail_mold_ft2"]), MOLD),
         ("Bonding and assembly jigs", (8_000, 20_000)),
     ]
     out = {}
     for k, lines in t.items():
-        lo = sum(v[0] for _n, v in lines)
-        hi = sum(v[1] for _n, v in lines)
-        out[k] = {"lines": [(n, v) for n, v in lines], "total": (lo, hi)}
+        lines = [ln if len(ln) == 3 else (*ln, DURABLE) for ln in lines]
+        lo = sum(v[0] for _n, v, _c in lines)
+        hi = sum(v[1] for _n, v, _c in lines)
+        mlo = sum(v[0] for _n, v, c in lines if c == MOLD)
+        mhi = sum(v[1] for _n, v, c in lines if c == MOLD)
+        out[k] = {"lines": [(n, v) for n, v, _c in lines], "total": (lo, hi), "molds": (mlo, mhi)}
     return out
 
 
 # Kit prices for the crossover (E). Aries: stage 4 band. Prescott: the 1986 kit
 # ($29,500 fixed / $36,500 retractable, AOPA86) at about x2.9 CPI is $86-106k; a
 # modern kit with molded shells and a welded cage is put at $90-140k.
+# These bands are read as the price of a kit in a 10-kit run (E).
 KIT_PRICE = {
     "Aries, matched-hole kit": (100_000, 150_000),
     "Prescott, route A (metal wing and tail)": (90_000, 140_000),
     "Prescott, route B (carbon wing and tail)": (100_000, 160_000),
 }
 
+# The kit maker's labour follows a learning curve; the builder's does not (every
+# amateur builds unit 1). Wright: unit n takes T1 x n^log2(L). L = 80% for
+# hand-labour-heavy work (layup), 90% and up for punched and formed sheet
+# (Stewart, Cost Estimator's Reference Manual, via AER-5129). Both are run on
+# every route, because neither is GA kit data. LABOUR is the maker's labour as a
+# share of the kit price at 10 kits (E; no published kit cost breakdown found).
+LEARNING = (0.80, 0.90)
+LABOUR = {
+    "Aries, matched-hole kit": (0.25, 0.40),
+    "Prescott, route A (metal wing and tail)": (0.30, 0.45),
+    "Prescott, route B (carbon wing and tail)": (0.35, 0.50),
+}
+N_MAX = 200
+
 
 def crossover(tool, kit, share=0.10):
-    """Airframes until tooling is under `share` of the kit price."""
+    """Airframes until tooling is under `share` of the kit price (tooling / N; the pre-AER-5718 method)."""
     return (math.ceil(tool[0] / (share * kit[1])), math.ceil(tool[1] / (share * kit[0])))
+
+
+def cum_avg(n, rate):
+    """Cumulative-average unit cost over units 1..n, as a fraction of unit 1."""
+    b = math.log2(rate)
+    return sum(i ** b for i in range(1, n + 1)) / n
+
+
+def tooling_at(n, total, molds, life):
+    """Tooling bought for a run of n kits: one mold set per `life` pulls."""
+    sets = math.ceil(n / life)
+    return total + molds * REPULL * (sets - 1)
+
+
+def kit_price_at(n, kit, labour, rate):
+    """Kit price at run size n, with the maker's labour share on the learning curve."""
+    return kit * (1 - labour + labour * cum_avg(n, rate) / cum_avg(10, rate))
+
+
+def crossover_life(t, kit, labour, rate, share=0.10):
+    """Airframes until per-kit tooling, mold re-pulls included, is under `share` of the
+    kit price at that run size. Low end: low tooling, high kit price, long mold life;
+    high end: the reverse. Labour share taken at whichever end is worse for that bound.
+    None means not reached within N_MAX kits."""
+    def first(tool, molds, k, life, lab):
+        for n in range(1, N_MAX + 1):
+            if tooling_at(n, tool, molds, life) / n <= share * kit_price_at(n, k, lab, rate):
+                return n
+        return None
+    lo_end = [first(t["total"][0], t["molds"][0], kit[1], MOLD_LIFE[1], lab) for lab in labour]
+    hi_end = [first(t["total"][1], t["molds"][1], kit[0], MOLD_LIFE[0], lab) for lab in labour]
+    lo = min(n for n in lo_end if n is not None)
+    hi = None if None in hi_end else max(hi_end)
+    return lo, hi
 
 
 def fmt_k(v):
@@ -265,6 +331,18 @@ def main():
                           "kit_price": KIT_PRICE.get(k),
                           "crossover_10pct": crossover(v["total"], KIT_PRICE[k]) if k in KIT_PRICE else None}
                       for k, v in tl.items()}
+    for k in KIT_PRICE:
+        v = tl[k]
+        res["tooling"][k]["per_kit"] = {
+            n: {"tooling_over_n": [v["total"][0] / n, v["total"][1] / n],
+                "with_repulls": [tooling_at(n, v["total"][0], v["molds"][0], MOLD_LIFE[1]) / n,
+                                 tooling_at(n, v["total"][1], v["molds"][1], MOLD_LIFE[0]) / n]}
+            for n in (10, 25, 50)}
+        res["tooling"][k]["crossover_10pct_life_learning"] = {
+            f"{int(r * 100)}%": crossover_life(v, KIT_PRICE[k], LABOUR[k], r) for r in LEARNING}
+        res["tooling"][k]["kit_price_factor"] = {
+            f"{int(r * 100)}%": {n: [kit_price_at(n, 1, LABOUR[k][0], r), kit_price_at(n, 1, LABOUR[k][1], r)]
+                                for n in (5, 25, 50)} for r in LEARNING}
     for k, v in tl.items():
         print(f"\n### Tooling: {k}\n")
         print("| Line | Cost (E) |\n|---|---|")
@@ -273,7 +351,19 @@ def main():
         print(f"| **Total** | **{fmt_k(v['total'])}** |")
         if k in KIT_PRICE:
             c = crossover(v["total"], KIT_PRICE[k])
-            print(f"\nKit price {fmt_k(KIT_PRICE[k])} (E): tooling under 10% of it after {c[0]}-{c[1]} airframes.")
+            print(f"\nKit price {fmt_k(KIT_PRICE[k])} (E): tooling under 10% of it after {c[0]}-{c[1]} airframes"
+                  " (tooling / N).")
+            print(f"\nMolds {fmt_k(v['molds'])} of it; mold life {MOLD_LIFE[0]}-{MOLD_LIFE[1]} pulls; "
+                  f"re-pull {REPULL:.0%} of the mold line; maker labour {LABOUR[k][0]:.0%}-{LABOUR[k][1]:.0%} "
+                  "of the 10-kit price.\n")
+            print("| Run | Tooling per kit, tooling / N | Tooling per kit, with mold re-pulls |\n|---|---|---|")
+            for n, pk in res["tooling"][k]["per_kit"].items():
+                print(f"| {n} kits | {fmt_k(pk['tooling_over_n'])} | {fmt_k(pk['with_repulls'])} |")
+            for r, (lo, hi) in res["tooling"][k]["crossover_10pct_life_learning"].items():
+                kp = res["tooling"][k]["kit_price_factor"][r]
+                print(f"\nAt {r} learning: tooling under 10% of the kit price after {lo} to "
+                      f"{hi if hi else f'more than {N_MAX}'} airframes. Kit price against the 10-kit price: "
+                      + ", ".join(f"{n} kits x{min(f):.2f}-{max(f):.2f}" for n, f in kp.items()) + ".")
     print("\n### Geometry used\n")
     for k, v in PRESCOTT_GEOM.items():
         print(f"- Prescott {k}: {v:.1f}")
