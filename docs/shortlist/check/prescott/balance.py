@@ -146,7 +146,29 @@ H_CG, H_THRUST, H_DRAG, PROP_R, PROP_FS = 36.0, 55.0, 40.0, 32.5, 322.0
 O360 = 330.0                    # installed O-360 (E, stage 3)
 AM20T_ENGINE = 285.0 * 1.25     # 356 lb: engine, PSRU, turbo, mount, exhaust (E)
 AM20T_RAD = 35.0                # radiator, coolant, plumbing (E, stage 3)
-RAD_NOSE_LINES = 6.0            # longer coolant lines to a nose radiator (E)
+# Option B's radiator move (AER-6766; MANUFACTURING's reviews of PR #20,
+# AER-6764 finding 1, and of PR #21, AER-6769). All E, MANUFACTURING's booking.
+# The 35 lb splits three ways: 20 lb is the radiator wet (11-13 lb dry core and
+# tanks, 4-5 lb of coolant, mounts) and moves to the nose bay; 8 lb is the
+# engine's jacket coolant and the header tank, which stay at the engine
+# (FS 290); 7 lb is the short tail-cone hoses wet with clamps, which the long
+# run replaces. The run is sized at 102-145 kW and a 10-15 K coolant rise
+# (29-63 gpm): 1.25 in tube at the low-flow end, 1.5 in at the high, 0.035 in
+# 6061, 50/50 glycol (0.66 / 0.92 lb/ft filled). Routed under the cabin floor,
+# outside the occupied volume (SAFETY R8), it is 34 / 40 ft of supply and
+# return, with flexible hose at the engine, assembly couplers, clamps,
+# P-clamps, firewall pass-throughs, a bleed line to the header tank and
+# coolant-loss sensing: 28.7 / 45.0 lb in all, centroid FS 207 at both ends.
+# Not booked: a belly channel (1-3 lb) or a booster pump (2-3 lb) if needed.
+AM20T_RAD_CORE = 20.0           # radiator, wet, moves to the nose bay (E)
+AM20T_RAD_ENG = 8.0             # jacket coolant and header tank, stays at the engine (E)
+FS_RAD_ENG = 290.0
+AM20T_RAD_HOSE = 7.0            # short tail-cone hoses and clamps, removed in B (E)
+NOSE_LINES = {"light": 28.7, "heavy": 45.0}   # routed nose run with hardware, wet (E)
+FS_LINES = 207.0                               # the run's centroid (E)
+# Before AER-6766: the whole 35 lb plus 6 lb of extra line, all at the nose bay.
+# old_lines=True (and legacy=True) reproduces that, for the correction ledger.
+RAD_NOSE_LINES_OLD = 6.0
 OCC = 170.0                     # standard occupant (Part 23 convention)
 
 # Propeller (AER-3902). Neither installed figure carries a propeller: O360 is
@@ -280,10 +302,11 @@ X_E = {d: baseline_empty_cg(d) for d in DATUMS}
 X_E0 = X_E["reference"]
 
 
-def rebuilt_empty(end, gross, radiator, datum=HEADLINE, legacy=False):
+def rebuilt_empty(end, gross, radiator, datum=HEADLINE, legacy=False, old_lines=False):
     """Empty-weight item list for the AM20T rebuild. radiator: 'tail' or 'nose'.
     legacy=True reproduces PR #10: no propeller change in the swap, and all of
-    N747P's 111 lb over the factory figure treated as equipment."""
+    N747P's 111 lb over the factory figure treated as equipment. old_lines=True
+    books option B's radiator and lines as before AER-6766."""
     d = MFG[end]
     x0 = X_E[datum]
     items = [(1550.0, x0)]
@@ -299,8 +322,12 @@ def rebuilt_empty(end, gross, radiator, datum=HEADLINE, legacy=False):
         items.append((PROP_CS[end] - PROP_WOOD, PROP_FS))
     if radiator == "tail":
         items.append((AM20T_RAD, FS["tailcone"]))
+    elif legacy or old_lines:
+        items.append((AM20T_RAD + RAD_NOSE_LINES_OLD, FS["nosebay"]))
     else:
-        items.append((AM20T_RAD + RAD_NOSE_LINES, FS["nosebay"]))
+        items.append((AM20T_RAD_CORE, FS["nosebay"]))
+        items.append((AM20T_RAD_ENG, FS_RAD_ENG))
+        items.append((NOSE_LINES[end], FS_LINES))
     if gross > 2400.0:
         g = d["growth_2700"]
         items += [(0.85 * g, 230.0), (0.15 * g, FS["tail"])]
@@ -402,14 +429,14 @@ def tipback_deg(x_mg, x_cg):
     return math.degrees(math.atan((x_mg - x_cg) / H_CG))
 
 
-def solve_options(datum=HEADLINE, legacy=False, np_f=None, gross=2700.0, fuel_gal=90.0):
+def solve_options(datum=HEADLINE, legacy=False, np_f=None, gross=2700.0, fuel_gal=90.0, old_lines=False):
     """Size options A-D (and the unfixed airplane) against the aft limit.
     Returns {(key, end): row}; see main() for the row layout."""
     ffs = FS["fuel90"] if fuel_gal > 56.5 else FS["fuel"]
     rows = {}
     for end in ("light", "heavy"):
         base_t = rebuilt_empty(end, gross, "tail", datum, legacy)
-        base_n = rebuilt_empty(end, gross, "nose", datum, legacy)
+        base_n = rebuilt_empty(end, gross, "nose", datum, legacy, old_lines)
         # O0: no fix
         ew, ex, fwd, aft = envelope(base_t, gross, fuel_gal, ffs)
         rows[("O0", end)] = (0.0, ew, ex, aft[0], fwd[0], 0.0)
@@ -424,7 +451,8 @@ def solve_options(datum=HEADLINE, legacy=False, np_f=None, gross=2700.0, fuel_ga
         b2 = ballast_for(it, gross, fuel_gal, ffs)
         it2 = it + [(b2, FS["ballast"])]
         ew, ex, fwd, aft = envelope(it2, gross, fuel_gal, ffs)
-        rows[("O2", end)] = (RAD_NOSE_LINES + b2, ew, ex, aft[0], fwd[0], 0.0, b2)
+        lines = RAD_NOSE_LINES_OLD if (legacy or old_lines) else NOSE_LINES[end] - AM20T_RAD_HOSE
+        rows[("O2", end)] = (lines + b2, ew, ex, aft[0], fwd[0], 0.0, b2)
         # O3: fuselage stretch ahead of the spar (plug at FS 190): the nose,
         # panel, front seats and occupants move forward; 0.8 lb/in (E); about
         # 270 lb of empty weight sits ahead of the plug (E). Radiator stays in
@@ -453,6 +481,18 @@ def solve_options(datum=HEADLINE, legacy=False, np_f=None, gross=2700.0, fuel_ga
         ew, ex, fwd, aft = envelope(ww, gross, fuel_gal, ffs + dx)
         rows[("O4", end)] = (10.0, ew, ex, aft[0], fwd[0], dx, lim + 0.0, CG_FWD + dx * (1 - 0.246 * MAC / L_T))
     return rows
+
+
+def rad_move_in(end):
+    """Option B's radiator move as a forward empty-CG shift at 1,550 lb, in:
+    the radiator to the nose bay, the engine's coolant from the tail cone to
+    FS 290, the short hoses out, the routed run in at its centroid; moments
+    about the headline empty CG."""
+    x = X_E[HEADLINE]
+    m = (AM20T_RAD_CORE * (FS["tailcone"] - FS["nosebay"])
+         - AM20T_RAD_ENG * (FS_RAD_ENG - FS["tailcone"])
+         + AM20T_RAD_HOSE * (FS["tailcone"] - x) - NOSE_LINES[end] * (FS_LINES - x))
+    return m / 1550.0
 
 
 # ------------------------------------------------------------------ report
@@ -529,13 +569,14 @@ def main():
       f"It also fails the other end: the stretch carries the front seats forward with the nose, so the most-forward loading lands "
       f"{min(CG_FWD - rows[('O3', e)][4] for e in ('light', 'heavy')):.1f}-{max(CG_FWD - rows[('O3', e)][4] for e in ('light', 'heavy')):.1f} in ahead of the forward limit, which is set by rotation, not by stability, and does not move with the neutral point. "
       "D carries the wing's own neutral-point shift (the limits move with it) but not SAFETY's verdict, which rules it out (AER-3899).\n")
-    p("### Correction ledger (AER-3902): option cost and useful load, light / heavy end\n")
+    p("### Correction ledger (AER-3902, AER-6766): option cost and useful load, light / heavy end\n")
     p("Each column adds one correction to the one before. Cells read: added weight, lb / useful load, lb; C adds its stretch, B its residual ballast.\n")
     cols = [("PR #10 as opened", dict(datum="reference", legacy=True)),
-            ("+ constant-speed propeller", dict(datum="reference")),
-            ("+ N747P ballast at FS 160", dict(datum="N747P, ballast FS 160")),
-            ("+ N747P ballast at FS 100", dict(datum="N747P, ballast FS 100")),
-            ("+ C holds its margin (NP loss, band)", dict(datum="N747P, ballast FS 100", np_f=1.2))]
+            ("+ constant-speed propeller", dict(datum="reference", old_lines=True)),
+            ("+ N747P ballast at FS 160", dict(datum="N747P, ballast FS 160", old_lines=True)),
+            ("+ N747P ballast at FS 100", dict(datum="N747P, ballast FS 100", old_lines=True)),
+            ("+ C holds its margin (NP loss, band)", dict(datum="N747P, ballast FS 100", np_f=1.2, old_lines=True)),
+            ("+ B's coolant lines at their mass and station (AER-6766)", dict(datum="N747P, ballast FS 100", np_f=1.2))]
     led = [(c, solve_options(**kw)) for c, kw in cols]
     lo_hi = {f: solve_options("N747P, ballast FS 100", np_f=f) for f in (1.1, 1.3)}
     p("| Option | End | " + " | ".join(c for c, _ in led) + " |")
@@ -558,7 +599,9 @@ def main():
             p(f"| {names[key].split(':')[0].split(' (')[0]} | {end} | " + " | ".join(cells) + " |")
     p("")
     p(f"Sensitivity: each inch of empty-CG error at 1,550 lb is about {1550.0/(CG_AFT-FS['ballast']):.0f} lb of nose ballast; "
-      f"moving the radiator forward is worth about {(AM20T_RAD*(FS['tailcone']-FS['nosebay']))/1550.0:.1f} in of it, and N747P's ballast "
+      f"moving the radiator forward with its routed coolant run is worth about "
+      f"{min(rad_move_in(e) for e in MFG):.1f}-{max(rad_move_in(e) for e in MFG):.1f} in of it "
+      f"(PR #20 read {AM20T_RAD*(FS['tailcone']-FS['nosebay'])/1550.0:.1f} in, with all 35 lb moved to the nose bay and the lines' own moment left out; AER-6766), and N747P's ballast "
       f"puts the empty CG {X_E['N747P, ballast FS 160']-X_E0:.1f}-{X_E['N747P, ballast FS 100']-X_E0:.1f} in aft of the reference. "
       "So B no longer balances without ballast, as SAFETY expected. A weighed survivor or SDASM's weight-and-balance schedule would close the range (contact is Bill's call).\n")
     p("Ballast at 2,400 lb on the AM20T, the stage 3 engine-swap case (radiator in the tail cone, 56.5 gal), on the headline datum with the constant-speed propeller: "
