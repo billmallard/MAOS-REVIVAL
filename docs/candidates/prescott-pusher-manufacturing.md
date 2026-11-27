@@ -5,11 +5,13 @@
 Prescott (AER-3783). It sits on AERO's re-derivation (AER-3866, corrected by AER-3902; PR #10 at
 `2bae926`): 2,700 lb gross, 90 gal, wing and tail 12.5% larger to hold the
 stall speed, and the AM20T in the tail cone with its radiator and coolant moved
-to the nose bay (AERO's balance option B, which still needs 51-69 lb of nose
+to the nose bay (AERO's balance option B, which still needs 71-87 lb of nose
 lead). Revised 2026-10-26 after AERO's review of PR #14. Revised 2026-11-15
 (AER-5718): the hours now say what work they cover and what builder they assume,
 and the kit-run crossover now counts mold life and the kit maker's learning
-curve.
+curve. Revised 2026-11-27 (AER-6771): the weights follow AERO's re-run on PR #21,
+which books option B's coolant run and radiator at their real mass and station
+(AER-6766).
 
 Everything here is our estimate (E) unless a source is named. Prices are from
 public pages read on 2026-10-25 ([price check](../manufacturing/price-check-2026-10-25.md)).
@@ -59,26 +61,37 @@ choice between them is a trade of weight for money.
 | Builder hours, one-off (home-molded shells; welded cage bought from a shop), at the pace of a maker's figure | 3,000-4,500 (E) | 3,500-5,500 (E; adds the home-molded wing and tail) |
 | Builder hours, one-off, first-time builder | 4,500-13,500 (E) | 5,250-16,500 (E) |
 | All-in to fly, kit (kit, AM20T $28-30k, firewall-forward $5-10k, prop $5-12k, panel $15-40k) | $143-232k (E) | $153-252k (E) |
-| Empty with AM20T at 2,700 lb, option B, including its nose lead | 1,647-1,869 lb (65-74 lb lead) | 1,558-1,840 lb (51-69 lb lead) (AER-3866/3902) |
-| Useful load at 2,700 lb, light / heavy end (target 1,000) | 1,053 / 831 lb: 53 lb over / 169 lb short | 1,142 / 860 lb: 142 lb over / 140 lb short |
+| Empty with AM20T at 2,700 lb, option B, including its nose lead | 1,682-1,919 lb (85-91 lb lead) | 1,594-1,889 lb (71-87 lb lead) (AER-6766, PR #21) |
+| Useful load at 2,700 lb, light / heavy end (target 1,000) | 1,018 / 781 lb: 18 lb over / 219 lb short | 1,106 / 811 lb: 106 lb over / 189 lb short |
 | Skill floor | Medium: blind flush rivets on countersunk skins; bonding shells; tank sealing | Medium: bonding cured molded parts with structural adhesive |
 
 **The weight difference is the carbon wing and tail.** Stage 4's light end
 already took -20 to -60 lb for a carbon wing and -5 to -15 lb for a carbon tail.
 Route A gives those back: +75 lb of structure at the light end and +25 lb at the
-heavy end. The metal tail sits aft, so option B also needs 14 / 5 lb more nose
+heavy end. The metal tail sits aft, so option B also needs 14 / 4.5 lb more nose
 lead (0.6 lb per lb). Route A therefore costs 89 lb of useful load at the light
-end and 29 lb at the heavy end.
+end and 30 lb at the heavy end.
 
-Both routes' numbers come from AERO's balance script at PR #10 head `2bae926`
-(the AER-3902 correction). It takes N747P's 49 lb of ballast out of the
-weighed-airplane basis, adds the constant-speed propeller and re-solves option
-B, which now needs 51-69 lb of nose lead. Route A is that script with the carbon
-wing and tail deltas removed (AERO's review of this PR; reproduced by us on
-2026-10-26). Against the 1,000 lb target, a target and not a floor since
-Bill's 2026-10-25 brief change: the light end clears it by 53 lb on route A and
-142 lb on route B; the heavy end is 169 lb short on route A and 140 lb short on
-route B.
+Both routes' numbers come from AERO's balance script at PR #21 head `59e10f5`
+(AER-6766), re-run by us on 2026-11-27, at 2,700 lb with 90 gal. The datum is
+the script's headline, "N747P, ballast FS 100": the empty CG reads N747P's
+published 49 lb of ballast as sitting at FS 100, and the script takes that
+ballast out of the weighed-airplane basis and re-solves it. It also adds the constant-speed propeller (AER-3902)
+and books option B's coolant as routed (our AER-6769 booking): 20 lb of radiator
+at the nose bay (FS 110), 8 lb of jacket coolant and header tank left at the
+engine (FS 290), the 7 lb of short tail-cone hoses removed, and a 28.7 / 45.0 lb
+routed run at FS 207. Option B then needs 71-87 lb of nose lead. Route A is
+that script with the carbon wing and tail deltas removed
+(`docs/manufacturing/prescott_route_a_balance.py`). Against the 1,000 lb target,
+a target and not a floor since Bill's 2026-10-25 brief change: the light end
+clears it by 18 lb on route A and 106 lb on route B; the heavy end is 219 lb
+short on route A and 189 lb short on route B.
+
+Before AER-6766 these lines read 1,647-1,869 lb and 1,053 / 831 lb on route A,
+and 1,558-1,840 lb and 1,142 / 860 lb on route B (PR #10 head `2bae926`). That
+script put all 35 lb of radiator and coolant, plus 6 lb of line, at the nose
+bay. The real run's weight and its station behind the nose cost route B 36 /
+49 lb of useful load and route A 35 / 50 lb.
 
 **Why the hours fall from A to B.** About 270-380 fewer parts, nearly all of them
 ribs, skins and stiffeners in the flying surfaces. Bonding a molded wing is

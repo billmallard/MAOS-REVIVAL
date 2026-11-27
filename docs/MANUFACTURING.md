@@ -50,8 +50,8 @@ and the Cozy MKIV as the reference.
    the light end reaches 1,000 lb, and the AM20T is 54-71 lb heavier than the
    O-360, in the tail cone. AERO's AER-3866 balance, on the designer's plan
    stations, puts the ballast at 0.6 lb per lb, not 1.3. With the radiator in the
-   nose (option B) it still needs 51-69 lb of lead after AER-3902 (corrected by AER-3868; this line said 20-55 lb of
-   ballast avoided). Gross weight, a STRUCTURES question,
+   nose (option B) it still needs 71-87 lb of lead after AER-6766 (PR #21, re-read 2026-11-27, AER-6771; this
+   line said 51-69 lb after AER-3902, and before AER-3868 it said 20-55 lb of ballast avoided). Gross weight, a STRUCTURES question,
    and balance are still the levers that decide how close it gets.
 2. **Aries (Bill's pick): rebuild empty weight 1,780-2,000 lb.** Useful load is 1,150-1,370 lb
    against the factory 1,300; with our engine credit, empty is 1,690-1,940 lb.
@@ -257,10 +257,13 @@ gross (table above; all E).
 - **Options, not in the totals:**
   - a structural carbon monocoque in place of the cage saves a further 30-70 lb,
     gives up crash protection, and needs STRUCTURES
-- **Ballast:** AERO's balance (AER-3866/3902) places the aft savings at their
-  stations; what they avoid is already inside its 1,558-1,840 lb, and option B
-  still needs 51-69 lb of lead. (Corrected by AER-3868; this line said the aft
-  savings avoid 20-55 lb of ballast at 1.3 lb per lb.)
+- **Ballast:** AERO's balance (AER-3866/3902/6766) places the aft savings at their
+  stations; what they avoid is already inside its 1,594-1,889 lb, and option B
+  still needs 71-87 lb of lead. Those figures are PR #21 head `59e10f5` at 2,700 lb
+  with 90 gal, with N747P's ballast read at FS 100 (re-read 2026-11-27,
+  AER-6771). Before AER-6766 booked the coolant run at its real mass and station,
+  this line said 1,558-1,840 lb and 51-69 lb. (Corrected by AER-3868; this line
+  first said the aft savings avoid 20-55 lb of ballast at 1.3 lb per lb.)
 
 **At AERO's re-derivation, about 2,700 lb gross with 90 gal.** The structure grows by
 +30 to +85 lb (E). Raymer's GA weight equations at a gross ratio of 1.125 give
