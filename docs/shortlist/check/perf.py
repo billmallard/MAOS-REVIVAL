@@ -152,6 +152,8 @@ def prop_eff(m, T_lb, h_ft, V_fts):
     A = math.pi * D * D / 4 * (1 - m["prop"].get("hub_frac", 0.15) ** 2)
     Tc = T_lb / (0.5 * rho * V_fts ** 2 * A)
     eta_i = 2.0 / (1.0 + math.sqrt(1.0 + Tc))
+    if m["prop"].get("eta_fixed"):  # a sensitivity case: installed eta held fixed
+        return m["prop"]["eta_fixed"], eta_i
     return eta_i * 0.85 * m["prop"].get("install", 1.0) , eta_i
 
 

@@ -70,6 +70,29 @@ def val(field):
     return field
 
 
+# Basis of each useful-load figure (weight_basis in candidates.json, AER-5717).
+# A useful load is MTOW minus an empty weight, and both drift: the label names
+# what the empty weight is, and the gross is screened only where it is the
+# designer's, the maker's or the TCDS figure.
+UL_BASIS = {
+    "bare": "bare prototype, or a factory standard empty weight without options",
+    "design": "designer's projected or estimated empty weight, never weighed",
+    "equipped": "vendor's equipped-typical empty weight",
+    "weighed x1": "one aircraft, weighed (a flight-test or weighed builder aircraft); not a fleet average",
+    "reported": "fleet 'typical' from owners or the press, not weighed",
+    "est.": "our estimate",
+    "unknown": "basis not stated by the source",
+}
+GROSS_OK = ("designer", "maker", "TCDS")
+
+
+def ul_tag(c, b):
+    wb = c.get("weight_basis", {})
+    if b == "pub":
+        return wb.get("useful")
+    return wb.get("useful_fleet") or wb.get("useful_asflown")
+
+
 def useful(c):
     """Screen on the fleet figure where one is published, then an as-flown
     estimate (a one-off prototype known to have flown heavier than its
@@ -239,7 +262,7 @@ def screen_col(c, b):
     if spd is not None and not alt_ok and (overall.split(" (")[0] in ("pass", "near miss")
                                            or overall.startswith("partial")):
         overall += ", speed unconditioned"
-    return {"ul": ul, "ul_s": st[0], "rng": rng, "rng_s": st[1], "rng_note": rng_note,
+    return {"ul": ul, "ul_tag": ul_tag(c, b) if ul is not None else None, "ul_s": st[0], "rng": rng, "rng_s": st[1], "rng_note": rng_note,
             "spd": spd, "alt": alt, "alt_ok": alt_ok, "spd_s": spd_s, "set": s,
             "overall": overall, "misses": ", ".join(misses)}
 
@@ -271,6 +294,9 @@ def flags(c):
         d = val(c["useful"]) - val(c["useful_asflown"])
         if d > 0:
             out.append(f"as-flown useful load estimate {d:,.0f} lb below the published design figure")
+    gb = c.get("weight_basis", {}).get("mtow")
+    if gb and gb not in GROSS_OK and val(c.get("useful")) is not None:
+        out.append(f"gross weight basis '{gb}': not confirmed as the designer's, maker's or TCDS gross")
     opt = val(c.get("fuel_opt_gal"))
     if opt:
         r = max((x["rng"] for x in legs(c, opt)), default=None)
@@ -324,7 +350,8 @@ def cell(col):
         + (" *" if not col["alt_ok"] else ""))
     if col["set"].get("design"):
         spd += " (design)"
-    return (f"{fmt(col['ul'])} {col['ul_s']}; {fmt(col['rng'])} {col['rng_s']}; "
+    tag = f" ({col['ul_tag']})" if col.get("ul_tag") else ""
+    return (f"{fmt(col['ul'])}{tag} {col['ul_s']}; {fmt(col['rng'])} {col['rng_s']}; "
             f"{spd} {col['spd_s'] if col['spd'] is not None else ''}").strip()
 
 
@@ -368,6 +395,24 @@ def counts(cands, b="pub"):
     return out
 
 
+def basis_table(cands):
+    """Count of useful-load figures by basis, per screen column."""
+    rows = ["| Basis | Meaning | As published | Measured or reported |", "|---|---|---|---|"]
+    for k, meaning in UL_BASIS.items():
+        n = [sum(1 for c in cands if screen_col(c, b)["ul"] is not None and ul_tag(c, b) == k)
+             for b in ("pub", "meas")]
+        rows.append(f"| {k} | {meaning} | {n[0]} | {n[1]} |")
+    g = {}
+    for c in cands:
+        x = c.get("weight_basis", {}).get("mtow")
+        if x and val(c.get("useful")) is not None:
+            g[x] = g.get(x, 0) + 1
+    rows.append("")
+    rows.append("Gross weight behind each published useful load: "
+                + ", ".join(f"{k} {v}" for k, v in sorted(g.items(), key=lambda kv: -kv[1])) + ".")
+    return "\n".join(rows)
+
+
 def replace_block(txt, name, body):
     a, b = f"<!-- {name}:start -->", f"<!-- {name}:end -->"
     pre, rest = txt.split(a)
@@ -384,6 +429,7 @@ def main():
         txt = LONGLIST.read_text()
         txt = replace_block(txt, "screen-table", t)
         txt = replace_block(txt, "flags", fl)
+        txt = replace_block(txt, "ul-basis", basis_table(cands))
         LONGLIST.write_text(txt)
 
 

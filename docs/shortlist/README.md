@@ -11,6 +11,7 @@ folder holds what produced it.
 | `check/perf.py` | Drag build-up, propeller, power lapse and Breguet range integration. Methods and sources in its docstring |
 | `check/run_check.py` | Runs one model: calibration against published points, original-engine range and payload, the two Aeromomentum cases. Writes `check/results/<id>.json`; its stdout is saved as `check/results/<id>.txt` |
 | `check/calib.json` | The fleet drag calibration (1.29) and the three cases it comes from |
+| `check/eta_band.py` | The propeller-efficiency band (eta 0.75 and 0.85) for the Aries and the Prescott, and the eta each pusher's brochure range needs (AER-5717); output in `check/eta_band_output.md` |
 | `check/report.py` | Builds `check/results/tables.md` and the per-type `check/results/<id>_stage3.md` tables |
 | `narrative.py` | AERO's stage 3 prose per type; writes the stage 3 block into each `../candidates/<id>.md` between markers |
 
