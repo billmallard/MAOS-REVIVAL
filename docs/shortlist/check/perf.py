@@ -119,9 +119,13 @@ def parasite_Dq(m, wet, h_ft, V_fts, P_hp):
     for name, dq in m.get("fixed_Dq", []):  # gear, struts, etc, D/q ft2
         items.append((name, dq, "fixed allowance"))
     # cooling: Raymer 12.39, hp is the power actually being produced
-    cool = m.get("cooling_factor", 1.0) * 4.9e-7 * P_hp * T ** 2 / (sig * V_fts)
-    items.append(("cooling", cool,
-                  f"Raymer 12.39 x {m.get('cooling_factor', 1.0):.2f}"))
+    if m.get("cooling_liquid"):  # a sensitivity case: radiator + intercooler (cooling_band.py)
+        cool, note = liquid_cooling_Dq(m["cooling_liquid"], h_ft, V_fts, P_hp)
+        items.append(("cooling", cool, note))
+    else:
+        cool = m.get("cooling_factor", 1.0) * 4.9e-7 * P_hp * T ** 2 / (sig * V_fts)
+        items.append(("cooling", cool,
+                      f"Raymer 12.39 x {m.get('cooling_factor', 1.0):.2f}"))
     sub = sum(d for _, d, _ in items)
     exc = m.get("excrescence_frac", 0.05) * sub
     items.append(("leakage+protuberance", exc,
@@ -131,6 +135,41 @@ def parasite_Dq(m, wet, h_ft, V_fts, P_hp):
         items.append(("calibration factor", (k - 1.0) * sum(d for _, d, _ in items),
                       f"x{k:.3f} on the build-up (calibration; basis stated above)"))
     return sum(d for _, d, _ in items), items
+
+
+def liquid_cooling_heat(c, h_ft, P_hp):
+    """Heat to reject (W) and the cooling-air temperature rise (K) for a
+    liquid-cooled turbocharged engine: coolant (oil included) and charge air.
+    Returns a dict; every input in c is an assumption (cooling_band.py)."""
+    rho, T, _, _ = atmos(h_ft)
+    Ta = T / 1.8                                  # K
+    pa = rho * 1716.49 * T / 2116.22              # atm
+    q_cool = c["coolant_frac"] * P_hp * 745.7
+    dT_cool = c["eps_air"] * (c["coolant_K"] - Ta)
+    # charge air: compressor to the manifold pressure, then the intercooler
+    m_eng = c["afr"] * c["bsfc"] * P_hp / 3600.0 * 0.45359   # kg/s
+    # manifold pressure taken as proportional to shaft power about the reference
+    pr = max(c["map_atm"] * P_hp / c["P_ref_hp"] / (pa * c["inlet_recovery"]), 1.0)
+    T2 = Ta * (1.0 + (pr ** (0.4 / 1.4) - 1.0) / c["eta_comp"])
+    q_ic = m_eng * 1005.0 * c["eps_ic"] * (T2 - Ta)
+    dT_ic = c["eps_air"] * (T2 - Ta)
+    return {"q_cool": q_cool, "dT_cool": dT_cool, "q_ic": q_ic, "dT_ic": dT_ic,
+            "pr": pr, "T2": T2, "Ta": Ta,
+            "m_air": q_cool / (1005.0 * dT_cool) + (q_ic / (1005.0 * dT_ic) if q_ic > 0 else 0.0)}
+
+
+def liquid_cooling_Dq(c, h_ft, V_fts, P_hp):
+    """Ducted radiator and intercooler drag as D/q (ft2): the cooling air's
+    momentum loss, D = m_air V (1 - Ve/V), with Ve/V = sqrt(1 - zeta) for an
+    internal total-pressure loss of zeta freestream dynamic pressures
+    (incompressible; no heat-addition thrust, so no Meredith credit)."""
+    rho, _, _, _ = atmos(h_ft)
+    h = liquid_cooling_heat(c, h_ft, P_hp)
+    m_slug = h["m_air"] / 14.5939
+    D = m_slug * V_fts * (1.0 - math.sqrt(1.0 - c["zeta"]))
+    Dq = D / (0.5 * rho * V_fts ** 2)
+    return Dq, (f"radiator+intercooler: {h['m_air']:.2f} kg/s cooling air, zeta {c['zeta']:.2f}, "
+                f"coolant {c['coolant_frac']:.2f} x shaft power, compressor PR {h['pr']:.2f}")
 
 
 def induced_Dq(m, W_lb, h_ft, V_fts):
