@@ -65,6 +65,19 @@ XL-RG's and the Rutan Defiant's need more than 0.85 on their own measured drag,
 so both are marked optimistic. Details are in
 [Propeller-efficiency band](#propeller-efficiency-band-aer-5717).
 
+**Revision 8 (2026-11-27, AER-6292).** The AM20T is liquid-cooled
+(Aeromomentum's specification table, re-read 2026-11-27), and the check had
+carried its cooling drag by an air-cooled formula. A radiator-and-intercooler
+band now brackets it. **No verdict or ranking changes, but one margin fails at
+the poor end.** A good duct leaves every number where it was. A poor duct
+costs 13-16 KTAS at continuous power, and **takes the re-derived Prescott's
+worst-case range to 965 nm, 3.5% short of the target** (952 nm with eta at
+0.75). So the Prescott keeps the range target only if its radiator duct loses
+no more than about 0.56-0.85 of the freestream dynamic pressure, depending on
+the heat and eta assumptions. The Aries's range gap at continuous power grows
+to 15-16% at the poor end. Details are in
+[Cooling-drag band](#cooling-drag-band-aer-6292).
+
 ## Bill's pick (2026-10-25)
 
 **The Bellanca T-250 Aries and the Prescott Pusher go forward.** Bill accepted
@@ -534,12 +547,103 @@ needs 0.88. That matches the independent reading below, that its published
 range is about 10% optimistic, which is some evidence that this test reads
 correctly.
 
+## Cooling-drag band (AER-6292)
+
+The AM20T is liquid-cooled. Aeromomentum's specification table says
+"Cooling: Liquid" (https://aeromomentum.com/am20t-230hp-300hp/, re-read
+2026-11-27, grade F). The stage 3 check carries every AM20T installation's
+cooling drag by Raymer's piston formula (eq. 12.39), which is an air-cooled
+correlation. So the survey's engine-fit column assumes each airframe keeps
+its speed after re-engining. This band replaces that one term with a radiator
+and an intercooler, sized for the heat the AM20T rejects in turbocharged
+cruise at altitude, and leaves everything else in the stage 3 check as it was.
+Script: `shortlist/check/cooling_band.py`; full tables in
+`cooling_band_output.md` beside it. All numbers are ours (E).
+
+**Method.** The heat to reject is the coolant heat (oil included) plus the
+charge-air heat. The charge-air heat comes from the compressor outlet
+temperature at the pressure ratio that holds the manifold pressure at
+altitude: 2.1 at 8,000 ft and 2.9 at 16,000 ft. Cooling air is that heat over
+its temperature rise. The drag is the momentum the cooling air loses:
+D = m V (1 - Ve/V), with Ve/V = sqrt(1 - zeta), where zeta is the duct's
+internal total-pressure loss in freestream dynamic pressures. No
+heat-addition (Meredith) thrust is credited. The term sits inside the
+build-up, so the drag factor k multiplies it, as it multiplied Raymer's term.
+
+**Band ends, all our assumptions, none published by Aeromomentum.**
+- *Low, a good duct:* coolant heat 0.7 x shaft power, zeta 0.35. The core
+  face is at about 0.2 of flight speed and the exit at 0.81 of it.
+- *High, a poor duct:* coolant heat 1.0 x shaft power, zeta 0.90. The core
+  face is at about 0.3 of flight speed and the exit at 0.32 of it.
+
+At 195 hp that is 102-145 kW of coolant heat and 9-13 kW of charge-air heat,
+and 2.0-3.1 kg/s of cooling air through a core face of 0.9-2.1 ft2. The
+cooling term is 4% of total drag at the low end, about what Raymer's
+air-cooled term gave, and 18% at the high end.
+
+| Design, AM20T at continuous power, both engine cases | eta | Cooling | KTAS | Range on full tanks, nm | Payload 1,000 nm, no res / 45 min |
+|---|---|---|---|---|---|
+| Aries, 3,150 lb, 76 gal | formula (0.83) | Raymer (stage 3) | 185-197 | 906-919 | cannot-269 / cannot |
+| Aries | formula | liquid, low | 185-197 | 905-918 | cannot-260 / cannot |
+| Aries | formula | liquid, high | 172-183 | 842-853 | cannot / cannot |
+| Prescott as built, 2,400 lb, 56.5 gal, both drag bases | formula (0.79) | Raymer (stage 3) | 184-207 | 648-705 | cannot / cannot |
+| Prescott as built | formula | liquid, high | 169-191 | 596-650 | cannot / cannot |
+| Prescott re-derived, 2,700 lb, 90 gal, light end, both drag bases | formula (0.79) | Raymer (stage 3) | 179-201 | 1,044-1,151 | 630-670 / cannot-606 |
+| Prescott re-derived, light end | formula | liquid, low | 179-201 | 1,047-1,154 | 631-671 / cannot-607 |
+| Prescott re-derived, light end | formula | liquid, high | 165-185 | 965-1,066 | 434-636 / cannot-208 |
+| Prescott re-derived, light end | 0.75 | Raymer (stage 3) | 176-197 | 1,028-1,131 | 623-663 / cannot-548 |
+| Prescott re-derived, light end | 0.75 | liquid, high | 163-183 | 952-1,050 | 322-629 / cannot-112 |
+
+What it says:
+- **A good duct changes nothing that matters.** At the low end every speed is
+  within 1 KTAS of the stage 3 number, every range within 3 nm, and every
+  payload within 21 lb (most of them within 2 lb). The engine-fit
+  column's assumption holds only for a well-designed radiator installation.
+- **A poor duct is a finding for the Prescott: its range margin fails.** The
+  2,700 lb re-derivation's worst case (measured drag, the 8,000 ft engine
+  case) falls from 1,044 to 965 nm on full tanks, **35 nm (3.5%) short of the
+  target**. With eta also at 0.75, the low end of the propeller band, it is
+  952 nm, 48 nm (4.8%) short. The 3% margin from AER-5717 does not survive the
+  poor end of this band.
+- **The duct therefore has a requirement.** For the worst case to keep
+  1,000 nm, the duct's internal loss must stay at or under zeta 0.69 if the
+  coolant heat equals the shaft power (exit at 0.56 of flight speed or
+  faster), and at or under 0.56 if eta is also 0.75 (exit at 0.66 or faster).
+  At a coolant heat of 0.7 x shaft power the limits are 0.85 and 0.72. Option
+  B already puts the radiator in the nose, in clean air (AER-3902), but the
+  nose is also the shortest and most crowded bay on the airplane: the duct is
+  not yet packaged against the nose gear, battery and hydraulic pack
+  (MANUFACTURING, AER-6764). The duct is not designed, so this is a
+  requirement, not a result.
+- **The Aries's continuous-power range gap grows from 8-9% to 15-16% at the
+  high end**, and its continuous speed falls to 172-183 KTAS, still over the
+  160 KTAS floor. At economy power its range stays over 1,000 nm
+  (1,081-1,086 nm), at a speed already under the floor.
+- **The speed floor holds at continuous power in every case**, the closest
+  being the Prescott re-derivation on measured drag at eta 0.75 with a poor
+  duct: 163-173 KTAS.
+- **No verdict or ranking changes.** The headline numbers stay on Raymer's
+  term, which matches the good-duct end. Both picks were already conditional
+  on a radiator installation that is not yet designed, and the dossiers now
+  say what that installation has to achieve.
+
+What this does not cover: the duct's external drag (inlet lip, spillage and
+the exit fairing) beyond the internal loss, climb cooling (a hot-day climb at
+low speed usually sizes the radiator, and it is not computed here), and any
+Meredith thrust. The heat fractions, the manifold pressure and the presence
+of an intercooler are ours; Aeromomentum publishes none of them.
+
 ## The Aeromomentum assumption
 
 Aeromomentum publishes, for the AM20T: 260 hp at 5,800 rpm, 300 hp for 5 min,
 285 lb dry, liquid-cooled, $27,995 (grade F,
-https://aeromomentum.com/am20t-230hp-300hp/, re-read 2026-10-24). It does not
-publish a continuous rating, a critical altitude or a fuel consumption. Every
+https://aeromomentum.com/am20t-230hp-300hp/, re-read 2026-10-24). Re-read
+2026-11-27 for AER-6292
+([Wayback](https://web.archive.org/web/20261127165349/https://aeromomentum.com/am20t-230hp-300hp/)):
+its specification table still says "Cooling: Liquid", 260 hp at 5,800 rpm,
+285 lb and a typical price of $27,995. The page heading now also prices the
+version of up to 300 hp at $29,700. It does not publish a continuous rating,
+a critical altitude, a fuel consumption, or whether the turbo is intercooled. Every
 number in this document that uses the AM20T or AM15T rests on these
 assumptions, which are **ours**:
 
@@ -549,7 +653,7 @@ assumptions, which are **ours**:
 | Critical altitude | Two cases: 8,000 ft (AM-low) and 16,000 ft (AM-high); Gagg-Ferrar lapse above | Brackets a single-turbo automotive installation. Not published |
 | BSFC | 0.45 lb/hp/h | The same estimate as stage 1 (Gudmundsson ch. 7). Not published |
 | Installed mass | dry x 1.25 (Aeromomentum's own installation note) + 35 lb for radiator, coolant and plumbing | The 35 lb is ours |
-| Cooling drag | Raymer's piston formula, the same as air-cooled | A liquid-cooled radiator can do better (Meredith effect) or worse; not credited either way |
+| Cooling drag | Raymer's piston formula, the same as air-cooled, in every headline number | Bracketed for the Aries and Prescott by a radiator and intercooler band: see [Cooling-drag band](#cooling-drag-band-aer-6292). No Meredith credit |
 
 This is an **open risk**, and it can only be closed by data from Aeromomentum or by
 a test. Bill decided on AER-3800 (2026-10-25) that the survey carries these
@@ -733,6 +837,7 @@ python3 axes/axes.py > axes/axes_output.md                   # the deep-dive axe
 python3 payload_range.py > payload_range_output.md           # payload-range, all designs
 python3 bede/bede_check.py > bede/bede_check_output.md       # the Bede BD-4C / BD-19 reference check (AER-4145)
 python3 eta_band.py > eta_band_output.md                     # prop-efficiency band, Aries and Prescott; eta behind pusher brochure ranges (AER-5717)
+python3 cooling_band.py > cooling_band_output.md             # radiator and intercooler drag band, Aries and Prescott (AER-6292)
 ```
 
 `vspgen.py` expects the folder at `/maos-work/aero/analysis/AER-3783`, which the

@@ -168,7 +168,7 @@ Model: `docs/shortlist/check/models/bellanca-t250-aries.json`; result: `docs/sho
 
 - **Power.** The AM20T (260 hp take-off, 195 hp assumed continuous) replaces a 250 hp O-540 that cruises at 163-188 hp (65-75%). The cruise power is about the same, so the Aries keeps its speed: 185 KTAS at 8,000 ft (low case) and 197 KTAS at 16,000 ft (high case).
 - **Mass and CG.** The installed mass falls by about 64 lb (E), in the nose. That needs ballast or a longer mount; the headline useful load takes no credit for the saving.
-- **Cooling.** The O-540 used a single inlet below the spinner and no cowl flaps. A radiator needs its own duct, not yet designed; Raymer's cooling drag is carried unchanged.
+- **Cooling.** The O-540 used a single inlet below the spinner and no cowl flaps. The AM20T is liquid-cooled (Aeromomentum's specification table, re-read 2026-11-27), so a radiator needs its own duct, not yet designed. The headline numbers carry Raymer's air-cooled cooling drag unchanged. A radiator-and-intercooler band (AER-6292, `SHORTLIST.md`, "Cooling-drag band") leaves them unchanged for a good duct. A poor duct costs 13-14 KTAS at continuous power (172-183) and cuts the range from 906-919 to 842-853 nm, 15-16% short.
 - **Fuel.** At continuous power the 76 gal usable gives 906-919 nm still air. That is 8-9% short of the 1,000 nm target. Economy cruise reaches it, but at 154-161 KTAS, on or under the speed floor; a modest tank increase reaches it at speed (AER-3867 sizes it).
 
 ### Payload-range on the AM20T (AER-3900)
