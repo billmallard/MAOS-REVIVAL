@@ -36,8 +36,8 @@ Datum: **N747P, ballast FS 100** (N747P's published 49 lb of ballast, at the mor
 | No fix: AM20T, radiator in the tail cone | heavy | 0 | 1,765 | 235.5 (54%) | 230.6 **aft of limit by 7.7 in** | 224.0 | 935 |
 | A. Nose ballast (radiator in the tail cone) | light | 113 | 1,613 | 226.7 (35%) | 222.9 | 217.6 | 1,087 |
 | A. Nose ballast (radiator in the tail cone) | heavy | 130 | 1,895 | 226.2 (34%) | 222.9 | 218.3 | 805 |
-| B. Masses forward: radiator and coolant to the nose bay, remote avionics forward; ballast for any rest | light | 71 (incl. 63 lb ballast) | 1,572 | 226.9 (35%) | 222.9 | 217.5 | 1,128 |
-| B. Masses forward: radiator and coolant to the nose bay, remote avionics forward; ballast for any rest | heavy | 97 (incl. 79 lb ballast) | 1,862 | 226.2 (34%) | 222.9 | 218.2 | 838 |
+| B. Masses forward: radiator and coolant to the nose bay, remote avionics forward; ballast for any rest | light | 93 (incl. 71 lb ballast) | 1,594 | 226.8 (35%) | 222.9 | 217.6 | 1,106 |
+| B. Masses forward: radiator and coolant to the nose bay, remote avionics forward; ballast for any rest | heavy | 125 (incl. 87 lb ballast) | 1,889 | 226.2 (34%) | 222.9 | 218.2 | 811 |
 | C. Fuselage stretch ahead of the spar | light | 29 (36 in stretch; aft limit FS 221.3) | 1,529 | 229.1 (40%) | 221.3 | 213.6 (fwd of limit) | 1,171 |
 | C. Fuselage stretch ahead of the spar | heavy | 34 (43 in stretch; aft limit FS 221.0) | 1,799 | 228.2 (38%) | 221.0 | 213.7 (fwd of limit) | 901 |
 | D. Wing moved aft with its mains and tanks | light | 10 (11 in aft; limits move to FS 225.8-232.5) | 1,510 | 238.2 (60%) | 232.4 | 226.1 | 1,190 |
@@ -53,14 +53,14 @@ Each column adds one correction to the one before. Cells read: added weight, lb 
 |---|---|---|---|---|---|---|---|
 | A. Nose ballast | light | 40 / 1,194 | 68 / 1,132 | 90 / 1,110 | 113 / 1,087 | 113 / 1,087 | 113 / 1,087 |
 | A. Nose ballast | heavy | 52 / 876 | 84 / 852 | 107 / 829 | 130 / 805 | 130 / 805 | 130 / 805 |
-| B. Masses forward | light | 6 / 1,228 (0 ballast) | 12 / 1,187 (6 ballast) | 34 / 1,165 (28 ballast) | 57 / 1,142 (51 ballast) | 57 / 1,142 (51 ballast) | 71 / 1,128 (63 ballast) |
-| B. Masses forward | heavy | 6 / 922 (0 ballast) | 28 / 907 (22 ballast) | 51 / 884 (45 ballast) | 75 / 860 (69 ballast) | 75 / 860 (69 ballast) | 97 / 838 (79 ballast) |
+| B. Masses forward | light | 6 / 1,228 (0 ballast) | 12 / 1,187 (6 ballast) | 34 / 1,165 (28 ballast) | 57 / 1,142 (51 ballast) | 57 / 1,142 (51 ballast) | 93 / 1,106 (71 ballast) |
+| B. Masses forward | heavy | 6 / 922 (0 ballast) | 28 / 907 (22 ballast) | 51 / 884 (45 ballast) | 75 / 860 (69 ballast) | 75 / 860 (69 ballast) | 125 / 811 (87 ballast) |
 | C. Fuselage stretch ahead of the spar | light | 9 / 1,225 (11 in) | 14 / 1,185 (18 in) | 19 / 1,180 (24 in) | 24 / 1,176 (30 in) | 29 / 1,171 (36 in) | 29 / 1,171 (36 in; 36-37 in on the band) |
 | C. Fuselage stretch ahead of the spar | heavy | 11 / 917 (14 in) | 18 / 917 (23 in) | 23 / 912 (29 in) | 28 / 907 (35 in) | 34 / 901 (43 in) | 34 / 901 (43 in; 42-44 in on the band) |
 | D. Wing moved aft with its mains and tanks | light | 10 / 1,224 (4 in aft) | 10 / 1,190 (7 in aft) | 10 / 1,190 (9 in aft) | 10 / 1,190 (11 in aft) | 10 / 1,190 (11 in aft) | 10 / 1,190 (11 in aft) |
 | D. Wing moved aft with its mains and tanks | heavy | 10 / 918 (5 in aft) | 10 / 925 (7 in aft) | 10 / 925 (9 in aft) | 10 / 925 (11 in aft) | 10 / 925 (11 in aft) | 10 / 925 (11 in aft) |
 
-Sensitivity: each inch of empty-CG error at 1,550 lb is about 13 lb of nose ballast; moving the radiator forward with its 30 ft of line is worth about 3.5-3.7 in of it (PR #20 read 4.0 in, with all 35 lb moved to the nose bay and the lines' own moment left out; AER-6766), and N747P's ballast puts the empty CG 1.8-3.6 in aft of the reference. So B no longer balances without ballast, as SAFETY expected. A weighed survivor or SDASM's weight-and-balance schedule would close the range (contact is Bill's call).
+Sensitivity: each inch of empty-CG error at 1,550 lb is about 13 lb of nose ballast; moving the radiator forward with its routed coolant run is worth about 2.9-3.2 in of it (PR #20 read 4.0 in, with all 35 lb moved to the nose bay and the lines' own moment left out; AER-6766), and N747P's ballast puts the empty CG 1.8-3.6 in aft of the reference. So B no longer balances without ballast, as SAFETY expected. A weighed survivor or SDASM's weight-and-balance schedule would close the range (contact is Bill's call).
 
 Ballast at 2,400 lb on the AM20T, the stage 3 engine-swap case (radiator in the tail cone, 56.5 gal), on the headline datum with the constant-speed propeller: light 107 lb, heavy 116 lb; on the published 1,550 lb airplane with only the engine and propeller swapped, 106-112 lb (PR #10, reference datum and no propeller change: 33 lb; stage 3: 82 lb).
 
@@ -74,18 +74,18 @@ AM20T at the assumed 195 hp continuous; still air, no reserve, full fuel from gr
 | 2,400 lb, 56.5 gal | A. ballast | light | 822 | 483 | measured basis | 184 / 196 | 648 / 669 | cannot | 18% short / 33% short / pass+ |
 | 2,400 lb, 56.5 gal | A. ballast | heavy | 604 | 265 | brochure basis | 194 / 207 | 683 / 705 | cannot | 40% short / 29% short / pass+ |
 | 2,400 lb, 56.5 gal | A. ballast | heavy | 604 | 265 | measured basis | 184 / 196 | 648 / 669 | cannot | 40% short / 33% short / pass+ |
-| 2,400 lb, 56.5 gal | B. masses forward | light | 864 | 525 | brochure basis | 194 / 207 | 683 / 705 | cannot | 14% short / 29% short / pass+ |
-| 2,400 lb, 56.5 gal | B. masses forward | light | 864 | 525 | measured basis | 184 / 196 | 648 / 669 | cannot | 14% short / 33% short / pass+ |
-| 2,400 lb, 56.5 gal | B. masses forward | heavy | 637 | 298 | brochure basis | 194 / 207 | 683 / 705 | cannot | 36% short / 29% short / pass+ |
-| 2,400 lb, 56.5 gal | B. masses forward | heavy | 637 | 298 | measured basis | 184 / 196 | 648 / 669 | cannot | 36% short / 33% short / pass+ |
+| 2,400 lb, 56.5 gal | B. masses forward | light | 842 | 503 | brochure basis | 194 / 207 | 683 / 705 | cannot | 16% short / 29% short / pass+ |
+| 2,400 lb, 56.5 gal | B. masses forward | light | 842 | 503 | measured basis | 184 / 196 | 648 / 669 | cannot | 16% short / 33% short / pass+ |
+| 2,400 lb, 56.5 gal | B. masses forward | heavy | 610 | 271 | brochure basis | 194 / 207 | 683 / 705 | cannot | 39% short / 29% short / pass+ |
+| 2,400 lb, 56.5 gal | B. masses forward | heavy | 610 | 271 | measured basis | 184 / 196 | 648 / 669 | cannot | 39% short / 33% short / pass+ |
 | 2,700 lb, 90 gal | A. ballast | light | 1,087 | 547 | brochure basis | 188 / 201 | 1,100 / 1,151 | 551 | met / met / pass+ |
 | 2,700 lb, 90 gal | A. ballast | light | 1,087 | 547 | measured basis | 179 / 190 | 1,044 / 1,093 | cannot | met / met / pass+ |
 | 2,700 lb, 90 gal | A. ballast | heavy | 805 | 265 | brochure basis | 188 / 201 | 1,100 / 1,151 | 269 | 20% short / met / pass+ |
 | 2,700 lb, 90 gal | A. ballast | heavy | 805 | 265 | measured basis | 179 / 190 | 1,044 / 1,093 | cannot | 20% short / met / pass+ |
-| 2,700 lb, 90 gal | B. masses forward | light | 1,128 | 588 | brochure basis | 188 / 201 | 1,100 / 1,151 | 592 | met / met / pass+ |
-| 2,700 lb, 90 gal | B. masses forward | light | 1,128 | 588 | measured basis | 179 / 190 | 1,044 / 1,093 | cannot | met / met / pass+ |
-| 2,700 lb, 90 gal | B. masses forward | heavy | 838 | 298 | brochure basis | 188 / 201 | 1,100 / 1,151 | 302 | 16% short / met / pass+ |
-| 2,700 lb, 90 gal | B. masses forward | heavy | 838 | 298 | measured basis | 179 / 190 | 1,044 / 1,093 | cannot | 16% short / met / pass+ |
+| 2,700 lb, 90 gal | B. masses forward | light | 1,106 | 566 | brochure basis | 188 / 201 | 1,100 / 1,151 | 571 | met / met / pass+ |
+| 2,700 lb, 90 gal | B. masses forward | light | 1,106 | 566 | measured basis | 179 / 190 | 1,044 / 1,093 | cannot | met / met / pass+ |
+| 2,700 lb, 90 gal | B. masses forward | heavy | 811 | 271 | brochure basis | 188 / 201 | 1,100 / 1,151 | 275 | 19% short / met / pass+ |
+| 2,700 lb, 90 gal | B. masses forward | heavy | 811 | 271 | measured basis | 179 / 190 | 1,044 / 1,093 | cannot | 19% short / met / pass+ |
 
 Drag cost of a 12 in stretch (option C), 2,700 lb, 16k: 0.9 / 0.9 kt and 5 / 5 nm (brochure / measured basis).
 
@@ -95,12 +95,12 @@ Sensitivity: holding the wing and tail at today's size at 2,700 lb (stage 3's le
 
 Heights above ground (E, from the plan at the model's gear height): CG 36 in, thrust line 55 in, propeller radius 32.5 in (65 in prop), prop plane FS 322. V_rot / Vs is the speed, as a multiple of the take-off-flap stall speed, at which full up elevator can just start the rotation; the airplane lifts off flat at ground attitude at about 1.79 Vs, so a V_rot near or above that means it cannot be rotated, it jumps off.
 
-Tip-back of the empty airplane (option B with its residual ballast, CG FS 226.9) bounds how far forward the mains can go: below about 15 deg it sits on its tail when someone steps into the back.
+Tip-back of the empty airplane (option B with its residual ballast, CG FS 226.8) bounds how far forward the mains can go: below about 15 deg it sits on its tail when someone steps into the back.
 
 | Case | Mains, FS | CG, FS | Tipback at this CG, deg (typ. 15) | Empty-airplane tipback, deg | Prop-strike pitch about the mains, deg | V_rot / Vs |
 |---|---|---|---|---|---|---|
-| O-360, 2,400 lb, aft limit, prototype 1 mains | 244 | 222.9 | 30 | 25 | 16.1 | 1.40 |
-| O-360, 2,400 lb, fwd limit, prototype 1 mains | 244 | 216.2 | 38 | 25 | 16.1 | 1.53 |
+| O-360, 2,400 lb, aft limit, prototype 1 mains | 244 | 222.9 | 30 | 26 | 16.1 | 1.40 |
+| O-360, 2,400 lb, fwd limit, prototype 1 mains | 244 | 216.2 | 38 | 26 | 16.1 | 1.53 |
 | O-360, 2,400 lb, aft limit, prototype 2 mains | 236 | 222.9 | 20 | 14 | 14.7 | 1.27 |
 | AM20T, 2,700 lb, aft limit, prototype 2 mains | 236 | 222.9 | 20 | 14 | 14.7 | 1.35 |
 | AM20T, 2,700 lb, fwd limit, prototype 2 mains | 236 | 216.2 | 29 | 14 | 14.7 | 1.50 |
@@ -112,6 +112,6 @@ The AM20T's extra take-off thrust on the high thrust line adds about 14,832 in-l
 
 A 30% larger horizontal tail (V_H 0.50 to 0.65, about +10 ft2 at roughly 1 lb/ft2 in carbon, E) costs 3.4 kt at 16k on the brochure basis.
 
-- Empty airplane, light end, option B with its residual ballast: CG FS 226.9, 9.1 in ahead of prototype 2's mains, 5.1 in ahead of FS 232.
+- Empty airplane, light end, option B with its residual ballast: CG FS 226.8, 9.2 in ahead of prototype 2's mains, 5.2 in ahead of FS 232.
 - Empty airplane, heavy end, option B with its residual ballast: CG FS 226.2, 9.8 in ahead of prototype 2's mains, 5.8 in ahead of FS 232.
 

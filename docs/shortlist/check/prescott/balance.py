@@ -146,19 +146,26 @@ H_CG, H_THRUST, H_DRAG, PROP_R, PROP_FS = 36.0, 55.0, 40.0, 32.5, 322.0
 O360 = 330.0                    # installed O-360 (E, stage 3)
 AM20T_ENGINE = 285.0 * 1.25     # 356 lb: engine, PSRU, turbo, mount, exhaust (E)
 AM20T_RAD = 35.0                # radiator, coolant, plumbing (E, stage 3)
-# Option B's radiator move (AER-6766, MANUFACTURING's review of PR #20, AER-6764
-# finding 1). Our split of the 35 lb (E): the radiator wet with the coolant in
-# its core and tanks, 25 lb, and the short tail-cone hoses with their coolant,
-# 10 lb. In option B the radiator goes to the nose bay, and the short hoses are
-# replaced by about 30 ft of line (supply and return, engine at FS 296 to nose
-# at FS 110). MANUFACTURING's estimate (E): 102-145 kW at a 10-15 K coolant rise
-# is 28-60 gpm in 1.25-1.5 in line; 30 ft of 0.035 in aluminium filled with
-# 50/50 glycol is 18-28 lb (0.6-0.9 lb/ft). Light / heavy ends take 18 / 28 lb.
-# The run is uniform between the two ends, so its centroid is their mean.
-AM20T_RAD_CORE = 25.0           # radiator, wet (E, our split)
-AM20T_RAD_HOSE = 10.0           # short tail-cone hoses and coolant (E, our split)
-NOSE_LINES = {"light": 18.0, "heavy": 28.0}   # 30 ft nose run, wet (E, MANUFACTURING)
-FS_LINES = 0.5 * (110.0 + 296.0)               # FS 203, the run's centroid (E)
+# Option B's radiator move (AER-6766; MANUFACTURING's reviews of PR #20,
+# AER-6764 finding 1, and of PR #21, AER-6769). All E, MANUFACTURING's booking.
+# The 35 lb splits three ways: 20 lb is the radiator wet (11-13 lb dry core and
+# tanks, 4-5 lb of coolant, mounts) and moves to the nose bay; 8 lb is the
+# engine's jacket coolant and the header tank, which stay at the engine
+# (FS 290); 7 lb is the short tail-cone hoses wet with clamps, which the long
+# run replaces. The run is sized at 102-145 kW and a 10-15 K coolant rise
+# (29-63 gpm): 1.25 in tube at the low-flow end, 1.5 in at the high, 0.035 in
+# 6061, 50/50 glycol (0.66 / 0.92 lb/ft filled). Routed under the cabin floor,
+# outside the occupied volume (SAFETY R8), it is 34 / 40 ft of supply and
+# return, with flexible hose at the engine, assembly couplers, clamps,
+# P-clamps, firewall pass-throughs, a bleed line to the header tank and
+# coolant-loss sensing: 28.7 / 45.0 lb in all, centroid FS 207 at both ends.
+# Not booked: a belly channel (1-3 lb) or a booster pump (2-3 lb) if needed.
+AM20T_RAD_CORE = 20.0           # radiator, wet, moves to the nose bay (E)
+AM20T_RAD_ENG = 8.0             # jacket coolant and header tank, stays at the engine (E)
+FS_RAD_ENG = 290.0
+AM20T_RAD_HOSE = 7.0            # short tail-cone hoses and clamps, removed in B (E)
+NOSE_LINES = {"light": 28.7, "heavy": 45.0}   # routed nose run with hardware, wet (E)
+FS_LINES = 207.0                               # the run's centroid (E)
 # Before AER-6766: the whole 35 lb plus 6 lb of extra line, all at the nose bay.
 # old_lines=True (and legacy=True) reproduces that, for the correction ledger.
 RAD_NOSE_LINES_OLD = 6.0
@@ -319,6 +326,7 @@ def rebuilt_empty(end, gross, radiator, datum=HEADLINE, legacy=False, old_lines=
         items.append((AM20T_RAD + RAD_NOSE_LINES_OLD, FS["nosebay"]))
     else:
         items.append((AM20T_RAD_CORE, FS["nosebay"]))
+        items.append((AM20T_RAD_ENG, FS_RAD_ENG))
         items.append((NOSE_LINES[end], FS_LINES))
     if gross > 2400.0:
         g = d["growth_2700"]
@@ -477,10 +485,12 @@ def solve_options(datum=HEADLINE, legacy=False, np_f=None, gross=2700.0, fuel_ga
 
 def rad_move_in(end):
     """Option B's radiator move as a forward empty-CG shift at 1,550 lb, in:
-    the radiator to the nose bay, the short hoses out of the tail cone, the
-    30 ft run in at its centroid; moments about the headline empty CG."""
+    the radiator to the nose bay, the engine's coolant from the tail cone to
+    FS 290, the short hoses out, the routed run in at its centroid; moments
+    about the headline empty CG."""
     x = X_E[HEADLINE]
     m = (AM20T_RAD_CORE * (FS["tailcone"] - FS["nosebay"])
+         - AM20T_RAD_ENG * (FS_RAD_ENG - FS["tailcone"])
          + AM20T_RAD_HOSE * (FS["tailcone"] - x) - NOSE_LINES[end] * (FS_LINES - x))
     return m / 1550.0
 
@@ -589,7 +599,7 @@ def main():
             p(f"| {names[key].split(':')[0].split(' (')[0]} | {end} | " + " | ".join(cells) + " |")
     p("")
     p(f"Sensitivity: each inch of empty-CG error at 1,550 lb is about {1550.0/(CG_AFT-FS['ballast']):.0f} lb of nose ballast; "
-      f"moving the radiator forward with its 30 ft of line is worth about "
+      f"moving the radiator forward with its routed coolant run is worth about "
       f"{min(rad_move_in(e) for e in MFG):.1f}-{max(rad_move_in(e) for e in MFG):.1f} in of it "
       f"(PR #20 read {AM20T_RAD*(FS['tailcone']-FS['nosebay'])/1550.0:.1f} in, with all 35 lb moved to the nose bay and the lines' own moment left out; AER-6766), and N747P's ballast "
       f"puts the empty CG {X_E['N747P, ballast FS 160']-X_E0:.1f}-{X_E['N747P, ballast FS 100']-X_E0:.1f} in aft of the reference. "
