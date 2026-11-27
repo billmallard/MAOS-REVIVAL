@@ -11,30 +11,30 @@ Each cell spans the two engine cases (critical altitude 8,000 and 16,000 ft, cru
 | Bellanca T-250 Aries (3,150 lb, 1,850 lb empty, 76 gal, k 1.30) | stage 3 formula | 1.30 | 185-197 | cannot-269 / cannot | 906-919 | 154-161 (under the floor) | 901-903 / 859-861 | 1,155-1,156 |
 | Bellanca T-250 Aries (3,150 lb, 1,850 lb empty, 76 gal, k 1.30) | 0.75 fixed | 1.30 | 177-189 | cannot / cannot | 868-880 | 146-153 (under the floor) | 882-883 / 799-825 | 1,094-1,098 |
 | Bellanca T-250 Aries (3,150 lb, 1,850 lb empty, 76 gal, k 1.30) | 0.85 fixed | 1.30 | 187-199 | cannot-338 / cannot | 915-930 | 156-164 (under the floor) | 906-909 / 864-867 | 1,170-1,175 |
-| Prescott Pusher, 2,400 lb, 56.5 gal, light end (1,522 lb empty), brochure basis (k 1.35) | stage 3 formula | 1.35 | 194-207 | cannot / cannot | 683-705 | 163-173 | cannot-163 / cannot | 884-907 |
-| Prescott Pusher, 2,400 lb, 56.5 gal, light end (1,522 lb empty), brochure basis (k 1.35) | 0.75 fixed | 1.35 | 190-203 | cannot / cannot | 670-692 | 160-169 | cannot-75 / cannot | 867-889 |
-| Prescott Pusher, 2,400 lb, 56.5 gal, light end (1,522 lb empty), brochure basis (k 1.35) | 0.85 fixed | 1.35 | 200-213 | cannot / cannot | 704-729 | 169-180 | 79-327 / cannot | 916-943 |
-| Prescott Pusher, 2,400 lb, 56.5 gal, light end (1,522 lb empty), measured basis (k 1.55) | stage 3 formula | 1.55 | 184-196 | cannot / cannot | 648-669 | 155-164 (under the floor) | cannot / cannot | 838-858 |
-| Prescott Pusher, 2,400 lb, 56.5 gal, light end (1,522 lb empty), measured basis (k 1.55) | 0.75 fixed | 1.55 | 181-193 | cannot / cannot | 637-658 | 152-161 (under the floor) | cannot / cannot | 823-843 |
-| Prescott Pusher, 2,400 lb, 56.5 gal, light end (1,522 lb empty), measured basis (k 1.55) | 0.85 fixed | 1.55 | 190-203 | cannot / cannot | 670-693 | 161-171 | cannot-52 / cannot | 871-895 |
-| Prescott Pusher, 2,400 lb, 56.5 gal, heavy end (1,740 lb empty), brochure basis (k 1.35) | stage 3 formula | 1.35 | 194-207 | cannot / cannot | 683-705 | 163-173 | cannot / cannot | 884-907 |
-| Prescott Pusher, 2,400 lb, 56.5 gal, heavy end (1,740 lb empty), brochure basis (k 1.35) | 0.75 fixed | 1.35 | 190-203 | cannot / cannot | 670-692 | 160-169 | cannot / cannot | 867-889 |
-| Prescott Pusher, 2,400 lb, 56.5 gal, heavy end (1,740 lb empty), brochure basis (k 1.35) | 0.85 fixed | 1.35 | 200-213 | cannot / cannot | 704-729 | 169-180 | cannot-109 / cannot | 916-943 |
-| Prescott Pusher, 2,400 lb, 56.5 gal, heavy end (1,740 lb empty), measured basis (k 1.55) | stage 3 formula | 1.55 | 184-196 | cannot / cannot | 648-669 | 155-164 (under the floor) | cannot / cannot | 838-858 |
-| Prescott Pusher, 2,400 lb, 56.5 gal, heavy end (1,740 lb empty), measured basis (k 1.55) | 0.75 fixed | 1.55 | 181-193 | cannot / cannot | 637-658 | 152-161 (under the floor) | cannot / cannot | 823-843 |
-| Prescott Pusher, 2,400 lb, 56.5 gal, heavy end (1,740 lb empty), measured basis (k 1.55) | 0.85 fixed | 1.55 | 190-203 | cannot / cannot | 670-693 | 161-171 | cannot / cannot | 871-895 |
-| Prescott Pusher, 2,700 lb, 90 gal, light end (1,558 lb empty), brochure basis (k 1.35) | stage 3 formula | 1.35 | 188-201 | 654-670 / 346-606 | 1,100-1,151 | 158-167 (under the floor) | 757-763 / 715-721 | 1,424-1,479 |
-| Prescott Pusher, 2,700 lb, 90 gal, light end (1,558 lb empty), brochure basis (k 1.35) | 0.75 fixed | 1.35 | 185-197 | 646-663 / 178-548 | 1,081-1,131 | 155-163 (under the floor) | 750-756 / 708-715 | 1,398-1,451 |
-| Prescott Pusher, 2,700 lb, 90 gal, light end (1,558 lb empty), brochure basis (k 1.35) | 0.85 fixed | 1.35 | 195-208 | 669-684 / 604-620 | 1,135-1,190 | 164-174 | 770-777 / 728-735 | 1,477-1,539 |
-| Prescott Pusher, 2,700 lb, 90 gal, light end (1,558 lb empty), measured basis (k 1.55) | stage 3 formula | 1.55 | 179-190 | 630-647 / cannot-304 | 1,044-1,093 | 150-157 (under the floor) | 737-743 / 696-702 | 1,350-1,399 |
-| Prescott Pusher, 2,700 lb, 90 gal, light end (1,558 lb empty), measured basis (k 1.55) | 0.75 fixed | 1.55 | 176-187 | 623-640 / cannot-193 | 1,028-1,076 | 147-155 (under the floor) | 731-738 / 689-696 | 1,327-1,375 |
-| Prescott Pusher, 2,700 lb, 90 gal, light end (1,558 lb empty), measured basis (k 1.55) | 0.85 fixed | 1.55 | 185-198 | 646-663 / 117-546 | 1,080-1,132 | 156-165 (under the floor) | 752-759 / 710-718 | 1,404-1,461 |
-| Prescott Pusher, 2,700 lb, 90 gal, heavy end (1,840 lb empty), brochure basis (k 1.35) | stage 3 formula | 1.35 | 188-201 | 373-389 / 65-325 | 1,100-1,151 | 158-167 (under the floor) | 475-481 / 434-440 | 1,424-1,479 |
-| Prescott Pusher, 2,700 lb, 90 gal, heavy end (1,840 lb empty), brochure basis (k 1.35) | 0.75 fixed | 1.35 | 185-197 | 365-381 / cannot-266 | 1,081-1,131 | 155-163 (under the floor) | 468-475 / 427-433 | 1,398-1,451 |
-| Prescott Pusher, 2,700 lb, 90 gal, heavy end (1,840 lb empty), brochure basis (k 1.35) | 0.85 fixed | 1.35 | 195-208 | 387-403 / 323-338 | 1,135-1,190 | 164-174 | 489-495 / 447-453 | 1,477-1,539 |
-| Prescott Pusher, 2,700 lb, 90 gal, heavy end (1,840 lb empty), measured basis (k 1.55) | stage 3 formula | 1.55 | 179-190 | 349-366 / cannot-22 | 1,044-1,093 | 150-157 (under the floor) | 456-462 / 414-421 | 1,350-1,399 |
-| Prescott Pusher, 2,700 lb, 90 gal, heavy end (1,840 lb empty), measured basis (k 1.55) | 0.75 fixed | 1.55 | 176-187 | 341-359 / cannot | 1,028-1,076 | 147-155 (under the floor) | 449-456 / 408-415 | 1,327-1,375 |
-| Prescott Pusher, 2,700 lb, 90 gal, heavy end (1,840 lb empty), measured basis (k 1.55) | 0.85 fixed | 1.55 | 185-198 | 365-382 / cannot-264 | 1,080-1,132 | 156-165 (under the floor) | 471-478 / 429-436 | 1,404-1,461 |
+| Prescott Pusher, 2,400 lb, 56.5 gal, light end (1,536 lb empty), brochure basis (k 1.35) | stage 3 formula | 1.35 | 194-207 | cannot / cannot | 683-705 | 163-173 | cannot-150 / cannot | 884-907 |
+| Prescott Pusher, 2,400 lb, 56.5 gal, light end (1,536 lb empty), brochure basis (k 1.35) | 0.75 fixed | 1.35 | 190-203 | cannot / cannot | 670-692 | 160-169 | cannot-61 / cannot | 867-889 |
+| Prescott Pusher, 2,400 lb, 56.5 gal, light end (1,536 lb empty), brochure basis (k 1.35) | 0.85 fixed | 1.35 | 200-213 | cannot / cannot | 704-729 | 169-180 | 65-314 / cannot | 916-943 |
+| Prescott Pusher, 2,400 lb, 56.5 gal, light end (1,536 lb empty), measured basis (k 1.55) | stage 3 formula | 1.55 | 184-196 | cannot / cannot | 648-669 | 155-164 (under the floor) | cannot / cannot | 838-858 |
+| Prescott Pusher, 2,400 lb, 56.5 gal, light end (1,536 lb empty), measured basis (k 1.55) | 0.75 fixed | 1.55 | 181-193 | cannot / cannot | 637-658 | 152-161 (under the floor) | cannot / cannot | 823-843 |
+| Prescott Pusher, 2,400 lb, 56.5 gal, light end (1,536 lb empty), measured basis (k 1.55) | 0.85 fixed | 1.55 | 190-203 | cannot / cannot | 670-693 | 161-171 | cannot-38 / cannot | 871-895 |
+| Prescott Pusher, 2,400 lb, 56.5 gal, heavy end (1,763 lb empty), brochure basis (k 1.35) | stage 3 formula | 1.35 | 194-207 | cannot / cannot | 683-705 | 163-173 | cannot / cannot | 884-907 |
+| Prescott Pusher, 2,400 lb, 56.5 gal, heavy end (1,763 lb empty), brochure basis (k 1.35) | 0.75 fixed | 1.35 | 190-203 | cannot / cannot | 670-692 | 160-169 | cannot / cannot | 867-889 |
+| Prescott Pusher, 2,400 lb, 56.5 gal, heavy end (1,763 lb empty), brochure basis (k 1.35) | 0.85 fixed | 1.35 | 200-213 | cannot / cannot | 704-729 | 169-180 | cannot-87 / cannot | 916-943 |
+| Prescott Pusher, 2,400 lb, 56.5 gal, heavy end (1,763 lb empty), measured basis (k 1.55) | stage 3 formula | 1.55 | 184-196 | cannot / cannot | 648-669 | 155-164 (under the floor) | cannot / cannot | 838-858 |
+| Prescott Pusher, 2,400 lb, 56.5 gal, heavy end (1,763 lb empty), measured basis (k 1.55) | 0.75 fixed | 1.55 | 181-193 | cannot / cannot | 637-658 | 152-161 (under the floor) | cannot / cannot | 823-843 |
+| Prescott Pusher, 2,400 lb, 56.5 gal, heavy end (1,763 lb empty), measured basis (k 1.55) | 0.85 fixed | 1.55 | 190-203 | cannot / cannot | 670-693 | 161-171 | cannot / cannot | 871-895 |
+| Prescott Pusher, 2,700 lb, 90 gal, light end (1,572 lb empty), brochure basis (k 1.35) | stage 3 formula | 1.35 | 188-201 | 641-657 / 333-592 | 1,100-1,151 | 158-167 (under the floor) | 743-749 / 701-708 | 1,424-1,479 |
+| Prescott Pusher, 2,700 lb, 90 gal, light end (1,572 lb empty), brochure basis (k 1.35) | 0.75 fixed | 1.35 | 185-197 | 633-649 / 164-534 | 1,081-1,131 | 155-163 (under the floor) | 736-742 / 695-701 | 1,398-1,451 |
+| Prescott Pusher, 2,700 lb, 90 gal, light end (1,572 lb empty), brochure basis (k 1.35) | 0.85 fixed | 1.35 | 195-208 | 655-671 / 590-606 | 1,135-1,190 | 164-174 | 756-763 / 714-721 | 1,477-1,539 |
+| Prescott Pusher, 2,700 lb, 90 gal, light end (1,572 lb empty), measured basis (k 1.55) | stage 3 formula | 1.55 | 179-190 | 617-634 / cannot-290 | 1,044-1,093 | 150-157 (under the floor) | 723-730 / 682-688 | 1,350-1,399 |
+| Prescott Pusher, 2,700 lb, 90 gal, light end (1,572 lb empty), measured basis (k 1.55) | 0.75 fixed | 1.55 | 176-187 | 609-627 / cannot-179 | 1,028-1,076 | 147-155 (under the floor) | 717-724 / 676-683 | 1,327-1,375 |
+| Prescott Pusher, 2,700 lb, 90 gal, light end (1,572 lb empty), measured basis (k 1.55) | 0.85 fixed | 1.55 | 185-198 | 633-649 / 104-532 | 1,080-1,132 | 156-165 (under the floor) | 738-746 / 697-704 | 1,404-1,461 |
+| Prescott Pusher, 2,700 lb, 90 gal, heavy end (1,862 lb empty), brochure basis (k 1.35) | stage 3 formula | 1.35 | 188-201 | 351-367 / 42-302 | 1,100-1,151 | 158-167 (under the floor) | 453-459 / 411-417 | 1,424-1,479 |
+| Prescott Pusher, 2,700 lb, 90 gal, heavy end (1,862 lb empty), brochure basis (k 1.35) | 0.75 fixed | 1.35 | 185-197 | 343-359 / cannot-244 | 1,081-1,131 | 155-163 (under the floor) | 446-452 / 405-411 | 1,398-1,451 |
+| Prescott Pusher, 2,700 lb, 90 gal, heavy end (1,862 lb empty), brochure basis (k 1.35) | 0.85 fixed | 1.35 | 195-208 | 365-381 / 300-316 | 1,135-1,190 | 164-174 | 466-473 / 424-431 | 1,477-1,539 |
+| Prescott Pusher, 2,700 lb, 90 gal, heavy end (1,862 lb empty), measured basis (k 1.55) | stage 3 formula | 1.55 | 179-190 | 327-344 / cannot | 1,044-1,093 | 150-157 (under the floor) | 433-440 / 392-398 | 1,350-1,399 |
+| Prescott Pusher, 2,700 lb, 90 gal, heavy end (1,862 lb empty), measured basis (k 1.55) | 0.75 fixed | 1.55 | 176-187 | 319-336 / cannot | 1,028-1,076 | 147-155 (under the floor) | 427-434 / 386-393 | 1,327-1,375 |
+| Prescott Pusher, 2,700 lb, 90 gal, heavy end (1,862 lb empty), measured basis (k 1.55) | 0.85 fixed | 1.55 | 185-198 | 342-359 / cannot-242 | 1,080-1,132 | 156-165 (under the floor) | 448-455 / 407-414 | 1,404-1,461 |
 
 ## Reading (b): drag re-matched so each basis keeps its published reference speed
 
@@ -45,30 +45,30 @@ Each cell spans the two engine cases (critical altitude 8,000 and 16,000 ft, cru
 | Bellanca T-250 Aries (3,150 lb, 1,850 lb empty, 76 gal, k 1.30) | stage 3 formula | 1.30 | 185-197 | cannot-269 / cannot | 906-919 | 154-161 (under the floor) | 901-903 / 859-861 | 1,155-1,156 |
 | Bellanca T-250 Aries (3,150 lb, 1,850 lb empty, 76 gal, k 1.30) | 0.75 fixed | 1.16 | 185-197 | cannot-295 / cannot | 905-918 | 153-160 (under the floor) | 899-900 / 857-858 | 1,146-1,148 |
 | Bellanca T-250 Aries (3,150 lb, 1,850 lb empty, 76 gal, k 1.30) | 0.85 fixed | 1.33 | 185-197 | cannot-257 / cannot | 906-921 | 154-162 (under the floor) | 902-905 / 860-864 | 1,159-1,163 |
-| Prescott Pusher, 2,400 lb, 56.5 gal, light end (1,522 lb empty), brochure basis (k 1.35) | stage 3 formula | 1.35 | 194-207 | cannot / cannot | 683-705 | 163-173 | cannot-163 / cannot | 884-907 |
-| Prescott Pusher, 2,400 lb, 56.5 gal, light end (1,522 lb empty), brochure basis (k 1.35) | 0.75 fixed | 1.28 | 194-207 | cannot / cannot | 683-706 | 163-173 | cannot-168 / cannot | 884-907 |
-| Prescott Pusher, 2,400 lb, 56.5 gal, light end (1,522 lb empty), brochure basis (k 1.35) | 0.85 fixed | 1.48 | 193-206 | cannot / cannot | 680-704 | 163-173 | cannot-138 / cannot | 885-910 |
-| Prescott Pusher, 2,400 lb, 56.5 gal, light end (1,522 lb empty), measured basis (k 1.55) | stage 3 formula | 1.55 | 184-196 | cannot / cannot | 648-669 | 155-164 (under the floor) | cannot / cannot | 838-858 |
-| Prescott Pusher, 2,400 lb, 56.5 gal, light end (1,522 lb empty), measured basis (k 1.55) | 0.75 fixed | 1.48 | 184-196 | cannot / cannot | 648-670 | 155-164 (under the floor) | cannot / cannot | 838-859 |
-| Prescott Pusher, 2,400 lb, 56.5 gal, light end (1,522 lb empty), measured basis (k 1.55) | 0.85 fixed | 1.72 | 183-196 | cannot / cannot | 646-668 | 155-164 (under the floor) | cannot / cannot | 838-861 |
-| Prescott Pusher, 2,400 lb, 56.5 gal, heavy end (1,740 lb empty), brochure basis (k 1.35) | stage 3 formula | 1.35 | 194-207 | cannot / cannot | 683-705 | 163-173 | cannot / cannot | 884-907 |
-| Prescott Pusher, 2,400 lb, 56.5 gal, heavy end (1,740 lb empty), brochure basis (k 1.35) | 0.75 fixed | 1.28 | 194-207 | cannot / cannot | 683-706 | 163-173 | cannot / cannot | 884-907 |
-| Prescott Pusher, 2,400 lb, 56.5 gal, heavy end (1,740 lb empty), brochure basis (k 1.35) | 0.85 fixed | 1.48 | 193-206 | cannot / cannot | 680-704 | 163-173 | cannot / cannot | 885-910 |
-| Prescott Pusher, 2,400 lb, 56.5 gal, heavy end (1,740 lb empty), measured basis (k 1.55) | stage 3 formula | 1.55 | 184-196 | cannot / cannot | 648-669 | 155-164 (under the floor) | cannot / cannot | 838-858 |
-| Prescott Pusher, 2,400 lb, 56.5 gal, heavy end (1,740 lb empty), measured basis (k 1.55) | 0.75 fixed | 1.48 | 184-196 | cannot / cannot | 648-670 | 155-164 (under the floor) | cannot / cannot | 838-859 |
-| Prescott Pusher, 2,400 lb, 56.5 gal, heavy end (1,740 lb empty), measured basis (k 1.55) | 0.85 fixed | 1.72 | 183-196 | cannot / cannot | 646-668 | 155-164 (under the floor) | cannot / cannot | 838-861 |
-| Prescott Pusher, 2,700 lb, 90 gal, light end (1,558 lb empty), brochure basis (k 1.35) | stage 3 formula | 1.35 | 188-201 | 654-670 / 346-606 | 1,100-1,151 | 158-167 (under the floor) | 757-763 / 715-721 | 1,424-1,479 |
-| Prescott Pusher, 2,700 lb, 90 gal, light end (1,558 lb empty), brochure basis (k 1.35) | 0.75 fixed | 1.28 | 189-201 | 655-671 / 363-607 | 1,101-1,153 | 158-167 (under the floor) | 757-763 / 716-722 | 1,426-1,480 |
-| Prescott Pusher, 2,700 lb, 90 gal, light end (1,558 lb empty), brochure basis (k 1.35) | 0.85 fixed | 1.48 | 188-201 | 653-670 / 291-606 | 1,097-1,150 | 158-168 (under the floor) | 758-765 / 716-723 | 1,427-1,485 |
-| Prescott Pusher, 2,700 lb, 90 gal, light end (1,558 lb empty), measured basis (k 1.55) | stage 3 formula | 1.55 | 179-190 | 630-647 / cannot-304 | 1,044-1,093 | 150-157 (under the floor) | 737-743 / 696-702 | 1,350-1,399 |
-| Prescott Pusher, 2,700 lb, 90 gal, light end (1,558 lb empty), measured basis (k 1.55) | 0.75 fixed | 1.48 | 179-191 | 631-648 / cannot-316 | 1,046-1,095 | 150-158 (under the floor) | 738-744 / 696-703 | 1,351-1,401 |
-| Prescott Pusher, 2,700 lb, 90 gal, light end (1,558 lb empty), measured basis (k 1.55) | 0.85 fixed | 1.72 | 178-190 | 629-647 / cannot-253 | 1,041-1,091 | 150-158 (under the floor) | 738-746 / 697-704 | 1,351-1,405 |
-| Prescott Pusher, 2,700 lb, 90 gal, heavy end (1,840 lb empty), brochure basis (k 1.35) | stage 3 formula | 1.35 | 188-201 | 373-389 / 65-325 | 1,100-1,151 | 158-167 (under the floor) | 475-481 / 434-440 | 1,424-1,479 |
-| Prescott Pusher, 2,700 lb, 90 gal, heavy end (1,840 lb empty), brochure basis (k 1.35) | 0.75 fixed | 1.28 | 189-201 | 373-389 / 81-325 | 1,101-1,153 | 158-167 (under the floor) | 476-481 / 434-440 | 1,426-1,480 |
-| Prescott Pusher, 2,700 lb, 90 gal, heavy end (1,840 lb empty), brochure basis (k 1.35) | 0.85 fixed | 1.48 | 188-201 | 372-388 / 9-324 | 1,097-1,150 | 158-168 (under the floor) | 476-483 / 434-442 | 1,427-1,485 |
-| Prescott Pusher, 2,700 lb, 90 gal, heavy end (1,840 lb empty), measured basis (k 1.55) | stage 3 formula | 1.55 | 179-190 | 349-366 / cannot-22 | 1,044-1,093 | 150-157 (under the floor) | 456-462 / 414-421 | 1,350-1,399 |
-| Prescott Pusher, 2,700 lb, 90 gal, heavy end (1,840 lb empty), measured basis (k 1.55) | 0.75 fixed | 1.48 | 179-191 | 349-367 / cannot-35 | 1,046-1,095 | 150-158 (under the floor) | 456-462 / 414-421 | 1,351-1,401 |
-| Prescott Pusher, 2,700 lb, 90 gal, heavy end (1,840 lb empty), measured basis (k 1.55) | 0.85 fixed | 1.72 | 178-190 | 347-365 / cannot | 1,041-1,091 | 150-158 (under the floor) | 457-464 / 415-423 | 1,351-1,405 |
+| Prescott Pusher, 2,400 lb, 56.5 gal, light end (1,536 lb empty), brochure basis (k 1.35) | stage 3 formula | 1.35 | 194-207 | cannot / cannot | 683-705 | 163-173 | cannot-150 / cannot | 884-907 |
+| Prescott Pusher, 2,400 lb, 56.5 gal, light end (1,536 lb empty), brochure basis (k 1.35) | 0.75 fixed | 1.28 | 194-207 | cannot / cannot | 683-706 | 163-173 | cannot-155 / cannot | 884-907 |
+| Prescott Pusher, 2,400 lb, 56.5 gal, light end (1,536 lb empty), brochure basis (k 1.35) | 0.85 fixed | 1.48 | 193-206 | cannot / cannot | 680-704 | 163-173 | cannot-124 / cannot | 885-910 |
+| Prescott Pusher, 2,400 lb, 56.5 gal, light end (1,536 lb empty), measured basis (k 1.55) | stage 3 formula | 1.55 | 184-196 | cannot / cannot | 648-669 | 155-164 (under the floor) | cannot / cannot | 838-858 |
+| Prescott Pusher, 2,400 lb, 56.5 gal, light end (1,536 lb empty), measured basis (k 1.55) | 0.75 fixed | 1.48 | 184-196 | cannot / cannot | 648-670 | 155-164 (under the floor) | cannot / cannot | 838-859 |
+| Prescott Pusher, 2,400 lb, 56.5 gal, light end (1,536 lb empty), measured basis (k 1.55) | 0.85 fixed | 1.72 | 183-196 | cannot / cannot | 646-668 | 155-164 (under the floor) | cannot / cannot | 838-861 |
+| Prescott Pusher, 2,400 lb, 56.5 gal, heavy end (1,763 lb empty), brochure basis (k 1.35) | stage 3 formula | 1.35 | 194-207 | cannot / cannot | 683-705 | 163-173 | cannot / cannot | 884-907 |
+| Prescott Pusher, 2,400 lb, 56.5 gal, heavy end (1,763 lb empty), brochure basis (k 1.35) | 0.75 fixed | 1.28 | 194-207 | cannot / cannot | 683-706 | 163-173 | cannot / cannot | 884-907 |
+| Prescott Pusher, 2,400 lb, 56.5 gal, heavy end (1,763 lb empty), brochure basis (k 1.35) | 0.85 fixed | 1.48 | 193-206 | cannot / cannot | 680-704 | 163-173 | cannot / cannot | 885-910 |
+| Prescott Pusher, 2,400 lb, 56.5 gal, heavy end (1,763 lb empty), measured basis (k 1.55) | stage 3 formula | 1.55 | 184-196 | cannot / cannot | 648-669 | 155-164 (under the floor) | cannot / cannot | 838-858 |
+| Prescott Pusher, 2,400 lb, 56.5 gal, heavy end (1,763 lb empty), measured basis (k 1.55) | 0.75 fixed | 1.48 | 184-196 | cannot / cannot | 648-670 | 155-164 (under the floor) | cannot / cannot | 838-859 |
+| Prescott Pusher, 2,400 lb, 56.5 gal, heavy end (1,763 lb empty), measured basis (k 1.55) | 0.85 fixed | 1.72 | 183-196 | cannot / cannot | 646-668 | 155-164 (under the floor) | cannot / cannot | 838-861 |
+| Prescott Pusher, 2,700 lb, 90 gal, light end (1,572 lb empty), brochure basis (k 1.35) | stage 3 formula | 1.35 | 188-201 | 641-657 / 333-592 | 1,100-1,151 | 158-167 (under the floor) | 743-749 / 701-708 | 1,424-1,479 |
+| Prescott Pusher, 2,700 lb, 90 gal, light end (1,572 lb empty), brochure basis (k 1.35) | 0.75 fixed | 1.28 | 189-201 | 641-657 / 349-593 | 1,101-1,153 | 158-167 (under the floor) | 743-749 / 702-708 | 1,426-1,480 |
+| Prescott Pusher, 2,700 lb, 90 gal, light end (1,572 lb empty), brochure basis (k 1.35) | 0.85 fixed | 1.48 | 188-201 | 640-656 / 277-592 | 1,097-1,150 | 158-168 (under the floor) | 744-751 / 702-709 | 1,427-1,485 |
+| Prescott Pusher, 2,700 lb, 90 gal, light end (1,572 lb empty), measured basis (k 1.55) | stage 3 formula | 1.55 | 179-190 | 617-634 / cannot-290 | 1,044-1,093 | 150-157 (under the floor) | 723-730 / 682-688 | 1,350-1,399 |
+| Prescott Pusher, 2,700 lb, 90 gal, light end (1,572 lb empty), measured basis (k 1.55) | 0.75 fixed | 1.48 | 179-191 | 617-634 / cannot-303 | 1,046-1,095 | 150-158 (under the floor) | 724-730 / 682-689 | 1,351-1,401 |
+| Prescott Pusher, 2,700 lb, 90 gal, light end (1,572 lb empty), measured basis (k 1.55) | 0.85 fixed | 1.72 | 178-190 | 615-633 / cannot-240 | 1,041-1,091 | 150-158 (under the floor) | 724-732 / 683-691 | 1,351-1,405 |
+| Prescott Pusher, 2,700 lb, 90 gal, heavy end (1,862 lb empty), brochure basis (k 1.35) | stage 3 formula | 1.35 | 188-201 | 351-367 / 42-302 | 1,100-1,151 | 158-167 (under the floor) | 453-459 / 411-417 | 1,424-1,479 |
+| Prescott Pusher, 2,700 lb, 90 gal, heavy end (1,862 lb empty), brochure basis (k 1.35) | 0.75 fixed | 1.28 | 189-201 | 351-367 / 59-303 | 1,101-1,153 | 158-167 (under the floor) | 453-459 / 412-418 | 1,426-1,480 |
+| Prescott Pusher, 2,700 lb, 90 gal, heavy end (1,862 lb empty), brochure basis (k 1.35) | 0.85 fixed | 1.48 | 188-201 | 350-366 / cannot-302 | 1,097-1,150 | 158-168 (under the floor) | 454-461 / 412-419 | 1,427-1,485 |
+| Prescott Pusher, 2,700 lb, 90 gal, heavy end (1,862 lb empty), measured basis (k 1.55) | stage 3 formula | 1.55 | 179-190 | 327-344 / cannot | 1,044-1,093 | 150-157 (under the floor) | 433-440 / 392-398 | 1,350-1,399 |
+| Prescott Pusher, 2,700 lb, 90 gal, heavy end (1,862 lb empty), measured basis (k 1.55) | 0.75 fixed | 1.48 | 179-191 | 327-344 / cannot-13 | 1,046-1,095 | 150-158 (under the floor) | 434-440 / 392-399 | 1,351-1,401 |
+| Prescott Pusher, 2,700 lb, 90 gal, heavy end (1,862 lb empty), measured basis (k 1.55) | 0.85 fixed | 1.72 | 178-190 | 325-343 / cannot | 1,041-1,091 | 150-158 (under the floor) | 434-442 / 393-401 | 1,351-1,405 |
 
 ## Original engines, at the published cruise setting
 
