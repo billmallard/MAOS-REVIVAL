@@ -610,8 +610,10 @@ What it says:
   coolant heat equals the shaft power (exit at 0.56 of flight speed or
   faster), and at or under 0.56 if eta is also 0.75 (exit at 0.66 or faster).
   At a coolant heat of 0.7 x shaft power the limits are 0.85 and 0.72. Option
-  B already puts the radiator in the nose, in clean air (AER-3902), which is
-  where a good duct is easiest. The duct is not designed, so this is a
+  B already puts the radiator in the nose, in clean air (AER-3902), but the
+  nose is also the shortest and most crowded bay on the airplane: the duct is
+  not yet packaged against the nose gear, battery and hydraulic pack
+  (MANUFACTURING, AER-6764). The duct is not designed, so this is a
   requirement, not a result.
 - **The Aries's continuous-power range gap grows from 8-9% to 15-16% at the
   high end**, and its continuous speed falls to 172-183 KTAS, still over the
