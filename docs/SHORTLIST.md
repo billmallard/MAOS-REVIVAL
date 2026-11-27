@@ -78,15 +78,17 @@ the heat and eta assumptions. The Aries's range gap at continuous power grows
 to 15-16% at the poor end. Details are in
 [Cooling-drag band](#cooling-drag-band-aer-6292).
 
-**Revision 9 (2026-11-27, AER-6766).** MANUFACTURING's review of PR #20
-(AER-6764) found that the Prescott's balance option B, the radiator moved to
-the nose, had booked about 30 ft of coolant line at 6 lb and at the nose bay.
-At MANUFACTURING's estimate (E) the line weighs 18-28 lb filled, and its
-centre sits near FS 203, halfway between the engine and the nose. Booked
-there, B needs 63-79 lb of nose lead instead of 51-69, and the re-derived
-Prescott's useful load at 2,700 lb falls from 1,142 / 860 lb to
-**1,128 / 838 lb** (light / heavy end). The light end still meets the
-1,000 lb target; the heavy end is now 16% short instead of 14%. Speeds and
+**Revision 9 (2026-11-27, AER-6766).** MANUFACTURING's reviews of PR #20
+and PR #21 (AER-6764, AER-6769) corrected the Prescott's balance option B, the
+radiator moved to the nose. B had booked about 30 ft of coolant line at 6 lb,
+at the nose bay. Routed under the cabin floor, outside the occupied volume,
+the run is 34-40 ft and weighs 28.7-45 lb with its hardware, centred near
+FS 207. The engine's own coolant (8 lb) stays at the engine; only the 20 lb
+radiator moves (all E). Booked that way, B needs 71-87 lb of nose lead instead
+of 51-69, and the re-derived Prescott's useful load at 2,700 lb falls from
+1,142 / 860 lb to **1,106 / 811 lb** (light / heavy end). The light end still
+meets the 1,000 lb target; the heavy end is now 19% short instead of 14%. B's
+empty weight is now only 5-20 lb below ballast alone (option A). Speeds and
 ranges do not move. **No verdict or ranking changes.**
 
 ## Bill's pick (2026-10-25)
@@ -108,7 +110,7 @@ critical-altitude cases (8,000 ft and 16,000 ft cruise); see
 | Rank | Design | Seats | As published: useful load / range / cruise, against the targets | Our check on the AM20T: KTAS / useful load / range on full fuel at continuous power, against the targets | Rights (stage 2) | Safety record | Why it died; does a revival fix it? |
 |---|---|---|---|---|---|---|---|
 | 1 | [Bellanca T-250 Aries](candidates/bellanca-t250-aries.md) | 4-5 | 1,300 lb / 1,017 nm with 45 min / 181 KTAS at 75%, altitude not stated (AOPA measured 181 at 6,500 ft): **meets all three** | 185-197 / 1,300 / 906-919 nm: useful load 30% over the target; range 8-9% short at continuous power; 1,000 nm only at economy power, 154-161 KTAS, on or under the speed floor | TC A11SW current, held by Anderson Greenwood (a valve maker); stage 2 file pending | 1 NTSB event in about 50 years, no fatal; only 4 aircraft, so no rate | Its producer, Bellanca, went into receivership in 1980. Yes: nothing technical killed it |
-| 2 | [Prescott Pusher](candidates/prescott-pusher.md) | 4 (2+2) | 850 lb / 869 nm, reserve not stated / 165 KTAS at 7,500 ft: useful load 15% short, range 13% short. Measured: 739 lb weighed (26% short), 151 KTAS at 73% (altitude unpublished) | 184-207 / 637-864 / 648-705 nm on 56.5 gal at 2,400 lb (radiator in the nose, residual ballast): useful load 14-36% short, range 30-35% short. **Meets both targets only as a re-derivation** at 2,700 lb with 90 gal, useful load only at the light end of MANUFACTURING's structure estimate: 179-201 / 1,128 / 1,044-1,151 nm (heavy end: 838 lb, 16% short; AER-3902, AER-6766) | Open: no rights holder found; the engineering archive survives at SDASM (SC.10269) | 4 NTSB events, 1 fatal (a Ford V-6 conversion); a door into the prop; a prop separation; pitch sensitivity and hard rotation | Handling reputation, a financing change, slow parts. Business causes yes; the handling traces to main wheels far behind the CG and a small tail, which balance alone does not fix |
+| 2 | [Prescott Pusher](candidates/prescott-pusher.md) | 4 (2+2) | 850 lb / 869 nm, reserve not stated / 165 KTAS at 7,500 ft: useful load 15% short, range 13% short. Measured: 739 lb weighed (26% short), 151 KTAS at 73% (altitude unpublished) | 184-207 / 610-842 / 648-705 nm on 56.5 gal at 2,400 lb (radiator in the nose, residual ballast): useful load 16-39% short, range 30-35% short. **Meets both targets only as a re-derivation** at 2,700 lb with 90 gal, useful load only at the light end of MANUFACTURING's structure estimate: 179-201 / 1,106 / 1,044-1,151 nm (heavy end: 811 lb, 19% short; AER-3902, AER-6766) | Open: no rights holder found; the engineering archive survives at SDASM (SC.10269) | 4 NTSB events, 1 fatal (a Ford V-6 conversion); a door into the prop; a prop separation; pitch sensitivity and hard rotation | Handling reputation, a financing change, slow parts. Business causes yes; the handling traces to main wheels far behind the CG and a small tail, which balance alone does not fix |
 | 3 | [Wheeler Express](candidates/express-2000.md) | 4 | 1,045 lb / 1,401 nm (CAFE-computed) / no maker's speed; measured 169 KTAS at 6,190 ft, 901 lb weighed | 179-191 / 890 / 1,062-1,115 nm: range meets the target; useful load 110 lb (11%) short on the weighed aircraft | Orphaned: five owners, three bankruptcies; last holder (2007) untraced | 18 fatal, 30 killed, on about 100 registered; the NTSB named its poor yaw stability; stall in climbing right turns, including Grand Prairie (CEN21LA096) | Business execution (incomplete kits, churn) plus a public tail problem. Yes, with a re-derived tail at 2-4 kt cruise cost and complete kits |
 | 4 | [Lancair IV-P](candidates/lancair-iv-p.md) | 4 | 1,350 lb / 1,347 nm with 45 min / 287 KTAS at FL240: **meets all three** | 200-211 / 1,350 / 1,136-1,155 nm: **meets both targets** on factory empty weight | Open: chain of title (2023 sale scope not public, molds unlocated) | 88 events, 43 fatal, about 360 built; low-altitude stall-spin and engine failure followed by stall | Kits retired for newer models. The safety pattern is the real problem; the RDD LX7 re-wing shows it can be engineered out, at about 25 kt and $800k+ |
 | 5 | [Meyers 200D](candidates/meyers-200d.md) | 4 | 1,060 lb / 782 nm with 45 min / 182 KTAS at 75%, altitude not stated: range 22% short; measured 178 KTAS at 8,500 ft, about 900 lb fleet useful (10% short) | 178-189 / 1,060 / 831-863 nm: useful load meets the target on factory weight; range 14-17% short | TC 3A18 current, small holder; TC, drawings and tooling offered for sale in 2019 | 26 accidents, 6 fatal; fuel starvation from the four-tank system is the pattern; no breakups | Hand-built at a loss. Yes, as a re-derivation designed for production, with more fuel |
@@ -167,21 +169,21 @@ per-case rows in `payload_range_output.md` beside it.
 | Bede BD-4C (reference; also stands in for the BD-19) (2,400 lb, 1,313 lb empty, 51 gal, k 1.29) | economy 65% | 150-159 (under the 160 floor) | 835 / 792-793 | 413-560 / cannot | cannot / cannot | cannot / cannot | 732-747 |
 | Bede BD-4C, 80 gal option (reference) (2,400 lb, 1,313 lb empty, 80 gal, k 1.29) | continuous | 180-192 | 772-779 / 707-714 | 676-690 / 611-625 | 34-512 / cannot | cannot / cannot | 927-971 |
 | Bede BD-4C, 80 gal option (reference) (2,400 lb, 1,313 lb empty, 80 gal, k 1.29) | economy 65% | 150-159 (under the 160 floor) | 835 / 792-793 | 760-765 / 718-724 | 686-696 / 645-655 | 614-628 / 203-423 | 1,196-1,242 |
-| Prescott Pusher, 2,400 lb, 56.5 gal, light end (1,536 lb empty) | continuous | 184-207 | 555-575 / cannot-139 | cannot / cannot | cannot / cannot | cannot / cannot | 648-705 |
-| Prescott Pusher, 2,400 lb, 56.5 gal, light end (1,536 lb empty) | economy 65% | 155-173 (under the 160 floor at the low end) | 619-630 / 576-588 | 546-565 / 140-500 | cannot-150 / cannot | cannot / cannot | 838-907 |
-| Prescott Pusher, 2,400 lb, 56.5 gal, heavy end (1,763 lb empty) | continuous | 184-207 | 329-348 / cannot | cannot / cannot | cannot / cannot | cannot / cannot | 648-705 |
-| Prescott Pusher, 2,400 lb, 56.5 gal, heavy end (1,763 lb empty) | economy 65% | 155-173 (under the 160 floor at the low end) | 392-404 / 350-361 | 320-339 / cannot-273 | cannot / cannot | cannot / cannot | 838-907 |
-| Prescott Pusher, 2,700 lb, 90 gal, light end (1,572 lb empty) | continuous | 179-201 | 809-828 / 744-763 | 713-742 / 648-677 | 617-657 / cannot-592 | cannot-306 / cannot | 1,044-1,151 |
-| Prescott Pusher, 2,700 lb, 90 gal, light end (1,572 lb empty) | economy 65% | 150-167 (under the 160 floor at the low end) | 871-885 / 829-843 | 798-816 / 756-774 | 723-749 / 682-708 | 650-683 / 609-642 | 1,350-1,479 |
-| Prescott Pusher, 2,700 lb, 90 gal, heavy end (1,862 lb empty) | continuous | 179-201 | 519-538 / 454-473 | 423-452 / 358-387 | 327-367 / cannot-302 | cannot-16 / cannot | 1,044-1,151 |
-| Prescott Pusher, 2,700 lb, 90 gal, heavy end (1,862 lb empty) | economy 65% | 150-167 (under the 160 floor at the low end) | 581-595 / 539-553 | 508-526 / 466-484 | 433-459 / 392-417 | 360-393 / 319-352 | 1,350-1,479 |
+| Prescott Pusher, 2,400 lb, 56.5 gal, light end (1,558 lb empty) | continuous | 184-207 | 533-553 / cannot-117 | cannot / cannot | cannot / cannot | cannot / cannot | 648-705 |
+| Prescott Pusher, 2,400 lb, 56.5 gal, light end (1,558 lb empty) | economy 65% | 155-173 (under the 160 floor at the low end) | 597-608 / 554-566 | 524-543 / 119-478 | cannot-128 / cannot | cannot / cannot | 838-907 |
+| Prescott Pusher, 2,400 lb, 56.5 gal, heavy end (1,790 lb empty) | continuous | 184-207 | 301-321 / cannot | cannot / cannot | cannot / cannot | cannot / cannot | 648-705 |
+| Prescott Pusher, 2,400 lb, 56.5 gal, heavy end (1,790 lb empty) | economy 65% | 155-173 (under the 160 floor at the low end) | 365-376 / 322-334 | 292-311 / cannot-246 | cannot / cannot | cannot / cannot | 838-907 |
+| Prescott Pusher, 2,700 lb, 90 gal, light end (1,594 lb empty) | continuous | 179-201 | 788-807 / 722-741 | 691-720 / 626-656 | 595-635 / cannot-571 | cannot-284 / cannot | 1,044-1,151 |
+| Prescott Pusher, 2,700 lb, 90 gal, light end (1,594 lb empty) | economy 65% | 150-167 (under the 160 floor at the low end) | 850-864 / 807-821 | 776-794 / 734-752 | 702-727 / 660-686 | 628-661 / 587-620 | 1,350-1,479 |
+| Prescott Pusher, 2,700 lb, 90 gal, heavy end (1,889 lb empty) | continuous | 179-201 | 492-511 / 427-445 | 395-424 / 330-360 | 299-339 / cannot-275 | cannot / cannot | 1,044-1,151 |
+| Prescott Pusher, 2,700 lb, 90 gal, heavy end (1,889 lb empty) | economy 65% | 150-167 (under the 160 floor at the low end) | 554-568 / 511-525 | 480-498 / 438-456 | 406-431 / 364-390 | 332-365 / 291-324 | 1,350-1,479 |
 
 How to read it:
 - **At speed, the 45 min reserve is what separates them.** At 800 nm with a
   reserve, every design here except the Meyers, the Prescott as built and the
   Cozy carries 400 lb or more at continuous power. At 1,000 nm only the IV-P
   (736-824 lb) and the 301 (858-867 lb) carry more than 700 lb in both engine
-  cases; the re-derived Prescott carries up to 592 lb in its best case and
+  cases; the re-derived Prescott carries up to 571 lb in its best case and
   nothing in its worst; the Express up to 205 lb; the Aries and the Meyers
   nothing.
 - **Economy power buys range with speed the brief does not allow.** The Aries
@@ -230,14 +232,14 @@ How to read it:
 5. **The Prescott meets the useful-load and range targets only as a
    re-derivation**, and its
    brochure and its measured speed disagree. At 2,700 lb with 90 gal and the
-   AM20T it carries 1,128 lb useful, 1,044-1,151 nm and 179-201 KTAS on both
+   AM20T it carries 1,106 lb useful, 1,044-1,151 nm and 179-201 KTAS on both
    drag bases, if the rebuild lands at the light end of MANUFACTURING's
-   structure estimate; at the heavy end it is 162 lb (16%) short of the
+   structure estimate; at the heavy end it is 189 lb (19%) short of the
    useful-load target.
    Balance, once N747P's published 49 lb of ballast and the constant-speed
    propeller are counted (AER-3902, on SAFETY's review), costs 113-130 lb of
-   nose ballast, or 63-79 lb with the radiator moved to the nose and its
-   coolant lines booked at their own mass and station (AER-6766). The harder
+   nose ballast, or 71-87 lb with the radiator moved to the nose and its
+   coolant run booked at its own mass and station (AER-6766). The harder
    problem is rotation: main wheels far behind the CG, a small tail and a high
    thrust line, which balance does not fix (AER-3866). SAFETY does not
    recommend against revival, but against the original configuration plus a
@@ -285,8 +287,8 @@ contributes to the idea ledger.
   needs a drag factor of 1.46-1.67 against the brochure's 1.35). On an AM20T it
   is fast. It meets both targets on both drag bases only as a
   re-derivation at about 2,700 lb gross with 90 gal, and only at the light end
-  of MANUFACTURING's structure estimate (1,128 lb useful; 838 lb at the heavy
-  end). Even with the radiator in the nose the AM20T needs 63-79 lb of nose
+  of MANUFACTURING's structure estimate (1,106 lb useful; 811 lb at the heavy
+  end). Even with the radiator in the nose the AM20T needs 71-87 lb of nose
   ballast (AER-3902, AER-6766). Its
   assets are rare: a 12 in prop extension instead of a drive shaft, and the
   best-preserved engineering record in the survey (drawings, loads, wind-tunnel
@@ -505,16 +507,16 @@ published speeds, so (b) is the honest reading and (a) a bound.
 | Prescott as built, 2,400 lb, 56.5 gal, both drag bases | formula (0.79) | 184-207 | 648-705 | cannot / cannot | 648-705 |
 | Prescott as built | 0.75 | 181-203 | 637-692 | cannot / cannot | 648-706 |
 | Prescott as built | 0.85 | 190-213 | 670-729 | cannot / cannot | 646-704 |
-| Prescott re-derived, 2,700 lb, 90 gal, light end (route B: carbon wing and tail), both drag bases | formula (0.79) | 179-201 | 1,044-1,151 | 617-657 / cannot-592 | 1,044-1,151 |
-| Prescott re-derived, light end | 0.75 | 176-197 | 1,028-1,131 | 609-649 / cannot-534 | 1,046-1,153 |
-| Prescott re-derived, light end | 0.85 | 185-208 | 1,080-1,190 | 633-671 / 104-606 | 1,041-1,150 |
-| Prescott re-derived, heavy end | 0.75 | 176-197 | 1,028-1,131 | 319-359 / cannot-244 | 1,046-1,153 |
+| Prescott re-derived, 2,700 lb, 90 gal, light end (route B: carbon wing and tail), both drag bases | formula (0.79) | 179-201 | 1,044-1,151 | 595-635 / cannot-571 | 1,044-1,151 |
+| Prescott re-derived, light end | 0.75 | 176-197 | 1,028-1,131 | 587-627 / cannot-512 | 1,046-1,153 |
+| Prescott re-derived, light end | 0.85 | 185-208 | 1,080-1,190 | 611-649 / 82-584 | 1,041-1,150 |
+| Prescott re-derived, heavy end | 0.75 | 176-197 | 1,028-1,131 | 291-331 / cannot-216 | 1,046-1,153 |
 
 What it says:
 - **The Prescott re-derivation keeps the range target across the band.** Its
   worst case, measured drag at eta 0.75 and the 8,000 ft engine case, is
   1,028 nm on full tanks: 28 nm (3%) of margin, before any reserve. With a
-  45 min reserve the best case at 1,000 nm falls from 592 to 534 lb; the
+  45 min reserve the best case at 1,000 nm falls from 571 to 512 lb; the
   worst case could not carry a reserve 1,000 nm before, and still cannot. As
   built, on 56.5 gal, it was 30-35% short and stays so. The light end is
   MANUFACTURING's route B (carbon wing and tail). Route A (metal wing and
