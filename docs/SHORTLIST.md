@@ -602,11 +602,11 @@ air-cooled term gave, and 18% at the high end.
 | Aries | formula | liquid, high | 172-183 | 842-853 | cannot / cannot |
 | Prescott as built, 2,400 lb, 56.5 gal, both drag bases | formula (0.79) | Raymer (stage 3) | 184-207 | 648-705 | cannot / cannot |
 | Prescott as built | formula | liquid, high | 169-191 | 596-650 | cannot / cannot |
-| Prescott re-derived, 2,700 lb, 90 gal, light end, both drag bases | formula (0.79) | Raymer (stage 3) | 179-201 | 1,044-1,151 | 617-657 / cannot-592 |
-| Prescott re-derived, light end | formula | liquid, low | 179-201 | 1,047-1,154 | 618-658 / cannot-594 |
-| Prescott re-derived, light end | formula | liquid, high | 165-185 | 965-1,066 | 420-622 / cannot-195 |
-| Prescott re-derived, light end | 0.75 | Raymer (stage 3) | 176-197 | 1,028-1,131 | 609-649 / cannot-534 |
-| Prescott re-derived, light end | 0.75 | liquid, high | 163-183 | 952-1,050 | 308-615 / cannot-98 |
+| Prescott re-derived, 2,700 lb, 90 gal, light end, both drag bases | formula (0.79) | Raymer (stage 3) | 179-201 | 1,044-1,151 | 595-635 / cannot-571 |
+| Prescott re-derived, light end | formula | liquid, low | 179-201 | 1,047-1,154 | 596-636 / cannot-572 |
+| Prescott re-derived, light end | formula | liquid, high | 165-185 | 965-1,066 | 399-601 / cannot-173 |
+| Prescott re-derived, light end | 0.75 | Raymer (stage 3) | 176-197 | 1,028-1,131 | 587-627 / cannot-512 |
+| Prescott re-derived, light end | 0.75 | liquid, high | 163-183 | 952-1,050 | 286-593 / cannot-76 |
 
 What it says:
 - **A good duct changes nothing that matters.** At the low end every speed is
