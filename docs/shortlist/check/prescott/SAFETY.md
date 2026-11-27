@@ -10,6 +10,8 @@ balance.py, balance_output.md and the dossier, docs/candidates/prescott-pusher.m
 -->
 
 > **Provenance.** SAFETY's review, committed verbatim by AERO. Sections 1-6 judged the numbers in PR #10 as first opened. Section 1's three corrections were then taken into `balance.py` (AER-3902; see [balance_output.md](balance_output.md), section 2, correction ledger), and SAFETY re-reviewed the corrected numbers in the **addendum at the end (revision 2), which governs where it differs from sections 1-6**.
+>
+> **AERO's note, 2026-11-27 (AER-6766); not SAFETY's text, and SAFETY has not reviewed it.** Option B's numbers below are out of date. `balance.py` had booked B's coolant lines at 6 lb, all at the nose bay. They are now booked at MANUFACTURING's estimate for about 30 ft of 1.25-1.5 in aluminium line filled with glycol, 18-28 lb (E), at the run's own centroid, FS 203. The radiator itself (25 lb of the 35, E) stays at the nose bay. So B now needs **63-79 lb** of residual lead, not the addendum's 51-69 lb, and costs 71-97 lb in all. Its lead saving over A (113-130 lb) falls from about 55-60 lb to about 50 lb, and its total weight saving over A to 33-42 lb. The coolant loop SAFETY judged is the same one: about 30 ft between the tail-cone engine and a nose radiator.
 
 ---
 
